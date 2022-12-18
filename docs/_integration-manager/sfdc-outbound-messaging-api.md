@@ -68,7 +68,7 @@ You must have setup/configuration privileges within the Salesforce.com org, typi
     * [Salesforce.com] User to send as
     * Send Session ID = true
     * Object fields to send (These fields will be available as an XML DJMessage object within your integration.)
-	![](../../assets/images/sfdc-outbound-messaging-api-1.png)
+	![](../assets/images/sfdc-outbound-messaging-api-1.png)
 7. Click Save (Outbound Message)
 8. Click Done (Outbound Message)
 9. Click Activate (Workflow Rule)

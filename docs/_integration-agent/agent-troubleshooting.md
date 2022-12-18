@@ -8,7 +8,7 @@ has_children: false
 
 ## Agent Fails to Start
 
-This often due to a configuration error. Try [Manual Agent Registration](../integration-agent/troubleshooting/manual-agent-registration.html).
+This often due to a configuration error. Try [Manual Agent Registration](advanced-topics/manual-agent-registration).
 
 ## Registration Fails
 
@@ -20,7 +20,7 @@ This often due to a configuration error. Try [Manual Agent Registration](../inte
 * You already have a registered Agent for this machine/hostname.
 * You are registering from an internal docker image without a canonical hostname.
 
-If you have ruled out the above, try [Manual Agent Registration](../integration-agent/troubleshooting/manual-agent-registration.html).
+If you have ruled out the above, try [Manual Agent Registration](advanced-topics/manual-agent-registration).
 
 ## Application Failed to Start
 

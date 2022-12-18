@@ -21,7 +21,7 @@ The bare minimum restartability and recovery capabilities for a production-ready
 
 This type of deployment looks something like:
 
-![](../../../assets/images/Integration-Manager-Production-Deployment-Min.png)
+![](../../assets/images/Integration-Manager-Production-Deployment-Min.png)
 
 ## Minimum Production Ready Capabilities with HA
 
@@ -34,4 +34,4 @@ The minimum HA capabilities for a production-ready system requires redundant com
 
 This type of deployment looks something like:
 
-![](../../../assets/images/Integration-Manager-Production-Deployment-HA.png)
+![](../../assets/images/Integration-Manager-Production-Deployment-HA.png)

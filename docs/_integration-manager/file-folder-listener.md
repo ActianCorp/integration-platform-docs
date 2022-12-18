@@ -10,7 +10,7 @@ has_children: true
 
 The File Folder Listener Service is used to monitor file directories and/or cloud storage buckets/containers for new files. When a new file appears (matching your include/exclude criteria), the associated listener will submit the file to a Job Configuration in Integration Manager. The file will be available to the specified integration process using the $(LOCAL_JOB_SPEC_DIR) macro at runtime. As an example, a file named Accounts.txt will be available as $(LOCAL_JOB_SPEC_DIR)Accounts.txt.
 
-![](../../../assets/images/File-Folder-Listener-Arch.png)
+![](../../assets/images/File-Folder-Listener-Arch.png)
 
 ## Basic Configuration
 

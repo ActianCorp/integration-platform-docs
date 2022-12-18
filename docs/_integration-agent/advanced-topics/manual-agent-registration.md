@@ -10,6 +10,7 @@ If you are having issues starting or registering a new or existing Agent install
 
 ## Prerequisite(s):
 
+* DataCloud or Avalanche Subscription
 * Install Integration Agent 3.1.0 or later.
 * Enable an API Password for the User registering the Agent.
 

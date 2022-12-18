@@ -43,7 +43,7 @@ Steps 1-4 are for Windows installation only, for Linux instructions please see t
 1. Open a Windows console
 2. Go to the sbin directory: cd "C:\Program Files\RabbitMQ Server\rabbitmq_server-3.9.13\sbin"
 3. Enable the rabbitmq_management plugin: .\rabbitmq-plugins enable rabbitmq_management
-![](../../../assets/images/rabbitmq_1.png)
+![](../../assets/images/rabbitmq_1.png)
 
 If you have any issues with the installation, please refer to the official RabbitMQ documentation: [https://www.rabbitmq.com/install-windows.html](https://www.rabbitmq.com/install-windows.html).
 
