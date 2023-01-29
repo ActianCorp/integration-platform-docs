@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Kubernetes
-nav_order: 999
+nav_order: 799
 parent: Server Administration
 ---
 # Kubernetes
