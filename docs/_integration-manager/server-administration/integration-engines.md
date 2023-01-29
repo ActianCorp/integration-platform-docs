@@ -21,7 +21,7 @@ Integration Manager has the capability to leverage different Actian Integration 
 
 Sometimes it is necessary to patch one or more deployed engines between Integration Manager releases.
 
-## Patching DataConnect
+## DataConnect Engine
 
 ### Windows Patch
 1. Request Windows standalone engine patch from Actian Support or Actian ESD, e.g. di-standalone-engine-12.1.0-24-win64.zip
@@ -48,7 +48,7 @@ worker.engineJavaHome=${installPath}/di-standalone-engine-${dataconnectVersion}/
 engine.localEngineInstallPath=${installPath}/di-standalone-engine-${dataconnectVersion}/runtime/di9
 ```
 
-## Patching DataFlow
+## DataFlow Engine
 
 ### Windows Patch
 1. Request the DataFlow engine patch from Actian Support or Actian ESD, e.g. actian-dataflow-8.0.1-122.zip
