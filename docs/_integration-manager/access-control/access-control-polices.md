@@ -63,3 +63,23 @@ Open API specs for Access Control Policy APIs are located here: [https://im.dev.
     ]
 }
 ```
+
+## Child Policy Access
+
+It is possible to give users access to all child configurations for a template, including the ability to create new configurations for that template, while giving users only read-only access to the template itself. You can do that by creating a policy of `"resourceType": "jobconfigs"` while adding `template:<some template ID here>` to the `resourceIds` array.
+
+For example:
+
+```
+{
+    "name": "User Access to Child Objects For A Job Template",
+    "description": "Allows read access to JobTemplate da966b62-48e7-4f83-99cf-53f3197af99d. Allows full access to all JobConfigs for that template.",
+    "permissions": [
+        {
+            "resourceType": "jobconfigs",
+            "allowed": ["*"],
+            "resourceIds": ["template:da966b62-48e7-4f83-99cf-53f3197af99d"]
+        }
+    ]
+}
+```
