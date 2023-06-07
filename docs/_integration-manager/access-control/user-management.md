@@ -8,7 +8,7 @@ parent: Access Control
 
 Users can be created and managed within the [Administration Console](https://im.dev.actiandatacloud.com/ui/admin/users). Note that User Management requires Account Admin access.
 
-![](../../../assets/images/User-List.png)
+![](../../assets/images/User-List.png)
 
 ## Edit User
 
@@ -25,6 +25,6 @@ Account administrators can:
 * Create, generate, reset API Password for User
 * Enable/Disable Admin Access for User
 
-![](../../../assets/images/User-Edit-1.png)
+![](../../assets/images/User-Edit-1.png)
 
-![](../../../assets/images/User-Edit-2.png)
+![](../../assets/images/User-Edit-2.png)

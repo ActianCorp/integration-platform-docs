@@ -2,6 +2,7 @@
 layout: default
 title: Overview
 nav_order: 1
+permalink: /overview
 ---
 # Actian Integration Platform
 
@@ -26,4 +27,4 @@ Integration Manager brings together the flexible APIs and scalable workloads fro
 
 Born from the cloud, Integration Manager can deploy anywhere to meet your enterprise requirements and is designed to easily scale to your workload requirements.
 
-![](../../assets/images/Integration-Manager-Public-Architecture.png)
+![](../assets/images/Integration-Manager-Public-Architecture.png)

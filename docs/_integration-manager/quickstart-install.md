@@ -5,7 +5,7 @@ nav_order: 0
 ---
 # Windows QuickStart
 
-[Linux QuickStart](#linux-quickstart)
+I need the [Linux QuickStart](#linux-quickstart)
 
 ## Prerequisites
 
@@ -54,7 +54,7 @@ nav_order: 0
 
 # Linux QuickStart
 
-[Windows QuickStart](#windows-quickstart)
+I need the [Windows QuickStart](#windows-quickstart)
 
 ## Prerequisites
 

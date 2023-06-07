@@ -17,17 +17,17 @@ parent: Access Control
 
 1. Go to Admin Console -> Listeners
 2. Click Add
-* ![](../../../assets/images/JobConfig-Aliasing-1.png)
+* ![](../../assets/images/JobConfig-Aliasing-1.png)
 3. Create a globally unique, URL-safe name for your Alias. This is the endpoint your consumers will use.
 4. Select the backend JobConfig to run when your Alias is invoked. You can change it as needed.
-* ![](../../../assets/images/JobConfig-Aliasing-2.png)
+* ![](../../assets/images/JobConfig-Aliasing-2.png)
 5. Click Create New Alias
 
 ## Step 2: Secure Alias
 
 1. Click the Generate link to create an API Key for your Alias
-* ![](../../../assets/images/JobConfig-Aliasing-3.png)
-* ![](../../../assets/images/JobConfig-Aliasing-4.png)
+* ![](../../assets/images/JobConfig-Aliasing-3.png)
+* ![](../../assets/images/JobConfig-Aliasing-4.png)
 2. You can re-generate or delete this key at anytime to revoke consumer access
 
 ## Step 3: Test/Invoke Alias

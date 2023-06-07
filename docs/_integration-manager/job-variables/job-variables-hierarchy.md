@@ -11,7 +11,7 @@ parent: Job Macros
 Macros use a hierarchy to allow flexibility (and privacy) across your deployed integrations.
 
 In a nutshell the macros are applied and overridden in the following order: 
-![](../../../assets/images/Integration-Manager-Macro-Hierarchy-Simple.png)
+![](../../assets/images/Integration-Manager-Macro-Hierarchy-Simple.png)
 
 ## Account (Public) Macros
 
@@ -44,4 +44,4 @@ They can be viewed by any user who has at least read access to the Job Config. T
 <br>
 
 ### Example Inheritance:
-![](../../../assets/images/Integration-Manager-Macro-Hierarchy.png)
+![](../../assets/images/Integration-Manager-Macro-Hierarchy.png)

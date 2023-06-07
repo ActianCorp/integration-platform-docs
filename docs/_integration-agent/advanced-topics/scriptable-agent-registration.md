@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Scriptable Agent Registration
-nav_order: 11
+nav_order: 30
 parent: Advanced Topics
 ---
 # Scriptable Agent Registration
@@ -10,6 +10,7 @@ If you need to automate Agent configuration and registration tasks (i.e. direct 
 
 ## Prerequisite(s):
 
+* DataCloud or Avalanche Subscription
 * Install Integration Agent 3.1.0 or later.
 * Enable an API Password for the User registering the Agent.
 * Access to an API tool such as Postman, SoapUI, or Curl.
