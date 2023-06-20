@@ -2,7 +2,7 @@
 layout: default
 title: Local Folder Listener
 nav_order: 1
-parent: File Folder Listener
+parent: Agent File Folder Listener
 ---
 # Local Folder Listener
 
@@ -12,10 +12,12 @@ The Local Folder Listener monitors file folders for files and will execute a pre
 
 ## Listener Configuration
 
-Note that the File Folder Listener Service must be restarted for any configuration changes to take effect. Make sure you have already completed: File Folder Listener Authorization
+Note that the File Folder Listener Service must be restarted for any configuration changes to take effect. 
 
 **listeners.yml**
 (ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml
+**OR**
+/etc/opt/actian/integration-agent/conf/listeners.yml (Linux)
 
 NOTE: indentation is critical for YAML syntax!
 
@@ -24,7 +26,7 @@ Example:
 listeners:
   - id: local-listener-folder-accounts
     config-id: 90378
-    listener-type: local
+    listener-type: agent
     active: true
     source-directory: C:/DataSources/accounts
     include-pattern: ^Accounts.*
@@ -32,7 +34,7 @@ listeners:
     filename-override: Accounts.txt
   - id: local-listener-folder-contacts
     config-id: 90379
-    listener-type: local
+    listener-type: agent
     active: true
     source-directory: C:/DataSources/contacts
     include-pattern: ^Contacts.*
@@ -43,9 +45,9 @@ listeners:
 ## Properties
 
 | Property                | Default | Description                                                                                                                                                                                                                               |
-| :---------------------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :---------------------- | :------ |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | id                      |         | A unique identifier for the listener.                                                                                                                                                                                                     |
-| listener-type           |         | Available listener types: local, aws, gcp, azure.                                                                                                                                                                                         |
+| listener-type           |         | Available listener types: agent.                                                                                                                                                                                                          |
 | config-id               |         | The Job Configuration id to run in Integration Manager.                                                                                                                                                                                   |
 | active                  | true    | Whether or not this listener is active.                                                                                                                                                                                                   |
 | source-directory        |         | The source directory to monitor for new files.                                                                                                                                                                                            |
