@@ -1,27 +1,14 @@
 ---
 layout: default
-title: Google Cloud Storage Listener
-nav_order: 4
+title: Local Folder Listener
+nav_order: 1
 parent: File Folder Listener
 ---
-# Google Cloud Storage Listener
+# Local Folder Listener
 
 ## Overview
 
-The Google Cloud Storage Listener monitors Google Storage buckets for files and will execute a pre-defined Job Configuration (config-id) when triggered.
-
-## Add Blob Storage Permissions
-
-For more information on how to create/obtain this key, see [https://cloud.google.com/storage/docs/reference/libraries#setting_up_authentication](https://cloud.google.com/storage/docs/reference/libraries#setting_up_authentication)
-
-**application.properties**
-(ProgramDataDirectory)/Actian/FileFolderListener/conf/application.properties
-
-Example:
-```
-# GCP Storage Connection Info (key file)
-gcp.storage.service-account-key=C:/ProgramData/AccessKeys/gcp-account-name-1-935e6EXAMPLE.json 
-```
+The Local Folder Listener monitors file folders for files and will execute a pre-defined Job Configuration (config-id) when triggered.
 
 ## Listener Configuration
 
@@ -34,22 +21,22 @@ NOTE: indentation is critical for YAML syntax!
 
 Example:
 ```
-listeners:      
-  - id: gcp-bucket-listener-accounts
+listeners:
+  - id: local-listener-folder-accounts
     config-id: 90378
-    listener-type: gcp
+    listener-type: local
     active: true
-    source-bucket-name: listener-bucket-us-east1-accounts
-    source-bucket-region: us-east1
+    source-directory: C:/DataSources/accounts
     include-pattern: ^Accounts.*
+    exclude-pattern: ^skipme.txt
     filename-override: Accounts.txt
-  - id: gcp-bucket-listener-contacts
+  - id: local-listener-folder-contacts
     config-id: 90379
-    listener-type: gcp
+    listener-type: local
     active: true
-    source-bucket-name: listener-bucket-us-east1-contacts
-    source-bucket-region: us-east1
+    source-directory: C:/DataSources/contacts
     include-pattern: ^Contacts.*
+    exclude-pattern: ^skipme.txt
     filename-override: Contacts.txt
 ```
 
@@ -61,8 +48,10 @@ listeners:
 | listener-type           |         | Available listener types: local, aws, gcp, azure.                                                                                                                                                                                         |
 | config-id               |         | The Job Configuration id to run in Integration Manager.                                                                                                                                                                                   |
 | active                  | true    | Whether or not this listener is active.                                                                                                                                                                                                   |
-| source-bucket-name      |         | The GCP bucket name to monitor for new files.                                                                                                                                                                                             |
-| source-bucket-region    |         | Region of the GCP bucket (Note that GCP region codes are slightly different from AWS S3).                                                                                                                                                 |
+| source-directory        |         | The source directory to monitor for new files.                                                                                                                                                                                            |
 | include-pattern         |         | Includes files if the file name matches the regular expression pattern you specify. See [Cheatsheet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet), [RegexPal](https://www.regexpal.com/) |
-| source-file-prefix      |         | IGNORED. NOT SUPPORTED FOR THIS LISTENER.                                                                                                                                                                                                 |
+| exclude-pattern         |         | Excludes files if the file name matches the regular expression pattern you specify. See [Cheatsheet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet), [RegexPal](https://www.regexpal.com/) |
 | filename-override       |         | This value will override the filename passed to Integration Manager, regardless of the original source file name. The original source file name will always be used for backup and error files.                                           |
+| auto-create-directories | true    | Automatically create missing directories in the source-directory path.                                                                                                                                                                    |
+| recursive               | false   | Look for files in all the sub-directories of the source-directory as well.                                                                                                                                                                |
+| flatten-directories     | false   | Flatten the file name path to strip any leading paths, so it’s just the file name. This allows you to consume recursively into sub-directories, but only track the filename for backup and error purposes.                                |
