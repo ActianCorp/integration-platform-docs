@@ -14,6 +14,11 @@ The File Folder Listener Service is used to monitor file directories and/or clou
 
 These properties are located in (ProgramDataDirectory)/Actian/FileFolderListener/conf/application.properties **OR**
 /etc/opt/actian/integration-agent/conf/listeners.yml (Linux).
+
+> **Note For Linux users:**
+These directories have automatic clean-out functionality and can flush out the system boot files, so make sure they are isolated from your system folders/files. 
+
+
 ```
 listener.backup-directory= #The folder where backups of successfully submitted files will be stored.
 listener.error-directory= #The folder where failed files will be stored, e.g. Exceeded max size, service not running, etc...
