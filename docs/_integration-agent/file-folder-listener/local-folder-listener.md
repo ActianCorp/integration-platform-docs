@@ -12,8 +12,6 @@ The Local Folder Listener monitors file folders for files and will execute a pre
 
 ## Listener Configuration
 
-Note that the File Folder Listener Service must be restarted for any configuration changes to take effect. 
-
 **listeners.yml**
 (ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml
 **OR**
@@ -41,6 +39,10 @@ listeners:
     exclude-pattern: ^skipme.txt
     filename-override: Contacts.txt
 ```
+
+> **Note:**
+> Agent Service must be restarted for any configuration changes to take effect.
+
 
 ## Properties
 
