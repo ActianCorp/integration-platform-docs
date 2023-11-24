@@ -5,7 +5,7 @@ nav_order: 5
 parent: File Folder Listener
 ---
 # Camel File Processing History Management
-All processed files will be moved to this specified configured location.
+All processed & unprocessed file history can be magnaged here.
 
 
 ## Manage Processed File History
