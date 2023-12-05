@@ -2,7 +2,7 @@
 layout: default
 title: Camel File Processing History Management
 nav_order: 5
-parent: File Folder Listener
+parent: Camel Route Configuration
 ---
 # Camel File Processing History Management
 All processed & unprocessed file history can be magnaged here.

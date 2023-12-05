@@ -2,7 +2,7 @@
 layout: default
 title: Camel Route Configuration for Local Storage
 nav_order: 1
-parent: File Folder Listener
+parent: Camel Route Configuration
 ---
 # Camel Route Configuration for Local Storage
 
@@ -11,8 +11,6 @@ parent: File Folder Listener
 The File Folder Listner can be configured with Camel route and its typically consists of a series of processing steps that are connected in a linear sequence.
 
 ## Route Configuration
-
-Note that the File Folder Listener Service must be restarted for any configuration changes to take effect. Make sure you have already completed: File Folder Listener Authorization
 
 **routes-prototype.xml**
 (ProgramDataDirectory)/Actian/FileFolderListener/conf/routes-prototype.xml
@@ -52,3 +50,13 @@ Example:
     </route>
 </routes>
 ```
+## Properties
+
+| Property                | Default | Description                                                                                                                                                                                                                               |
+| :---------------------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| route id                      |         | A unique identifier for the route configuration.                                                                                                                                                                                                     |
+| autoStartup           | false       | This prevent Camel starting the routes on startup.                                                                                                                                                                                         |
+| jobConfigId              |         | The jobConfigId property is configured above with constant value 102712 i.e. (```<constant>102712</constant>```). The constant value is the job configuration Id in your Integration Manager.                                                                                                                                                                                  |
+| recursive       | false       | If a directory, will look for files in all the sub-directories as well.    |
+| filterFile      |         | Filters the file based on Simple language. For example to filter on file size, you can use ```$\{file:size}``` 5000. In the above example filterFile is configured with file that was modified over 14 days ago (i.e. ```${file:modified} &lt; ${date:now-14d}``` ).  |
+| level       | INFO        | Logging level to use. In the above example the log endpoint is configured to trash.  |
