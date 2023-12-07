@@ -77,7 +77,7 @@ const FeatureList = [
  */  },
  {
   title: 'Feedback',
-  Svg: require('@site/static/img/home/Feedback.svg').default,
+  Svg: require('@site/static/img/home/feedback.svg').default,
   link: 'docs/feedback',
 /*     description: (
     <>
