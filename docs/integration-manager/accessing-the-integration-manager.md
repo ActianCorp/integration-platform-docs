@@ -23,6 +23,6 @@ tags:
 
    **<font color="red">Need a better image showing all the widgets with more info.</font>**
 
-4. If logging in as an administrator, you can manage user accounts. Refer to [User Management](./access-control/user-management).
+4. If logging in as an administrator, you can manage user accounts. Refer to [User Management](./admin/access-control/user-management).
 
 
