@@ -293,3 +293,13 @@ h3.featureLink {
   background-size: contain;
   display: inline-block;
 }
+
+/* Put a border around images by default */
+img {
+  border: 1px solid black;;
+}
+
+/* No border for logo or icons */
+div.navbar__logo > img, .icon {
+  border: none;
+}
