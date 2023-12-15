@@ -122,9 +122,10 @@ const sidebars = {
         'integration-manager/admin/admin-overview',
         {
           type: 'category',
-          label: 'Agents and Devices',
+          label: 'Configuring Security',
           items: [
-            'integration-manager/admin/agents-and-devices/managing-agents-and-devices',
+            'integration-manager/admin/security/enabling-https',
+            'integration-manager/admin/security/encryption-at-rest',
           ]
         },
         {
@@ -142,16 +143,12 @@ const sidebars = {
           //link: {type: 'doc', id: 'integration-manager/server-administration/server-administration'},
           items: [
             'integration-manager/admin/server-administration/server-administration-overview',
-            'integration-manager/admin/server-administration/security-enabling-https',
-            'integration-manager/admin/server-administration/security-encryption-at-rest',
             'integration-manager/admin/server-administration/production-architecture',
             'integration-manager/admin/server-administration/production-configuration',
-            'integration-manager/admin/server-administration/workload-management',
             'integration-manager/admin/server-administration/setup-mysql',
             'integration-manager/admin/server-administration/setup-ms-sql-server',
             'integration-manager/admin/server-administration/setup-rabbitmq',
             'integration-manager/admin/server-administration/setup-zookeeper',
-            'integration-manager/admin/server-administration/setup-job-notifications',
             'integration-manager/admin/server-administration/setup-kubernetes',
             'integration-manager/admin/server-administration/server-upgrades',
             'integration-manager/admin/server-administration/integration-engines',
@@ -182,6 +179,8 @@ const sidebars = {
             },
               ]
         },
+        'integration-manager/admin/workload-management',
+        'integration-manager/admin/setup-job-notifications',
         'integration-manager/admin/aggregator-service',
         'integration-manager/admin/server-troubleshooting',
       ]
@@ -212,6 +211,7 @@ const sidebars = {
             'integration-agent/advanced-topics/retrieve-agent-credential',
             'integration-agent/advanced-topics/scriptable-agent-registration',
             'integration-agent/advanced-topics/connecting-to-other-environments',
+            'integration-agent/advanced-topics/windows-service-wrapper',
           ]
         },
         'integration-agent/agent-troubleshooting',
