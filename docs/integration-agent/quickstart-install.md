@@ -7,6 +7,9 @@ tags:
 
 # Quick Start Installation
 
+**<font color="red">This topic does not mention downloading the agent directly from Integration Manager. Should that be included here as an option?</font>**
+
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
