@@ -49,7 +49,6 @@ const sidebars = {
             'integration-manager/configurations/creating-configurations-on-prem',
             'integration-manager/configurations/creating-configurations-cloud',
             'integration-manager/configurations/editing-configuration-details',
-            //'integration-manager/configurations/managing-configurations',
             'integration-manager/configurations/activating-or-inactivating-configurations',
             'integration-manager/configurations/duplicating-configurations',
             'integration-manager/configurations/deleting-configurations',
