@@ -36,8 +36,6 @@ const sidebars = {
           label: 'Jobs',
           items: [
             'integration-manager/jobs/run-your-first-job',
-            'integration-manager/jobs/run-job-with-input-file',
-            'integration-manager/jobs/run-job-with-input-message',
             'integration-manager/jobs/viewing-job-run-history',
             'integration-manager/jobs/job-status-codes',
             'integration-manager/jobs/downloading-the-log-file',
@@ -51,8 +49,10 @@ const sidebars = {
             'integration-manager/configurations/creating-configurations-on-prem',
             'integration-manager/configurations/creating-configurations-cloud',
             'integration-manager/configurations/editing-configuration-details',
+            //'integration-manager/configurations/managing-configurations',
             'integration-manager/configurations/activating-or-inactivating-configurations',
             'integration-manager/configurations/duplicating-configurations',
+            'integration-manager/configurations/deleting-configurations',
             'integration-manager/configurations/creating-configuration-macros',
             'integration-manager/configurations/importing-configuration-macros',
             'integration-manager/configurations/managing-configuration-files',
@@ -71,8 +71,8 @@ const sidebars = {
             'integration-manager/templates/editing-template-details',
             'integration-manager/templates/creating-a-configuration-from-a-template',
             'integration-manager/templates/activating-or-inactivating-templates',
-            'integration-manager/templates/deleting-templates',
-            'integration-manager/templates/managing-template-macros',
+            //'integration-manager/templates/deleting-templates',
+            'integration-manager/templates/importing-template-macros',
             'integration-manager/templates/managing-template-files',
             'integration-manager/templates/managing-template-configurations',
           ]
@@ -106,7 +106,10 @@ const sidebars = {
           type: 'category',
           label: 'APIs',
           items: [
+            'integration-manager/APIs/api-overview',
             'integration-manager/APIs/quickstart-api-tutorial',
+            'integration-manager/APIs/jobconfig-file-listener-api',
+            'integration-manager/APIs/jobconfig-message-listener-api',
             'integration-manager/APIs/sfdc-outbound-messaging-api',
               ]
         },
