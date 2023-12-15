@@ -33,8 +33,9 @@ In order to enable a serialized job queue for a Job Config, you simply set the "
 
 This can be accomplished via a simple API PATCH method:
 
-```
 REQUEST:
+
+```
 PATCH https://api.im.actiandatacloud.com/v2/api/jobconfigs/[jobconfig id]
 Authorization: Bearer [access token value]
 Content-Type: application/json

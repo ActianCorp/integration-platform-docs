@@ -34,8 +34,8 @@ These properties are found in: `shared\_data\_path\conf\application.properties`
 These properties are found in: `shared\_data\_path\conf\worker-application.properties`:
 
 | Property| Description| Default |
-| :---------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------ |
-| server.port | Populated during installation. Port used for Agent-to-Worker communication.If changed, you must also change `worker.api.port` in `shared\_data\_path\conf\application.properties` to match. | `6000`|
+| :---- | :--- | :---- |
+| `server.port` | Populated during installation. Port used for Agent-to-Worker communication.If changed, you must also change `worker.api.port` in `shared\_data\_path\conf\application.properties` to match. | `6000`|
 
 These properties are found in: `shared\_data\_path\conf\worker-control.properties`:
 
