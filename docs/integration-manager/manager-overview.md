@@ -4,7 +4,7 @@ tags:
  - Content Issues
 ---
 
-# Integration Manager Overview
+# Integration Manager OverviewQQ
 
 Integration Manager brings together the flexible APIs and scalable workloads from Actian DataCloud, the rapid integration capabilities of Actian DataConnect, and the raw power of Actian DataFlow into a single platform.
 
