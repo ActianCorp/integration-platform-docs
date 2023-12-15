@@ -6,18 +6,23 @@ tags:
 
 # Aggregator Service
 
-* **<font color="red">Ths topic needs more intoduction. It isn't clear how this fits into the Integration Manager.</font>**
-* **<font color="red">Need to determine where this topic should reside in the sidebar, and whether it should be part of a category with other related topics. For example, should this live under Advanced Topics?</font>**
+**<font color="red">Where in the TOC should this topic live?</font>**
 
 ## Overview
 
-Messages can be submitted to POST: [server base url]/api/aggregators?type=jobconfigs&id=[entity id]. These messages will be aggregated according to the corresponding entry in aggregator-config.yml. When the number of messages received equals completion-size, or the completion-timeout is reached after the last message is received, then the aggregated message will be submitted to [server base url]/api/jobconfigs/[entity id]/listener. The aggregated message can be accessed through djmessage 'msg1' within the dataconnect process.
+**<font color="red">This section needs to start with more high-level introduction.</font>**
+
+Messages can be submitted to:
+
+`POST: [server base url]/api/aggregators?type=jobconfigs&id=[entity id]`
+
+These messages will be aggregated according to the corresponding entry in `aggregator-config.yml`. When the number of messages received equals completion-size, or the completion-timeout is reached after the last message is received, then the aggregated message will be submitted to `[server base url]/api/jobconfigs/[entity id]/listener`. The aggregated message can be accessed through djmessage 'msg1' within the dataconnect process.
 
 ## Aggregator Configuration
 
-Note that the File Folder Listener Service must be restarted for any configuration changes to take effect. Make sure you have already completed: File Folder Listener Authorization.
-
-**<font color="red">Where are the instructions for File Folder Listener Authorization?</font>**
+:::note
+The File Folder Listener Service must be restarted for any configuration changes to take effect. Make sure you have already completed: [Authorizing the File Folder Listener Service](./file-folder-listener/file-folder-listener-service#authorizing-the-file-folder-listener-service).
+:::
 
 **aggregator-config.yml**
 (ProgramDataDirectory)/Actian/IntegrationManager/conf/aggregator-config.yml
