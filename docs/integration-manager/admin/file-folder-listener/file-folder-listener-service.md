@@ -35,7 +35,7 @@ The File Folder Listener uses OAuth 2.0 Device Authorization (https://datatracke
 
 :::caution[Important]
 
-We strongly recommend that you enable HTTPS for your Integration Manager server to protect your data across the wire. For more information, see [Enabling HTTPS](../server-administration/security-enabling-https).
+We strongly recommend that you enable HTTPS for your Integration Manager server to protect your data across the wire. For more information, see [Enabling HTTPS](../security/enabling-https).
 
 :::
 
@@ -45,8 +45,8 @@ To authorize the File Folder Listener Service:
 * http://im-server-hostname.company.net:8080/api
 * https://im-server-hostname.company.net:443/api
 
-2. Open a browser window.
-3. Navigate to the device code retrieval URL:
+1. Open a browser window.
+2. Navigate to the device code retrieval URL:
 
     ```
     <im-api-base-url>/device/code?client_id=file-folder-listener&host=<file-folder-listener-hostname>
@@ -67,7 +67,7 @@ To authorize the File Folder Listener Service:
 
     :::
 
-4. When prompted, enter your Integration Manager User authentication credentials.
+3. When prompted, enter your Integration Manager User authentication credentials.
    
    Response should look like:
    ```
@@ -82,7 +82,7 @@ To authorize the File Folder Listener Service:
        }
     }
    ```
-5. Since you are already authenticated, simply click the device approval URL for “verification_uri_complete.”
+4. Since you are already authenticated, simply click the device approval URL for “verification_uri_complete.”
    
    Response should look like:
    ```
@@ -94,7 +94,7 @@ To authorize the File Folder Listener Service:
     im.user-code=ZEPQ-VOK8
    ```
 
-6. In the &lt;ProgramDataDirectory>\Actian\FileFolderListener\conf\application.properties file, delete any duplicate entries and then copy and paste the response into the file.
+5. In the &lt;ProgramDataDirectory>\Actian\FileFolderListener\conf\application.properties file, delete any duplicate entries and then copy and paste the response into the file.
    
 ## Platform Listener Configurations
 
