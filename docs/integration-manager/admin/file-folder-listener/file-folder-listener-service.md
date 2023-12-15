@@ -1,5 +1,7 @@
 ---
 title: File Folder Listener Service
+tags:
+ - Content Issues
 ---
 
 # File Folder Listener Service
@@ -107,13 +109,15 @@ Follow the appropriate link for the Listener you want to configure:
 
 You can add these properties to &lt;ProgramDataDirectory>\Actian\FileFolderListener\conf\application.properties to further customize behavior.
 
-| Property | Default&nbsp;Value | Description|
+| <div style={{width: 220}}>Property</div> | Default&nbsp;Value | Description|
 | :--- | :--- | :--- |
-| listener.retain-backup-files | true | Set this to false to not retain backup files. Error files will still be saved. |
-| listener.backup-directory-max-file-age | 7 | The number of days backup files are retained |
-| listener.error-directory-max-file-age | 14 | The number of days error files are retained |
+| `listener.retain-backup-files` | true | Set this to false to not retain backup files. Error files will still be saved. |
+| `listener.backup-directory-max-file-age` | 7 | The number of days backup files are retained |
+| `listener.error-directory-max-file-age` | 14 | The number of days error files are retained |
 
-# File Size Configuration and Limitations
+## File Size Configuration and Limitations
+
+**<font color="red">In the current help, ths topic is listed twice -- once in User Guide (under the JobConfig File Listener API topc) and the System Administration Guide (under Authorizing and Configuring the File Folder Listener Service). Which is the appropriate location for this?</font>**
 
 File size limitations are governed by the Integration Manager multipart file configuration in the &lt;ProgramDataDirectory>\Actian\IntegrationManager\conf\application.properties file.
 

@@ -7,9 +7,7 @@ tags:
 # Run Your First Job
 
 :::note
-
 This topic is intended to provide an overview of running jobs in the Integration Manager. If you haven't yet run a job, some of the steps in this process might require further explanation. Refer to the links provided.
-
 :::
 
 ## Step 1: Create a Configuration

@@ -10,8 +10,8 @@ tags:
 
 You can upload files for use with your configurations. These can be public files or private files.
 
-* Private Files can be created, edited, or deleted by the logged–in user. These files are visible to administrators.
-* Public Files can be seen and accessed by any user. They can be created, edited, or deleted only by an administrator.
+* **Private Files** can be created, edited, or deleted by the logged–in user. These files are visible to administrators.
+* **Public Files** can be seen and accessed by any user. They can be created, edited, or deleted only by an administrator.
 
 ## Viewing Configuration Files
 
@@ -36,14 +36,14 @@ To upload files to a configuration:
 
 1. On the **Configuration Files** page, click the **Upload File** button:
    
-   ![Upload File Button](/img/Upload-File-Button.png)
+   ![Upload File Button](/img/Configuration-Upload-File-Button.png)
 2. In the **Upload Files** dialog, drop one or more files or click **BROWSE FILES** and select one or more files.
-3. The files are added to the **Uploading Files** dialog. You can click &nbsp;![the Unlink icon](/img/icons/unlink.png) to remove any files.
+3. The files are added to the **Uploading Files** dialog. You can click <img src="/img/icons/unlink.png" className="icon" alt="the Unlink iconn"/> to remove any files.
 
    ![Uploading Files](/img/Uploading-Files-Dialog.png)
 4. Click the **DONE** button. The files are added to the **Configuration Files** list:
 
-   ![Uploaded Files](/img/Uploaded-Files.png)
+   ![Uploaded Files](/img/Configuration-Uploaded-Files.png)
 
 ## Linking a Private File in the File Repository
 
@@ -92,7 +92,7 @@ You can upload or link multiple package files to a configuration, but only one p
 
 To select a different package:
 
-1. On the **Configuration Details** page, click &nbsp;![the Edit icon](/img/icons/edit-icon.png)&nbsp; to the right of **Package Uploaded**:
+1. On the **Configuration Details** page, click <img src="/img/icons/edit-icon.png" className="icon" alt="the Edit icon"/> to the right of **Package Uploaded**:
 
    ![Package Uploaded Edit](/img/Package-Uploaded-Edit.png)
 2. In the **Upload Packages & Files** dialog, select a package and click **DONE**:
@@ -106,7 +106,7 @@ To select a different package:
 
 1. Click the filename:
 
-   ![Download Files](/img/Download-File.png)&nbsp;:
+   ![Download Files](/img/Download-File.png)&nbsp;
 2. In the **Save As** window, navigate to the desired folder and click **Save**.
  
 ## Deleting Configuration File Links

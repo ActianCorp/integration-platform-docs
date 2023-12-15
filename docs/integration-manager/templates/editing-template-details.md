@@ -1,7 +1,5 @@
 ---
 title: Editing Template Details
-tags:
- - Content Issues
 ---
 
 # Editing Template Details
@@ -32,8 +30,6 @@ Refer to the following:
 * [Managing Template Configurations](./managing-template-configurations) 
 
 ## Template Properties
-
-**<font color="red">TO DO: Compare with Configuration Properties table to see what we can reuse. Also, should we change "template owner name" to just "owner name" so we can reuse the Owner row between Templates and Configurations, or create a variable for that one word? Same for Change Log row.</font>**
 
 | Properties | Editable | Description |
 | --- | --- | --- |

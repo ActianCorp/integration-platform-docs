@@ -30,7 +30,15 @@ You can set the configuration status to Active or Inactive from either the **Con
 
    ![Configuration Status Toggle](/img/Configuration-Status-Toggle.png)
 
-## Setting Multiple Configurations to Active or Inactive
+## From the Template Configurations Page
+
+1. Select the **Template** tab.
+2. Click the template that you want to edit.
+3. On the **Template Configurations** page, select the desired configuration(s), click the dropdown arrow next to the **Run** button above the list, then select **Active** or **Inactive**:
+
+   ![](/img/Template-Configuration-Set-Active.png)
+
+## Activivating/Inactivating Multiple Configurations
 
 1. Select the checkbox to the left of the desired configurations.
 2. Click the dropdown arrow next to the common **Run** button on the top right of the Configurations list, and then select **Inactive** or **Active**:

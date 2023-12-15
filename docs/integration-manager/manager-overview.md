@@ -33,9 +33,9 @@ This section describes the terminology used in the Integration Manager so you ca
 
 ### Integrations
 
-**<font color="red">This section might be too obvious for the typical user. But as a new user myself, I don't yet know how you actually create an integration. Could we provide links here to the design environment?</font>**
+**<font color="red">Might need to expand/edit these definitions.</font>**
 
-Data integrations enable the transformation and migration of data by visually mapping fields between a defined source and target. When you build and test an integration, it resides in the Design environment. The Design environment provides for the creation and management of data integration designs. For details on designing integrations, see **<font color="red">Link</font>**.
+Data integrations enable the transformation and migration of data by visually mapping fields between a defined source and target. When you build and test an integration, it resides in the Design environment. The Design environment provides for the creation and management of data integration designs. For details on designing integrations, see <a href="https://docs.actian.com/actiandataplatform/index.html#page/Integrations/Design.htm#ww708298" className="externalLink" target="_blank">Overview of the Design Environment</a>.
 
 ### Configurations
 
@@ -46,7 +46,7 @@ A configuration is a set of properties and parameters that specify when, where, 
 Jobs are reports about the run results of the configurations you execute, and include details including whether the run was successful, the run duration, and log file data. Jobs are not editable. See [Run Your First Job](./jobs/run-your-first-job) and [Viewing Job Run History](./jobs/viewing-job-run-history).
 
 :::note
-The Integrations console utilizes a RESTful interface. You can use the <font color="red">REST API (nned intro topic)</font> for Integration Manager to change configuration options and automate the execution of your configurations.
+The Integrations console utilizes a RESTful interface. You can use the REST API for Integration Manager to change configuration options and automate the execution of your configurations. See [Job Execution APIs](./APIs/api-overview.md).
 :::
 
 ### Macros
