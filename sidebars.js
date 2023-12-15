@@ -112,6 +112,26 @@ const sidebars = {
             'integration-manager/APIs/sfdc-outbound-messaging-api',
               ]
         },
+        {
+          type: 'category',
+          label: 'Managing Agents and Devices',
+          items: [
+            'integration-manager/agents-and-devices/managing-agents-and-devices',
+            'integration-manager/agents-and-devices/download-agent',
+            'integration-manager/agents-and-devices/install-agent',
+            'integration-manager/agents-and-devices/register-agent',
+            'integration-manager/agents-and-devices/view-registered-agents',
+            'integration-manager/agents-and-devices/ping-agent',
+            'integration-manager/agents-and-devices/request-log',
+            'integration-manager/agents-and-devices/view-log',
+            'integration-manager/agents-and-devices/update-agent',
+            'integration-manager/agents-and-devices/activate-agent',
+            'integration-manager/agents-and-devices/deregister-agent',
+            'integration-manager/agents-and-devices/execute-config-with-agent',
+            'integration-manager/agents-and-devices/execute-template-with-agent',
+            'integration-manager/agents-and-devices/other-authorized-devices',
+              ]
+        },
       ]
     },
     {
