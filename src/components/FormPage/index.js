@@ -5,6 +5,7 @@
   export default function Form() {
     const [formData, setFormData] = useState({ message: "" });
     const [isOpen, setIsOpen] = useState(false);  
+    const pageURL = window.location.href;  
     const handleChange = (e) => {
       e.preventDefault();
       setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -21,7 +22,7 @@
         {isOpen ? ( 
           <form data-netlify="true" name="feedback" method="post">
             <input type="hidden" name="form-name" value="feedback" />        
-            <input type="hidden" name="pageURL" value="TEST" />
+            <input type="text" name="pageURL" value="{pageURL}" className="hidden" readOnly />
             <div>
               <div className="feedbackDiv">
                 <label className="formLabel">Your feedback helps us improve our docs!</label><br />
