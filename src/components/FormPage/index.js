@@ -1,7 +1,6 @@
   // Formpage\index.js
   const React = require("react");
   const { useState } = React;
-  const pageURL = window.location.href;
 
   export default function Form() {
     const [formData, setFormData] = useState({ message: "" });
@@ -22,7 +21,7 @@
         {isOpen ? ( 
           <form data-netlify="true" name="feedback" method="post">
             <input type="hidden" name="form-name" value="feedback" />        
-            <input type="hidden" name="pageURL" value={pageURL} />
+            <input type="hidden" name="pageURL" value="TEST" />
             <div>
               <div className="feedbackDiv">
                 <label className="formLabel">Your feedback helps us improve our docs!</label><br />
