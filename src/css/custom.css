@@ -307,3 +307,48 @@ div.navbar__logo > img, .icon {
 .hidden {
   display: none;
 }
+
+input {
+  height: 40px;
+  width: 300px;
+}
+
+textarea {
+  border: 1px solid #ccc;
+  display: block;
+  font-size: 11pt;
+  width: 500px;
+  padding: 12px 20px;
+  margin: 6px 0;
+  border-radius: 8px;
+  background: none;
+  box-sizing: border-box;
+  font-family: 'Red Hat Text';
+  font-size: 16px;
+}
+
+input {
+  border: 1px solid #ccc;
+  display: block;
+  font-size: 11pt;
+  width: 150px;
+  border-radius: 8px;
+  background: none;
+  box-sizing: border-box;
+  font-family: 'Red Hat Text';
+}
+
+input[type="submit"]:hover {
+  background: #AAAAAA;
+  font-family: 'Red Hat Text';
+}
+
+.formLabel {
+  color: #1fcc1f;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.feedbackDiv {
+  margin-top: 20px;
+}
