@@ -19,6 +19,7 @@ Actian, Actian DataCloud, Actian DataConnect, Actian X, Avalanche, Versant, PSQL
         <div>
         <label>Your feedback helps us improve our docs!</label><br />
         <textarea type="text" name="message" />
+        <input type="text" name="pageURL"/>
         <input type="submit" />
         </div>
     </div>
