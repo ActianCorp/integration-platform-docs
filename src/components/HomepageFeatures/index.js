@@ -9,8 +9,7 @@ const FeatureList = [
     link: 'docs/',
   /*     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Using custom feature box instead of this description.
       </>
     ),
   */  },
@@ -20,8 +19,7 @@ const FeatureList = [
     link: 'docs/integration-manager/manager-overview',
 /*     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Using custom feature box instead of this description.
       </>
     ),
  */  },
@@ -31,7 +29,7 @@ const FeatureList = [
     link: 'docs/integration-manager/admin/admin-overview',
  /*    description: (
       <>
-
+        Using custom feature box instead of this description.
       </>
     ), */
   },
@@ -41,7 +39,7 @@ const FeatureList = [
     link: 'docs/integration-agent/agent-overview',
  /*    description: (
       <>
-
+        Using custom feature box instead of this description.
       </>
     ), */
   },
@@ -51,7 +49,7 @@ const FeatureList = [
     link: 'docs/release-notes',
  /*    description: (
       <>
-
+        Using custom feature box instead of this description.
       </>
     ), */
   },
@@ -61,7 +59,7 @@ const FeatureList = [
     link: 'docs/common-tasks',
   /*     description: (
       <>
-
+        Using custom feature box instead of this description.
       </>
     ),
   */  },
@@ -71,7 +69,7 @@ const FeatureList = [
     link: 'docs/faq',
 /*     description: (
       <>
-
+        Using custom feature box instead of this description.
       </>
     ),
  */  },
@@ -81,7 +79,7 @@ const FeatureList = [
   link: 'docs/feedback',
 /*     description: (
     <>
-
+        Using custom feature box instead of this description.
     </>
   ),
 */  },
