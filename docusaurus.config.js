@@ -14,7 +14,7 @@ const config = {
 
   // Set the production url of your site here
   //url: 'https://douglaslloyd.github.io', // GitHub Pages
-  url: 'https://main--thriving-buttercream-c6ef77.netlify.app/', // Netlify
+  url: 'https://integration-platform-docs.netlify.app/', // Netlify
   // Set the /<baseUrl>/ pathname under which your site is served
   //baseUrl: '/integration-platform-docs/', // GitHub Pages - '/<projectName>/'
   baseUrl: '/', // AWS, Netlify
@@ -137,7 +137,7 @@ const config = {
             dropdownActiveClassDisabled: true,
           },
 //          {
-//            href: 'https://github.com/douglaslloyd/integration-platform-docs/tree/gh-pages',
+//            href: 'https://github.com/ActianCorp/integration-platform-docs/tree/main/', // Moved to footer
 //            position: 'right',
 //            className: 'header-github-link',
 //            title: "Actian Integration Platform Docs - GitHub",
