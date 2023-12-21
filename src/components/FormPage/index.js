@@ -23,7 +23,7 @@
           <form data-netlify="true" name="feedback" method="post">
             <input type="hidden" name="form-name" value="feedback" />        
             <BrowserOnly>
-              {() => <input type="text" name="pageURL" value="{window.location.href}" className="hidden" readOnly />}
+              {() => <input type="text" name="pageURL" value={window.location.href} className="invisible" readOnly />}
             </BrowserOnly>
             
             <div>
