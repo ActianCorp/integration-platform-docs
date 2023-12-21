@@ -7,7 +7,7 @@
   export default function Form() {
     const location = useLocation()
     console.log(location);
-    const [formData, setFormData] = useState({ message: "", pageURL: location });
+    const [formData, setFormData] = useState({ message: "", pageURL: location.pathname });
     const [isOpen, setIsOpen] = useState(false);  
     const handleChange = (e) => {
       e.preventDefault();
@@ -29,6 +29,7 @@
               <div className="feedbackDiv">
                 <label className="formLabel">Your feedback helps us improve our docs!</label><br />
                 <textarea type="text" name="message" required minLength="10" id="message" rows="6" placeholder="Comments, questions, good, bad - please let us know." value={formData.message} onChange={handleChange} />
+                <input type="text" value={formData.pageURL}/>
                 <input type="submit" value={"Send Feedback"}/>
               </div>
             </div>
