@@ -6,6 +6,8 @@ import LastUpdated from '@theme/LastUpdated';
 import EditThisPage from '@theme/EditThisPage';
 import TagsListInline from '@theme/TagsListInline';
 import styles from './styles.module.css';
+import Form from '@site/src/components/FormPage';
+
 function TagsRow(props) {
   return (
     <div
@@ -28,9 +30,7 @@ function EditMetaRow({
   return (
     <div className={clsx(ThemeClassNames.docs.docFooterEditMetaRow, 'row')}>
       <div className="col">{editUrl && <EditThisPage editUrl={editUrl} />}
-        <a href="#" className="navbar__link" data-fr-widget>
-            <span className='pageFeedback'>&nbsp;&nbsp;Page&nbsp;Feedback</span>
-        </a>
+        <Form />
       </div>
 
       <div className={clsx('col', styles.lastUpdated)}>
