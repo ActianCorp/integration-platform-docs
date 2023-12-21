@@ -1,6 +1,7 @@
   // Formpage\index.js
   const React = require("react");
   const { useState } = React;
+  const pageURL = window.location.href;
 
   export default function Form() {
     const [formData, setFormData] = useState({ message: "" });
@@ -14,25 +15,22 @@
       setIsOpen(!isOpen);
     };
    return (
-      <div>
-        <div>
+      <span>
         <a onClick={toggle} href="#" className="navbar__link">
             <span className='pageFeedback'>&nbsp;&nbsp;Page&nbsp;Feedback</span>
         </a>
-        </div>
         {isOpen ? ( 
           <form data-netlify="true" name="feedback" method="post">
-            <input type="hidden" name="form-name" value="feedback" />            
+            <input type="hidden" name="form-name" value="feedback" />        
+            <input type="hidden" name="pageURL" value={pageURL} />
             <div>
-              <div>
-                <label>Your feedback helps us improve our docs!</label><br />
-                <textarea type="text" name="message"
-                  placeholder="Enter feedback here..." value={formData.message}
-                  onChange={handleChange} />
-                <input type="submit" />
+              <div className="feedbackDiv">
+                <label className="formLabel">Your feedback helps us improve our docs!</label><br />
+                <textarea type="text" name="message" required minLength="10" id="message" rows="6" placeholder="Comments, questions, good, bad - please let us know." value={formData.message} onChange={handleChange} />
+                <input type="submit" value={"Send Feedback"}/>
               </div>
             </div>
             </form>) : ( "" )
     }
-    </div>
+    </span>
   )}
