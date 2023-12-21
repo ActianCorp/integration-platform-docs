@@ -3,7 +3,7 @@
   const { useState } = React;
 
   export default function Form() {
-    const [formData, setFormData] = useState({ name: "", message: "" });
+    const [formData, setFormData] = useState({ message: "" });
     const [isOpen, setIsOpen] = useState(false);  
     const handleChange = (e) => {
       e.preventDefault();
@@ -27,9 +27,9 @@
               <div>
                 <label>Your feedback helps us improve our docs!</label><br />
                 <textarea type="text" name="message"
-                  placeholder="type here" value={formData.message}
+                  placeholder="Enter feedback here..." value={formData.message}
                   onChange={handleChange} />
-                <button>send feedback</button>
+                <input type="submit" />
               </div>
             </div>
             </form>) : ( "" )
