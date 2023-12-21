@@ -17,13 +17,13 @@ To create a configuration from a template:
    The **Template Details** page is displayed.
 3. On the **Template Details** page, click **Create Configuration**.
 
-   The **Data Integration Setup** page is displayed. **<font color="red">The default source that is associated with the template is preselected. This is in the Avalanche docs. Is it relevant here?</font>**
+   The **Data Integration Setup** page is displayed. <font color="red">The default source that is associated with the template is preselected. This is in the Avalanche docs. Is it relevant here?</font>
 4. Enter a unique name for your configuration.
 5. (Optional) Select a different template.
 
     :::caution[IMPORTANT]
 
-    Care is required if you are changing the source and template. **<font color="red">This needs further explanation.</font>**
+    Care is required if you are changing the source and template. <font color="red">This needs further explanation.</font>
 
     :::
 

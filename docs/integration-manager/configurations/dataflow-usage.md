@@ -15,7 +15,7 @@ For convenience, DataFlow 8.0 is embedded within Integration Manager powered by 
 ## Prerequisites
 
 * DataCloud subscribers must have access to DataFlow out-of-box without additional configuration.
-* On-premise and VPC deployments of Integration Manager may require additional setup. See [Dataflow Properties](../admin/file-folder-listener/dataflow-properties.md). **<font color="red">Please verify that this is the correct link.</font>**
+* On-premise and VPC deployments of Integration Manager may require additional setup. See [Dataflow Properties](../admin/file-folder-listener/dataflow-properties.md). <font color="red">Please verify that this is the correct link.</font>
 
 
 
@@ -23,7 +23,7 @@ For convenience, DataFlow 8.0 is embedded within Integration Manager powered by 
 
 Integration Manager uses the dr command line interface to execute DataFlow applications. Before creating any DataFlow configurations, you should familiarize yourself with the dr interface concepts. You can learn more about these concepts in the DataFlow <a href="https://docs.actian.com/dataflow/8.0/#page/TroubleshootingRef/TroubleshootRef_Title.htm" className="externalLink" target="_blank">Troubleshooting and Reference Guide</a>.
 
-**<font color="red">This link was broken, and also linked to DataFlow version 7.0. What strategy do we want to use to ensure that links to other documentation are updated with new releases?</font>**
+<font color="red">This link was broken, and also linked to DataFlow version 7.0. What strategy do we want to use to ensure that links to other documentation are updated with new releases?</font>
 
 
 Three DataFlow application types are supported:
@@ -36,7 +36,7 @@ To learn more about creating DataFlow applications, see the <a href="https://doc
 
 ## RushScript (.js) Setup
 
-1. Create a new Job Config. **<font color="red">Link the to the Creating Configurations topic once we've fixed the dual topics problem and have one topic instead of separate topics for on-prem and cloud.</font>**
+1. Create a new Job Config. <font color="red">Link the to the Creating Configurations topic once we've fixed the dual topics problem and have one topic instead of separate topics for on-prem and cloud.</font>
 2. Upload your RushScript as the package (must have .js extension).
 3. Optionally upload additional scripts or other files to the Files section, which will be injected using the "--includedir" command line option.
 4. Optionally add entries to the Macros section, which will be injected using the "--variable" command line option. Note that the macro value text will be escaped accordingly when the command is constructed.
@@ -49,7 +49,7 @@ To learn more about creating DataFlow applications, see the <a href="https://doc
 1. Create a new Job Config.
 2. Upload your Json Graph as the package (must have .json extension).
 3. Optionally upload a properties file named `override.properties` to the Files section, which will be injected using the<br /> `--overridefile` command line option.
-4. Optionally add entries to the Macros section, which will be injected using the "--override" command line option. Each macro can only override an operator within the graph, and **must** use the convention of 
+4. Optionally add entries to the Macros section, which will be injected using the "--override" command line option. Each macro can only override an operator within the graph, and must use the convention of 
  
     > MacroName=&lt;<code>operatorName.operatorProperty</code>> and  
     > MacroValue=&lt;<code>overrideTextValue</code>>. 
@@ -61,7 +61,7 @@ To learn more about creating DataFlow applications, see the <a href="https://doc
 
 ## Java Application (.jar) Setup
 
-1. Create a new Job Config. **<font color="red">Link the to the Creating Configurations topic once we've fixed the dual topics problem and have one topic instead of separate topics for on-prem and cloud.</font>**
+1. Create a new Job Config. <font color="red">Link the to the Creating Configurations topic once we've fixed the dual topics problem and have one topic instead of separate topics for on-prem and cloud.</font>
 2. Upload your Java Application .jar file as the package.
 3. Type in the fully qualified main class within the jar as the entry point, e.g. com.foo.bar.MainClass, not MainClass.
 4. Optionally add entries to the Macros section, which will be injected as an environment variable to the JVM. Note that the macro value text will be escaped accordingly when the command is constructed.

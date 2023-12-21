@@ -21,7 +21,7 @@ Aliasing allows you to:
 	* API Keys (defined separately for each Alias you create)
 	* Public access (not recommended to service consumers outside of your internal network)
 
-**<font color="red">The current docs include this content, but not in the "unoffical" docs on GH Pages. Is this appropriate here?</font>**
+<font color="red">The current docs include this content, but not in the "unoffical" docs on GH Pages. Is this appropriate here?</font>
 
 As an example, you can turn this:
 ```
@@ -49,7 +49,7 @@ Content-Type: application/json
 
 ## API Details
 
-**<font color="red">The current docs include this content, but not in the "unoffical" docs on GH Pages. Is this appropriate here?</font>**
+<font color="red">The current docs include this content, but not in the "unoffical" docs on GH Pages. Is this appropriate here?</font>
 
 * Maximum payload size is 750KB
 * Maximum synchronous wait time is 30 seconds
@@ -91,11 +91,11 @@ Content-Type: application/json
 
    ![](/img/Create-Alias5.png)
 
-7. Either select an existing IP Address, or enter a new IP Address and Label, then click **Add**. **<font color="red">Need details for this step.</font>**
+7. Either select an existing IP Address, or enter a new IP Address and Label, then click **Add**. <font color="red">Need details for this step.</font>
 
    ![](/img/Create-Alias6.png)
 
-   **<font color="red">When I select a value from the dropdown rather than enter an IP address manually, I get HTML code in the IP Address field:</font>**
+   <font color="red">When I select a value from the dropdown rather than enter an IP address manually, I get HTML code in the IP Address field:</font>
    ![](/img/QUESTION.png)
 
 8. Click **Save**:
@@ -117,10 +117,10 @@ The Access Key and Secret Key are used for programmatic (API) access to your lis
 
    ![](/img/Create-Alias9.png)
 
-    **<font color="red">If I generate a key, then delete it, I am unable to then enter my own. Is this intended, and if so, why?</font>**
+    <font color="red">If I generate a key, then delete it, I am unable to then enter my own. Is this intended, and if so, why?</font>
 
 3. The following dialog is displayed. Click **Generate Keys**:
-      **<font color="red">Do we need to add details about updating all clients?</font>**
+      <font color="red">Do we need to add details about updating all clients?</font>
 
    ![](/img/Create-Alias10.png)
 
@@ -142,7 +142,7 @@ The Access Key and Secret Key are used for programmatic (API) access to your lis
 3. The listener is updated with the generated keys.
 
    ![](/img/Create-Alias11.png)
-      **<font color="red">Why do you not get the dialog about needing to updating all clients when entering your own key?</font>**
+      <font color="red">Why do you not get the dialog about needing to updating all clients when entering your own key?</font>
 
 ## Step 3: TestInvoke the Alias
 
@@ -155,7 +155,7 @@ You can invoke an Alias, that is, run a JobConfig, through the Job Execution API
 
 See the Job Execution API for more details: [https://api.im.actiandatacloud.com/v2/apidocs/#/Job%20Execution/runAliasWithMessage](https://api.im.actiandatacloud.com/v2/apidocs/#/Job%20Execution/runAliasWithMessage).
 
-**<font color="red">The current docs have this content instead. Is this incorrect, or does the above need to be updated?</font>**
+<font color="red">The current docs have this content instead. Is this incorrect, or does the above need to be updated?</font>
 
 :::danger[Warning]
 Using HTTPS is always recommended. Otherwise, API tokens, credentials, and payloads are subject to hijack. HTTPS is always enabled and enforced for DataCloud and VPC deployments.

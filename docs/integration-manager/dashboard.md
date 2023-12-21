@@ -1,7 +1,6 @@
 ---
 title: Dashboard
 tags:
- - Bugs
  - Content Issues
  - Image Issues
 ---
@@ -20,7 +19,7 @@ For any widget that shows ![the download icon](/img/icons/download-button.png), 
 
 ### Recent Jobs
 
-Recent Jobs provides a table of recently-run jobs, and displays details and status for each job. Click the Start, Name, Type, Status, or Duration column headings to toggle between ascending and descending sort order. **<font color="red">Need image with better data.</font>**
+Recent Jobs provides a table of recently-run jobs, and displays details and status for each job. Click the Start, Name, Type, Status, or Duration column headings to toggle between ascending and descending sort order.
 
    ![Recent Jobs Widget](/img/Recent-Jobs-Widget.png)
 
@@ -34,13 +33,13 @@ The ALL JOBS chart displays the number of integrations executed for the selected
 
 ### FAILED JOBS
 
-The FAILED JOBS chart represents the number of failed integrations executed for the selected time period (30, 60 or 90 days). Hover over the chart to see the value per day. **<font color="red">Need image with data.</font>**
+The FAILED JOBS chart represents the number of failed integrations executed for the selected time period (30, 60 or 90 days). Hover over the chart to see the value per day. <font color="red">Need image with more data.</font>
 
    ![Failed Jobs Widget](/img/Failed-Jobs-Widget.png)
 
 ### JOB STATUS
 
-The JOB STATUS chart represents run results status for configuration jobs executed during the selected time period (30, 60 or 90 days). **<font color="red">Need image with data.</font>**
+The JOB STATUS chart represents run results status for configuration jobs executed during the selected time period (30, 60 or 90 days).
 
    ![Job Status Widget](/img/Job-Status-Widget.png)
 
@@ -55,7 +54,7 @@ Sync result status can be:
 
 ### AGENT HEALTH
 
-The AGENT HEALTH chart represents the health status of agents a user has installed. In the following figure, the user has one agent installed and its status is Error. Hover over the chart to see the value per day. **<font color="red">Took this from Avalanche docs. Not sure if it's exactly the same on IM (I need data to test).</font>**
+The AGENT HEALTH chart represents the health status of agents a user has installed. In the following figure, the user has one agent installed and its status is Error. Hover over the chart to see the value per day. <font color="red">Very minor issue, but it would be nice if we added a condition such as "if numAgents == 1 then 'Agent' else 'Agents'" so we don't get the "1 Agents" label here.</font>
 
    ![Agent Health Widget](/img/Agent-Health-Widget.png)
 
@@ -71,7 +70,7 @@ You can verify whether the agent is running, and also start the agent service, b
 
 ### News & Announcements
 
-**<font color="red">This widget disappeared and I can't get it back.</font>**
+<font color="red">Need some content in this widget so I can take a screenshot. How can we populate some fake data in Dev?</font>
 
 ## Customizing the Dashboard
 
@@ -91,7 +90,7 @@ To remove a widget from your Dashboard, do one of the followng:
 
    ![Remove Widget](/img/Remove-Widget.png)
 
-* Click ![the ellipsis icon](/img/icons/ellipsis.png) and select <b>Settings</b> to open the <b>Dashboard Settings</b> panel. Click ![the X icon](/img/icons/remove.png) in the **Current** section. It will move to the **Available** section. <font color="red">This appears to be a bug. Once removed, I can never get it back. It disappears from the Dashboard Setting panel entirely.</font>
+* Click ![the ellipsis icon](/img/icons/ellipsis.png) and select <b>Settings</b> to open the <b>Dashboard Settings</b> panel. Click ![the X icon](/img/icons/remove.png) in the **Current** section. It will move to the **Available** section.
    
    ![Dashboard Settings Panel](/img/Dashboard-Settings-Panel.png)
 

@@ -6,7 +6,7 @@ tags:
 
 # Using the LOCAL_JOB_SPEC_DIR Macro
 
-**<font color="red">Images need updating.</font>**
+<font color="red">Images need updating.</font>
 
 The macro LOCAL_JOB_SPEC_DIR is automatically configured for your jobs running on Integration Manager. It will be automatically populated with the location of where additional files are downloaded to when your job runs.
 

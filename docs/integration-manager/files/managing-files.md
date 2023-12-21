@@ -5,7 +5,7 @@ tags:
 ---
 # Managing Files
 
-**<font color="red">It would be helpful to have an intro describing the different use cases for the different file types (packages, .process files, JSON/XML, etc.).</font>**
+<font color="red">It would be helpful to have an intro describing the different use cases for the different file types (packages, .process files, JSON/XML, etc.).</font>
 
 You can upload and manage files for use with your configurations and templates. These can be private files or public files.
 

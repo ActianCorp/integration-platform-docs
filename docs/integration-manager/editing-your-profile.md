@@ -21,7 +21,7 @@ On the **My Profile** page, non-admin users can edit their name and change their
 
 ## Changing Your Password
 
-   **<font color="red">How do you reset your password when you've forgotten it?</font>**
+   <font color="red">How do you reset your password when you've forgotten it?</font>
 
 1. Enter your new password in the Password textbox, or select the **Auto-Generate Password** checkbox.
 

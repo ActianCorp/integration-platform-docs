@@ -6,7 +6,7 @@ tags:
 
 # Managing Configuration Files
 
-**<font color="red">Need to explain the different use cases for configuration files (packages, process files, etc.).</font>**
+<font color="red">Need to explain the different use cases for configuration files (packages, process files, etc.).</font>
 
 You can upload files for use with your configurations. These can be public files or private files.
 

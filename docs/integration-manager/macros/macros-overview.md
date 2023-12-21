@@ -6,7 +6,7 @@ tags:
 
 # Macros Overview
 
-**<font color="red">We use Job Config, JOBCONFIG, Config, and Configuration throughout the docs. Are all configurations considered Job Configs? Is this because the runtime macros property names are JOB_CONFIG_*? It would be helpful to use consistent terminology throughout.</font>**
+<font color="red">We use Job Config, JOBCONFIG, Config, and Configuration throughout the docs. Are all configurations considered Job Configs? Is this because the runtime macros property names are JOB_CONFIG_*? It would be helpful to use consistent terminology throughout.</font>
 
 Macros enable you to run a single integration for different types of users without having to modify the integration itself. Macros are defined when the integration is in the configuration state. Macros can save you time and reduce errors at runtime.
 

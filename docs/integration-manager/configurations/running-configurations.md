@@ -42,7 +42,7 @@ Schedules can be set to automatically run a configuration on a defined schedule.
 
 ## Run with Message
 
-**<font color="red">Need an intro explaining what this does.</font>**
+Running a configuration with a message allows you to pass a message object/body into a DataConnect job at runtime. The message object has a default name of “msg1” and the body (msg1.body) contents are specified within the **Run with Message** dialog. There must be a reference to “msg1” within your DataConnect djar to run a configuration with a message.
 
 1. Do one of the following:
    * From the **Configurations** page, click the dropdown arrow next to the **Run** button for the desired configuration, then select **Run with Message**:
@@ -60,7 +60,7 @@ Schedules can be set to automatically run a configuration on a defined schedule.
 
 ## Run with File
 
-**<font color="red">Need an intro explaining what this does.</font>**
+<font color="red">Need an intro explaining what this does.</font>
 
 1. Do one of the following:
    * From the **Configurations** page, click the dropdown arrow next to the **Run** button for the desired configuration, then select **Run with File**:
@@ -78,4 +78,4 @@ Schedules can be set to automatically run a configuration on a defined schedule.
 
    ![](/img/Run-With-File-Dialog2.png)
 
-    **<font color="red">Not sure what type of file would typically be used here. Need to select an appropriate file type for a real-world use case.</font>**
+    <font color="red">Not sure what type of file would typically be used here. Need to select an appropriate file type for a real-world use case.</font>

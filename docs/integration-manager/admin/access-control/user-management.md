@@ -18,7 +18,7 @@ Account administrators can:
 * Create, generate, or reset the API password for a user
 * Enable/Disable Admin access for a user
 
-**<font color="red">I don't see a way to delete a user once created. Is there any way to do this so users no longer appear in the list?</font>**
+<font color="red">I don't see a way to delete a user once created. Is there any way to do this so users no longer appear in the list?</font>
 
 ## Adding a New User
 
@@ -92,11 +92,11 @@ Account administrators can:
 
 ## Enabling Direct API Access
 
-**<font color="red">Need instructions here.</font>**
+<font color="red">Need instructions here.</font>
 
 ## Managing User API Passwords
 
-**<font color="red">Need instructions here.</font>**
+<font color="red">Need instructions here.</font>
 
 ## Enabling/Disabling Admin Access
 

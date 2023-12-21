@@ -2,6 +2,7 @@
 title: Creating Configurations (Cloud)
 tags:
  - Content Issues
+ - Bugs
 ---
 
 # Creating Configurations (Cloud)
@@ -49,12 +50,12 @@ You can create your first configuration using either the Data Integration Setup 
 
 3. Enter a unique **Name**, then do one of the following:
    * Click **Local&nbsp;System**, select a configuration file (.djar,.rtc,.process,.ip.xml,.tf.xml,.sqlite), then click **Import**.
-   * Click **Integration&nbsp;Files**. In the **File&nbsp;Manager**, select a package, then click **Select&nbsp;Package**. <font color="red">Should we describe the File Manager more fully?</font>
+   * Click **Integration&nbsp;Files**. In the **File&nbsp;Manager**, select a package, then click **Select&nbsp;Package**. For more information on using the **File Manager**, see [Managing Configuration Files](./managing-configuration-files).
 4. The configuration file is listed. Click **Import**.
 
    ![Import Configuration](/img/Import-Configuration2.png)
 
-   <font color="red">If you import a .process file, the icon is different. Should we discuss the difference?</font>
+   <font color="red">If you import a .process file, the icon is different. Are there more icons for other file types? If so, should we note that here?</font>
 5.  On the **Configuration Details** page, edit configuration details as desired. See [Editing Configuration Details](./editing-configuration-details).
    
     ![Integration Successfully Imported](/img/Configuration-Details-Page.png)
@@ -72,7 +73,7 @@ You can create your first configuration using either the Data Integration Setup 
 2. On the **Data Integration Setup** page, enter a unique name and click **Create**:
    
    ![Data Integration Setup](/img/Data-Integration-Setup.png)
-3.  On the **Configuration Details** page, ... **<font color="red">What is the typical process here? Is the minimum to upload a package and set an entry point?</font>**.
+3.  On the **Configuration Details** page, ... <font color="red">What is the typical process here? Is the minimum to upload a package and set an entry point?</font>.
    
     ![Integration Successfully Imported](/img/Configuration-Details-Page.png)
 
@@ -96,12 +97,12 @@ This process can only be done for your first configuration. The only way I can f
 
 3. Enter a unique **Name**, then do one of the following:
    * Click **Local&nbsp;System**, select a configuration file (.djar,.rtc,.process,.ip.xml,.tf.xml,.sqlite), then click **Import**.
-   * Click **Integration&nbsp;Files**. In the **File&nbsp;Manager**, select a package, then click **Select&nbsp;Package**. **<font color="red">Should we describe the File Manager more fully?</font>** 
+   * Click **Integration&nbsp;Files**. In the **File&nbsp;Manager**, select a package, then click **Select&nbsp;Package**. For more information on using the **File Manager**, see [Managing Configuration Files](./managing-configuration-files). 
 4. The configuration file is listed. Click **Import**.
 
    ![Import Configuration Button](/img/Import-Configuration2-Cloud.png)
 
-   **<font color="red">If you import a .process file, the icon is different. Should we discuss the difference?</font>**
+   <font color="red">If you import a .process file, the icon is different. Are there more icons for other file types? If so, should we note that here?</font>
 5.  On the **Configuration Details** page, edit configuration details as desired. See [Editing Configuration Details](./editing-configuration-details).
    
     ![Configuration Details](/img/Configuration-Details-Page-Cloud-Import.png)
