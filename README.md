@@ -20,11 +20,11 @@ There are two ways to provide your feedback on the documentation:
 
 Entering page feedback is easy, and available to anyone. There is a **Page Feedback** button on the bottom of every page:
 
-  ![Page Feedback Button](/img/Feedback-Button.png)
+  ![Page Feedback Button](./static/img/Feedback-Button.png)
 
 Click this button to open the feedback dialog, enter your message, and click **Send feedback**:
 
-  ![Page Feedback Button](/img/Feedback-Dialog.png)
+  ![Page Feedback Button](./static/img/Feedback-Dialog.png)
 
 Your message will be delivered to us. Feel free to include your email address in the message if you'd like to chat.
 
@@ -32,11 +32,11 @@ Your message will be delivered to us. Feel free to include your email address in
 
 Suggesting page edits requires you to have a GitHub account. There is a **Suggest Edits** button on the bottom of every page:
 
-  ![Suggest Edits Button](/img/Suggest-Edits-Button.png)
+  ![Suggest Edits Button](./static/img/Suggest-Edits-Button.png)
 
 Clicking this button opens the page in the ActianCorp integration-platform-docs repository in GitHub:
 
-  ![Suggest Edits Button](/img/GitHub-Repo.png)
+  ![Suggest Edits Button](./static/img/GitHub-Repo.png)
 
 Make any suggested edits, then create a pull request. We will review your changes, make any necessary edits, then merge the changes if appropriate.
 
