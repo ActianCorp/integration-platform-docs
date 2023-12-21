@@ -11,3 +11,16 @@ The manufacturer of this Documentation is Actian Corporation.
 For government users, the Documentation is delivered with “Restricted Rights” as set forth in 48 C.F.R. Section 12.212, 48 C.F.R. Sections 52.227-19(c)(1) and (2) or DFARS Section 252.227-7013 or applicable successor provisions.
 
 Actian, Actian DataCloud, Actian DataConnect, Actian X, Avalanche, Versant, PSQL, Actian Zen, Actian Director, Actian Vector, DataFlow, Ingres, OpenROAD, and Vectorwise are trademarks or registered trademarks of Actian Corporation and its subsidiaries. All other trademarks, trade names, service marks, and logos referenced herein belong to their respective companies.
+
+<div className="hidden">
+    <form data-netlify="true" name="feedback" method="post">
+    <input type="hidden" name="form-name" value="feedback" />            
+    <div>
+        <div>
+        <label>Your feedback helps us improve our docs!</label><br />
+        <textarea type="text" name="message" />
+        <input type="submit" />
+        </div>
+    </div>
+    </form>
+</div>

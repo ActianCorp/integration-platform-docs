@@ -303,3 +303,7 @@ img {
 div.navbar__logo > img, .icon {
   border: none;
 }
+
+.hidden {
+  display: none;
+}
