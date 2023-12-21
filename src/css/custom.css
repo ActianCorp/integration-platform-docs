@@ -312,6 +312,7 @@ div.navbar__logo > img, .icon {
 .invisible {
   visibility: hidden;
   width: 600px;
+  height: 5px;
 }
 
 input {
@@ -356,5 +357,5 @@ input[type="submit"]:hover {
 }
 
 .feedbackDiv {
-  margin-top: 20px;
+  margin-top: 10px;
 }
