@@ -1,10 +1,13 @@
   // Formpage\index.js
-  import BrowserOnly from '@docusaurus/BrowserOnly';
+  import { useLocation } from "react-router-dom";
+  
   const React = require("react");
   const { useState } = React;
 
   export default function Form() {
-    const [formData, setFormData] = useState({ message: "", pageURL: window.location.href });
+    const location = useLocation()
+    console.log(location);
+    const [formData, setFormData] = useState({ message: "", pageURL: location });
     const [isOpen, setIsOpen] = useState(false);  
     const handleChange = (e) => {
       e.preventDefault();
