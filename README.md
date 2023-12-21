@@ -22,15 +22,13 @@ Entering page feedback is easy, and available to anyone. There is a **Page Feedb
 
   ![Page Feedback Button](./static/img/Feedback-Button.png)
 
-Click this button to open the feedback dialog, enter your message, and click **Send feedback**:
-
-  ![Page Feedback Button](./static/img/Feedback-Dialog.png)
-
-Your message will be delivered to us. Feel free to include your email address in the message if you'd like to chat.
+Click this button to display a text field, enter your message, and click **Send Feedback**. Your message will be delivered to us. Feel free to include your email address in the message if you'd like to chat.
 
 ### Suggest Edits
 
-Suggesting page edits requires you to have a GitHub account. There is a **Suggest Edits** button on the bottom of every page:
+Users are encouraged to suggest content edits. Suggesting page edits requires you to have a GitHub account. 
+
+There is a **Suggest Edits** button on the bottom of every page:
 
   ![Suggest Edits Button](./static/img/Suggest-Edits-Button.png)
 
@@ -39,9 +37,3 @@ Clicking this button opens the page in the ActianCorp integration-platform-docs 
   ![Suggest Edits Button](./static/img/GitHub-Repo.png)
 
 Make any suggested edits, then create a pull request. We will review your changes, make any necessary edits, then merge the changes if appropriate.
-
-
-Users are encouraged to suggest content edits.
-
-Click the **Suggest Edits** button on the bottom of any page. Make any suggested edits, then create a pull request. We will review your changes, make any necessary edits, then merge the changes if appropriate.
-

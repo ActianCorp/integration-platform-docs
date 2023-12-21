@@ -28,15 +28,13 @@ Entering page feedback is easy, and available to anyone. There is a **Page Feedb
 
   ![Page Feedback Button](/img/Feedback-Button.png)
 
-Click this button to open the feedback dialog, enter your message, and click **Send feedback**:
-
-  ![Page Feedback Button](/img/Feedback-Dialog.png)
-
-Your message will be delivered to us. Feel free to include your email address in the message if you'd like to chat.
+Click this button to display a text field, enter your message, and click **Send Feedback**. Your message will be delivered to us. Feel free to include your email address in the message if you'd like to chat.
 
 ### Suggest Edits
 
-Suggesting page edits requires you to have a GitHub account. There is a **Suggest Edits** button on the bottom of every page:
+Users are encouraged to suggest content edits. Suggesting page edits requires you to have a GitHub account. 
+
+There is a **Suggest Edits** button on the bottom of every page:
 
   ![Suggest Edits Button](/img/Suggest-Edits-Button.png)
 

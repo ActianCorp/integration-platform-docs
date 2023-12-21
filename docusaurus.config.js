@@ -28,16 +28,17 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  // Replaced this with my own React form. Leaving code for reference if we need it.
   // Load the Feedback Rocket SDK on every page
-  scripts: [
-    {
-      async: true,
-      src: 'https://www.feedbackrocket.io/sdk/v1.2.js',
-      'data-fr-id': 'IA-9no9dntmzi4xHLP63R',
-      'data-fr-theme': 'dynamic',
-      'data-fr-title': 'Your feedback helps us improve our docs.',
-    }
-  ],
+  //scripts: [
+  //  {
+  //    async: true,
+  //    src: 'https://www.feedbackrocket.io/sdk/v1.2.js',
+  //    'data-fr-id': 'IA-9no9dntmzi4xHLP63R',
+  //    'data-fr-theme': 'dynamic',
+  //    'data-fr-title': 'Your feedback helps us improve our docs.',
+  //  }
+  //],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
