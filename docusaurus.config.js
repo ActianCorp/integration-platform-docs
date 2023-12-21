@@ -153,7 +153,7 @@ const config = {
                 html: `
                     <div class="footerRow">
                       <div class="footerColumn-left">
-                        <a href="docs/legal">
+                        <a href="/legal">
                           Legal
                        </a>
                       </div>
