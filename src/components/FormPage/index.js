@@ -1,11 +1,11 @@
   // Formpage\index.js
+  import BrowserOnly from '@docusaurus/BrowserOnly';
   const React = require("react");
   const { useState } = React;
 
   export default function Form() {
     const [formData, setFormData] = useState({ message: "" });
     const [isOpen, setIsOpen] = useState(false);  
-    const pageURL = window.location.href;  
     const handleChange = (e) => {
       e.preventDefault();
       setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -22,7 +22,10 @@
         {isOpen ? ( 
           <form data-netlify="true" name="feedback" method="post">
             <input type="hidden" name="form-name" value="feedback" />        
-            <input type="text" name="pageURL" value="{pageURL}" className="hidden" readOnly />
+            <BrowserOnly>
+              {() => <input type="text" name="pageURL" value="{window.location.href}" className="hidden" readOnly />}
+            </BrowserOnly>
+            
             <div>
               <div className="feedbackDiv">
                 <label className="formLabel">Your feedback helps us improve our docs!</label><br />
