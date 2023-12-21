@@ -6,11 +6,11 @@
 
   export default function Form() {
     const location = useLocation()
-    const [formData, setFormData] = useState({ message: "", pageURL: location.pathname });
+    const [formData, setFormData] = useState({ message: "" });
     const [isOpen, setIsOpen] = useState(false);  
     const handleChange = (e) => {
       e.preventDefault();
-      setFormData({ ...formData, [e.target.name]: e.target.value });
+      setFormData({ ...formData, [e.target.name]: e.target.value + location.pathname});
     };
     const toggle = (e) => {
       e.preventDefault();
@@ -27,7 +27,8 @@
             <div>
               <div className="feedbackDiv">
                 <label className="formLabel">Your feedback helps us improve our docs!</label><br />
-                <textarea type="text" name="message" required minLength="10" id="message" rows="6" placeholder="Comments, questions, good, bad - please let us know." value={formData.message + "(Page: " + formData.pageURL + ")"} onChange={handleChange} />
+                <textarea type="text" name="message" required minLength="10" id="message" rows="6" placeholder="Comments, questions, good, bad - please let us know." value={formData.message} onChange={handleChange} />
+                <input type="text" value={formData.pageURL}/>
                 <input type="submit" value={"Send Feedback"}/>
               </div>
             </div>
