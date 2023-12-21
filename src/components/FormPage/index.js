@@ -4,7 +4,7 @@
   const { useState } = React;
 
   export default function Form() {
-    const [formData, setFormData] = useState({ message: "" });
+    const [formData, setFormData] = useState({ message: "", pageURL: window.location.href });
     const [isOpen, setIsOpen] = useState(false);  
     const handleChange = (e) => {
       e.preventDefault();
@@ -22,10 +22,6 @@
         {isOpen ? ( 
           <form data-netlify="true" name="feedback" method="post">
             <input type="hidden" name="form-name" value="feedback" />        
-            <BrowserOnly>
-              {() => <input type="text" name="pageURL" value={window.location.href} className="invisible" readOnly />}
-            </BrowserOnly>
-            
             <div>
               <div className="feedbackDiv">
                 <label className="formLabel">Your feedback helps us improve our docs!</label><br />
