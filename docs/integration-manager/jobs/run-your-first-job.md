@@ -17,7 +17,7 @@ This topic is intended to provide an overview of running jobs in the Integration
    ![Configurations Tab](/img/Configurations-Tab.png)
 
 2. Click ![Create Configuration Button](/img/icons/Create-Configuration-Button.png).
-3. Import a configuration. See [Creating Configurations (On-Prem)](../configurations/creating-configurations-on-prem) or [Creating Configurations (Cloud)](../configurations/creating-configurations-cloud).
+3. Import a configuration. See [Creating Configurations (On-Prem)](../configurations/creating-configurations-on-prem) or [Creating Configurations (Cloud)](../configurations/creating-configurations-cloud). <font color="red">Reminder to replace the On-Prem and Cloud variants in this step with a single topic when this issue is resolved in the UI.</font>
 
 ## Step 2: Select an Entry Point
 

@@ -1,9 +1,9 @@
 ---
-title: Activating and Deactivating Agents
+title: Activating and Deactivating an Agent
 tags:
  - Content Issues
 ---
-# Activating and Deactivating Agents
+# Activating and Deactivating an Agent
 
 
 

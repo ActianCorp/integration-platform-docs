@@ -8,7 +8,7 @@ tags:
 
 **<font color="red">NOTE: This topic does not exist in the "unofficial" GitHub Pages site. I pulled this from the current docs.actian.com content. Does this belong here?</font>**
 
-The following properties are found in: shared_data_path\conf\AgentWrapper.conf.
+The following properties are found in: `shared_data_path\conf\AgentWrapper.conf`.
 
 :::danger[Caution!]
 This file contains many properties. Any that are not listed here, DO NOT MODIFY!

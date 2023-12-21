@@ -5,19 +5,24 @@ tags:
 ---
 # Run Your First Remote Job
 
-**<font color="red">Can this be reused from IM docs (or linked there)?</font>**
+1. Select the **Configurations** tab:
 
-1. Navigate and login to Integration Manager Cloud or Avalanche Connect in your web browser.
-2. Navigate to the **Configurations** tab.
-3. Click **Add**.
-4. Setup a new Configuration:
-   * Give it a unique Name.
-   * <b>Set Run Location to "User Agent".</b>
-   * Click **Add Package**.
-   * Upload a DataConnect djar file.
-   * Select an Entry Point within the djar.
-   * Click on the **Macros** sub-tab.
-   * Add and/or import any macros your djar requires.
-5. Click **Run Configuration**.
-6. Navigate to the Jobs sub-tab to view job progress and log file.
-7. You can monitor Job progress in real-time even though it is executing on the Agent machine.
+   ![Configurations Tab](/img/Configurations-Tab.png)
+
+2. Click ![Create Configuration Button](/img/icons/Create-Configuration-Button.png).
+3. Create a configuration. See [Creating Configurations (On-Prem)](../configurations/creating-configurations-on-prem) or [Creating Configurations (Cloud)](../configurations/creating-configurations-cloud). <font color="red">Reminder to replace the On-Prem and Cloud variants in this step with a single topic when this issue is resolved in the UI.</font>
+4. Click ![the edit icon](/img/icons/edit-icon.png) next to **Run Location Point** and select **User Agent**:
+
+   ![Entry Point](/img/Configuration-Run-Location-Agent.png)
+
+5. Click ![the edit icon](/img/icons/edit-icon.png) next to **Entry Point** and select an Entry Point within the djar:
+   
+   ![Entry Point](/img/Entry-Point.png)
+
+6. Edit other configuration details as desired. See [Editing Configuration Details](../configurations/editing-configuration-details).
+7. Click **Run&nbsp;Configuration**.
+
+   ![Run Configuration](/img/Configuration-Run2.png)
+
+8. Navigate to the **Jobs** tab to view job progress and log file.
+9. You can monitor Job progress in real-time even though it is executing on the Agent machine.

@@ -15,8 +15,9 @@ If you need to automate Agent configuration and registration tasks (i.e. direct 
 
 ## Step 1: Retrieve an Access Token
 
-```
 REQUEST:
+
+```
 POST https://api.im.actiandatacloud.com/v2/api/login
 
 HEADER(S):
@@ -29,8 +30,9 @@ BODY:
 }
 ```
 
-```
 RESPONSE:
+
+```
 200 OK
 
 {
@@ -43,16 +45,18 @@ RESPONSE:
 
 ## Step 2: Retrieve a User Code
 
-```
 REQUEST:
+
+```
 POST https://api.im.actiandatacloud.com/v2/api/device/code?client_id=integration-agent&host=[agent hostname]
 
 HEADER(S):
 Authorization: Bearer [access token value]
 ```
 
-```
 RESPONSE:
+
+```
 201 Created
 
 {
@@ -73,16 +77,18 @@ RESPONSE:
 
 ## Step 3: Activate Device Code
 
-```
 REQUEST:
+
+```
 POST [verification uri complete]
 
 HEADER(S):
 Authorization: Bearer [access token value]
 ```
 
-```
 RESPONSE:
+
+```
 200 OK
 
 # Integration Manager Connection Info

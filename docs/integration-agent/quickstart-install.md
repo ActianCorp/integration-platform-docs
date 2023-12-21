@@ -7,9 +7,6 @@ tags:
 
 # Quick Start Installation
 
-**<font color="red">This topic does not mention downloading the agent directly from Integration Manager. Should that be included here as an option?</font>**
-
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -33,55 +30,82 @@ import TabItem from '@theme/TabItem';
 2. DataConnect v12 Embedded Engine
 3. AdoptJDK 11 Embedded JRE
 
+### Download
+
+You can download the Actian Integration Agent installer from either the **Agents and Devices** page in Integration Manager or Actian ESD:
+
+#### From Integration Manager:
+
+1. Open Integration Manager at [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents).
+2. Select the **Agents** tab.
+3. Click the **Download Agent** dropdown and select your platform:
+
+   ![](/img/Download-Agent.png)
+
+#### From Actian ESD:
+
+1. Go to [https://esd.actian.com/](https://esd.actian.com/), select **Actian DataCloud Agent**.
+2. Click **DataCloud Agent** for your platform and click **Download**.
+
+      ![](/img/Download-Agent-ESD.png)
+
 ### Installation
 
-1. Download Actian Integration Agent for Windows from:
-   * Agents Console [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents), or
-   * Actian ESD: [https://esd.actian.com/](https://esd.actian.com/).
-2. Right-click the downloaded installer file (integration-agent-xxx-win.exe) and select "Run as administrator".
-3. If you have a previous 3.x.x version installed, you will be prompted to uninstall first. Uninstall will shutdown running services and prepare for library updates, it will NOT remove or alter ProgramData (conf files, logs, etc.).
-4. Accept the License Agreement.
-5. Select the installation path (default: `C:/Program Files/Actian/IntegrationAgent`).
-6. Select the shared data path (default: `C:/ProgramData/Actian/IntegrationAgent`).
-7. Installation should take less than a minute.
-8. If installed locally, open [http://localhost:6001/home](http://localhost:6001/home). If installed on a network server, open http://\[agent hostname]:6001/home.
-9. Register the Agent using your DataConnect Cloud or Avalanche credentials. Registration progress will be shown to confirm that your Agent is operational.
-10. You should now be able to view and manage your Agent from the cloud:
-    * DataConnect Cloud: [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents)
-    * Avalanche Console: [https://avalanche.actiandatacloud.com/im/agents](https://avalanche.actiandatacloud.com/im/agents)
-    * Private Cloud on Kubernetes: https://\[your hosted domain]/im/agents
-11. You can also open [http://localhost:6001/home](http://localhost:6001/home) at any time to confirm the status of the Agent on the installed machine.
+1. Right-click the downloaded installer file (`integration-agent-xxx-win.exe`) and select "Run as administrator".
+2. If you have a previous 3.x.x version installed, you will be prompted to uninstall first. Uninstall will shutdown running services and prepare for library updates, it will NOT remove or alter ProgramData (conf files, logs, etc.).
+3. Accept the License Agreement.
+4. Select the installation path (default: `C:/Program Files/Actian/IntegrationAgent`).
+5. Select the shared data path (default: `C:/ProgramData/Actian/IntegrationAgent`).
+6. Installation should take less than a minute.
 
-### Run Your First DJAR Remotely
+### Registration
 
-**<font color="red">This is the next topic. Can we link there?</font>**
+1. If installed locally, open [http://localhost:6001/home](http://localhost:6001/home). If installed on a network server, open http://\[agent hostname]:6001/home.
+2. Register the Agent using your DataConnect Cloud or Avalanche credentials. Registration progress will be shown to confirm that your Agent is operational.
 
-1. Navigate and login to Integration Manager Cloud or Avalanche Connect in your web browser.
-2. Navigate to the Configurations tab.
-3. Click +Add.
-4. Setup a new Configuration:
-   * Give it a unique Name.
-   * Set Run Location to User Agent.
-   * Click Add Package.
-   * Upload a DataConnect djar file.
-   * Select an Entry Point within the djar.
-   * Click on the Macros sub-tab.
-   * Add and/or import any macros your djar requires.
-5. Click Run Configuration.
-6. Navigate to the Jobs sub-tab to view job progress and log file.
-7. You can monitor Job progress in real-time even though it is executing on the Agent machine.
+   ![](/img/Agent-Registered.png)
+
+   :::note
+   You can open [http://localhost:6001/home](http://localhost:6001/home) at any time to confirm the status of the Agent on the installed machine. Clicking the **Check-in** button updates the Last Updated time in the Registerd Agents list. 
+   :::
+
+3. You should now be able to view and manage your Agent from the cloud on the **Agents** tab in Integration Manager:
+
+   ![](/img/Registered-Agents.png)
+   
+   See [Service Logs & Monitoring](#service-logs--monitoring) below.
+
+If you encounter issues, ensure that the agent is active. See [Activating and Deactivating Agents](../integration-manager/agents-and-devices/activate-agent). If the issue doesn’t resolve, ensure that the Actian Integration Service is running.
+
+### Run Your First DJAR
+
+**<font color="red">Note: I moved this section out to the existing topic to avoid duplication of content.</font>**
+You are now ready to run your first remote job. Refer to [Run Your First Remote Job](./run-your-first-remote-job).
 
 ### Service Logs & Monitoring
 
 1. You can monitor Agent health, location, and job history from the cloud:
+
    * DataConnect Cloud: [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents)
    * Avalanche Console: [https://avalanche.actiandatacloud.com/im/agents](https://avalanche.actiandatacloud.com/im/agents)
-   * Private Cloud on Kubernetes: https://\[your hosted domain]/ui/agents
-2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `C:/ProgramData/Actian/IntegrationAgent/logs/Agent.log`)
+   * Private Cloud on Kubernetes: https://\[your hosted domain]im/agents <font color="red">The Windows section uses **im** in this url, whereas Linux uses **ui**. Is this difference intentional?</font>
+  
 
    :::note
-   Log file data will survive uninstallation/reinstallation.
+    For more information on managing agents and devices from the Integration Manager, see [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices).
    :::
+   
+2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `C:/ProgramData/Actian/IntegrationAgent/logs/Agent.log`)
+
+### Uninstalling
+
+To uninstall Actian Integration Agent from your Windows machine, simply run the installer .exe file and click **Yes**:
+
+![](/img/Uninstall-Agent.png)
+
+:::note
+Log file data will survive uninstallation/reinstallation.
+:::
 
 </TabItem>
 
@@ -107,57 +131,71 @@ import TabItem from '@theme/TabItem';
 2. DataConnect v12 Embedded Engine
 3. AdoptJDK 11 Embedded JRE
 
+### Download
+
+You can download the Actian Integration Agent installer from either the **Agents and Devices** page in Integration Manager or Actian ESD:
+
+#### From Integration Manager:
+
+1. Open Integration Manager at [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents).
+2. Select the **Agents** tab.
+3. Click the **Download Agent** dropdown and select your platform:
+
+   ![](/img/Download-Agent.png)
+
+#### From Actian ESD:
+
+1. Go to [https://esd.actian.com/](https://esd.actian.com/), select **Actian DataCloud Agent**.
+2. Click **DataCloud Agent** for your platform and click **Download**.
+
+      ![](/img/Download-Agent-ESD.png)
+
 ### Installation
 
-1. Download Actian Integration Agent for Linux from:
-   * Agents Console [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents), or
-   * Actian ESD: [https://esd.actian.com/](https://esd.actian.com/).
-2. Locate downloaded rpm file (integration-agent-3.x.x.noarch.rpm).
-3. Switch to root user: `sudo su`
-4. Install rpm with yum: `yum install integration-agent-3.x.x.noarch.rpm`
-5. Confirm installation path (default: `/opt/actian/integration-agent`).
-6. Confirm shared data path (default: `/etc/opt/actian/integration-agent)`.
-7. Installation should take less than a minute.
-8. If installed locally, open [http://localhost:6001/home](http://localhost:6001/home). If installed on a network server, open http://\[agent hostname]:6001/home.
-9. Register the Agent using your DataConnect Cloud or Avalanche credentials. Registration progress will be shown to confirm that your Agent is operational.
-10. You should now be able to view and manage your Agent from the cloud:
+1. Locate downloaded rpm file (`integration-agent-3.x.x.noarch.rpm`).
+2. Switch to root user: `sudo su`
+3. Install rpm with yum: `yum install integration-agent-3.x.x.noarch.rpm`
+4. Confirm installation path (default: `/opt/actian/integration-agent`).
+5. Confirm shared data path (default: `/etc/opt/actian/integration-agent)`).
+6. Installation should take less than a minute.
 
-* DataConnect Cloud: [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents)
-* Avalanche Console: [https://avalanche.actiandatacloud.com/im/agents](https://avalanche.actiandatacloud.com/im/agents)
-* Private Cloud on Kubernetes: https://\[your hosted domain]/ui/agents
+### Registration
 
-11. You can also open [http://localhost:6001/home](http://localhost:6001/home) at any time to confirm the status of the Agent on the installed machine.
+1. If installed locally, open [http://localhost:6001/home](http://localhost:6001/home). If installed on a network server, open http://\[agent hostname]:6001/home.
+2. Register the Agent using your DataConnect Cloud or Avalanche credentials. Registration progress will be shown to confirm that your Agent is operational.
+
+   ![](/img/Agent-Registered.png)
+
+   :::note
+   You can open [http://localhost:6001/home](http://localhost:6001/home) at any time to confirm the status of the Agent on the installed machine. Clicking the **Check-in** button updates the Last Updated time in the Registerd Agents list. 
+   :::
+
+3. You should now be able to view and manage your Agent from the cloud on the **Agents** tab in Integration Manager:
+
+   ![](/img/Registered-Agents.png)
+   
+   See [Service Logs & Monitoring](#service-logs--monitoring-1) below.
+
+If you encounter issues, activate the agent. See [Activate/Deactivate an Agent](../integration-manager/agents-and-devices/activate-agent). If the issue doesn’t resolve, ensure that the service is running. See [Start/Stop/Status](./quickstart-install#startstopstatus). **<font color="red">I added this as it is mentioned in the Windows section. Please verify.</font>**
 
 ### Run Your First DJAR
 
-**<font color="red">This is the next topic. Can we link there?</font>**
-
-1. Navigate and login to Integration Manager Cloud or Avalanche Connect in your web browser.
-2. Navigate to the Configurations tab.
-3. Click +Add.
-4. Setup a new Configuration:
-   * Give it a unique Name.
-   * Set Run Location to User Agent.
-   * Click Add Package.
-   * Upload a DataConnect djar file.
-   * Select an Entry Point within the djar.
-   * Click on the Macros sub-tab.
-   * Add and/or import any macros your djar requires.
-5. Click Run Configuration.
-6. Navigate to the Jobs sub-tab to view job progress and log file.
-7. You can monitor Job progress in real-time even though it is executing on the Agent machine.
+**<font color="red">Note: I moved this section out to the existing topic to avoid duplication of content.</font>**
+You are now ready to run your first remote job. Refer to [Run Your First Remote Job](./run-your-first-remote-job).
 
 ### Service Logs & Monitoring
 
 1. You can monitor Agent health, location, and job history from the cloud:
+
    * DataConnect Cloud: [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents)
    * Avalanche Console: [https://avalanche.actiandatacloud.com/im/agents](https://avalanche.actiandatacloud.com/im/agents)
-   * Private Cloud on Kubernetes: https://\[your hosted domain]/ui/agents
-2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `C:/ProgramData/Actian/IntegrationAgent/logs/Agent.log`)
-
+   * Private Cloud on Kubernetes: https://\[your hosted domain/]ui/agents <font color="red">The Windows section uses **im** in this url, whereas Linux uses **ui**. Is this difference intentional?</font>
+  
    :::note
-   Log file data will survive uninstallation/reinstallation.
+    For more information on managing agents and devices from the Integration Manager, see [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices).
    :::
+ 
+ 2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `C:/ProgramData/Actian/IntegrationAgent/logs/Agent.log`) **<font color="red">This looks like a copy/paste error. What is the default path on Linux?</font>**
 
 ### Start/Stop/Status
 
@@ -170,6 +208,10 @@ Status: `sh -x /etc/init.d/agentservice status`
 ### Uninstalling
 
 `yum uninstall integration-agent-3.x.x.noarch.rpm`
+
+:::note
+Log file data will survive uninstallation/reinstallation.
+:::
 
 </TabItem>
 </Tabs>

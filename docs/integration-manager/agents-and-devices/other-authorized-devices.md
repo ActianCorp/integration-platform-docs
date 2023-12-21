@@ -6,7 +6,7 @@ tags:
 
 # Other Authorized Devices
 
-**<font color="red">Should this live in the Admin section?</font>**
+**<font color="red">Data Platform docs includes this topic. I'm not sure yet how to add devices.</font>**
 
 
 
