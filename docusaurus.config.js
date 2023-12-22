@@ -81,7 +81,7 @@ const config = {
     ],
   ],
   plugins: [[ require.resolve('docusaurus-lunr-search'), { // This causes React error on localhost.
-    maxHits: "30"
+    maxHits: '30'
   }]],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
