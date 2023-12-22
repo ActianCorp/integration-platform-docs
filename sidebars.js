@@ -46,8 +46,10 @@ const sidebars = {
           label: 'Configurations',
           items: [
             'integration-manager/configurations/configurations-overview',
-            'integration-manager/configurations/creating-configurations-on-prem',
-            'integration-manager/configurations/creating-configurations-cloud',
+            'integration-manager/configurations/importing-configurations',
+            'integration-manager/configurations/creating-configurations',
+            //'integration-manager/configurations/creating-configurations-on-prem',
+            //'integration-manager/configurations/creating-configurations-cloud',
             'integration-manager/configurations/editing-configuration-details',
             'integration-manager/configurations/activating-or-inactivating-configurations',
             'integration-manager/configurations/duplicating-configurations',

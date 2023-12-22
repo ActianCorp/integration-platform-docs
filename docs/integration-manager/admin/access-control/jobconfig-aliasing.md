@@ -174,3 +174,31 @@ You can invoke a JobConfig Alias these ways:
   * You must create API keys for this Alias.
   * Credentials are constructed by first combining the Access Key and Secret Key with a colon (TESTACCESSKEY:TESTSECRETKEY), and then by encoding the resulting string in base64 (VEVTVEFDQ0VTU0tFWTpURVNUU0VDUkVUS0VZ).
   * Example: Authorization: Basic VEVTVEFDQ0VTU0tFWTpURVNUU0VDUkVUS0VZ
+
+## Deleting a Listener
+
+<font color="red">I added this section after I tried to delete a config with an associated listener. Please verify.</font>
+
+You cannot delete an aliased configuration. You must first delete the listener (which requires Admin privileges).
+
+To delete a listener:
+
+1. Click the profile dropdown in the upper right corner and select **Administration**.
+
+   ![](/img/Administration.png)
+
+2. Click **Listeners**:
+
+   ![](/img/Create-Alias1.png)
+
+3. Click the listener you want to delete:
+
+   ![](/img/Select-Listener.png)
+
+4. Click **Delete Listener**:
+
+   ![](/img/Delete-Listener.png)
+
+5. The **Delete Listener?** dialog appears, warning you that this action cannot be undone. To proceed with deleting the listener, click **Delete Listener**:
+
+   ![](/img/Delete-Listener-Warning.png)

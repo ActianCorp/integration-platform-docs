@@ -21,8 +21,8 @@ To edit configuration details:
 
 | Properties | Editable | Description |
 | --- | --- | --- |
-| Configuration name | Yes | The configuration name. Click the configuration name or pencil icon to edit the configuration name. Click ![](/img/icons/save.svg) to save your changes.|
-| Description | Yes | The configuration description. Click the description text or pencil icon to edit the description. Click ![](/img/icons/save.svg) to save your changes. |
+| Configuration name | Yes | The configuration name. Click the configuration name or pencil icon to edit the configuration name. Click <img src="/img/icons/save.svg" className="icon" alt="the Save icon"/> to save your changes.|
+| Description | Yes | The configuration description. Click the description text or pencil icon to edit the description. Click <img src="/img/icons/save.svg" className="icon" alt="the Save icon"/> to save your changes. |
 | Base Template | No | The template with which the configuration is associated. If the configuration does not have an association with a Template, this field will display “Not Set”. See [Edit Template](../templates/editing-template-details).
 | Status | Yes | You can toggle this property between **Active **and **Inactive**. You can run the configuration only if it is set to **Active**. See [Set Configuration to Active or Inactive](./activating-or-inactivating-configurations).
 | Run Location | Yes | This property specifies which engine to use when executing the associated configuration. Clicking the edit icon will expose a list of available options. To use one of the cloud-based engines provided by Actian, select the default option. To learn more about remote engines, see [Run Your First Remote Job](../../integration-agent/run-your-first-remote-job).
