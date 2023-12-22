@@ -308,13 +308,6 @@ div.navbar__logo > img, .icon {
   display: none;
 }
 
-
-.invisible {
-  visibility: hidden;
-  width: 600px;
-  height: 5px;
-}
-
 input {
   height: 40px;
   width: 300px;
