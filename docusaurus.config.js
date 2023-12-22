@@ -80,9 +80,9 @@ const config = {
       }),
     ],
   ],
-//  plugins: [
-//    require.resolve('docusaurus-lunr-search')  // This causes React error on localhost. 
-//  ],
+  plugins: [
+    require.resolve('docusaurus-lunr-search')  // This causes React error on localhost. 
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
