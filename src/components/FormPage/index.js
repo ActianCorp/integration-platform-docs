@@ -29,7 +29,7 @@
                 <label className="formLabel">Your feedback helps us improve our docs!</label><br />
                 <textarea type="text" name="message" required minLength="10" id="message" rows="6" placeholder="Comments, questions, good, bad - please let us know." value={formData.message} onChange={handleChange} />
                 <input type="text" className="invisible" name="pageURL" value={location.pathname}/>
-                <input type="submit" value={"Send Feedback"}/>
+                <input type="submit" className="submit" value={"Send Feedback"}/>
               </div>
             </div>
             </form>) : ( "" )

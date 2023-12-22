@@ -350,6 +350,14 @@ input[type="submit"]:hover {
   font-family: 'Red Hat Text';
 }
 
+[data-theme='light'] .submit {
+  color: black;
+}
+
+[data-theme='dark'] .submit {
+  color: white;
+}
+
 .formLabel {
   color: #1fcc1f;
   font-size: 20px;
