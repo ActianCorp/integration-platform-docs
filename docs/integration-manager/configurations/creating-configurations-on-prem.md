@@ -33,7 +33,7 @@ Configurations can be created in several ways:
 Why does the Dashboard page still say "Create your first Configuration" even after you've already created one (until you run your first job)? Intentional or bug?
 </font>
 
-1. On the **Dashboard** page, click **Create Configuration**:
+1. On the **Configurations** page, click **Create Configuration**:
 
    ![Create Configuration](/img/Configuration-Create-First-Dashboard-On-Prem.png)
 
