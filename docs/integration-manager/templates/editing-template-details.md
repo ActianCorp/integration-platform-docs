@@ -33,8 +33,8 @@ Refer to the following:
 
 | Properties | Editable | Description |
 | --- | --- | --- |
-| Template name | Yes | The template name. Click the template name or the pencil icon to edit the template name. Click ![](/img/icons/save.svg) to save your changes.|
-| Description | Yes | The template description. Click the description text or pencil icon to edit the description text. Click ![](/img/icons/save.svg) to save your changes. |
+| Template name | Yes | The template name. Click the template name or the pencil icon to edit the template name. Click <img src="/img/icons/save.svg" className="icon" alt="the Save icon"/> to save your changes.|
+| Description | Yes | The template description. Click the description text or pencil icon to edit the description text. Click <img src="/img/icons/save.svg" className="icon" alt="the Save icon"/> to save your changes. |
 | Package Uploaded | Yes | Displays the package file for the integration. Click the edit icon to open the **Upload Packages & Files** dialog, where you can upload a new package file or select a previously-uploaded package file.
 | Status | Yes | You can toggle this property between **Active **and **Inactive**. You can use the template only if it is set to Active. See [Activating or Inactivating Templatess](./activating-or-inactivating-templates).
 | Entry Point | Yes | Displays the entry point where the executed job will begin. If the entry point is not defined, “Not Set” is displayed. Clicking the edit icon will expose a list of available entry points to select from.  

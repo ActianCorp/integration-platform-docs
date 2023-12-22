@@ -18,12 +18,12 @@ To create a User (Private) Macro:
 2. The **Private Macros** page is displayed.
 
    **Non-Admin Users:**
-   * Click &nbsp;![the Add Macro button](/img/icons/Add-Macro-Button.png):
+   * Click <img src="/img/icons/Add-Macro-Button.png" className="icon" alt="the Add Macro button"/>:
  
        ![Toggle Private](/img/Private-Macros.png)
 
    **Admin Users:**
-   * Select the user for whom you want to create the macro, then click &nbsp;![the Add Macro button](/img/icons/Add-Macro-Button.png)&nbsp;:
+   * Select the user for whom you want to create the macro, then click <img src="/img/icons/Add-Macro-Button.png" className="icon" alt="the Add Macro button"/>:
 
        ![Toggle Private](/img/Private-Macros-Admin.png)
 3. If creating your first private macro, continue [Creating Your First Macro](./creating-macros#creating-your-first-macro). Otherwise, continue [Creating Additional Macros](./creating-macros#creating-additional-macros).
@@ -61,7 +61,7 @@ import PartialContent1 from '../../reuse/_add_macro.mdx';
 
 Once you have created your first macro, you can add additional rows to the Macros list and edit the values directly in the list.
 
-4. When you click &nbsp;![the Add Macro button](/img/icons/Add-Macro-Button.png)&nbsp;, a row is added to the Macros list with the default name “Macro #”:
+4. When you click <img src="/img/icons/Add-Macro-Button.png" className="icon" alt="the Add Macro button"/>, a row is added to the Macros list with the default name “Macro #”:
 
     ![Add Another Macro](/img/Add-Another-Macro.png)
 
