@@ -86,7 +86,15 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      announcementBar: {
+        id: 'beta',
+        content:
+          '<b>NOTE:</b> Our new docs platform is in BETA. Features may not all work as expected, and content is in development and under review. Official documentation is on <a href="https://docs.actian.com/">docs.actian.com</a>.',
+        backgroundColor: 'rgba(147, 219, 79, 0.6)',
+        textColor: '#091E42',
+        isCloseable: true,
+      },
+        // Replace with your project's social card
       image: 'img/Logos_Actian_3Color-White-Transparent.png',
       navbar: {
         title: 'Integration Platform',
