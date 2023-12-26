@@ -33,19 +33,10 @@ const sidebars = {
         'integration-manager/editing-your-profile',
         {
           type: 'category',
-          label: 'Jobs',
-          items: [
-            'integration-manager/jobs/run-your-first-job',
-            'integration-manager/jobs/viewing-job-run-history',
-            'integration-manager/jobs/job-status-codes',
-            'integration-manager/jobs/downloading-the-log-file',
-              ]
-        },
-        {
-          type: 'category',
           label: 'Configurations',
           items: [
             'integration-manager/configurations/configurations-overview',
+            'integration-manager/jobs/run-your-first-job',
             'integration-manager/configurations/importing-configurations',
             'integration-manager/configurations/creating-configurations',
             //'integration-manager/configurations/creating-configurations-on-prem',
@@ -62,6 +53,15 @@ const sidebars = {
             'integration-manager/configurations/serialized-job-queues',
             'integration-manager/configurations/dataflow-usage',
           ]
+        },
+        {
+          type: 'category',
+          label: 'Jobs',
+          items: [
+            'integration-manager/jobs/viewing-job-run-history',
+            'integration-manager/jobs/job-status-codes',
+            'integration-manager/jobs/downloading-the-log-file',
+              ]
         },
         {
           type: 'category',
