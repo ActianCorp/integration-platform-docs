@@ -11,7 +11,7 @@ To set a configuration to execute using an agent:
 
    ![Configuration Select](/img/Configuration-Select.png)
 
-3. On the **Configuration Details** page, click ![the edit icon](/img/icons/edit-icon.png) next to **Run Location** and select **User Agent**:
+3. On the **Configuration Details** page, click <img src="/img/icons/edit-icon.png" className="icon" alt="the Edit icon"/> next to **Run Location** and select **User Agent**:
 
    ![Entry Point](/img/Configuration-Run-Location-Agent.png)
 

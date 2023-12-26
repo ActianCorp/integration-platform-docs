@@ -15,7 +15,7 @@ The Dashboard provides data visualization charts that you can use to monitor the
 
 The following widgets are available on the Dashboard.
 
-For any widget that shows ![the download icon](/img/icons/download-button.png), click the icon to download the chart in SVG or PNG format, or download the data in CSV format (which you can open in Excel).
+For any widget that shows <img src="/img/icons/download-button.png" className="icon" alt="the Download icon"/>, click the icon to download the chart in SVG or PNG format, or download the data in CSV format (which you can open in Excel).
 
 ### Recent Jobs
 
@@ -23,7 +23,7 @@ Recent Jobs provides a table of recently-run jobs, and displays details and stat
 
    ![Recent Jobs Widget](/img/Recent-Jobs-Widget.png)
 
-Click ![the magnifying glass icon](/img/icons/log-file.png) to downlaod the log file for that job.
+Click <img src="/img/icons/log-file.png" className="icon" alt="the magnifying glass icon"/> to downlaod the log file for that job.
 
 ### ALL JOBS
 
@@ -76,21 +76,21 @@ You can verify whether the agent is running, and also start the agent service, b
 
 ### Adding Widgets
 
-1. Click ![the ellipsis icon](/img/icons/ellipsis.png) and select **Settings** to open the **Dashboard Settings** panel:
+1. Click <img src="/img/icons/ellipsis.png" className="icon" alt="the ellipsis icon"/> and select **Settings** to open the **Dashboard Settings** panel:
    
    ![Dashboard Settings Panel](/img/Dashboard-Settings-Panel.png)
 
-2. Click ![the + icon](/img/icons/add-plus.png) on a widget in the **Available** section.
+2. Click <img src="/img/icons/add-plus.png" className="icon" alt="the Add icon"/> on a widget in the **Available** section.
 
 ### Removing Widgets
 
 To remove a widget from your Dashboard, do one of the followng:
 
-* Click ![the ellipsis icon](/img/icons/ellipsis.png) on the widget and select **Remove**:
+* Click <img src="/img/icons/ellipsis.png" className="icon" alt="the ellipsis icon"/> on the widget and select **Remove**:
 
    ![Remove Widget](/img/Remove-Widget.png)
 
-* Click ![the ellipsis icon](/img/icons/ellipsis.png) and select <b>Settings</b> to open the <b>Dashboard Settings</b> panel. Click ![the X icon](/img/icons/remove.png) in the **Current** section. It will move to the **Available** section.
+* Click <img src="/img/icons/ellipsis.png" className="icon" alt="the ellipsis icon"/> and select <b>Settings</b> to open the <b>Dashboard Settings</b> panel. Click <img src="/img/icons/remove.png" className="icon" alt="the Remove icon"/> in the **Current** section. It will move to the **Available** section.
    
    ![Dashboard Settings Panel](/img/Dashboard-Settings-Panel.png)
 

@@ -113,7 +113,7 @@ The Access Key and Secret Key are used for programmatic (API) access to your lis
 ### To Generate a Key:
 
 1. Select the listener from the  **Integration Listeners** list.
-2. Click ![the Generate icon](/img/icons/generate.png) to create an API Key for your Alias, or enter your own<br/>
+2. Click <img src="/img/icons/generate.png" className="icon" alt="the Generate icon"/> to create an API Key for your Alias, or enter your own<br/>
 
    ![](/img/Create-Alias9.png)
 

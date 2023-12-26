@@ -7,7 +7,7 @@ tags:
 
 # User Management
 
-Administrators can create and manage users within the <a href="https://im.dev.actiandatacloud.com/ui/admin/users" className="externalLink" target="_blank">Administration Console</a>. Note that User Management requires Account Admin access.
+Administrators can create and manage users within the Administration Console. Note that User Management requires Account Admin access.
 
 Account administrators can:
 
@@ -26,7 +26,7 @@ Account administrators can:
 
    ![Administration](/img/Administration.png)
 
-2. Click &nbsp;![the Add New button](/img/icons/Add-New-User.png).
+2. Click <img src="/img/icons/Add-New-User.png" className="icon" alt="the Add New button"/>.
 3. On the **Create User Account** page, enter the **First Name** and **Last Name**.
 4. In the **Username** field, enter the user's email address as the username.
    
@@ -36,13 +36,13 @@ Account administrators can:
 
 5. In the **Password** field, enter a password manually or select **Auto-Generate Password**.
 6. In the **Status** field, **Active** is selected by default. If you do not yet want the user account to be active, select **Inactive**.
-7. Click &nbsp;![the Continue button](/img/icons/Continue-Button2.png).
+7. Click <img src="/img/icons/Continue-Button2.png" className="icon" alt="the Continue button"/>.
 8. Under **What role would you like to assign to the user?**, click **Admin** or **General User**.
 9. If you selected **General User**, click the **Select policies** dropdown and select the desired policy. See [Access Control Policies](./access-control-polices).
 
    ![Create-User2](/img/Create-User2.png)
    
-10. Click &nbsp;![the Add User button](/img/icons/Add-User-Button.png).
+10. Click <img src="/img/icons/Add-User-Button.png" className="icon" alt="the Add User button"/>.
 
 ## Activating or Inactivating a User
 
@@ -65,7 +65,7 @@ Account administrators can:
    ![Edit-User](/img/Edit-User-Dropdown.png)
 
    :::note
-      You can also click the Username for the desired user and then click ![the edit icon](/img/icons/edit-icon.png) in the **User Details** pane:
+      You can also click the Username for the desired user and then click <img src="/img/icons/edit-icon.png" className="icon" alt="the Edit icon"/> in the **User Details** pane:
 
       ![Edit-User2](/img/Edit-User2.png)
    :::
@@ -82,7 +82,7 @@ Account administrators can:
    Users (admin and non-admin alike) are not allowed to activate/deactivate, or enable/disable Admin Access for themselves.
    :::
 
-4. Click &nbsp;![the Continue button](/img/icons/Continue-Button2.png).
+4. Click <img src="/img/icons/Continue-Button2.png" className="icon" alt="the Continue button"/>.
 5. Under **What role would you like to assign to the user?**, click **Admin** or **General User**.
 6. If you selected **General User**, click the **Select policies** dropdown and select the desired policy. See [Access Control Policies](./access-control-polices).
 
@@ -108,7 +108,7 @@ Account administrators can:
    
    ![Edit-User](/img/Edit-User-Dropdown.png)
 
-3. Click &nbsp;![the Continue button](/img/icons/Continue-Button2.png).
+3. Click <img src="/img/icons/Continue-Button2.png" className="icon" alt="the Continue button"/>.
 4. Click **Admin** or **General User**, then click **Update User**.
 
    ![Update-Admin-Access](/img/Update-Admin-Access.png)

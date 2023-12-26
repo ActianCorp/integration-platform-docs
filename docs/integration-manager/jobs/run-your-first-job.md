@@ -6,22 +6,18 @@ tags:
 
 # Run Your First Job
 
-:::note
-This topic is intended to provide an overview of running jobs in the Integration Manager. If you haven't yet run a job, some of the steps in this process might require further explanation. Refer to the links provided.
-:::
-
 ## Step 1: Create a Configuration
 
 1. Select the **Configurations** tab:
 
    ![Configurations Tab](/img/Configurations-Tab.png)
 
-2. Click ![Create Configuration Button](/img/icons/Create-Configuration-Button.png).
-3. Import a configuration. See [Creating Configurations (On-Prem)](../configurations/creating-configurations-on-prem) or [Creating Configurations (Cloud)](../configurations/creating-configurations-cloud). <font color="red">Reminder to replace the On-Prem and Cloud variants in this step with a single topic when this issue is resolved in the UI.</font>
+2. Click <img src="/img/icons/Create-Configuration-Button.png" className="icon" alt="the Create Configuration button"/>.
+3. Import a configuration. See [Importing Configurations](../configurations/creating-configurations-on-prem).
 
 ## Step 2: Select an Entry Point
 
-1. Click ![the edit icon](/img/icons/edit-icon.png) next to **Entry Point** and select an Entry Point within the djar:
+1. Click <img src="/img/icons/edit-icon.png" className="icon" alt="the Edit icon"/> next to **Entry Point** and select an Entry Point within the djar:
    
    ![Entry Point](/img/Entry-Point.png)
 

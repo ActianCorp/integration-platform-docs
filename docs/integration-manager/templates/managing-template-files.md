@@ -91,7 +91,7 @@ You can upload or link multiple package files to a template, but only one packag
 
 To select a different package:
 
-1. On the **Template Details** page, click &nbsp;![the Edit icon](/img/icons/edit-icon.png)&nbsp; to the right of **Package Uploaded**:
+1. On the **Template Details** page, click <img src="/img/icons/edit-icon.png" className="icon" alt="the Edit icon"/> to the right of **Package Uploaded**:
 
    ![Package Uploaded Edit](/img/Template-Package-Uploaded-Edit.png)
 2. In the **Upload Packages & Files** dialog, select a package and click **DONE**:
