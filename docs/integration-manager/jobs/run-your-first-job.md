@@ -13,7 +13,7 @@ tags:
    ![Configurations Tab](/img/Configurations-Tab.png)
 
 2. Click <img src="/img/icons/Create-Configuration-Button.png" className="icon" alt="the Create Configuration button"/>.
-3. Import a configuration. See [Importing Configurations](../configurations/creating-configurations-on-prem).
+3. Import a configuration. See [Importing Configurations](../configurations/importing-configurations).
 
 ## Step 2: Select an Entry Point
 
