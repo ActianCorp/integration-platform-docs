@@ -36,7 +36,7 @@ const sidebars = {
           label: 'Configurations',
           items: [
             'integration-manager/configurations/configurations-overview',
-            'integration-manager/jobs/run-your-first-job',
+            'integration-manager/configurations/run-your-first-job',
             'integration-manager/configurations/importing-configurations',
             'integration-manager/configurations/creating-configurations',
             //'integration-manager/configurations/creating-configurations-on-prem',
