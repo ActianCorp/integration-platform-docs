@@ -338,6 +338,10 @@ input {
   font-family: 'Red Hat Text';
 }
 
+::placeholder {
+  opacity: 0.5;
+}
+
 input[type="submit"]:hover {
   background: #AAAAAA;
   font-family: 'Red Hat Text';
