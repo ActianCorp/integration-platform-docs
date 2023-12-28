@@ -11,6 +11,6 @@ hide_table_of_contents: true
 | `repository.source-bucket` | Base path for job input collateral (artifacts, additional files) | `${sharedDataPath}` |
 | `repository.source-prefix` | Job artifact storage location (source-bucket + source-prefix) | `repository` |
 | `repository.local-temp-dir` | Temporary file storage location (source-bucket + local-temp-dir) | `tmp` |
-| repository.target-bucket | Base path for job output collateral (log files, job data files) | `${sharedDataPath}` |
+| `repository.target-bucket` | Base path for job output collateral (log files, job data files) | `${sharedDataPath}` |
 | `repository.target-prefix` | Job output storage location, including log files (target-bucket + target-prefix) | `history/job` |
 

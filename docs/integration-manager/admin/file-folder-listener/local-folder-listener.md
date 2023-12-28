@@ -16,17 +16,19 @@ The Local Folder Listener monitors file folders for files and will execute a pre
 
 ## Listener Configuration
 
-<font color="red">Current Help says these properties are configured in **file-folder-listener-listeners.yml**.</font>
+<font color="red">
+* Current Help says these properties are configured in **file-folder-listener-listeners.yml**.
+* The FileFolderListener folder does not exist on my machine. Is this not the correct location or is there something wrong with my install?
+</font>
 
 **listeners.yml**
-(ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml
+
+`(ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml`.
 
 ### Example
 
 :::info[IMPORTANT]
-
 Indentation is critical for YAML syntax!
-
 :::
 
 ```
@@ -36,7 +38,7 @@ listeners:
     listener-type: local
     active: true
     source-directory: C:/DataSources/accounts
-    include-pattern: ^Accounts.*
+    include-pattern: ^Accounts.
     exclude-pattern: ^skipme.txt
     filename-override: Accounts.txt
   - id: local-listener-folder-contacts

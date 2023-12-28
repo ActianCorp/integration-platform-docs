@@ -8,7 +8,7 @@ tags:
 
 The File Folder Listener Service is used to monitor file directories or cloud storage buckets/containers for new files.
 
-When a new file appears that matches your include/exclude criteria, the associated listener submits the file to a Job Configuration in Integration Manager. The file will be available to the specified integration process using the $(LOCAL_JOB_SPEC_DIR) macro at runtime. For example, a file named Accounts.txt will be available as $(LOCAL_JOB_SPEC_DIR)Accounts.txt.
+When a new file appears that matches your include/exclude criteria, the associated listener submits the file to a Job Configuration in Integration Manager. The file will be available to the specified integration process using the `$(LOCAL_JOB_SPEC_DIR)` macro at runtime. For example, a file named `Accounts.txt` will be available as `$(LOCAL_JOB_SPEC_DIR)Accounts.txt`.
 
 The File Folder Listener Service is included with the installation of Integration Manager. A Windows service is registered with the name Actian File Folder Listener and must be started manually after configuration is complete.
 
@@ -22,12 +22,14 @@ Integration Manager must be installed, configured, and running.
 
 ### Basic Configuration
 
-These properties are located in &lt;ProgramDataDirectory>\Actian\FileFolderListener\conf\application.properties.
+**application.properties**
 
-| Property | Default Value | Description|
-| :--- | :---: | :--- |
-| listener.backup- directory | — | The folder where backups of successfully submitted files are stored |
-| listener.error- directory | — | The folder where copies of failed file submissions are stored, for example, Exceeded max file size, Integration Manager Service was not running, and so on |
+`<ProgramDataDirectory>\Actian\FileFolderListener\conf\application.properties`.
+
+| Property | Description|
+| :--- | :--- |
+| `listener.backup- directory` | The folder where backups of successfully submitted files are stored |
+| `listener.error- directory` | The folder where copies of failed file submissions are stored, for example, Exceeded max file size, Integration Manager Service was not running, and so on |
 
 ## Authorizing the File Folder Listener Service
 
@@ -42,11 +44,10 @@ We strongly recommend that you enable HTTPS for your Integration Manager server 
 To authorize the File Folder Listener Service:
 
 1. Determine your Integration Manager API base URL, for example:
-* http://im-server-hostname.company.net:8080/api
-* https://im-server-hostname.company.net:443/api
-
-1. Open a browser window.
-2. Navigate to the device code retrieval URL:
+   * http://im-server-hostname.company.net:8080/api
+   * https://im-server-hostname.company.net:443/api
+2. Open a browser window.
+3. Navigate to the device code retrieval URL:
 
     ```
     <im-api-base-url>/device/code?client_id=file-folder-listener&host=<file-folder-listener-hostname>
@@ -67,7 +68,7 @@ To authorize the File Folder Listener Service:
 
     :::
 
-3. When prompted, enter your Integration Manager User authentication credentials.
+4. When prompted, enter your Integration Manager User authentication credentials.
    
    Response should look like:
    ```
@@ -82,7 +83,7 @@ To authorize the File Folder Listener Service:
        }
     }
    ```
-4. Since you are already authenticated, simply click the device approval URL for “verification_uri_complete.”
+5. Since you are already authenticated, simply click the device approval URL for “verification_uri_complete.”
    
    Response should look like:
    ```
@@ -94,7 +95,7 @@ To authorize the File Folder Listener Service:
     im.user-code=ZEPQ-VOK8
    ```
 
-5. In the &lt;ProgramDataDirectory>\Actian\FileFolderListener\conf\application.properties file, delete any duplicate entries and then copy and paste the response into the file.
+6. In the `<ProgramDataDirectory>\Actian\FileFolderListener\conf\application.properties` file, delete any duplicate entries and then copy and paste the response into the file.
    
 ## Platform Listener Configurations
 
@@ -107,19 +108,21 @@ Follow the appropriate link for the Listener you want to configure:
 
 ## Advanced Configuration Properties
 
-You can add these properties to &lt;ProgramDataDirectory>\Actian\FileFolderListener\conf\application.properties to further customize behavior.
+You can add these properties to `<ProgramDataDirectory>\Actian\FileFolderListener\conf\application.properties` to further customize behavior.
 
-| <div style={{width: 220}}>Property</div> | Default&nbsp;Value | Description|
+| <div style={{width: 220}}>Property</div> | Description | Default |
 | :--- | :--- | :--- |
-| `listener.retain-backup-files` | true | Set this to false to not retain backup files. Error files will still be saved. |
-| `listener.backup-directory-max-file-age` | 7 | The number of days backup files are retained |
-| `listener.error-directory-max-file-age` | 14 | The number of days error files are retained |
+| `listener.retain-backup-files` | Set this to false to not retain backup files. Error files will still be saved. | `true` |
+| `listener.backup-directory-max-file-age` | The number of days backup files are retained | `7` |
+| `listener.error-directory-max-file-age` | The number of days error files are retained | `14` |
 
 ## File Size Configuration and Limitations
 
-**<font color="red">In the current help, ths topic is listed twice -- once in User Guide (under the JobConfig File Listener API topc) and the System Administration Guide (under Authorizing and Configuring the File Folder Listener Service). Which is the appropriate location for this?</font>**
+<font color="red">
+In the current help, ths topic is listed twice -- once in User Guide (under the JobConfig File Listener API topic) and the System Administration Guide (under Authorizing and Configuring the File Folder Listener Service). Which is the appropriate location for this?
+</font>
 
-File size limitations are governed by the Integration Manager multipart file configuration in the &lt;ProgramDataDirectory>\Actian\IntegrationManager\conf\application.properties file.
+File size limitations are governed by the Integration Manager multipart file configuration in the `<ProgramDataDirectory>\Actian\IntegrationManager\conf\application.properties` file.
 
 For example, to support 100 MB file size:
 

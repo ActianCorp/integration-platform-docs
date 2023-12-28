@@ -18,7 +18,8 @@ The AWS S3 Bucket Listener monitors S3 buckets for files and will execute a pre-
 ## Add Bucket Permissions
 
 **application.properties**
-(ProgramDataDirectory)/Actian/FileFolderListener/conf/application.properties
+
+`(ProgramDataDirectory)/Actian/FileFolderListener/conf/application.properties`
 
 ### Example
 ```
@@ -29,10 +30,13 @@ aws.s3.secretkey=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 ## Listener Configuration
 
-<font color="red">Current Help says these properties are configured in **file-folder-listener-listeners.yml**.</font>
+<font color="red">
+Current Help says these properties are configured in **file-folder-listener-listeners.yml**.
+</font>
 
 **listeners.yml**
-(ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml
+
+`(ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml`
 
 ### Example
 

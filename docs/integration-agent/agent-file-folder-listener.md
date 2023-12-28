@@ -1,5 +1,7 @@
 ---
 title: Agent File Folder Listener
+tags:
+ - Content Issues
 ---
 
 # File Folder Listener
@@ -9,6 +11,10 @@ This mimics the File Folder Listener from Integration Manager.
 The File Folder Listener Service is used to monitor file directories and/or cloud storage buckets/containers for new files. When a new file appears (matching your include/exclude criteria), the associated listener will submit the file to a Job Configuration.
 
 ## Basic Configuration
+
+<font color="red">
+The FileFolderListener folder does not exist on my machine. Is this not the correct location or is there something wrong with my install?
+</font>
 
 These properties are located in:
 * Windows: `(ProgramDataDirectory)/Actian/FileFolderListener/conf/application.properties`

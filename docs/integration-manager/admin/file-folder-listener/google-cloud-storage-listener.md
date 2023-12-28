@@ -19,7 +19,8 @@ The Google Cloud Storage Listener monitors Google Storage buckets for files and 
 For more information on how to create/obtain this key, see [https://cloud.google.com/storage/docs/reference/libraries#setting_up_authentication](https://cloud.google.com/storage/docs/reference/libraries#setting_up_authentication)
 
 **application.properties**
-(ProgramDataDirectory)/Actian/FileFolderListener/conf/application.properties
+
+`(ProgramDataDirectory)/Actian/FileFolderListener/conf/application.properties`
 
 ### Example
 ```
