@@ -75,7 +75,7 @@ You can download the Actian Integration Agent installer from either the **Agents
    
    See [Service Logs & Monitoring](#service-logs--monitoring) below.
 
-If you encounter issues, ensure that the agent is active. See [Activating and Deactivating Agents](../integration-manager/agents-and-devices/activate-agent). If the issue doesn’t resolve, ensure that the Actian Integration Service is running.
+If you encounter issues, activate the agent. See [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices). If the issue doesn’t resolve, ensure that the service is running.
 
 ### Run Your First DJAR
 
@@ -176,11 +176,14 @@ You can download the Actian Integration Agent installer from either the **Agents
    
    See [Service Logs & Monitoring](#service-logs--monitoring-1) below.
 
-If you encounter issues, activate the agent. See [Activate/Deactivate an Agent](../integration-manager/agents-and-devices/activate-agent). If the issue doesn’t resolve, ensure that the service is running. See [Start/Stop/Status](./quickstart-install#startstopstatus). <font color="red">I added this as it is mentioned in the Windows section. Please verify.</font>
+If you encounter issues, activate the agent. See [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices). If the issue doesn’t resolve, ensure that the service is running. See [Start/Stop/Status](./quickstart-install#startstopstatus). <font color="red">I added this as it is mentioned in the Windows section. Please verify.</font>
 
 ### Run Your First DJAR
 
-<font color="red">Note: I moved this section out to the existing topic to avoid duplication of content.</font>
+<font color="red">
+Note: I moved this section out to the existing topic to avoid duplication of content.
+</font>
+
 You are now ready to run your first remote job. Refer to [Run Your First Remote Job](./run-your-first-remote-job).
 
 ### Service Logs & Monitoring
