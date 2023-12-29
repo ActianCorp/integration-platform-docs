@@ -35,7 +35,7 @@ import TabItem from '@theme/TabItem';
 2. Right-click the downloaded installer file (integration-manager-3.x.x.exe) and select "Run as Administrator".
    
    :::note
-      If you have a previous 3.x.x version installed, you will be prompted to uninstall first. Uninstall will shutdown running services and prepare for library updates, it will NOT remove or alter ProgramData (conf files, logs, etc.).
+      If you have a previous 3.x.x version installed, you will be prompted to uninstall first. Uninstalling will shutdown running services and prepare for library updates, it will NOT remove or alter ProgramData (conf files, logs, etc.). See [Uninstallation](#unistallation) below.
    :::
 
 3. Accept the License Agreement.
@@ -62,7 +62,7 @@ The `application.properties` file can be used for a variety of configurations to
 3. To run Integration Manager on a different port, set the property ```server.port``` (default: 8080).
 4. Any change to the `application.properties` file will require a restart of the service.
    * Go to Windows → Administrative Tools → Services.
-   * Right-click on Actian Integration Manager and select **Stop**, **Start**, or **Restart**.
+   * Right-click on Actian Integration Manager and select **Restart**.
 
 :::note
    Configuration file changes will survive uninstallation/reinstallation.
@@ -76,6 +76,11 @@ The `application.properties` file can be used for a variety of configurations to
    :::note
       Log file data will survive uninstallation/reinstallation.
    :::
+
+### Uninstallation
+
+To uninstall Integration Manager, execute `uninstaller.exe` in the program directory (default `C:/Program Files/Actian/IntegrationManager`).
+
 
 </TabItem>
 <TabItem value="linux" label="Linux">
@@ -136,12 +141,10 @@ The `application.properties` file can be used for a variety of configurations to
 2. You can retrieve DataConnect Engine log files by Job Id in the job history folder (default: `/etc/opt/actian/integration-manager/history/job`)
 
    :::note
-
    Log file data will survive uninstallation/reinstallation.
-
    :::
 
-### Start, Stop, Uninstall, Etc
+### Start, Stop, Status, Uninstall
 
 * Start: ```sh -x /etc/init.d/imservice start```
 * Stop: ```sh -x /etc/init.d/imservice stop```

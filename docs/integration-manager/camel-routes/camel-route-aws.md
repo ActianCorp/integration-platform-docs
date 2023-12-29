@@ -15,7 +15,7 @@ Monitor an S3 folder for new files and submit to the JobConfig run API.
 `(ProgramDataDirectory)/Actian/FileFolderListener/conf/routes-prototype.xml`
 
 :::note
-Multiple routes (i.e. for AWS,Azure, GCP and Local) can be added into a single `routes-prototype.xml`.
+Multiple routes (i.e., AWS, Azure, GCP, and Local) can be added into a single `routes-prototype.xml`.
 :::
 
 Example:

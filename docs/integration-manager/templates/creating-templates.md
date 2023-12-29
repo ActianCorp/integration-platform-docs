@@ -1,7 +1,5 @@
 ---
 title: Creating Templates
-tags:
- - Content Issues
 ---
 
 # Creating Templates
@@ -18,7 +16,7 @@ To create a template:
    ![Template-Setup 1](/img/Template-Setup1.png)
 
 5. Enter a unique name in the **Name** field.
-6. By default, the **Auto-Create Configuration** checkbox is checked. This automatically creates a new configuration that will inherit this template’s settings. If you do not want to automatically create a configuration from this template, unselect the **Auto-Create Configuration** radio button. <font color="red">Can we link to a topic that describes auto-created configs more fully?</font>
+6. By default, the **Auto-Create Configuration** checkbox is checked. This automatically creates a new configuration that will inherit this template’s settings. If you do not want to automatically create a configuration from this template, unselect the **Auto-Create Configuration** radio button.
 7. Select a file from either your local system or the Integration Files repository as described in the following sections.
 
 ## Local System
@@ -32,7 +30,7 @@ To create a template:
 
     :::
 
-3. The file is listed. <font color="red">If you click ![unlink](/img/icons/unlink.png), the file is removed. But if you click the Local System or Integration Files button again, the file is also removed. What would be the point of clicking the remove button first if you have to select a new file anyway? </font>
+3. The file is listed.
 
 4. Click **Create**.
 5. The template is created and you are redirected to the **Template Details** page. Refer to [Editing Template Details](./editing-template-details).
@@ -48,6 +46,6 @@ To create a template:
 
 5. The file(s) are listed.
 6. Select a package from the list, then click the **Select Package** button.
-7. The **File Manager** dialog closes, and the file is listed. <font color="red">If you click![unlink](/img/icons/unlink.png), the file is removed. But if you click the Local System or Integration Files button again, the file is also removed. What would be the point of clicking the remove button first if you have to select a new file anyway? </font>
+7. The **File Manager** dialog closes, and the file is listed.
 8. Click **Create**.
 9. The template is created and you are redirected to the **Template Details** page. Refer to [Editing Template Details](./editing-template-details).

@@ -5,11 +5,14 @@ tags:
  - Image Issues
 ---
 
-**<font color="red">What are we calling the elements on the Dashboard? I refer to them as widgets here.</font>**
+<font color="red">
+What are we calling the elements on the Dashboard? I refer to them as widgets here.
+</font>
 
 ![Dashboard](/img/Dashboard.png)
 
 The Dashboard provides data visualization charts that you can use to monitor the overall status of your integrations, configurations, and agents. 
+
 
 ## Widgets
 
@@ -33,7 +36,7 @@ The ALL JOBS chart displays the number of integrations executed for the selected
 
 ### FAILED JOBS
 
-The FAILED JOBS chart represents the number of failed integrations executed for the selected time period (30, 60 or 90 days). Hover over the chart to see the value per day. <font color="red">Need image with more data.</font>
+The FAILED JOBS chart represents the number of failed integrations executed for the selected time period (30, 60 or 90 days). Hover over the chart to see the value per day.
 
    ![Failed Jobs Widget](/img/Failed-Jobs-Widget.png)
 
@@ -54,7 +57,7 @@ Sync result status can be:
 
 ### AGENT HEALTH
 
-The AGENT HEALTH chart represents the health status of agents a user has installed. In the following figure, the user has one agent installed and its status is Error. Hover over the chart to see the value per day. <font color="red">Very minor issue, but it would be nice if we added a condition such as "if numAgents == 1 then 'Agent' else 'Agents'" so we don't get the "1 Agents" label here.</font>
+The AGENT HEALTH chart represents the health status of agents a user has installed. In the following figure, the user has one agent installed and its status is Error. Hover over the chart to see the value per day. 
 
    ![Agent Health Widget](/img/Agent-Health-Widget.png)
 
@@ -70,7 +73,7 @@ You can verify whether the agent is running, and also start the agent service, b
 
 ### News & Announcements
 
-<font color="red">Need some content in this widget so I can take a screenshot. How can we populate some fake data in Dev?</font>
+<font color="red">Need image with some data.</font>
 
 ## Customizing the Dashboard
 

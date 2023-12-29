@@ -12,8 +12,6 @@ You can upload and manage files for use with your configurations and templates. 
 * Private Files can be created, edited, or deleted by the logged–in user. These files are visible to administrators.
 * Public Files can be seen and accessed by any user. They can be created, edited, or deleted only by an administrator.
 
-
-
 ## Viewing Private Files
 
 1. Select the **Files** tab.
@@ -39,7 +37,6 @@ You can upload and manage files for use with your configurations and templates. 
 3. The **User Files** page is displayed, listing files owned by the selected user:
 
    ![User Files](/img/User-Files.png)&nbsp;
-
 
 ## Uploading Files
 
@@ -82,5 +79,6 @@ Only Admins can delete public files or user files owned by another user.
 
 1. Click the filename:
 
-   ![Download Files](/img/Download-File.png)&nbsp;:
+   ![Download Files](/img/Download-File.png)
+
 2. In the **Save As** window, navigate to the desired folder and click **Save**.

@@ -1,7 +1,5 @@
 ---
 title: Editing Your Profile
-tags:
- - Content Issues
 ---
 
 # Editing Your Profile
@@ -14,14 +12,7 @@ On the **My Profile** page, non-admin users can edit their name and change their
 
    ![Profile Dropdown](/img/profile-dropdown.png)
 
-## Editing Your Name
-
-1. Edit the **First Name** and **Last Name** fields.
-2. Click **Update User**.
-
 ## Changing Your Password
-
-   <font color="red">How do you reset your password when you've forgotten it?</font>
 
 1. Enter your new password in the Password textbox, or select the **Auto-Generate Password** checkbox.
 
@@ -33,3 +24,7 @@ On the **My Profile** page, non-admin users can edit their name and change their
 
 2. Click **Update User**.
 
+## Editing Your Name
+
+1. Edit the **First Name** and **Last Name** fields.
+2. Click **Update User**.

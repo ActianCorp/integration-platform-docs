@@ -1,12 +1,8 @@
 ---
 title: Macros Overview
-tags:
- - Content Issues
 ---
 
 # Macros Overview
-
-<font color="red">We use Job Config, JOBCONFIG, Config, and Configuration throughout the docs. Are all configurations considered Job Configs? Is this because the runtime macros property names are JOB_CONFIG_*? It would be helpful to use consistent terminology throughout.</font>
 
 Macros enable you to run a single integration for different types of users without having to modify the integration itself. Macros are defined when the integration is in the configuration state. Macros can save you time and reduce errors at runtime.
 
@@ -36,7 +32,8 @@ You can specify values for macros at the account level or for specific templates
 
 Account-level macros are global and read-only.
 
-They can be viewed by all users in your account. They can be created, edited, and deleted only by account admin users.
+* They can be viewed by all users in your account.
+* They can be created, edited, and deleted only by account admin users.
 
 ### User (Private) Macros
 
@@ -73,8 +70,8 @@ You can use these to:
 
 | Macro Name | Macro Value Description |
 | :--- | :--- |
-| **JOB\_ID** | Id of the currently executing job. |
-| **JOB\_CONFIG\_ID**  | Configuration id of the currently executing job. |
-| **JOB\_TEMPLATE\_ID** | Template id of the currently executing job. Optional. |
-| **LOCAL\_JOB\_SPEC\_DIR** | Working directory for the currently executing job. Job artifacts, additional files, and input payload files are stored here. You can also use for temporary file requirements.<br /> Refer to [Using LOCAL_JOB_SPEC_DIR](./using-LOCAL_JOB_SPEC_DIR). |
-| **SESSION\_ID** | An access token value that is valid for the life of this job and has the authorities and capabilities of the user who submitted the job. If the job is executed by a schedule, the token has the authorities and capabilities of the user who owns the scheduled Configuration. Note that on-demand and scheduled jobs submitted or owned by inactive users will not run. |
+| JOB\_ID | Id of the currently executing job. |
+| JOB\_CONFIG\_ID  | Configuration id of the currently executing job. |
+| JOB\_TEMPLATE\_ID | Template id of the currently executing job. Optional. |
+| LOCAL\_JOB\_SPEC\_DIR | Working directory for the currently executing job. Job artifacts, additional files, and input payload files are stored here. You can also use for temporary file requirements.<br /> Refer to [Using LOCAL_JOB_SPEC_DIR](./using-LOCAL_JOB_SPEC_DIR). |
+| SESSION\_ID | An access token value that is valid for the life of this job and has the authorities and capabilities of the user who submitted the job. If the job is executed by a schedule, the token has the authorities and capabilities of the user who owns the scheduled Configuration. Note that on-demand and scheduled jobs submitted or owned by inactive users will not run. |

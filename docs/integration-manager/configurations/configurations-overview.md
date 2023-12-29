@@ -9,5 +9,5 @@ A configuration is a set of properties and parameters that specify when, where, 
 There a several ways to create integrations:
 * [Creating Configurations Manually](./creating-configurations)
 * [Importing Configurations](./importing-configurations)
-* [Creating a Configuration from a Template](./creating-configurations#creating-a-configuration-from-a-template)
+* [Creating Configurations from a Template](./creating-configurations#creating-a-configuration-from-a-template)
 * [Duplicating Configurations](./duplicating-configurations)

@@ -15,21 +15,16 @@ In order to preserve production data during maintenance, restarts, and/or outage
 * Integration Manager Worker (includes DataConnect engine and DataFlow capabilities)
 
 :::note
-
 You can increase Worker concurrency and/or add additional Workers to meet your workload scale and environment requirements.
-
 :::
 
 ## Configuring Distributed Integration Manager Core
 
 Integration Manager has only one mandatory property change in ../conf/application.properties file to distribute the core components:
 
-```
-worker.embedded=false
-```
+`worker.embedded=false`
 
 :::note
-
 Any change to application.properties requires a restart of the Integration Manager Service.
 :::
 

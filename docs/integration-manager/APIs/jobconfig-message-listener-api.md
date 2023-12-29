@@ -8,7 +8,7 @@ tags:
 
 <font color="red">
 1. In the "unoffical" help in GH Pages, this topic is called Run Job with Input Message. I moved it under the APIs category, which is where this lives in the current help on docs.actian.com. Not sure where it belongs, but it made sense to me to have this in the APIs section.
-2. In the current help, ths topic includes the File Size Configuration and Limitations topic, which also lives in the File Folder Listener Service topic in the Admin section. Does that topic belong here?
+2. In the current help, this topic includes the File Size Configuration and Limitations topic, which also lives in the File Folder Listener Service topic in the Admin section. Does that topic belong here?
 </font>
 
 ## Overview

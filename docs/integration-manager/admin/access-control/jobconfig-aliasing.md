@@ -2,6 +2,7 @@
 title: JobConfig Listener Aliasing
 tags:
  - Content Issues
+ - Bugs
 ---
 
 # JobConfig Listener Aliasing
@@ -91,7 +92,7 @@ Content-Type: application/json
 
    ![](/img/Create-Alias5.png)
 
-7. Either select an existing IP Address, or enter a new IP Address and Label, then click **Add**. <font color="red">Need details for this step.</font>
+7. Either select an existing IP Address, or enter a new IP Address and Label, then click **Add**.
 
    ![](/img/Create-Alias6.png)
 
@@ -120,7 +121,6 @@ The Access Key and Secret Key are used for programmatic (API) access to your lis
     <font color="red">If I generate a key, then delete it, I am unable to then enter my own. Is this intended, and if so, why?</font>
 
 3. The following dialog is displayed. Click **Generate Keys**:
-      <font color="red">Do we need to add details about updating all clients?</font>
 
    ![](/img/Create-Alias10.png)
 
@@ -142,7 +142,7 @@ The Access Key and Secret Key are used for programmatic (API) access to your lis
 3. The listener is updated with the generated keys.
 
    ![](/img/Create-Alias11.png)
-      <font color="red">Why do you not get the dialog about needing to updating all clients when entering your own key?</font>
+      <font color="red">Why do you not get the dialog about needing to update all clients when entering your own key?</font>
 
 ## Step 3: TestInvoke the Alias
 
