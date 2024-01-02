@@ -1,7 +1,6 @@
 ---
 title: Accessing the Integration Manager
 tags:
-  - Image Issues
   - Content Issues
 ---
 

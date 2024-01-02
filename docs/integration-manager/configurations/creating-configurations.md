@@ -2,7 +2,6 @@
 title: Creating Configurations
 tags:
  - Content Issues
- - Bugs
 ---
 
 # Creating Configurations

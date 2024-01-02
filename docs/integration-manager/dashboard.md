@@ -2,7 +2,6 @@
 title: Dashboard
 tags:
  - Content Issues
- - Image Issues
 ---
 
 <font color="red">
@@ -73,7 +72,9 @@ You can verify whether the agent is running, and also start the agent service, b
 
 ### News & Announcements
 
-<font color="red">Need image with some data.</font>
+<font color="red">
+Need image with some data.
+</font>
 
 ## Customizing the Dashboard
 
