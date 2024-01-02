@@ -5,7 +5,9 @@ tags:
 ---
 # Release Notes 3.1
 
-**<font color="red">Need to update for recent versions. Also, it would be helpful to add links to rows that have related topics.</font>**
+<font color="red">
+Need to update for recent versions.
+</font>
 
 ### 3.1.1
 
@@ -13,7 +15,7 @@ tags:
 |:------------|:----------|:-------------------------------------------------------------|:-------------|:-----------------|:------------|
 | New Feature | IP-6089   | Standalone Integration Package Execution                            | 3.1.1        |          | Completed   |
 | New Feature | IP-6164   | DataConnect 12.1.0-24 Engine                                        | 3.1.1        |          | Completed   |
-| Improvement | IP-5663   | Documented Engine Patch Instructions                                | 3.1.1        |          | Completed   |
+| Improvement | IP-5663   | [Documented Engine Patch Instructions](./integration-manager/admin/server-administration/integration-engines)   | 3.1.1        |          | Completed   |
 | Improvement | IP-6063   | Enable Swagger UI Try It Features                                   | 3.1.1        |          | Completed   |
 | Bug Fix     | IP-6037   | Agent eagerly fetches Device Token                                  | 3.1.1        |          | Completed   |
 | Bug Fix     | IP-6039   | Agent Queue Consumers are not recovering from Connection Loss       | 3.1.1        |          | Completed   |
