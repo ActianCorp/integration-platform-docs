@@ -4,10 +4,6 @@ tags:
  - Content Issues
 ---
 
-<font color="red">
-What are we calling the elements on the Dashboard? I refer to them as widgets here.
-</font>
-
 ![Dashboard](/img/Dashboard.png)
 
 The Dashboard provides data visualization charts that you can use to monitor the overall status of your integrations, configurations, and agents. 

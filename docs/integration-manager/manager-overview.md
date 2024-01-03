@@ -1,7 +1,5 @@
 ---
 title: Integration Manager Overview
-tags:
- - Content Issues
 ---
 
 # Integration Manager Overview
@@ -29,19 +27,13 @@ Integration Manager can deploy anywhere to meet your enterprise requirements and
 
 ## Terminology
 
-<font color="red">
-Please review and expand/edit these definitions as appropriate.
-</font>
-
-This section describes the terminology used in the Integration Manager so you can better understand the core concepts and relationships between integrations, configurations, jobs, macros, and templates.
-
 ### Integration
 
 Data integrations enable the transformation and migration of data by visually mapping fields between a defined source and target. When you build and test an integration, it resides in the Design environment. The Design environment provides for the creation and management of data integration designs. For details on designing integrations, see <a href="https://docs.actian.com/actiandataplatform/index.html#page/Integrations/Design.htm#ww708298" className="externalLink" target="_blank">Overview of the Design Environment</a>.
 
 ### Configuration
 
-A configuration is a set of properties and parameters that specify when, where, and how an integration will be executed. Configurations contain references to a specific integration, the location in which the integration will be executed, and the frequency at which executions will occur.
+A configuration is a set of properties and parameters that specify when, where, and how an integration will be executed. Configurations contain references to a specific integration, the location in which the integration will be executed, and the frequency at which executions will occur. See [Configurations Overview](./configurations/configurations-overview).
 
 ### Job
 
