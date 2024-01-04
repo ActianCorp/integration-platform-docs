@@ -14,11 +14,12 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   docsSidebar: [
-    {
-      type: 'doc',
-      id: 'intro',
-      label: 'Overview',
-    },
+    //{
+    //  type: 'doc',
+    //  id: 'intro',
+    //  label: 'Overview',
+    //},
+    'intro',
     'release-notes',
     'quickstart-install',
     'accessing-the-integration-manager',
