@@ -8,7 +8,9 @@ You can view job run history for recent jobs, all jobs, or a specific job.
 
 ## Viewing the Run History for Recent Jobs
 
-1. Selecty the **Dashboard** tab. The Dashboard displays a list of recent jobs, as well as additional details that you can customize. See [Customizing the Dashboard](../dashboard#customizing-the-dashboard).
+1. Select the **Dashboard** tab. The Dashboard displays a list of recent jobs, as well as additional details that you can customize. See [Customizing the Dashboard](../../dashboard#customizing-the-dashboard).
+
+   ![](/img/Recent-Jobs-Widget.png)
 
 ## Viewing the Run History for All Jobs
 
@@ -34,9 +36,7 @@ The following details are displayed:
 | Log | Click <img src="/img/icons/log-file.png" className="icon" alt="the magnifying glass icon"/> for a specific record in the Run History table. The Run History: &lt;*configuration_name*> page is displayed from where you can view and download the log file. See [Downloading the Log File](./viewing-job-run-history#downloading-the-log-file).
 
 :::note
-
 You can download a log file for a specific job. See [Downloading the Log File](./downloading-the-log-file).
-
 :::
 
 ## Viewing Run Details for a Specific Job
