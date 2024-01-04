@@ -33,11 +33,7 @@ The following details are displayed:
 | Status | Status of the job. See [Job Status Codes](./job-status-codes).
 | Duration | Execution time.
 | Server | Where the job was executed.
-| Log | Click <img src="/img/icons/log-file.png" className="icon" alt="the magnifying glass icon"/> for a specific record in the Run History table. The Run History: &lt;*configuration_name*> page is displayed from where you can view and download the log file. See [Downloading the Log File](./viewing-job-run-history#downloading-the-log-file).
-
-:::note
-You can download a log file for a specific job. See [Downloading the Log File](./downloading-the-log-file).
-:::
+| Log | Click <img src="/img/icons/log-file.png" className="icon" alt="the magnifying glass icon"/> for a specific record in the Run History table. The **Run History** page is displayed for the selected job, where you can view and download the log file. See [Downloading the Log File](./downloading-the-log-file).
 
 ## Viewing Run Details for a Specific Job
 
