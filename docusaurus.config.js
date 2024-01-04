@@ -13,7 +13,6 @@ const config = {
   favicon: 'img/logos/favicon.ico',
 
   // Set the production url of your site here
-  //url: 'https://douglaslloyd.github.io', // GitHub Pages
   url: 'https://integration-platform-docs.netlify.app/', // Netlify
   // Set the /<baseUrl>/ pathname under which your site is served
   //baseUrl: '/integration-platform-docs/', // GitHub Pages - '/<projectName>/'
@@ -67,7 +66,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/', // Serve the docs at the site's root
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          // Remove this to remove the "Suggest Edits" links.
           editUrl: 'https://github.com/ActianCorp/integration-platform-docs/tree/suggestions',
           editCurrentVersion: true,
         },
@@ -81,7 +80,7 @@ const config = {
     ],
   ],
   plugins: [[ require.resolve('docusaurus-lunr-search'), { // This causes React error on localhost.
-    maxHits: '30'
+    maxHits: '30'  // Doesn't seem to work
   }]],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -94,7 +93,7 @@ const config = {
         textColor: '#091E42',
         isCloseable: true,
       },
-        // Replace with your project's social card
+      //Navbar items
       image: 'img/Logos_Actian_3Color-White-Transparent.png',
       navbar: {
         title: 'Integration Platform',
@@ -146,7 +145,7 @@ const config = {
             dropdownActiveClassDisabled: true,
           },
 //          {
-//            href: 'https://github.com/ActianCorp/integration-platform-docs/tree/main/', // Moved to footer
+//            href: 'https://github.com/ActianCorp/integration-platform-docs/tree/suggestions/', // Moved to footer
 //            position: 'right',
 //            className: 'header-github-link',
 //            title: "Actian Integration Platform Docs - GitHub",
