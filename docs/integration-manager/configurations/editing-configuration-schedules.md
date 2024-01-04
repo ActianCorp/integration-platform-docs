@@ -11,10 +11,10 @@ To set a schedule for a configuration to run:
 1. Select the **Configurations** tab.
 2. Click the name of the configuration you want to schedule.
 3. On the **Configuration Details** page, click the edit icon in the **Scheduling** field.
-4. The **Edit Configuration Schedule **page is displayed.
+4. The **Edit Configuration Schedule** page is displayed.
 5. Select a frequency from the dropdown menu:
    
-   - **On Demand** – Unscheduled; the configuration must be run manually. See Run a Configuration Manually.
+   - **On Demand** – Unscheduled; the configuration must be run manually. See [Running a Configuration Manually](./running-configurations#running-a-configuration-manually).
    - **Interval** – Scheduled to run every x hours and x minutes. Note that the shortest interval is 1 minute.
    - **Daily** – Scheduled to run every x days at a specified time.
    - **Weekly** – Scheduled to run every week at a specified time on a specific day.
