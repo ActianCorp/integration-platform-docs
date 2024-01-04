@@ -20,17 +20,16 @@ const sidebars = {
       label: 'Overview',
     },
     'release-notes',
-    //    'someOtherDoc',
+    'quickstart-install',
+    'accessing-the-integration-manager',
+    'dashboard',
+    'editing-your-profile',
     {
       type: 'category',
       label: 'INTEGRATION MANAGER USERS',
       className: 'categoryItem',
       items: [
         'integration-manager/manager-overview',
-        'integration-manager/quickstart-install',
-        'integration-manager/accessing-the-integration-manager',
-        'integration-manager/dashboard',
-        'integration-manager/editing-your-profile',
         {
           type: 'category',
           label: 'Configurations',
@@ -39,8 +38,6 @@ const sidebars = {
             'integration-manager/configurations/run-your-first-job',
             'integration-manager/configurations/importing-configurations',
             'integration-manager/configurations/creating-configurations',
-            //'integration-manager/configurations/creating-configurations-on-prem',
-            //'integration-manager/configurations/creating-configurations-cloud',
             'integration-manager/configurations/editing-configuration-details',
             'integration-manager/configurations/activating-or-inactivating-configurations',
             'integration-manager/configurations/duplicating-configurations',
@@ -67,31 +64,23 @@ const sidebars = {
           type: 'category',
           label: 'Templates',
           items: [
-            //'integration-manager/templates/templates-overview',
             'integration-manager/templates/creating-templates',
             'integration-manager/templates/editing-template-details',
             'integration-manager/templates/creating-a-configuration-from-a-template',
             'integration-manager/templates/activating-or-inactivating-templates',
-            //'integration-manager/templates/deleting-templates',
             'integration-manager/templates/importing-template-macros',
             'integration-manager/templates/managing-template-files',
             'integration-manager/templates/managing-template-configurations',
           ]
         },
-         //'integration-manager/job-scheduling',
         {
           type: 'category',
           label: 'Macros',
           items: [
             'integration-manager/macros/macros-overview',
-            //'integration-manager/macros/managing-macros',
             'integration-manager/macros/creating-macros',
             'integration-manager/macros/importing-macros',
-            //'integration-manager/macros/viewing-macros',
             'integration-manager/macros/editing-macros',
-            //'integration-manager/macros/creating-public-macros',
-            //'integration-manager/macros/managing-public-macros',
-            //'integration-manager/macros/runtime-macros',
             'integration-manager/macros/using-LOCAL_JOB_SPEC_DIR',
             'integration-manager/macros/securing-macros',
           ]
@@ -153,7 +142,6 @@ const sidebars = {
         {
           type: 'category',
           label: 'Server Administration',
-          //link: {type: 'doc', id: 'integration-manager/server-administration/server-administration'},
           items: [
             'integration-manager/admin/server-administration/server-administration-overview',
             'integration-manager/admin/server-administration/production-architecture',
