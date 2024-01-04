@@ -46,8 +46,15 @@ Make any suggested edits, then create a pull request. We will review your change
 
 ## Platform
 
-###  Bugs, feature requests, and suggestions
-
 <font color="red">
-What method(s) are used to report bugs and feature requests?
+Please review to ensure these links are where we want to direct users.
 </font>
+
+###  Issues and Questions
+
+To report an issue or ask a question: [Create a New Case](https://communities.actian.com/s/create-new-case)
+
+
+### Ideas (Product Enhancements)
+
+To submit an idea for a new feature or enhancement: [Ideas (Product Enhancements)](https://communities.actian.com/s/bridea/acideasULT__brIdea__c/Recent)
