@@ -1,5 +1,7 @@
 ---
 title: Viewing Job Run History
+tags:
+ - Content Issues
 ---
 
 # Viewing Job Run History
@@ -27,8 +29,8 @@ The following details are displayed:
 | Column Name| Description
 | --- | ---
 | Start | The date and time the job was started. The time displayed here is specific to your time zone.
-| Name | The integration or configuration name. Clicking on the name displays the **Configuration Details** or **Edit Integration** page.
-| Type | The type of Job that was run. For example, configuration or integration.
+| Name | The integration or configuration name. Clicking on the name displays the **Configuration Details** page. <font color="red">The Avalanche docs mention the **Integration Details** page here, but that does not exist in Integration Manager. When I click on the name of a job with a Type of Integration, no page loads (despite the name being a link). Is this by design? </font>
+| Type | The type of Job that was run. For example, configuration or integration. <font color="red">We use integration and configuration somewhat interchangeably. It's not clear to me what determines the Type shown in this column. Also, are there other possible Types that would be listed here?</font>
 | Owner | Displays the first two characters of the Job owner (creator) name. Clicking on the initials displays the username of the owner.
 | Status | Status of the job. See [Job Status Codes](./job-status-codes).
 | Duration | Execution time.
@@ -49,7 +51,5 @@ The following details are displayed:
    ![Job Run History Detailed](/img/Job-Run-History-Detailed.png)
 
 :::note
-
 You can also view the run details for a specific job from the **Dashboard** page by clicking <img src="/img/icons/log-file.png" className="icon" alt="the magnifying glass icon"/> in the **Recent Jobs** list.
-
 :::
