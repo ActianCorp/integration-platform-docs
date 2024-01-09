@@ -26,4 +26,3 @@ tags:
 
 5. If logging in as an administrator, you can manage user accounts. Refer to [User Management](./integration-manager/admin/access-control/user-management).
 
-TESTING: ZZZ

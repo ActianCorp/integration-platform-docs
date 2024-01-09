@@ -117,7 +117,7 @@ const config = {
       announcementBar: {
         id: 'beta',
         content:
-          '<b>NOTE:</b> Our new docs platform is in BETA. Features may not all work as expected, and content is in development and under review. Official documentation is on <a href="https://docs.actian.com/">docs.actian.com</a>.',
+          '<b>NOTE:</b> Our new docs platform is in BETA. Features may not all work as expected, and content is in development. Official documentation is on <a href="https://docs.actian.com/">docs.actian.com</a>.',
         backgroundColor: 'rgba(147, 219, 79, 0.6)',
         textColor: '#091E42',
         isCloseable: true,

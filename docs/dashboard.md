@@ -4,16 +4,15 @@ tags:
  - Content Issues
 ---
 
-![Dashboard](/img/Dashboard.png)
-
 The Dashboard provides data visualization charts that you can use to monitor the overall status of your integrations, configurations, and agents. 
 
+![Dashboard](/img/Dashboard.png)
 
 ## Widgets
 
 The following widgets are available on the Dashboard.
 
-For any widget that shows <img src="/img/icons/download-button.png" className="icon" alt="the Download icon"/>, click the icon to download the chart in SVG or PNG format, or download the data in CSV format (which you can open in Excel).
+For any widget that shows the download icon, click <img src="/img/icons/download-button.png" className="icon" alt="the Download icon"/> to download the chart in SVG, PNG, or CSV format.
 
 ### Recent Jobs
 
