@@ -13,7 +13,6 @@ const config = {
   favicon: 'img/logos/favicon.ico',
 
   // Set the production url of your site here
-  //url: 'https://douglaslloyd.github.io', // GitHub Pages
   url: 'https://integration-platform-docs.netlify.app/', // Netlify
   // Set the /<baseUrl>/ pathname under which your site is served
   //baseUrl: '/integration-platform-docs/', // GitHub Pages - '/<projectName>/'
@@ -67,7 +66,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/', // Serve the docs at the site's root
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          // Remove this to remove the "Suggest Edits" links.
           editUrl: 'https://github.com/ActianCorp/integration-platform-docs/tree/suggestions',
           editCurrentVersion: true,
         },
@@ -80,12 +79,41 @@ const config = {
       }),
     ],
   ],
-  plugins: [[ require.resolve('docusaurus-lunr-search'), { // This causes React error on localhost.
-    maxHits: '30'
-  }]],
+  //plugins: [[ require.resolve('docusaurus-lunr-search'), { // This causes React error on localhost.
+  //  maxHits: '30'  // Doesn't seem to work
+  //}]],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'DJTQI8DCNE',
+  
+        // Public API key: it is safe to commit it
+        apiKey: '557417026f266de1c4a0a43fc919ca41',
+  
+        indexName: 'integration-platform-netlify',
+  
+        // Optional: see doc section below
+        //contextualSearch: true,
+  
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        //externalUrlRegex: 'external\\.com|domain\\.com',
+  
+        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        //replaceSearchResultPathname: {
+        //  from: '/docs/', // or as RegExp: /\/docs\//
+        //  to: '/',
+        //},
+  
+        // Optional: Algolia search parameters
+        //searchParameters: {},
+  
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'false', //'search',
+  
+        //... other Algolia params
+      },
       announcementBar: {
         id: 'beta',
         content:
@@ -94,7 +122,7 @@ const config = {
         textColor: '#091E42',
         isCloseable: true,
       },
-        // Replace with your project's social card
+      //Navbar items
       image: 'img/Logos_Actian_3Color-White-Transparent.png',
       navbar: {
         title: 'Integration Platform',
@@ -146,7 +174,7 @@ const config = {
             dropdownActiveClassDisabled: true,
           },
 //          {
-//            href: 'https://github.com/ActianCorp/integration-platform-docs/tree/main/', // Moved to footer
+//            href: 'https://github.com/ActianCorp/integration-platform-docs/tree/suggestions/', // Moved to footer
 //            position: 'right',
 //            className: 'header-github-link',
 //            title: "Actian Integration Platform Docs - GitHub",

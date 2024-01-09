@@ -16,4 +16,4 @@ Links to common tasks in Integration Manager are listed below.
 * ### [Creating a Template](./integration-manager/templates/creating-templates)
 * ### [Creating a Macro](./integration-manager/macros/creating-macros)
 * ### [Managing Files](./integration-manager/files/managing-files)
-* ### [Changing Your Password](./integration-manager/editing-your-profile#changing-your-password)
+* ### [Changing Your Password](./editing-your-profile#changing-your-password)
