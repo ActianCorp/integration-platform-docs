@@ -1,16 +1,10 @@
 ---
 title: Camel File Processing History Management
-tags:
- - Content Issues
 ---
 
 # Camel File Processing History Management
 
-<font color="red">
-Would an overview be helpful here for readers who might not be as familiar with Camel, or are we assuming this is common knowledge for our audience? Or is this something Admins might know but users less so? Also, should we be capitalizing Camel (as in Apache Camel) or is it used generically?
-</font>
-
-All processed & unprocessed file history can be managed with camel route(s).
+All processed & unprocessed file history can be managed with camel routes.
 
 ## Manage Processed File History
 

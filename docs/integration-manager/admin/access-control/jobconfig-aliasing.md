@@ -2,7 +2,6 @@
 title: JobConfig Listener Aliasing
 tags:
  - Content Issues
- - Bugs
 ---
 
 # JobConfig Listener Aliasing
@@ -96,9 +95,6 @@ Content-Type: application/json
 
    ![](/img/Create-Alias6.png)
 
-   <font color="red">When I select a value from the dropdown rather than enter an IP address manually, I get HTML code in the IP Address field:</font>
-   ![](/img/QUESTION.png)
-
 8. Click **Save**:
 
    ![](/img/Create-Alias7.png)
@@ -142,7 +138,6 @@ The Access Key and Secret Key are used for programmatic (API) access to your lis
 3. The listener is updated with the generated keys.
 
    ![](/img/Create-Alias11.png)
-      <font color="red">Why do you not get the dialog about needing to update all clients when entering your own key?</font>
 
 ## Step 3: TestInvoke the Alias
 
@@ -176,10 +171,6 @@ You can invoke a JobConfig Alias these ways:
   * Example: Authorization: Basic VEVTVEFDQ0VTU0tFWTpURVNUU0VDUkVUS0VZ
 
 ## Deleting a Listener
-
-<font color="red">I added this section after I tried to delete a config with an associated listener. Please verify.</font>
-
-You cannot delete an aliased configuration. You must first delete the listener (which requires Admin privileges).
 
 To delete a listener:
 

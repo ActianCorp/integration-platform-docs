@@ -1,8 +1,7 @@
 ---
 title: Creating Macros
-tags:
- - Bugs
 ---
+
 # Creating Macros
 
 :::note
@@ -39,11 +38,6 @@ To create a Public Macro:
 3. If creating your first public macro, continue [Creating Your First Macro](./creating-macros#creating-your-first-macro). Otherwise, continue [Creating Additional Macros](./creating-macros#creating-additional-macros).
 
 ## Creating Your First Macro
-
-<font color="red">
-* Why is the CONTINUE button enabled before any name-value pairs have been added?
-* How do you get the **Add Macros** dialog again after creating your first macro? From then on, I can only add blank macros directly to the Macros list or import a macro file. I can't find a way to reopen the **Add Macros** dialog (which allows you to both enter name-value pairs and upload files in the same dialog).
-</font>
 
 import PartialContent1 from '../../reuse/_add_macro.mdx';
 

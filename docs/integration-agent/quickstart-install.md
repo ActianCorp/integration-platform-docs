@@ -79,7 +79,6 @@ If you encounter issues, activate the agent. See [Managing Agents and Devices](.
 
 ### Run Your First DJAR
 
-<font color="red">Note: I moved this section out to the existing topic to avoid duplication of content.</font>
 You are now ready to run your first remote job. Refer to [Run Your First Remote Job](./run-your-first-remote-job).
 
 ### Service Logs & Monitoring

@@ -1,7 +1,5 @@
 ---
 title: Run Your First Remote Job
-tags:
- - Content Issues
 ---
 # Run Your First Remote Job
 
