@@ -18,7 +18,7 @@ tags:
    ![Login](/img/Login.png)
 3. On the Login page, do one of the following:
    * Enter your user credentials and click **LOGIN**. <font color="red">I don't see a Forgot Password link on the login page. How do you reset your password when you've forgotten it?</font>
-   * Click **Login with Actian Community** to open a page where you can enter your Actian Community credentials (username and password), then click **Log in**.
+   * Click **Login with Actian Community** to open a page where you can enter your Actian Community username and password, then click **Log in**.
 
 4. Integration Manager opens to the **Dashboard** page (see [Dashboard](./dashboard)):
 
