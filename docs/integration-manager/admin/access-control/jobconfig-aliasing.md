@@ -15,9 +15,10 @@ An alias defines an alternative name for an existing Configuration to be execute
 Aliasing allows you to:
 
 * Create custom/branded API endpoints for your internal and external integration consumers
+* Make it easier for API consumers by providing a static endpoint name that does not change even when the configuration is changed on the back end
 * Seamlessly upgrade/downgrade/exchange the backend integration without disruption to consumers
 * Use various access control mechanisms for your custom API endpoint, including:
-    * Basic User Authentication (username/password)
+   * Basic User Authentication (username/password)
 	* API Keys (defined separately for each Alias you create)
 	* Public access (not recommended to service consumers outside of your internal network)
 
