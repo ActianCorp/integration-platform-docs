@@ -1,12 +1,12 @@
 ---
-title: Release Notes 3.1
+title: Release Notes
 tags:
  - Content Issues
 ---
-# Release Notes 3.1
+# Release Notes
 
 <font color="red">
-Need to update for recent versions.
+Working on updates for version 3.2.
 </font>
 
 ### 3.1.1
