@@ -26,7 +26,7 @@ function Version() {
           <table>
             <tbody>
             <tr>
-                  <th>3.1</th>
+                  <th>3.2</th>
                   <td>
                   <a href={`./docs`}>
                       Documentation
@@ -64,7 +64,7 @@ function Version() {
         </div> */}
 
         <h2>Previous Versions</h2>
-          <p>Integration Platform documentation for releases prior to version 3.1 has not been migrated to the new documentation platform.<br />Links to documentation for older releases are listed below.</p>
+          <p>Integration Platform documentation for releases prior to version 3.2 has not been migrated to the new documentation platform.<br />Links to documentation for older releases are listed below.</p>
         <div className="margin-bottom--lg">
           <table>
             <tbody>
@@ -73,6 +73,19 @@ function Version() {
                 <th>Integration Manager</th>
                 <th>Integration Agent</th>
               </tr>
+              <tr>
+                <th>3.1</th>
+                <td>
+                <a href={`https://docs.actian.com/integrationmanager/3.1`} target='_blank'>
+                    Documentaion
+                  </a>
+                </td>
+                <td>
+                  <a href={`https://docs.actian.com/integrationagent/3.1/#page/User/IntegrationAgent_Title.htm`} target='_blank'>
+                  Documentaion
+                  </a>
+                </td>
+              </tr>                
               <tr>
                 <th>3.0</th>
                 <td>
