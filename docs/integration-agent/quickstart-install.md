@@ -87,7 +87,7 @@ You are now ready to run your first remote job. Refer to [Run Your First Remote 
 
    * DataConnect Cloud: [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents)
    * Avalanche Console: [https://avalanche.actiandatacloud.com/im/agents](https://avalanche.actiandatacloud.com/im/agents)
-   * Private Cloud on Kubernetes: https://\[your hosted domain]im/agents <font color="red">The Windows section uses **im** in this url, whereas Linux uses **ui**. Is this difference intentional?</font>
+   * Private Cloud on Kubernetes: https://\[your hosted domain]im/agents <font color="red">The Windows section uses **im** in this url, whereas Linux uses **ui**. Is this difference intentional?</font> <font color="blue">GGH Feedback - They should be consistent.  I believe they both should be /ui/</font>
   
 
    :::note
@@ -182,6 +182,7 @@ If you encounter issues, activate the agent. See [Managing Agents and Devices](.
 <font color="red">
 Note: I moved this section out to the existing topic to avoid duplication of content.
 </font>
+<font color="blue"> GGH Feedback: Cool</font>font>
 
 You are now ready to run your first remote job. Refer to [Run Your First Remote Job](./run-your-first-remote-job).
 
@@ -197,7 +198,7 @@ You are now ready to run your first remote job. Refer to [Run Your First Remote 
     For more information on managing agents and devices from the Integration Manager, see [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices).
    :::
  
- 2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `C:/ProgramData/Actian/IntegrationAgent/logs/Agent.log`) <font color="red">This looks like a copy/paste error. What is the default path on Linux?</font>
+ 2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `C:/ProgramData/Actian/IntegrationAgent/logs/Agent.log`) <font color="red">This looks like a copy/paste error. What is the default path on Linux?</font> <font color="blue">GGH Feedback: Should be: /etc/opt/actian/integration-agent/logs/integration-agent.log</font>
 
 ### Start/Stop/Status
 
