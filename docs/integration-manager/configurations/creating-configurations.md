@@ -11,6 +11,10 @@ tags:
 <font color="red">
 It would be helpful here to describe why you would create a config manually rather than using the Import Configuration page. Are there cases where you need to define other details before uploading a package?
 </font>
+<font color="blue">
+GGH Feedback - There's no real distinction.  I think it's purely a UI inconsistency in regards to terminology.  You're never really "importing" a configuration and I'm not totally sure why we used that terminology.  You're importing Integrations, and those have runtime configuration information embedded in them, but it's not a job configuration.  So, I know that sounds wonky.  But there's really two paths (at least in the cloud): Create an Integration in the cloud using Integrations->Design or Uploading an existing Integration that was created in DataConnect and that is all of the Create Configuration or Import Configuration stuff.  It's always just, you have a package (usually a djar for DataCOnnect or you can have DataFlow or Link artifacts... which is still just a set of integration rules for a particular engine built in another product.  Does that all make sense or did I just confound things more?
+</font>
+
 
 To create a configuration manually:
 
