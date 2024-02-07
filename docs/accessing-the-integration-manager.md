@@ -17,7 +17,7 @@ tags:
    
    ![Login](/img/Login.png)
 3. On the Login page, do one of the following:
-   * Enter your user credentials and click **LOGIN**. <font color="red">I don't see a Forgot Password link on the login page. How do you reset your password when you've forgotten it?</font>
+   * Enter your user credentials and click **LOGIN**. <font color="red">I don't see a Forgot Password link on the login page. How do you reset your password when you've forgotten it?</font><font color="blue">GGH Feedback - Unfortunately, through non-SSO type authentication (mainly for on-prem) we don't have forgotten password recovery type mechanism.  FOr those instances, we should probably say "COntact Your Administrator".  If an on-prem administrator forgot their password and no adins have access to their on-prem stack, they should contact support, who could help them edit the database to reset their password for their admin user.</font>
    * Click **Login with Actian Community** to open a page where you can enter your Actian Community username and password, then click **Log in**.
 
 4. Integration Manager opens to the **Dashboard** page (see [Dashboard](./dashboard)):
