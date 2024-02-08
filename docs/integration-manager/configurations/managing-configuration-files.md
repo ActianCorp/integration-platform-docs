@@ -7,6 +7,7 @@ tags:
 # Managing Configuration Files
 
 <font color="red">Would it be helpful here to explain the different types of configuration files (packages, process files, etc.), or are we assuming that the reader is familiar with this?</font>
+<font color="blue">GGH Feedback - this is a big question.  I think at this point, they should know what all files they need to execute their integration.  But if they hopped over here first before truly understanding DataConnect/DataFLow/Link, it could be helpful to say something to the effect of "If you don't know what files you may need for execution, check out these resources: Links to DataCOnnect Link and DataFLow docs."  Just an idea, but trying to go over all of the types of files you could need for all of the engines seems like a cumbersome task that would really bloat this section.</font>
 
 You can upload files for use with your configurations. These can be public files or private files.
 
