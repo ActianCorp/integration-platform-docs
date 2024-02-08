@@ -7,10 +7,12 @@ tags:
 # Aggregator Service
 
 <font color="red">Where in the TOC should this topic live?</font>
+<font color="bue">GGH Feedback - By the File Folder Listener stuff</font>
 
 ## Overview
 
 <font color="red">This section needs to start with more high-level introduction.</font>
+<font color="blue">GGH Feedback - Haven't worked on this feature before, but it seems to be an extension/evolutoin of the file folder listener or job message listener.  It will collect messages and when the proper batch size has been reached, it will cull those together and send them as input to a job config and execute it.  That all make sense?</font>
 
 Messages can be submitted to:
 
