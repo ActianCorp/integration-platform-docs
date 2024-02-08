@@ -70,6 +70,9 @@ You can verify whether the agent is running, and also start the agent service, b
 <font color="red">
 Need image with some data.
 </font>
+<font color="blue">
+GGH Feedback - trying to see if I can get this for you.
+</font>
 
 ## Customizing the Dashboard
 
