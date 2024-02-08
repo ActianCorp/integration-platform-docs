@@ -31,7 +31,7 @@ gcp.storage.service-account-key=C:/ProgramData/AccessKeys/gcp-account-name-1-935
 ## Listener Configuration
 
 <font color="red">Current Help says these properties are configured in **file-folder-listener-listeners.yml**.</font>
-
+<font color="blue">GGH Feedback - listeners.yml is right</font>
 **listeners.yml**
 (ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml
 
