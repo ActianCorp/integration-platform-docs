@@ -19,6 +19,7 @@ Account administrators can:
 * Enable/Disable Admin access for a user
 
 <font color="red">I don't see a way to delete a user once created. Is there any way to do this so users no longer appear in the list?</font>
+<font color="blue">GGH Feedback - No.  You can just set them to Inactive.  That way we don't have orphan configurations or anything without users and such.</font>
 
 ## Adding a New User
 
@@ -93,6 +94,8 @@ Account administrators can:
 ## Enabling Direct API Access
 
 <font color="red">Need instructions here.</font>
+<font color="blue">GGH Feedback - I might need to dig in here.  Don't think we limit API access as like a user flag or anything, so not totally sure what this is about.  Once a user has been authenticated, they have the same API rights whether through a direct API call or through the UI making an API call.</font>
+
 
 ## Managing User API Passwords
 
