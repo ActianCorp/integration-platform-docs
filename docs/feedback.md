@@ -49,6 +49,9 @@ Make any suggested edits, then create a pull request. We will review your change
 <font color="red">
 Please review to ensure these links are where we want to direct users.
 </font>
+<font color="blue">
+GGH Feedback - looks right to me.  
+</font>
 
 ###  Issues and Questions
 
