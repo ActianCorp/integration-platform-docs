@@ -24,6 +24,6 @@ These properties are found in: `shared\_data\_path\conf\application.properties`
 | `wrapper.java. command. loglevel` | Wrapper application-specific logging level. | `INFO`  |
 | `wrapper.logfile` | Populated during installation. Controls the location of the Agent log file. Changing this value will disable the ability to retrieve the log from Integration Manager. | `%shared_data_path/logs/Agent.log` |
 | `wrapper. logfile.loglevel` | Controls GLOBAL Agent logging level.<br />**Note:**  We recommend that you do not modify this property. It is better to use logging.level.com.actian.datacloud in application.properties instead. | `INFO` |
-| `wrapper. logfile.maxsize` | Maximum size that the Agent log file is allowed to reach before the log is rolled. <font color="red">What unit?</font> | 2m |
+| `wrapper. logfile.maxsize` | Maximum size that the Agent log file is allowed to reach before the log is rolled. <font color="red">What unit?</font> <font color="blue"> GGH Feedback - You can do wither kilobytes by putting a k on the back of the number of Megabytes with an m.  So 100k would be 100 Kilobytes.  75m would be 75 Megabytes.</font>| 2m |
 | `wrapper. logfile.maxfiles` | Maximum number of rolled log files allowed before old files are deleted. | `5` |
 | `wrapper. syslog.loglevel` | Forward log events to Windows Sys/Event Log.<br />**Note:**  We recommend that you do not modify this property. | `NONE` |
