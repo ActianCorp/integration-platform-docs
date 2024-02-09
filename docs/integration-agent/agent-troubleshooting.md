@@ -46,7 +46,7 @@ This typically means there is already an instance of the service running (or per
 
 Engine version not recognized [NoSuchFileException] (processAgentLicensing) (register)
 
-This usually means you have one or more incorrect engine settings in your appication.properties file. Common engine-versioned properties to review are:
+This usually means you have one or more incorrect engine settings in your application.properties file. Common engine-versioned properties to review are:
 ```
 dataconnectVersion
 worker.engineJavaHome
