@@ -1,7 +1,5 @@
 ---
 title: JobConfig Listener Aliasing
-tags:
- - Content Issues
 ---
 
 # JobConfig Listener Aliasing
@@ -21,8 +19,6 @@ Aliasing allows you to:
    * Basic User Authentication (username/password)
 	* API Keys (defined separately for each Alias you create)
 	* Public access (not recommended to service consumers outside of your internal network)
-
-<font color="red">The current docs include this content, but not in the "unoffical" docs on GH Pages. Is this appropriate here?</font>
 
 As an example, you can turn this:
 ```

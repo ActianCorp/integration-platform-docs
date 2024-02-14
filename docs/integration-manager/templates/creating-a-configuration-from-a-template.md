@@ -23,9 +23,7 @@ To create a configuration from a template:
 5. (Optional) Select a different template.
 
     :::caution[IMPORTANT]
-
-    Care is required if you are changing the source and template. <font color="red">This needs further explanation.</font>
-
+    Care is required if you are changing the source and template. <font color="red">This needs further explanation. What does the user need to do or avoid?</font>
     :::
 
 6. Click **Create**. 

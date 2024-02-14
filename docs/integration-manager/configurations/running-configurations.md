@@ -60,7 +60,11 @@ Running a configuration with a message allows you to pass a message object/body 
 
 ## Run with File
 
-<font color="red">Need an intro explaining what this does.</font>
+<font color="red">
+This section could use an intro similar to the Run with Message section above.
+
+Running a job with an input file allows you to...
+</font>
 
 1. Do one of the following:
    * From the **Configurations** page, click the dropdown arrow next to the **Run** button for the desired configuration, then select **Run with File**:
