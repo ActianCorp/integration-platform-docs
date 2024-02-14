@@ -4,6 +4,11 @@ title: Run Your First Job
 
 # Run Your First Job
 
+<font color="blue">
+JG Feedback - Initially I thought this should be moved to the 'Jobs' section but it looks like it should be combined with the other doc 'creating-configurations.md'. Each of these doc files contains essential info for creating configurations.  
+</font>
+
+
 ## Step 1: Create a Configuration
 
 1. Select the **Configurations** tab:
