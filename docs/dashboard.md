@@ -22,6 +22,10 @@ Recent Jobs provides a table of recently-run jobs, and displays details and stat
 
 Click <img src="/img/icons/log-file.png" className="icon" alt="the magnifying glass icon"/> to downlaod the log file for that job.
 
+<font color="blue">
+JG Feedback - You can add a reference link to 'Downloading the Log File' topic here. It's also very intuitive to download log file so not a big deal.
+</font>
+
 ### ALL JOBS
 
 The ALL JOBS chart displays the number of integrations executed for the selected time period (30, 60 or 90 days). Hover over the chart to see the value per day.
