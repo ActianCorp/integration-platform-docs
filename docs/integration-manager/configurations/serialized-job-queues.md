@@ -8,7 +8,7 @@ title: Serialized Job Queues
 
 By default, all Integration Manager jobs run in parallel, up to the available concurrency (i.e., the number of engines or nodes that you have licensed). Most of the time, different kinds of jobs can run concurrently without issue.
 
-Sometimes, however, the *same* job running concurrently can have and undesirable outcome (i.e., the integration may not be idempotent).
+Sometimes, however, the *same* job running concurrently can have an undesirable outcome (i.e., the integration may not be idempotent).
 
 Some examples:
 * Actions on a database are not atomic (global transaction logic).
