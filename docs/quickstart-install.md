@@ -117,7 +117,7 @@ To uninstall Integration Manager, execute `uninstaller.exe` in the program direc
 
 ### Configuration/Reconfiguration
 
-The `application.properties` file can be used for a variety of configurations to tailor Integration Manager to your requirements and environment. See the [Server Administration](./integration-manager/admin/server-administration/server-administration-overview) documentation for a description of available properties.
+The `application.properties` file can be used for a variety of configurations to tailor Integration Manager to your requirements and environment. See [Application Property Reference](./category/application-property-reference) for a description of available properties.
 
 1. Locate the `application.properties` file (default: `/etc/opt/actian/integration-manager/conf/application.properties`)
    :::note
