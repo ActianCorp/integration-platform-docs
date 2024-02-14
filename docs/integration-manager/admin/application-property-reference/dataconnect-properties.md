@@ -5,6 +5,8 @@ hide_table_of_contents: true
 
 # DataConnect Properties
 
+Refer to the following table for available DataConnect properties:
+
 | Property| Description| Default |
 | :--- | :--- | :--- |
 | `engine.licensePath` | Location of your Actian DataConnect license file | `${sharedDataPath}/license/cosmos.slc` |

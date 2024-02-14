@@ -1,7 +1,5 @@
 ---
 title: Feedback
-tags:
- - Content Issues
 ---
 
 # Feedback
@@ -45,13 +43,6 @@ Clicking this button opens the page in the ActianCorp integration-platform-docs 
 Make any suggested edits, then create a pull request. We will review your changes, make any necessary edits, then merge the changes if appropriate.
 
 ## Platform
-
-<font color="red">
-Please review to ensure these links are where we want to direct users.
-</font>
-<font color="blue">
-GGH Feedback - looks right to me.  
-</font>
 
 ###  Issues and Questions
 

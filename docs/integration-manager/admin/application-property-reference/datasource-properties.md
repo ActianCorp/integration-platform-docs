@@ -5,6 +5,8 @@ hide_table_of_contents: true
 
 # Datasource Properties
 
+Refer to the following table for available Datasource properties:
+
 | Property | Description | Default |
 | :--- | :--- | :--- |
 | `spring.datasource.driver-class-name` | JDBC Driver class name for the persistence instance (`org.h2.Driver` &#124; `com.microsoft.sqlserver.jdbc.SQLServerDriver` &#124; `com.mysql.jdbc.Driver`) | `org.h2.Driver` |

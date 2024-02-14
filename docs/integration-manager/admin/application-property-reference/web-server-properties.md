@@ -7,6 +7,8 @@ tags:
 
 # Web Server Properties
 
+Refer to the following table for available Web Server properties:
+
 | Property| Description| Default |
 | --- | --- | --- |
 | `im.base-url` | Allows you to set or customize the base URL for creating or resolving API URLs | `http://IM_SERVER_DOMAIN_NAME:{server.port}` |

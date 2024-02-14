@@ -5,6 +5,8 @@ hide_table_of_contents: true
 
 # File Repository Properties
 
+Refer to the following table for available File Repository properties:
+
 | Property| <div style={{width: 220}}>Description</div>| Default |
 | --- | --- | --- |
 | `repository.storage-type` | <ul><li>`local` – Local File System</li><li>`aws` – Amazon S3</li><li>`azure` – Azure Blob Storage</li><li>`gcp` - Google Cloud Storage</li></ul> | `local` |

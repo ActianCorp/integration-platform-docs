@@ -7,6 +7,8 @@ tags:
 
 # Scheduling Properties
 
+Refer to the following table for available Scheduling properties:
+
 | Property| Description| Default |
 | --- | --- | --- |
 | `org.quartz.ext.correct-timeouts-at-startup`| Rebuild job timeout schedules and triggers at startup | `true` |
@@ -14,5 +16,5 @@ tags:
 | `spring.quartz.auto-startup` | Whether to automatically start the scheduler after initialization | `true` |
 | `spring.quartz.properties.*` | Additional Quartz Scheduler properties. http://www.quartz-scheduler.org/documentation/quartz-2.3.0/configuration/. You can also drop a quartz.properties file into the IntegrationManager/conf folder | — |
 | `spring.quartz.scheduler-name`| Name of the scheduler. This is typically used in a distributed environment, or where you may have multiple Integration Manager servers connecting to a single external database. | — |
-| `spring.quartz.startup-delay` | The number of seconds to wait before starting the scheduler <font color="red">The default value listed in current docs says "15s". This implies that you need to add "s" after the number. I'm assuming not, so I changed the default value to 15. Please correct if I'm wrong.</font> <font color="blue">It does need the "s".  It could also be minutes (m) or other units.</font>| `15` |
-| `spring.quartz.wait-for-jobs-to-complete-on-shutdown` | <font color="red">Current docs say "spring.quartz.wait-for-jobs-to-complete-on-shutdown", which is the same text as the property name. This should be a description.</font> <font color="blue"> Does this work?  "Whether the scheduler should pause shutdown and wait for running jobs to complete before shutting down."</font>| `false` |
+| `spring.quartz.startup-delay` | The amount of time to wait before starting the scheduler. | `15s` |
+| `spring.quartz.wait-for-jobs-to-complete-on-shutdown` | Whether the scheduler should pause shutdown and wait for running jobs to complete before shutting down. | `false` |

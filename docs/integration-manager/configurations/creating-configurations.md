@@ -1,20 +1,10 @@
 ---
 title: Creating Configurations
-tags:
- - Content Issues
 ---
 
 # Creating Configurations
 
 ## Creating Configurations Manually
-
-<font color="red">
-It would be helpful here to describe why you would create a config manually rather than using the Import Configuration page. Are there cases where you need to define other details before uploading a package?
-</font>
-<font color="blue">
-GGH Feedback - There's no real distinction.  I think it's purely a UI inconsistency in regards to terminology.  You're never really "importing" a configuration and I'm not totally sure why we used that terminology.  You're importing Integrations, and those have runtime configuration information embedded in them, but it's not a job configuration.  So, I know that sounds wonky.  But there's really two paths (at least in the cloud): Create an Integration in the cloud using Integrations->Design or Uploading an existing Integration that was created in DataConnect and that is all of the Create Configuration or Import Configuration stuff.  It's always just, you have a package (usually a djar for DataCOnnect or you can have DataFlow or Link artifacts... which is still just a set of integration rules for a particular engine built in another product.  Does that all make sense or did I just confound things more?
-</font>
-
 
 To create a configuration manually:
 
@@ -24,7 +14,7 @@ To create a configuration manually:
 2. On the **Data Integration Setup** page, enter a unique name and click **Create**:
    
    ![](/img/Create-Configuration2.png)
-3.  On the **Configuration Details** page, click <img src="/img/icons/edit-icon.png" className="icon" alt="the Edit icon"/> to the right of **Package Uploaded**: <font color="red">If the first step is to upload a package, I'm not sure why you wouldn't just use the Import Configuration page right from the start. It would help to understand the use case for this method.</font>.
+3.  On the **Configuration Details** page, click <img src="/img/icons/edit-icon.png" className="icon" alt="the Edit icon"/> to the right of **Package Uploaded**:
    
     ![](/img/Create-Configuration3.png)
 4. In the **Upload Packages & Files** dialog, do one of the following:
@@ -33,11 +23,9 @@ To create a configuration manually:
     * Select a package and click **DONE**. **Note:** Any configuration files uploaded to the configuration will be listed in the **Select an existing package** dropdown. See [Managing Configuration Files](./managing-configuration-files).
 
        ![](/img/Selected-Package-Change.png)
-8. The **Package Uploaded** field now shows the uploaded package:
+5. The **Package Uploaded** field now shows the uploaded package:
 
    ![](/img/Create-Configuration4.png)
-
-9. <font color="red">What comes next?</font>
 
 ## Creating a Configuration from a Template
 
