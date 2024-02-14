@@ -52,6 +52,9 @@ Sync result status can be:
 ### AGENT HEALTH
 
 The AGENT HEALTH chart represents the health status of agents a user has installed. In the following figure, the user has one agent installed and its status is Error. Hover over the chart to see the value per day. 
+<font color="blue">
+JG Feedback - This states the following figure has status Error but the next image shows Healthy status. Maybe clarify that the image above has Error status vs the next image. 
+</font>
 
    ![Agent Health Widget](/img/Agent-Health-Widget.png)
 
