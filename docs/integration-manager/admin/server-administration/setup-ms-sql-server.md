@@ -27,7 +27,6 @@ Integration Manager is compatible with Microsoft SQL Server version 13 (aka SQL 
 Integration Manager uses the "spring.datasource" prefix properties in the ../conf/application.properties file to create a database connection.
 
 :::note
-
 Any change to application.properties requires a restart of the Integration Manager Service.
 :::
 
@@ -50,9 +49,7 @@ The default Quartz configuration is not compatible with SQL Server, so you will 
 1. Create a file named quartz.properties in the (ProgramData)/Actian/IntegrationManager/conf folder.
    
    :::note
-
    Any change to quartz.properties requires a restart of the Integration Manager Service.
-
    :::
 
 2. Add the following contents to properly initialize the Quartz subsystem in SQL Server:
@@ -79,10 +76,10 @@ org.quartz.jobStore.lockHandler.class=org.quartz.impl.jdbcjobstore.UpdateLockRow
 
 ## Step 5: Configure the Integration Manager Service for Domain login
 
-1. Go to Windows → Services → Actian Integration Manager.
-2. Right-click Actian Integration Manager, select **Properties**.
+1. Go to **Windows** → **Services** → **Actian Integration Manager**.
+2. Right-click **Actian Integration Manager** and select **Properties**.
 3. Select the **Log On** tab.
 4. Select **This account:** and enter a Windows Domain User with read/write access to MS SQL Server.
 5. Click **OK**.
 6. Select the **General** tab.
-7. Right-click Actian Integration Manager, select **Start** or **Restart** (depending on whether the service is currently running).
+7. Right-click **Actian Integration Manager**, select **Start** or **Restart** (depending on whether the service is currently running).

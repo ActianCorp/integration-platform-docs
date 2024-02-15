@@ -6,7 +6,7 @@ title: Server Upgrades
 
 ## Overview
 
-Integration Manager server upgrades are safe and reversible for 3.x.a -> 3.x.b upgrades. 
+Integration Manager server upgrades are safe and reversible for 3.x.a → 3.x.b upgrades. 
 
    :::caution[Important]
       We strongly recommended that you test upgrades first on a development server to identify any post-upgrade issues (i.e., test your deployed integrations) in order to prevent a rollback scenario.

@@ -19,7 +19,7 @@ Refer to the following table for available Web Server properties:
 | `server.ssl.key-store-password` | The certificate password | — |
 | `server.ssl.key-store-type` | The keystore type (`PKCS12` recommended) | — |
 | `spring.servlet.multipart.enabled` | Whether to enable support of multipart uploads | `true` |
-| `spring.servlet.multipart.file-size-threshold` | Threshold after which files are written to disk. <font color="red">In what unit? Bytes? KB?</font> | 100KB <font color="red">What would you enter for 100KB?</font>|
+| `spring.servlet.multipart.file-size-threshold` | Threshold after which files are written to disk. <font color="red">In what format? Do you append m/k (or MB/KB)?</font> | 100KB <font color="red">What would you enter for 100KB?</font>|
 | `spring.servlet.multipart.location` | Intermediate location of uploaded files | `{sharedDataPath}/tmp` |
-| `spring.servlet.multipart.max-file-size` | Max file size. For kilobytes, append k to the value. For megabytes, append m to the value. <font color="red">Please verify that the k and m suffixes are correct.</font> | `1m` <font color="red">Please verify.</font> |
-| `spring.servlet.multipart.max-request-size` | Max request size. For kilobytes, append k to the value. For megabytes, append m to the value. <font color="red">Please verify that the k and m suffixes are correct.</font> | `10m` <font color="red">Please verify.</font> |
+| `spring.servlet.multipart.max-file-size` | Max file size. <font color="red">In what format? Do you append m/k (or MB/KB)?</font> | 1MB <font color="red">What would you enter for 1MB?</font> |
+| `spring.servlet.multipart.max-request-size` | Max request size. <font color="red">In what format? Do you append m/k (or MB/KB)?</font> | 10MB <font color="red">What would you enter for 10MB?</font> |
