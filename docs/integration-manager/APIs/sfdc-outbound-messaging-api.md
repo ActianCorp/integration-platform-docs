@@ -69,7 +69,7 @@ To use the event driven Salesforce.com event notification service, log in to Sal
 7. Set up your Outbound Message:
     * **Name**
     * **Unique Name**
-    * **Endpoint** (e.g., https://api.im.actiandatacloud.com/v2/api/jobconfigs/[jobconfig id]/sfdc/obm)
+    * **Endpoint** (e.g., https:&nbsp;//api.im.actiandatacloud.com/v2/api/jobconfigs/*[jobconfig_id]*/sfdc/obm)
     * [Salesforce.com] User to send as
     * **Send Session ID** = true
     * Object fields to send (these fields will be available as an XML DJMessage object within your integration:)
@@ -77,7 +77,3 @@ To use the event driven Salesforce.com event notification service, log in to Sal
 8. Click **Save (Outbound Message)**.
 9. Click **Done (Outbound Message)**.
 10. Click **Activate (Workflow Rule)**.
-
-<font color="blue">
-JG Feedback - In Preview, the line 72 shows an incomplete url link. I'm not sure if it was meant to be a link but the link only covers 'https://api.im.actiandatacloud.com/v2/api/jobconfigs/[jobconfig'. 'id]/sfdc/obm' is left out. The space ends the url link. Again, not sure if this was meant to be a link but just wanted to point it out. 
-</font>
