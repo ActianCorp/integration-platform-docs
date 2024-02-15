@@ -11,3 +11,7 @@ When you set a macro as secure, it is masked at all levels of the Integration Ma
 Note that secure macros can still be edited and/or deleted by users with write permission to the macro parent object, but the value can never be viewed (by anyone).
 
 Semantically, this is often referred to as API encryption. For encryption-at-rest details, see the Integration Manager Admin documentation. Note that all macros are encrypted-at-rest on the DataCloud Platform.
+
+<font color="blue">
+JG Feedback - Not sure if "Integration Manager Admin" on line 13 is suppose to be a link to Integration Manager Administration Guide or just referenced.
+</font>
