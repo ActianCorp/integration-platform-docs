@@ -1,17 +1,13 @@
 ---
 title: Azure Blob Storage Listener
-tags:
- - Content Issues
 ---
 # Azure Blob Storage Listener
 
 The Azure Blob Storage Listener monitors Blob containers for files and will execute a pre-defined Job Configuration (config-id) when triggered.
 
 :::note[Notes]
-
 * The File Folder Listener Service must be restarted for any configuration changes to take effect.
 * Make sure you have already completed [Authorizing the File Folder Listener Service](./file-folder-listener-service#authorizing-the-file-folder-listener-service).
-
 :::
 
 ## Add Blob Storage Permissions
@@ -31,17 +27,14 @@ azure.blob.accesskey=EXAMPLEKEYVALUENefMtV50Sp7o7dW2GhKeZQWUce6z6nTb/gylpzsq5m5U
 
 ## Listener Configuration
 
-<font color="red">Current Help says these properties are configured in **file-folder-listener-listeners.yml**.</font>
-
 **listeners.yml**
-(ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml
+
+`(ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml`
 
 ### Example
 
 :::info[IMPORTANT]
-
 Indentation is critical for YAML syntax!
-
 :::
 
 ```

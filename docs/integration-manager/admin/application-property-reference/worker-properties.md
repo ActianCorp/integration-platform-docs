@@ -5,6 +5,8 @@ hide_table_of_contents: true
 
 # Worker Properties
 
+Refer to the following table for available Worker properties:
+
 | Property| Description| Default |
 | --- | --- | --- |
 | `worker.concurrency` | Number of concurrent jobs this worker is allowed to process |  |

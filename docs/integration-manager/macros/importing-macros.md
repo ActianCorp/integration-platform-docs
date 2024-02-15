@@ -1,20 +1,16 @@
 ---
 title: Importing Macros
-tags:
- - Content Issues
 ---
 
 # Importing Macros
 
 Importing macros by uploading a macro definition file (see [Macro File Examples](../macros/importing-macros#macro-file-examples)) allows you to upload multiple macros without having to manually define each macro.
 
-You can import macros directly from a file to any object (Account, Template, User, Configuration). <font color="red">Need details about Account object.</font>
+You can import macros directly from a file to any object (Account, Template, User, Configuration).
 
 :::note[Notes]
 * You can import macrodef files in XML (v9) or JSON (v9 and later) formats. For examples, see [Macro File Examples](./importing-macros#macro-file-examples).
-
-* v9 macros cannot be encrypted. <font color="red">I read this at https://actian.atlassian.net/wiki/spaces/IM/pages/14188908/DataConnect+Macro+Management. Is this true?</font>
-
+* v9 macros cannot be encrypted.
 * Imported macrodef files with encrypted values will only import the macro name. The value will be empty.
 :::
 
@@ -48,8 +44,6 @@ import PartialContent2 from '../../reuse/_import_via_upload_macro_file_dialog.md
 <PartialContent2 name="import_via_upload_macro_file_dialog" />
 
 ## Macro File Examples
-
-<font color="red">I added this section. Is this helpful, or do we presume that all readers already know the details about macrodef file formats?</font>
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -101,8 +95,6 @@ import TabItem from '@theme/TabItem';
 
 </TabItem>
 <TabItem value="XML" label="XML" default>
-
-<font color="red">Need review of XML and more relevant example.</font>
 
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>

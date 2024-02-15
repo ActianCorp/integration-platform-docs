@@ -1,16 +1,10 @@
 ---
 title: Aggregator Service
-tags:
- - Content Issues
 ---
 
 # Aggregator Service
 
-<font color="red">Where in the TOC should this topic live?</font>
-
 ## Overview
-
-<font color="red">This section needs to start with more high-level introduction.</font>
 
 Messages can be submitted to:
 

@@ -36,9 +36,9 @@ const sidebars = {
           label: 'Configurations',
           items: [
             'integration-manager/configurations/configurations-overview',
-            'integration-manager/configurations/run-your-first-job',
             'integration-manager/configurations/importing-configurations',
             'integration-manager/configurations/creating-configurations',
+            'integration-manager/configurations/run-your-first-job',
             'integration-manager/configurations/editing-configuration-details',
             'integration-manager/configurations/activating-or-inactivating-configurations',
             'integration-manager/configurations/duplicating-configurations',
@@ -97,8 +97,8 @@ const sidebars = {
           type: 'category',
           label: 'APIs',
           items: [
-            'integration-manager/APIs/api-overview',
             'integration-manager/APIs/quickstart-api-tutorial',
+            'integration-manager/APIs/api-overview',
             'integration-manager/APIs/jobconfig-file-listener-api',
             'integration-manager/APIs/jobconfig-message-listener-api',
             'integration-manager/APIs/sfdc-outbound-messaging-api',
@@ -143,8 +143,13 @@ const sidebars = {
         {
           type: 'category',
           label: 'Server Administration',
+          link: {
+            type: 'generated-index',
+            title: 'Server Administration',
+            description: 'Integration Manager can be deployed and configured to meet the most demanding production requirements.',
+            slug: '/category/server-administration',
+          },
           items: [
-            'integration-manager/admin/server-administration/server-administration-overview',
             'integration-manager/admin/server-administration/production-architecture',
             'integration-manager/admin/server-administration/production-configuration',
             'integration-manager/admin/server-administration/setup-mysql',
@@ -156,6 +161,7 @@ const sidebars = {
             'integration-manager/admin/server-administration/integration-engines',
           ]
         },
+        'integration-manager/admin/aggregator-service',
         {
           type: 'category',
           label: 'File Folder Listener',
@@ -165,21 +171,26 @@ const sidebars = {
             'integration-manager/admin/file-folder-listener/aws-s3-bucket-listener',
             'integration-manager/admin/file-folder-listener/azure-blob-storage-listener',
             'integration-manager/admin/file-folder-listener/google-cloud-storage-listener',
-            {
-              type: 'category',
-              label: 'Application Property Reference',
-              items: [
-                'integration-manager/admin/file-folder-listener/dataconnect-properties',
-                'integration-manager/admin/file-folder-listener/dataflow-properties',
-                'integration-manager/admin/file-folder-listener/datasource-properties',
-                'integration-manager/admin/file-folder-listener/file-repository-properties',
-                'integration-manager/admin/file-folder-listener/queue-connection-properties',
-                'integration-manager/admin/file-folder-listener/scheduling-properties',
-                'integration-manager/admin/file-folder-listener/web-server-properties',
-                'integration-manager/admin/file-folder-listener/worker-properties',
               ]
-            },
-              ]
+        },
+        {
+          type: 'category',
+          label: 'Application Property Reference',
+          link: {
+            type: 'generated-index',
+            title: 'Application Property Reference',
+            slug: '/category/application-property-reference',
+          },
+          items: [
+            'integration-manager/admin/application-property-reference/dataconnect-properties',
+            'integration-manager/admin/application-property-reference/dataflow-properties',
+            'integration-manager/admin/application-property-reference/datasource-properties',
+            'integration-manager/admin/application-property-reference/file-repository-properties',
+            'integration-manager/admin/application-property-reference/queue-connection-properties',
+            //'integration-manager/admin/application-property-reference/scheduling-properties',
+            'integration-manager/admin/application-property-reference/web-server-properties',
+            'integration-manager/admin/application-property-reference/worker-properties',
+          ]
         },
         {
           type: 'category',
@@ -194,7 +205,6 @@ const sidebars = {
         },
         'integration-manager/admin/workload-management',
         'integration-manager/admin/setup-job-notifications',
-        'integration-manager/admin/aggregator-service',
         'integration-manager/admin/server-troubleshooting',
       ]
     },
@@ -224,7 +234,6 @@ const sidebars = {
             'integration-agent/advanced-topics/retrieve-agent-credential',
             'integration-agent/advanced-topics/scriptable-agent-registration',
             'integration-agent/advanced-topics/connecting-to-other-environments',
-            'integration-agent/advanced-topics/windows-service-wrapper',
           ]
         },
         'integration-agent/agent-troubleshooting',

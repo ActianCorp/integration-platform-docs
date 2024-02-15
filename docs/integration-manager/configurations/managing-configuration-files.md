@@ -1,17 +1,17 @@
 ---
 title: Managing Configuration Files
-tags:
- - Content Issues
 ---
 
 # Managing Configuration Files
-
-<font color="red">Would it be helpful here to explain the different types of configuration files (packages, process files, etc.), or are we assuming that the reader is familiar with this?</font>
 
 You can upload files for use with your configurations. These can be public files or private files.
 
 * **Private Files** can be created, edited, or deleted by the logged–in user. These files are visible to administrators.
 * **Public Files** can be seen and accessed by any user. They can be created, edited, or deleted only by an administrator.
+
+:::note
+For details about the different file types that you may need for execution, refer to the [DataConnect](https://docs.actian.com/dataconnect/12.2/#page/Welcome/DataConnect_12.2_Guides.htm) and [DataFlow](https://docs.actian.com/dataflow/8.0/#page/Welcome/DataFlow_Guides.htm) documentation.
+:::
 
 ## Viewing Configuration Files
 

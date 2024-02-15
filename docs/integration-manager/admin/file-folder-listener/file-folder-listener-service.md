@@ -1,7 +1,5 @@
 ---
 title: File Folder Listener Service
-tags:
- - Content Issues
 ---
 
 # File Folder Listener Service
@@ -117,10 +115,6 @@ You can add these properties to `<ProgramDataDirectory>\Actian\FileFolderListene
 | `listener.error-directory-max-file-age` | The number of days error files are retained | `14` |
 
 ## File Size Configuration and Limitations
-
-<font color="red">
-In the current help, ths topic is listed twice -- once in User Guide (under the JobConfig File Listener API topic) and the System Administration Guide (under Authorizing and Configuring the File Folder Listener Service). Which is the appropriate location for this?
-</font>
 
 File size limitations are governed by the Integration Manager multipart file configuration in the `<ProgramDataDirectory>\Actian\IntegrationManager\conf\application.properties` file.
 

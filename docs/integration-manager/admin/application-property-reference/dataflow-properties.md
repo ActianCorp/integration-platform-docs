@@ -5,6 +5,8 @@ hide_table_of_contents: true
 
 # DataFlow Properties
 
+Refer to the following table for available DataFlow properties:
+
 | Property| Description| Default |
 | :--- | :--- | :--- |
 | `dataflow.enabled` | Enable if a local installation of DataFlow is available | `false` |

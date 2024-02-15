@@ -1,8 +1,6 @@
 ---
 title: Quick Start Installation
 hide_table_of_contents: true
-tags:
- - Content Issues
 ---
 
 # Quick Start Installation
@@ -87,7 +85,7 @@ You are now ready to run your first remote job. Refer to [Run Your First Remote 
 
    * DataConnect Cloud: [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents)
    * Avalanche Console: [https://avalanche.actiandatacloud.com/im/agents](https://avalanche.actiandatacloud.com/im/agents)
-   * Private Cloud on Kubernetes: https://\[your hosted domain]im/agents <font color="red">The Windows section uses **im** in this url, whereas Linux uses **ui**. Is this difference intentional?</font>
+   * Private Cloud on Kubernetes: https://\[your hosted domain]/ui/agents
   
 
    :::note
@@ -175,13 +173,9 @@ You can download the Actian Integration Agent installer from either the **Agents
    
    See [Service Logs & Monitoring](#service-logs--monitoring-1) below.
 
-If you encounter issues, activate the agent. See [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices). If the issue doesn’t resolve, ensure that the service is running. See [Start/Stop/Status](./quickstart-install#startstopstatus). <font color="red">I added this as it is mentioned in the Windows section. Please verify.</font>
+If you encounter issues, activate the agent. See [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices). If the issue doesn’t resolve, ensure that the service is running. See [Start/Stop/Status](./quickstart-install#startstopstatus).
 
 ### Run Your First DJAR
-
-<font color="red">
-Note: I moved this section out to the existing topic to avoid duplication of content.
-</font>
 
 You are now ready to run your first remote job. Refer to [Run Your First Remote Job](./run-your-first-remote-job).
 
@@ -191,13 +185,13 @@ You are now ready to run your first remote job. Refer to [Run Your First Remote 
 
    * DataConnect Cloud: [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents)
    * Avalanche Console: [https://avalanche.actiandatacloud.com/im/agents](https://avalanche.actiandatacloud.com/im/agents)
-   * Private Cloud on Kubernetes: https://\[your hosted domain/]ui/agents <font color="red">The Windows section uses **im** in this url, whereas Linux uses **ui**. Is this difference intentional?</font>
+   * Private Cloud on Kubernetes: https://\[your hosted domain]/ui/agents
   
    :::note
     For more information on managing agents and devices from the Integration Manager, see [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices).
    :::
  
- 2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `C:/ProgramData/Actian/IntegrationAgent/logs/Agent.log`) <font color="red">This looks like a copy/paste error. What is the default path on Linux?</font>
+ 2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `/etc/opt/actian/integration-agent/logs/integration-agent.log`).
 
 ### Start/Stop/Status
 
