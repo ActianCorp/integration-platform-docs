@@ -20,11 +20,7 @@ Recent Jobs provides a table of recently-run jobs, and displays details and stat
 
    ![Recent Jobs Widget](/img/Recent-Jobs-Widget.png)
 
-Click <img src="/img/icons/log-file.png" className="icon" alt="the magnifying glass icon"/> to downlaod the log file for that job.
-
-<font color="blue">
-JG Feedback - You can add a reference link to 'Downloading the Log File' topic here. It's also very intuitive to download log file so not a big deal.
-</font>
+Click <img src="/img/icons/log-file.png" className="icon" alt="the magnifying glass icon"/> to download the log file for that job. See [Downloading the Log File](./integration-manager/jobs/downloading-the-log-file).
 
 ### ALL JOBS
 
@@ -55,10 +51,7 @@ Sync result status can be:
 
 ### AGENT HEALTH
 
-The AGENT HEALTH chart represents the health status of agents a user has installed. In the following figure, the user has one agent installed and its status is Error. Hover over the chart to see the value per day. 
-<font color="blue">
-JG Feedback - This states the following figure has status Error but the next image shows Healthy status. Maybe clarify that the image above has Error status vs the next image. 
-</font>
+The AGENT HEALTH chart represents the health status of agents a user has installed. In the following figure, the user has one agent installed and its status is Finished. Hover over the chart to see the value per day. 
 
    ![Agent Health Widget](/img/Agent-Health-Widget.png)
 
