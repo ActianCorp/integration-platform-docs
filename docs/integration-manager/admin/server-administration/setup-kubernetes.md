@@ -1,5 +1,7 @@
 ---
 title: Kubernetes
+tags:
+ - Content Issues
 ---
 
 # Kubernetes
@@ -48,3 +50,7 @@ Actian cannot provide consulting or ongoing support for the following topics:
 ## Ready to Get Started?
 
 Please contact your Actian Representative or email support@actian.com for more details.
+
+<font color="red">
+In feedback.md, we refer the user to https://communities.actian.com/s/create-new-case. Is this preferred over support@actian.com?
+</font>
