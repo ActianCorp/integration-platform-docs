@@ -136,11 +136,7 @@ The Access Key and Secret Key are used for programmatic (API) access to your lis
 
    ![](/img/Create-Alias11.png)
 
-## Step 3: TestInvoke the Alias
-
-<font color="blue">
-JG Feedback - Looks like Step 3 title is either meant to be 'Test the Alias' or 'Invoke the Alias'. 
-</font>
+## Step 3: Invoke the Alias
 
 You can invoke an Alias, that is, run a JobConfig, through the Job Execution API in several ways with several options. Note that your Alias only exposes the ability to execute a JobConfig with parameters. No user or configuration data is accessible through the Listener API.
 
