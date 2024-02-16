@@ -97,6 +97,11 @@ Account administrators can:
 
 <font color="red">GH Pages topic lists this as being something an admin can manage. I don't see anything in the UI for this. Need instructions here.</font>
 
+<font color="blue">
+JG Feedback - I did some testing and the request to update a User leaves out password property. I don't think this is available even for Admins. I have not found anything in the UI that allows for an Admin to change other user passwords. 
+</font>
+
+
 ## Enabling/Disabling Admin Access
 
 1. Click the profile dropdown in the upper right corner and select **Administration**.
