@@ -26,6 +26,10 @@ To create a configuration from a template:
     Care is required if you are changing the source and template. <font color="red">This needs further explanation. What does the user need to do or avoid?</font>
     :::
 
+<font color="blue">
+JG Feedback - This also confused me. The only way I could link a configuration to template was by editing the template after a configuration was created. When creating a configuration from a template, there was no option to use the current template package. Not sure if this is a bug or desired functionality. Need Garrett or Jason to confirm. 
+</font>
+
 6. Click **Create**. 
    
    A configuration is created based on the specified information. The **Configuration Details** page is displayed for the new configuration. See [Editing Configuration Details](../configurations/editing-configuration-details).
