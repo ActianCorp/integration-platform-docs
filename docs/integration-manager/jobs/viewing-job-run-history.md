@@ -37,6 +37,10 @@ The following details are displayed:
 | Server | Where the job was executed.
 | Log | Click <img src="/img/icons/log-file.png" className="icon" alt="the magnifying glass icon"/> for a specific record in the Run History table. The **Run History** page is displayed for the selected job, where you can view and download the log file. See [Downloading the Log File](./downloading-the-log-file).
 
+<font color="blue">
+JG Feedback - Garrett or Jason can confirm. For line 33 (Type), type Integration comes from jobs run from an integration from Avalanche. Type Configuration comes from jobs executed from Configurations in IM. I only know of Integration and Configuration types. 
+</font>
+
 ## Viewing Run Details for a Specific Job
 
 1. Select the **Jobs** tab.
