@@ -115,7 +115,7 @@ To import your certificates:
 1. Export the certificate out of the keystore:
 
    ```
-      keytool -exportcert -alias integration-manager -keystore keystore.p12 -file integration-manager.cer -storetype pkcs12 -noprompt -storepass D0N0tU5eTh1sP@ssW0rd!
+   keytool -exportcert -alias integration-manager -keystore keystore.p12 -file integration-manager.cer -storetype pkcs12 -noprompt -storepass D0N0tU5eTh1sP@ssW0rd!
    ```
 
 2. Import the certificate to the jre/lib/security/cacerts keystore:
