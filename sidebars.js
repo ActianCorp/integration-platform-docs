@@ -129,6 +129,7 @@ const sidebars = {
           items: [
             'integration-manager/admin/security/enabling-https',
             'integration-manager/admin/security/encryption-at-rest',
+            'integration-manager/admin/security/access-token-signatures',
           ]
         },
         {
