@@ -7,6 +7,11 @@ title: Managing Template Files
 
 <font color="red">Need to explain the different use cases for template files (packages, process files, etc.).</font>
 
+<br><br>
+
+<font color="green">GGH Feedback - Same thing as it is with the config files.  Consult other docs s to what files you may or may not need for a DataCOnnect or DataFlow or Link execution</font>
+
+
 You can upload files for use with your templates. These can be public files or private files.
 
 * **Private Files** can be created, edited, or deleted by the logged–in user. These files are visible to administrators.
