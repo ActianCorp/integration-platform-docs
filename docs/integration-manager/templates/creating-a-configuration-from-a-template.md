@@ -55,6 +55,11 @@ Once you create the Config, the Base Template field is **Not Set** and you must 
 Is this an intentional difference? The concept of creating a Configuration from a Template doesn't seem to apply to the cloud version as is.
 </font>
 
-<br><br>
-<font color="green"> GGH Feedback - I will need to consult with UI team on that one.  There is another way to create config from Template on cloud.  Go into templates, select a template and then there is a button for "Create Configuration" off a template.  Let me ping UI team and get back to you.</font>
+<font color="green">
+GGH Feedback - I will need to consult with UI team on that one.  There is another way to create config from Template on cloud.  Go into templates, select a template and then there is a button for "Create Configuration" off a template.  Let me ping UI team and get back to you.
+</font>
+
+<font color="red">
+DL reply - Yeah, that's the button that is not working. It does not provide a Template dropdown or use the selected template for the config.
+</font>
 
