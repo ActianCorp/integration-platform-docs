@@ -6,7 +6,7 @@ title: Activating or Inactivating Configurations
 
 In order to run a configuration, its status must be Active. Setting the configuration status to Inactive allows you to disable the configuration without deleting it. You can reactivate it later when needed by setting the status back to Active.
 
-You can set the configuration status to Active or Inactive from either the **Configurations** page or the **Configuration Details** page.
+You can set the configuration status to Active or Inactive from several pages.
 
 ## From the Configurations Page
 
