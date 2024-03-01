@@ -52,78 +52,74 @@ To upload files to a configuration:
 * Only admin users can link a private file from another user.
 :::
 
-1. On the **Configuration Files** page, click the dropdown arrown next to the **Upload File** button and select **Link file in Files Repository**:
+1. On the **Configuration Files** page, click the dropdown arrown next to the **Upload File** button, and select **Link file in Files Repository**:
    
-   ![Link file in Files Repository](/img/Link-File-in-Files-Repository.png)
-2. The **File Manager** dialog is displayed.
-
-   ![File Manager Private Files](/img/File-Manager-Private.png)
-
-3. If you are a non-admin user, only your name appears in the user dropdown. If you are an admin user, you can select a different user:
-  
-        ![File Manager Select User](/img/File-Manager-Select-User.png)
-4. The files uploaded by the selected user are listed. Select one or more files and click the **Link File** button:
+   ![](/img/Link-File-in-Files-Repository.png)
+2. The **File Manager** dialog is displayed. If you are a non-admin user, only your name appears in the user dropdown. If you are an admin user, you can select a different user.
+3. The files uploaded by the selected user are listed. Select one or more files and click the **Link File** button:
 
         ![File Manager Select Private Files](/img/File-Manager-Select-Private-Files.png)
-5. The private file now appears in the **Configuration Files** list:
+4. The private file now appears in the **Configuration Files** list:
 
-   ![Configuration Files Link](/img/Configuration-Files-Private-File.png)
+   ![](/img/Configuration-Files-Private-File.png)
 
 ## Linking a Public File in the File Repository
 
 1. On the **Configuration Files** page, click the dropdown arrown next to the **Upload File** button and select **Link file in Files Repository**:
    
-   ![Link file in Files Repository](/img/Link-File-in-Files-Repository.png)
+   ![](/img/Link-File-in-Files-Repository.png)
 2. The **File Manager** dialog is displayed.
 
-   ![File Manager Private Files](/img/File-Manager-Private.png)
+   ![](/img/File-Manager-Private.png)
 3. Use the toggle control to select  **Public Files**, select one or more files, and click the **Link File** button:
 
-   ![File Manager Select User](/img/File-Manager-Select-Public-File.png)
+   ![](/img/File-Manager-Select-Public-File.png)
 4. The public file now appears in the **Configuration Files** list:
 
-   ![Configuration Files Link](/img/Configuration-Files-Public-File.png)
+   ![](/img/Configuration-Files-Public-File.png)
 
 ## Changing the Selected Package
 
 You can upload or link multiple package files to a configuration, but only one package can be selected for the configuration. The currently-selected package is labeled with **SELECTED PACKAGE** in the **Configuration Files** list:
 
-   ![Selected Package](/img/Selected-Package.png)
+   ![](/img/Selected-Package.png)
 
 To select a different package:
 
 1. On the **Configuration Details** page, click <img src="/img/icons/edit-icon.png" className="icon" alt="the Edit icon"/> to the right of **Package Uploaded**:
 
-   ![Package Uploaded Edit](/img/Package-Uploaded-Edit.png)
+   ![](/img/Package-Uploaded-Edit.png)
 2. In the **Upload Packages & Files** dialog, select a package and click **DONE**:
 
-   ![Select Different Package](/img/Selected-Package-Change.png)
-3. The **Configuration Files** list shows the newly-selected package:
+   ![](/img/Selected-Package-Change.png)
+3. The **Configuration Details** and **Configuration Files** pages display the newly-selected package:
 
-   ![Selected Package](/img/Selected-Package-Changed.png)
+   ![](/img/Selected-Package-Changed2.png)
+
+   ![](/img/Selected-Package-Changed.png)
 
 ## Downloading Configuration Files
 
-1. Click the filename:
-
-   ![Download Files](/img/Download-File.png)&nbsp;
-2. In the **Save As** window, navigate to the desired folder and click **Save**.
- 
-## Deleting Configuration File Links
-
-Deleting a configuration file link only removes the link between the configuration and the file. It does not delete the file from the File Repository.
-
-1. On the **Configuration Files** page, select the checkbox next to the file(s) you want to unlink and click the **Delete File Link** button:
+1. Select the **Files** tab.
+2. Use the toggle control to display Public or Private files:
    
-   ![Unlink Files](/img/Unlink-Files.png)
+   ![](/img/Toggle-File-Type.png)
+3. Do one of the following:
+   * To download a single file, click the ellipsis button next to the desired file and select **Download**:
 
-## Deleting Configuration Files
+     ![](/img/Download-File.png)
+   * To download multiple files, select the checkbox next to the desired files and click <img src="/img/icons/download.png" className="icon" alt="the Download icon"/>:
 
-:::note
-Only Admins can delete public files or user files owned by another user.
+     ![](/img/Download-Files.png)
+
+## Deleting Configuration Files and File Links
+
+:::note[Notes]
+* Only Admins can delete public files or user files owned by another user.
+* Deleting a file link only removes the link between the configuration and the file. It does not delete the file from the File Repository.
 :::
 
-1. On the **Configuration Files** page, select the checkbox next to the file(s) you want to delete and click the **Delete File** button:
+1. On the **Configuration Files** page, select the checkbox next to the file(s) you want to delete and click <img src="/img/icons/trash.png" className="icon" alt="the trash can icon"/>:
 
-   ![Delete Configuration Files](/img/Delete-Configuration-Files.png)
+   ![](/img/Delete-Configuration-Files.png)
 

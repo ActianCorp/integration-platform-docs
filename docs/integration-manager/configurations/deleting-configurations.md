@@ -39,6 +39,6 @@ You cannot delete a configuration if there is an alias (listener) associated wit
 
 1. Click the **Configurations** tab.
 2. Select the checkbox to the left of the desired configurations.
-3. Click the trash can icon on the top right of the Configurations list:
+3. Click <img src="/img/icons/trash.png" className="icon" alt="the trash can icon"/> on the top right of the Configurations list:
 
    ![](/img/Configurations-Delete-Multiple.png)
