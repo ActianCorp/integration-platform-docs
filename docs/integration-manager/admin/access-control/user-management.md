@@ -34,6 +34,9 @@ Account administrators can:
 
 5. In the **Password** field, enter a password manually or select **Auto-Generate Password**.
 6. In the **Status** field, **Active** is selected by default. If you do not yet want the user account to be active, select **Inactive**.
+
+   ![Create-User2](/img/Create-User1.png)
+
 7. Click <img src="/img/icons/Continue-Button2.png" className="icon" alt="the Continue button"/>.
 8. Under **What role would you like to assign to the user?**, click **Admin** or **General User**.
 9. If you selected **General User**, click the **Select policies** dropdown and select the desired policy. See [Access Control Policies](./access-control-polices).
@@ -92,15 +95,6 @@ Account administrators can:
 
 <font color="red">GH Pages topic lists this as being something an admin can manage. I don't see anything in the UI for this. Need instructions here.</font>
 <font color="blue">GGH Feedback - I might need to dig in here.  Don't think we limit API access as like a user flag or anything, so not totally sure what this is about.  Once a user has been authenticated, they have the same API rights whether through a direct API call or through the UI making an API call.</font>
-
-## Managing User API Passwords
-
-<font color="red">GH Pages topic lists this as being something an admin can manage. I don't see anything in the UI for this. Need instructions here.</font>
-
-<font color="blue">
-JG Feedback - I did some testing and the request to update a User leaves out password property. I don't think this is available even for Admins. I have not found anything in the UI that allows for an Admin to change other user passwords. 
-</font>
-
 
 ## Enabling/Disabling Admin Access
 
