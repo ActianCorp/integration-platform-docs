@@ -100,17 +100,21 @@ To select a different package:
 
 ## Downloading Configuration Files
 
-1. Select the **Files** tab.
-2. Use the toggle control to display Public or Private files:
+1. Select the **Configurations** tab.
+2. Click the name of the configuration for which you want to download files:
+
+   ![Select Configuration](/img/Configuration-Select2.png)
+
+3. On the **Configuration Details** page, click **Files** in the left pane:
    
-   ![](/img/Toggle-File-Type.png)
-3. Do one of the following:
+   ![Configuration Files Link](/img/Configuration-Files-Link.png)
+4. Do one of the following:
    * To download a single file, click the ellipsis button next to the desired file and select **Download**:
 
-     ![](/img/Download-File.png)
+     ![](/img/Download-Single-Config-File.png)
    * To download multiple files, select the checkbox next to the desired files and click <img src="/img/icons/download.png" className="icon" alt="the Download icon"/>:
 
-     ![](/img/Download-Files.png)
+     ![](/img/Download-Multiple-Config-Files.png)
 
 ## Deleting Configuration Files and File Links
 
@@ -119,7 +123,18 @@ To select a different package:
 * Deleting a file link only removes the link between the configuration and the file. It does not delete the file from the File Repository.
 :::
 
-1. On the **Configuration Files** page, select the checkbox next to the file(s) you want to delete and click <img src="/img/icons/trash.png" className="icon" alt="the trash can icon"/>:
+1. Select the **Configurations** tab.
+2. Click the name of the configuration for which you want to delete files:
 
-   ![](/img/Delete-Configuration-Files.png)
+   ![Select Configuration](/img/Configuration-Select2.png)
 
+3. On the **Configuration Details** page, click **Files** in the left pane:
+   
+   ![Configuration Files Link](/img/Configuration-Files-Link.png)
+4. Do one of the following:
+   * To delete a single file, click the ellipsis button next to the desired file and select **Delete**:
+
+     ![](/img/Delete-Single-Config-File.png)
+   * To delete multiple files, select the checkbox next to the desired files and click <img src="/img/icons/trash.png" className="icon" alt="the Delete icon"/>:
+
+     ![](/img/Delete-Multiple-Config-Files.png)
