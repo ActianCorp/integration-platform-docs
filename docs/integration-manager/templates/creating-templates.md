@@ -9,7 +9,8 @@ Templates contain integration settings that are reusable by linked configuration
 To create a template:
 
 1. Select the **Templates** tab.
-2. The **Templates** page is displayed.
+   
+   The **Templates** page is displayed.
 3. Click **Create Template**. 
 4. The **Data Integration Template Setup** page is displayed:
 

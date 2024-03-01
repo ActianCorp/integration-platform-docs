@@ -19,10 +19,6 @@ To edit template details:
 
 You can view and edit the template properties listed below in the [Template Properties](editing-template-details#template-properties) table.
 
-You can also perform additional actions from the panel on the top left of the page:
-
-   ![Template Details Panel](/img/Template-Details-Panel.png)
-
 Refer to the following:
 
 * [Managing Template Macros](./managing-template-macros) 
