@@ -9,16 +9,14 @@ Templates contain integration settings that are reusable by linked configuration
 To create a template:
 
 1. Select the **Templates** tab.
-   
-   The **Templates** page is displayed.
-3. Click **Create Template**. 
-4. The **Data Integration Template Setup** page is displayed:
+2. Click **Create Template**. 
+3. The **Data Integration Template Setup** page is displayed:
 
    ![Template-Setup 1](/img/Template-Setup1.png)
 
-5. Enter a unique name in the **Name** field.
-6. By default, the **Auto-Create Configuration** checkbox is checked. This automatically creates a new configuration that will inherit this template’s settings. If you do not want to automatically create a configuration from this template, unselect the **Auto-Create Configuration** radio button.
-7. Select a file from either your local system or the Integration Files repository as described in the following sections.
+4. Enter a unique name in the **Name** field.
+5. By default, the **Auto-Create Configuration** checkbox is checked. This automatically creates a new configuration that will inherit this template’s settings. If you do not want to automatically create a configuration from this template, unselect the **Auto-Create Configuration** radio button.
+6. Select a file from either your local system or the Integration Files repository as described in the following sections.
 
 ## Local System
 

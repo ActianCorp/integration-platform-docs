@@ -4,12 +4,6 @@ title: Managing Template Files
 
 # Managing Template Files
 
-
-<font color="red">Need to explain the different use cases for template files (packages, process files, etc.).</font>
-
-<font color="green">GGH Feedback - Same thing as it is with the config files.  Consult other docs s to what files you may or may not need for a DataCOnnect or DataFlow or Link execution</font>
-
-
 You can upload files for use with your templates. These can be public files or private files.
 
 * **Private Files** can be created, edited, or deleted by the logged–in user. These files are visible to administrators.
@@ -36,7 +30,7 @@ To view files associated with a template:
 
 To upload files to a template:
 
-1. On the **Template Files** page, click the **Upload File** button:
+1. On the **Template Files** page, click **Upload File**:
    
    ![Upload File Button](/img/Template-Upload-File-Button.png)
 2. In the **Upload Files** dialog, drop one or more files or click **BROWSE FILES** and select one or more files.
@@ -58,15 +52,10 @@ To upload files to a template:
    
    ![Link file in Files Repository](/img/Template-Link-File-in-Files-Repository.png)
 2. The **File Manager** dialog is displayed.
+3. If you are a non-admin user, only your name appears in the user dropdown. If you are an admin user, you can select a different user.
+4. The files uploaded by the selected user are listed. Select one or more files and click the **Link&nbsp;File** button:
 
-   ![File Manager Private Files](/img/File-Manager-Private.png)
-
-3. If you are a non-admin user, only your name appears in the user dropdown. If you are an admin user, you can select a different user:
-  
-        ![File Manager Select User](/img/File-Manager-Select-User.png)
-4. The files uploaded by the selected user are listed. Select one or more files and click the **Link File** button:
-
-        ![File Manager Select Private Files](/img/File-Manager-Select-Private-Files.png)
+        ![File Manager Select Private Files](/img/File-Manager-Select-Private-Template-Files.png)
 5. The private file now appears in the **Template Files** list:
 
    ![Template Files Link](/img/Template-Files-Private-File.png)
@@ -74,14 +63,12 @@ To upload files to a template:
 ## Linking a Public File in the File Repository
 
 1. On the **Template Files** page, click the dropdown arrown next to the **Upload File** button and select **Link file in Files Repository**:
-   
-   ![Link file in Files Repository](/img/Link-File-in-Files-Repository.png)
+
+   ![Link file in Files Repository](/img/Template-Link-File-in-Files-Repository.png)
 2. The **File Manager** dialog is displayed.
+3. Use the toggle control to select  **Public Files**, select one or more files, and click the **Link&nbsp;File** button:
 
-   ![File Manager Private Files](/img/File-Manager-Private.png)
-3. Use the toggle control to select  **Public Files**, select one or more files, and click the **Link File** button:
-
-   ![File Manager Select User](/img/File-Manager-Select-Public-File.png)
+   ![Link file in Files Repository](/img/Template-Link-Public-File.png)
 4. The public file now appears in the **Template Files** list:
 
    ![Template Files Link](/img/Template-Files-Public-File.png)
@@ -99,33 +86,32 @@ To select a different package:
    ![Package Uploaded Edit](/img/Template-Package-Uploaded-Edit.png)
 2. In the **Upload Packages & Files** dialog, select a package and click **DONE**:
 
-   ![Select Different Package](/img/Selected-Package-Change.png)
+   ![Select Different Package](/img/Template-Selected-Package-Change.png)
 3. The **Template Files** list shows the newly-selected package:
 
    ![Selected Package](/img/Template-Selected-Package-Changed.png)
 
 ## Downloading Template Files
 
-1. Click the filename:
+1. Do one of the following:
+   * To download a single file, click the ellipsis button next to the desired file and select **Download**:
 
-   ![Download Files](/img/Template-Download-File.png)&nbsp;:
-2. In the **Save As** window, navigate to the desired folder and click **Save**.
- 
-## Deleting Template File Links
+     ![](/img/Download-Template-File.png)
+   * To download multiple files, select the checkbox next to the desired files and click <img src="/img/icons/download.png" className="icon" alt="the Download icon"/>:
 
-Deleting a template file link only removes the link between the template and the file. It does not delete the file from the File Repository.
+     ![](/img/Download-Template-Files.png)
 
-1. On the **Template Files** page, select the checkbox next to the file(s) you want to unlink and click the **Delete File Link** button:
-   
-   ![Unlink Files](/img/Template-Unlink-Files.png)
+## Deleting Template Files and File Links
 
-## Deleting Template Files
-
-:::note
-Only Admins can delete public files or user files owned by another user.
+:::note[Notes]
+* Only Admins can delete public files or user files owned by another user.
+* Deleting a file link only removes the link between the configuration and the file. It does not delete the file from the File Repository.
 :::
 
-1. On the **Template Files** page, select the checkbox next to the file(s) you want to delete and click the **Delete File** button:
+1. Do one of the following:
+   * To delete a single file, click the ellipsis button next to the desired file and select **Delete**:
 
-   ![Delete Template Files](/img/Delete-Template-Files.png)
+     ![](/img/Delete-Single-Template-File.png)
+   * To delete multiple files, select the checkbox next to the desired files and click <img src="/img/icons/trash.png" className="icon" alt="the Delete icon"/>:
 
+     ![](/img/Delete-Multiple-Template-Files.png)

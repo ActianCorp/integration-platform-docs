@@ -38,7 +38,7 @@ const sidebars = {
             'integration-manager/configurations/configurations-overview',
             'integration-manager/configurations/importing-configurations',
             'integration-manager/configurations/creating-configurations',
-            'integration-manager/configurations/run-your-first-job',
+            //'integration-manager/configurations/run-your-first-job',
             'integration-manager/configurations/editing-configuration-details',
             'integration-manager/configurations/activating-or-inactivating-configurations',
             'integration-manager/configurations/duplicating-configurations',

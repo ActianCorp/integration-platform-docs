@@ -7,13 +7,11 @@ title: Editing Template Details
 To edit template details:
 
 1. Select the **Templates** tab.
-   
-   The **Templates** page displays the available integration templates.
 2. Click the template that you want to edit:
 
    ![Template Select](/img/Template-Select.png)
 
-4. The **Template Details** page is displayed.
+3. The **Template Details** page is displayed:
 
    ![Template Details Page](/img/Template-Details-Page.png)
 

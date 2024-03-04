@@ -1,5 +1,7 @@
 ---
 title: JobConfig Listener Aliasing
+tags:
+ - Content Issues
 ---
 
 # JobConfig Listener Aliasing
@@ -68,11 +70,7 @@ Content-Type: application/json
 
    ![](/img/Administration.png)
 
-2. Click **Listeners**:
-
-   ![](/img/Create-Alias1.png)
-
-3. Click **Add Listener**:
+2. Click **Listeners**, then click **Add Listener**:
 
    ![](/img/Create-Alias2.png)
 
@@ -84,17 +82,11 @@ Content-Type: application/json
 
    ![](/img/Create-Alias4.png)
 
-6. Click **Continue**:
+6. Click **Continue**.
 
-   ![](/img/Create-Alias5.png)
-
-7. Either select an existing IP Address, or enter a new IP Address and Label, then click **Add**.
+7. Either select an existing IP Address, or enter a new IP Address and Label, click **Add**, then click **Save**:
 
    ![](/img/Create-Alias6.png)
-
-8. Click **Save**:
-
-   ![](/img/Create-Alias7.png)
 
 9. The Alias is displayed in **Integration Listeners** list:
 
@@ -102,16 +94,12 @@ Content-Type: application/json
 
 ## Step 2: Secure the Alias
 
-The Access Key and Secret Key are used for programmatic (API) access to your listener. You can either fill in your own keys or generate them using the Generate button.
-
-### To Generate a Key:
+The Access Key and Secret Key are used for programmatic (API) access to your listener. You can either fill in your own keys or generate them using the **Generate** button.
 
 1. Select the listener from the  **Integration Listeners** list.
-2. Click <img src="/img/icons/generate.png" className="icon" alt="the Generate icon"/> to create an API Key for your Alias, or enter your own<br/>
+2. Either enter your own **Access Key** and **Secret Key**, or click <img src="/img/icons/generate.png" className="icon" alt="the Generate icon"/> to generate an API Key for your Alias:
 
    ![](/img/Create-Alias9.png)
-
-    <font color="red">If I generate a key, then delete it, I am unable to then enter my own. Is this intended, and if so, why?</font>
 
 3. The following dialog is displayed. Click **Generate Keys**:
 
@@ -124,17 +112,6 @@ The Access Key and Secret Key are used for programmatic (API) access to your lis
 	:::note
 	You can re-generate or delete this key at any time to revoke consumer access
 	:::
-
-### To Enter Your Own Key:
-
-1. Select the listener from the  **Integration Listeners** list.
-2. Enter an Access Key and Secret Key, then click **Continue**:
-
-   ![](/img/Create-Alias12.png)
-
-3. The listener is updated with the generated keys.
-
-   ![](/img/Create-Alias11.png)
 
 ## Step 3: Invoke the Alias
 
