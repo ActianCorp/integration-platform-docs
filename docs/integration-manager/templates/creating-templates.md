@@ -16,35 +16,7 @@ To create a template:
 
 4. Enter a unique name in the **Name** field.
 5. By default, the **Auto-Create Configuration** checkbox is checked. This automatically creates a new configuration that will inherit this template’s settings. If you do not want to automatically create a configuration from this template, unselect the **Auto-Create Configuration** radio button.
-6. Select a file from either your local system or the Integration Files repository as described in the following sections.
-
-## Local System
-
-1. Click **Local System**.
-2. Select an existing Integration from your local system.
-
-    :::note
-
-    Accepted file formats are: .djar, .rtc, .process, .ip.xml, .tf.xml, .jar, .dr, or .js
-
-    :::
-
-3. The file is listed.
-
-4. Click **Create**.
-5. The template is created and you are redirected to the **Template Details** page. Refer to [Editing Template Details](./editing-template-details).
-
-## Integration Files
-
-1. Click **Integration Files**.
-2. The **File Manager** dialog appears.
-3. Choose an Integration from the Integrations Files repository.
-4. Select whether to link a public or private package:
-
-   ![Private Public Toggle](/img/icons/Private-Public-Toggle.png)
-
-5. The file(s) are listed.
-6. Select a package from the list, then click the **Select Package** button.
-7. The **File Manager** dialog closes, and the file is listed.
-8. Click **Create**.
-9. The template is created and you are redirected to the **Template Details** page. Refer to [Editing Template Details](./editing-template-details).
+6. Do one of the following:
+   * Click **Local&nbsp;System**, browse to the desired folder, and select a configuration file (.djar,.rtc,.process,.ip.xml,.tf.xml,.sqlite).
+   * Click **Integration&nbsp;Files**. In the **File&nbsp;Manager**, select a package, then click **Select&nbsp;Package**. For more information on using the **File Manager**, see [Importing a Private File](./importing-configurations#importing-a-private-file) or [Importing a Public File](./importing-configurations#importing-a-public-file).
+7. The template is created and you are redirected to the **Template Details** page. Refer to [Editing Template Details](./editing-template-details).
