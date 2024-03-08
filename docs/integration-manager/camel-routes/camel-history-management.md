@@ -4,7 +4,7 @@ title: Camel File Processing History Management
 
 # Camel File Processing History Management
 
-All processed & unprocessed file history can be managed with camel routes.
+All processed and unprocessed file history can be managed with camel routes.
 
 ## Manage Processed File History
 
