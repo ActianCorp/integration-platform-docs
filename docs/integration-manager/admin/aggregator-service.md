@@ -14,10 +14,6 @@ These messages will be aggregated according to the corresponding entry in `aggre
 
 ## Aggregator Configuration
 
-:::note
-The File Folder Listener Service must be restarted for any configuration changes to take effect. Make sure you have already completed: [Authorizing the File Folder Listener Service](./file-folder-listener/file-folder-listener-service#authorizing-the-file-folder-listener-service).
-:::
-
 **aggregator-config.yml**
 
 `(ProgramDataDirectory)/Actian/IntegrationManager/conf/aggregator-config.yml`
