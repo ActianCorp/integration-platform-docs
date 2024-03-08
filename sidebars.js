@@ -165,17 +165,6 @@ const sidebars = {
         'integration-manager/admin/aggregator-service',
         {
           type: 'category',
-          label: 'File Folder Listener',
-          items: [
-            'integration-manager/admin/file-folder-listener/file-folder-listener-service',
-            'integration-manager/admin/file-folder-listener/local-folder-listener',
-            'integration-manager/admin/file-folder-listener/aws-s3-bucket-listener',
-            'integration-manager/admin/file-folder-listener/azure-blob-storage-listener',
-            'integration-manager/admin/file-folder-listener/google-cloud-storage-listener',
-              ]
-        },
-        {
-          type: 'category',
           label: 'Application Property Reference',
           link: {
             type: 'generated-index',
@@ -197,6 +186,7 @@ const sidebars = {
           type: 'category',
           label: 'Camel Routes',
           items: [
+            'integration-manager/camel-routes/camel-routes-overview',
             'integration-manager/camel-routes/camel-history-management',
             'integration-manager/camel-routes/camel-route-aws',
             'integration-manager/camel-routes/camel-route-azure',
@@ -217,7 +207,6 @@ const sidebars = {
         'integration-agent/quickstart-install',
         'integration-agent/run-your-first-remote-job',
         'integration-agent/monitoring-agent-status',
-        'integration-agent/agent-file-folder-listener',
         {
           type: 'category',
           label: 'On-Premise Data',
