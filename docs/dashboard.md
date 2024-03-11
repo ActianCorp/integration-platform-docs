@@ -1,7 +1,5 @@
 ---
 title: Dashboard
-tags:
- - Content Issues
 ---
 
 The Dashboard provides data visualization charts that you can use to monitor the overall status of your integrations, configurations, and agents. 
@@ -65,36 +63,26 @@ Agent status can be:
 
 You can verify whether the agent is running, and also start the agent service, by opening Windows Services.
 
-### News & Announcements
-
-<font color="red">
-Need image with some data.
-</font>
-<font color="blue">
-GGH Feedback - trying to see if I can get this for you.
-</font>
-
 ## Customizing the Dashboard
 
-### Adding Widgets
+### Adding and Removing Widgets
 
-1. Click <img src="/img/icons/ellipsis.png" className="icon" alt="the ellipsis icon"/> and select **Settings** to open the **Dashboard Settings** panel:
+To add or remove a widget, do the followng:
+
+1. Click <img src="/img/icons/ellipsis.png" className="icon" alt="the ellipsis icon"/> in the upper right corner of any dashboard widget and select **Settings**:
+
+     ![](/img/Settings-Ellipsis.png)
+
+2. The **Dashboard Settings** panel is opened:
    
-   ![Dashboard Settings Panel](/img/Dashboard-Settings-Panel.png)
+   ![](/img/Dashboard-Settings-Panel.png)
 
-2. Click <img src="/img/icons/add-plus.png" className="icon" alt="the Add icon"/> on a widget in the **Available** section.
+3. To remove a widget, click <img src="/img/icons/remove.png" className="icon" alt="the Remove icon"/> in the **Current** section. It will move to the **Available** section.
+4. To add a widget, click <img src="/img/icons/add-plus.png" className="icon" alt="the Add icon"/> on a widget in the **Available** section. It will move to the **Current** section.
 
-### Removing Widgets
+You can also remove a single widget by clicking <img src="/img/icons/ellipsis.png" className="icon" alt="the ellipsis icon"/> on the widget and selecting **Remove**:
 
-To remove a widget from your Dashboard, do one of the followng:
-
-* Click <img src="/img/icons/ellipsis.png" className="icon" alt="the ellipsis icon"/> on the widget and select **Remove**:
-
-   ![Remove Widget](/img/Remove-Widget.png)
-
-* Click <img src="/img/icons/ellipsis.png" className="icon" alt="the ellipsis icon"/> and select <b>Settings</b> to open the <b>Dashboard Settings</b> panel. Click <img src="/img/icons/remove.png" className="icon" alt="the Remove icon"/> in the **Current** section. It will move to the **Available** section.
-   
-   ![Dashboard Settings Panel](/img/Dashboard-Settings-Panel.png)
+   ![](/img/Remove-Widget.png)
 
 ### Rearranging Widgets
 

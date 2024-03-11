@@ -1,7 +1,5 @@
 ---
 title: Accessing the Integration Manager
-tags:
- - Content Issues
 ---
 
 # Accessing the Integration Manager
@@ -21,11 +19,6 @@ tags:
   
      :::note
      For on-prem installations, if you forgot your password, contact your administrator. If you are an on-prem administrator and forgot your password and no other admins have access to the on-prem stack, contact Actian support at support@actian.com for assistance with editing the database to reset your admin password.
-
-     <font color="red">
-     In feedback.md, we refer the user to https://communities.actian.com/s/create-new-case. Is this preferred over support@actian.com?
-     </font>
-
      :::
 
    * Click **Login with Actian Community** to open a page where you can enter your Actian Community username and password, then click **Log in**.
