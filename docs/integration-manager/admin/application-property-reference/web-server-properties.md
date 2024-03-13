@@ -1,8 +1,6 @@
 ---
 title: Web Server Properties
 hide_table_of_contents: true
-tags:
- - Content Issues
 ---
 
 # Web Server Properties
@@ -19,7 +17,7 @@ Refer to the following table for available Web Server properties:
 | `server.ssl.key-store-password` | The certificate password | — |
 | `server.ssl.key-store-type` | The keystore type (`PKCS12` recommended) | — |
 | `spring.servlet.multipart.enabled` | Whether to enable support of multipart uploads | `true` |
-| `spring.servlet.multipart.file-size-threshold` | Threshold after which files are written to disk. <font color="red">In what format? Do you append m/k (or MB/KB)?</font> | 100KB <font color="red">What would you enter for 100KB?</font>|
+| `spring.servlet.multipart.file-size-threshold` | Threshold after which files are written to disk. | `100KB` |
 | `spring.servlet.multipart.location` | Intermediate location of uploaded files | `{sharedDataPath}/tmp` |
-| `spring.servlet.multipart.max-file-size` | Max file size. <font color="red">In what format? Do you append m/k (or MB/KB)?</font> | 1MB <font color="red">What would you enter for 1MB?</font> |
-| `spring.servlet.multipart.max-request-size` | Max request size. <font color="red">In what format? Do you append m/k (or MB/KB)?</font> | 10MB <font color="red">What would you enter for 10MB?</font> |
+| `spring.servlet.multipart.max-file-size` | Max file size. | `1MB` |
+| `spring.servlet.multipart.max-request-size` | Max request size. | `10MB` |

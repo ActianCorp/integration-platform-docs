@@ -70,10 +70,12 @@ You can download the Actian Integration Agent installer from either the **Agents
 3. You should now be able to view and manage your Agent from the cloud on the **Agents** tab in Integration Manager:
 
    ![](/img/Registered-Agents.png)
-   
-   See [Service Logs & Monitoring](#service-logs--monitoring) below.
 
-If you encounter issues, activate the agent. See [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices). If the issue doesn’t resolve, ensure that the service is running.
+If you encounter issues, try the following:
+
+* Make sure the agent has been activated. See [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices). 
+* Go to **Windows** → **Administrative Tools** → **Services** and ensure that the Integration Agent service is running.
+* Refer to [Agent Troubleshooting](./agent-troubleshooting.md).
 
 ### Run Your First DJAR
 
