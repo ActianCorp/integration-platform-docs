@@ -16,7 +16,7 @@ These messages will be aggregated according to the corresponding entry in `aggre
 
 **aggregator-config.yml**
 
-`(ProgramDataDirectory)/Actian/IntegrationManager/conf/aggregator-config.yml`
+`<ProgramDataDirectory>\Actian\IntegrationManager\conf\aggregator-config.yml`
 
 :::info[IMPORTANT]
 Indentation is critical for YAML syntax!

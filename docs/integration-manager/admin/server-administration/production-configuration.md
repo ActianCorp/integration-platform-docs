@@ -38,7 +38,7 @@ To configure Integration Manager Worker:
          The default Worker installation is already setup for distributed use, you only need to supply the "queue" connection properties for your RabbitMQ installation
       :::
 
-2. Configure the worker-specific "queue" properties in ProgramData/Actian/**Worker**/conf/application.properties file
+2. Configure the worker-specific "queue" properties in `ProgramData\Actian\**Worker**\conf\application.properties` file
       :::note
          Both Integration Manager *and* Integration Worker require "queue" connection properties (You can use different credentials for each if you so choose).
       :::

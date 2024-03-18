@@ -18,8 +18,8 @@ Camel DSL support supersedes and replaces the File Folder Listener support provi
 
 Once you have created your DSL, drop it in the appropriate folder as `routes.xml`:
 
-* Integration Manager: `(ProgramDataDirectory)/Actian/IntegrationManager/camel/routes.xml`
-* Integration Agent: `(ProgramDataDirectory)/Actian/IntegrationAgent/camel/routes.xml`
+* Integration Manager: `<ProgramDataDirectory>\Actian\IntegrationManager\camel\routes.xml`
+* Integration Agent: `<ProgramDataDirectory>\Actian\IntegrationAgent\camel\routes.xml`
 
 ## Platform Configurations
 

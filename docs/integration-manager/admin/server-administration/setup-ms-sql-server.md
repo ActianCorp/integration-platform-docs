@@ -46,7 +46,7 @@ spring.liquibase.change-log=classpath:db.changelog-master.xml
 
 The default Quartz configuration is not compatible with SQL Server, so you will need to create a custom properties file as follows:
 
-1. Create a file named quartz.properties in the (ProgramData)/Actian/IntegrationManager/conf folder.
+1. Create a file named quartz.properties in the `<ProgramDataDirectory>\Actian\IntegrationManager\conf` folder.
    
    :::note
    Any change to quartz.properties requires a restart of the Integration Manager Service.

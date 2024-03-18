@@ -39,8 +39,8 @@ Identify and stop the process that's listening on port XXXX or configure this ap
 This typically means there is already an instance of the service running (or perhaps another service installed on the same port). There are a few options to resolve this error:
 * Locate and stop or kill the running service or process. We recommend using ProcessExplorer.
 * Modify the port being used to remove the conflict. This is done by adding/changing the server.port value in:
-    * Agent: (programData)IntegrationAgent/conf/application.properties
-	* Worker: (programData)IntegrationAgent/conf/worker-application.properties
+    * Agent: `<ProgramDataDirectory>\Actian\IntegrationAgent\conf\application.properties`
+	* Worker: `<ProgramDataDirectory>\Actian\IntegrationAgent\conf\worker-application.properties`
 
 ## Engine version not recognized 
 

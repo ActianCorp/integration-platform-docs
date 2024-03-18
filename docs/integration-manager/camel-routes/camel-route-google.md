@@ -12,8 +12,8 @@ Monitors a GCP Cloud Storage folder for new files and submit to the JobConfig ru
 
 **routes.xml**
 
-* Integration Manager: `(ProgramDataDirectory)/Actian/IntegrationManager/camel/routes.xml`
-* Integration Agent: `(ProgramDataDirectory)/Actian/IntegrationAgent/camel/routes.xml`
+* Integration Manager: `<ProgramDataDirectory>\Actian\IntegrationManager\camel\routes.xml`
+* Integration Agent: `<ProgramDataDirectory>\Actian\IntegrationAgent\camel\routes.xml`
 
 :::note
 Multiple routes (i.e., AWS, Azure, GCP, and Local) can be added into a single `routes.xml`.

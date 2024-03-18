@@ -52,8 +52,8 @@ You can download the Actian Integration Agent installer from either the **Agents
 1. Right-click the downloaded installer file (`integration-agent-xxx-win.exe`) and select "Run as administrator".
 2. If you have a previous 3.x.x version installed, you will be prompted to uninstall first. Uninstall will shutdown running services and prepare for library updates, it will NOT remove or alter ProgramData (conf files, logs, etc.).
 3. Accept the License Agreement.
-4. Select the installation path (default: `C:/Program Files/Actian/IntegrationAgent`).
-5. Select the shared data path (default: `C:/ProgramData/Actian/IntegrationAgent`).
+4. Select the installation path (default: `C:\Program Files\Actian\IntegrationAgent`).
+5. Select the shared data path (default: `C:\ProgramData\Actian\IntegrationAgent`).
 6. Installation should take less than a minute.
 
 ### Registration
@@ -94,7 +94,7 @@ You are now ready to run your first remote job. Refer to [Run Your First Remote 
     For more information on managing agents and devices from the Integration Manager, see [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices).
    :::
    
-2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `C:/ProgramData/Actian/IntegrationAgent/logs/Agent.log`)
+2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `C:\ProgramData\Actian\IntegrationAgent\logs\Agent.log`)
 
 ### Uninstalling
 
