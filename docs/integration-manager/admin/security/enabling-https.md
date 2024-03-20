@@ -4,7 +4,7 @@ title: Enabling HTTPS
 
 # Enabling HTTPS
  
-:::danger[IMPORTANT!]
+:::danger[Warning]
 Using HTTPS is always recommended. Otherwise, API tokens, credentials, and payloads are subject to hijack.
 
 HTTPS is always enabled and enforced for Integration Manager powered by DataCloud (SaaS and VPC).
