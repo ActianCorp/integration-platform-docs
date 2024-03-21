@@ -1,8 +1,6 @@
 ---
 title: Quick Start Installation
 hide_table_of_contents: true
-tags:
- - Content Issues
 ---
 
 # Quick Start Installation
@@ -54,8 +52,8 @@ You can download the Actian Integration Agent installer from either the **Agents
 1. Right-click the downloaded installer file (`integration-agent-xxx-win.exe`) and select "Run as administrator".
 2. If you have a previous 3.x.x version installed, you will be prompted to uninstall first. Uninstall will shutdown running services and prepare for library updates, it will NOT remove or alter ProgramData (conf files, logs, etc.).
 3. Accept the License Agreement.
-4. Select the installation path (default: `C:/Program Files/Actian/IntegrationAgent`).
-5. Select the shared data path (default: `C:/ProgramData/Actian/IntegrationAgent`).
+4. Select the installation path (default: `C:\Program Files\Actian\IntegrationAgent`).
+5. Select the shared data path (default: `C:\ProgramData\Actian\IntegrationAgent`).
 6. Installation should take less than a minute.
 
 ### Registration
@@ -72,14 +70,15 @@ You can download the Actian Integration Agent installer from either the **Agents
 3. You should now be able to view and manage your Agent from the cloud on the **Agents** tab in Integration Manager:
 
    ![](/img/Registered-Agents.png)
-   
-   See [Service Logs & Monitoring](#service-logs--monitoring) below.
 
-If you encounter issues, activate the agent. See [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices). If the issue doesn’t resolve, ensure that the service is running.
+If you encounter issues, try the following:
+
+* Make sure the agent has been activated. See [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices). 
+* Go to **Windows** → **Administrative Tools** → **Services** and ensure that the Integration Agent service is running.
+* Refer to [Agent Troubleshooting](./agent-troubleshooting.md).
 
 ### Run Your First DJAR
 
-<font color="red">Note: I moved this section out to the existing topic to avoid duplication of content.</font>
 You are now ready to run your first remote job. Refer to [Run Your First Remote Job](./run-your-first-remote-job).
 
 ### Service Logs & Monitoring
@@ -88,14 +87,14 @@ You are now ready to run your first remote job. Refer to [Run Your First Remote 
 
    * DataConnect Cloud: [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents)
    * Avalanche Console: [https://avalanche.actiandatacloud.com/im/agents](https://avalanche.actiandatacloud.com/im/agents)
-   * Private Cloud on Kubernetes: https://\[your hosted domain]im/agents <font color="red">The Windows section uses **im** in this url, whereas Linux uses **ui**. Is this difference intentional?</font>
+   * Private Cloud on Kubernetes: https://\[your hosted domain]/ui/agents
   
 
    :::note
     For more information on managing agents and devices from the Integration Manager, see [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices).
    :::
    
-2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `C:/ProgramData/Actian/IntegrationAgent/logs/Agent.log`)
+2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `C:\ProgramData\Actian\IntegrationAgent\logs\Agent.log`)
 
 ### Uninstalling
 
@@ -176,13 +175,9 @@ You can download the Actian Integration Agent installer from either the **Agents
    
    See [Service Logs & Monitoring](#service-logs--monitoring-1) below.
 
-If you encounter issues, activate the agent. See [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices). If the issue doesn’t resolve, ensure that the service is running. See [Start/Stop/Status](./quickstart-install#startstopstatus). <font color="red">I added this as it is mentioned in the Windows section. Please verify.</font>
+If you encounter issues, activate the agent. See [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices). If the issue doesn’t resolve, ensure that the service is running. See [Start/Stop/Status](./quickstart-install#startstopstatus).
 
 ### Run Your First DJAR
-
-<font color="red">
-Note: I moved this section out to the existing topic to avoid duplication of content.
-</font>
 
 You are now ready to run your first remote job. Refer to [Run Your First Remote Job](./run-your-first-remote-job).
 
@@ -192,13 +187,13 @@ You are now ready to run your first remote job. Refer to [Run Your First Remote 
 
    * DataConnect Cloud: [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents)
    * Avalanche Console: [https://avalanche.actiandatacloud.com/im/agents](https://avalanche.actiandatacloud.com/im/agents)
-   * Private Cloud on Kubernetes: https://\[your hosted domain/]ui/agents <font color="red">The Windows section uses **im** in this url, whereas Linux uses **ui**. Is this difference intentional?</font>
+   * Private Cloud on Kubernetes: https://\[your hosted domain]/ui/agents
   
    :::note
     For more information on managing agents and devices from the Integration Manager, see [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices).
    :::
  
- 2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `C:/ProgramData/Actian/IntegrationAgent/logs/Agent.log`) <font color="red">This looks like a copy/paste error. What is the default path on Linux?</font>
+ 2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `/etc/opt/actian/integration-agent/logs/integration-agent.log`).
 
 ### Start/Stop/Status
 

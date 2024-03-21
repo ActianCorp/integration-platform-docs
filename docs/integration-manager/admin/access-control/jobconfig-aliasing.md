@@ -2,7 +2,6 @@
 title: JobConfig Listener Aliasing
 tags:
  - Content Issues
- - Bugs
 ---
 
 # JobConfig Listener Aliasing
@@ -16,13 +15,12 @@ An alias defines an alternative name for an existing Configuration to be execute
 Aliasing allows you to:
 
 * Create custom/branded API endpoints for your internal and external integration consumers
+* Make it easier for API consumers by providing a static endpoint name that does not change even when the configuration is changed on the back end
 * Seamlessly upgrade/downgrade/exchange the backend integration without disruption to consumers
 * Use various access control mechanisms for your custom API endpoint, including:
-    * Basic User Authentication (username/password)
+   * Basic User Authentication (username/password)
 	* API Keys (defined separately for each Alias you create)
 	* Public access (not recommended to service consumers outside of your internal network)
-
-<font color="red">The current docs include this content, but not in the "unoffical" docs on GH Pages. Is this appropriate here?</font>
 
 As an example, you can turn this:
 ```
@@ -72,11 +70,7 @@ Content-Type: application/json
 
    ![](/img/Administration.png)
 
-2. Click **Listeners**:
-
-   ![](/img/Create-Alias1.png)
-
-3. Click **Add Listener**:
+2. Click **Listeners**, then click **Add Listener**:
 
    ![](/img/Create-Alias2.png)
 
@@ -88,20 +82,11 @@ Content-Type: application/json
 
    ![](/img/Create-Alias4.png)
 
-6. Click **Continue**:
+6. Click **Continue**.
 
-   ![](/img/Create-Alias5.png)
-
-7. Either select an existing IP Address, or enter a new IP Address and Label, then click **Add**.
+7. Either select an existing IP Address, or enter a new IP Address and Label, click **Add**, then click **Save**:
 
    ![](/img/Create-Alias6.png)
-
-   <font color="red">When I select a value from the dropdown rather than enter an IP address manually, I get HTML code in the IP Address field:</font>
-   ![](/img/QUESTION.png)
-
-8. Click **Save**:
-
-   ![](/img/Create-Alias7.png)
 
 9. The Alias is displayed in **Integration Listeners** list:
 
@@ -109,16 +94,12 @@ Content-Type: application/json
 
 ## Step 2: Secure the Alias
 
-The Access Key and Secret Key are used for programmatic (API) access to your listener. You can either fill in your own keys or generate them using the Generate button.
-
-### To Generate a Key:
+The Access Key and Secret Key are used for programmatic (API) access to your listener. You can either fill in your own keys or generate them using the **Generate** button.
 
 1. Select the listener from the  **Integration Listeners** list.
-2. Click <img src="/img/icons/generate.png" className="icon" alt="the Generate icon"/> to create an API Key for your Alias, or enter your own<br/>
+2. Either enter your own **Access Key** and **Secret Key**, or click <img src="/img/icons/generate.png" className="icon" alt="the Generate icon"/> to generate an API Key for your Alias:
 
    ![](/img/Create-Alias9.png)
-
-    <font color="red">If I generate a key, then delete it, I am unable to then enter my own. Is this intended, and if so, why?</font>
 
 3. The following dialog is displayed. Click **Generate Keys**:
 
@@ -132,19 +113,7 @@ The Access Key and Secret Key are used for programmatic (API) access to your lis
 	You can re-generate or delete this key at any time to revoke consumer access
 	:::
 
-### To Enter Your Own Key:
-
-1. Select the listener from the  **Integration Listeners** list.
-2. Enter an Access Key and Secret Key, then click **Continue**:
-
-   ![](/img/Create-Alias12.png)
-
-3. The listener is updated with the generated keys.
-
-   ![](/img/Create-Alias11.png)
-      <font color="red">Why do you not get the dialog about needing to update all clients when entering your own key?</font>
-
-## Step 3: TestInvoke the Alias
+## Step 3: Invoke the Alias
 
 You can invoke an Alias, that is, run a JobConfig, through the Job Execution API in several ways with several options. Note that your Alias only exposes the ability to execute a JobConfig with parameters. No user or configuration data is accessible through the Listener API.
 
@@ -176,10 +145,6 @@ You can invoke a JobConfig Alias these ways:
   * Example: Authorization: Basic VEVTVEFDQ0VTU0tFWTpURVNUU0VDUkVUS0VZ
 
 ## Deleting a Listener
-
-<font color="red">I added this section after I tried to delete a config with an associated listener. Please verify.</font>
-
-You cannot delete an aliased configuration. You must first delete the listener (which requires Admin privileges).
 
 To delete a listener:
 

@@ -69,7 +69,7 @@ To use the event driven Salesforce.com event notification service, log in to Sal
 7. Set up your Outbound Message:
     * **Name**
     * **Unique Name**
-    * **Endpoint** (e.g., https://api.im.actiandatacloud.com/v2/api/jobconfigs/[jobconfig id]/sfdc/obm)
+    * **Endpoint** (e.g., https<nolink>:</nolink>//api.im.actiandatacloud.com/v2/api/jobconfigs/*[jobconfig&nbsp;id]*/sfdc/obm)
     * [Salesforce.com] User to send as
     * **Send Session ID** = true
     * Object fields to send (these fields will be available as an XML DJMessage object within your integration:)
@@ -77,4 +77,3 @@ To use the event driven Salesforce.com event notification service, log in to Sal
 8. Click **Save (Outbound Message)**.
 9. Click **Done (Outbound Message)**.
 10. Click **Activate (Workflow Rule)**.
-

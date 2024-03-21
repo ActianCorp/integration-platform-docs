@@ -6,21 +6,19 @@ title: Activating or Inactivating Configurations
 
 In order to run a configuration, its status must be Active. Setting the configuration status to Inactive allows you to disable the configuration without deleting it. You can reactivate it later when needed by setting the status back to Active.
 
-You can set the configuration status to Active or Inactive from either the **Configurations** page or the **Configuration Details** page.
+You can set the configuration status to Active or Inactive from several pages.
 
 ## From the Configurations Page
 
-1. Select the **Configurations** tab.
-   
-   The **Configurations** page displays the available configurations. The **Active** column indicates whether the configuration is currently Active or Inactive. 
-2. Click the dropdown arrow next to the **Run** button for the desired configuration.
-3. Select **Inactive** to inactivate a currently-active configuration, or select **Active** to reactivate a currently-inactive configuration:
+1. Select the **Configurations** tab. The **Configurations** page displays the available configurations. The **Active** column indicates whether the configuration is currently Active or Inactive. 
+2. Click the ellipsis on the right of the desired configuration.
+3. Select **Set as Inactive** to inactivate a currently-active configuration, or select **Set as Active** to reactivate a currently-inactive configuration:
 
-   ![Configuration Set Active](/img/Configuration-Set-Active.png)
+   ![](/img/Configuration-Set-Inactive.png)
 
 4. The **Active** column is updated to show the current active status:
 
-   ![Configuration Set Active 2](/img/Configuration-Set-Active2.png)
+   ![](/img/Configuration-Set-Inactive2.png)
 
 ## From the Configuration Details Page
 
@@ -28,21 +26,27 @@ You can set the configuration status to Active or Inactive from either the **Con
 2. Click the configuration that you want to edit.
 3. On the **Configuration Details** page, toggle the **Status** to **Active** or **Inactive**:
 
-   ![Configuration Status Toggle](/img/Configuration-Status-Toggle.png)
+   ![](/img/Configuration-Status-Toggle.png)
 
 ## From the Template Configurations Page
 
 1. Select the **Template** tab.
 2. Click the template that you want to edit.
-3. On the **Template Configurations** page, select the desired configuration(s), click the dropdown arrow next to the **Run** button above the list, then select **Active** or **Inactive**:
+3. Click **Configurations** in the left panel:
 
-   ![](/img/Template-Configuration-Set-Active.png)
+   ![](/img/Template-Configurations-Link1.png)
+
+4. On the **Template Configurations** page, select the desired configuration(s), click the dropdown arrow next to the **Run** button above the list, then select **Active** or **Inactive**.
+
+     ![](/img/Template-Configuration-Set-Inactive.png)
 
 ## Activivating/Inactivating Multiple Configurations
 
-1. Select the checkbox to the left of the desired configurations.
-2. Click the dropdown arrow next to the common **Run** button on the top right of the Configurations list, and then select **Inactive** or **Active**:
+1. On the **Configurations** page, do one of the following:
+   
+   * Select the checkboxes next to the desired **Active** configuration(s), then click <img src="/img/icons/inactive.png" className="icon" alt="the Inactive icon"/> to set as Inactive.
 
-   ![Configuration Set Active Multiple](/img/Configuration-Set-Active-Multiple.png)
+     ![](/img/Configurations-Set-Active1.png)
+   * Select the checkboxes next to the desired **Inactive** configuration(s), then click <img src="/img/icons/active.png" className="icon" alt="the Active icon"/> to set as Active.
 
-
+     ![](/img/Configurations-Set-Active2.png)

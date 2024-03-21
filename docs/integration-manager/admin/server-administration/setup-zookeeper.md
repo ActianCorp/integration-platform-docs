@@ -18,28 +18,26 @@ Integration Manager is compatible with Apache ZooKeeper 3.6.3 in Standalone Oper
 
 1. Download Apache ZooKeeper 3.6.3: [https://www.apache.org/dyn/closer.lua/zookeeper/zookeeper-3.6.3/apache-zookeeper-3.6.3-bin.tar.gz](https://www.apache.org/dyn/closer.lua/zookeeper/zookeeper-3.6.3/apache-zookeeper-3.6.3-bin.tar.gz)
 2. Unzip to a Java-friendly path (no spaces), e.g. C:/ProgramData/Apache/zookeeper-3.6.3 (Windows), or /opt/Apache/zookeeper-3.6.3 (Linux)
-3. Create data directory at ../Apache/zookeeper-3.6.3/data
-4. Rename “zoo_sample.cfg” to “zoo.cfg” in ../Apache/zookeeper-3.6.3/conf
-5. In zoo.cfg, set:
-   * Windows: ```dataDir=C:/ProgramData/Apache/zookeeper-3.6.3/data```
-   * Linux: ```dataDir=/opt/Apache/zookeeper-3.6.3/data```
-6. Add a new system environment variable ZOOKEEPER_HOME:
-   * Windows: ```ZOOKEEPER_HOME = C:/ProgramData/Apache/zookeeper-3.6.3```
+3. Create data directory at `../Apache/zookeeper-3.6.3/data`.
+4. Rename `zoo_sample.cfg` to `zoo.cfg` in `../Apache/zookeeper-3.6.3/conf`.
+5. In `zoo.cfg`, set:
+   * Windows: `dataDir=C:/ProgramData/Apache/zookeeper-3.6.3/data`
+   * Linux: `dataDir=/opt/Apache/zookeeper-3.6.3/data`
+6. Add a new system environment variable `ZOOKEEPER_HOME`:
+   * Windows: `ZOOKEEPER_HOME = C:/ProgramData/Apache/zookeeper-3.6.3`
    * Linux: ```ZOOKEEPER_HOME = /opt/Apache/zookeeper-3.6.3```
 7. Edit the system environment variable PATH by adding the entry:
    ```
    %ZOOKEEPER_HOME%/bin
    ```
-8.  Open a command prompt and type ```zkserver``` to verify your installation.
+8.  Open a command prompt and type `zkserver` to verify your installation.
 
 ## Integration Manager Configuration
 
-Integration Manager uses the "zookeeper" prefix properties in the /conf/application.properties file to connect to a ZooKeeper Standalone or Ensemble deployment.
+Integration Manager uses the "zookeeper" prefix properties in the `/conf/application.properties` file to connect to a ZooKeeper Standalone or Ensemble deployment.
 
 :::note
-
    Any change to application.properties requires a restart of the Integration Manager Service.
-
 :::
 
 Here are some example properties to connect Integration Manager to a ZooKeeper deployment:

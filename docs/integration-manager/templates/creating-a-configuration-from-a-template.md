@@ -1,7 +1,5 @@
 ---
 title: Creating a Configuration From a Template
-tags:
- - Content Issues
 ---
 
 # Creating a Configuration From a Template
@@ -9,25 +7,21 @@ tags:
 To create a configuration from a template:
 
 1. Select the **Templates** tab.
-   
-   The **Templates** page displays the available integration templates.
-   
-2. Click the desired template name.
-   
-   The **Template Details** page is displayed.
-3. On the **Template Details** page, click **Create Configuration**.
+2. Click the desired template:
 
-   The **Data Integration Setup** page is displayed. <font color="red">The default source that is associated with the template is preselected. This is in the Avalanche docs. Is it relevant here?</font>
+   ![Template Select](/img/Template-Select.png) 
+3. On the **Template Details** page, click **Create Configuration**: 
+
+   ![Template Select](/img/ConfigFromTemplate1.png) 
 4. Enter a unique name for your configuration.
-5. (Optional) Select a different template.
 
-    :::caution[IMPORTANT]
+5. The **Template** dropdown is preselected to the template selected in Step 2. You can select a different template, if desired. Keep in mind that each template uses its own package and entry point, so make sure the selected template uses the desired package and entry point.
 
-    Care is required if you are changing the source and template. <font color="red">This needs further explanation.</font>
+   ![Template Select](/img/ConfigFromTemplate2.png)
 
-    :::
+6. Click **Create**. The **Configuration Details** page is displayed for the new configuration:
+ 
+   ![Template Select](/img/ConfigFromTemplate3.png) 
 
-6. Click **Create**. 
-   
-   A configuration is created based on the specified information. The **Configuration Details** page is displayed for the new configuration. See [Editing Configuration Details](../configurations/editing-configuration-details).
+    Note that the new configuration inherits properties from the selected template. You can edit the configuration to override specific properties set in the template, if desired. See [Editing Configuration Details](../configurations/editing-configuration-details).
 

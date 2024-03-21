@@ -1,7 +1,5 @@
 ---
 title: Downloading Integration Agent
-tags:
- - Content Issues
 ---
 
 # Downloading Integration Agent

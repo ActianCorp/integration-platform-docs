@@ -35,7 +35,7 @@ To create a new encryption keystore:
 1. Open a command console and change directory to the JRE bin folder.
 
     ```
-    cd (ProgramData)/Actian/IntegrationManager/jre/bin
+    cd <ProgramDataDirectory>/Actian/IntegrationManager/jre/bin
     ```
 
 2. Create a new keystore file using Java keytool. You can use whatever alias and filename you choose. In this example, we are using "integration-manager" and "keystore.p12", respectively.

@@ -1,7 +1,5 @@
 ---
 title: Accessing the Integration Manager
-tags:
-  - Content Issues
 ---
 
 # Accessing the Integration Manager
@@ -17,8 +15,13 @@ tags:
    
    ![Login](/img/Login.png)
 3. On the Login page, do one of the following:
-   * Enter your user credentials and click **LOGIN**. <font color="red">I don't see a Forgot Password link on the login page. How do you reset your password when you've forgotten it?</font>
-   * Click **Login with Actian Community** to open a page where you can enter your Actian Community credentials (username and password), then click **Log in**.
+   * Enter your user credentials and click **LOGIN**. 
+  
+     :::note
+     For on-prem installations, if you forgot your password, contact your administrator. If you are an on-prem administrator and forgot your password and no other admins have access to the on-prem stack, contact Actian support at support@actian.com for assistance with editing the database to reset your admin password.
+     :::
+
+   * Click **Login with Actian Community** to open a page where you can enter your Actian Community username and password, then click **Log in**.
 
 4. Integration Manager opens to the **Dashboard** page (see [Dashboard](./dashboard)):
 
@@ -26,4 +29,3 @@ tags:
 
 5. If logging in as an administrator, you can manage user accounts. Refer to [User Management](./integration-manager/admin/access-control/user-management).
 
-TESTING: ZZZ

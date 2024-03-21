@@ -17,17 +17,16 @@ Integration Manager is compatible with MySQL version 5.6.51 or later.
 
 ## Step 2: Verify MySQL Database Service
 
-1. Go to Windows → Services.
+1. Go to **Windows** → **Services**.
 2. Confirm that the MySQL Database service is registered and running.
-3. Open Programs → MySQL → MySQL Workbench to confirm your connection info.
+3. Open **Programs** → **MySQL** → **MySQL Workbench** to confirm your connection info.
 4. If you run into problems, see [https://dev.mysql.com/doc/refman/8.0/en/windows-troubleshooting.html](https://dev.mysql.com/doc/refman/8.0/en/windows-troubleshooting.html).
 
 ## Step 3: Integration Manager Configuration
 
-Integration Manager uses the "spring.datasource" prefix properties in the ../conf/application.properties file to create a database connection.
+Integration Manager uses the "spring.datasource" prefix properties in the `../conf/application.properties` file to create a database connection.
 
 :::note
-
 Any change to application.properties requires a restart of the Integration Manager Service.
 :::
 

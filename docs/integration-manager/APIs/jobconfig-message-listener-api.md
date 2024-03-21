@@ -1,15 +1,8 @@
 ---
 title: JobConfig Message Listener API
-tags:
- - Content Issues
 ---
 
 # JobConfig Message Listener API
-
-<font color="red">
-1. In the "unoffical" help in GH Pages, this topic is called Run Job with Input Message. I moved it under the APIs category, which is where this lives in the current help on docs.actian.com. Not sure where it belongs, but it made sense to me to have this in the APIs section.
-2. In the current help, this topic includes the File Size Configuration and Limitations topic, which also lives in the File Folder Listener Service topic in the Admin section. Does that topic belong here?
-</font>
 
 ## Overview
 
@@ -109,17 +102,6 @@ eyJzY29wZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJpZCI6MSwiYWNjb3VudCI6MSwic Co
 
 "Name","Metric"
 "Value","124"
-How to Consume the Input Message
-The input message is exposed as a DJMessage data type within DataConnect.
-You must initialize the DJMessage to be able to run a transformation or process within another process (that is, as a transformation step or subprocess).
-Dim inputMsg as DJMessage
-Set inputMsg = FindMessage("inputData") //This needs to match the "messagename" query parameter
-If inputMsg is Nothing then
-    Set inputMsg = new DJMessage "inputData"
-End If
-LogMessage("INFO", inputMsg.body)
-Once initialized, the message can be consumed as a Map source file or Component input message through the djmessage:///{messagename} protocol.
-djmessage:///inputData
 ```
 
 ## How to Consume the Input Message

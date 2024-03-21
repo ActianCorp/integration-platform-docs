@@ -6,11 +6,13 @@ title: Editing Configuration Schedules
 
 Integration Manager supports both Interval and Cron expression scheduling. The powerful Quartz scheduler engine is used to manage scheduling and schedule triggers.
 
-To set a schedule for a configuration to run:
+To set a schedule for running a configuration:
 
 1. Select the **Configurations** tab.
 2. Click the name of the configuration you want to schedule.
-3. On the **Configuration Details** page, click the edit icon in the **Scheduling** field.
+3. On the **Configuration Details** page, click <img src="/img/icons/edit-icon.png" className="icon" alt="the Edit icon"/> in the **Scheduling** field:
+
+   ![](/img/Scheduling-Edit.png)
 4. The **Edit Configuration Schedule** page is displayed.
 5. Select a frequency from the dropdown menu:
    

@@ -6,7 +6,7 @@ hide_table_of_contents: true
 # Integration Agent Overview
 
 :::note
-The **INTEGRATION AGENT** section contains information specific to the Agent itself, including installation and registration, the Agent file folder listener, on-premise data, and other more advanced topics. Details on managing agents from the Integration Manager (cloud or on-premise) are described in the **INTEGRATION MANAGER USERS** section. See [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices).
+The **INTEGRATION AGENT** section contains information specific to the Agent itself, including installation and registration, on-premise data, and other more advanced topics. Details on managing agents from the Integration Manager (cloud or on-premise) are described in the **INTEGRATION MANAGER USERS** section. See [Managing Agents and Devices](../integration-manager/agents-and-devices/managing-agents-and-devices).
 :::
 
 DataCloud Agent Technology enables centralized cloud management of on-premise integration jobs and related collateral. It allows secure cloud-to-on-premises communication without special firewall rules or VPN requirements.

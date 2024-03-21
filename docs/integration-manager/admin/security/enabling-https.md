@@ -4,12 +4,10 @@ title: Enabling HTTPS
 
 # Enabling HTTPS
  
-:::danger[IMPORTANT!]
-
+:::danger[Warning]
 Using HTTPS is always recommended. Otherwise, API tokens, credentials, and payloads are subject to hijack.
 
 HTTPS is always enabled and enforced for Integration Manager powered by DataCloud (SaaS and VPC).
-
 :::
 
 ###  SSL Certificates
@@ -39,7 +37,7 @@ This step explains how to accomplish the task using keytool. For OpenSSL certifi
 1. Open a command console and change directory to the JRE bin folder.
 
     ```
-    cd (ProgramData)/Actian/IntegrationManager/jre/bin
+    cd <ProgramDataDirectory>/Actian/IntegrationManager/jre/bin
     ```
 
 2. Create a new keystore file using Java keytool. You can use whatever alias and filename you choose. For illustration purposes, we are using "integration-manager" and "keystore.p12", respectively.
@@ -73,7 +71,7 @@ Self-signed certs should not be used in production environments!
 1. Open a command console and change directory to the JRE bin folder.
 
     ```
-    cd (ProgramData)/Actian/IntegrationManager/jre/bin
+    cd <ProgramDataDirectory>/Actian/IntegrationManager/jre/bin
     ```
 
 2. Create a new keystore file using Java keytool. You can use whatever alias and filename you choose. In this example, we are using "integration-manager" and "keystore.p12", respectively.
@@ -115,11 +113,11 @@ To import your certificates:
 1. Export the certificate out of the keystore:
 
    ```
-      keytool -exportcert -alias integration-manager -keystore keystore.p12 -file integration-manager.cer -storetype pkcs12 -noprompt -storepass D0N0tU5eTh1sP@ssW0rd!
+   keytool -exportcert -alias integration-manager -keystore keystore.p12 -file integration-manager.cer -storetype pkcs12 -noprompt -storepass D0N0tU5eTh1sP@ssW0rd!
    ```
 
 2. Import the certificate to the jre/lib/security/cacerts keystore:
 
    ```
-   keytool -import -alias integration-manager -file integration-manager.cer -keystore "(ProgramData)/Actian/IntegrationManager/jre/lib/security/cacerts" -storepass D0N0tU5eTh1sP@ssW0rd!
+   keytool -import -alias integration-manager -file integration-manager.cer -keystore "<ProgramDataDirectory>/Actian/IntegrationManager/jre/lib/security/cacerts" -storepass D0N0tU5eTh1sP@ssW0rd!
    ```

@@ -1,15 +1,12 @@
 ---
 title: Managing Agents and Devices
+tags:
+ - Content Issues
 ---
 # Managing Agents and Devices
 
 <font color="red">
-1. In the current help on docs.actian.com, Agent documentation lives in the **Managing Agents and Devices** section in the **Integration Manager User Guide**. The "unofficial" docs on GitHub Pages puts all agent content in a separate **INTEGRATION AGENT** section.
-
-    Because you can perform several Agent functions on the the **Agents** tab in Integration Manager, I chose to put the content for those tasks in the **INTEGRATION MANAGER USERS** section and include only more advanced and Agent-specific content in the **INTEGRATION AGENT** section.
-
-2. The GitHub version of the docs refers to the **Agents and Devices** page in Integration Manager as the **Agents Console**. Assuming these are the same thing, is there a reason we use different names? It would be preferable to use consistent terminology. For now, I'm referring to it as the **Agents and Devices** page since that is the title of this page.
-3.  There is no mention of Devices in this section. Should we define Agents vs. Devices?
+There is no mention of the **Other Authorized Devices** list in this section. I am trying to figure out how to get this to appear in IM.
 </font>
 
 The **Agents and Devices** page in Integration Manager provides a list of registered Agents and the ability to manage your Agents. 

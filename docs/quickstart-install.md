@@ -39,21 +39,21 @@ import TabItem from '@theme/TabItem';
    :::
 
 3. Accept the License Agreement.
-4. Select the installation path (default: `C:/Program Files/Actian/IntegrationManager`).
-5. Select the shared data path (default: `C:/ProgramData/Actian/IntegrationManager`).
+4. Select the installation path (default: `C:\Program Files\Actian\IntegrationManager`).
+5. Select the shared data path (default: `C:\ProgramData\Actian\IntegrationManager`).
 
 Installation should take less than a minute.
 
 ### Configuration/Reconfiguration
 
-The `application.properties` file can be used for a variety of configurations to tailor Integration Manager to your requirements and environment. See [Server Administration Overview](./integration-manager/admin/server-administration/server-administration-overview) for a description of available properties.
+The `application.properties` file can be used for a variety of configurations to tailor Integration Manager to your requirements and environment. See [Application Property Reference](./category/application-property-reference) for a description of available properties.
 
    :::note
       If you have a previous installation of Integration Manager, none of your existing property values will be changed.
    :::
 
-1. Locate the `application.properties` file (default: `C:/ProgramData/Actian/IntegrationManager/conf/application.properties`).
-2. Confirm or alter the path to your DataConnect v12 license file using the property `engine.licensePath` (default: `C:/ProgramData/Actian/IntegrationManager/license/cosmos.slc`).
+1. Locate the `application.properties` file (default: `C:\ProgramData\Actian\IntegrationManager\conf\application.properties`).
+2. Confirm or alter the path to your DataConnect v12 license file using the property `engine.licensePath` (default: `C:\ProgramData\Actian\IntegrationManager\license\cosmos.slc`).
    
    :::note
       If you were previously using Integration Manager v2 and DataConnect v11, you will need to alter this value before executing any integrations. DataConnect v11 and v12 licenses are not interchangeable.
@@ -70,8 +70,8 @@ The `application.properties` file can be used for a variety of configurations to
 
 ### Service Logs & Monitoring
 
-1. You can monitor service activity and get important additional information from the log file (default:  `C:/ProgramData/Actian/IntegrationManager/logs/IntegrationManager.log`)
-2. You can retrieve DataConnect Engine log files by Job Id in the job history folder (default: `C:/ProgramData/Actian/IntegrationManager/history/job`)
+1. You can monitor service activity and get important additional information from the log file (default:  `C:\ProgramData\Actian\IntegrationManager\logs\IntegrationManager.log`)
+2. You can retrieve DataConnect Engine log files by Job Id in the job history folder (default: `C:\ProgramData\Actian\IntegrationManager\history\job`)
 
    :::note
       Log file data will survive uninstallation/reinstallation.
@@ -79,7 +79,7 @@ The `application.properties` file can be used for a variety of configurations to
 
 ### Uninstallation
 
-To uninstall Integration Manager, execute `uninstaller.exe` in the program directory (default `C:/Program Files/Actian/IntegrationManager`).
+To uninstall Integration Manager, execute `uninstaller.exe` in the program directory (default `C:\Program Files\Actian\IntegrationManager`).
 
 
 </TabItem>
@@ -117,7 +117,7 @@ To uninstall Integration Manager, execute `uninstaller.exe` in the program direc
 
 ### Configuration/Reconfiguration
 
-The `application.properties` file can be used for a variety of configurations to tailor Integration Manager to your requirements and environment. See the [Server Administration](./integration-manager/admin/server-administration/server-administration-overview) documentation for a description of available properties.
+The `application.properties` file can be used for a variety of configurations to tailor Integration Manager to your requirements and environment. See [Application Property Reference](./category/application-property-reference) for a description of available properties.
 
 1. Locate the `application.properties` file (default: `/etc/opt/actian/integration-manager/conf/application.properties`)
    :::note

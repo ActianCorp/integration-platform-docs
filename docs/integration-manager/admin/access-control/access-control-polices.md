@@ -6,7 +6,14 @@ title: Access Control Policies
 
 By default, non-admin users only have access to JobTemplates and JobConfigs they create. You can grant additional privileges and share Artifacts across users by using Access Control Policies.
 
-## Managing Access Control Policies
+| Resource Type | Assignable Actions |
+| :------------ | :----------------- |
+| jobconfigs    | view, edit, delete |
+| jobtemplates  | view, edit, delete |
+
+Open API specs for Access Control Policy APIs are located here: [https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Access%20Control%20Policies](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Access%20Control%20Policies)
+
+## Editing Access Control Policies
 
 1. Click the profile dropdown in the upper right corner and select **Administration**.
 
@@ -16,15 +23,33 @@ By default, non-admin users only have access to JobTemplates and JobConfigs they
 
    ![Policies](/img/Policies.png)
 
+3. Click the name of the desired policy:
+   
+   ![](/img/Policy-Edit1.png)
+4. On the **Edit Access Policy** page, edit the **Name** and **Description** as desired.
+5. Click the **Resource Types** dropdown and select **jobconfigs** or **jobtemplates**.
+6. Click the **Allowed Actions** dropdown and select the desired action(s).
+7. Click the **Resource Id(s)** dropdown and do one of the following:
 
-| Resource Type | Assignable Actions |
-| :------------ | :----------------- |
-| jobconfigs    | view, edit, delete |
-| jobtemplates  | view, edit, delete |
+   * To associate all Resource Ids with the selected Policy, * Select **\* (All Resource Ids)**.
+   * To associate specific Resource Ids with the selected Policy, click **Browse Resource Ids**, select the desired Resource Id(s), then click **Add Selected Resource Id**.
 
-Open API specs for Access Control Policy APIs are located here: [https://im.dev.actiandatacloud.com/apidocs/#/Access%20Policies](https://im.dev.actiandatacloud.com/apidocs/#/Access%20Policies)
+     ![](/img/Resource-IDs.png)
+8. Click **Update Access Policy**:
 
-## Policy Examples:
+     ![](/img/Update-Access-Policy.png)
+
+## Using the Advanced Editor
+
+Custom permissions can be added for many resource types. In the advanced editor, custom and complex policies can be built via a JSON object rather than using the simple GUI editor.
+
+1. Click **Advanced Editor**.
+2. Edit the JSON in the **Permissions** field. Refer to [Policy Examples](#policy-examples).
+
+     ![](/img/Advanced-Editor.png)
+8. Click **Update Access Policy**:
+
+### Policy Examples
 
 ```
 {

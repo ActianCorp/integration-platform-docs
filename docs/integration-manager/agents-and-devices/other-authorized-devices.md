@@ -6,7 +6,6 @@ tags:
 
 # Other Authorized Devices
 
-<font color="red">Data Platform docs include this topic. I'm not sure yet how to add devices.</font>
-
+The **Other Authorized Devices** list is visible to administrators. Items listed are typically file folder listeners, but can be anything that has been set up via Device Flow.
 
 
