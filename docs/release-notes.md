@@ -16,7 +16,7 @@ Working on updates for version 3.2.
 | New&nbsp;Feature | IP-183 | Apply Macroset in a custom order. This allows the user to select n number of macrosets (global, user, custom macrosets) and to choose the order in which to apply the macrosets on a Template or Configuration. | 3.2.0 |  | Completed 
 | New Feature | IP-3662 | Agent API to upload and install JDBC drivers. <font color="red">Add Swagger link when available. Currently in Dev -> https://im.dev.actiandatacloud.com/apidocs/?urls.primaryName=Agents%20and%20Devices#/Agent/uploadDriverFile</font> | 3.2.0 |  | Completed |
 | New&nbsp;Feature | IP-4824 | Macro API accepting a file as body to store as value. <font color="red">Add Swagger link when available. Currently in Dev -> https://im.dev.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Configuration#/Job%20Config%20Macros/createJobConfigMacroFromFile</font> | 3.2.0 |  | Completed |
-| New Feature | IP-5491 | Implement bulk Actions for Active and Inactive users. This allows admins to activate or deactivate multiple users in a single action rather than one-by-one. <font color="red">Not seeing any UI changes for this in Dev.</font>| 3.2.0 |  | Completed |
+| New Feature | IP-5491 | Implement bulk Actions for Active and Inactive users. This allows admins to activate or deactivate multiple users in a single action rather than one-by-one. <font color="red">Are there UI changes planned or is this API only?</font>| 3.2.0 |  | Completed |
 | New Feature | IP-6837 | Add abortedBy support to Jobs. This adds a stoppedBy property to JobResponse to track the user who issued a stop command. | 3.2.0 |  | Completed |
 | Bug Fix | IP-6858 | Agents should not be allowed to register with internal ip address. | 3.2.0 |  | Completed |
 
@@ -34,13 +34,13 @@ Working on updates for version 3.2.
 
 | Issue Type | Issue&nbsp;Key | Summary | Fix versions | Affects versions | Status |
 |:---|:---|:---|:---|:---|:---|
-| New&nbsp;Feature | IP-4259 | Job Execution Tag API <font color="red">Should this link to https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/Job/runPackage or https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/Job/runJobConfig?</font> | 3.1.2 |  | Completed |
+| New&nbsp;Feature | IP-4259 | Job Execution Tag API <font color="red">Swagger link?</font> | 3.1.2 |  | Completed |
 
 ### 3.1.1
 
 | Issue Type | Issue&nbsp;Key | Summary | Fix versions | Affects versions | Status |
 |:---|:---|:---|:---|:---|:---|
-| New Feature | IP-6089 | Standalone Integration Package Execution <font color="red">(Swagger or help topic URL?)</font> | 3.1.1 |  | Completed |
+| New Feature | IP-6089 | [Standalone Integration Package Execution](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/Job/runPackage) <font color="red">Correct link?</font> | 3.1.1 |  | Completed |
 | New Feature | IP-6164 | DataConnect 12.1.0-24 Engine | 3.1.1 |  | Completed |
 | Improvement | IP-5663 | [Documented Engine Patch Instructions](./integration-manager/admin/server-administration/integration-engines)   | 3.1.1 |  | Completed |
 | Improvement | IP-6063 | Enable Swagger UI Try It Features | 3.1.1 |  | Completed |
