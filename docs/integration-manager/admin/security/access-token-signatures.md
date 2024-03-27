@@ -1,16 +1,8 @@
 ---
 title: Access Token Signatures
-tags:
- - Content Issues
 ---
 
 # Access Token Signatures
-
-<font color="red">
-Draft topic for Jira issue IP-5162.
-
-Need intro here, and review of content below.
-</font>
  
 Create a new keystore with keypair to be used for token signatures:
 
