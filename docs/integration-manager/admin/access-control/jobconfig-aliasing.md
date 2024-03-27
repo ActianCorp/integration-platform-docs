@@ -1,7 +1,5 @@
 ---
 title: JobConfig Listener Aliasing
-tags:
- - Content Issues
 ---
 
 # JobConfig Listener Aliasing
@@ -47,8 +45,6 @@ Content-Type: application/json
 ```
 
 ## API Details
-
-<font color="red">The current docs include this content, but not in the "unoffical" docs on GH Pages. Is this appropriate here?</font>
 
 * Maximum payload size is 750KB
 * Maximum synchronous wait time is 30 seconds
@@ -123,8 +119,6 @@ You can invoke an Alias, that is, run a JobConfig, through the Job Execution API
 * (Discouraged) Public Aliases do not require any authentication
 
 See the Job Execution API for more details: [https://api.im.actiandatacloud.com/v2/apidocs/#/Job%20Execution/runAliasWithMessage](https://api.im.actiandatacloud.com/v2/apidocs/#/Job%20Execution/runAliasWithMessage).
-
-<font color="red">The current docs have this content instead. Is this incorrect, or does the above need to be updated?</font>
 
 :::danger[Warning]
 Using HTTPS is always recommended. Otherwise, API tokens, credentials, and payloads are subject to hijack. HTTPS is always enabled and enforced for DataCloud and VPC deployments.
