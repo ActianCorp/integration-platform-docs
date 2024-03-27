@@ -114,14 +114,14 @@ const config = {
   
         //... other Algolia params
       },
-      announcementBar: {
-        id: 'beta',
-        content:
-          '<b>NOTE:</b> Our new docs platform is in BETA. Features may not all work as expected, and content is in development. Official documentation is on <a href="https://docs.actian.com/">docs.actian.com</a>.',
-        backgroundColor: 'rgba(147, 219, 79, 0.6)',
-        textColor: '#091E42',
-        isCloseable: true,
-      },
+      //announcementBar: {
+      //  id: 'beta',
+      //  content:
+      //    '<b>NOTE:</b> Our new docs platform is in BETA. Features may not all work as expected, and content is in development. Official documentation is on <a href="https://docs.actian.com/">docs.actian.com</a>.',
+      //  backgroundColor: 'rgba(147, 219, 79, 0.6)',
+      //  textColor: '#091E42',
+      //  isCloseable: true,
+      //},
       //Navbar items
       image: 'img/Logos_Actian_3Color-White-Transparent.png',
       navbar: {
