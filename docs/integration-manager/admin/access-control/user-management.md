@@ -1,8 +1,5 @@
 ---
 title: User Management
-hide_table_of_contents: false
-tags:
- - Content Issues
 ---
 
 # User Management
@@ -90,11 +87,6 @@ Account administrators can:
    ![Edit-User4](/img/Edit-User4.png)
    
 7.  Click **Update User**.
-
-## Enabling Direct API Access
-
-<font color="red">GH Pages topic lists this as being something an admin can manage. I don't see anything in the UI for this. Need instructions here.</font>
-<font color="blue">GGH Feedback - I might need to dig in here.  Don't think we limit API access as like a user flag or anything, so not totally sure what this is about.  Once a user has been authenticated, they have the same API rights whether through a direct API call or through the UI making an API call.</font>
 
 ## Enabling/Disabling Admin Access
 
