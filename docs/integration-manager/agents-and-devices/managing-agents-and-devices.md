@@ -1,13 +1,7 @@
 ---
 title: Managing Agents and Devices
-tags:
- - Content Issues
 ---
 # Managing Agents and Devices
-
-<font color="red">
-There is no mention of the **Other Authorized Devices** list in this section. I am trying to figure out how to get this to appear in IM.
-</font>
 
 The **Agents and Devices** page in Integration Manager provides a list of registered Agents and the ability to manage your Agents. 
 
