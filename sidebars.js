@@ -112,7 +112,7 @@ const sidebars = {
             'integration-manager/agents-and-devices/download-agent',
             'integration-manager/agents-and-devices/execute-config-with-agent',
             'integration-manager/agents-and-devices/execute-template-with-agent',
-            'integration-manager/agents-and-devices/other-authorized-devices',
+            //'integration-manager/agents-and-devices/other-authorized-devices',
               ]
         },
       ]
