@@ -1,7 +1,5 @@
 ---
 title: Other Authorized Devices
-tags:
- - Content Issues
 ---
 
 # Other Authorized Devices
