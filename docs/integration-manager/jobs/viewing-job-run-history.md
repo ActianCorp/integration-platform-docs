@@ -1,7 +1,5 @@
 ---
 title: Viewing Job Run History
-tags:
- - Content Issues
 ---
 
 # Viewing Job Run History
@@ -30,16 +28,12 @@ The following details are displayed:
 | --- | ---
 | Start | The date and time the job was started. The time displayed here is specific to your time zone.
 | Name | The integration or configuration name. Clicking on the name displays the **Configuration Details** page.
-| Type | The type of Job that was run. For example, configuration or integration. <font color="red">We use integration and configuration somewhat interchangeably. It's not clear to me what determines the Type shown in this column. Also, are there other possible Types that would be listed here?</font>
+| Type | The type of Job that was run (Configuration or Integration). 
 | Owner | Displays the first two characters of the Job owner (creator) name. Clicking on the initials displays the username of the owner.
 | Status | Status of the job. See [Job Status Codes](./job-status-codes).
 | Duration | Execution time.
 | Server | Where the job was executed.
 | Log | Click <img src="/img/icons/log-file.png" className="icon" alt="the magnifying glass icon"/> for a specific record in the Run History table. The **Run History** page is displayed for the selected job, where you can view and download the log file. See [Downloading the Log File](./downloading-the-log-file).
-
-<font color="blue">
-JG Feedback - Garrett or Jason can confirm. For line 33 (Type), type Integration comes from jobs run from an integration from Avalanche. Type Configuration comes from jobs executed from Configurations in IM. I only know of Integration and Configuration types. 
-</font>
 
 ## Viewing Run Details for a Specific Job
 
