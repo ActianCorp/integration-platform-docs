@@ -2,6 +2,7 @@
 title: Configuration Files
 hide_table_of_contents: false
 ---
+
 # Configuration Files
 
 Most Agent properties are set automatically and do not require maintenance or modification. In some cases, the default settings must be changed for various environment-specific reasons or corporate protocols. This section is a reference for making such changes, if required.
@@ -45,8 +46,6 @@ These properties are found in: `<shared_data_path>\conf\worker-control.propertie
 | `server.port`  | Populated during installation. Port used for Agent application container. | `6001` |
 
 ## Windows Service Wrapper (Windows Installations Only)
-
-**<font color="red">NOTE: This topic does not exist in the GitHub Pages site. I pulled this from the current docs.actian.com content. Does this belong here?</font>**
 
 :::danger[Caution!]
 This file contains many properties. Any that are not listed here, DO NOT MODIFY!
