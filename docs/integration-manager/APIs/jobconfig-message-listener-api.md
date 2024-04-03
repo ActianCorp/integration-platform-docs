@@ -78,9 +78,6 @@ Content-Type: [text/plain | application/json | text/xml | application/xml]
 
 [message body]
 ```
-
-**<font color="red">Content below this line is from existing docs on docs.actian.com and is not in this topic in the "unofficial" docs on GH Pages. Copying here to determine whether this content is current and if it belongs here.</font>**
-
  ## Example requests with allowed Content-Types:
  ```
 POST /api/jobconfigs/1/listener?messagename=inputData&outmessagename=output HTTP/1.1 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9. eyJzY29wZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJpZCI6MSwiYWNjb3VudCI6MSwic Content-Type: application/json
