@@ -4,7 +4,7 @@ title: Quick Start API Tutorial
 
 # Quick Start API Tutorial
 
-Integration Manager is an entirely API-driven platform. Every function avaialble via the UI is also available as an API (and more!).
+Integration Manager is an entirely API-driven platform. Every function available via the UI is also available as an API (and more!).
 
 Open API specs for Integration Manager APIs are located here: [https://api.im.actiandatacloud.com/v2/apidocs/](https://api.im.actiandatacloud.com/v2/apidocs/)
 

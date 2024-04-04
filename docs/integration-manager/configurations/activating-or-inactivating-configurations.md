@@ -40,7 +40,7 @@ You can set the configuration status to Active or Inactive from several pages.
 
      ![](/img/Template-Configuration-Set-Inactive.png)
 
-## Activivating/Inactivating Multiple Configurations
+## Activating/Inactivating Multiple Configurations
 
 1. On the **Configurations** page, do one of the following:
    

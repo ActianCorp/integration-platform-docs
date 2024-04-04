@@ -69,8 +69,8 @@ Multiple routes (i.e., AWS, Azure, GCP, and Local) can be added into a single `r
 | `credentialType` | Determines the credential strategy to adopt. | `AZURE_IDENTITY` |
 | `accessKey` | Access key for the associated azure account name to be used for authentication with azure blob services. In the above example, ```azure.blob.accesskey``` is the placeholder for accesskey value. |  |
 | `backoffMultiplier` | Allows the scheduled polling consumer to back off if there has been a number of subsequent idles/errors in a row. The multiplier is then the number of polls that will be skipped before the next actual attempt is made again. When this option is in use, `backoffIdleThreshold` and/or `backoffErrorThreshold` must also be configured. |  |
-| `backoffErrorThreshold` |  The number of subsequent error polls (failed due to some error) that should happen before the `backoffMultipler` should kick in. |  |
-| `backoffIdleThreshold` | The number of subsequent idle polls that should happen before the backoffMultipler should kick in. |  |
+| `backoffErrorThreshold` |  The number of subsequent error polls (failed due to some error) that should happen before the `backoffMultiplier` should kick in. |  |
+| `backoffIdleThreshold` | The number of subsequent idle polls that should happen before the backoffMultiplier should kick in. |  |
 | `process ref` | A unique identifier for the error handler process. |  |
 | `recursive` | If a directory, will look for files in all the sub-directories as well. | `false` |
 | `filterFile` | Filters the file based on Simple language. For example, to filter on file size, you can use a ```$\{file:size}``` of `5000`. In the above example, filterFile is configured with file that was modified over 14 days ago (i.e., ```${file:modified} &lt; ${date:now-14d}``` ). |  |

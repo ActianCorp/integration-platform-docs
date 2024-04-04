@@ -5,7 +5,7 @@ title: Managing Agents and Devices
 
 The **Agents and Devices** page in Integration Manager provides a list of registered Agents and the ability to manage your Agents. 
 
-To view and manage your resistered Agents:
+To view and manage your registered Agents:
 
 1. Select the **Agents** tab.
 2. The **Agents and Devices** page is displayed:

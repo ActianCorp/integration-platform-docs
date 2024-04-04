@@ -34,7 +34,7 @@ To upload files to a template:
    
    ![Upload File Button](/img/Template-Upload-File-Button.png)
 2. In the **Upload Files** dialog, drop one or more files or click **BROWSE FILES** and select one or more files.
-3. The files are added to the **Uploading Files** dialog. You can click <img src="/img/icons/unlink.png" className="icon" alt="the Unlink iconn"/> to remove any files.
+3. The files are added to the **Uploading Files** dialog. You can click <img src="/img/icons/unlink.png" className="icon" alt="the Unlink icon"/> to remove any files.
 
    ![Uploading Files](/img/Uploading-Files-Dialog.png)
 4. Click the **DONE** button. The files are added to the **Template Files** list:
@@ -48,7 +48,7 @@ To upload files to a template:
 * Only admin users can link a private file from another user.
 :::
 
-1. On the **Template Files** page, click the dropdown arrown next to the **Upload File** button and select **Link file in Files Repository**:
+1. On the **Template Files** page, click the dropdown arrow next to the **Upload File** button and select **Link file in Files Repository**:
    
    ![Link file in Files Repository](/img/Template-Link-File-in-Files-Repository.png)
 2. The **File Manager** dialog is displayed.
@@ -62,7 +62,7 @@ To upload files to a template:
 
 ## Linking a Public File in the File Repository
 
-1. On the **Template Files** page, click the dropdown arrown next to the **Upload File** button and select **Link file in Files Repository**:
+1. On the **Template Files** page, click the dropdown arrow next to the **Upload File** button and select **Link file in Files Repository**:
 
    ![Link file in Files Repository](/img/Template-Link-File-in-Files-Repository.png)
 2. The **File Manager** dialog is displayed.

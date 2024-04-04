@@ -42,7 +42,7 @@ Only Admins can upload public files.
 2. Display the **Private Files** or **Public Files** list as described above.
 2. Click <img src="/img/icons/Upload-Files-Button.png" className="icon" alt="the Upload Files button"/>.
 3. In the **File Manager** dialog, drop one or more files or click **BROWSE FILES** and select one or more files.
-4. The files are added to the **File Manager** dialog. You can click <img src="/img/icons/unlink.png" className="icon" alt="the Unlink iconn"/> to remove any files.
+4. The files are added to the **File Manager** dialog. You can click <img src="/img/icons/unlink.png" className="icon" alt="the Unlink icon"/> to remove any files.
 
    ![Uploading User Files](/img/Uploading-User-Files.png)
 5. Click the **DONE** button.

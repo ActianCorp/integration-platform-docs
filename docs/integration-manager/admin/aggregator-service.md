@@ -61,7 +61,7 @@ aggregators:
 | `active` | Whether or not this aggregator is active | `true` |
 | `account-id` | Account ID that owns the entity |  |
 | `completion-size` | The number of messages to aggregate before submitting the aggregated message to the listener API | `200` |
-| `completion-timeout` | The amount of time (in millisenconds) to wait after receiving the last message before submitting the aggregated message to the listener API | `10000` |
+| `completion-timeout` | The amount of time (in milliseconds) to wait after receiving the last message before submitting the aggregated message to the listener API | `10000` |
 | `data-type` | The data type for the submitted message to the aggregator API. This determines how the messages are aggregated. Valid types (case-sensitive): record, xml, json |  |
 
 ## Text Record Aggregation Example

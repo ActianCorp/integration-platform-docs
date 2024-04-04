@@ -64,7 +64,7 @@ You can download the Actian Integration Agent installer from either the **Agents
    ![](/img/Agent-Registered.png)
 
    :::note
-   You can open [http://localhost:6001/home](http://localhost:6001/home) at any time to confirm the status of the Agent on the installed machine. Clicking the **Check-in** button updates the Last Updated time in the Registerd Agents list. 
+   You can open [http://localhost:6001/home](http://localhost:6001/home) at any time to confirm the status of the Agent on the installed machine. Clicking the **Check-in** button updates the Last Updated time in the Registered Agents list. 
    :::
 
 3. You should now be able to view and manage your Agent from the cloud on the **Agents** tab in Integration Manager:
@@ -166,7 +166,7 @@ You can download the Actian Integration Agent installer from either the **Agents
    ![](/img/Agent-Registered.png)
 
    :::note
-   You can open [http://localhost:6001/home](http://localhost:6001/home) at any time to confirm the status of the Agent on the installed machine. Clicking the **Check-in** button updates the Last Updated time in the Registerd Agents list. 
+   You can open [http://localhost:6001/home](http://localhost:6001/home) at any time to confirm the status of the Agent on the installed machine. Clicking the **Check-in** button updates the Last Updated time in the Registered Agents list. 
    :::
 
 3. You should now be able to view and manage your Agent from the cloud on the **Agents** tab in Integration Manager:

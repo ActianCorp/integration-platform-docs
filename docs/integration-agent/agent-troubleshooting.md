@@ -53,4 +53,4 @@ worker.engineJavaHome
 engine.localEngineInstallPath
 ```
 
-This could also occur if you have manually overriden values in the cosmos.ini file.
+This could also occur if you have manually overridden values in the cosmos.ini file.

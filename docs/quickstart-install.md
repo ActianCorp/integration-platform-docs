@@ -15,7 +15,7 @@ import TabItem from '@theme/TabItem';
 
 ### Prerequisites
 
-- Windows Operating Sytem
+- Windows Operating System
    - Windows 10 Enterprise or later, Windows Server 2016 or later
    - Windows user account with "Run as Administrator" privileges
 - 64-bit processor, 2.90GHz

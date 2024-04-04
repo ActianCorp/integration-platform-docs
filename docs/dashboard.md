@@ -67,7 +67,7 @@ You can verify whether the agent is running, and also start the agent service, b
 
 ### Adding and Removing Widgets
 
-To add or remove a widget, do the followng:
+To add or remove a widget, do the following:
 
 1. Click <img src="/img/icons/ellipsis.png" className="icon" alt="the ellipsis icon"/> in the upper right corner of any dashboard widget and select **Settings**:
 

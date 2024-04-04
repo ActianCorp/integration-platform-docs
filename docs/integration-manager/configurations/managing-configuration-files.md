@@ -38,7 +38,7 @@ To upload files to a configuration:
    
    ![Upload File Button](/img/Configuration-Upload-File-Button.png)
 2. In the **Upload Files** dialog, drop one or more files or click **BROWSE FILES** and select one or more files.
-3. The files are added to the **Uploading Files** dialog. You can click <img src="/img/icons/unlink.png" className="icon" alt="the Unlink iconn"/> to remove any files.
+3. The files are added to the **Uploading Files** dialog. You can click <img src="/img/icons/unlink.png" className="icon" alt="the Unlink icon"/> to remove any files.
 
    ![Uploading Files](/img/Uploading-Files-Dialog.png)
 4. Click the **DONE** button. The files are added to the **Configuration Files** list:
@@ -52,7 +52,7 @@ To upload files to a configuration:
 * Only admin users can link a private file from another user.
 :::
 
-1. On the **Configuration Files** page, click the dropdown arrown next to the **Upload File** button, and select **Link file in Files Repository**:
+1. On the **Configuration Files** page, click the dropdown arrow next to the **Upload File** button, and select **Link file in Files Repository**:
    
    ![](/img/Link-File-in-Files-Repository.png)
 2. The **File Manager** dialog is displayed. If you are a non-admin user, only your name appears in the user dropdown. If you are an admin user, you can select a different user.
@@ -65,7 +65,7 @@ To upload files to a configuration:
 
 ## Linking a Public File in the File Repository
 
-1. On the **Configuration Files** page, click the dropdown arrown next to the **Upload File** button and select **Link file in Files Repository**:
+1. On the **Configuration Files** page, click the dropdown arrow next to the **Upload File** button and select **Link file in Files Repository**:
    
    ![](/img/Link-File-in-Files-Repository.png)
 2. The **File Manager** dialog is displayed.
