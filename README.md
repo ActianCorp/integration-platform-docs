@@ -6,7 +6,7 @@ We welcome and encourage your feedback on the platform and documentation. Feedba
 
 Let us know if:
 
-* Anything is missing, unclear, or inaccurate in the documention. 
+* Anything is missing, unclear, or inaccurate in the documentation. 
 * There are topics you'd like to see.
 * You have suggestions for documentation improvements.
 * There's something that really helped and you'd like to see more of it!
