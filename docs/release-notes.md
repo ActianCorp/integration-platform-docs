@@ -8,8 +8,8 @@ title: Release Notes
 | Issue&nbsp;Type | Issue&nbsp;Key | Summary | Fix versions | Affects versions | Status |
 |:---|:---|:---|:---|:---|:---|
 | New&nbsp;Feature | IP-183 | Apply Macroset in a custom order. This allows the user to select n number of macrosets (global, user, custom macrosets) and to choose the order in which to apply the macrosets on a Template or Configuration. | 3.2.0 |  | Completed 
-| New Feature | IP-3662 | Agent API to upload and install JDBC drivers. | 3.2.0 |  | Completed |
-| New&nbsp;Feature | IP-4824 | Macro API accepting a file as body to store as value. | 3.2.0 |  | Completed |
+| New Feature | IP-3662 | [Agent API to upload and install JDBC drivers](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Agents%20and%20Devices#/Agent/uploadDriverFile) | 3.2.0 |  | Completed |
+| New&nbsp;Feature | IP-4824 | [Macro API](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Configuration#/Job%20Config%20Macros/createJobConfigMacroFromFile) accepting a file as body to store as value | 3.2.0 |  | Completed |
 | New Feature | IP-5491 | Implement bulk actions for Active and Inactive users. This allows admins to activate or deactivate multiple users in a single action rather than one-by-one. | 3.2.0 |  | Completed |
 | New Feature | IP-6837 | Add abortedBy support to Jobs. This adds a stoppedBy property to JobResponse to track the user who issued a stop command. | 3.2.0 |  | Completed |
 | Bug Fix | IP-6858 | Agents should not be allowed to register with internal IP address. | 3.2.0 |  | Completed |
