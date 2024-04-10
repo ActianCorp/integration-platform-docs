@@ -35,7 +35,7 @@ To learn more about creating DataFlow applications, see the <a href="https://doc
 2. Upload your RushScript as the package (must have .js extension).
 3. Optionally upload additional scripts or other files to the Files section, which will be injected using the "--includedir" command line option.
 4. Optionally add entries to the Macros section, which will be injected using the "--variable" command line option. Note that the macro value text will be escaped accordingly when the command is constructed.
-5. You can also take advantage of 2 special Integration Manager variables within your macro values:
+5. You can also take advantage of two special Integration Manager variables within your macro values:
     * `$(LOCAL_JOB_SPEC_DIR)` - This will resolve to the runtime working directory where your RushScript and additional files are located.
     * `$(LOCAL_JOB_OUT_DIR)` - This will resolve to the runtime output directory if you need to retrieve output files. Any files written to this location will be available at: `{api_url}/jobs/{job-id}/out` after the job has completed.
 
@@ -44,12 +44,13 @@ To learn more about creating DataFlow applications, see the <a href="https://doc
 1. Create a new Job Config.
 2. Upload your Json Graph as the package (must have .json extension).
 3. Optionally upload a properties file named `override.properties` to the Files section, which will be injected using the<br /> `--overridefile` command line option.
-4. Optionally add entries to the Macros section, which will be injected using the "--override" command line option. Each macro can only override an operator within the graph, and must use the convention of 
+4. Optionally add entries to the Macros section, which will be injected using the "--override" command line option. Each macro can only override an operator within the graph, and must use the following convention: 
  
-    > MacroName=&lt;<code>operatorName.operatorProperty</code>> and  
-    > MacroValue=&lt;<code>overrideTextValue</code>>. 
+    > MacroName=<code>operatorName.operatorProperty</code> and  
+    > MacroValue=<code>overrideTextValue</code>. 
     
- Note that the macro value   text will be escaped accordingly when the command is constructed.
+   Note that the macro value text will be escaped accordingly when the command is constructed.
+
 5. You can also take advantage of two special Integration Manager variables within your macro values:
     * `$(LOCAL_JOB_SPEC_DIR)` - This will resolve to the runtime working directory where your RushScript and additional files are located.
     * `$(LOCAL_JOB_OUT_DIR)` - This will resolve to the runtime output directory if you need to retrieve output files. Any files written to this location will be available at: `{api_url}/jobs/{job-id}/out` after the job has completed.
