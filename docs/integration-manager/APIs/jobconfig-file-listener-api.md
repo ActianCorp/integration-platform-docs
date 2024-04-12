@@ -13,7 +13,7 @@ This service allows an API consumer to run an existing JobConfig with a file inp
 * Maximum file size is configurable on-premise (100 MB in DataCloud)
 * Content-Type allowed: multipart/form-data
 
-Refer to [Open API Spec: Run Job with Input File](https://console.im.actiandatacloud.com/apidocs/#/Job%20Execution/runJobConfigWithFile).
+Refer to [Open API Spec: Run Job with Input File](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/Job/runJobConfigWithFile).
 
 ## Step 1: Retrieve an Access Token
 

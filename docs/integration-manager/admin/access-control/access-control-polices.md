@@ -4,14 +4,14 @@ title: Access Control Policies
 
 # Access Control Policies
 
-By default, non-admin users only have access to JobTemplates and JobConfigs they create. You can grant additional privileges and share Artifacts across users by using Access Control Policies.
+By default, non-admin users only have access to JobTemplates and JobConfigs they create. You can grant additional privileges and share artifacts across users by using Access Control Policies.
 
 | Resource Type | Assignable Actions |
 | :------------ | :----------------- |
 | jobconfigs    | view, edit, delete |
 | jobtemplates  | view, edit, delete |
 
-Open API specs for Access Control Policy APIs are located here: [https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Access%20Control%20Policies](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Access%20Control%20Policies)
+Refer to [Open API specs for Access Control Policy APIs](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Access%20Control%20Policies).
 
 ## Editing Access Control Policies
 

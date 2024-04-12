@@ -24,7 +24,7 @@ This service allows an API consumer to run an existing JobConfig with a text, js
 * Text Message payload 202 Accepted response
 * Result/output may be retrieved asynchronously after the job is complete
 
-Refer to [Open API Spec: Run Job with Input Message](https://console.im.actiandatacloud.com/apidocs/#/Job%20Execution/runJobConfigWithMessage).
+Refer to [Open API Spec: Run Job with Input Message](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/Job/runJobConfigWithMessage).
 
 ## Step 1: Retrieve an Access Token
 
