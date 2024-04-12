@@ -1,12 +1,12 @@
 ---
-title: Job Execution APIs
+title: Job Execution API
 ---
 
-# Job Execution APIs
+# Job Execution API
 
 Every Job Configuration is automatically exposed as a RESTful Job Execution API, for example, POST /api/jobconfigs/1/jobs. This API can be invoked on demand, with or without override parameters. 
 
-For more information, see https://console.im.actiandatacloud.com/apidocs/#/Job%20Execution/runJobConfig.
+For more information, see [Open API Spec: Job Execution API](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution).
 
 Every Job Configuration is also exposed as a listener API. For example:
 
