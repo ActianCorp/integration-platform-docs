@@ -47,7 +47,7 @@ To learn more about creating DataFlow applications, see the <a href="https://doc
 4. Optionally add entries to the Macros section, which will be injected using the "--override" command line option. Each macro can only override an operator within the graph, and must use the following convention: 
  
     > MacroName=<code>operatorName.operatorProperty</code> and  
-    > MacroValue=<code>overrideTextValue</code>. 
+    > MacroValue=<code>overrideTextValue</code>
     
    Note that the macro value text will be escaped accordingly when the command is constructed.
 

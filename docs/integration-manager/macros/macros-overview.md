@@ -6,13 +6,13 @@ title: Macros Overview
 
 Macros enable you to run a single integration for different types of users without having to modify the integration itself. Macros are defined when the integration is in the configuration state. Macros can save you time and reduce errors at runtime.
 
-Macros are placeholders you create for values that are typically used during design and runtime, such as target paths and credentials to access databases. By creating and defining these placeholders  and assigning them a descriptive name, you can easily redefine them as needed.
+Macros are placeholders you create for values that are typically used during design and runtime, such as target paths and credentials to access databases. By creating and defining these placeholders and assigning them a descriptive name, you can easily redefine them as needed.
 
 For example, let’s say you need to run an integration for testing before you run it in a production environment. The test environment and the production environment use different target paths. In this case, you create two configurations from your integration.
 
 When you create the first configuration, you define a macro named TARGET_PATH and set the value to the testing environment target path.
 
-When your testing is complete you create another configuration and set the TARGET_PATH value to the production environment path.
+When your testing is complete, you create another configuration and set the TARGET_PATH value to the production environment path.
 
 ## Macro Hierarchy
 
@@ -49,7 +49,7 @@ Job Template macros increase portability of your integrations. They will apply t
 
 They can be viewed by any user who has at least read access to the Job Template. They can only be created, edited, deleted with write access to the Job Template, by the Job Template owner, or by Account Admins.
 
-Job Templates are designed to allow reuse of common integration artifacts and Job Config values that apply to multiple integration configurations. For example, you may have several customers or departments within your company who send you the same data format. You could create a single integration Job Template to hold your common integration artifacts (maps, scripts, etc) and common macro values, then create a separate Job Config for each - where you only need to override a few macro values that are specific to them.
+Job Templates are designed to allow reuse of common integration artifacts and Job Config values that apply to multiple integration configurations. For example, you may have several customers or departments within your company who send you the same data format. You could create a single integration Job Template to hold your common integration artifacts (maps, scripts, etc) and common macro values, then create a separate Job Config for each &mdash; where you only need to override a few macro values that are specific to them.
 
 Note that templates are completely optional. Many configurations will not have a Job Template. This layer of the hierarchy will be ignored for any configurations without a Job Template.
 
