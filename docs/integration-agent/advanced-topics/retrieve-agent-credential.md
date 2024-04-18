@@ -19,7 +19,7 @@ If you have an agent that is already registered, you can manually retrieve its c
  where `[agent id or hostname]` is your agent id or hostname.
 3. You will be asked to authenticate with Username and API Password (see Prerequisites above).
 
-Response:
+RESPONSE:
 ```
 # Integration Manager Connection Info
 im.base-url=[base url]

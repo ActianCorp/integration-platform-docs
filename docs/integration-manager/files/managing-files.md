@@ -35,7 +35,7 @@ You can upload and manage files for use with your configurations and templates. 
 ## Uploading Files
 
 :::note
-Only Admins can upload public files.
+Only admins can upload public files.
 :::
 
 1. Select the **Files** tab.
@@ -60,7 +60,7 @@ Only Admins can upload public files.
 ## Deleting Files
 
 :::note
-Only Admins can delete public files or user files owned by another user.
+Only admins can delete public files or user files owned by another user.
 :::
 
 1. Select the **Files** tab.

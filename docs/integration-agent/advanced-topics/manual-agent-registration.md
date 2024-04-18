@@ -18,7 +18,7 @@ If you are having issues starting or registering a new or existing Agent install
 2. Navigate to: `https://api.im.actiandatacloud.com/v2/api/device/code?client_id=integration-agent&host=[agent machine hostname]`<br/>
  where `[agent machine hostname]` is the hostname of your agent.
  
-Response:
+RESPONSE:
 ```
 {
     "approved": false,
@@ -38,11 +38,11 @@ Response:
 
 ## Step 2: Activate the Device Code
 
-1. Copy the url from the Step 1 Response in `[verification uri complete]`.
+1. Copy the url from the Step 1 response in `[verification uri complete]`.
 2. Paste in a new browser tab and press **Enter**.
 3. You will be asked to authenticate with Username and API Password (see Prerequisites above).
 
-Response:
+RESPONSE:
 ```
 # Integration Manager Connection Info
 im.base-url=[base url]

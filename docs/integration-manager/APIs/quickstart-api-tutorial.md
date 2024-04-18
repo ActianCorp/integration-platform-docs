@@ -18,7 +18,7 @@ Content-Type: application/json
     "password": "[password text]"
 }
 ```
-Response:
+RESPONSE:
 ```
 {
     "access_token": [access token value],
@@ -40,7 +40,7 @@ Content-Type: application/json
     "description": "this is sample config created from API"
 }
 ```
-Response:
+RESPONSE:
 ```
 {
     "id": "44",
@@ -77,7 +77,7 @@ Content-Type: multipart/form-data
 key=samplePackage.djar
 file="C:\packages\samplePackage.djar"
 ```
-Response:
+RESPONSE:
 ```
 {
     "name": "samplePackage.djar",
@@ -105,7 +105,7 @@ Content-Type: multipart/form-data
 	}
 }
 ```
-Response:
+RESPONSE:
 ```
 {
     "id": "44",
@@ -145,7 +145,7 @@ POST https://localhost:8080/api/jobconfigs/44/jobs
 Authorization: Bearer [access token value]
 Content-Type: application/json
 ```
-Response:
+RESPONSE:
 ```
 {
     "href": "http://localhost:8080/api/jobs/3845bf5-6504-48dc-ab1e",

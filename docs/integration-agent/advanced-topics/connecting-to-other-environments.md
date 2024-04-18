@@ -16,7 +16,7 @@ If you need to connect to a non-production or VPC environment, follow the instru
 
 1. Stop the Agent Service, if running:
    * Go to **Windows** → **Administrative Tools** → **Services**.
-   * Right-click on **Actian Integration Agent** and select **Stop**.
+   * Right-click **Actian Integration Agent** and select **Stop**.
 
 2. Modify the default value for agent.control-server in `application.properties`. Examples:
     ```

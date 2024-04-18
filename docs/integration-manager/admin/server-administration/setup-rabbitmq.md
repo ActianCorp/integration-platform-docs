@@ -71,7 +71,7 @@ If you have any issues with the installation, please refer to the official Rabbi
 Integration Manager uses the "queue" prefix properties in the `/conf/application.properties` file to connect to the RabbitMQ broker.
 
 :::note
-  queue.port is for the messaging port (default: 5672) and is different from the management API/console port (default: 15672)
+  `queue.port` is for the messaging port (default: 5672) and is different from the management API/console port (default: 15672)
 :::
 
 :::note

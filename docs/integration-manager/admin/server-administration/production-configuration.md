@@ -40,7 +40,7 @@ To configure Integration Manager Worker:
 
 2. Configure the worker-specific "queue" properties in `ProgramData\Actian\**Worker**\conf\application.properties` file
       :::note
-         Both Integration Manager *and* Integration Worker require "queue" connection properties (You can use different credentials for each if you so choose).
+         Both Integration Manager *and* Integration Worker require "queue" connection properties. (You can use different credentials for each if you so choose.)
       :::
 3. Go to **Windows** → **Services** → **Actian Integration Worker**.
 4. Right-click **Actian Integration Worker** and select **Start**.

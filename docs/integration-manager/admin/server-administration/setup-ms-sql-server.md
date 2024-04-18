@@ -17,9 +17,9 @@ Integration Manager is compatible with Microsoft SQL Server version 13 (aka SQL 
 
 ## Step 2: Verify MS SQL Server Service
 
-1. Go to Windows → Services.
+1. Go to **Windows** → **Services**.
 2. Confirm SQL Server (MSSQLSERVER) service is registered and running.
-3. Open Programs → Microsoft SQL Server Tools → Microsoft SQL Server Management Studio to confirm your connection information.
+3. Open **Programs** → **Microsoft SQL Server Tools** → **Microsoft SQL Server Management Studio** to confirm your connection information.
 4. If you run into problems, see [https://docs.microsoft.com/en-us/sql/database-engine/install-windows/repair-a-failed-sql-server-installation?view=sql-server-2016](https://docs.microsoft.com/en-us/sql/database-engine/install-windows/repair-a-failed-sql-server-installation?view=sql-server-2016).
 
 ## Step 3: Integration Manager Configuration
