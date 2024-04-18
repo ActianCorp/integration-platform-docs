@@ -53,11 +53,11 @@ import PartialContent1 from '../../reuse/_add_macro.mdx';
 
 <PartialContent1 name="add_macro" />
 
-1.   You are returned to the **Macros** page, which lists the new macro:
+10.   You are returned to the **Macros** page, which lists the new macro:
 
      ![](/img/Macros-Public-List-First.png)
 
-2.   Click the empty space in the **Description** column, enter a descriptive name, and press **Enter**:
+11.   Click the empty space in the **Description** column, enter a descriptive name, and press **Enter**:
    
      ![](/img/Add-Macro-Description-First.png)
 
