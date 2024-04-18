@@ -4,7 +4,7 @@ title: Editing Your Profile
 
 # Editing Your Profile
 
-On the **My Profile** page, non-admin users can edit their name and change their password. Users (admin and non-admin alike) are not allowed to activate/deactivate, or enable/disable Admin access for themselves.
+On the **My Profile** page, non-admin users can edit their name and change their password. Users (admin and non-admin alike) are not allowed to activate/deactivate, or enable/disable admin access for themselves.
 
 ## Accessing the My Profile Page
 

@@ -33,7 +33,7 @@ To create a User (Private) Macro:
 ## Creating Public Macros
 
 :::note
-Only Admin users can create Public macros.
+Only admin users can create Public macros.
 :::
 
 To create a Public Macro:

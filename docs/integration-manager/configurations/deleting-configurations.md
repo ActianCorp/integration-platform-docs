@@ -7,7 +7,7 @@ title: Deleting Configurations
 You can delete an existing configuration from several different pages.
 
 :::info[note]
-You cannot delete a configuration if there is an alias (listener) associated with it. You must first delete the listener (which requires Admin privileges). See [Deleting a Listener](../admin/access-control/jobconfig-aliasing#deleting-a-listener).
+You cannot delete a configuration if there is an alias (listener) associated with it. You must first delete the listener (which requires admin privileges). See [Deleting a Listener](../admin/access-control/jobconfig-aliasing#deleting-a-listener).
 :::
 
 ## From the Configurations Page

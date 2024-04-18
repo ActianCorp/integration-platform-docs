@@ -4,7 +4,7 @@ title: Editing Macros
 # Editing Macros
 
 :::note
-Only Admin users can edit Public macros.
+Only admin users can edit Public macros.
 :::
 
 To change the name, value, or description of an existing macro:

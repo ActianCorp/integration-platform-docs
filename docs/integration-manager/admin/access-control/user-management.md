@@ -4,7 +4,7 @@ title: User Management
 
 # User Management
 
-Administrators can create and manage users within the Administration Console. Note that User Management requires Account Admin access.
+Administrators can create and manage users within the Administration Console. Note that User Management requires Account admin access.
 
 Account administrators can:
 
@@ -13,7 +13,7 @@ Account administrators can:
 * Edit user profile information
 * Enable direct API access for a user (where required)
 * Create, generate, or reset the API password for a user
-* Enable/Disable Admin access for a user
+* Enable/Disable admin access for a user
 
 ## Adding a New User
 
@@ -77,7 +77,7 @@ Account administrators can:
    :::
 
    :::note
-   Users (admin and non-admin alike) are not allowed to activate/deactivate, or enable/disable Admin Access for themselves.
+   Users (admin and non-admin alike) are not allowed to activate/deactivate, or enable/disable admin access for themselves.
    :::
 
 4. Click <img src="/img/icons/Continue-Button2.png" className="icon" alt="the Continue button"/>.
