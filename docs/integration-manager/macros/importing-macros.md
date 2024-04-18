@@ -29,7 +29,7 @@ import PartialContent1 from '../../reuse/_import_via_add_macros_dialog.mdx';
 
     ![Macros Imported List](/img/Macros-Imported-List.png)
 
-8. For each macro, click the empty space in the **Description** column, enter a descriptive name, and press Enter.
+8. For each macro, click the empty space in the **Description** column, enter a descriptive name, and press **Enter**.
 
     ![Macros Imported List](/img/Macros-Imported-List-Description.png)
 

@@ -39,7 +39,7 @@ Response:
 ## Step 2: Activate the Device Code
 
 1. Copy the url from the Step 1 Response in `[verification uri complete]`.
-2. Paste in a new browser tab and press Enter.
+2. Paste in a new browser tab and press **Enter**.
 3. You will be asked to authenticate with Username and API Password (see Prerequisites above).
 
 Response:

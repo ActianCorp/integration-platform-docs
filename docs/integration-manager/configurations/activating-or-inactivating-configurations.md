@@ -44,9 +44,9 @@ You can set the configuration status to Active or Inactive from several pages.
 
 1. On the **Configurations** page, do one of the following:
    
-   * Select the checkboxes next to the desired **Active** configuration(s), then click <img src="/img/icons/inactive.png" className="icon" alt="the Inactive icon"/> to set as Inactive.
+   * Select the checkboxes next to the desired **Active** configurations, then click <img src="/img/icons/inactive.png" className="icon" alt="the Inactive icon"/> to set as Inactive.
 
      ![](/img/Configurations-Set-Active1.png)
-   * Select the checkboxes next to the desired **Inactive** configuration(s), then click <img src="/img/icons/active.png" className="icon" alt="the Active icon"/> to set as Active.
+   * Select the checkboxes next to the desired **Inactive** configurations, then click <img src="/img/icons/active.png" className="icon" alt="the Active icon"/> to set as Active.
 
      ![](/img/Configurations-Set-Active2.png)

@@ -57,7 +57,7 @@ import PartialContent1 from '../../reuse/_add_macro.mdx';
 
      ![](/img/Macros-Public-List-First.png)
 
-2.   Click the empty space in the **Description** column, enter a descriptive name, and press Enter:
+2.   Click the empty space in the **Description** column, enter a descriptive name, and press **Enter**:
    
      ![](/img/Add-Macro-Description-First.png)
 
@@ -69,11 +69,11 @@ Once you have created your first macro, you can add additional rows to the Macro
 
     ![](/img/Add-Another-Macro.png)
 
-5. Edit the name as desired and press Enter.
-6. Click the empty space in the **Value** column, enter the macro value, and press Enter.
+5. Edit the name as desired and press **Enter**.
+6. Click the empty space in the **Value** column, enter the macro value, and press **Enter**.
 
     ![](/img/Add-Macro-Value.png)
 
-7. Click the empty space in the **Description** column, enter a description, and press Enter.
+7. Click the empty space in the **Description** column, enter a description, and press **Enter**.
 
     ![](/img/Add-Macro-Description.png)
