@@ -152,4 +152,98 @@ The `application.properties` file can be used for a variety of configurations to
 * Uninstall: ```yum uninstall integration-manager-3.x.x.noarch.rpm```
 
 </TabItem>
+
+<TabItem value="docker" label="Docker" default>
+
+## <svg width="32px" height="32px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#2396ED" d="M12.342 4.536l.15-.227.262.159.116.083c.28.216.869.768.996 1.684.223-.04.448-.06.673-.06.534 0 .893.124 1.097.227l.105.057.068.045.191.156-.066.2a2.044 2.044 0 01-.47.73c-.29.299-.8.652-1.609.698l-.178.005h-.148c-.37.977-.867 2.078-1.702 3.066a7.081 7.081 0 01-1.74 1.488 7.941 7.941 0 01-2.549.968c-.644.125-1.298.187-1.953.185-1.45 0-2.73-.288-3.517-.792-.703-.449-1.243-1.182-1.606-2.177a8.25 8.25 0 01-.461-2.83.516.516 0 01.432-.516l.068-.005h10.54l.092-.007.149-.016c.256-.034.646-.11.92-.27-.328-.543-.421-1.178-.268-1.854a3.3 3.3 0 01.3-.81l.108-.187zM2.89 5.784l.04.007a.127.127 0 01.077.082l.006.04v1.315l-.006.041a.127.127 0 01-.078.082l-.039.006H1.478a.124.124 0 01-.117-.088l-.007-.04V5.912l.007-.04a.127.127 0 01.078-.083l.039-.006H2.89zm1.947 0l.039.007a.127.127 0 01.078.082l.006.04v1.315l-.007.041a.127.127 0 01-.078.082l-.039.006H3.424a.125.125 0 01-.117-.088L3.3 7.23V5.913a.13.13 0 01.085-.123l.039-.007h1.413zm1.976 0l.039.007a.127.127 0 01.077.082l.007.04v1.315l-.007.041a.127.127 0 01-.078.082l-.039.006H5.4a.124.124 0 01-.117-.088l-.006-.04V5.912l.006-.04a.127.127 0 01.078-.083l.039-.006h1.413zm1.952 0l.039.007a.127.127 0 01.078.082l.007.04v1.315a.13.13 0 01-.085.123l-.04.006H7.353a.124.124 0 01-.117-.088l-.006-.04V5.912l.006-.04a.127.127 0 01.078-.083l.04-.006h1.412zm1.97 0l.039.007a.127.127 0 01.078.082l.006.04v1.315a.13.13 0 01-.085.123l-.039.006H9.322a.124.124 0 01-.117-.088l-.006-.04V5.912l.006-.04a.127.127 0 01.078-.083l.04-.006h1.411zM4.835 3.892l.04.007a.127.127 0 01.077.081l.007.041v1.315a.13.13 0 01-.085.123l-.039.007H3.424a.125.125 0 01-.117-.09l-.007-.04V4.021a.13.13 0 01.085-.122l.039-.007h1.412zm1.976 0l.04.007a.127.127 0 01.077.081l.007.041v1.315a.13.13 0 01-.085.123l-.039.007H5.4a.125.125 0 01-.117-.09l-.006-.04V4.021l.006-.04a.127.127 0 01.078-.082l.039-.007h1.412zm1.953 0c.054 0 .1.037.117.088l.007.041v1.315a.13.13 0 01-.085.123l-.04.007H7.353a.125.125 0 01-.117-.09l-.006-.04V4.021l.006-.04a.127.127 0 01.078-.082l.04-.007h1.412zm0-1.892c.054 0 .1.037.117.088l.007.04v1.316a.13.13 0 01-.085.123l-.04.006H7.353a.124.124 0 01-.117-.088l-.006-.04V2.128l.006-.04a.127.127 0 01.078-.082L7.353 2h1.412z"></path></g></svg> **Docker Installation**
+
+Integration Manager can be installed using a Docker image via Docker Desktop and Docker CLI.
+
+### Prerequisites
+
+* DataConnect Cloud or Avalanche Subscription
+* Docker Hub account
+* Access to the Actian Docker Hub. [Create a New Case](https://communities.actian.com/s/create-new-case) to request access to the Actian Docker Hub.
+
+### Install Docker Desktop
+
+1. Download Docker Desktop from https://hub.docker.com/.
+2. Run the Docker Desktop installer using recommended settings.
+3. Launch Docker Desktop and sign in.
+4. Click the **Hub** tab.
+5. Select **actian** in the hub dropdown.
+6. Enter **manager** in the search field.
+7. Ensure that you have access to the **actian/integration-manager-standalone** image:
+   
+     ![](/img/Docker-Manager-Image.png)
+8. Create the following Docker Compose file with the name `docker-compose.yaml`:
+
+   ```
+   version: '3.8'
+   volumes:
+     job_logs:
+     conf_props:
+     h2_dir:
+     repo_dir:
+     license_path:
+       driver: local
+       driver_opts:
+         type: none
+         device: <path to license file, such as ./src/main/license>
+         o: bind
+   services:
+     im_service:
+       image: actian/integration-manager-standalone:3.3.0-SNAPSHOT
+       user: root
+       privileged: true
+       hostname: im-manager
+       volumes:
+         - conf_props:/opt/Actian/conf
+         - license_path:/opt/Actian/volume
+         - h2_dir:/opt/Actian/embedded/data
+         - job_logs:/opt/Actian/local/work/job
+         - repo_dir:/opt/Actian/repository
+       ports:
+         - 8080:8080
+       command: sh -c "tail -f /dev/null"
+   ```
+9. Save the `docker-compose.yaml` file to local folder. 
+10. Update the `device` property to point to the path of your `cosmos.slc` license file, relative to the folder containing the `docker-compose.yaml` file.
+11. The `image` specified above is `3.3.0-SNAPSHOT`. You can specify any image listed in the **Tags** column:
+    
+   ![](/img/Docker-Manager-Image-Tag.png)
+    
+   :::note
+   If **latest** is listed for the image, specifying `image: actian/integration-manager-standalone:latest` will pull the latest image.
+   :::
+
+12. If desired, you can use a different port. To use port 8085, for example, you would change the above port entry to `8085:8080`.
+13. Open a command prompt and navigate to the folder containing the `docker-compose.yaml` file.
+14. Run the following command:
+    
+    ```
+    docker compose up
+    ```
+15. The Integration Manager service should now be running in your Docker container.
+   
+### Configuration
+
+import PartialContent1 from './reuse/_docker_volumes.mdx';
+
+<PartialContent1 name="docker_volumes" />
+
+### Service Logs & Monitoring
+
+You can monitor service activity and get important additional information from the log file in Docker Desktop. Do the following:
+
+1. In Docker Desktop, click **Containers** in the left pane.
+2. Click the Integration Manager service:
+
+   ![](/img/Docker-Manager-Log1.png)
+
+3. The **Logs** tab is displayed:
+   
+   ![](/img/Docker-Manager-Log2.png)
+
+</TabItem>
 </Tabs>
