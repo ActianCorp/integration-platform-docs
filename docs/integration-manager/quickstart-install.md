@@ -46,7 +46,7 @@ Installation should take less than a minute.
 
 ### Configuration/Reconfiguration
 
-The `application.properties` file can be used for a variety of configurations to tailor Integration Manager to your requirements and environment. See [Application Property Reference](./category/application-property-reference) for a description of available properties.
+The `application.properties` file can be used for a variety of configurations to tailor Integration Manager to your requirements and environment. See [Application Property Reference](./admin/application-property-reference/properties-overview) for a description of available properties.
 
    :::note
       If you have a previous installation of Integration Manager, none of your existing property values will be changed.
@@ -117,7 +117,7 @@ To uninstall Integration Manager, execute `uninstaller.exe` in the program direc
 
 ### Configuration/Reconfiguration
 
-The `application.properties` file can be used for a variety of configurations to tailor Integration Manager to your requirements and environment. See [Application Property Reference](./category/application-property-reference) for a description of available properties.
+The `application.properties` file can be used for a variety of configurations to tailor Integration Manager to your requirements and environment. See [Application Property Reference](./admin/application-property-reference/properties-overview) for a description of available properties.
 
 1. Locate the `application.properties` file (default: `/etc/opt/actian/integration-manager/conf/application.properties`)
    :::note
@@ -228,7 +228,7 @@ Integration Manager can be installed using a Docker image via Docker Desktop and
    
 ### Configuration
 
-Docker Desktop exposes directories containing configuration files, including the `application.properties` file, which can be used for a variety of configurations to tailor Integration Manager and Agent to your requirements and environment. See [Application Property Reference](../category/application-property-reference) for a description of available properties.
+Docker Desktop exposes directories containing configuration files, including the `application.properties` file, which can be used for a variety of configurations to tailor Integration Manager and Agent to your requirements and environment. See [Application Property Reference](./admin/application-property-reference/properties-overview) for a description of available properties.
 
 To modify the `application.properties` file in Docker Desktop, do the following:
 
