@@ -312,7 +312,7 @@ You are now ready to run your first remote job. Refer to [Run Your First Remote 
 
 ### Configuration
 
-Docker Desktop exposes directories containing configuration files, including the `application.properties` file, which can be used for a variety of configurations to tailor Integration Manager and Agent to your requirements and environment. See [Application Property Reference](../category/application-property-reference) for a description of available properties.
+Docker Desktop exposes directories containing configuration files, including the `application.properties` file, which can be used for a variety of configurations to tailor Integration Manager and Agent to your requirements and environment. See [Application Property Reference](../integration-manager/admin/application-property-reference/properties-overview) for a description of available properties.
 
 To modify the `application.properties` file in Docker Desktop, do the following:
 
