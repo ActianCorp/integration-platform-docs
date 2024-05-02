@@ -230,9 +230,18 @@ Integration Manager can be installed using a Docker image via Docker Desktop and
 
 Docker Desktop exposes directories containing configuration files, including the `application.properties` file, which can be used for a variety of configurations to tailor Integration Manager and Agent to your requirements and environment. See [Application Property Reference](../category/application-property-reference) for a description of available properties.
 
-import PartialContent1 from '../reuse/_docker_volumes.mdx';
+To modify the `application.properties` file in Docker Desktop, do the following:
 
-<PartialContent1 name="docker_volumes" />
+1. In Docker Desktop, click **Volumes** in the left pane, then click **docker_conf_props**:
+
+   ![](/img/Docker-Props.png)
+
+2. Double-click **application.properties**:
+   
+   ![](/img/Docker-Application-Properties.png)
+3. Make any desired edits, then click the disk icon to save changes.
+
+   ![](/img/Docker-Properties-Save.png)
 
 ### Service Logs & Monitoring
 
