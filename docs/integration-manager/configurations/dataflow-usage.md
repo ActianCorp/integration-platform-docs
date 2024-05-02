@@ -13,7 +13,7 @@ For convenience, DataFlow 8.0 is embedded within Integration Manager powered by 
 ## Prerequisites
 
 * DataCloud subscribers must have access to DataFlow out-of-box without additional configuration.
-* On-premise and VPC deployments of Integration Manager may require additional setup. See [Dataflow Properties](../admin/application-property-reference/dataflow-properties.md).
+* On-premise and VPC deployments of Integration Manager may require additional setup. See [Dataflow Properties](../../application-property-reference/dataflow-properties.md).
 
 
 

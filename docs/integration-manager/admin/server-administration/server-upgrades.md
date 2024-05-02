@@ -16,4 +16,4 @@ Upgrade installations will typically require that your first uninstall Integrati
 
 ## Upgrade Instructions
 
-The upgrade process is no different than performing a new installation. See [Quick Start Installation](../../../quickstart-install).
+The upgrade process is no different than performing a new installation. See [Quick Start Installation](../../quickstart-install).
