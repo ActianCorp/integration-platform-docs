@@ -312,6 +312,8 @@ You are now ready to run your first remote job. Refer to [Run Your First Remote 
 
 ### Configuration
 
+Docker Desktop exposes directories containing configuration files, including the `application.properties` file, which can be used for a variety of configurations to tailor Integration Manager and Agent to your requirements and environment. See [Application Property Reference](../category/application-property-reference) for a description of available properties.
+
 import PartialContent1 from '../reuse/_docker_volumes.mdx';
 
 <PartialContent1 name="docker_volumes" />
