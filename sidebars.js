@@ -21,7 +21,7 @@ const sidebars = {
     //},
     'intro',
     'release-notes',
-    'quickstart-install',
+    'integration-manager/quickstart-install',
     'accessing-the-integration-manager',
     'dashboard',
     'editing-your-profile',
@@ -158,6 +158,7 @@ const sidebars = {
             'integration-manager/admin/server-administration/setup-rabbitmq',
             'integration-manager/admin/server-administration/setup-zookeeper',
             'integration-manager/admin/server-administration/setup-kubernetes',
+            //'integration-manager/admin/server-administration/setup-kubernetes-on-prem',
             'integration-manager/admin/server-administration/server-upgrades',
             'integration-manager/admin/server-administration/integration-engines',
           ]
@@ -172,14 +173,14 @@ const sidebars = {
             slug: '/category/application-property-reference',
           },
           items: [
-            'integration-manager/admin/application-property-reference/dataconnect-properties',
-            'integration-manager/admin/application-property-reference/dataflow-properties',
-            'integration-manager/admin/application-property-reference/datasource-properties',
-            'integration-manager/admin/application-property-reference/file-repository-properties',
-            'integration-manager/admin/application-property-reference/queue-connection-properties',
+            'application-property-reference/dataconnect-properties',
+            'application-property-reference/dataflow-properties',
+            'application-property-reference/datasource-properties',
+            'application-property-reference/file-repository-properties',
+            'application-property-reference/queue-connection-properties',
             //'integration-manager/admin/application-property-reference/scheduling-properties',
-            'integration-manager/admin/application-property-reference/web-server-properties',
-            'integration-manager/admin/application-property-reference/worker-properties',
+            'application-property-reference/web-server-properties',
+            'application-property-reference/worker-properties',
           ]
         },
         {
