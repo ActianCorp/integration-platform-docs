@@ -167,12 +167,8 @@ const sidebars = {
         {
           type: 'category',
           label: 'Application Property Reference',
-          link: {
-            type: 'generated-index',
-            title: 'Application Property Reference',
-            slug: '/category/application-property-reference',
-          },
           items: [
+            'integration-manager/admin/application-property-reference/properties-overview',
             'integration-manager/admin/application-property-reference/dataconnect-properties',
             'integration-manager/admin/application-property-reference/dataflow-properties',
             'integration-manager/admin/application-property-reference/datasource-properties',
