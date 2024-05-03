@@ -9,7 +9,7 @@ title: Accessing the Integration Manager
 :::
 
 1. Navigate to the Integration Manager UI in your web browser:
-   * Local Machine: [http://localhost:8080/ui/](http://localhost:8080/ui/)
+   * Local Machine (and Docker): [http://localhost:8080/ui/](http://localhost:8080/ui/)
    * Actian DataCloud: [https://console.im.actiandatacloud.com/ui/](https://console.im.actiandatacloud.com/ui/)
 2. The Login page is displayed:
    
