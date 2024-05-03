@@ -211,11 +211,11 @@ Integration Manager can be installed using a Docker image via Docker Desktop and
 10. Update the `device` property to point to the path of your `cosmos.slc` license file, relative to the folder containing the `docker-compose.yaml` file.
 11. The `image` specified above is `3.3.0-SNAPSHOT`. You can specify any image listed in the **Tags** column:
     
-   ![](/img/Docker-Manager-Image-Tag.png)
+    ![](/img/Docker-Manager-Image-Tag.png)
     
-   :::note
-   If **latest** is listed for the image, specifying `image: actian/integration-manager-standalone:latest` will pull the latest image.
-   :::
+    :::note
+    If **latest** is listed for the image, specifying `image: actian/integration-manager-standalone:latest` will pull the latest image.
+    :::
 
 12. If desired, you can use a different port. To use port 8085, for example, you would change the above port entry to `8085:8080`.
 13. Open a command prompt and navigate to the folder containing the `docker-compose.yaml` file.
@@ -225,6 +225,13 @@ Integration Manager can be installed using a Docker image via Docker Desktop and
     docker compose up
     ```
 15. The Integration Manager service should now be running in your Docker container.
+    
+    :::note
+    The link in Docker shown below to localhost:8080 (or whichever port you specified) will not work. To access Integration Manager, go to http://localhost:8080/ui/.
+
+    ![](/img/Docker-Link.png)
+    :::
+
    
 ### Configuration
 
