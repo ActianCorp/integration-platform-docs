@@ -267,11 +267,11 @@ Integration Agent can be installed using a Docker image via Docker Desktop and D
 10. Update the `device` property to point to the path of your `cosmos.slc` license file, relative to the folder containing the `docker-compose.yaml` file.
 11. The `image` specified above is `3.2.0-SNAPSHOT`. You can specify any image listed in the **Tags** column:
     
-   ![](/img/Docker-Agent-Image-Tag.png)
+    ![](/img/Docker-Agent-Image-Tag.png)
     
-   :::note
-   If **latest** is listed for the image, specifying `image: actian/integration-agent:latest` will pull the latest image.
-   :::
+    :::note
+    If **latest** is listed for the image, specifying `image: actian/integration-agent:latest` will pull the latest image.
+    :::
 
 12. If desired, you can use a different port. To use port 8085, for example, you would change the above port entry to `8085:8080`.
 13. Open a command prompt and navigate to the folder containing the `docker-compose.yaml` file.
