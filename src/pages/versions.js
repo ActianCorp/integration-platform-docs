@@ -77,46 +77,46 @@ function Version() {
                 <th>3.1</th>
                 <td>
                 <a href={`https://docs.actian.com/integrationmanager/3.1`} target='_blank'>
-                    Documentaion
+                    Documentation
                   </a>
                 </td>
                 <td>
                   <a href={`https://docs.actian.com/integrationagent/3.1/#page/User/IntegrationAgent_Title.htm`} target='_blank'>
-                  Documentaion
+                  Documentation
                   </a>
                 </td>
               </tr>                
               <tr>
                 <th>3.0</th>
                 <td>
-                <a href={`https://docs.actian.com/integrationmanager/3.0`} target='_blank'>
-                    Documentaion
+                  <a href={`https://docs.actian.com/integrationmanager/3.0`} target='_blank'>
+                  Documentation
                   </a>
                 </td>
                 <td>
                   <a href={`https://docs.actian.com/integrationagent/3.0/#page/User/IntegrationAgent_Title.htm`} target='_blank'>
-                  Documentaion
+                  Documentation
                   </a>
                 </td>
               </tr>                
               <tr>
                 <th>2.5</th>
                 <td>
-                <a href={`https://docs.actian.com/integrationmanager/2.5`} target='_blank'>
-                    Documentaion
+                  <a href={`https://docs.actian.com/integrationmanager/2.5`} target='_blank'>
+                  Documentation
                   </a>
                 </td>
                 <td>
                   <a href={`https://docs.actian.com/integrationagent/2.5/#page/User/IntegrationAgent_Title.htm`} target='_blank'>
-                  Documentaion
+                  Documentation
                   </a>
                 </td>
               </tr>                
               <tr>
                 <th>2.1</th>
                 <td>
-                <a href={`https://docs.actian.com/integrationmanager/2.1`} target='_blank'>
-                  Documentaion
+                  <a href={`https://docs.actian.com/integrationmanager/2.1`} target='_blank'>
+                  Documentation
                   </a>
                 </td>
                 <td align='center'>
@@ -127,7 +127,7 @@ function Version() {
                 <th>2.0</th>
                 <td>
                   <a href={`https://docs.actian.com/integrationmanager/2.0`} target='_blank'>
-                    Documentaion
+                  Documentation
                   </a>
                 </td>
                 <td align='center'>
