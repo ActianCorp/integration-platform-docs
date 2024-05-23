@@ -23,16 +23,7 @@ Templates can be linked to a Configuration to reuse integration packages and oth
 
 ## Creating Template Configurations
 
-1. On the **Template Details** page, click **Create Configuration**:
-   
-   ![](/img/Template-Create-Config.png)
-2. On the **Data Integration Setup** page, enter a unique **Name**, then click one of the following:
-   * **Local&nbsp;System**: Browse to the desired folder and select a configuration file (.djar,.rtc,.process,.ip.xml,.tf.xml,.sqlite).
-   * **Integration&nbsp;Files**: In the **File&nbsp;Manager**, select a package, then click **Select&nbsp;Package**. For more information on using the **File Manager**, see [Importing a Private File](../configurations/importing-configurations#importing-a-private-file) or [Importing a Public File](../configurations/importing-configurations#importing-a-public-file).
-   
-3. Click **Create**.
-
-   ![](/img/Create-Template-Config1.png)
+Template configurations can be created by clicking the **Create Configuration** button on either the **Template Details** or **Template Configutations** page. See [Creating a Configuration From a Template](./creating-a-configuration-from-a-template).
 
 ## Activating or Inactivating Template Configurations
 
