@@ -6,7 +6,11 @@ title: Importing Template Macros
 
 To import template macros:
 
-1. Select the **Templates** tab, then click **Macros**:
+1. Select the **Templates** tab.
+2. Click the desired template:
+
+   ![Template Select](/img/Template-Select.png) 
+1. Click **Macros** in the left pane.
 2. Click the dropdown arrow next to the **Add Macro** button and select **Import Macros**:
 
    ![](/img/Template-Macros-Import.png)

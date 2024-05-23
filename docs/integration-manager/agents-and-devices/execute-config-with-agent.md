@@ -9,7 +9,7 @@ To set a configuration to execute using an agent:
 1. Select the **Configurations** tab.
 2. Click the configuration that you want to edit:
 
-   ![Configuration Select](/img/Configuration-Select.png)
+   ![](/img/Configuration-Select.png)
 
 3. On the **Configuration Details** page, click <img src="/img/icons/edit-icon.png" className="icon" alt="the Edit icon"/> next to **Run Location** and select **User Agent**:
 

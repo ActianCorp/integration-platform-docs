@@ -139,7 +139,7 @@ You can download the Actian Integration Agent installer from either the **Agents
 2. Select the **Agents** tab.
 3. Click the **Download Agent** dropdown and select your platform:
 
-   ![](/img/Download-Agent.png)
+   ![](/img/Download-Agent-Linux.png)
 
 #### From Actian ESD:
 

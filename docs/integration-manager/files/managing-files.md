@@ -30,7 +30,7 @@ You can upload and manage files for use with your configurations and templates. 
 3. Select a user from the user dropdown.
 4. The **Private Files** list is displayed, listing files owned by the selected user:
 
-   ![User Files](/img/User-Files.png)&nbsp;
+   ![](/img/User-Files.png)&nbsp;
 
 ## Uploading Files
 
@@ -42,20 +42,20 @@ Only admins can upload public files.
 2. Display the **Private Files** or **Public Files** list as described above.
 2. Click <img src="/img/icons/Upload-Files-Button.png" className="icon" alt="the Upload Files button"/>.
 3. In the **File Manager** dialog, drop one or more files or click **BROWSE FILES** and select one or more files.
-4. The files are added to the **File Manager** dialog. You can click <img src="/img/icons/unlink.png" className="icon" alt="the Unlink icon"/> to remove any files.
+4. The files are added to the **Uploading Files** dialog. You can click <img src="/img/icons/unlink.png" className="icon" alt="the Unlink icon"/> to remove any files.
 
    ![Uploading User Files](/img/Uploading-User-Files.png)
 5. Click the **DONE** button.
    
    * **For non-admin users**, the files are added to the **Private Files** list:
 
-         ![Uploaded User Files](/img/Private-Files-Added.png)
+         ![](/img/Upload-Files-Non-Admin.png)
    * **For admins adding user files**, the files are added to the **User Files** list:
 
-         ![Uploaded User Files](/img/Uploaded-User-Files.png)
+         ![](/img/Upload-Files-Admin-User.png)
    * **For admins adding public files**, the files are added to the **Public Files** list:
 
-         ![Uploaded Public Files](/img/Public-Files.png)
+         ![](/img/Upload-Files-Admin-Public.png)
 
 ## Deleting Files
 
@@ -76,9 +76,7 @@ Only admins can delete public files or user files owned by another user.
 ## Downloading Files
 
 1. Select the **Files** tab.
-2. Use the toggle control to display Public or Private files:
-   
-   ![](/img/Toggle-File-Type.png)
+2. Use the toggle control to display Public or Private files.
 3. Do one of the following:
    * To download a single file, click the ellipsis button next to the desired file and select **Download**:
 

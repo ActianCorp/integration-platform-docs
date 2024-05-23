@@ -21,26 +21,28 @@ Account administrators can:
 
    ![Administration](/img/Administration.png)
 
-2. Click <img src="/img/icons/Add-New-User.png" className="icon" alt="the Add New button"/>.
-3. On the **Create User Account** page, enter the **First Name** and **Last Name**.
-4. In the **Username** field, enter the user's email address as the username.
+2. Click <img src="/img/icons/Add-New-User.png" className="icon" alt="the Add New button"/>:
+
+   ![](/img/Add-New-User.png)
+4. On the **Create User Account** page, enter the **First Name** and **Last Name**.
+5. In the **Username** field, enter the user's email address as the username.
    
    :::note
    Usernames cannot be changed once created, they can only be deactivated.
    :::
 
-5. In the **Password** field, enter a password manually or select **Auto-Generate Password**.
-6. In the **Status** field, **Active** is selected by default. If you do not yet want the user account to be active, select **Inactive**.
+6. In the **Password** field, enter a password manually or select **Auto-Generate Password**.
+7. In the **Status** field, **Active** is selected by default. If you do not yet want the user account to be active, select **Inactive**.
 
    ![Create-User2](/img/Create-User1.png)
 
-7. Click <img src="/img/icons/Continue-Button2.png" className="icon" alt="the Continue button"/>.
-8. Under **What role would you like to assign to the user?**, click **Admin** or **General User**.
-9. If you selected **General User**, click the **Select policies** dropdown and select the desired policy. See [Access Control Policies](./access-control-polices).
+8. Click <img src="/img/icons/Continue-Button2.png" className="icon" alt="the Continue button"/>.
+9. Under **What role would you like to assign to the user?**, click **Admin** or **General User**.
+10. If you selected **General User**, click the **Select policies** dropdown and select the desired policy. See [Access Control Policies](./access-control-polices).
 
-   ![Create-User2](/img/Create-User2.png)
+    ![Create-User2](/img/Create-User2.png)
    
-10. Click <img src="/img/icons/Add-User-Button.png" className="icon" alt="the Add User button"/>.
+11. Click <img src="/img/icons/Add-User-Button.png" className="icon" alt="the Add User button"/>.
 
 ## Activating or Inactivating a User
 

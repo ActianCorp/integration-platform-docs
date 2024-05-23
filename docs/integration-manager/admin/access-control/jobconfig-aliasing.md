@@ -70,21 +70,21 @@ Content-Type: application/json
 
    ![](/img/Create-Alias2.png)
 
-4. In the **Alias name** field, enter a globally-unique, URL-safe name for your Alias. This is the endpoint your consumers will use:
+3. In the **Alias name** field, enter a globally-unique, URL-safe name for your Alias. This is the endpoint your consumers will use:
 
    ![](/img/Create-Alias3.png)
 
-5. Select the backend configuration to run when your Alias is invoked. You can change it as needed:
+4. Select the backend configuration to run when your Alias is invoked. You can change it as needed:
 
    ![](/img/Create-Alias4.png)
 
-6. Click **Continue**.
+5. Click **Continue**.
 
-7. Either select an existing IP Address, or enter a new IP Address and Label, click **Add**, then click **Save**:
+6. Either select an existing IP Address, or enter a new IP Address and Label, click **Add**, then click **Save**:
 
    ![](/img/Create-Alias6.png)
 
-9. The Alias is displayed in **Integration Listeners** list:
+7. The Alias is displayed in **Integration Listeners** list:
 
    ![](/img/Create-Alias8.png)
 
@@ -147,8 +147,6 @@ To delete a listener:
    ![](/img/Administration.png)
 
 2. Click **Listeners**:
-
-   ![](/img/Create-Alias1.png)
 
 3. Click the listener you want to delete:
 

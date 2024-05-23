@@ -18,7 +18,7 @@ Templates can be set as Active or Inactive from either the **Templates** or **Te
 3. Select the checkbox next to the desired template(s).
 4. A dropdown appears above the templates list. Click the dropdown and select **Active** or **Inactive** as desired:
 
-   ![Template Set Active Inactive](/img/Template-Set-Active-Inactive.png)
+   ![Template Set Active Inactive](/img/Template-Set-Active-Inactive1.png)
 
 ## From the Template Details Page 
 

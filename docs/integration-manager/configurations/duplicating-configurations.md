@@ -13,7 +13,7 @@ You can duplicate an existing configuration from several different pages.
 1. Click the **Configurations** tab.
 2. Click the ellipsis button next to the desired configuration and select **Duplicate**:
 
-![](/img/Configuration-Duplicate1.png)
+ ![](/img/Configuration-Duplicate1.png)
 
 ## From the Configuration Details Page
 
@@ -30,4 +30,4 @@ You can duplicate an existing configuration from several different pages.
 3. On the **Template Details** page, click **Configurations** in the left pane.
 4. On the **Template Configurations** page, click the dropdown arrow on the **Run** button next to the desired configuration and select **Duplicate**:
 
-![](/img/Template-Configuration-Duplicate.png)
+ ![](/img/Template-Configuration-Duplicate.png)

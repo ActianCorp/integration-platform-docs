@@ -17,11 +17,11 @@ Refer to [Open API specs for Access Control Policy APIs](https://console.im.acti
 
 1. Click the profile dropdown in the upper right corner and select **Administration**.
 
-   ![Administration](/img/Administration.png)
+   ![](/img/Administration.png)
 
 2. Click **Policies**:
 
-   ![Policies](/img/Policies.png)
+   ![](/img/Policies.png)
 
 3. Click the name of the desired policy:
    
@@ -43,11 +43,13 @@ Refer to [Open API specs for Access Control Policy APIs](https://console.im.acti
 
 Custom permissions can be added for many resource types. In the advanced editor, custom and complex policies can be built via a JSON object rather than using the simple GUI editor.
 
-1. Click **Advanced Editor**.
+1. Click **Advanced Editor**:
+
+   ![](/img/Advanced-Editor-Button.png)   
 2. Edit the JSON in the **Permissions** field. Refer to [Policy Examples](#policy-examples).
 
      ![](/img/Advanced-Editor.png)
-8. Click **Update Access Policy**:
+3. Click **Update Access Policy**:
 
 ### Policy Examples
 

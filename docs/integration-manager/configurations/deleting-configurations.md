@@ -23,7 +23,7 @@ You cannot delete a configuration if there is an alias (listener) associated wit
 2. On the the **Configurations** page, click the desired configuration.
 2. On the the **Configuration Details** page, click the dropdown arrow on the **Run Configuration** button and select **Delete Configuration**:
 
-![](/img/Configuration-Details-Page-Delete.png)
+   ![](/img/Configuration-Details-Page-Delete.png)
 
 
 ## Deleting a Template Configuration

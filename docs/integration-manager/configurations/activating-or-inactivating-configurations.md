@@ -14,7 +14,7 @@ You can set the configuration status to Active or Inactive from several pages.
 2. Click the ellipsis on the right of the desired configuration.
 3. Select **Set as Inactive** to inactivate a currently-active configuration, or select **Set as Active** to reactivate a currently-inactive configuration:
 
-   ![](/img/Configuration-Set-Inactive.png)
+   ![](/img/Configuration-Set-Inactive1.png)
 
 4. The **Active** column is updated to show the current active status:
 
@@ -30,7 +30,7 @@ You can set the configuration status to Active or Inactive from several pages.
 
 ## From the Template Configurations Page
 
-1. Select the **Template** tab.
+1. Select the **Templates** tab.
 2. Click the template that you want to edit.
 3. Click **Configurations** in the left panel:
 
@@ -42,7 +42,7 @@ You can set the configuration status to Active or Inactive from several pages.
 
 ## Activating/Inactivating Multiple Configurations
 
-1. On the **Configurations** page, do one of the following:
+1. On the **Configurations** page, do the following:
    
    * Select the checkboxes next to the desired **Active** configurations, then click <img src="/img/icons/inactive.png" className="icon" alt="the Inactive icon"/> to set as Inactive.
 

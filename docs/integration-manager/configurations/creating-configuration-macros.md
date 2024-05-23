@@ -49,7 +49,7 @@ Once you have created your first macro, you can add additional rows to the Confi
 4. Edit the name as desired and press **Enter**.
 5. Click the empty space in the **Value** column, enter the macro value, and press **Enter**.
 
-    ![e](/img/Add-Macro-Value.png)
+    ![](/img/Add-Macro-Value.png)
 
 6. Click the empty space in the **Description** column, enter a description, and press **Enter**.
 

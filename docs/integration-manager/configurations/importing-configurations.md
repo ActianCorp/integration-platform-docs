@@ -36,7 +36,10 @@ title: Importing Configurations
 5. The files uploaded by the selected user are listed. Select a package and click **Select Package**:
 
    ![](/img/File-Manager-Select-Private-Package.png)
-6. The package is imported and listed on the **Configuration Details** page, indicating that the package is a private file:
+6. Click **Import**:
+   
+   ![](/img/Import-Configuration-Private.png)
+7. The package is imported and listed on the **Configuration Details** page, indicating that the package is a private file:
 
    ![](/img/Private-Package-Imported.png)
 
@@ -50,6 +53,9 @@ title: Importing Configurations
 4. Use the toggle control to select public packages, select a package, and click **Select Package**:
   
    ![](/img/File-Manager-Select-Public-Package.png)
-5. The package is imported and listed on the **Configuration Details** page, indicating that the package is a public file:
+5. Click **Import**:
+   
+   ![](/img/Import-Configuration-Public.png)
+6. The package is imported and listed on the **Configuration Details** page, indicating that the package is a public file:
 
    ![](/img/Public-Package-Imported.png)

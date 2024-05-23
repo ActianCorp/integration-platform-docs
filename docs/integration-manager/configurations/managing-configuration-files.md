@@ -20,7 +20,7 @@ To view files associated with a configuration:
 1. Select the **Configurations** tab.
 2. Click the name of the configuration for which you want to view files:
 
-   ![Select Configuration](/img/Configuration-Select2.png)
+   ![Select Configuration](/img/Configuration-Select.png)
 
 3. On the **Configuration Details** page, click **Files** in the left pane:
    
@@ -68,13 +68,10 @@ To upload files to a configuration:
 1. On the **Configuration Files** page, click the dropdown arrow next to the **Upload File** button and select **Link file in Files Repository**:
    
    ![](/img/Link-File-in-Files-Repository.png)
-2. The **File Manager** dialog is displayed.
-
-   ![](/img/File-Manager-Private.png)
-3. Use the toggle control to select  **Public Files**, select one or more files, and click the **Link File** button:
+2. Use the toggle control to select  **Public Files**, select one or more files, and click the **Link File** button:
 
    ![](/img/File-Manager-Select-Public-File.png)
-4. The public file now appears in the **Configuration Files** list:
+3. The public file now appears in the **Configuration Files** list:
 
    ![](/img/Configuration-Files-Public-File.png)
 
@@ -96,14 +93,12 @@ To select a different package:
 
    ![](/img/Selected-Package-Changed2.png)
 
-   ![](/img/Selected-Package-Changed.png)
-
 ## Downloading Configuration Files
 
 1. Select the **Configurations** tab.
 2. Click the name of the configuration for which you want to download files:
 
-   ![Select Configuration](/img/Configuration-Select2.png)
+   ![Select Configuration](/img/Configuration-Select.png)
 
 3. On the **Configuration Details** page, click **Files** in the left pane:
    
@@ -126,7 +121,7 @@ To select a different package:
 1. Select the **Configurations** tab.
 2. Click the name of the configuration for which you want to delete files:
 
-   ![Select Configuration](/img/Configuration-Select2.png)
+   ![Select Configuration](/img/Configuration-Select.png)
 
 3. On the **Configuration Details** page, click **Files** in the left pane:
    
