@@ -16,15 +16,15 @@ To view files associated with a template:
 1. Select the **Templates** tab.
 2. Click the name of the template for which you want to view files:
 
-   ![Select Template](/img/Template-Select.png)
+   ![](/img/Template-Select.png)
 
 3. On the **Template Details** page, click **Files** in the left pane:
    
-   ![Template Files Link](/img/Template-Files-Link.png)
+   ![](/img/Template-Files-Link.png)
 
 4. The **Template Files** page is displayed, listing all files and linked files from the File Repository associated with the template. Note that linked files will show **FROM PRIVATE FILES** or **FROM PUBLIC FILES**:
 
-   ![Template Files Page](/img/Template-Files-Page-With-Annotations.png)
+   ![](/img/Template-Files-Page-With-Annotations.png)
 
 ## Uploading Files to a Template
 
@@ -32,14 +32,14 @@ To upload files to a template:
 
 1. On the **Template Files** page, click **Upload File**:
    
-   ![Upload File Button](/img/Template-Upload-File-Button.png)
+   ![](/img/Template-Upload-File-Button.png)
 2. In the **Upload Files** dialog, drop one or more files or click **BROWSE FILES** and select one or more files.
 3. The files are added to the **Uploading Files** dialog. You can click <img src="/img/icons/unlink.png" className="icon" alt="the Unlink icon"/> to remove any files.
 
-   ![Uploading Files](/img/Uploading-Files-Dialog.png)
+   ![](/img/Uploading-Files-Dialog.png)
 4. Click the **DONE** button. The files are added to the **Template Files** list:
 
-   ![Uploaded Files](/img/Template-Uploaded-Files.png)
+   ![](/img/Template-Uploaded-Files.png)
 
 ## Linking a Private File in the File Repository
 
@@ -50,7 +50,7 @@ To upload files to a template:
 
 1. On the **Template Files** page, click the dropdown arrow next to the **Upload File** button and select **Link file in Files Repository**:
    
-   ![Link file in Files Repository](/img/Template-Link-File-in-Files-Repository.png)
+   ![](/img/Template-Link-File-in-Files-Repository.png)
 2. The **File Manager** dialog is displayed.
 3. If you are a non-admin user, only your name appears in the user dropdown. If you are an admin user, you can select a different user.
 4. The files uploaded by the selected user are listed. Select one or more files and click the **Link&nbsp;File** button:
@@ -58,38 +58,38 @@ To upload files to a template:
         ![File Manager Select Private Files](/img/File-Manager-Select-Private-Template-Files.png)
 5. The private file now appears in the **Template Files** list:
 
-   ![Template Files Link](/img/Template-Files-Private-File.png)
+   ![](/img/Template-Files-Private-File.png)
 
 ## Linking a Public File in the File Repository
 
 1. On the **Template Files** page, click the dropdown arrow next to the **Upload File** button and select **Link file in Files Repository**:
 
-   ![Link file in Files Repository](/img/Template-Link-File-in-Files-Repository.png)
+   ![](/img/Template-Link-File-in-Files-Repository.png)
 2. The **File Manager** dialog is displayed.
 3. Use the toggle control to select  **Public Files**, select one or more files, and click the **Link&nbsp;File** button:
 
-   ![Link file in Files Repository](/img/Template-Link-Public-File.png)
+   ![](/img/Template-Link-Public-File.png)
 4. The public file now appears in the **Template Files** list:
 
-   ![Template Files Link](/img/Template-Files-Public-File.png)
+   ![](/img/Template-Files-Public-File.png)
 
 ## Changing the Selected Package
 
 You can upload or link multiple package files to a template, but only one package can be selected for the template. The currently-selected package is labeled with **SELECTED PACKAGE** in the **Template Files** list:
 
-   ![Selected Package](/img/Template-Selected-Package.png)
+   ![](/img/Template-Selected-Package.png)
 
 To select a different package:
 
 1. On the **Template Details** page, click <img src="/img/icons/edit-icon.png" className="icon" alt="the Edit icon"/> to the right of **Package Uploaded**:
 
-   ![Package Uploaded Edit](/img/Template-Package-Uploaded-Edit.png)
+   ![](/img/Template-Package-Uploaded-Edit.png)
 2. In the **Upload Packages & Files** dialog, select a package and click **DONE**:
 
-   ![Select Different Package](/img/Template-Selected-Package-Change.png)
+   ![](/img/Template-Selected-Package-Change.png)
 3. The **Template Files** list shows the newly-selected package:
 
-   ![Selected Package](/img/Template-Selected-Package-Changed.png)
+   ![](/img/Template-Selected-Package-Changed.png)
 
 ## Downloading Template Files
 
