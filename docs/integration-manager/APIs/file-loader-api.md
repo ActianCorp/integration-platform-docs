@@ -5,7 +5,7 @@ title: DataCloud File Loader API
 
 ## Overview
 
-This service allows an API consumer to stage and load a file directly into a default target table.
+This service allows an API consumer to stage and load a file directly into a target table.
 
 * Allows files up to 1GB
 * Autodetects field and record separators (can be overridden)
