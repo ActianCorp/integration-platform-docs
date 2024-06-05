@@ -5,7 +5,7 @@ title: Accessing the Integration Manager
 # Accessing the Integration Manager
 
 :::caution[Important]
-    The first time you log in to Integration Manager as an administrator, you will use the default administrator login username and password (admin/admin). We strongly recommended that you change the admin password. Refer to [Changing Your Password](./editing-your-profile#changing-your-password).
+    The first time you log in to Integration Manager as an administrator, you will use the default administrator login username and password (admin/admin). We strongly recommended that you change the admin password. Refer to [Editing Your Profile](./editing-your-profile).
 :::
 
 1. Navigate to the Integration Manager UI in your web browser:
