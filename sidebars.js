@@ -101,6 +101,7 @@ const sidebars = {
             'integration-manager/APIs/api-overview',
             'integration-manager/APIs/jobconfig-file-listener-api',
             'integration-manager/APIs/jobconfig-message-listener-api',
+            'integration-manager/APIs/file-loader-api',
             'integration-manager/APIs/sfdc-outbound-messaging-api',
               ]
         },
