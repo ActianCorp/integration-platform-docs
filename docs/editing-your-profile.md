@@ -4,25 +4,21 @@ title: Editing Your Profile
 
 # Editing Your Profile
 
-On the **My Profile** page, non-admin users can edit their name and change their password. Users (admin and non-admin alike) are not allowed to activate/deactivate, or enable/disable admin access for themselves.
+:::note
+* Non-admin users can edit their own profile information and password.
+* Users (admin and non-admin alike) are not allowed to set themselves to Active or Inactive, or to enable/disable admin access for themselves.
+:::
 
-## Accessing the My Profile Page
+To edit your profile:
 
-1. Click the profile dropdown in the upper right corner and select **Profile**.
+1. Click the profile dropdown in the upper right corner and selecting **Profile**:
 
    ![Profile Dropdown](/img/profile-dropdown.png)
+2. To set or change your password, enter a password in the **Password** textbox or select the **Auto-Generate Password** checkbox:
 
-## Changing Your Password
+   ![](/img/Password.png)
 
-1. Enter your new password in the Password textbox, or select the **Auto-Generate Password** checkbox.
-
-   :::note
-      You must enter at least 8 characters for your password.
+   :::note[Notes]
+      * You must enter at least 8 characters for your password.
+      * The password set on the **My Profile** page enables you to login to Integration Manager using a username and password, and is also the password used to authorize API access.
    :::
-
-2. Click **Update User**.
-
-## Editing Your Name
-
-1. Edit the **First Name** and **Last Name** fields.
-2. Click **Update User**.
