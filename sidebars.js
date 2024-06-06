@@ -83,6 +83,7 @@ const sidebars = {
             'integration-manager/macros/importing-macros',
             'integration-manager/macros/editing-macros',
             'integration-manager/macros/using-LOCAL_JOB_SPEC_DIR',
+            'integration-manager/macros/using-preinstalled-driver-macros',
             'integration-manager/macros/securing-macros',
           ]
         },
