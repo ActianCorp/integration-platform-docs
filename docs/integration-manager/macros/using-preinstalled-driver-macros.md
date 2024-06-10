@@ -20,13 +20,11 @@ Snowflake | $(JDBC_DRIVER_CLASS_SNOWFLAKE) | net.snowflake.client.jdbc.Snowflake
 
 # Configuring own JDBC Macros
 
-If you have already configured the JDBC drivers with different macro names, you can replace the values in your cloud deployment(s).
+If you have already configured the JDBC drivers with different macro names, you can replace the values in your cloud deployment(s) with above macros. Example below :-
 
-Example -
+YOUR_DRIVER_JAR_NAME=$(JDBC_DRIVER_JAR_ACTIAN)
 
-YOUR_DRIVER_JAR_NAME=$(JDBC_DRIVER_JAR_INGRES)
-
-YOUR_DRIVER_CLASS_NAME=$(JDBC_DRIVER_CLASS_INGRES)
+YOUR_DRIVER_CLASS_NAME=$(JDBC_DRIVER_CLASS_ACTIAN)
 
 # Example for Redshift configurations
 
