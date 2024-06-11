@@ -17,7 +17,7 @@ Ingres | $(JDBC_DRIVER_CLASS_INGRES) | `com.ingres.jdbc.IngresDriver` | Actian J
 MySQL | $(JDBC_DRIVER_JAR_MYSQL) |  | MySQL JDBC driver jar file |
 MySQL | $(JDBC_DRIVER_CLASS_MYSQL) | `com.mysql.cj.jdbc.Driver` | MySQL JDBC driver classname |
 PostGres | $(JDBC_DRIVER_JAR_POSTGRES) |  | Postgres JDBC driver jar file |
-PostGres | $(JDBC_DRIVER_CLASS_POSTGRES) | `com.postgres.Driver` | Redshift JDBC driver classname |
+PostGres | $(JDBC_DRIVER_CLASS_POSTGRES) | `com.postgres.Driver` | Postgres JDBC driver classname |
 Redshift | $(JDBC_DRIVER_JAR_REDSHIFT) |  | Redshift JDBC driver jar file |
 Redshift | $(JDBC_DRIVER_CLASS_REDSHIFT) | `com.amazon.redshift.Driver` | Redshift JDBC driver classname |
 Snowflake | $(JDBC_DRIVER_JAR_SNOWFLAKE) |  | Snowflake JDBC driver jar file |
