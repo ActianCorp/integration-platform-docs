@@ -61,7 +61,7 @@ Go to the file loader API page for your warehouse region:
     | Azure | UK - London | https://fileloader.uksouth.azure.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
     | Azure | AP - Pune | https://fileloader.centralindia.azure.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
     | Azure | EU - Germany | https://fileloader.germanywestcentral.azure.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
-    | GCP | US - South Carolina | https://fileloader-av-gc-prod.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
+    | GCP | US - South Carolina | https://fileloader-av-gc-prod-2.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
     | GCP | UK - London | https://fileloader-avprddp-190.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
     | GCP | EU - Belgium | https://fileloader-avprddp-200.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
 
