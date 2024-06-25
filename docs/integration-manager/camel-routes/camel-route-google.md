@@ -1,5 +1,5 @@
 ---
-title: Camel Route Configuration for Google Cloud Storage
+title: GCP Cloud Storage Listener Example
 ---
 
 # Camel Route Configuration for Google Cloud Storage

@@ -1,14 +1,14 @@
 ---
-title: Camel Routes Overview
+title: File Listener Services Overview
 ---
 
 # Apache Camel Route Support
 
 ## Overview
 
-Apache Camel is a library of common Enterprise Integration Patterns, including FTP, file folder listeners, message/event aggregation, and much more. You can learn more about Enterprise Integration Patterns here: https://camel.apache.org/components/4.4.x/eips/enterprise-integration-patterns.html.
+Listener services are used to monitor file directories or cloud storage buckets/containers for new files.
 
-Integration Manager and Integration Agent both have full Apache Camel support for their XML DSL. You can learn more about Camel XML DSL here: https://camel.apache.org/components/4.4.x/others/java-xml-io-dsl.html.
+When a new file appears that matches your include/exclude criteria, the associated listener submits the file to a Job Configuration in Integration Manager. The file will be available to the specified integration process using the $(LOCAL_JOB_SPEC_DIR) macro at runtime. For example, a file named Accounts.txt will be available as $(LOCAL_JOB_SPEC_DIR)Accounts.txt.
 
 :::note
 Camel DSL support supersedes and replaces the File Folder Listener support provided in versions prior to 3.2.
@@ -25,8 +25,8 @@ Once you have created your DSL, drop it in the appropriate folder as `routes.xml
 
 Refer to the following topics for example configurations and available properties:
 
-* [Camel File Processing History Management](./camel-history-management)
-* [Camel Route Configuration for AWS S3](./camel-route-aws)
-* [Camel Route Configuration for Azure Blob Storage](./camel-route-azure)
-* [Camel Route Configuration for Google Cloud Storage](./camel-route-google)
-* [Camel Route Configuration for Local Storage](./camel-route-local.md)
+* [Listener File History & Backup Configuration](./camel-history-management)
+* [AWS S3 Bucket Listener Example](./camel-route-aws)
+* [Azure Blob Storage Listener Example](./camel-route-azure)
+* [GCP Cloud Storage Listener Example](./camel-route-google)
+* [File Folder Listener Example](./camel-route-local.md)

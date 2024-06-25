@@ -1,5 +1,5 @@
 ---
-title: Camel Route Configuration for AWS S3
+title: AWS S3 Bucket Listener Example
 ---
 
 # Camel Route Configuration for AWS S3

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Camel Route Configuration for Azure Blob Storage
+title: Azure Blob Storage Listener Example
 nav_order: 3
 parent: Camel Route Configuration
 ---
