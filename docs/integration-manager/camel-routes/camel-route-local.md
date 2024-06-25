@@ -1,12 +1,11 @@
 ---
 title: File Folder Listener Example
-nav_order: 1
 ---
 # File Folder Listener Example
 
 ## Overview
 
-Monitors a local folder for new files and submit to the JobConfig run API.
+Monitors a local folder for new files and submits to the JobConfig run API.
 
 ## Route Configuration
 

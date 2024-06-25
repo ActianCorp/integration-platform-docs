@@ -6,7 +6,7 @@ title: GCP Cloud Storage Listener Example
 
 ## Overview
 
-Monitors a GCP Cloud Storage folder for new files and submit to the JobConfig run API.
+Monitors a GCP Cloud Storage folder for new files and submits to the JobConfig run API.
 
 ## Route Configuration
 

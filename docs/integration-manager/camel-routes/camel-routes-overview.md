@@ -25,8 +25,8 @@ Once you have created your DSL, drop it in the appropriate folder as `routes.xml
 
 Refer to the following topics for example configurations and available properties:
 
-* [Listener File History & Backup Configuration](./camel-history-management)
+* [File Folder Listener Example](./camel-route-local.md)
 * [AWS S3 Bucket Listener Example](./camel-route-aws)
 * [Azure Blob Storage Listener Example](./camel-route-azure)
 * [GCP Cloud Storage Listener Example](./camel-route-google)
-* [File Folder Listener Example](./camel-route-local.md)
+* [Listener File History & Backup Configuration](./camel-history-management)

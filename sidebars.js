@@ -186,11 +186,11 @@ const sidebars = {
           label: 'Camel Routes',
           items: [
             'integration-manager/camel-routes/camel-routes-overview',
-            'integration-manager/camel-routes/camel-history-management',
+            'integration-manager/camel-routes/camel-route-local',
             'integration-manager/camel-routes/camel-route-aws',
             'integration-manager/camel-routes/camel-route-azure',
             'integration-manager/camel-routes/camel-route-google',
-            'integration-manager/camel-routes/camel-route-local',
+            'integration-manager/camel-routes/camel-history-management',
               ]
         },
         'integration-manager/admin/workload-management',

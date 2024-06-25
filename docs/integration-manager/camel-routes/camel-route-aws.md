@@ -6,7 +6,7 @@ title: AWS S3 Bucket Listener Example
 
 ## Overview
 
-Monitors an S3 folder for new files and submit to the JobConfig run API.
+Monitors an S3 folder for new files and submits to the JobConfig run API.
 
 ## Route Configuration
 

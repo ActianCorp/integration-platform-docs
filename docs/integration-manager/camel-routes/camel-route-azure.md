@@ -1,12 +1,11 @@
 ---
 title: Azure Blob Storage Listener Example
-nav_order: 3
 ---
 # Azure Blob Storage Listener Example
 
 ## Overview
 
-Monitors an Azure Blob Container folder for new files and submit to the JobConfig run API.
+Monitors an Azure Blob Container folder for new files and submits to the JobConfig run API.
 
 ## Route Configuration
 
