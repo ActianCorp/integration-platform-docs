@@ -2,7 +2,7 @@
 title: Listener File History & Backup Configuration
 ---
 
-# Camel File Processing History Management
+# Listener File History & Backup Configuration
 
 All processed and unprocessed file history can be managed with camel routes.
 

@@ -1,10 +1,8 @@
 ---
-layout: default
 title: File Folder Listener Example
 nav_order: 1
-parent: Camel Route Configuration
 ---
-# Camel Route Configuration for Local Storage
+# File Folder Listener Example
 
 ## Overview
 

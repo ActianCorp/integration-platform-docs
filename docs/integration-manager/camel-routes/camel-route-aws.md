@@ -2,7 +2,7 @@
 title: AWS S3 Bucket Listener Example
 ---
 
-# Camel Route Configuration for AWS S3
+# AWS S3 Bucket Listener Example
 
 ## Overview
 
