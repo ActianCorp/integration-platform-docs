@@ -16,22 +16,22 @@ Camel DSL support supersedes and replaces the File Folder Listener support provi
 
 ## Enabling File Listener Core Services
 
-Locate your `application.properties` file:
+1. Locate your `application.properties` file:
 
-* Integration Manager: `<ProgramDataDirectory>\Actian\IntegrationManager\conf\application.properties`
-* Integration Agent: `<ProgramDataDirectory>\Actian\IntegrationAgent\conf\application.properties`
+   * Integration Manager: `<ProgramDataDirectory>\Actian\IntegrationManager\conf\application.properties`
+   * Integration Agent: `<ProgramDataDirectory>\Actian\IntegrationAgent\conf\application.properties`
 
-Add the following properties if they do not already exist:
+2. Add the following properties if they do not already exist:
 
-```
-camel.springboot.auto-startup=true
-camel.springboot.routes-reload-enabled=true
-camel.springboot.routes-reload-directory=${sharedDataPath}/camel
-```
+    ```
+    camel.springboot.auto-startup=true
+    camel.springboot.routes-reload-enabled=true
+    camel.springboot.routes-reload-directory=${sharedDataPath}/camel
+    ```
 
-Restart Integration Manager (or Integration Agent).
+3. Restart Integration Manager (or Integration Agent).
 
-## File Listener COnfiguration Examples
+## File Listener Configuration Examples
 
 Refer to the following topics for example configurations and available properties:
 
