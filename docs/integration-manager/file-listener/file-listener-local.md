@@ -7,9 +7,9 @@ title: File Folder Listener Example
 
 Monitors a local folder for new files and submits to the JobConfig run API.
 
-## Route Configuration
+## Listener Activation
 
-**routes.xml**
+Once you have created your DSL, drop it in the appropriate folder as `routes.xml`:
 
 * Integration Manager: `<ProgramDataDirectory>\Actian\IntegrationManager\camel\routes.xml`
 * Integration Agent: `<ProgramDataDirectory>\Actian\IntegrationAgent\camel\routes.xml`
@@ -18,11 +18,12 @@ Monitors a local folder for new files and submits to the JobConfig run API.
 Multiple routes (i.e., AWS, Azure, GCP, and Local) can be added into a single `routes.xml`.
 :::
 
-### Example
+### Example DSL 
+(Copy and save as routes.xml)
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <routes xmlns="http://camel.apache.org/schema/spring">    
-    <route id="run-jobconfig-with-local-file" autoStartup="false">
+    <route id="run-jobconfig-with-local-file" autoStartup="true">
         <setProperty name="jobConfigId">
             <constant>102712</constant>
         </setProperty>
@@ -41,17 +42,17 @@ Multiple routes (i.e., AWS, Azure, GCP, and Local) can be added into a single `r
             </doCatch>
         </doTry>
     </route>
-    <route id="manage-processed-file-history" autoStartup="false">
+    <route id="manage-processed-file-history" autoStartup="true">
         <from uri="file://{{sharedDataPath}}/listener/processed?recursive=true&amp;filterFile=${file:modified} &lt; ${date:now-14d}"/>
         <to uri="log:trash?level=OFF"/>
     </route>
-    <route id="manage-unprocessed-file-history" autoStartup="false">
+    <route id="manage-unprocessed-file-history" autoStartup="true">
         <from uri="file://{{sharedDataPath}}/listener/unprocessed?recursive=true&amp;filterFile=${file:modified} &lt; ${date:now-14d}"/>
         <to uri="log:trash?level=OFF"/>
     </route>
 </routes>
 ```
-## Properties
+## Configurable Properties
 
 | Property | Description | Default |
 | :--- | :--- | :--- |

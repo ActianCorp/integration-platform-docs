@@ -183,14 +183,14 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Camel Routes',
+          label: 'File Listener Services',
           items: [
-            'integration-manager/camel-routes/camel-routes-overview',
-            'integration-manager/camel-routes/camel-route-local',
-            'integration-manager/camel-routes/camel-route-aws',
-            'integration-manager/camel-routes/camel-route-azure',
-            'integration-manager/camel-routes/camel-route-google',
-            'integration-manager/camel-routes/camel-history-management',
+            'integration-manager/file-listener/file-listener-overview',
+            'integration-manager/file-listener/file-listener-local',
+            'integration-manager/file-listener/file-listener-aws',
+            'integration-manager/file-listener/file-listener-azure',
+            'integration-manager/file-listener/file-listener-google',
+            'integration-manager/file-listener/file-listener-history-management',
               ]
         },
         'integration-manager/admin/workload-management',
@@ -213,6 +213,18 @@ const sidebars = {
             'integration-agent/on-prem-data/accessing-on-premise-storage',
             'integration-agent/on-prem-data/connecting-to-ms-sql-server',
           ]
+        },
+        {
+          type: 'category',
+          label: 'File Listener Services',
+          items: [
+            'integration-manager/file-listener/file-listener-overview',
+            'integration-manager/file-listener/file-listener-local',
+            'integration-manager/file-listener/file-listener-aws',
+            'integration-manager/file-listener/file-listener-azure',
+            'integration-manager/file-listener/file-listener-google',
+            'integration-manager/file-listener/file-listener-history-management',
+              ]
         },
         {
           type: 'category',

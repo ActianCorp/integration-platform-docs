@@ -5,37 +5,37 @@ title: Release Notes
 
 ### 3.2.0
 
-| Issue&nbsp;Type | Issue&nbsp;Key | Summary | Fix versions | Affects versions | Status |
+| Issue Type | Issue Key | Summary | Fix versions | Affects versions | Status |
 |:---|:---|:---|:---|:---|:---|
-| New&nbsp;Feature | IP-183 | Apply Macroset in a custom order. This allows the user to select n number of macrosets (global, user, custom macrosets) and to choose the order in which to apply the macrosets on a Template or Configuration. | 3.2.0 |  | Completed 
+| New Feature | IP-183 | Apply Macroset in a custom order. This allows the user to select n number of macrosets (global, user, custom macrosets) and to choose the order in which to apply the macrosets on a Template or Configuration. | 3.2.0 |  | Completed 
 | New Feature | IP-3662 | [Agent API to upload and install JDBC drivers](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Agents%20and%20Devices#/Agent/uploadDriverFile) | 3.2.0 |  | Completed |
 | New&nbsp;Feature | IP-4824 | [Macro API](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Configuration#/Job%20Config%20Macros/createJobConfigMacroFromFile) accepting a file as body to store as value | 3.2.0 |  | Completed |
 | New Feature | IP-5491 | Implement bulk actions for Active and Inactive users. This allows admins to activate or deactivate multiple users in a single action rather than one-by-one. | 3.2.0 |  | Completed |
 | New Feature | IP-6837 | Add abortedBy support to Jobs. This adds a stoppedBy property to JobResponse to track the user who issued a stop command. | 3.2.0 |  | Completed |
 | Bug Fix | IP-6858 | Agents should not be allowed to register with internal IP address. | 3.2.0 |  | Completed |
-| New Feature | IP-6995 | [Apache Camel XML Route Support](./integration-manager/camel-routes/camel-routes-overview.md) for Agent | 3.2.0 |  | Completed |
-| New Feature | IP-7039 | [Apache Camel XML Route Support](./integration-manager/camel-routes/camel-routes-overview.md) for Job Execution (on-prem use only) | 3.2.0 |  | Completed |
-| New Feature | IP-7221 | DataConnect 12.2.0-42 Engine | 3.2.0 |  | Completed |
+| New Feature | IP-6995 | [Apache Camel XML Route Support](./integration-manager/file-listener/file-listener-overview.md) for Agent | 3.2.0 |  | Completed |
+| New Feature | IP-7039 | [Apache Camel XML Route Support](./integration-manager/file-listener/file-listener-overview.md) for Job Execution (on-prem use only) | 3.2.0 |  | Completed |
+| New Feature | IP-7500 | DataConnect 12.2.0-65 Engine | 3.2.0 |  | Completed |
 
 
 ### 3.1.3
 
-| Issue&nbsp;Type | Issue&nbsp;Key | Summary | Fix versions | Affects versions | Status |
+| Issue Type | Issue Key | Summary | Fix versions | Affects versions | Status |
 |:---|:---|:---|:---|:---|:---|
-| New&nbsp;Feature | IP-622 | [Macrosets API](https://console.im.actiandatacloud.com/apidocs/#/MacroSets) to import, add, modify, export, and delete macrosets. | 3.1.3 |  | Completed |
+| New Feature | IP-622 | [Macrosets API](https://console.im.actiandatacloud.com/apidocs/#/MacroSets) to import, add, modify, export, and delete macrosets. | 3.1.3 |  | Completed |
 | New Feature | IP-6231 | [Job Config Tag API](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Configuration#/Job%20Config%20Tags). Provides means to set tags in a JobConfiguration which are then copied to the Jobs created from the configuration, and to list runs for a given integration by specifying tags in query parameters. | 3.1.3 |  | Completed |
 | New Feature | IP-6516 | DataConnect 12.1.0-38 Engine | 3.1.3 |  | Completed |
 | New Feature | IP-6587 | [Job Config Package API](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/Job/getJobPackage). Provides ability to download the .sqlite or .djar file for a given job run ID. | 3.1.3 |  | Completed |
 
 ### 3.1.2
 
-| Issue Type | Issue&nbsp;Key | Summary | Fix versions | Affects versions | Status |
+| Issue Type | Issue Key | Summary | Fix versions | Affects versions | Status |
 |:---|:---|:---|:---|:---|:---|
 | New&nbsp;Feature | IP-4259 | Job Execution Tag API | 3.1.2 |  | Completed |
 
 ### 3.1.1
 
-| Issue Type | Issue&nbsp;Key | Summary | Fix versions | Affects versions | Status |
+| Issue Type | Issue Key | Summary | Fix versions | Affects versions | Status |
 |:---|:---|:---|:---|:---|:---|
 | New Feature | IP-6089 | [Standalone Integration Package Execution](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/Job/runPackage) | 3.1.1 |  | Completed |
 | New Feature | IP-6164 | DataConnect 12.1.0-24 Engine | 3.1.1 |  | Completed |
@@ -47,7 +47,7 @@ title: Release Notes
 
 ### 3.1.0
 
-| Issue Type | Issue&nbsp;Key | Summary | Fix versions | Affects versions | Status |
+| Issue Type | Issue Key | Summary | Fix versions | Affects versions | Status |
 |:---|:---|:---|:---|:---|:---|
 | Known Issue | IP-6037 | Agent eagerly fetches Device Token | 3.1.1 | 3.1.0 | Open |
 | New Feature | IP-5473 | HCL Link Flow Executor Engine Support | 3.1.0 |  | Completed |
