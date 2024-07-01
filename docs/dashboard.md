@@ -6,7 +6,7 @@ The Dashboard provides data visualization charts that you can use to monitor the
 
 ![Dashboard](/img/Dashboard.png)
 
-## Widgets
+## WidgetsQQQ
 
 The following widgets are available on the Dashboard.
 
