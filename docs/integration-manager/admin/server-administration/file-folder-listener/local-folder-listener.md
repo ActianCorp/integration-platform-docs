@@ -18,7 +18,7 @@ The Local Folder Listener monitors file folders for files and will execute a pre
 
 **listeners.yml**
 
-`<ProgramDataDirectory>/Actian/FileFolderListener/conf/listeners.yml`.
+`<ProgramDataDirectory>/Actian/FileFolderListener/conf/listeners.yml`
 
 ### Example
 
