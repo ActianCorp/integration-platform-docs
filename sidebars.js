@@ -192,18 +192,18 @@ const sidebars = {
             'integration-manager/admin/application-property-reference/worker-properties',
           ]
         },
-        {
-          type: 'category',
-          label: 'File Listener Services',
-          items: [
-            'integration-manager/file-listener/file-listener-overview',
-            'integration-manager/file-listener/file-listener-local',
-            'integration-manager/file-listener/file-listener-aws',
-            'integration-manager/file-listener/file-listener-azure',
-            'integration-manager/file-listener/file-listener-google',
-            'integration-manager/file-listener/file-listener-history-management',
-              ]
-        },
+//        {
+//          type: 'category',
+//          label: 'File Listener Services',
+//          items: [
+//            'integration-manager/file-listener/file-listener-overview',
+//            'integration-manager/file-listener/file-listener-local',
+//            'integration-manager/file-listener/file-listener-aws',
+//            'integration-manager/file-listener/file-listener-azure',
+//            'integration-manager/file-listener/file-listener-google',
+//            'integration-manager/file-listener/file-listener-history-management',
+//              ]
+//        },
         'integration-manager/admin/workload-management',
         'integration-manager/admin/setup-job-notifications',
         'integration-manager/admin/server-troubleshooting',
