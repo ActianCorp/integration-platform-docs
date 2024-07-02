@@ -4,29 +4,17 @@ title: File Folder Listener Service
 
 # File Folder Listener Service
 
-
-
-
 The File Folder Listener Service is used to monitor file directories or cloud storage buckets/containers for new files.
 
+<!--
 :::note
 The File Folder Listener Service was deprecated in Integration Manager 3.2 and replaced with Camel DSL support. See [File Listener Services Overview](../../../file-listener/file-listener-overview).
-
-<font color="red">
-I added a File Folder Listener Service folder under Server Administration. How do we want to distinguish this from the Camel routes topics (not currently located under Server Administration), which use the same naming?
-</font>
-
-   ![](/img/TOC-Question.png)
-
 :::
+-->
 
 When a new file appears that matches your include/exclude criteria, the associated listener submits the file to a Job Configuration in Integration Manager. The file will be available to the specified integration process using the `$(LOCAL_JOB_SPEC_DIR)` macro at runtime. For example, a file named `Accounts.txt` will be available as `$(LOCAL_JOB_SPEC_DIR)Accounts.txt`.
 
-<font color="red">
-The existing docs state that the File Folder Listener Service is installed with Integration Manager. My latest install of IM 3.2 did not install this service. I've removed that statement and added these instructions for downloading and installing the service.
-</font>
-
-   ![](/img/FileFolderListener-Arch.png)
+![](/img/FileFolderListener-Arch.png)
 
 ## Installing the File Folder Listener Service
 
@@ -148,19 +136,4 @@ spring.servlet.multipart.file-size-threshold=100KB
 spring.servlet.multipart.location=${sharedDataPath}/tmp
 spring.servlet.multipart.max-file-size=100MB
 spring.servlet.multipart.max-request-size=100MB
-```
-
-<font color="red">
-If we do not recommend unlimited file size, should we just remove the example below?
-</font>
-
-For unlimited file size (not recommended, as results are subject to hardware or OS limitations, which could lead to unrecoverable data loss):
-
-```
-# MultipartFiles
-spring.servlet.multipart.enabled=true
-spring.servlet.multipart.file-size-threshold=100KB
-spring.servlet.multipart.location=${sharedDataPath}/tmp
-spring.servlet.multipart.max-file-size=-1
-spring.servlet.multipart.max-request-size=-1
 ```
