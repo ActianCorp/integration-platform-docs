@@ -75,7 +75,7 @@ Integration Manager uses the "queue" prefix properties in the `/conf/application
 :::
 
 :::note
-   Any change to application.properties requires a restart of the Integration Manager Service.
+   Any change to `application.properties` requires a restart of the Integration Manager Service.
 :::
 
 Here are example properties to connect Integration Manager to a RabbitMQ Server:
