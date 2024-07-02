@@ -54,7 +54,7 @@ My latest install of IM 3.2 did not install this service. I've removed that stat
 The File Folder Listener uses OAuth 2.0 Device Authorization (https://datatracker.ietf.org/doc/html/rfc8628) to securely connect to the Integration Manager API.
 
 :::caution[Important]
-We strongly recommend that you enable HTTPS for your Integration Manager server to protect your data across the wire. For more information, see [Enabling HTTPS](../security/enabling-https).
+We strongly recommend that you enable HTTPS for your Integration Manager server to protect your data across the wire. For more information, see [Enabling HTTPS](../../security/enabling-https).
 :::
 
 To authorize the File Folder Listener Service:
