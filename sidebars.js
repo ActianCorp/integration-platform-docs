@@ -163,6 +163,17 @@ const sidebars = {
             //'integration-manager/admin/server-administration/setup-kubernetes-on-prem',
             'integration-manager/admin/server-administration/server-upgrades',
             'integration-manager/admin/server-administration/integration-engines',
+            {
+              type: 'category',
+              label: 'File Folder Listener',
+              items: [
+                'integration-manager/admin/server-administration/file-folder-listener/file-folder-listener-service',
+                'integration-manager/admin/server-administration/file-folder-listener/local-folder-listener',
+                'integration-manager/admin/server-administration/file-folder-listener/aws-s3-bucket-listener',
+                'integration-manager/admin/server-administration/file-folder-listener/azure-blob-storage-listener',
+                'integration-manager/admin/server-administration/file-folder-listener/google-cloud-storage-listener',
+              ]
+            },
           ]
         },
         'integration-manager/admin/aggregator-service',
