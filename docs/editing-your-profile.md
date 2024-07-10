@@ -18,7 +18,7 @@ Users (admin and non-admin alike) are not allowed to change the username for the
 1. Enter a password in the **Password** textbox or select the **Auto-Generate Password** checkbox:
 
    ![](/img/Password.png)
-3. For non-admin users, click **Save**. For admin users, click **Continue**, then click **Update User**.
+3. Click **Update User**.
 
 ## Changing Your Password
 
