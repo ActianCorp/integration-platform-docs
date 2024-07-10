@@ -17,16 +17,7 @@ This service allows an API consumer to stage and load a file directly into a tar
 
 ## Step 1: Set an API Password
 
-If you have not already done so, you must set a password to enable API access.
-
-1. In Integration Manager or Actian Data Platform, click the profile dropdown in the upper right corner and select **Profile**:
-
-   ![](/img/profile-dropdown.png)
-2. In the **Password** field, enter a password manually or select **Auto-Generate Password**:
-
-   ![](/img/Password.png)
-3. Note your username and password for use in Step 4 below.
-4. Click **Update User**.
+If you have not already done so, you must set a password to enable API access. See [Setting Your Password](../../editing-your-profile#setting-your-password).
 
 ## Step 2: Locate Your Warehouse Details
 
