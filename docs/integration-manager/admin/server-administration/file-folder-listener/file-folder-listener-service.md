@@ -24,24 +24,39 @@ When a new file appears that matches your include/exclude criteria, the associat
 
    ![](/img/FileFolderListener-ESD.png)
 4. Run the installer.
-5. A Windows service is registered with the name Actian File Folder Listener and must be started manually after configuration is complete.
+5. A Windows service is registered with the name **Actian File Folder Listener** and must be started manually after configuration is complete.
 
 ## Configuring the File Folder Listener Service
 
-### Prerequisites
+:::note
+Integration Manager must be installed, configured, and running.
+:::
 
-* Integration Manager must be installed, configured, and running.
+To configure the File Folder Listener, do the following:
 
-### Basic Configuration
+1. Configure the following properties in `<ProgramDataDirectory>\Actian\FileFolderListener\conf\application.properties`:
 
-**application.properties**
+   | <div style={{width: 220}}>Property</div> | Description|
+   | :--- | :--- |
+   | `listener.backup-directory` | The folder where backups of successfully submitted files are stored |
+   | `listener.error-directory` | The folder where copies of failed file submissions are stored, such as when max file size was exceeded, the Integration Manager Service was not running, etc. |
 
-`<ProgramDataDirectory>\Actian\FileFolderListener\conf\application.properties`.
+2. If desired, you can add these advanced configuration properties to further customize behavior:
 
-| Property | Description|
-| :--- | :--- |
-| `listener.backup- directory` | The folder where backups of successfully submitted files are stored |
-| `listener.error- directory` | The folder where copies of failed file submissions are stored, for example, Exceeded max file size, Integration Manager Service was not running, and so on |
+   | <div style={{width: 330}}>Property</div> | Description | Default |
+   | :--- | :--- | :--- |
+   | `listener.retain-backup-files` | Set this to false to not retain backup files. Error files will still be saved. | `true` |
+   | `listener.backup-directory-max-file-age` | The number of days backup files are retained | `7` |
+   | `listener.error-directory-max-file-age` | The number of days error files are retained | `14` |
+
+3. Authorize the File Folder Listener Service as described below.
+4. Configure the `listeners.yaml` file for the listener you want to configure. Refer to the following links:
+
+   * [Local Folder Listener](./local-folder-listener)
+   * [AWS S3 Bucket Listener](./aws-s3-bucket-listener)
+   * [Azure Blob Storage Listener](./azure-blob-storage-listener)
+   * [Google Cloud Storage Listener](./google-cloud-storage-listener)
+5. Start the Actian File Folder Listener service (**Windows** → **Services** → **Actian File Folder Listener**).
 
 ## Authorizing the File Folder Listener Service
 
@@ -53,7 +68,7 @@ We strongly recommend that you enable HTTPS for your Integration Manager server 
 
 To authorize the File Folder Listener Service:
 
-1. Determine your Integration Manager API base URL, for example:
+1. Determine your Integration Manager API base URL. For example:
    * `http://im-server-hostname.company.net:8080/api`
    * `https://im-server-hostname.company.net:443/api`
 2. Open a browser window.
@@ -62,14 +77,10 @@ To authorize the File Folder Listener Service:
     ```
     <im-api-base-url>/device/code?client_id=file-folder-listener&host=<file-folder-listener-hostname>
     ```
+
     For example:
-
-    ```
-    http://im-server-hostname.company.net:8080/api/device/code?client_id=file-folder-listener&host=file-folder-listener-hostname.company.net
-
-    
-    https://im-server-hostname.company.net:443/api/device/code?client_id=file-folder-listener&host=file-folder-listener-hostname.company.net
-    ```
+      * `http://im-server-hostname.company.net:8080/api/device/code?client_id=file-folder-listener&host=file-folder-listener-hostname.company.net`
+      * `https://im-server-hostname.company.net:443/api/device/code?client_id=file-folder-listener&host=file-folder-listener-hostname.company.net`
 
     :::note
       By default, the *file-folder-listener-hostname* and *im-server-hostname* are installed on the same machine, but they don't have to be.
@@ -90,7 +101,7 @@ To authorize the File Folder Listener Service:
        }
     }
    ```
-5. Since you are already authenticated, simply click the device approval URL for “verification_uri_complete.”
+5. Since you are already authenticated, simply click the device approval URL for “verification_uri_complete”.
    
    Response should look like:
    ```
@@ -103,25 +114,6 @@ To authorize the File Folder Listener Service:
    ```
 
 6. In the `<ProgramDataDirectory>\Actian\FileFolderListener\conf\application.properties` file, delete any duplicate entries and then copy and paste the response into the file.
-   
-## Platform Listener Configurations
-
-Follow the appropriate link for the listener you want to configure:
-
-* [Local Folder Listener](./local-folder-listener)
-* [AWS S3 Bucket Listener](./aws-s3-bucket-listener)
-* [Azure Blob Storage Listener](./azure-blob-storage-listener)
-* [Google Cloud Storage Listener](./google-cloud-storage-listener)
-
-## Advanced Configuration Properties
-
-You can add these properties to `<ProgramDataDirectory>\Actian\FileFolderListener\conf\application.properties` to further customize behavior.
-
-| <div style={{width: 220}}>Property</div> | Description | Default |
-| :--- | :--- | :--- |
-| `listener.retain-backup-files` | Set this to false to not retain backup files. Error files will still be saved. | `true` |
-| `listener.backup-directory-max-file-age` | The number of days backup files are retained | `7` |
-| `listener.error-directory-max-file-age` | The number of days error files are retained | `14` |
 
 ## File Size Configuration and Limitations
 
