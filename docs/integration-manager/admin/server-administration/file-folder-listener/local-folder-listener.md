@@ -1,7 +1,5 @@
 ---
 title: Local Folder Listener
-tags:
- - Content Issues
 ---
 # Local Folder Listener
 
