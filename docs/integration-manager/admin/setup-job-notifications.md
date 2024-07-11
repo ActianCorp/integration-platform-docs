@@ -12,7 +12,7 @@ This feature requires access to an external SMTP server in order to deliver the 
 
 To configure Integration Manager notification properties:
 
-1. Enable Integration Manager to connect to your SMTP server and format the notifications by adding the following entries to your application.properties file:
+1. Enable Integration Manager to connect to your SMTP server and format the notifications by adding the following entries to your `application.properties` file:
 
     ```
     # SMTP Connection Info
@@ -25,7 +25,8 @@ To configure Integration Manager notification properties:
     # Job Notifications Config
     notifications.enabled=true
     notifications.mailFrom=noreply@yourcompanydomain.com
-    notifications.mailTo=admin@yourcompanydomain.com,finance@yourcompanydomain.com    notifications.attachLogs=true
+    notifications.mailTo=admin@yourcompanydomain.com,finance@yourcompanydomain.com
+    notifications.attachLogs=true
     ```
     
 2. Restart the Integration Manager service.
