@@ -59,6 +59,7 @@ const sidebars = {
             'integration-manager/jobs/viewing-job-run-history',
             'integration-manager/jobs/job-status-codes',
             'integration-manager/jobs/downloading-the-log-file',
+            'integration-manager/jobs/subscribing-to-job-notifications',
               ]
         },
         {

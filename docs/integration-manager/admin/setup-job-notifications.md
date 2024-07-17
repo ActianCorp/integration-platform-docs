@@ -1,8 +1,8 @@
 ---
-title: Job Notifications
+title: Configuring Job Notifications
 ---
 
-# Job Notifications
+# Configuring Job Notifications
 
 Integration Manager has the capability of sending email notifications for certain job completion events (not currently available for DataCloud SaaS accounts).
 
