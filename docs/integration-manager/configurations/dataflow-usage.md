@@ -53,7 +53,7 @@ To learn more about creating DataFlow applications, see the <a href="https://doc
 
 5. You can also take advantage of two special Integration Manager variables within your macro values:
     * `$(LOCAL_JOB_SPEC_DIR)` - This will resolve to the runtime working directory where your RushScript and additional files are located.
-    * `$(LOCAL_JOB_OUT_DIR)` - This will resolve to the runtime output directory if you need to retrieve output files. Any files written to this location will be available at: `{api_url}/jobs/{job-id}/out` after the job has completed.
+    * `$(LOCAL_JOB_OUT_DIR)` - This will resolve to the runtime output directory if you need to retrieve output files. Any files written to this location will be available at `{api_url}/jobs/{job-id}/out` after the job has completed.
 
 ## Java Application (.jar) Setup
 
