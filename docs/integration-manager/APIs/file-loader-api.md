@@ -40,17 +40,12 @@ Go to the file loader API page for your warehouse region:
     | Cloud | Region | Functional File Loader API Page |
     | :--- | :--- |:--- |
     | AWS | US - Ohio | https://fileloader.us-east-2.aws.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
-    | AWS | US - Oregon | https://fileloader.us-west-2.aws.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
     | AWS | EU - Frankfurt | https://fileloader.eu-central-1.aws.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
     | AWS | EU - Ireland | https://fileloader.eu-west-1.aws.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
     | AWS | EU - London | https://fileloader.eu-west-2.aws.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
-    | AWS | AP - Mumbai | https://fileloader.ap-south-1.aws.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
-    | AWS | SA - Sao Paulo | https://fileloader.sa-east-1.aws.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
-    | Azure | US - Washington | https://fileloader.westus2.azure.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
     | Azure | US - Virginia | https://fileloader.eastus2.azure.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
     | Azure | EU - Ireland | https://fileloader.northeurope.azure.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
     | Azure | UK - London | https://fileloader.uksouth.azure.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
-    | Azure | AP - Pune | https://fileloader.centralindia.azure.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
     | Azure | EU - Germany | https://fileloader.germanywestcentral.azure.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
     | GCP | US - South Carolina | https://fileloader-av-gc-prod-2.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
     | GCP | UK - London | https://fileloader-avprddp-190.avprod.actiandatacloud.com/apidocs/swagger-ui/index.html#/ |
