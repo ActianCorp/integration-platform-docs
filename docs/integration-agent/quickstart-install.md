@@ -150,12 +150,13 @@ You can download the Actian Integration Agent installer from either the **Agents
 
 ### Installation
 
-1. Locate downloaded rpm file (`integration-agent-3.x.x.noarch.rpm`).
+1. Locate the downloaded rpm file (`integration-agent-3.x.x.noarch.rpm`).
 2. Switch to root user: `sudo su`
-3. Install rpm with yum: `yum install integration-agent-3.x.x.noarch.rpm`
-4. Confirm installation path (default: `/opt/actian/integration-agent`).
-5. Confirm shared data path (default: `/etc/opt/actian/integration-agent)`).
-6. Installation should take less than a minute.
+3. The libnsl library required by DataConnect was removed from the base install of RedHat starting with RedHat 8.1. If you are running a version of RedHat or Amazon Linux that does not include the libnsl library, run the following command: `yum install libnsl`.
+4. Install rpm with yum: `yum install integration-agent-3.x.x.noarch.rpm`
+5. Confirm the installation path (default: `/opt/actian/integration-agent`).
+6. Confirm the shared data path (default: `/etc/opt/actian/integration-agent)`).
+7. Installation should take less than a minute.
 
 ### Registration
 
