@@ -58,7 +58,7 @@ This example shows how to configure Integration Manager to use the Gmail SMTP se
         notification.attachLogs=true
         spring.mail.host=smtp.gmail.com
         spring.mail.username=some.user<span>@</span>gmail.com
-        spring.mail.password=<b>abcd efgh ijkl mnop</b> # Google App Password, not Gmail Password
+        spring.mail.password=<font className="codeHighlight">abcd efgh ijkl mnop</font> # Google App Password, not Gmail Password
         spring.mail.properties.mail.transport.protocol=smtp
         spring.mail.properties.mail.smtp.port=587
         spring.mail.properties.mail.smtp.auth=true
