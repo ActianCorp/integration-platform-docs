@@ -34,10 +34,10 @@ Integration Manager is compatible with Apache ZooKeeper 3.6.3 in Standalone Oper
 
 ## Integration Manager Configuration
 
-Integration Manager uses the "zookeeper" prefix properties in the `/conf/application.properties` file to connect to a ZooKeeper Standalone or Ensemble deployment.
+Integration Manager uses the "zookeeper" prefix properties in the `application.properties` file to connect to a ZooKeeper Standalone or Ensemble deployment.
 
 :::note
-   Any change to application.properties requires a restart of the Integration Manager Service.
+   Any change to `application.properties` requires a restart of the Integration Manager Service.
 :::
 
 Here are some example properties to connect Integration Manager to a ZooKeeper deployment:

@@ -85,6 +85,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      prism: {
+        additionalLanguages: ['powershell'],
+      },
       algolia: {
         // The application ID provided by Algolia
         appId: 'DJTQI8DCNE',

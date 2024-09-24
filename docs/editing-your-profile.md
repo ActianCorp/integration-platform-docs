@@ -4,21 +4,39 @@ title: Editing Your Profile
 
 # Editing Your Profile
 
+The **My Profile** page enables you to set the password you use to login to the Actian platform and to authenticate for direct API access.
+
 :::note
-* Non-admin users can edit their own profile information and password.
-* Users (admin and non-admin alike) are not allowed to set themselves to Active or Inactive, or to enable/disable admin access for themselves.
+Users (admin and non-admin alike) are not allowed to change the username for themselves or others.
 :::
 
-To edit your profile:
+## Setting Your Password
 
-1. Click the profile dropdown in the upper right corner and selecting **Profile**:
+1. Click the profile dropdown in the upper right corner and select **Profile**:
 
    ![Profile Dropdown](/img/profile-dropdown.png)
-2. To set or change your password, enter a password in the **Password** textbox or select the **Auto-Generate Password** checkbox:
+1. Enter a password in the **Password** textbox or select the **Auto-Generate Password** checkbox:
 
    ![](/img/Password.png)
+3. Click **Update User**.
 
-   :::note[Notes]
-      * You must enter at least 8 characters for your password.
-      * The password set on the **My Profile** page enables you to login to Integration Manager using a username and password, and is also the password used to authorize API access.
-   :::
+## Changing Your Password
+
+:::note
+Changing your password will not change your Actian Community login password.
+:::
+
+1. Click the profile dropdown in the upper right corner and select **Profile**:
+
+   ![Profile Dropdown](/img/profile-dropdown.png)
+2. Click **Change Password**:
+
+   ![](/img/Change-Password1.png)
+
+   The **Change Password** dialog is displayed:
+   
+      ![](/img/Change-Password2.png)
+3. Enter your existing password in the **Old Password** field
+4. Enter a new password in the **New Password** field or click <img src="/img/icons/generate.png" className="icon" alt="the Auto-Generate Password icon"/> to auto-generate a password.
+5. Enter the new password again in the **Confirm Password** field.
+6. Click **Save**.

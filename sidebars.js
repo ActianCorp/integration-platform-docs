@@ -59,6 +59,7 @@ const sidebars = {
             'integration-manager/jobs/viewing-job-run-history',
             'integration-manager/jobs/job-status-codes',
             'integration-manager/jobs/downloading-the-log-file',
+            'integration-manager/jobs/subscribing-to-job-notifications',
               ]
         },
         {
@@ -129,6 +130,7 @@ const sidebars = {
           type: 'category',
           label: 'Configuring Security',
           items: [
+            'integration-manager/admin/security/encryption-keystores',
             'integration-manager/admin/security/enabling-https',
             'integration-manager/admin/security/encryption-at-rest',
             'integration-manager/admin/security/access-token-signatures',
@@ -163,6 +165,17 @@ const sidebars = {
             //'integration-manager/admin/server-administration/setup-kubernetes-on-prem',
             'integration-manager/admin/server-administration/server-upgrades',
             'integration-manager/admin/server-administration/integration-engines',
+            {
+              type: 'category',
+              label: 'File Folder Listener',
+              items: [
+                'integration-manager/admin/server-administration/file-folder-listener/file-folder-listener-service',
+                'integration-manager/admin/server-administration/file-folder-listener/local-folder-listener',
+                'integration-manager/admin/server-administration/file-folder-listener/aws-s3-bucket-listener',
+                'integration-manager/admin/server-administration/file-folder-listener/azure-blob-storage-listener',
+                'integration-manager/admin/server-administration/file-folder-listener/google-cloud-storage-listener',
+              ]
+            },
           ]
         },
         'integration-manager/admin/aggregator-service',
@@ -181,18 +194,18 @@ const sidebars = {
             'integration-manager/admin/application-property-reference/worker-properties',
           ]
         },
-        {
-          type: 'category',
-          label: 'File Listener Services',
-          items: [
-            'integration-manager/file-listener/file-listener-overview',
-            'integration-manager/file-listener/file-listener-local',
-            'integration-manager/file-listener/file-listener-aws',
-            'integration-manager/file-listener/file-listener-azure',
-            'integration-manager/file-listener/file-listener-google',
-            'integration-manager/file-listener/file-listener-history-management',
-              ]
-        },
+//        {
+//          type: 'category',
+//          label: 'File Listener Services',
+//          items: [
+//            'integration-manager/file-listener/file-listener-overview',
+//            'integration-manager/file-listener/file-listener-local',
+//            'integration-manager/file-listener/file-listener-aws',
+//            'integration-manager/file-listener/file-listener-azure',
+//            'integration-manager/file-listener/file-listener-google',
+//            'integration-manager/file-listener/file-listener-history-management',
+//              ]
+//        },
         'integration-manager/admin/workload-management',
         'integration-manager/admin/setup-job-notifications',
         'integration-manager/admin/server-troubleshooting',

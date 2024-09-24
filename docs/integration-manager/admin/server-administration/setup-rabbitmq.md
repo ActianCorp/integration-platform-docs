@@ -36,7 +36,7 @@ Steps 1-4 are for Windows installation only. For Linux instructions, please see 
 ## Step 3: Verify RabbitMQ Service
 
 1. Go to **Windows** → **Services**.
-2. Confirm RabbitMQ service is registered and running.
+2. Confirm that the RabbitMQ service is registered and running.
 
 ## Step 4: Configure RabbitMQ Console
 
@@ -48,9 +48,11 @@ Steps 1-4 are for Windows installation only. For Linux instructions, please see 
     ```
 3. Enable the rabbitmq_management plugin: 
    
-   `.\rabbitmq-plugins enable rabbitmq_management`
+   ```
+   .\rabbitmq-plugins enable rabbitmq_management
+   ```
 
-   ![](/img/rabbitmq_1.png)
+   ![](/img/rabbitmq_enable.png)
 
 If you have any issues with the installation, please refer to the official RabbitMQ documentation: [https://www.rabbitmq.com/install-windows.html](https://www.rabbitmq.com/install-windows.html).
 
@@ -64,7 +66,19 @@ If you have any issues with the installation, please refer to the official Rabbi
 4. Click the **Admin** tab.
 5. Click **Add a user**.
 6. Add credentials for Integration Manager (username/password).
-7. Add the "Admin" tag to the user.
+7. Click the **Admin** tag. This adds **administrator** to the **Tags** field:
+
+   ![](/img/rabbitmq_admin.png)
+8. Click **Add user**.
+9. The user is added with no access to virtual hosts. Click the username:
+
+   ![](/img/rabbitmq_user.png)
+10. Click **Set permission** to grant access to virtual hosts:
+
+    ![](/img/rabbitmq_set_permission.png)
+11. The user now has access to virtual hosts:
+
+    ![](/img/rabbitmq_permission_granted.png)
 
 ## Step 6: Configure Integration Manager Queue Properties
 
@@ -75,7 +89,7 @@ Integration Manager uses the "queue" prefix properties in the `/conf/application
 :::
 
 :::note
-   Any change to application.properties requires a restart of the Integration Manager Service.
+   Any change to `application.properties` requires a restart of the Integration Manager Service.
 :::
 
 Here are example properties to connect Integration Manager to a RabbitMQ Server:

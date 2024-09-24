@@ -63,9 +63,7 @@ Contact your Certificate Authority with any specific questions/concerns/issues y
 ### Option B: Create and Import a Self-Signed Certificate
 
 :::caution
-
 Self-signed certs should not be used in production environments!
-
 :::
 
 1. Open a command console and change directory to the JRE bin folder.
@@ -90,7 +88,7 @@ Note the following:
 * Any change to application.properties requires a restart of the Integration Manager Service.
 * It is always best practice to make sure you do not have duplicate properties in your file.
 
-Add the following to application.properties. You can use whatever alias and filename you choose. In this example, we are using "integration-manager" and "keystore.p12", respectively.
+Add the following to `application.properties`. You can use whatever alias and filename you choose. In this example, we are using "integration-manager" and "keystore.p12", respectively.
 
 ```
 # Enable SSL

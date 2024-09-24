@@ -20,25 +20,25 @@ You can increase Worker concurrency and/or add additional Workers to meet your w
 
 ## Configuring Distributed Integration Manager Core
 
-Integration Manager has only one mandatory property change in ../conf/application.properties file to distribute the core components:
+Integration Manager has only one mandatory property change in the  `application.properties` file to distribute the core components:
 
 `worker.embedded=false`
 
 :::note
-Any change to application.properties requires a restart of the Integration Manager Service.
+Any change to `application.properties` requires a restart of the Integration Manager Service.
 :::
 
 ## Configuring Distributed Integration Manager Worker
 
 To configure Integration Manager Worker:
 
-1. Download and install the Integration Worker software from Actian ESD / Integration Manager / 3.0 / Integration Manager Worker (https://esd.actian.com/).
+1. Download and install the Integration Worker installer from Actian ESD under the Integration Manager section for your version at https://esd.actian.com.
+   
       :::note
-
          The default Worker installation is already setup for distributed use, you only need to supply the "queue" connection properties for your RabbitMQ installation
       :::
 
-2. Configure the worker-specific "queue" properties in `ProgramData\Actian\**Worker**\conf\application.properties` file
+2. Configure the worker-specific "queue" properties in the ProgramData\Actian\\**Worker**\conf\application.properties file
       :::note
          Both Integration Manager *and* Integration Worker require "queue" connection properties. (You can use different credentials for each if you so choose.)
       :::
