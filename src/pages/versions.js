@@ -26,7 +26,7 @@ function Version() {
           <table>
             <tbody>
             <tr>
-                  <th>3.2</th>
+                  <th>3.3</th>
                   <td>
                   <a href={`./docs`}>
                       Documentation
@@ -42,28 +42,28 @@ function Version() {
           </table>
         </div>
 
-{/*         <div className="margin-bottom--lg">
-          <h3 id="archive">Previous Versions (No longer maintained)</h3>
+         <div className="margin-bottom--lg">
+          <h2 id="archive">Previous Versions (No longer maintained)</h2>
           <table>
             <tbody>
                 <tr>
-                  <th>3.0</th>
+                  <th>3.2</th>
                   <td>
-                  <a href={`/3.0`}>
+                  <a href={`/3.2`}>
                       Documentation
                     </a>
                   </td>
                   <td>
-                    <a href={`3.0/release-notes`}>
+                    <a href={`3.2/release-notes`}>
                       Release Notes
                     </a>
                   </td>
                 </tr>                
             </tbody>
           </table>
-        </div> */}
+        </div>
 
-        <h2>Previous Versions</h2>
+        <h2>Versions Prior to 3.2</h2>
           <p>Documentation for Integration Platform releases prior to version 3.2 has not been migrated to the new documentation platform.<br />Documentation for older releases can be found <a href={`https://docs.actian.com/#page/Welcome/Welcome_to_the_Actian_Documentation_Portal.htm`} target='_blank'>here</a>.</p>
       </main>
     </Layout>

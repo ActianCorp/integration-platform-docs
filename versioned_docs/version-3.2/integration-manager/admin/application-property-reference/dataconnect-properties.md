@@ -14,6 +14,5 @@ Refer to the following table for available DataConnect properties:
 | `engine.localEngineInstallPath` | Location of the DataConnect engine installation | `${sharedDataPath}/di-standalone-engine/runtime/di9` |
 | `engine.localEngineListenerPort` | Port used to communicate with the DataConnect engine remotely | `4999` |
 | `engine.jvmArgs` | Additional JVM arguments applied when starting a new DataConnect Engine | — |
-| `engine.useLegacyTimestamps` | When set to `true`, legacy log timestamps are enabled, resulting in a time format such as `Oct 1st 2024 at 12:17:17 pm`. When set to `false` (or omitted), the ISO 8601 timestamp format is used, such as `2024-10-01T12:17:17.351+0530`| `false` |
 
 
