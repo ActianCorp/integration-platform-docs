@@ -50,11 +50,13 @@ Go to the file loader API page for your warehouse region:
 
 ## Step 4: Authorize Your Browser
 
+:::caution[Warning]
+Browser authorization is not suitable for automating API tasks. If you plan to automate calls to File Loader, you must retrieve access tokens via the [Login API](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Accounts%20and%20Users#/%40Login/login).
+:::
+
 :::note[Notes]
 * Tokens are good for up to 10 hrs.
 * You will need to authorize different regions separately.
-* Browser authorization is not suitable for automating API tasks. If you plan to automate calls to File Loader, you must retrieve access tokens via the [Login API](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Accounts%20and%20Users#/%40Login/login).
-
 
 :::
 
