@@ -15,12 +15,12 @@ Automatic job history management works only if you are storing history in a “l
 
 To configure Integration Manager job history properties:
 
-1. Add the following entries to your `application.properties` file, replacing `<max days>` with the maximum number of days of history to store, and replacing `<max jobs>` with the maximum number of records to store:
+1. Add the following entries to your `application.properties` file, replacing `<max-days>` with the maximum number of days of history to store, and replacing `<max-jobs>` with the maximum number of records to store:
 
     ```
    repository.storage-type=local
-   job.history.max-job-age=<max days>
-   job.history.max-job-count=<max jobs>
+   job.history.max-job-age=<max-days>
+   job.history.max-job-count=<max-jobs>
     ```
 
    For example, you could set the job history cutoff at 90 days and a maximum of 150,000 records. In this scenario, Integration Manager will remove the greater number of records exceeding either threshold:
