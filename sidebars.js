@@ -209,6 +209,7 @@ const sidebars = {
 //        },
         'integration-manager/admin/workload-management',
         'integration-manager/admin/setup-job-notifications',
+        'integration-manager/admin/managing-job-execution-history',
         'integration-manager/admin/server-troubleshooting',
       ]
     },
