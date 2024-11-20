@@ -10,7 +10,7 @@ Run Location specifies which engine to use when executing a Job Config. Run Loca
 
 * **Default**: The default run location used when a specific worker or agent has not been selected. When creating a new Job Config or Job Template, the Run Location is **Default**. The Default is mapped to a destinationId (i.e., worker) by backend logic and the job will be executed on the same worker. If any specific destinationId is configured for a specific user account then that destinationId will be used when executing the job.
 * **Inherited**: When a Job Config is associated with a base Job Template, the Run Location is set to **Inherited** and the Job Config inherits the Run Location from the parent Job Template.  
-* **User Agent**: The agent registered by the user.
+* **User Agent**: The agent currently registered by the user.
 * **Remote Worker (Destination)**: The remote cloud worker (AWS, Azure, GCP).
 * **Agent [hostname]**: A specific agent. Note that a user may not see agents registered by other users, depending on the access control policy.
 
