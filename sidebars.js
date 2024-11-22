@@ -47,6 +47,7 @@ const sidebars = {
             'integration-manager/configurations/importing-configuration-macros',
             'integration-manager/configurations/managing-configuration-files',
             'integration-manager/configurations/running-configurations',
+            'integration-manager/configurations/run-location',
             'integration-manager/configurations/editing-configuration-schedules',
             'integration-manager/configurations/serialized-job-queues',
             'integration-manager/configurations/dataflow-usage',
