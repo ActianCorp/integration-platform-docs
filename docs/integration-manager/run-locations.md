@@ -14,7 +14,7 @@ The Run Location specifies which engine to use when executing a JobConfig. Run L
 * **Static Run Location (Destination, Agent)** (JobConfigs, JobTemplates): Specifies the exact destination or agent used for job execution.
 
 :::note
-* Admin users can see a list of registered agents from the same account or a list of agents assigned as per the access policy. See [Access Control Policies](../admin/access-control/access-control-polices).
+* Admin users can see a list of registered agents from the same account or a list of agents assigned as per the access policy. See [Access Control Policies](./admin/access-control/access-control-polices).
 * Non-admin users can only see their own registered agent and a list of agents assigned as per the access control policy.
 :::
 
