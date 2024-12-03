@@ -5,8 +5,9 @@ title: Running Configurations
 
 Configurations can be run manually or on a schedule. An integration is executed when you run an associated configuration. When completed, runtime metrics will be available for review. 
 
-:::note
-To run a configuration, it must be in the Active state. See [Activating or Inactivating Configurations](./activating-or-inactivating-configurations).
+:::note[Notes]
+* To run a configuration, it must be in the Active state. See [Activating or Inactivating Configurations](./activating-or-inactivating-configurations).
+* The engine used to execute a configuration is defined by the [Run Location](../run-locations).
 :::
 
 ## Running a Configuration Manually
