@@ -47,21 +47,10 @@ const sidebars = {
             'integration-manager/configurations/importing-configuration-macros',
             'integration-manager/configurations/managing-configuration-files',
             'integration-manager/configurations/running-configurations',
-            'integration-manager/configurations/run-location',
             'integration-manager/configurations/editing-configuration-schedules',
             'integration-manager/configurations/serialized-job-queues',
             'integration-manager/configurations/dataflow-usage',
           ]
-        },
-        {
-          type: 'category',
-          label: 'Jobs',
-          items: [
-            'integration-manager/jobs/viewing-job-run-history',
-            'integration-manager/jobs/job-status-codes',
-            'integration-manager/jobs/downloading-the-log-file',
-            'integration-manager/jobs/subscribing-to-job-notifications',
-              ]
         },
         {
           type: 'category',
@@ -75,6 +64,17 @@ const sidebars = {
             'integration-manager/templates/managing-template-files',
             'integration-manager/templates/managing-template-configurations',
           ]
+        },
+        'integration-manager/run-locations',
+        {
+          type: 'category',
+          label: 'Jobs',
+          items: [
+            'integration-manager/jobs/viewing-job-run-history',
+            'integration-manager/jobs/job-status-codes',
+            'integration-manager/jobs/downloading-the-log-file',
+            'integration-manager/jobs/subscribing-to-job-notifications',
+              ]
         },
         {
           type: 'category',
