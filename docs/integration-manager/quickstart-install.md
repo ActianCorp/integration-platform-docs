@@ -92,7 +92,7 @@ To uninstall Integration Manager, execute `uninstaller.exe` in the program direc
 1. Linux Operating System
    * Red Hat Enterprise Linux 7.9 and 8 (64-bit U.S. English edition)
    * GTK Version 3. To check your GTK version, run the command `yum info gtk3`. If you do not have GTK installed or your GTK version is below version 3, run the command `sudo yum install gtk3`.
-   * You need to install libnsl.so.1 separately on RHEL 8.1 or above versions.
+   * You need to install libnsl.so.1 separately on RHEL 8.1 or above versions. Run the command `sudo yum install libnsl`.
    * Linux user account with sudo privileges
 2. 64-bit processor, 2.90GHz
 3. 16 GB Installed memory (RAM)
