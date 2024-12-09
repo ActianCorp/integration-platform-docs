@@ -116,8 +116,6 @@ Log file data will survive uninstallation/reinstallation.
 
 1. Linux
    * Red Hat Enterprise Linux 7.9 and 8 (64-bit U.S. English edition)
-   * GTK Version 3. To check your GTK version, run the command `yum info gtk3`. If you do not have GTK installed or your GTK version is below version 3, run the command `sudo yum install gtk3`.
-   * You need to install libnsl.so.1 separately on RHEL 8.1 or above versions. Run the command `sudo yum install libnsl`.
    * Linux user account with sudo privileges
 2. 64-bit processor, 2.90GHz
 3. 8 GB Installed memory (RAM)
@@ -153,6 +151,7 @@ You can download the Actian Integration Agent installer from either the **Agents
 1. Locate the downloaded rpm file (`integration-agent-3.x.x.noarch.rpm`).
 2. Switch to root user: `sudo su`
 3. The libnsl library required by DataConnect was removed from the base install of RedHat starting with RedHat 8.1. If you are running a version of RedHat or Amazon Linux that does not include the libnsl library, run the following command: `yum install libnsl`.
+5. Ensure that you have GTK Version 3 installed. To check your GTK version, run the command `yum info gtk3`. If you do not have GTK installed or your GTK version is below version 3, run the command `yum install gtk3`.
 4. Install rpm with yum: `yum install integration-agent-3.x.x.noarch.rpm`
 5. Confirm the installation path (default: `/opt/actian/integration-agent`).
 6. Confirm the shared data path (default: `/etc/opt/actian/integration-agent)`).

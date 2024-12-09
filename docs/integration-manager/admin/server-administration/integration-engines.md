@@ -13,6 +13,7 @@ Integration Manager has the capability to leverage different Actian Integration 
 | 3.1.2				  | 12.1.0-24   | 8.0.0-98 |
 | 3.1.3				  | 12.1.0-38   | 8.0.0-98 |
 | 3.2.0				  | 12.2.0-42   | 8.0.0-98 |
+| 3.3.0				  | 12.3.0-43   | 8.1.0-148 |
 
 Sometimes it is necessary to patch one or more deployed engines between Integration Manager releases.
 
