@@ -9,7 +9,7 @@ title: Run Locations
 The Run Location specifies which engine to use when executing a JobConfig. Run Location can be one of the following: 
 
 * **Default** (JobConfigs, JobTemplates): The default run location used when a specific destination or agent has not been selected for a JobConfig or JobTemplate. 
-* **Inherited** (JobConfigs): The JobConfig uses whatever Run Location is specified in the parent JobTemplate, which could be Default, User Agent, or a specific agent or destination.
+* **Inherited** (JobConfigs): The JobConfig uses whatever Run Location is specified in the parent JobTemplate, which could be Default, User Agent, or a specific run location (destination or agent).
 * **User Agent** (JobTemplates): Any JobConfigs based on a parent template that specifies **User Agent** as the Run Location will use the agent associated with the owner of the JobConfig.
 * **Specific Run Location (Destination, Agent)** (JobConfigs, JobTemplates): Specifies the exact destination or agent used for job execution.
 
