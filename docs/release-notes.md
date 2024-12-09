@@ -11,7 +11,8 @@ title: Release Notes
 | New Feature | IP-7252 | Remove Agent-User Tethering. This removes the 1:1 restriction between a user and an agent, thereby allowing an admin to register multiple agents. Admins can see all agents, users can only see agents they have registered. Agent hostname must still be globally unique.| 3.3.0 |  | Completed |
 | New Feature | IP-7283 | Timestamp ZoneOffset for [log file API](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/Job/getJobLog) | 3.3.0 |  | Completed |
 | New Feature | IP-7682 | Add optional `engine.useLegacyTimestamps` property to enable legacy log timestamps. See [DataConnect Properties](./integration-manager/admin/application-property-reference/dataconnect-properties). | 3.3.0 |  | Completed |
-| New Feature | IP-7723 | DataConnect 12.3.0-12 Engine | 3.3.0 |  | Completed |
+| New Feature | IP-8056 | DataConnect 12.3.0-43 Engine | 3.3.0 |  | Completed |
+| New Feature | IP-8067 | DataFlow 8.1.0-148 Engine | 3.3.0 |  | Completed |
 | New Feature | IP-7893 | Java 17 Support Added | 3.3.0 |  | Completed |
 
 ### 3.2.0
