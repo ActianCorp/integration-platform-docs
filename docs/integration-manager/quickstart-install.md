@@ -108,8 +108,8 @@ To uninstall Integration Manager, execute `uninstaller.exe` in the program direc
 1. Download Actian Integration Manager for Linux from Actian ESD: [https://esd.actian.com/](https://esd.actian.com/).
 2. Locate the downloaded rpm file (`integration-manager-3.x.x.noarch.rpm`).
 3. Switch to root user: `sudo su`
-4. The libnsl library required by DataConnect was removed from the base install of RedHat starting with RedHat 8.1. If you are running a version of RedHat or Amazon Linux that does not include the libnsl library, run the following command: `yum install libnsl`.
-5. Ensure that you have GTK Version 3 installed. To check your GTK version, run the command `yum info gtk3`. If you do not have GTK installed or your GTK version is below version 3, run the command `yum install gtk3`.
+4. Ensure that you have GTK Version 3 installed. To check your GTK version, run the command `yum info gtk3`. If you do not have GTK installed or your GTK version is below version 3, run the command `yum install gtk3`.
+5. The libnsl library required by DataConnect was removed from the base install of RedHat starting with RedHat 8.1. If you are running a version of RedHat or Amazon Linux that does not include the libnsl library, run the following command: `yum install libnsl`.
 6. Install rpm with yum: `yum install integration-manager-3.x.x.noarch.rpm`
 7. Confirm the installation path (default: `/opt/actian/integration-manager`).
 8. Confirm the shared data path (default: `/etc/opt/actian/integration-manager`).
