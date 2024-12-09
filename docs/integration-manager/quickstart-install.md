@@ -91,8 +91,6 @@ To uninstall Integration Manager, execute `uninstaller.exe` in the program direc
 
 1. Linux Operating System
    * Red Hat Enterprise Linux 7.9 and 8 (64-bit U.S. English edition)
-   * GTK Version 3. To check your GTK version, run the command `yum info gtk3`. If you do not have GTK installed or your GTK version is below version 3, run the command `sudo yum install gtk3`.
-   * You need to install libnsl.so.1 separately on RHEL 8.1 or above versions.
    * Linux user account with sudo privileges
 2. 64-bit processor, 2.90GHz
 3. 16 GB Installed memory (RAM)
@@ -111,10 +109,11 @@ To uninstall Integration Manager, execute `uninstaller.exe` in the program direc
 2. Locate the downloaded rpm file (`integration-manager-3.x.x.noarch.rpm`).
 3. Switch to root user: `sudo su`
 4. The libnsl library required by DataConnect was removed from the base install of RedHat starting with RedHat 8.1. If you are running a version of RedHat or Amazon Linux that does not include the libnsl library, run the following command: `yum install libnsl`.
-5. Install rpm with yum: `yum install integration-manager-3.x.x.noarch.rpm`
-6. Confirm the installation path (default: `/opt/actian/integration-manager`).
-7. Confirm the shared data path (default: `/etc/opt/actian/integration-manager`).
-8. Installation should take less than a minute.
+5. Ensure that you have GTK Version 3 installed. To check your GTK version, run the command `yum info gtk3`. If you do not have GTK installed or your GTK version is below version 3, run the command `yum install gtk3`.
+6. Install rpm with yum: `yum install integration-manager-3.x.x.noarch.rpm`
+7. Confirm the installation path (default: `/opt/actian/integration-manager`).
+8. Confirm the shared data path (default: `/etc/opt/actian/integration-manager`).
+9. Installation should take less than a minute.
 
 ### Configuration/Reconfiguration
 
