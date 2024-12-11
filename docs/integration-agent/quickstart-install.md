@@ -150,9 +150,9 @@ You can download the Actian Integration Agent installer from either the **Agents
 
 1. Locate the downloaded rpm file (`integration-agent-3.x.x.noarch.rpm`).
 2. Switch to root user: `sudo su`
-3. Ensure that you have GTK Version 3 installed. To check your GTK version, run the command `yum info gtk3`. If you do not have GTK installed or your GTK version is below version 3, run the command `yum install gtk3`.
-4. The libnsl library required by DataConnect was removed from the base install of RedHat starting with RedHat 8.1. If you are running a version of RedHat or Amazon Linux that does not include the libnsl library, run the following command: `yum install libnsl`.
-5. Install rpm with yum: `yum install integration-agent-3.x.x.noarch.rpm`
+3. Install Graphical Interface Tool Kit Version 3 (gtk3): `yum install gtk3`
+4. Install Network Services Library (libnsl): `yum install libnsl`
+5. Install Integration Manager: `yum install integration-manager-3.x.x.noarch.rpm`
 6. Confirm the installation path (default: `/opt/actian/integration-agent`).
 7. Confirm the shared data path (default: `/etc/opt/actian/integration-agent)`).
 8. Installation should take less than a minute.
