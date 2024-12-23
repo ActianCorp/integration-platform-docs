@@ -7,6 +7,7 @@ title: Release Notes
 
 | Issue Type | <div style={{width: 65}}>Issue Key</div> | Summary | Fix versions | Affects versions | Status |
 |:---|:---|:---|:---|:---|:---|
+| Known Issue | IP-7888 | Unable to stop Windows Agent Service. For a workaround, see [Starting and stopping the agent service](./integration-agent/quickstart-install#starting-and-stopping-the-agent-service). |  | 3.2.0, 3.3.0 | Open |
 | New Feature | IP-5244 | [JobConfig/JobTemplate Export/Import API](./integration-manager/APIs/jobconfig-export-import-api)| 3.3.0 |  | Completed |
 | New Feature | IP-7252 | Remove Agent-User Tethering. This removes the 1:1 restriction between a user and an agent, thereby allowing an admin to register multiple agents. Admins can see all agents, users can only see agents they have registered. Agent hostname must still be globally unique.| 3.3.0 |  | Completed |
 | New Feature | IP-7283 | Timestamp ZoneOffset for [log file API](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/Job/getJobLog) | 3.3.0 |  | Completed |

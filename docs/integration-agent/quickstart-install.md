@@ -96,9 +96,29 @@ You are now ready to run your first remote job. Refer to [Run Your First Remote 
    
 2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `C:\ProgramData\Actian\IntegrationAgent\logs\Agent.log`)
 
+### Starting and Stopping the Agent Service
+
+:::note[KNOWN ISSUE]
+There is a known issue which prevents the Windows Agent Service from being stopped. If you encounter this issue, perform the following steps:
+
+1. Open Task Manager by right-clicking on the taskbar and selecting **Task Manager**.
+2. On the **Processes** tab, scroll down to **Background processes**, and then alphabetically to “O”.
+3. For each entry labelled “OpenJDK Platform binary”, right-click and select **End task**.
+4. Navigate to `C:\Program Files\Actian\IntegrationAgent`.
+5. Right-click `uninstaller.exe` and select **Run as administrator**.
+:::
+
+To start or stop the Agent service:
+
+1. Go to **Windows** → **Administrative Tools** → **Services**.
+2. Click the Start or Stop icon:
+
+   ![](/img/Services-Agent.png)
+
+
 ### Uninstalling
 
-To uninstall Actian Integration Agent from your Windows machine, simply run the installer .exe file and click **Yes**:
+To uninstall Actian Integration Agent from your Windows machine, simply run the `installer.exe` file and click **Yes**:
 
 ![](/img/Uninstall-Agent.png)
 
