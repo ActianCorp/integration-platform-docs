@@ -10,7 +10,7 @@ You can upload files for use with your configurations. These can be public files
 * **Public Files** can be seen and accessed by any user. They can be created, edited, or deleted only by an administrator.
 
 :::note
-For details about the different file types that you may need for execution, refer to the [DataConnect](https://docs.actian.com/dataconnect/12.2/#page/Welcome/DataConnect_12.2_Guides.htm) and [DataFlow](https://docs.actian.com/dataflow/8.0/#page/Welcome/DataFlow_Guides.htm) documentation.
+For details about the different file types that you may need for execution, refer to the [DataConnect](https://docs.actian.com/dataconnect/12.3/#page/Welcome/DataConnect_12.3_Guides.htm) and [DataFlow](https://docs.actian.com/dataflow/8.1/#page/Welcome/DataFlow_Guides.htm) documentation.
 :::
 
 ## Viewing Configuration Files
