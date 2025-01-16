@@ -23,7 +23,7 @@ Templates can be linked to a Configuration to reuse integration packages and oth
 
 ## Creating Template Configurations
 
-Template configurations can be created by clicking the **Create Configuration** button on either the **Template Details** or **Template Configutations** page. See [Creating a Configuration From a Template](./creating-a-configuration-from-a-template).
+Template configurations can be created by clicking the **Create Configuration** button on either the **Template Details** or **Template Configurations** page. See [Creating a Configuration From a Template](./creating-a-configuration-from-a-template).
 
 ## Activating or Inactivating Template Configurations
 
