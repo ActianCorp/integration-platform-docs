@@ -10,7 +10,7 @@ Messages can be submitted to:
 
 `POST: [server base url]/api/aggregators?type=jobconfigs&id=[entity id]`
 
-These messages will be aggregated according to the corresponding entry in `aggregator-config.yml`. When the number of messages received equals completion-size, or the completion-timeout is reached after the last message is received, then the aggregated message will be submitted to `[server base url]/api/jobconfigs/[entity id]/listener`. The aggregated message can be accessed through djmessage 'msg1' within the dataconnect process.
+These messages will be aggregated according to the corresponding entry in `aggregator-config.yml`. When the number of messages received equals `completion-size`, or the `completion-timeout` is reached after the last message is received, then the aggregated message will be submitted to `[server base url]/api/jobconfigs/[entity id]/listener`. The aggregated message can be accessed through djmessage 'msg1' within the DataConnect process.
 
 ## Aggregator Configuration
 
@@ -62,7 +62,7 @@ aggregators:
 | `account-id` | Account ID that owns the entity |  |
 | `completion-size` | The number of messages to aggregate before submitting the aggregated message to the listener API | `200` |
 | `completion-timeout` | The amount of time (in milliseconds) to wait after receiving the last message before submitting the aggregated message to the listener API | `10000` |
-| `data-type` | The data type for the submitted message to the aggregator API. This determines how the messages are aggregated. Valid types (case-sensitive): record, xml, json |  |
+| `data-type` | The data type for the submitted message to the aggregator API. This determines how the messages are aggregated. Valid types (case-sensitive): `record`, `xml`, `json` |  |
 
 ## Text Record Aggregation Example
 
