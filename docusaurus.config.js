@@ -32,10 +32,11 @@ const config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
+  // NOTE: I commented this out to see if this is the cause of an error I got (but cannot reproduce): Failed to execute 'removeChild' on 'Node'
+  //i18n: {
+  //  defaultLocale: 'en',
+  //  locales: ['en'],
+  //},
 
   presets: [
     [
