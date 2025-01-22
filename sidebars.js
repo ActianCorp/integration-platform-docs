@@ -13,7 +13,7 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  docsSidebar: [
+  docSidebar: [
     //{
     //  type: 'doc',
     //  id: 'intro',
@@ -21,13 +21,14 @@ const sidebars = {
     //},
     'intro',
     'release-notes',
+    'feedback',
     'integration-manager/quickstart-install',
     'accessing-the-integration-manager',
     'dashboard',
     'editing-your-profile',
     {
       type: 'category',
-      label: 'INTEGRATION MANAGER USERS',
+      label: 'INTEGRATION MANAGER',
       className: 'categoryItem',
       items: [
         'integration-manager/manager-overview',
@@ -120,98 +121,83 @@ const sidebars = {
             //'integration-manager/agents-and-devices/other-authorized-devices',
               ]
         },
-      ]
-    },
-    {
-      type: 'category',
-      label: 'INTEGRATION MANAGER ADMINS',
-      className: 'categoryItem',
-      items: [
-        'integration-manager/admin/admin-overview',
+
         {
           type: 'category',
-          label: 'Configuring Security',
+          label: 'Administration',
           items: [
-            'integration-manager/admin/security/encryption-keystores',
-            'integration-manager/admin/security/enabling-https',
-            'integration-manager/admin/security/encryption-at-rest',
-            'integration-manager/admin/security/access-token-signatures',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Access Control',
-          items: [
-            'integration-manager/admin/access-control/user-management',
-            'integration-manager/admin/access-control/access-control-polices',
-            'integration-manager/admin/access-control/jobconfig-aliasing',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Server Administration',
-          link: {
-            type: 'generated-index',
-            title: 'Server Administration',
-            description: 'Integration Manager can be deployed and configured to meet the most demanding production requirements.',
-            slug: '/category/server-administration',
-          },
-          items: [
-            'integration-manager/admin/server-administration/production-architecture',
-            'integration-manager/admin/server-administration/production-configuration',
-            'integration-manager/admin/server-administration/setup-mysql',
-            'integration-manager/admin/server-administration/setup-ms-sql-server',
-            'integration-manager/admin/server-administration/setup-rabbitmq',
-            'integration-manager/admin/server-administration/setup-zookeeper',
-            'integration-manager/admin/server-administration/setup-kubernetes',
-            //'integration-manager/admin/server-administration/setup-kubernetes-on-prem',
-            'integration-manager/admin/server-administration/server-upgrades',
-            'integration-manager/admin/server-administration/integration-engines',
+            'integration-manager/admin/admin-overview',
             {
               type: 'category',
-              label: 'File Folder Listener',
+              label: 'Configuring Security',
               items: [
-                'integration-manager/admin/server-administration/file-folder-listener/file-folder-listener-service',
-                'integration-manager/admin/server-administration/file-folder-listener/local-folder-listener',
-                'integration-manager/admin/server-administration/file-folder-listener/aws-s3-bucket-listener',
-                'integration-manager/admin/server-administration/file-folder-listener/azure-blob-storage-listener',
-                'integration-manager/admin/server-administration/file-folder-listener/google-cloud-storage-listener',
+                'integration-manager/admin/security/encryption-keystores',
+                'integration-manager/admin/security/enabling-https',
+                'integration-manager/admin/security/encryption-at-rest',
+                'integration-manager/admin/security/access-token-signatures',
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Access Control',
+              items: [
+                'integration-manager/admin/access-control/user-management',
+                'integration-manager/admin/access-control/access-control-polices',
+                'integration-manager/admin/access-control/jobconfig-aliasing',
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Server Administration',
+              link: {
+                type: 'generated-index',
+                title: 'Server Administration',
+                description: 'Integration Manager can be deployed and configured to meet the most demanding production requirements.',
+                slug: '/category/server-administration',
+              },
+              items: [
+                'integration-manager/admin/server-administration/production-architecture',
+                'integration-manager/admin/server-administration/production-configuration',
+                'integration-manager/admin/server-administration/setup-mysql',
+                'integration-manager/admin/server-administration/setup-ms-sql-server',
+                'integration-manager/admin/server-administration/setup-rabbitmq',
+                'integration-manager/admin/server-administration/setup-zookeeper',
+                'integration-manager/admin/server-administration/setup-kubernetes',
+                //'integration-manager/admin/server-administration/setup-kubernetes-on-prem',
+                'integration-manager/admin/server-administration/server-upgrades',
+                'integration-manager/admin/server-administration/integration-engines',
+                {
+                  type: 'category',
+                  label: 'File Folder Listener',
+                  items: [
+                    'integration-manager/admin/server-administration/file-folder-listener/file-folder-listener-service',
+                    'integration-manager/admin/server-administration/file-folder-listener/local-folder-listener',
+                    'integration-manager/admin/server-administration/file-folder-listener/aws-s3-bucket-listener',
+                    'integration-manager/admin/server-administration/file-folder-listener/azure-blob-storage-listener',
+                    'integration-manager/admin/server-administration/file-folder-listener/google-cloud-storage-listener',
+                  ]
+                },
+              ]
+            },
+            'integration-manager/admin/aggregator-service',
+            {
+              type: 'category',
+              label: 'Application Property Reference',
+              items: [
+                'integration-manager/admin/application-property-reference/properties-overview',
+                'integration-manager/admin/application-property-reference/dataconnect-properties',
+                'integration-manager/admin/application-property-reference/dataflow-properties',
+                'integration-manager/admin/application-property-reference/datasource-properties',
+                'integration-manager/admin/application-property-reference/file-repository-properties',
+                'integration-manager/admin/application-property-reference/queue-connection-properties',
+                //'integration-manager/admin/application-property-reference/scheduling-properties',
+                'integration-manager/admin/application-property-reference/web-server-properties',
+                'integration-manager/admin/application-property-reference/worker-properties',
               ]
             },
           ]
         },
-        'integration-manager/admin/aggregator-service',
-        {
-          type: 'category',
-          label: 'Application Property Reference',
-          items: [
-            'integration-manager/admin/application-property-reference/properties-overview',
-            'integration-manager/admin/application-property-reference/dataconnect-properties',
-            'integration-manager/admin/application-property-reference/dataflow-properties',
-            'integration-manager/admin/application-property-reference/datasource-properties',
-            'integration-manager/admin/application-property-reference/file-repository-properties',
-            'integration-manager/admin/application-property-reference/queue-connection-properties',
-            //'integration-manager/admin/application-property-reference/scheduling-properties',
-            'integration-manager/admin/application-property-reference/web-server-properties',
-            'integration-manager/admin/application-property-reference/worker-properties',
-          ]
-        },
-//        {
-//          type: 'category',
-//          label: 'File Listener Services',
-//          items: [
-//            'integration-manager/file-listener/file-listener-overview',
-//            'integration-manager/file-listener/file-listener-local',
-//            'integration-manager/file-listener/file-listener-aws',
-//            'integration-manager/file-listener/file-listener-azure',
-//            'integration-manager/file-listener/file-listener-google',
-//            'integration-manager/file-listener/file-listener-history-management',
-//              ]
-//        },
-        'integration-manager/admin/workload-management',
-        'integration-manager/admin/setup-job-notifications',
-        'integration-manager/admin/managing-job-execution-history',
-        'integration-manager/admin/server-troubleshooting',
+
       ]
     },
     {

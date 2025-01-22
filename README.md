@@ -1,39 +1,41 @@
-# Actian Integration Platform Documentation
+# Website
 
-We welcome and encourage your feedback on the platform and documentation. Feedback from the user community plays an important role in improving the product.
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## Documentation
+### Installation
 
-Let us know if:
+```
+$ yarn
+```
 
-* Anything is missing, unclear, or inaccurate in the documentation. 
-* There are topics you'd like to see.
-* You have suggestions for documentation improvements.
-* There's something that really helped and you'd like to see more of it!
+### Local Development
 
-There are two ways to provide your feedback on the documentation: 
+```
+$ yarn start
+```
 
-* Submit a message using the **Page Feedback** button.
-* Use the **Suggest Edits** button to edit the page in GitHub.
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Page Feedback
+### Build
 
-Entering page feedback is easy, and available to anyone. There is a **Page Feedback** button on the bottom of every page:
+```
+$ yarn build
+```
 
-  ![Page Feedback Button](./static/img/Feedback-Button.png)
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-Click this button to display a text field, enter your message, and click **Send Feedback**. Your message will be delivered to us. Feel free to include your email address in the message if you'd like to chat.
+### Deployment
 
-### Suggest Edits
+Using SSH:
 
-Users are encouraged to suggest content edits. Suggesting page edits requires you to have a GitHub account. 
+```
+$ USE_SSH=true yarn deploy
+```
 
-There is a **Suggest Edits** button on the bottom of every page:
+Not using SSH:
 
-  ![Suggest Edits Button](./static/img/Suggest-Edits-Button.png)
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
 
-Clicking this button opens the page in the ActianCorp integration-platform-docs repository in GitHub:
-
-  ![Suggest Edits Button](./static/img/GitHub-Repo.png)
-
-Make any suggested edits, then create a pull request. We will review your changes, make any necessary edits, then merge the changes if appropriate.
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

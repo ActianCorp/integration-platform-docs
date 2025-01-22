@@ -6,48 +6,35 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
+// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Actian Integration Platform',
-  tagline: 'The world’s first hybrid integration platform',
+  tagline: 'Documentation',
   favicon: 'img/logos/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://integration-platform-docs.netlify.app/', // Netlify
   // Set the /<baseUrl>/ pathname under which your site is served
-  //baseUrl: '/integration-platform-docs/', // GitHub Pages - '/<projectName>/'
-  baseUrl: '/', // AWS, Netlify
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ActianCorp', // Usually your GitHub org/user name.
-  projectName: 'integration-platform-docs', // Usually your repo name.
-  trailingSlash: false,
+  organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Replaced this with my own React form. Leaving code for reference if we need it.
-  // Load the Feedback Rocket SDK on every page
-  //scripts: [
-  //  {
-  //    async: true,
-  //    src: 'https://www.feedbackrocket.io/sdk/v1.2.js',
-  //    'data-fr-id': 'IA-9no9dntmzi4xHLP63R',
-  //    'data-fr-theme': 'dynamic',
-  //    'data-fr-title': 'Your feedback helps us improve our docs.',
-  //  }
-  //],
-
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  // NOTE: I commented this out to see if this is the cause of an error I got (but cannot reproduce): Failed to execute 'removeChild' on 'Node'
-  // See https://github.com/facebook/react/issues/11538
-  //i18n: {
-  //  defaultLocale: 'en',
-  //  locales: ['en'],
-  //},
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
 
   presets: [
     [
@@ -55,76 +42,22 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          lastVersion: 'current',
-           versions: {
-            current: {
-              label: '3.3',
-              path: '/docs',
-            },
-          },                    
-          showLastUpdateTime: true,
-          sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/', // Serve the docs at the site's root
+          sidebarPath: './sidebars.js',
           // Please change this to your repo.
-          // Remove this to remove the "Suggest Edits" links.
-          editUrl: 'https://github.com/ActianCorp/integration-platform-docs/tree/suggestions',
-          editCurrentVersion: true,
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/ActianCorp/integration-platform-docs/tree/suggestions',
         },
-//         blog: {
-//          showReadingTime: true,
-//        },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: './src/css/custom.css',
         },
       }),
     ],
   ],
-  //plugins: [[ require.resolve('docusaurus-lunr-search'), { // This causes React error on localhost.
-  //  maxHits: '30'  // Doesn't seem to work
-  //}]],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      prism: {
-        additionalLanguages: ['powershell'],
-      },
-      algolia: {
-        // The application ID provided by Algolia
-        appId: 'DJTQI8DCNE',
-  
-        // Public API key: it is safe to commit it
-        apiKey: '557417026f266de1c4a0a43fc919ca41',
-  
-        indexName: 'integration-platform-netlify',
-  
-        // Optional: see doc section below
-        //contextualSearch: true,
-  
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        //externalUrlRegex: 'external\\.com|domain\\.com',
-  
-        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
-        //replaceSearchResultPathname: {
-        //  from: '/docs/', // or as RegExp: /\/docs\//
-        //  to: '/',
-        //},
-  
-        // Optional: Algolia search parameters
-        //searchParameters: {},
-  
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'false', //'search',
-  
-        //... other Algolia params
-      },
-      //announcementBar: {
-      //  id: 'beta',
-      //  content:
-      //    '<b>NOTE:</b> Our new docs platform is in BETA. Features may not all work as expected, and content is in development. Official documentation is on <a href="https://docs.actian.com/">docs.actian.com</a>.',
-      //  backgroundColor: 'rgba(147, 219, 79, 0.6)',
-      //  textColor: '#091E42',
-      //  isCloseable: true,
-      //},
       //Navbar items
       image: 'img/Logos_Actian_3Color-White-Transparent.png',
       navbar: {
@@ -158,31 +91,7 @@ const config = {
             label: "Downloads",
             className: "github-button hide-mobile",
           },
-          // Add a feedback button in the top navbar on every page - Commented out because I moved this to the page footer.
-          //{
-          //  type: 'html',
-          //  position: 'right',
-          //  value:
-          //    `<a href=# class=navbar__link data-fr-widget>
-          //      Page Feedback
-          //    </a>`
-          //},
-          {
-            type: 'docsVersionDropdown',
-            position: 'left',
-            //includeCurrentVersion: true, // This is causing a React error: 
-                                        //React does not recognize the `includeCurrentVersion` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, 
-                                        //spell it as lowercase `includecurrentversion` instead. If you accidentally passed it from a parent component, remove it from the DOM element.
-            dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
-            dropdownActiveClassDisabled: true,
-          },
-//          {
-//            href: 'https://github.com/ActianCorp/integration-platform-docs/tree/suggestions/', // Moved to footer
-//            position: 'right',
-//            className: 'header-github-link',
-//            title: "Actian Integration Platform Docs - GitHub",
-//          },
-       ],
+        ],
       },
       footer: {
         style: 'dark',

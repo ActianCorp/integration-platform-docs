@@ -1,8 +1,5 @@
 ---
 title: Actian Integration Platform
-hide_table_of_contents: false
-custom_edit_url: null
-slug: /
 ---
 
 # Actian Integration Platform

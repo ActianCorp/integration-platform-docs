@@ -1,8 +1,8 @@
 ---
-title: Feedback
+title: Feedback and Support
 ---
 
-# Feedback
+# Feedback and Support
 
 We welcome and encourage your feedback on the platform and documentation. Feedback from the user community plays an important role in improving the product.
 
