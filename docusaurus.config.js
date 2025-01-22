@@ -63,12 +63,12 @@ const config = {
           {
             // Redocusaurus will automatically bundle your spec into a single file during the build
             spec: 'api/integration-components.yaml',
-            route: '/api1/',
+            route: '/int-components/',
           },
           {
             // Redocusaurus will automatically bundle your spec into a single file during the build
             spec: 'api/job-execution.yaml',
-            route: '/api/',
+            route: '/job-execution/',
           },
         ],
         // Theme Options for modifying how redoc renders them
@@ -99,11 +99,11 @@ const config = {
             items: [
               {
                 label: 'Integration Components',
-                to: '/api1',
+                to: '/int-components',
               },
               {
                 label: 'Job Execution',
-                to: '/api',
+                to: '/job-execution',
               },
             ],
           },
