@@ -54,6 +54,30 @@ const config = {
         },
       }),
     ],
+    [
+      'redocusaurus',
+      {
+        // Plugin Options for loading OpenAPI files
+        specs: [
+          // Pass it a path to a local OpenAPI YAML file
+          {
+            // Redocusaurus will automatically bundle your spec into a single file during the build
+            spec: 'api/integration-components.yaml',
+            route: '/api1/',
+          },
+          {
+            // Redocusaurus will automatically bundle your spec into a single file during the build
+            spec: 'api/job-execution.yaml',
+            route: '/api/',
+          },
+        ],
+        // Theme Options for modifying how redoc renders them
+        theme: {
+          // Change with your site colors
+          primaryColor: '#1890ff',
+        },
+      },
+    ]
   ],
 
   themeConfig:
@@ -68,6 +92,21 @@ const config = {
           src: 'img/logos/ACTIAN-logo.svg',
          },
         items: [
+          {to: 'docs/intro', label: 'Docs', position: 'left'},
+          {
+            label: 'API',
+            position: 'left',
+            items: [
+              {
+                label: 'Integration Components',
+                to: '/api1',
+              },
+              {
+                label: 'Job Execution',
+                to: '/api',
+              },
+            ],
+          },
           {
             href: "https://www.actian.com/",
             position: "right",
