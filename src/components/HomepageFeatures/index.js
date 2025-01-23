@@ -6,8 +6,8 @@ import Link from '@docusaurus/Link';
 const FeatureList = [
   {
     title: 'Integration Manager',
-    qqq: "/docs/integration-manager/manager-overview",
-    Svg: require('@site/static/img/home/im5.svg').default,
+    doc: "/docs/integration-manager/manager-overview",
+    png: "/img/home/im.png",
     description: (
       <>
       </>
@@ -15,8 +15,8 @@ const FeatureList = [
   },
   {
     title: 'Integration Agent',
-    qqq: "/docs/integration-agent/agent-overview",
-    Svg: require('@site/static/img/home/ia4.svg').default,
+    doc: "/docs/integration-agent/agent-overview",
+    png: "/img/home/ia.png",
     description: (
       <>
       </>
@@ -24,8 +24,8 @@ const FeatureList = [
   },
   {
     title: 'Release Notes',
-    qqq: "/docs/release-notes",
-    Svg: require('@site/static/img/home/releasenotes.svg').default,
+    doc: "/docs/release-notes",
+    png: "/img/home/release-notes.png",
     description: (
       <>
      </>
@@ -33,16 +33,17 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, qqq, description}) {
+function Feature({title, doc, png, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3"><Link to={qqq}>{title}</Link></Heading>
-       
-      </div>
+      <Link to={doc}>
+        <div className="text--center">
+          <img src={png} className="homepage-tile-image" alt="" />
+        </div>
+        <div className="text--center padding-horiz--md"><br />
+          <Heading as="h3"><b>{title}</b></Heading> 
+        </div>
+      </Link> 
     </div>
   );
 }
