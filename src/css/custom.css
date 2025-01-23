@@ -114,12 +114,12 @@ header:has(> div.homeheader) {
 
 .hero__title {
   color: white;
-  font-size: 64px;
+  font-size: 52px;
   font-weight: 600;
 }
 .hero__subtitle {
   color: white;
-  font-size: 44px;
+  font-size: 36px;
 }
 
 /* Boxes */
