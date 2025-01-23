@@ -87,7 +87,7 @@ header:has(> div.homeheader) {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;  
-  border-bottom: 10px solid #A8E117;
+  /*border-bottom: 10px solid #A8E117;*/
 }
 
 .homeheader {
