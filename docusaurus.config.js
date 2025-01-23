@@ -60,15 +60,38 @@ const config = {
         // Plugin Options for loading OpenAPI files
         specs: [
           // Pass it a path to a local OpenAPI YAML file
+          // Redocusaurus will automatically bundle your spec into a single file during the build
           {
-            // Redocusaurus will automatically bundle your spec into a single file during the build
-            spec: 'api/integration-components.yaml',
-            route: '/int-components/',
+            spec: 'api/integration-components.json',
+            route: '/integration-components/',
           },
           {
-            // Redocusaurus will automatically bundle your spec into a single file during the build
-            spec: 'api/job-execution.yaml',
+            spec: 'api/job-configuration.json',
+            route: '/job-configuration/',
+          },
+          {
+            spec: 'api/job-execution.json',
             route: '/job-execution/',
+          },
+          {
+            spec: 'api/jobconfig-aliasing.json',
+            route: '/jobconfig-aliasing/',
+          },
+          {
+            spec: 'api/agent-management.json',
+            route: '/agent-management/',
+          },
+          {
+            spec: 'api/account-administration.json',
+            route: '/account-administration/',
+          },
+          {
+            spec: 'api/resource-management.json',
+            route: '/resource-management/',
+          },
+          {
+            spec: 'api/access-control-policies.json',
+            route: '/access-control-policies/',
           },
         ],
         // Theme Options for modifying how redoc renders them
@@ -99,11 +122,35 @@ const config = {
             items: [
               {
                 label: 'Integration Components',
-                to: '/int-components',
+                to: '/integration-components',
+              },
+              {
+                label: 'Job Configuration',
+                to: '/job-configuration',
               },
               {
                 label: 'Job Execution',
                 to: '/job-execution',
+              },
+              {
+                label: 'Job Config Aliasing',
+                to: '/jobconfig-aliasing',
+              },
+              {
+                label: 'Agents and Devices',
+                to: '/agent-management',
+              },
+              {
+                label: 'Accounts and Users',
+                to: '/account-administration',
+              },
+              {
+                label: 'Resource Management',
+                to: '/resource-management',
+              },
+              {
+                label: 'Access Control Policies',
+                to: '/access-control-policies',
               },
             ],
           },

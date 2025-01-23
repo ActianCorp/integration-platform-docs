@@ -1,0 +1,3446 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "Retrieve Account Info. Create and Update Users.",
+    "version" : "3.3.0-47",
+    "title" : "Account and Users"
+  },
+  "host" : "api.im.actiandatacloud.com",
+  "basePath" : "/v2/api",
+  "tags" : [ {
+    "name" : "@Login"
+  }, {
+    "name" : "Account"
+  }, {
+    "name" : "Account Files"
+  }, {
+    "name" : "Account Macros"
+  }, {
+    "name" : "Tags"
+  }, {
+    "name" : "User"
+  }, {
+    "name" : "User Files"
+  }, {
+    "name" : "User Macros"
+  }, {
+    "name" : "User Preferences"
+  } ],
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/account" : {
+      "get" : {
+        "tags" : [ "Account" ],
+        "summary" : "Retrieve Account Info",
+        "description" : "",
+        "operationId" : "getAccount",
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/AccountResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "put" : {
+        "tags" : [ "Account" ],
+        "summary" : "Update an Account's Hosted Domains",
+        "description" : "",
+        "operationId" : "updateAccount",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/AccountRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/AccountResponse"
+            }
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "patch" : {
+        "tags" : [ "Account" ],
+        "summary" : "Patch an Account's Hosted Domains",
+        "description" : "",
+        "operationId" : "patchAccount",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/AccountRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/AccountResponse"
+            }
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/account/destination" : {
+      "put" : {
+        "tags" : [ "Account" ],
+        "summary" : "Update a Account Defined Default Destination Id",
+        "description" : "",
+        "operationId" : "updateAccountDefaultDestinationId",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "destinationId",
+          "in" : "query",
+          "description" : "Destination id",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/AccountResponse"
+            }
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "delete" : {
+        "tags" : [ "Account" ],
+        "summary" : "Delete a Account Defined Default Destination Id",
+        "description" : "",
+        "operationId" : "deleteAccountDefaultDestinationId",
+        "responses" : {
+          "204" : {
+            "description" : "No Content"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/account/{id}/files" : {
+      "get" : {
+        "tags" : [ "Account Files" ],
+        "summary" : "List Public Files in this Account",
+        "description" : "",
+        "operationId" : "listAccountFiles",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Account Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "searchKey",
+          "in" : "query",
+          "description" : "Search key for file name",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "offset",
+          "in" : "query",
+          "description" : "Page number (zero based)",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "description" : "Page size",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "sortby",
+          "in" : "query",
+          "description" : "A comma delimited list of column names to sort the result set by. These may be specified as child fields, for example createdByUser.name",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "direction",
+          "in" : "query",
+          "description" : "A comma delimited list of sort directions (asc or desc) that coincide with the sortby parameters specified",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "filter",
+          "in" : "query",
+          "description" : "Comma delimited filter values. Sets of values (for in or !in operations) should be pipe delimited. If only a filter is provided, with no filterBy or operators defined, then like will be used among a set of default columns. All date values should be provided in epoch numerical format",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "filterby",
+          "in" : "query",
+          "description" : "A comma delimited list of property names to run the defined filter operations on. These may be child objects, such as createdByUser.name, and should coincide in order with the operators and filter(s) provided",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "operators",
+          "in" : "query",
+          "description" : "Filter operations. These may be either comma delimited to specify AND between operators, or pipe delimited to specify OR between operators. Parentheses can be used to specify order of operations. Valid operators include: eq, ne, lt, gt, lte, gte, in, !in, like, !like, null, or !null",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/FileListResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "post" : {
+        "tags" : [ "Account Files" ],
+        "summary" : "Create a Public File",
+        "description" : "",
+        "operationId" : "createAccountFile",
+        "consumes" : [ "multipart/form-data" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Account Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "key",
+          "in" : "formData",
+          "description" : "file name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "file",
+          "in" : "formData",
+          "description" : "file content",
+          "required" : true,
+          "type" : "file"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Created",
+            "schema" : {
+              "$ref" : "#/definitions/FileResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/account/{id}/files/entrypoints/{key}" : {
+      "get" : {
+        "tags" : [ "Account Files" ],
+        "summary" : "Retrieve EntryPoints for a Public Package File",
+        "description" : "",
+        "operationId" : "listAccountFileEntryPoints",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Account Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "key",
+          "in" : "path",
+          "description" : "file name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/EntryPoints"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/account/{id}/files/{key}" : {
+      "get" : {
+        "tags" : [ "Account Files" ],
+        "summary" : "Download a Public File",
+        "description" : "",
+        "operationId" : "getAccountFile",
+        "produces" : [ "application/octet-stream" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Account Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "key",
+          "in" : "path",
+          "description" : "file name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "put" : {
+        "tags" : [ "Account Files" ],
+        "summary" : "Update a Public File",
+        "description" : "",
+        "operationId" : "updateAccountFile",
+        "consumes" : [ "multipart/form-data" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Account Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "key",
+          "in" : "path",
+          "description" : "file name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "file",
+          "in" : "formData",
+          "description" : "file content",
+          "required" : true,
+          "type" : "file"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/FileResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "delete" : {
+        "tags" : [ "Account Files" ],
+        "summary" : "Delete a Public File",
+        "description" : "",
+        "operationId" : "deleteAccountFile",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Account Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "key",
+          "in" : "path",
+          "description" : "file name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "No Content"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/account/{id}/logins" : {
+      "get" : {
+        "tags" : [ "Account" ],
+        "summary" : "Get Recent Account Login Attempt History",
+        "description" : "",
+        "operationId" : "getAccountLoginHistory",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Account Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "offset",
+          "in" : "query",
+          "description" : "Page number (zero based)",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "description" : "Page size",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "sortby",
+          "in" : "query",
+          "description" : "A comma delimited list of column names to sort the result set by. These may be specified as child fields, for example createdByUser.name",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "direction",
+          "in" : "query",
+          "description" : "A comma delimited list of sort directions (asc or desc) that coincide with the sortby parameters specified",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "filter",
+          "in" : "query",
+          "description" : "Comma delimited filter values. Sets of values (for in or !in operations) should be pipe delimited. If only a filter is provided, with no filterBy or operators defined, then like will be used among a set of default columns. All date values should be provided in epoch numerical format",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "filterby",
+          "in" : "query",
+          "description" : "A comma delimited list of property names to run the defined filter operations on. These may be child objects, such as createdByUser.name, and should coincide in order with the operators and filter(s) provided",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "operators",
+          "in" : "query",
+          "description" : "Filter operations. These may be either comma delimited to specify AND between operators, or pipe delimited to specify OR between operators. Parentheses can be used to specify order of operations. Valid operators include: eq, ne, lt, gt, lte, gte, in, !in, like, !like, null, or !null",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/LoginAttemptListResponse"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/account/{id}/macrodef" : {
+      "post" : {
+        "tags" : [ "Account Macros" ],
+        "summary" : "Import MacroDef file to Public Macros",
+        "description" : "",
+        "operationId" : "importAccountMacroDef",
+        "consumes" : [ "multipart/form-data" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Account Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "file",
+          "in" : "formData",
+          "description" : "MacroDef file, Json or Xml",
+          "required" : true,
+          "type" : "file"
+        }, {
+          "name" : "replace",
+          "in" : "query",
+          "required" : false,
+          "type" : "boolean"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Created",
+            "schema" : {
+              "$ref" : "#/definitions/MacroResponse"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "500" : {
+            "description" : "server exception"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/account/{id}/macros" : {
+      "get" : {
+        "tags" : [ "Account Macros" ],
+        "summary" : "List Public Macros in this Account",
+        "description" : "",
+        "operationId" : "listAccountMacros",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Account Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "offset",
+          "in" : "query",
+          "description" : "Page number (zero based)",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "description" : "Page size",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "sortby",
+          "in" : "query",
+          "description" : "A comma delimited list of column names to sort the result set by. These may be specified as child fields, for example createdByUser.name",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "direction",
+          "in" : "query",
+          "description" : "A comma delimited list of sort directions (asc or desc) that coincide with the sortby parameters specified",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "filter",
+          "in" : "query",
+          "description" : "Comma delimited filter values. Sets of values (for in or !in operations) should be pipe delimited. If only a filter is provided, with no filterBy or operators defined, then like will be used among a set of default columns. All date values should be provided in epoch numerical format",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "filterby",
+          "in" : "query",
+          "description" : "A comma delimited list of property names to run the defined filter operations on. These may be child objects, such as createdByUser.name, and should coincide in order with the operators and filter(s) provided",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "operators",
+          "in" : "query",
+          "description" : "Filter operations. These may be either comma delimited to specify AND between operators, or pipe delimited to specify OR between operators. Parentheses can be used to specify order of operations. Valid operators include: eq, ne, lt, gt, lte, gte, in, !in, like, !like, null, or !null",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/MacroListResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "post" : {
+        "tags" : [ "Account Macros" ],
+        "summary" : "Create a Public Macro",
+        "description" : "Macro value is only returned if the macro is not marked as secure. ",
+        "operationId" : "createAccountMacro",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Account Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/MacroRequest"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Created",
+            "schema" : {
+              "$ref" : "#/definitions/MacroResponse"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          },
+          "409" : {
+            "description" : "conflict"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/account/{id}/macros/{name}" : {
+      "get" : {
+        "tags" : [ "Account Macros" ],
+        "summary" : "Retrieve a Public Macro",
+        "description" : "",
+        "operationId" : "getAccountMacro",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Account Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "name",
+          "in" : "path",
+          "description" : "Name of the macro to retrieve.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/MacroResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "post" : {
+        "tags" : [ "Account Macros" ],
+        "summary" : "Create a Macro on the Account from a file",
+        "description" : "Macro value is only returned if the macro is not marked as secure. ",
+        "operationId" : "createAccountMacroFromFile",
+        "consumes" : [ "multipart/form-data" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Account Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "file",
+          "in" : "formData",
+          "description" : "Source File",
+          "required" : true,
+          "type" : "file"
+        }, {
+          "name" : "name",
+          "in" : "path",
+          "description" : "Macro Name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "secure",
+          "in" : "query",
+          "description" : "Is Macro Secure",
+          "required" : false,
+          "type" : "boolean"
+        }, {
+          "name" : "description",
+          "in" : "query",
+          "description" : "Macro Description",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Created",
+            "schema" : {
+              "$ref" : "#/definitions/MacroResponse"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "409" : {
+            "description" : "Conflict"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "put" : {
+        "tags" : [ "Account Macros" ],
+        "summary" : "Update a Public Macro",
+        "description" : "",
+        "operationId" : "updateAccountMacro",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Account Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "name",
+          "in" : "path",
+          "description" : "Name of the macro to update.",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/MacroRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/MacroResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "delete" : {
+        "tags" : [ "Account Macros" ],
+        "summary" : "Delete a Public Macro",
+        "description" : "",
+        "operationId" : "deleteAccountMacro",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Account Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "name",
+          "in" : "path",
+          "description" : "Name of the macro to delete.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "No Content"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/account/{id}/macros/{name}}" : {
+      "put" : {
+        "tags" : [ "Account Macros" ],
+        "summary" : "Create a Macro on the Account from a file",
+        "description" : "Macro value is only returned if the macro is not marked as secure. ",
+        "operationId" : "updateAccountMacroFromFile",
+        "consumes" : [ "multipart/form-data" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "Account Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "file",
+          "in" : "formData",
+          "description" : "Source File",
+          "required" : true,
+          "type" : "file"
+        }, {
+          "name" : "key",
+          "in" : "query",
+          "description" : "Macro Name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "secure",
+          "in" : "query",
+          "description" : "Is Macro Secure",
+          "required" : true,
+          "type" : "boolean"
+        }, {
+          "name" : "description",
+          "in" : "query",
+          "description" : "Macro Description",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/MacroResponse"
+            }
+          },
+          "201" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/MacroResponse"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/login" : {
+      "post" : {
+        "tags" : [ "@Login" ],
+        "summary" : "Retrieve an access_token",
+        "description" : "The access_token value is used in the Authorization header in the format 'Authorization: Bearer [access_token value]' to make other API calls.",
+        "operationId" : "login",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/LoginRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Access Token",
+            "schema" : {
+              "$ref" : "#/definitions/AccessTokenResponse"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Inactive, Bad Credentials, or Locked Out"
+          }
+        }
+      }
+    },
+    "/product/info" : {
+      "get" : {
+        "tags" : [ "@Login" ],
+        "summary" : "Retrieve detailed product information",
+        "description" : "",
+        "operationId" : "getProductInfo",
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/InstalledProductInfo"
+            }
+          }
+        }
+      }
+    },
+    "/tags" : {
+      "get" : {
+        "tags" : [ "Tags" ],
+        "summary" : "List tags in this account",
+        "description" : "",
+        "operationId" : "listTags",
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "post" : {
+        "tags" : [ "Tags" ],
+        "summary" : "Create a tag",
+        "description" : "",
+        "operationId" : "createTag",
+        "parameters" : [ {
+          "name" : "name",
+          "in" : "query",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "put" : {
+        "tags" : [ "Tags" ],
+        "summary" : "Change a tag name",
+        "description" : "",
+        "operationId" : "updateTag",
+        "parameters" : [ {
+          "name" : "old",
+          "in" : "query",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "new",
+          "in" : "query",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "delete" : {
+        "tags" : [ "Tags" ],
+        "summary" : "Delete a tag",
+        "description" : "",
+        "operationId" : "deleteTag",
+        "parameters" : [ {
+          "name" : "name",
+          "in" : "query",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/user" : {
+      "get" : {
+        "tags" : [ "User" ],
+        "summary" : "Retrieve User Info",
+        "description" : "",
+        "operationId" : "getCurrentUser",
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/UserResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/users" : {
+      "get" : {
+        "tags" : [ "User" ],
+        "summary" : "List Users in this Account",
+        "description" : "",
+        "operationId" : "listUsers",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "active",
+          "in" : "query",
+          "description" : "Boolean to determine if Active or Inactive users should be returned.",
+          "required" : false,
+          "type" : "string",
+          "default" : "all"
+        }, {
+          "name" : "offset",
+          "in" : "query",
+          "description" : "Page number (zero based)",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "description" : "Page size",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "sortby",
+          "in" : "query",
+          "description" : "A comma delimited list of column names to sort the result set by. These may be specified as child fields, for example createdByUser.name",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "direction",
+          "in" : "query",
+          "description" : "A comma delimited list of sort directions (asc or desc) that coincide with the sortby parameters specified",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "filter",
+          "in" : "query",
+          "description" : "Comma delimited filter values. Sets of values (for in or !in operations) should be pipe delimited. If only a filter is provided, with no filterBy or operators defined, then like will be used among a set of default columns. All date values should be provided in epoch numerical format",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "filterby",
+          "in" : "query",
+          "description" : "A comma delimited list of property names to run the defined filter operations on. These may be child objects, such as createdByUser.name, and should coincide in order with the operators and filter(s) provided",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "operators",
+          "in" : "query",
+          "description" : "Filter operations. These may be either comma delimited to specify AND between operators, or pipe delimited to specify OR between operators. Parentheses can be used to specify order of operations. Valid operators include: eq, ne, lt, gt, lte, gte, in, !in, like, !like, null, or !null",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/UserListResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "post" : {
+        "tags" : [ "User" ],
+        "summary" : "Create a User",
+        "description" : "",
+        "operationId" : "createUser",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/UserRequest"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Created",
+            "schema" : {
+              "$ref" : "#/definitions/UserResponse"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/users/activate" : {
+      "patch" : {
+        "tags" : [ "User" ],
+        "summary" : "Bulk Activation for users id.",
+        "description" : "",
+        "operationId" : "bulkActivateUsers",
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/BulkOperation"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/users/deactivate" : {
+      "patch" : {
+        "tags" : [ "User" ],
+        "summary" : "Bulk De-Activation for users id.",
+        "description" : "",
+        "operationId" : "bulkDeactivateUsers",
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/BulkOperation"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/users/dropdown" : {
+      "get" : {
+        "tags" : [ "User" ],
+        "summary" : "List Users Dropdown in this Account",
+        "description" : "",
+        "operationId" : "listUsersDropdown",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "offset",
+          "in" : "query",
+          "description" : "Page number (zero based)",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "description" : "Page size",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "sortby",
+          "in" : "query",
+          "description" : "A comma delimited list of column names to sort the result set by. These may be specified as child fields, for example createdByUser.name",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "direction",
+          "in" : "query",
+          "description" : "A comma delimited list of sort directions (asc or desc) that coincide with the sortby parameters specified",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "filter",
+          "in" : "query",
+          "description" : "Comma delimited filter values. Sets of values (for in or !in operations) should be pipe delimited. If only a filter is provided, with no filterBy or operators defined, then like will be used among a set of default columns. All date values should be provided in epoch numerical format",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "filterby",
+          "in" : "query",
+          "description" : "A comma delimited list of property names to run the defined filter operations on. These may be child objects, such as createdByUser.name, and should coincide in order with the operators and filter(s) provided",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "operators",
+          "in" : "query",
+          "description" : "Filter operations. These may be either comma delimited to specify AND between operators, or pipe delimited to specify OR between operators. Parentheses can be used to specify order of operations. Valid operators include: eq, ne, lt, gt, lte, gte, in, !in, like, !like, null, or !null",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/DropdownListResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/users/{id}" : {
+      "get" : {
+        "tags" : [ "User" ],
+        "summary" : "Retrieve User Info",
+        "description" : "",
+        "operationId" : "getUser",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/UserResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "put" : {
+        "tags" : [ "User" ],
+        "summary" : "Update User Info",
+        "description" : "",
+        "operationId" : "updateUser",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/UserRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/UserResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/users/{id}/files" : {
+      "get" : {
+        "tags" : [ "User Files" ],
+        "summary" : "List Private Files for this User",
+        "description" : "",
+        "operationId" : "listUserFiles",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "searchKey",
+          "in" : "query",
+          "description" : "Search key for file name",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "offset",
+          "in" : "query",
+          "description" : "Page number (zero based)",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "description" : "Page size",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "sortby",
+          "in" : "query",
+          "description" : "A comma delimited list of column names to sort the result set by. These may be specified as child fields, for example createdByUser.name",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "direction",
+          "in" : "query",
+          "description" : "A comma delimited list of sort directions (asc or desc) that coincide with the sortby parameters specified",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "filter",
+          "in" : "query",
+          "description" : "Comma delimited filter values. Sets of values (for in or !in operations) should be pipe delimited. If only a filter is provided, with no filterBy or operators defined, then like will be used among a set of default columns. All date values should be provided in epoch numerical format",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "filterby",
+          "in" : "query",
+          "description" : "A comma delimited list of property names to run the defined filter operations on. These may be child objects, such as createdByUser.name, and should coincide in order with the operators and filter(s) provided",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "operators",
+          "in" : "query",
+          "description" : "Filter operations. These may be either comma delimited to specify AND between operators, or pipe delimited to specify OR between operators. Parentheses can be used to specify order of operations. Valid operators include: eq, ne, lt, gt, lte, gte, in, !in, like, !like, null, or !null",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/FileListResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "post" : {
+        "tags" : [ "User Files" ],
+        "summary" : "Create a Private File",
+        "description" : "",
+        "operationId" : "createUserFile",
+        "consumes" : [ "multipart/form-data" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "key",
+          "in" : "formData",
+          "description" : "file name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "file",
+          "in" : "formData",
+          "description" : "file content",
+          "required" : true,
+          "type" : "file"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Created",
+            "schema" : {
+              "$ref" : "#/definitions/FileResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/users/{id}/files/entrypoints/{key}" : {
+      "get" : {
+        "tags" : [ "User Files" ],
+        "summary" : "Retrieve EntryPoints for a Private Package File",
+        "description" : "",
+        "operationId" : "listUserFileEntryPoints",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "key",
+          "in" : "path",
+          "description" : "file name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/EntryPoints"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/users/{id}/files/{key}" : {
+      "get" : {
+        "tags" : [ "User Files" ],
+        "summary" : "Download a Private File",
+        "description" : "",
+        "operationId" : "getUserFile",
+        "produces" : [ "application/octet-stream" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "key",
+          "in" : "path",
+          "description" : "file name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "put" : {
+        "tags" : [ "User Files" ],
+        "summary" : "Update a Private File",
+        "description" : "",
+        "operationId" : "updateUserFile",
+        "consumes" : [ "multipart/form-data" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "key",
+          "in" : "path",
+          "description" : "file name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "file",
+          "in" : "formData",
+          "description" : "file content",
+          "required" : true,
+          "type" : "file"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/FileResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "delete" : {
+        "tags" : [ "User Files" ],
+        "summary" : "Delete a Private File",
+        "description" : "",
+        "operationId" : "deleteUserFile",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "key",
+          "in" : "path",
+          "description" : "file name",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "No Content"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/users/{id}/logins" : {
+      "get" : {
+        "tags" : [ "User" ],
+        "summary" : "Get User Login History",
+        "description" : "",
+        "operationId" : "listUserLoginHistory",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "offset",
+          "in" : "query",
+          "description" : "Page number (zero based)",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "description" : "Page size",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "sortby",
+          "in" : "query",
+          "description" : "A comma delimited list of column names to sort the result set by. These may be specified as child fields, for example createdByUser.name",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "direction",
+          "in" : "query",
+          "description" : "A comma delimited list of sort directions (asc or desc) that coincide with the sortby parameters specified",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "filter",
+          "in" : "query",
+          "description" : "Comma delimited filter values. Sets of values (for in or !in operations) should be pipe delimited. If only a filter is provided, with no filterBy or operators defined, then like will be used among a set of default columns. All date values should be provided in epoch numerical format",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "filterby",
+          "in" : "query",
+          "description" : "A comma delimited list of property names to run the defined filter operations on. These may be child objects, such as createdByUser.name, and should coincide in order with the operators and filter(s) provided",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "operators",
+          "in" : "query",
+          "description" : "Filter operations. These may be either comma delimited to specify AND between operators, or pipe delimited to specify OR between operators. Parentheses can be used to specify order of operations. Valid operators include: eq, ne, lt, gt, lte, gte, in, !in, like, !like, null, or !null",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/LoginAttemptListResponse"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/users/{id}/macrodef" : {
+      "post" : {
+        "tags" : [ "User Macros" ],
+        "summary" : "Import MacroDef file to Private Macros",
+        "description" : "",
+        "operationId" : "importUserMacroDef",
+        "consumes" : [ "multipart/form-data" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "file",
+          "in" : "formData",
+          "description" : "MacroDef file, Json or Xml",
+          "required" : true,
+          "type" : "file"
+        }, {
+          "name" : "replace",
+          "in" : "query",
+          "required" : false,
+          "type" : "boolean"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/MacroMergeResponse"
+            }
+          },
+          "201" : {
+            "description" : "Created",
+            "schema" : {
+              "$ref" : "#/definitions/MacroListResponse"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/users/{id}/macros" : {
+      "get" : {
+        "tags" : [ "User Macros" ],
+        "summary" : "List Private Macros for this User",
+        "description" : "",
+        "operationId" : "listUserMacros",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "offset",
+          "in" : "query",
+          "description" : "Page number (zero based)",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "size",
+          "in" : "query",
+          "description" : "Page size",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "sortby",
+          "in" : "query",
+          "description" : "A comma delimited list of column names to sort the result set by. These may be specified as child fields, for example createdByUser.name",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "direction",
+          "in" : "query",
+          "description" : "A comma delimited list of sort directions (asc or desc) that coincide with the sortby parameters specified",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "filter",
+          "in" : "query",
+          "description" : "Comma delimited filter values. Sets of values (for in or !in operations) should be pipe delimited. If only a filter is provided, with no filterBy or operators defined, then like will be used among a set of default columns. All date values should be provided in epoch numerical format",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "filterby",
+          "in" : "query",
+          "description" : "A comma delimited list of property names to run the defined filter operations on. These may be child objects, such as createdByUser.name, and should coincide in order with the operators and filter(s) provided",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "operators",
+          "in" : "query",
+          "description" : "Filter operations. These may be either comma delimited to specify AND between operators, or pipe delimited to specify OR between operators. Parentheses can be used to specify order of operations. Valid operators include: eq, ne, lt, gt, lte, gte, in, !in, like, !like, null, or !null",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/MacroListResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "post" : {
+        "tags" : [ "User Macros" ],
+        "summary" : "Create a Private Macro",
+        "description" : "Macro value is only returned if the macro is not marked as secure. ",
+        "operationId" : "createUserMacro",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/MacroRequest"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Created",
+            "schema" : {
+              "$ref" : "#/definitions/MacroResponse"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          },
+          "409" : {
+            "description" : "Conflict"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/users/{id}/macros/{name}" : {
+      "get" : {
+        "tags" : [ "User Macros" ],
+        "summary" : "Retrieve a Private Macro",
+        "description" : "",
+        "operationId" : "getUserMacro",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "name",
+          "in" : "path",
+          "description" : "Name of the Macro to retrieve.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/MacroResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "post" : {
+        "tags" : [ "User Macros" ],
+        "summary" : "Create a Macro on the User from a file",
+        "description" : "Macro value is only returned if the macro is not marked as secure. ",
+        "operationId" : "createUserMacroFromFile",
+        "consumes" : [ "multipart/form-data" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "file",
+          "in" : "formData",
+          "description" : "Source File",
+          "required" : true,
+          "type" : "file"
+        }, {
+          "name" : "name",
+          "in" : "path",
+          "description" : "Macro Name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "secure",
+          "in" : "query",
+          "description" : "Is Macro Secure",
+          "required" : false,
+          "type" : "boolean"
+        }, {
+          "name" : "description",
+          "in" : "query",
+          "description" : "Macro Description",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Created",
+            "schema" : {
+              "$ref" : "#/definitions/MacroResponse"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "409" : {
+            "description" : "Conflict"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "put" : {
+        "tags" : [ "User Macros" ],
+        "summary" : "Create a Macro on the User from a file",
+        "description" : "Macro value is only returned if the macro is not marked as secure. ",
+        "operationId" : "updateUserMacroFromFile",
+        "consumes" : [ "multipart/form-data" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "file",
+          "in" : "formData",
+          "description" : "Source File",
+          "required" : true,
+          "type" : "file"
+        }, {
+          "name" : "key",
+          "in" : "query",
+          "description" : "Macro Name",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "secure",
+          "in" : "query",
+          "description" : "Is Macro Secure",
+          "required" : true,
+          "type" : "boolean"
+        }, {
+          "name" : "description",
+          "in" : "query",
+          "description" : "Macro Description",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/MacroResponse"
+            }
+          },
+          "201" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/MacroResponse"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "delete" : {
+        "tags" : [ "User Macros" ],
+        "summary" : "Delete a Private Macro",
+        "description" : "",
+        "operationId" : "deleteUserMacro",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "name",
+          "in" : "path",
+          "description" : "Name of the Macro to delete.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "No Content"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/users/{id}/metrics" : {
+      "get" : {
+        "tags" : [ "User" ],
+        "summary" : "Retrieve an User Metrics",
+        "description" : "",
+        "operationId" : "getUserMetrics",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "duration",
+          "in" : "query",
+          "description" : "Time duration from which to query.  Use the format 30d15h25m.  Can be any combination of those parameters.",
+          "required" : false,
+          "type" : "string",
+          "default" : "30d"
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/UserMetricsResponse"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/users/{id}/password" : {
+      "post" : {
+        "tags" : [ "User" ],
+        "summary" : "Change your API Password",
+        "description" : "",
+        "operationId" : "changePassword",
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/ChangePasswordRequest"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/users/{id}/preferences" : {
+      "post" : {
+        "tags" : [ "User Preferences" ],
+        "summary" : "Create User Preferences for {type}",
+        "description" : "",
+        "operationId" : "createUserPreferenceInfo",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/UserPreferenceRequest"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Created",
+            "schema" : {
+              "$ref" : "#/definitions/UserPreferenceResponse"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    },
+    "/users/{id}/preferences/{type}" : {
+      "get" : {
+        "tags" : [ "User Preferences" ],
+        "summary" : "Retrieve User Preferences for {type}",
+        "description" : "",
+        "operationId" : "getUserPreferenceInfo",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "type",
+          "in" : "path",
+          "description" : "Name of the tpe to get.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "type" : "object",
+              "additionalProperties" : {
+                "type" : "object"
+              }
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "put" : {
+        "tags" : [ "User Preferences" ],
+        "summary" : "Update User Preferences for {type}",
+        "description" : "",
+        "operationId" : "updateUserPreferenceInfo",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "type",
+          "in" : "path",
+          "description" : "Type of Preference set to Update.",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : true,
+          "schema" : {
+            "type" : "object",
+            "additionalProperties" : {
+              "type" : "object"
+            }
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/UserPreferenceResponse"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "delete" : {
+        "tags" : [ "User Preferences" ],
+        "summary" : "Delete User Preferences for {type}",
+        "description" : "",
+        "operationId" : "deleteUserPreferenceInfo",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "type",
+          "in" : "path",
+          "description" : "Type of Preference set to Update.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "No Content"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      },
+      "patch" : {
+        "tags" : [ "User Preferences" ],
+        "summary" : "Patch User Preferences for {type}",
+        "description" : "",
+        "operationId" : "patchUserPreferenceInfo",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "User Id",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "type",
+          "in" : "path",
+          "description" : "Type of Preference set to Update.",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "body",
+          "name" : "body",
+          "required" : true,
+          "schema" : {
+            "type" : "object",
+            "additionalProperties" : {
+              "type" : "object"
+            }
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/UserPreferenceResponse"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request"
+          },
+          "401" : {
+            "description" : "Unauthorized"
+          },
+          "403" : {
+            "description" : "Access Denied"
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        },
+        "security" : [ {
+          "Bearer token" : [ ]
+        } ]
+      }
+    }
+  },
+  "securityDefinitions" : {
+    "Bearer token" : {
+      "description" : "Enter access_token value from Login. Use format 'Bearer [access_token value]'.",
+      "type" : "apiKey",
+      "name" : "authorization",
+      "in" : "header"
+    }
+  },
+  "definitions" : {
+    "AccessTokenResponse" : {
+      "type" : "object",
+      "properties" : {
+        "access_token" : {
+          "type" : "string"
+        },
+        "token_type" : {
+          "type" : "string"
+        },
+        "expires_in" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "AccountReference" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        },
+        "customerId" : {
+          "type" : "string"
+        }
+      }
+    },
+    "AccountRequest" : {
+      "type" : "object",
+      "properties" : {
+        "allowedUserDomains" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "AccountResponse" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        },
+        "customerId" : {
+          "type" : "string"
+        },
+        "destinationId" : {
+          "type" : "string"
+        },
+        "allowedUserDomains" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "BulkOperation" : {
+      "type" : "object",
+      "properties" : {
+        "recordIds" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "ChangePasswordRequest" : {
+      "type" : "object",
+      "properties" : {
+        "oldPassword" : {
+          "type" : "string"
+        },
+        "newPassword" : {
+          "type" : "string"
+        },
+        "confirmNewPassword" : {
+          "type" : "string"
+        }
+      }
+    },
+    "DropdownListResponse" : {
+      "type" : "object",
+      "properties" : {
+        "totalRecords" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "totalPages" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "size" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "pageNumber" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "sortBy" : {
+          "type" : "string"
+        },
+        "direction" : {
+          "type" : "string"
+        },
+        "filter" : {
+          "$ref" : "#/definitions/FilterRequest"
+        },
+        "warnings" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "items" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Reference"
+          }
+        },
+        "links" : {
+          "$ref" : "#/definitions/ListLink"
+        },
+        "filterRequest" : {
+          "$ref" : "#/definitions/FilterRequest"
+        }
+      }
+    },
+    "EntryPoints" : {
+      "type" : "object",
+      "properties" : {
+        "packageName" : {
+          "type" : "string"
+        },
+        "entryPoints" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "FileListResponse" : {
+      "type" : "object",
+      "properties" : {
+        "totalRecords" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "totalPages" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "size" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "pageNumber" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "sortBy" : {
+          "type" : "string"
+        },
+        "direction" : {
+          "type" : "string"
+        },
+        "filter" : {
+          "$ref" : "#/definitions/FilterRequest"
+        },
+        "warnings" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "items" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/FileResponse"
+          }
+        },
+        "links" : {
+          "$ref" : "#/definitions/ListLink"
+        },
+        "filterRequest" : {
+          "$ref" : "#/definitions/FilterRequest"
+        }
+      }
+    },
+    "FileMetaData" : {
+      "type" : "object",
+      "properties" : {
+        "size" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "lastModified" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "contentType" : {
+          "type" : "string"
+        },
+        "entityType" : {
+          "type" : "string",
+          "enum" : [ "ACCOUNT", "GROUP", "USER", "PROVISIONING", "LICENSE", "JOBTEMPLATE", "JOBCONFIG", "JOB", "JOB_OUTPUT", "TEMP", "AGENT", "INTEGRATION", "DRIVER" ]
+        },
+        "entityId" : {
+          "type" : "string"
+        },
+        "linkType" : {
+          "type" : "string",
+          "enum" : [ "LINK", "INHERITED", "LOCAL" ]
+        },
+        "linkId" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      }
+    },
+    "FileResponse" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        },
+        "linkId" : {
+          "type" : "string"
+        },
+        "metadata" : {
+          "$ref" : "#/definitions/FileMetaData"
+        }
+      }
+    },
+    "FilterRequest" : {
+      "type" : "object",
+      "properties" : {
+        "and" : {
+          "type" : "boolean",
+          "example" : true
+        },
+        "or" : {
+          "type" : "boolean",
+          "example" : false
+        },
+        "filters" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/OperationRequest"
+          }
+        },
+        "subfilters" : {
+          "type" : "array",
+          "example" : "[{\"and\":true,\"operations\":\"More filters can go here (recursive)\"}]",
+          "items" : {
+            "type" : "object"
+          }
+        }
+      }
+    },
+    "InstalledProductInfo" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "copyright" : {
+          "type" : "string"
+        },
+        "version" : {
+          "type" : "string"
+        },
+        "buildDate" : {
+          "type" : "string"
+        }
+      }
+    },
+    "ListLink" : {
+      "type" : "object",
+      "properties" : {
+        "prev" : {
+          "type" : "string"
+        },
+        "next" : {
+          "type" : "string"
+        }
+      }
+    },
+    "LoginAttemptListResponse" : {
+      "type" : "object",
+      "properties" : {
+        "totalRecords" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "totalPages" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "size" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "pageNumber" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "sortBy" : {
+          "type" : "string"
+        },
+        "direction" : {
+          "type" : "string"
+        },
+        "filter" : {
+          "$ref" : "#/definitions/FilterRequest"
+        },
+        "warnings" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "items" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/LoginAttemptResponse"
+          }
+        },
+        "links" : {
+          "$ref" : "#/definitions/ListLink"
+        },
+        "filterRequest" : {
+          "$ref" : "#/definitions/FilterRequest"
+        }
+      }
+    },
+    "LoginAttemptResponse" : {
+      "type" : "object",
+      "properties" : {
+        "timestamp" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "userId" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "username" : {
+          "type" : "string"
+        },
+        "success" : {
+          "type" : "boolean"
+        },
+        "exception" : {
+          "type" : "string"
+        }
+      }
+    },
+    "LoginRequest" : {
+      "type" : "object",
+      "properties" : {
+        "username" : {
+          "type" : "string"
+        },
+        "password" : {
+          "type" : "string"
+        }
+      }
+    },
+    "MacroListResponse" : {
+      "type" : "object",
+      "properties" : {
+        "totalRecords" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "totalPages" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "size" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "pageNumber" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "sortBy" : {
+          "type" : "string"
+        },
+        "direction" : {
+          "type" : "string"
+        },
+        "filter" : {
+          "$ref" : "#/definitions/FilterRequest"
+        },
+        "warnings" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "items" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/MacroResponse"
+          }
+        },
+        "links" : {
+          "$ref" : "#/definitions/ListLink"
+        },
+        "filterRequest" : {
+          "$ref" : "#/definitions/FilterRequest"
+        }
+      }
+    },
+    "MacroMergeResponse" : {
+      "type" : "object",
+      "properties" : {
+        "macroSet" : {
+          "$ref" : "#/definitions/MacroSetResponse"
+        },
+        "keysRead" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "keysCreated" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "keysUpdated" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "existingKeys" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "MacroRequest" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "value" : {
+          "type" : "string"
+        },
+        "secure" : {
+          "type" : "boolean"
+        },
+        "description" : {
+          "type" : "string"
+        }
+      }
+    },
+    "MacroResponse" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        },
+        "created" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "createdByUser" : {
+          "$ref" : "#/definitions/Reference"
+        },
+        "lastModified" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "lastModifiedByUser" : {
+          "$ref" : "#/definitions/Reference"
+        },
+        "allowed" : {
+          "type" : "array",
+          "uniqueItems" : true,
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "value" : {
+          "type" : "string"
+        },
+        "secure" : {
+          "type" : "boolean"
+        },
+        "description" : {
+          "type" : "string"
+        }
+      }
+    },
+    "MacroSetResponse" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "visibility" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        }
+      }
+    },
+    "MetricsWindow" : {
+      "type" : "object",
+      "properties" : {
+        "windowBegins" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "windowEnds" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "windowDuration" : {
+          "type" : "string"
+        }
+      }
+    },
+    "OperationRequest" : {
+      "type" : "object",
+      "required" : [ "operator" ],
+      "properties" : {
+        "fieldName" : {
+          "type" : "string",
+          "example" : "id"
+        },
+        "object" : {
+          "type" : "string",
+          "example" : "jobConfig"
+        },
+        "operator" : {
+          "type" : "string",
+          "example" : "=",
+          "enum" : [ "\"=\"", "\"eq\"", "\"!=\"", "\"ne\"", "\"<\"", "\"lt\"", "\"<=\"", "\"lte\"", "\">\"", "\"gt\"", "\">=\"", "\"gte\"", "\"subquery\"", "\"in\"", "\"!in\"", "\"null\"", "\"!null\"", "\"contains\"", "\"!contains\"", "\"none\"" ]
+        },
+        "value" : {
+          "type" : "object",
+          "example" : "value"
+        },
+        "values" : {
+          "type" : "array",
+          "example" : "[1,2]",
+          "uniqueItems" : true,
+          "items" : {
+            "type" : "object"
+          }
+        },
+        "in" : {
+          "$ref" : "#/definitions/FilterRequest"
+        },
+        "date" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Reference" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "type" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        },
+        "status" : {
+          "type" : "string"
+        }
+      }
+    },
+    "UserListResponse" : {
+      "type" : "object",
+      "properties" : {
+        "totalRecords" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "totalPages" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "size" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "pageNumber" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "sortBy" : {
+          "type" : "string"
+        },
+        "direction" : {
+          "type" : "string"
+        },
+        "filter" : {
+          "$ref" : "#/definitions/FilterRequest"
+        },
+        "warnings" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "items" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/UserResponse"
+          }
+        },
+        "links" : {
+          "$ref" : "#/definitions/ListLink"
+        },
+        "filterRequest" : {
+          "$ref" : "#/definitions/FilterRequest"
+        }
+      }
+    },
+    "UserMetricsResponse" : {
+      "type" : "object",
+      "properties" : {
+        "executionCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "executionTime" : {
+          "type" : "string"
+        },
+        "jobTemplateCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "jobConfigCount" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "window" : {
+          "$ref" : "#/definitions/MetricsWindow"
+        },
+        "user" : {
+          "$ref" : "#/definitions/Reference"
+        }
+      }
+    },
+    "UserPreferenceRequest" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "userId" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "type" : {
+          "type" : "string"
+        },
+        "preferences" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "object"
+          }
+        }
+      }
+    },
+    "UserPreferenceResponse" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        },
+        "created" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "createdByUser" : {
+          "$ref" : "#/definitions/Reference"
+        },
+        "lastModified" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "lastModifiedByUser" : {
+          "$ref" : "#/definitions/Reference"
+        },
+        "allowed" : {
+          "type" : "array",
+          "uniqueItems" : true,
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "userId" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "type" : {
+          "type" : "string"
+        },
+        "preferences" : {
+          "type" : "object",
+          "additionalProperties" : {
+            "type" : "object"
+          }
+        }
+      }
+    },
+    "UserRequest" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "username" : {
+          "type" : "string"
+        },
+        "password" : {
+          "type" : "string"
+        },
+        "email" : {
+          "type" : "string"
+        },
+        "active" : {
+          "type" : "boolean"
+        },
+        "admin" : {
+          "type" : "boolean"
+        },
+        "accessPolicyId" : {
+          "type" : "string"
+        },
+        "firstName" : {
+          "type" : "string"
+        },
+        "lastName" : {
+          "type" : "string"
+        },
+        "street" : {
+          "type" : "string"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "postalCode" : {
+          "type" : "string"
+        },
+        "country" : {
+          "type" : "string"
+        }
+      }
+    },
+    "UserResponse" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "username" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        },
+        "password" : {
+          "type" : "string"
+        },
+        "email" : {
+          "type" : "string"
+        },
+        "active" : {
+          "type" : "boolean"
+        },
+        "admin" : {
+          "type" : "boolean"
+        },
+        "accessPolicyId" : {
+          "type" : "string"
+        },
+        "firstName" : {
+          "type" : "string"
+        },
+        "lastName" : {
+          "type" : "string"
+        },
+        "street" : {
+          "type" : "string"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "postalCode" : {
+          "type" : "string"
+        },
+        "country" : {
+          "type" : "string"
+        },
+        "superuser" : {
+          "type" : "boolean"
+        },
+        "supportuser" : {
+          "type" : "boolean"
+        },
+        "externalId" : {
+          "type" : "string"
+        },
+        "account" : {
+          "$ref" : "#/definitions/AccountReference"
+        },
+        "accessPolicy" : {
+          "$ref" : "#/definitions/Reference"
+        },
+        "accessPolicies" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Reference"
+          }
+        },
+        "created" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "createdByUser" : {
+          "$ref" : "#/definitions/Reference"
+        },
+        "lastModified" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "lastModifiedByUser" : {
+          "$ref" : "#/definitions/Reference"
+        }
+      }
+    }
+  }
+}
