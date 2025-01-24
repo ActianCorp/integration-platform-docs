@@ -10,24 +10,27 @@ const FeatureList = [
     png: "/img/home/im.png",
     description: (
       <>
+      An elastic cloud-based platform that enables the design, deployment, and management of web-based integrations.
       </>
     ),
   },
   {
     title: 'Integration Agent',
     doc: "/docs/integration-agent/agent-overview",
-    png: "/img/home/ia.png",
+    png: "/img/home/im.png",
     description: (
       <>
+      DataCloud Agent Technology enables centralized cloud management of on-premise integration jobs and related collateral.
       </>
     ),
   },
   {
     title: 'Release Notes',
     doc: "/docs/release-notes",
-    png: "/img/home/release-notes.png",
+    png: "/img/home/list.svg",
     description: (
       <>
+      View new features, bug fixes, and known issues for each release.
      </>
     ),
   },
@@ -36,14 +39,20 @@ const FeatureList = [
 function Feature({title, doc, png, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <Link to={doc}>
-        <div className="text--center">
-          <img src={png} className="homepage-tile-image" alt="" />
-        </div>
-        <div className="text--center padding-horiz--md"><br />
+        <div className="text--center xxxx">
+          <img src={png} className="icon" alt="" />
+          <div className="text--center padding-horiz--md"><br />
           <Heading as="h3"><b>{title}</b></Heading> 
+          <div className="yyyy">
+          {description}
+          </div>
+          </div>
+        <br />
+          <Link className="button button--primary button--md" to={doc}>
+            View Docs &#8250;&#8250;
+          </Link>
         </div>
-      </Link> 
+
     </div>
   );
 }

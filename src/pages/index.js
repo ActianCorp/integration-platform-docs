@@ -20,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--primary button--md"
             to="/docs/intro">
-            View the Docs &#8250;&#8250;
+            Learn More &#8250;&#8250;
           </Link>
         </div>
       </div>
