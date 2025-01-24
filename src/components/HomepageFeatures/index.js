@@ -39,11 +39,11 @@ const FeatureList = [
 function Feature({title, doc, png, description}) {
   return (
     <div className={clsx('col col--4')}>
-        <div className="text--center xxxx">
+        <div className="text--center">
           <img src={png} className="icon" alt="" />
           <div className="text--center padding-horiz--md"><br />
           <Heading as="h3"><b>{title}</b></Heading> 
-          <div className="yyyy">
+          <div className="card-text">
           {description}
           </div>
           </div>
