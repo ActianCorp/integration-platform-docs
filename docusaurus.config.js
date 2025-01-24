@@ -121,6 +121,10 @@ const config = {
             position: 'left',
             items: [
               {
+                label: 'API Overview',
+                to: '/docs/integration-manager/APIs/api-overview',
+              },
+              {
                 label: 'Integration Components',
                 to: '/integration-components',
               },

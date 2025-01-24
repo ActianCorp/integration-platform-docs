@@ -1,15 +1,24 @@
 ---
-title: Job Execution API
+title: API Overview
 ---
 
-# Job Execution API
+# API Overview
 
-Every Job Configuration is automatically exposed as a RESTful Job Execution API, for example, POST /api/jobconfigs/1/jobs. This API can be invoked on demand, with or without override parameters. 
+Integration Manager is an entirely API-driven platform. Every function available via the UI is also available as an API (and more!).
 
-For more information, see [Open API Spec: Job Execution API](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution).
+Refer to the following OpenAPI specs for Integration Manager APIs.
 
-Every Job Configuration is also exposed as a listener API. For example:
+* [Integration Components](../../../job-execution)
+* [Job Configuration](../../../job-configuration)
+* [Job Execution](../../../job-execution)
+* [JobConfig Aliasing](../../../jobconfig-aliasing)
+* [Agents and Devices](../../../agent-management)
+* [Accounts and Users](../../../account-administration)
+* [Resource Management](../../../resource-management)
+* [Access Control Policies](../../../access-control-policies)
 
-`POST /api/jobconfigs/1/listener`
+:::note
+The OpenAPI interface linked to above does not support execution from the UI. 
 
-This API can be invoked with a data payload that your integration process can directly consume.
+For testing and exploration, you can access the Swagger interface at [https://api.im.actiandatacloud.com/v2/apidocs/](https://api.im.actiandatacloud.com/v2/apidocs/). Note that the Swagger interface is for exploration only, not for automation use.
+:::
