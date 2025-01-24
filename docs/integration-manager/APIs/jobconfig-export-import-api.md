@@ -9,9 +9,9 @@ This service allows an API consumer to export packages and configurations from a
 Exported macros cannot contain encrypted values.
 :::
 
-Refer to the Open API Spec for the following endpoints:
+Refer to the OpenAPI Spec for the following endpoints:
 
-* [Export a JobConfig](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Configuration#/Job%20Config/exportJobConfig): Create/download a zip file containing JobConfig metadata, package, attached files, and macros.
-* [Import a JobConfig](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Configuration#/Job%20Config/importJobConfig): Upload an export zip file and extract it into a JobConfig clone in the new environment (with new record ids).
-* [Export a JobTemplate](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Configuration#/Job%20Template/exportJobTemplate): Create/download a zip file containing JobTemplate metadata, package, attached files, and macros. You can optionally include child JobConfig exports.
-* [Import a JobTemplate](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Configuration#/Job%20Template/importJobTemplate): Upload and extract a JobTemplate zip file and recursively process any JobConfig children.
+* [Export a JobConfig](../../../job-configuration#tag/Job-Config/operation/exportJobConfig): Create/download a zip file containing JobConfig metadata, package, attached files, and macros.
+* [Import a JobConfig](../../../job-configuration#tag/Job-Config/operation/importJobConfig): Upload an export zip file and extract it into a JobConfig clone in the new environment (with new record ids).
+* [Export a JobTemplate](../../../job-configuration#tag/Job-Template/operation/exportJobTemplate): Create/download a zip file containing JobTemplate metadata, package, attached files, and macros. You can optionally include child JobConfig exports.
+* [Import a JobTemplate](../../../job-configuration#tag/Job-Template/operation/importJobTemplate): Upload and extract a JobTemplate zip file and recursively process any JobConfig children.

@@ -103,7 +103,6 @@ const sidebars = {
           items: [
             'integration-manager/APIs/api-overview',
             'integration-manager/APIs/quickstart-api-tutorial',
-            'integration-manager/APIs/job-execution-api',
             'integration-manager/APIs/jobconfig-file-listener-api',
             'integration-manager/APIs/jobconfig-message-listener-api',
             'integration-manager/APIs/jobconfig-export-import-api',

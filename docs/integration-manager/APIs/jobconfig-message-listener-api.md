@@ -6,6 +6,8 @@ title: JobConfig Message Listener API
 
 ## Overview
 
+OpenAPI Spec: [Run Job with Input Message](../../../job-execution#tag/Job/operation/runJobConfigWithMessage)
+
 This service allows an API consumer to run an existing JobConfig with a text, json, or xml input message.
 
 * Maximum payload size is 750KB
@@ -23,8 +25,6 @@ This service allows an API consumer to run an existing JobConfig with a text, js
 
 * Text Message payload 202 Accepted response
 * Result/output may be retrieved asynchronously after the job is complete
-
-Refer to [Open API Spec: Run Job with Input Message](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/Job/runJobConfigWithMessage).
 
 ## Step 1: Retrieve an Access Token
 
