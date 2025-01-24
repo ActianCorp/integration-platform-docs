@@ -3,6 +3,11 @@ title: Release Notes
 ---
 # Release Notes
 
+:::note
+Documentation for Integration Platform releases prior to version 3.2 has not been migrated to this new documentation platform.
+Documentation for older releases can be found [here](https://docs.actian.com/#page/Welcome/Welcome_to_the_Actian_Documentation_Portal.htm).
+:::
+
 ### 3.3.0
 
 | Issue Type | <div style={{width: 65}}>Issue Key</div> | Summary | Fix versions | Affects versions | Status |
