@@ -91,8 +91,10 @@ header:has(> div.homeheader) {
 }
 
 .homeheader {
-  padding-top: 3rem;
+  margin-top: -2rem;
+  padding-top: 0rem;
   padding-bottom: 1rem;
+  height: 160px;
 }
 
 .header-github-link {
@@ -371,5 +373,7 @@ input[type="submit"]:hover {
 }
 
 .card-text {
-  height: 100px;
+  height: 60px;
+  line-height: 22px;
+  font-size: 15px;
 }
