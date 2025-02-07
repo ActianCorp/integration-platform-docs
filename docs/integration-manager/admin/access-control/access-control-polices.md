@@ -11,7 +11,7 @@ By default, non-admin users only have access to JobTemplates and JobConfigs they
 | jobconfigs    | view, edit, delete |
 | jobtemplates  | view, edit, delete |
 
-Refer to the Open API specs for [Access Control Policy APIs](../../../../access-control-policies).
+Refer to [Open API specs for Access Control Policy APIs](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Access%20Control%20Policies).
 
 ## Editing Access Control Policies
 
