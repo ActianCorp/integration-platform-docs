@@ -27,10 +27,10 @@ const FeatureList = [
   {
     title: 'Release Notes',
     doc: "/docs/release-notes",
-    png: "/img/home/list.svg",
+    png: "/img/home/list.png",
     description: (
       <>
-      View new features, bug fixes, and known issues for each release.
+      New features, bug fixes, and known issues for each release.
      </>
     ),
   },
@@ -43,9 +43,11 @@ function Feature({title, doc, png, description}) {
           <img src={png} className="icon" alt="" />
           <div className="text--center padding-horiz--md">
           <Heading as="h3"><b>{title}</b></Heading> 
-          <div className="card-text">
-          {description}
-          </div>
+          <center>
+            <div className="card-text">
+              {description}
+            </div>
+          </center>
           </div>
         <br />
           <Link className="button button--primary button--md" to={doc}>

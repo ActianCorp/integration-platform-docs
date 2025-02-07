@@ -376,4 +376,5 @@ input[type="submit"]:hover {
   height: 60px;
   line-height: 22px;
   font-size: 15px;
+  width: 320px;
 }
