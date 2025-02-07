@@ -118,7 +118,7 @@ You can invoke an Alias, that is, run a JobConfig, through the Job Execution API
 * (Discouraged) Aliases support User credential authentication, Authorization: Basic is required, in the format of Base64Encode(username:password)
 * (Discouraged) Public Aliases do not require any authentication
 
-For more details, refer to [Open API spec: Run a job via jobConfig alias with text message input](../../../../job-execution#tag/Job/operation/runAliasWithMessage).
+For more details, refer to [Open API spec: Run a job via jobConfig alias with text message input](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/Job/runAliasWithMessage).
 
 :::danger[Warning]
 Using HTTPS is always recommended. Otherwise, API tokens, credentials, and payloads are subject to hijack. HTTPS is always enabled and enforced for DataCloud and VPC deployments.

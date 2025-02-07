@@ -4,6 +4,14 @@ title: Quick Start API Tutorial
 
 # Quick Start API Tutorial
 
+Integration Manager is an entirely API-driven platform. Every function available via the UI is also available as an API (and more!).
+
+OpenAPI specs for Integration Manager APIs are located here: https://api.im.actiandatacloud.com/v2/apidocs/.
+
+:::caution
+The Swagger interface is for exploration only, not for automation use.
+:::
+
 The following procedure walks you through the process of creating and running a JobConfig using the Job Configuration API.
 
 ## Step 1: Retrieve an Access Token

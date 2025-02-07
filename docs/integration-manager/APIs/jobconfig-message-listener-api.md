@@ -6,7 +6,7 @@ title: JobConfig Message Listener API
 
 ## Overview
 
-OpenAPI Spec: [Run Job with Input Message](../../../job-execution#tag/Job/operation/runJobConfigWithMessage)
+OpenAPI Spec: [Run Job with Input Message](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/Job/runJobConfigWithMessage)
 
 This service allows an API consumer to run an existing JobConfig with a text, json, or xml input message.
 

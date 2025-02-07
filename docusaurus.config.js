@@ -54,53 +54,53 @@ const config = {
         },
       }),
     ],
-    [
-      'redocusaurus',
-      {
-        // Plugin Options for loading OpenAPI files
-        specs: [
-          // Pass it a path to a local OpenAPI YAML file
-          // Redocusaurus will automatically bundle your spec into a single file during the build
-          {
-            spec: 'api/integration-components.json',
-            route: '/integration-components/',
-          },
-          {
-            spec: 'api/job-configuration.json',
-            route: '/job-configuration/',
-          },
-          {
-            spec: 'api/job-execution.json',
-            route: '/job-execution/',
-          },
-          {
-            spec: 'api/jobconfig-aliasing.json',
-            route: '/jobconfig-aliasing/',
-          },
-          {
-            spec: 'api/agent-management.json',
-            route: '/agent-management/',
-          },
-          {
-            spec: 'api/account-administration.json',
-            route: '/account-administration/',
-          },
-          {
-            spec: 'api/resource-management.json',
-            route: '/resource-management/',
-          },
-          {
-            spec: 'api/access-control-policies.json',
-            route: '/access-control-policies/',
-          },
-        ],
-        // Theme Options for modifying how redoc renders them
-        theme: {
-          // Change with your site colors
-          primaryColor: '#1890ff',
-        },
-      },
-    ]
+//    [
+//      'redocusaurus',
+//      {
+//        // Plugin Options for loading OpenAPI files
+//        specs: [
+//          // Pass it a path to a local OpenAPI YAML file
+//          // Redocusaurus will automatically bundle your spec into a single file during the build
+//          {
+//            spec: 'api/integration-components.json',
+//            route: '/integration-components/',
+//          },
+//          {
+//            spec: 'api/job-configuration.json',
+//            route: '/job-configuration/',
+//          },
+//          {
+//            spec: 'api/job-execution.json',
+//            route: '/job-execution/',
+//          },
+//          {
+//            spec: 'api/jobconfig-aliasing.json',
+//            route: '/jobconfig-aliasing/',
+//          },
+//          {
+//            spec: 'api/agent-management.json',
+//            route: '/agent-management/',
+//          },
+//          {
+//            spec: 'api/account-administration.json',
+//            route: '/account-administration/',
+//          },
+//          {
+//            spec: 'api/resource-management.json',
+//            route: '/resource-management/',
+//          },
+//          {
+//            spec: 'api/access-control-policies.json',
+//            route: '/access-control-policies/',
+//          },
+//        ],
+//        // Theme Options for modifying how redoc renders them
+//        theme: {
+//          // Change with your site colors
+//          primaryColor: '#1890ff',
+//        },
+//      },
+//    ]
   ],
 
   themeConfig:
@@ -121,40 +121,36 @@ const config = {
             position: 'left',
             items: [
               {
-                label: 'API Overview',
-                to: '/docs/integration-manager/APIs/api-overview',
-              },
-              {
                 label: 'Integration Components',
-                to: '/integration-components',
+                to: 'https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=Integration%20Components',
               },
               {
                 label: 'Job Configuration',
-                to: '/job-configuration',
+                to: 'https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=Job%20Configuration',
               },
               {
                 label: 'Job Execution',
-                to: '/job-execution',
+                to: 'https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=Job%20Execution',
               },
               {
                 label: 'Job Config Aliasing',
-                to: '/jobconfig-aliasing',
+                to: 'https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=JobConfig%20Aliasing',
               },
               {
                 label: 'Agents and Devices',
-                to: '/agent-management',
+                to: 'https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=Agents%20and%20Devices',
               },
               {
                 label: 'Accounts and Users',
-                to: '/account-administration',
+                to: 'https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=Accounts%20and%20Users',
               },
               {
                 label: 'Resource Management',
-                to: '/resource-management',
+                to: 'https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=Resource%20Management',
               },
               {
                 label: 'Access Control Policies',
-                to: '/access-control-policies',
+                to: 'https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=Access%20Control%20Policies',
               },
             ],
           },

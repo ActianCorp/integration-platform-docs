@@ -101,7 +101,7 @@ const sidebars = {
           type: 'category',
           label: 'APIs',
           items: [
-            'integration-manager/APIs/api-overview',
+            //'integration-manager/APIs/api-overview',
             'integration-manager/APIs/quickstart-api-tutorial',
             'integration-manager/APIs/jobconfig-file-listener-api',
             'integration-manager/APIs/jobconfig-message-listener-api',

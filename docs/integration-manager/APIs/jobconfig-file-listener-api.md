@@ -5,7 +5,7 @@ title: JobConfig File Listener API
 
 ## Overview
 
-OpenAPI Spec: [Run Job with Input File](../../../job-execution#tag/Job/operation/runJobConfigWithFile)
+OpenAPI Spec: [Run Job with Input File](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/Job/runJobConfigWithFile).
 
 This service allows an API consumer to run an existing JobConfig with a file input (asynchronous only).
 
