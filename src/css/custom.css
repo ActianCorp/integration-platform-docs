@@ -83,7 +83,9 @@ h3 {
 /* HOME PAGE */
 /* QQQQ: WHY DO THESE NOT WORK IF I PUT THEM HERE, WHERE THERE ARE OTHER CUSTOMIZATION?: src\components\HomepageFeatures\styles.module.css */
 header:has(> div.homeheader) {
-  background: url('/img/home/vc-cta-background.jpg'); 
+  /*background: url('/img/home/vc-cta-background.jpg'); */
+  background-image: url('../../static/img/home/zeenea-header.png');
+  background-color: #0464c5;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;  
@@ -94,7 +96,7 @@ header:has(> div.homeheader) {
   margin-top: -2rem;
   padding-top: 0rem;
   padding-bottom: 1rem;
-  height: 160px;
+  height: 190px;
 }
 
 .header-github-link {

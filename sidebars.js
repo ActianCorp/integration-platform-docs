@@ -19,227 +19,108 @@ const sidebars = {
     //  id: 'intro',
     //  label: 'Overview',
     //},
-    'intro',
-    'release-notes',
-    'feedback',
-    'integration-manager/quickstart-install',
-    'accessing-the-integration-manager',
-    'dashboard',
-    'editing-your-profile',
+    'zeenea-intro',
+    //'release-notes',
+    //'feedback',
     {
       type: 'category',
-      label: 'INTEGRATION MANAGER',
+      label: 'GETTING STARTED',
       className: 'categoryItem',
       items: [
-        'integration-manager/manager-overview',
+        'zeenea-glossary',
+        'zeenea-supported-browsers',
         {
           type: 'category',
-          label: 'Configurations',
+          label: 'YOUR FIRST STEPS',
+          className: 'categoryItem',
           items: [
-            'integration-manager/configurations/configurations-overview',
-            'integration-manager/configurations/importing-configurations',
-            'integration-manager/configurations/creating-configurations',
-            //'integration-manager/configurations/run-your-first-job',
-            'integration-manager/configurations/editing-configuration-details',
-            'integration-manager/configurations/activating-or-inactivating-configurations',
-            'integration-manager/configurations/duplicating-configurations',
-            'integration-manager/configurations/deleting-configurations',
-            'integration-manager/configurations/creating-configuration-macros',
-            'integration-manager/configurations/importing-configuration-macros',
-            'integration-manager/configurations/managing-configuration-files',
-            'integration-manager/configurations/running-configurations',
-            'integration-manager/configurations/editing-configuration-schedules',
-            'integration-manager/configurations/serialized-job-queues',
-            'integration-manager/configurations/dataflow-usage',
+            'zeenea-superadmin',
+            'zeenea-data-steward',
+            'zeenea-data-explorer',
           ]
         },
-        {
-          type: 'category',
-          label: 'Templates',
-          items: [
-            'integration-manager/templates/creating-templates',
-            'integration-manager/templates/editing-template-details',
-            'integration-manager/templates/creating-a-configuration-from-a-template',
-            'integration-manager/templates/activating-or-inactivating-templates',
-            'integration-manager/templates/importing-template-macros',
-            'integration-manager/templates/managing-template-files',
-            'integration-manager/templates/managing-template-configurations',
-          ]
-        },
-        'integration-manager/run-locations',
-        {
-          type: 'category',
-          label: 'Jobs',
-          items: [
-            'integration-manager/jobs/viewing-job-run-history',
-            'integration-manager/jobs/job-status-codes',
-            'integration-manager/jobs/downloading-the-log-file',
-            'integration-manager/jobs/subscribing-to-job-notifications',
-              ]
-        },
-        {
-          type: 'category',
-          label: 'Macros',
-          items: [
-            'integration-manager/macros/macros-overview',
-            'integration-manager/macros/creating-macros',
-            'integration-manager/macros/importing-macros',
-            'integration-manager/macros/editing-macros',
-            'integration-manager/macros/using-LOCAL_JOB_SPEC_DIR',
-            'integration-manager/macros/using-preinstalled-driver-macros',
-            'integration-manager/macros/securing-macros',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Files',
-          items: [
-            'integration-manager/files/managing-files',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'APIs',
-          items: [
-            //'integration-manager/APIs/api-overview',
-            'integration-manager/APIs/quickstart-api-tutorial',
-            'integration-manager/APIs/jobconfig-file-listener-api',
-            'integration-manager/APIs/jobconfig-message-listener-api',
-            'integration-manager/APIs/jobconfig-export-import-api',
-            'integration-manager/APIs/file-loader-api',
-            'integration-manager/APIs/sfdc-outbound-messaging-api',
-              ]
-        },
-        {
-          type: 'category',
-          label: 'Agents',
-          items: [
-            'integration-manager/agents-and-devices/managing-agents-and-devices',
-            'integration-manager/agents-and-devices/download-agent',
-            'integration-manager/agents-and-devices/execute-config-with-agent',
-            'integration-manager/agents-and-devices/execute-template-with-agent',
-            //'integration-manager/agents-and-devices/other-authorized-devices',
-              ]
-        },
-
-        {
-          type: 'category',
-          label: 'Administration',
-          items: [
-            'integration-manager/admin/admin-overview',
-            {
-              type: 'category',
-              label: 'Configuring Security',
-              items: [
-                'integration-manager/admin/security/encryption-keystores',
-                'integration-manager/admin/security/enabling-https',
-                'integration-manager/admin/security/encryption-at-rest',
-                'integration-manager/admin/security/access-token-signatures',
-              ]
-            },
-            {
-              type: 'category',
-              label: 'Access Control',
-              items: [
-                'integration-manager/admin/access-control/user-management',
-                'integration-manager/admin/access-control/access-control-polices',
-                'integration-manager/admin/access-control/jobconfig-aliasing',
-              ]
-            },
-            {
-              type: 'category',
-              label: 'Server Administration',
-              link: {
-                type: 'generated-index',
-                title: 'Server Administration',
-                description: 'Integration Manager can be deployed and configured to meet the most demanding production requirements.',
-                slug: '/category/server-administration',
-              },
-              items: [
-                'integration-manager/admin/server-administration/production-architecture',
-                'integration-manager/admin/server-administration/production-configuration',
-                'integration-manager/admin/server-administration/setup-mysql',
-                'integration-manager/admin/server-administration/setup-ms-sql-server',
-                'integration-manager/admin/server-administration/setup-rabbitmq',
-                'integration-manager/admin/server-administration/setup-zookeeper',
-                'integration-manager/admin/server-administration/setup-kubernetes',
-                //'integration-manager/admin/server-administration/setup-kubernetes-on-prem',
-                'integration-manager/admin/server-administration/server-upgrades',
-                'integration-manager/admin/server-administration/integration-engines',
-                {
-                  type: 'category',
-                  label: 'File Folder Listener',
-                  items: [
-                    'integration-manager/admin/server-administration/file-folder-listener/file-folder-listener-service',
-                    'integration-manager/admin/server-administration/file-folder-listener/local-folder-listener',
-                    'integration-manager/admin/server-administration/file-folder-listener/aws-s3-bucket-listener',
-                    'integration-manager/admin/server-administration/file-folder-listener/azure-blob-storage-listener',
-                    'integration-manager/admin/server-administration/file-folder-listener/google-cloud-storage-listener',
-                  ]
-                },
-              ]
-            },
-            'integration-manager/admin/aggregator-service',
-            {
-              type: 'category',
-              label: 'Application Property Reference',
-              items: [
-                'integration-manager/admin/application-property-reference/properties-overview',
-                'integration-manager/admin/application-property-reference/dataconnect-properties',
-                'integration-manager/admin/application-property-reference/dataflow-properties',
-                'integration-manager/admin/application-property-reference/datasource-properties',
-                'integration-manager/admin/application-property-reference/file-repository-properties',
-                'integration-manager/admin/application-property-reference/queue-connection-properties',
-                //'integration-manager/admin/application-property-reference/scheduling-properties',
-                'integration-manager/admin/application-property-reference/web-server-properties',
-                'integration-manager/admin/application-property-reference/worker-properties',
-              ]
-            },
-          ]
-        },
-
       ]
     },
     {
       type: 'category',
-      label: 'INTEGRATION AGENT',
+      label: 'SCANNERS',
+      className: 'categoryItem',
       items: [
-        'integration-agent/agent-overview',
-        'integration-agent/quickstart-install',
-        'integration-agent/run-your-first-remote-job',
-        'integration-agent/monitoring-agent-status',
-        {
-          type: 'category',
-          label: 'On-Premise Data',
-          items: [
-            'integration-agent/on-prem-data/accessing-on-premise-storage',
-            'integration-agent/on-prem-data/connecting-to-ms-sql-server',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'File Listener Services',
-          items: [
-            'integration-manager/file-listener/file-listener-overview',
-            'integration-manager/file-listener/file-listener-local',
-            'integration-manager/file-listener/file-listener-aws',
-            'integration-manager/file-listener/file-listener-azure',
-            'integration-manager/file-listener/file-listener-google',
-            'integration-manager/file-listener/file-listener-history-management',
-              ]
-        },
-        {
-          type: 'category',
-          label: 'Advanced Topics',
-          items: [
-            'integration-agent/advanced-topics/configuration-files',
-            'integration-agent/advanced-topics/manual-agent-registration',
-            'integration-agent/advanced-topics/retrieve-agent-credential',
-            'integration-agent/advanced-topics/scriptable-agent-registration',
-            'integration-agent/advanced-topics/connecting-to-other-environments',
-          ]
-        },
-        'integration-agent/agent-troubleshooting',
+        'zeenea-scanner-setup',
+        'zeenea-scanner-docker',
+        'zeenea-managing-scanners',
+        'zeenea-troubleshooting',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'CONNECTORS',
+      className: 'categoryItem',
+      items: [
+        'zeenea-connectors-list',
+        'zeenea-connectors-install-as-plugin',
+        'zeenea-externalizing-external-connectors',
+        //'zeenea-dataconnect-connector',
+        'zeenea-informix-connector',
+        'zeenea-ingres-connector',
+        'zeenea-zen-connector',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'ZEENEA STUDIO',
+      className: 'categoryItem',
+      items: [
+        'zeenea-studio-overview',
+        'zeenea-studio-import',
+        'zeenea-studio-search-export',
+        'zeenea-dashboard-widgets',
+        'zeenea-doc-completion-level',
+        'zeenea-studio-create-delete-item',
+        'zeenea-studio-create-delete-custom-item',
+        'zeenea-studio-create-delete-data-process',
+        'zeenea-studio-create-delete-responsibility',
+        'zeenea-studio-create-edit-delete-property',
+        'zeenea-studio-create-edit-delete-topic',
+        'zeenea-add-remove-item-contacts',
+        'zeenea-editing-items-in-bulk',
+        'zeenea-watchlist',
+        'zeenea-impoting-datasets-or-visualizations',
+        'zeenea-studio-configure-glossary-model',
+        'zeenea-notifications',
+        'zeenea-discussion-threads',
+        'zeenea-identifying-orphan-datasets',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'ZEENEA EXPLORER',
+      className: 'categoryItem',
+      items: [
+        'zeenea-explorer-overview',
+        'zeenea-explorer-search',
+        'zeenea-explorer-export-search-results',
+        'zeenea-searching-federated-catalog',
+        'zeenea-data-lineage',
+        'zeenea-data-sampling',
+        'zeenea-data-profiling',
+        'zeenea-data-model-diagram',
+        'zeenea-data-catalog-item-updates',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'ZEENEA ADMINISTRATION',
+      className: 'categoryItem',
+      items: [
+        'zeenea-managing-users',
+        'zeenea-user-profiles-and-permissions',
+        'zeenea-managing-groups',
+        'zeenea-managing-catalogs',
+        'zeenea-maintenance-mode',
+        'zeenea-access-requests',
+        'zeenea-managing-connections',
+        'zeenea-managing-api-keys',
       ]
     },
   ],

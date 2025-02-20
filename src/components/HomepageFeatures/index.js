@@ -5,32 +5,32 @@ import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
-    title: 'Integration Manager',
-    doc: "/docs/integration-manager/manager-overview",
-    png: "/img/home/im.png",
+    title: 'Documentation',
+    doc: "/docs/zeenea-intro",
+    png: "/img/home/zeenea-docs.svg",
     description: (
       <>
-      An elastic cloud-based platform that enables the design, deployment, and management of web-based integrations.
+      Actian Zeenea Data Discovery Platform documentation.
       </>
     ),
   },
   {
-    title: 'Integration Agent',
-    doc: "/docs/integration-agent/agent-overview",
-    png: "/img/home/im.png",
+    title: 'API Reference',
+    doc: "https://docs.zeenea.com",
+    png: "/img/home/zeenea-api.png",
     description: (
       <>
-      DataCloud Agent Technology enables centralized cloud management of on-premise integration jobs and related collateral.
+      Zeenea GraphQL Catalog <br />API reference.
       </>
     ),
   },
   {
-    title: 'Release Notes',
-    doc: "/docs/release-notes",
+    title: 'Product Updates',
+    doc: "https://zeenea.com/product-updates/",
     png: "/img/home/list.png",
     description: (
       <>
-      New features, bug fixes, and known issues for each release.
+      Product releases, new features, and connector highlights.
      </>
     ),
   },
@@ -50,8 +50,8 @@ function Feature({title, doc, png, description}) {
           </center>
           </div>
         <br />
-          <Link className="button button--primary button--md" to={doc}>
-            View Docs &#8250;&#8250;
+          <Link className="button button--primary button--md xxxxx" to={doc}>
+            View &#8250;&#8250;
           </Link>
         </div>
 

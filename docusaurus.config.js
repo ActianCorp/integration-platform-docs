@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Actian Integration Platform',
+  title: 'Zeenea Data Discovery Platform',
   tagline: 'Documentation',
   favicon: 'img/logos/favicon.ico',
 
@@ -109,51 +109,14 @@ const config = {
       //Navbar items
       image: 'img/Logos_Actian_3Color-White-Transparent.png',
       navbar: {
-        title: 'Integration Platform',
+        //title: 'Integration Platform',
         logo: {
           alt: 'Actian Logo',
-          src: 'img/logos/ACTIAN-logo.svg',
+          src: 'img/logos/actian-zeenea.png',
          },
         items: [
-          {to: 'docs/intro', label: 'Docs', position: 'left'},
-          {
-            label: 'API',
-            position: 'left',
-            items: [
-              {
-                label: 'Integration Components',
-                to: 'https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=Integration%20Components',
-              },
-              {
-                label: 'Job Configuration',
-                to: 'https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=Job%20Configuration',
-              },
-              {
-                label: 'Job Execution',
-                to: 'https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=Job%20Execution',
-              },
-              {
-                label: 'Job Config Aliasing',
-                to: 'https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=JobConfig%20Aliasing',
-              },
-              {
-                label: 'Agents and Devices',
-                to: 'https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=Agents%20and%20Devices',
-              },
-              {
-                label: 'Accounts and Users',
-                to: 'https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=Accounts%20and%20Users',
-              },
-              {
-                label: 'Resource Management',
-                to: 'https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=Resource%20Management',
-              },
-              {
-                label: 'Access Control Policies',
-                to: 'https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=Access%20Control%20Policies',
-              },
-            ],
-          },
+          {to: 'docs/zeenea-intro', label: 'Docs', position: 'left'},
+          {to: 'https://docs.zeenea.com', label: 'API', position: 'left'},
           {
             href: "https://www.actian.com/",
             position: "right",
