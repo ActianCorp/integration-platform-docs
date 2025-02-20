@@ -398,18 +398,17 @@ input[type="submit"]:hover {
 }
 
 .api-row {
-  padding-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .api-col1 {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   width: 400px;
 }
 
 .api-col2 {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   margin-left: 50px;
   position: absolute;
   x: 500px;
