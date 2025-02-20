@@ -7,7 +7,7 @@ const FeatureList = [
   {
     title: 'Integration Manager',
     doc: "/docs/integration-manager/manager-overview",
-    png: "/img/home/im.png",
+    png: "/img/home/cloud.png",
     description: (
       <>
       An elastic cloud-based platform that enables the design, deployment, and management of web-based integrations.
@@ -17,7 +17,7 @@ const FeatureList = [
   {
     title: 'Integration Agent',
     doc: "/docs/integration-agent/agent-overview",
-    png: "/img/home/im.png",
+    png: "/img/home/cloud.png",
     description: (
       <>
       DataCloud Agent Technology enables centralized cloud management of on-premise integration jobs and related collateral.

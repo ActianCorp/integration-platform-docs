@@ -94,7 +94,7 @@ header:has(> div.homeheader) {
   margin-top: -2rem;
   padding-top: 0rem;
   padding-bottom: 1rem;
-  height: 160px;
+  height: 190px;
 }
 
 .header-github-link {
