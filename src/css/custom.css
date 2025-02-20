@@ -380,3 +380,42 @@ input[type="submit"]:hover {
   font-size: 15px;
   width: 320px;
 }
+
+[data-theme='dark'] .api {
+  background-image: url("../../static/img/home/api-light.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 0px;
+  padding-bottom: 220px;
+}
+
+[data-theme='light'] .api {
+  background-image: url("../../static/img/home/api-dark.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 0px;
+  padding-bottom: 220px;
+}
+
+.api-row {
+  padding-bottom: 0px;
+}
+
+.api-col1 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  width: 400px;
+}
+
+.api-col2 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  margin-left: 50px;
+  position: absolute;
+  x: 500px;
+}
+
+.api-info {
+  padding-left: 0px;
+  padding-top: 50px;
+}

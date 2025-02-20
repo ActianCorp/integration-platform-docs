@@ -124,6 +124,18 @@ const sidebars = {
       ]
     },
   ],
+  apiSidebar: [
+    'zeenea-api-welcome',
+    {
+      type: 'category',
+      label: 'INTRODUCTION',
+      className: 'categoryItem',
+      items: [
+        'zeenea-api-intro',
+      ]
+    },    
+  ],
+
 };
 
 module.exports = sidebars;

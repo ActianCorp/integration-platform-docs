@@ -117,6 +117,7 @@ const config = {
         items: [
           {to: 'docs/zeenea-intro', label: 'Docs', position: 'left'},
           {to: 'https://docs.zeenea.com', label: 'API', position: 'left'},
+          {to: 'docs/zeenea-api-welcome', label: 'API-New', position: 'left'},
           {
             href: "https://www.actian.com/",
             position: "right",
