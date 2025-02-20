@@ -90,6 +90,8 @@ const sidebars = {
         'zeenea-notifications',
         'zeenea-discussion-threads',
         'zeenea-identifying-orphan-datasets',
+        'zeenea-add-input-output-types',
+        'zeenea-item-documentation',
       ]
     },
     {
