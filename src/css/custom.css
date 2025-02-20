@@ -386,7 +386,7 @@ input[type="submit"]:hover {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 0px;
-  padding-bottom: 220px;
+  padding-bottom: 80px;
 }
 
 [data-theme='light'] .api {
@@ -394,7 +394,7 @@ input[type="submit"]:hover {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 0px;
-  padding-bottom: 220px;
+  padding-bottom: 80px;
 }
 
 .api-row {
