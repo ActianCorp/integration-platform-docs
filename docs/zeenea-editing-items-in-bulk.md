@@ -40,7 +40,9 @@ This feature is enabled if the following conditions are met:
 
     ![](../static/img/zeenea-contacts-add.png)
 
-QQQQ --> N.B: An item can be assigned several times to the same contact with different responsibilities. In the same way, several contacts may share a responsibility.
+:::note
+An item can be assigned several times to the same contact with different responsibilities. In the same way, several contacts may share a responsibility.
+:::
 
 ## Adding Curators
 

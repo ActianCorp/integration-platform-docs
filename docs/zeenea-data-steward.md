@@ -9,6 +9,7 @@ As a Data Steward of the Zeenea suite, you have specific rights and permissions.
 Data stewards are responsible for documenting and managing the catalog items assigned to them.
 
 ## Requirements
+
 Before starting in Zeenea as a Data Steward, a few requirements must be met:
 
 * Your user account must be associated with a group of type "Data Steward"
@@ -32,11 +33,8 @@ It is therefore your main entry point to access the datasets for which you are r
 1. Log in to the **Catalog** section of the left menu to explore the items already imported 
 2. Discover the connections and items already in place between your information system and the catalog.
 
-QQQQ - FIX LINKS BELOW
-
-To learn more about the dashboard, read What are the components of the Dashboard?
-
 ## Step 2: Import items from a connection
+
 If you are responsible for curation and import on one or more connections, start selecting the items you want to document first using our import path.
 
   ![](/img/zeenea-import-dialog.png)
@@ -44,6 +42,7 @@ If you are responsible for curation and import on one or more connections, start
 For more details on importing items into the catalog, read Importing "Datasets" or "Visualization" items into Zeenea
 
 ## Step 3: Select the items for which you are responsible
+
 Before you start documenting items, they must be assigned to you as a Contact with the appropriate responsibility, depending on your organization.
 
 * If datasets have been assigned to you: a link allows you to access them directly from your dashboard.
@@ -56,9 +55,9 @@ Then you should be able to try the following features:
 * Bulk edition (read more here).
 
 ## Step 4: Start documenting your perimeter
+
 Once your perimeter is defined, you can start its documentation.
 
-QQQQ - FIX
-For more details on item documentation, read the article.
+For more details on item documentation, see [Understanding the Documentation of an Item](./zeenea-item-documentation.md).
 
   ![](/img/zeenea-perimeter.png)

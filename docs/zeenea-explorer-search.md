@@ -47,8 +47,9 @@ The following information is displayed for each result corresponding to your sea
 * Main properties (as defined by your administrators)
 * Associated Glossary Items
 
-QQQQ - WHAT IS N.B.? 
-N.B. If the Item doesn't have its definition and is associated with a single Glossary Item. The latter's description is used.
+    :::note
+    If the Item doesn't have its definition and is associated with a single Glossary Item, the latter's description is used.
+    :::
 
 For Datasets, the quality status is also included.
 

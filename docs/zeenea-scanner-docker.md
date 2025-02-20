@@ -34,7 +34,9 @@ Before building, you’ll need a startup script you image will use to run the Sc
 
 Here is an example of such a file. Save it as `entrypoint.sh`:
 
-QQQQ -> Missing image
+<font color="red">
+Missing image
+</font>
 
 Copy your Dockerfile and entrypoint.sh, based on the examples above, into 'zeenea-docker'
 
@@ -49,7 +51,7 @@ Then, build your own Docker image:
    `mkdir -p {conf,connections,plugins,logs}`
 
 2. Copy the file `application.conf.template` from the previously downloaded scanner into the `conf` folder with `application.conf` as its new name.
-3. QQQQ FIX LINK -> Modify it according to the online documentation (https://support.zeenea.com).
+3. Modify `application.conf` as needed. See [cccc](./zeenea-managing-scanners.md).
 4. Copy `log4.xml` file into the `conf` folder.
 5. Modify its content if necessary.
 6. Drop your plugins into the `plugins` folder and configure your connections in the `connections` folder.
@@ -61,7 +63,7 @@ This name is very important as it determines which scanner handles which connect
 This name will be provided as an env variable to the container (see below).
 
 ## Run your Dockerized Zeenea Scanner
-Considering your 4 folders were created locally under '/opt/zee', the startup script may be as follows:
+Considering your 4 folders were created locally under `/opt/zee`, the startup script may be as follows:
 
 ```
 SCANNER_NAME=myscanner-identifier &&

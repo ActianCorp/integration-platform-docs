@@ -19,9 +19,9 @@ title: Zeenea Scanner Setup
 The scanner process is expected to **run continuously** with special attention during the execution of its sub-processes (by default every night) and during the entire time users may use Zeenea platform.
 :::
 
-## Requirements for installation
+## Requirements for Installation
 
-### Hardware requirements
+### Hardware Requirements
 
 Zeenea scanners must be installed on x86-64 Linux servers or Windows servers.
 
@@ -39,7 +39,7 @@ Standard sizing for a server:
 * 20 GB of disk space
 * The server can be virtually hosted.
  
-## Software dependencies
+## Software Dependencies
 
 **The current Scanner version requires Java 11**. OpenJDK or Oracle JDK can be installed indifferently.
 
@@ -49,7 +49,7 @@ Remember to validate your installation by checking it with the command `# java -
 
 You should see in reply the version number of Java and be able to verify that it is one of the supported versions.
 
-## Network requirements
+## Network Requirements
 
 The Zeenea Scanner process will establish connections to the systems it is connected to and from which it will need to extract metadata.
 
@@ -57,7 +57,7 @@ Depending on the platforms, the protocols will vary and the flow openings will h
 
 The Zeenea Scanner process will also exchange with the Zeenea SaaS platform. The network flow between the Zeenea Scanner process and the platform will therefore have to be allowed. The exchanges are always initiated by the Scanner process and are done in HTTPS. A proxy (with a possible authentication) can be configured.
 
-## Necessary local rights
+## Necessary Local Rights
 
 The Zeenea Scanner service must be run with a dedicated user account (no login shell user account).
 
@@ -89,11 +89,11 @@ With:
 
 Once the archive is downloaded, uncompress it in the folder of your choice, then proceed with the configuration.
 
-## Microsoft Windows: Install as a service
+### Microsoft Windows: Install as a Service
 
 Windows compatible versions of the scanner start with version 51.
 
-### Scanner 69 and later
+#### Scanner 69 and Later
 
 Installation of the Windows service uses Apache Procrun, part of the Apache Commons Daemon suite. From version 69 onwards, binaries for x86_64 architectures are supplied. You'll find them in the scanner's bin folder.
 
@@ -116,12 +116,10 @@ Run the following command with the service name used during registration to obta
 
 `bin\prunmgr.exe //MS//`
 
-## Scanner 68 and previous
-
-### Running the Scanner as a Windows Service:
+#### Scanner 68 and Previous
 
 1. Download windows binaries:
-   1. Go to [https://downloads.apache.org/commons/daemon/binaries/][https://downloads.apache.org/commons/daemon/binaries/].
+   1. Go to [https://downloads.apache.org/commons/daemon/binaries/](https://downloads.apache.org/commons/daemon/binaries/).
    2. In the `windows` folder, download the archive `commons-daemon-1.3.4-bin-windows.zip`.
 2. Unzip the archive.
 3. Copy the following files under the root folder of the Scanner:
@@ -147,7 +145,7 @@ Run the following command with the service name used during registration to obta
 
 ## Configuration
 
-### Name the scanner
+### Name the Scanner
 
 The name will be the identifier of the Scanner. It will be used by Zeenea to distinctly identify the Scanner and allow the Connections associated with it to be identified.
 
@@ -156,7 +154,7 @@ The name will be the identifier of the Scanner. It will be used by Zeenea to dis
 * The name can be changed afterwards. However, in that event, Zeenea will keep track of a Scanner with the previous name with an offline status.
 
 :::tip
-Select a name and try to keep it afterwards.
+Select a name and avoid changing it.
 :::
 
 Zeenea Scanner name is defined in a file named agent-identifier under the main directory of the scanner. Create such a file or just copy paste the previous one if you are upgrading the scanner to a new version and enter in this file the name that the Scanner will be given (on a single line).
@@ -167,13 +165,13 @@ Sample command to create this file:
 
 The value `my-hadoop-cluster-scanner` in the example above is the name this Scanner will have.
 
-## Scanner configuration
+## Scanner Configuration
 
 The configuration is done via the configuration file `application.conf` located in the `conf/` directory
 
 By default, the file is named `application.conf.template`. It must be renamed to (or duplicated with the name) `application.conf`.
 
-### Enter the address of your platform
+### Enter your Platform Address
 
 You must enter the address of your Zeenea platform to allow the Scanner to retrieve the metadata. This is done by enhancing the `zeenea-url` property with the URL of your platform in the form https://myenv.zeenea.app.
 
@@ -181,7 +179,7 @@ Example:
 
 `zeenea-url = "https://myenv.zeenea.app"`
 
-### Enter identifiers
+### Enter Identifiers
 
 The Scanner authenticates itself to the platform with an "Scanner" type API key containing a pair of information (id and secret). To generate an API key, refer to [Managing API Keys](./zeenea-managing-api-keys.md).
 
@@ -197,7 +195,7 @@ authentication {
 }
 ```
 
-## Process configuration (optional)
+## Process Configuration (optional)
 
 The frequency of execution of the various automatic processes carried out by the scanner is configurable under the "automation" node.
 
@@ -217,7 +215,7 @@ Here are the processes triggered by the scanner:
 Each process execution is configured with the help of a cron expression. Please, read carefully this article describing its syntax: https://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/crontrigger.html
 :::
 
-## Configure a proxy (optional)
+## Configure a Proxy (optional)
 
 It is possible to configure a proxy that will be used by the Scanner during exchanges with the Zeenea platform.
 
@@ -247,19 +245,22 @@ proxy-configuration {
 }
 ```
 
-## Modify the default protocol (HTTP REST vs gRPC)
+## Modify Default Protocol (HTTP REST vs gRPC)
 
-### Why should you modify this?
+### Why Should you mModify This?
+
 The default REST based protocol is very convenient as it works almost everywhere. But, in some situations, the scanner may face one of its limits: the maximum size of the requests payload.
 
 gRPC protocol is not concerned by this limitation. Thus it could make sense to consider gRPC in case of very important inventories being built.
 
-### Is my architecture ready for gRPC?
+### Is my Architecture Ready for gRPC?
+
 gRPC uses HTTP/2 as its transport protocol. Your infrastructure MUST support HTTP/2 from end to end. In case of any doubt, please read your proxies documentation to validate they do support HTTP/2 properly.
 
 When configured to use gRPC, the scanner will communicate with a unique central entry point: grpc.zeenea.app. Make sure this address is accessible for the scanner.
 
-### How do I enable and configure gRPC?
+### How do I Enable and Configure gRPC?
+
 In order to activate gRPC, you just have to add the following line to your scanner configuration file:
 
 `protocol = grpc`
@@ -276,7 +277,7 @@ grpc {
 }
 ```
 
-## Connections configuration
+## Connections Configuration
 
 You have to pay attention to the ability for the scanner to open a connection to the platforms it should communicate with: network routes should be enabled.
 
@@ -286,7 +287,7 @@ New connections are defined using a dedicated configuration file under the conne
 
 Learn how to [create, manage or delete a connection](./zeenea-managing-connections.md).
 
-## Manage sensitive information with a Secret Manager
+## Using a Secret Manager
 
 Starting from Scanner 73, you can rely on a Secret Manager to provide sensitive information to your connections, like your credentials.
 
@@ -300,6 +301,7 @@ Currently, the Scanner supports 2 different Secret Manager types:
 * A local file containing your secrets
 
 ### AWS Secret Manager
+
 Configuration example:
 
 ```
@@ -329,6 +331,7 @@ The proxy object is optional
 :::
 
 ### File Secret Manager
+
 Configuration example:
 
 ```
@@ -364,7 +367,7 @@ scanner_snowflake {
 }
 ```
 
-### Secret injection syntax
+### Secret Injection Syntax
 Your connection file must contain a secret_manager object and can then use the following syntax to benefit from the Secret Manager:
 
 `${secret_manager.}`
@@ -399,13 +402,13 @@ authentication {
 }
 ```
 
-## Hooks configuration
+## Hooks Configuration
 
 You can configure hooks that will be called after a scanner job ends.
 
 Learn how to configure a hook after a scanner job.
 
-## Dry run
+## Dry Run
 
 The scanner can be configured in dry-run mode.
 
@@ -426,9 +429,9 @@ To execute the test, run the scanner with the `inventory` argument:
 
       `$ bin/zeenea-scanner inventory`
  
-## Start the scanner
+## Start the Scanner
 
-### Simple start (test only)
+### Simple Start (test only)
 
 The `./bin/zeenea-scanner` script is used to start the Scanner.
 
@@ -444,20 +447,20 @@ In the following example, the command starts the Scanner process. The process wi
 
 `# nohup ./bin/zeenea-scanner -J-Xmx8g &`
  
-## Process configuration in systemd
+## Process Configuration in systemd
 
 Scanning, especially in a production environment, is best defined as a process managed by systemd (or equivalent, depending on your OS).
 
 We therefore strongly recommend this configuration.
 
-### Steps to follow
+### Steps to Follow
 
 1. Copy and adapt the unit file (see example below).
 2. Reload the systemd configuration.
 3. Activate zeenea-scanner.
 4. Start the service
  
-### Example of unit files
+### Example of Unit Files
 
 :::note
 This unit file must be adapted to your environment.
@@ -500,7 +503,7 @@ SuccessExitStatus=129 130 143
 WantedBy=multi-user.target
 ```
 
-## Useful commands
+## Useful Commands
 
 * Activate the service: `sudo systemctl enable zeenea-scanner`
 * Start the service: `sudo systemctl start zeenea-scanner`
@@ -509,3 +512,4 @@ WantedBy=multi-user.target
 * Access to systemd logs limited to the service: `journalctl -u zeenea-scanner`
 
 If you experience issues while configuring your scanner, refer to [Troubleshooting Scanners and Connections](./zeenea-troubleshooting.md)
+
