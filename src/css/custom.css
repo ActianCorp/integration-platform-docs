@@ -402,13 +402,13 @@ input[type="submit"]:hover {
 }
 
 .api-col1 {
-  font-size: 13px;
+  font-size: 14px;
   width: 400px;
 }
 
 .api-col2 {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   margin-left: 50px;
   position: absolute;
   x: 500px;
