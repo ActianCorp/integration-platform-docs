@@ -9,7 +9,7 @@ By default, Data Processes can be linked to Datasets imported into the catalog t
 
 In the Catalog Design section, you have the possibility to create additional links in your metamodel with Custom Item Types, in order to complete your lineages with non-synchronized Items or to represent lineages at a logical level.
 
-To do this, click on the **Edit Item Type** button (pen icon) in front of the Data Process type to open the link editing mode.
+To do this, click the **Edit Item Type** button (pen icon) in front of the Data Process type to open the link editing mode.
 
   ![](/img/zeenea-edit-item-type.png)
 

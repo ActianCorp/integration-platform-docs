@@ -24,7 +24,7 @@ Read more: [Search and discover items in Zeenea Explorer](./zeenea-explorer-sear
 
   ![](/img/zeenea-discover.png)
 
-You can also explore the content of the catalog by entering either through the topics your organisation may have defined, the assets types or the glossary, grouping the Business Terms defined by your company and associated with your data assets.
+You can also explore the content of the catalog by entering either through the topics your organization may have defined, the assets types or the glossary, grouping the Business Terms defined by your company and associated with your data assets.
 
   ![](/img/zeenea-discover2.png)
 

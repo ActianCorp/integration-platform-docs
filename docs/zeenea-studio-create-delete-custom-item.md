@@ -57,7 +57,7 @@ The creation of a custom item type automatically leads to the creation of an ass
 
 * The name, code, and description are inherited from the newly created item.
 * This is an **Internal Link** property. By default, it is single-valued. You can choose to make it multivalued.
-* The **Use in search querie**s option is not yet supported for custom types. 
+* The **Use in search queries** option is not yet supported for custom types. 
 
 The properties resulting from the creation of custom types can be identified through the "Source" column.
 

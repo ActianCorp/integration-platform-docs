@@ -10,12 +10,14 @@ Your subscription includes one default catalog by default. When the Federated Ca
 
   ![](/img/zeenea-catalogs.png)
 
-## Creating a catalog
-To create a catalog, click the "Create a catalog" button on the top right of the screen.
+## Creating a Catalog
+
+To create a catalog, click the **Create a catalog** button on the top right of the screen.
 
 You can then specify a name and a code for your catalog.
 
-## Editing or deleting a catalog
+## Editing or Deleting a Catalog
+
 You can edit a catalog name, including the default catalog name. Note that you cannot modify a catalog code.
 
 You cannot delete the default catalog. Otherwise, you can delete any catalog if there are no Items left in this catalog.

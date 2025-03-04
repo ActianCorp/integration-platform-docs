@@ -18,6 +18,7 @@ With just a few clicks, users can submit a request for access to data assets or 
 This feature is key to fostering a more collaborative and data-driven culture while maintaining strong governance and security controls.
 
 ## Principles
+
 The scheme below describes how access requests are handled in Zeenea:
 
 1. A Data consumer writes a request in Zeenea Explorer from the details page of an item.
@@ -28,7 +29,8 @@ The scheme below describes how access requests are handled in Zeenea:
 
   ![](/img/zeenea-access-requests.png)
 
-##  Enabling access requests
+##  Enabling Access Requests
+
 Access requests are disabled by default on your tenant. Go to the "Access requests" section in the Administration interface to enable the feature.
 
 In this section, you select the item types for which you want to enable the feature: Datasets, Visualizations, and soon Output ports of Data products.
@@ -46,7 +48,8 @@ In the case of the Federated Catalog, access requests are handled at the tenant 
 
 So far, access requests are enabled but not activated on any item yet.  
 
-## Activating access requests on an item
+## Activating Access Requests on an Item
+
 When access requests are enabled for an item type, you can activate the feature from an item details page by toggling the "Activate data access requests" button. You must have write permissions on the item to activate data access requests.
 
 You can also deactivate the feature instantly by toggling the button again.
@@ -55,12 +58,14 @@ Note that at least one contact must have access to the Studio to make the featur
 
   ![](/img/zeenea-access-requests-activate.png)
 
-## Submitting an access request on an item
+## Submitting an Access Requests on an Item
+
 When the feature is activated for an item, you can request access from its details page by clicking the "Request access" button on the top right.
 
   ![](/img/zeenea-access-requests-submit.png)
 
-## Access request form
+## Access Request Form
+
 You must provide the following information to submit your request:
 
 * Purpose: The reason or project why you need to access the data
@@ -69,17 +74,20 @@ You must provide the following information to submit your request:
 
 Once submitted, the approver receives an email notification to invite them to review it. As soon as your request is reviewed, you also receive an email notification with the status of your request (approved or declined) and an optional comment from the approver.
 
-## Managing your pending access requests
+## Managing Your Pending Access Requests
 
 ### Listing your pending data access requests
+
 You can retrieve the list of your pending data access requests by clicking the "Access requests" link on the right of the Zeenea Explorer header.
 
   ![](/img/zeenea-access-requests-data.png)
 
-  ### Cancelling a data access request
+### Canceling a Data Access Request
+
 From the access request list, click the **Cancel** button to delete your request. When canceled, the request also disappears from the list of pending requests for the approver.
 
-## Reviewing access requests
+## Reviewing Access Requests
+
 You can manage the access requests assigned to you from the "Access requests" section in the Studio.
 
   ![](/img/zeenea-access-requests-review.png)
@@ -88,7 +96,8 @@ From this screen, you can directly approve or decline a request. In both cases, 
 
 You can also reassign the request to another person among other possible approvers for this item. When reassigning a request, the new approver receives an email notification.
 
-## Authorizing access requests
+## Authorizing Access Requests
+
 If you have activated the "External authorization workflow" option in the Administration, an email is automatically sent to the specified address once a request is approved in Zeenea Studio.
 
 This email is formatted in XML so that it can be automatically parsed by a ticketing or workflow management tool like Jira or ServiceNow. Below is an example of an authorization request email:
@@ -116,18 +125,20 @@ By configuring your workflow management tool to parse this email, you can automa
 
 This email contains the following information:
 
-* requester: The email address of the person requesting access
-* authorizer: The email address of the person who approved the request
-* subjected: The Item's unique identifier in Zeenea (UUID)
-* subjectName: The Item name
-* subjectUrl: The URL of the Item to show in Zeenea
-* audience: Whereas the access is requested for an individual or a service account
-* purpose: The purpose of the request (free text)
+* **requester**: The email address of the person requesting access
+* **authorizer**: The email address of the person who approved the request
+* **subjected**: The Item's unique identifier in Zeenea (UUID)
+* **subjectName**: The Item name
+* **subjectUrl**: The URL of the Item to show in Zeenea
+* **audience**: Whereas the access is requested for an individual or a service account
+* **purpose**: The purpose of the request (free text)
 
-## Auditing access requests
+## Auditing Access Requests
 
-### Auditing access request configuration changes
+### Auditing Access Request Configuration Changes
+
 The configuration changes regarding data access requests are traced in the audit log. You can list audit events using the Audit API.
 
-### Auditing access requests changes
+### Auditing Access Request Changes
+
 The data access requests and their processing are recorded in the audit log. You can list audit events using the Audit API.

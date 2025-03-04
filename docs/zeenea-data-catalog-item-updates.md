@@ -47,7 +47,7 @@ The following table summarizes these elements:
 | Data Process | Generates | Dataset | Data Process | Data Process |
 | Visualization | Uses | Dataset | Visualization | Visualization |
 | Dataset | Contains | Field | No impact | Dataset audit trail on import. No impact when a field is added |
-| Custom Item | Implements | Glossary Item | Custom Item | Objet personnalisé Custom Item  |
+| Custom Item | Implements | Glossary Item | Custom Item | Custom Item  |
 | Dataset | Implements | Glossary Item | Dataset | Dataset |
 | Field | Implements | Glossary Item | Field | Field |
 | Visualization | Implements | Glossary Item | Visualization | Visualization |

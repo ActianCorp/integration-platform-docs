@@ -49,7 +49,7 @@ Defining a metamodel is an important step to enable authorized persons to fill i
 The design of the metamodel is divided into two parts: the physical and logical layer and the semantic layer (or glossary).
 
 ### Define the metamodel of the physical and logical layer
-The physical and logical layer of the catalog corresponds to all the technical assets of your IS (datasets, visualisations, etc.), the technical processes for transforming the data. Its purpose is also to represent your organisation around the data (consumers, producers, business processes, etc.).
+The physical and logical layer of the catalog corresponds to all the technical assets of your IS (datasets, visualizations, etc.), the technical processes for transforming the data. Its purpose is also to represent your organization around the data (consumers, producers, business processes, etc.).
 
 Refer to the following links for more details:
 

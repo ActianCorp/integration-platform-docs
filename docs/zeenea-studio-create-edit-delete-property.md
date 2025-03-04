@@ -64,7 +64,7 @@ There are different types of properties (Short Text, URL, Number, etc.). This al
 ### Options
 
 #### Feeding options
-* **External sources and Zeenea interfac**e: The property can be updated via Zeenea Studio or by API
+* **External sources and Zeenea interface**: The property can be updated via Zeenea Studio or by API
 * **External sources only**: The property can be modified by API only
 
 #### Search options

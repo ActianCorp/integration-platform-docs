@@ -15,13 +15,13 @@ If you do not find in the answers to common issues, you can report your incident
 
 Here is the recommended procedure when a problem is encountered:
 
-1. If your scanner version is not the latest version available, please upgrade it in order to validate if the issue is already fixed or not. The upgrade procedure is described in this article: Add, manage or delete a scanner.
+1. If your scanner version is not the latest version available, please upgrade it in order to validate if the issue is already fixed or not. The upgrade procedure is described in [Managing Scanners](./zeenea-managing-scanners.md).
 2. If it appears that the problem is related to the user interface, collecting information at this level will be useful for understanding and therefore solving the problem.
-   1. It is important to collect the traces of exchanges between the browser and Zeenea services. Any JavaScript errors should be logged.
-   2. By activating the Network Developer tool, the requests exchanged between the interface and the service will be visible and if one of them is in error, it will be faster to understand the problem. In this case, retrieving the information from both the request made and the response received will provide useful information.
+   * It is important to collect the traces of exchanges between the browser and Zeenea services. Any JavaScript errors should be logged.
+   * By activating the Network Developer tool, the requests exchanged between the interface and the service will be visible and if one of them is in error, it will be faster to understand the problem. In this case, retrieving the information from both the request made and the response received will provide useful information.
 3. It is important to collect the server-side traces recorded in the logs. Zeenea's configuration includes by default a log named scanner. log in the logs/directory. Errors related to the incident may therefore be found there. If the incident cannot be reproduced, it is important to keep the lines relating to the time it occurred.
-   1. Keep the content of the log so you can communicate it to the Zeenea support.
-   2. If the problem is reproducible, isolate the possible errors that would appear during the reproduction procedure.
+   * Keep the content of the log so you can communicate it to the Zeenea support.
+   * If the problem is reproducible, isolate the possible errors that would appear during the reproduction procedure.
 4. It is not necessary, except on request of Zeenea support, to modify the levels of the traces in the logs. Errors will be logged by default. More detailed information will only be necessary in certain cases and in a very targeted manner: Zeenea support will then specify how to proceed.
 5. Open a ticket by attaching the technical elements collected and specifying the issue encountered.
 
@@ -31,14 +31,12 @@ Here is the recommended procedure when a problem is encountered:
 
 Check the scanner's logs to view the list of connections it found and scanned, and any errors in the configuration files of connections that were ignored. 
 
- 
-
 #### 2. I’m unable to download the scanner using the curl command
 
 Make sure that the following placeholders: 
 
-* $APISECRET
-* $hostname 
+* `$APISECRET`
+* `$hostname` 
 
 have been replaced by their actual values in the command:
 
@@ -75,7 +73,7 @@ Subject public key algorithm: Clé RSA 2048 bits
 Version: 3
 ```
 
-If the issuer is an internal CA, you’ll need to retrieve the certification chain from the CA and manually add it to the conf/ folder (accepted format is PKCS12 or JKS). You’ll then have to manually edit the conf/application.conf file, and especially the following part: 
+If the issuer is an internal CA, you’ll need to retrieve the certification chain from the CA and manually add it to the `conf/` folder (`PKCS12` or `JKS`). You’ll then have to manually edit the conf/application.conf file, and especially the following part: 
 
 ```
 ################# TLS SPECIFIC TRUSTSTORE ##############

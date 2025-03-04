@@ -12,10 +12,12 @@ From Zeenea Explorer, you can search for the different types of Objects in the c
 * Glossary Items
 * Organization-specific custom Items (e.g. Applications, Entities, etc.)
 
-## The search engine
+## The Search Engine
+
 The search engine uses a fuzzy search algorithm, which facilitates exploration. In other words, it will try to find all the Objects that correspond exactly to the keywords provided and those that correspond to keywords close to those entered. In particular, this method allows you to be permissive concerning any typos in the search words or object content, such as in the description.
 
-## Search engine drop-down menu
+## Search Engine Drop-Down Menu
+
 When you click on the search bar, a drop-down menu appears: 
 
 * Search suggestions based on your recent activity or that of other users
@@ -24,6 +26,7 @@ When you click on the search bar, a drop-down menu appears:
   * "AND": Allows you to search for Objects matching all keywords
 
 ## Filters
+
 On the results page, you can use filters to refine your search and reduce the number of results returned. 
 
 Different filters are proposed by default:
@@ -38,22 +41,20 @@ Depending on the configuration performed by your administrators filters specific
 
 Filters are dynamically updated and sorted according to their relevance and impact on your search.
 
-## Search results
+## Search Results
+
 The following information is displayed for each result corresponding to your search: 
 
 * Name
-* Source 
+* Source
 * Start of description
 * Main properties (as defined by your administrators)
-* Associated Glossary Items
-
-    :::note
-    If the Item doesn't have its definition and is associated with a single Glossary Item, the latter's description is used.
-    :::
+* Associated Glossary Items. If the Item doesn't have its definition and is associated with a single Glossary Item, the latter's description is used.
 
 For Datasets, the quality status is also included.
 
-## Item overviews
+## Item Overviews
+
 On the results page, you can click on each result to open its overview panel and access the Item's main information. You can also navigate to other Items within this overview panel without losing your search context.
 
 Recurring information on the overview panel includes, among others : 

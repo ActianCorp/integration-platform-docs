@@ -35,7 +35,7 @@ These items share common characteristics regarding the attributes on which the d
 * Contacts in order to identify the persons linked to the items as well as to understand the nature of this link
 
  ## Item Key
-An Item key allows for each Item in the catalog to be uniquely identified. Keys are especially useful when synchronising the catalog with an external system, either via the APIs, or when using the Excel import feature.
+An Item key allows for each Item in the catalog to be uniquely identified. Keys are especially useful when synchronizing the catalog with an external system, either via the APIs, or when using the Excel import feature.
 
 ## Orphan Item
 An orphan item is an item (Dataset, Field, etc.) that is still present in the catalog but is no longer listed by the connection during automatic or manual inventories.

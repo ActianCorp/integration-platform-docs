@@ -8,7 +8,6 @@ There are 3 types of user profiles that will give different permissions and acce
 
 * **Super Admin**: this profile has access to all the features of the Zeenea administration space as well as those of the two applications Studio and Explorer. See [As a Super Admin](./zeenea-superadmin.md).
 * **Data Steward**: This profile has access to the editing features of the Zeenea Studio documentation and the features of Zeenea Explorer. It cannot access the catalog design functions. See [As a Data Steward](./zeenea-data-steward.md).
-Read more: As a Data Steward
 * **Explorer**: this profile has access to all the features of Zeenea Explorer. It has access to the entire catalog in read-only mode. See [As a Data Explorer](./zeenea-data-explorer.md).
 
 To set up these profiles for your users, note that you will need a Super Administrator profile to access the Administration interface.

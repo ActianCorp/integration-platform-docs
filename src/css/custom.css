@@ -81,7 +81,7 @@ h3 {
 /* END Navbar */
 
 /* HOME PAGE */
-/* QQQQ: WHY DO THESE NOT WORK IF I PUT THEM HERE, WHERE THERE ARE OTHER CUSTOMIZATION?: src\components\HomepageFeatures\styles.module.css */
+/* WHY DO THESE NOT WORK IF I PUT THEM HERE, WHERE THERE ARE OTHER CUSTOMIZATION?: src\components\HomepageFeatures\styles.module.css */
 header:has(> div.homeheader) {
   /*background: url('/img/home/vc-cta-background.jpg'); */
   background-image: url('../../static/img/home/zeenea-header.png');
@@ -372,6 +372,12 @@ input[type="submit"]:hover {
 
 .codeHighlight {
   background-color: rgb(151, 209, 151);
+}
+
+
+.codeBold {
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .card-text {

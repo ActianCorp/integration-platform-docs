@@ -17,19 +17,24 @@ To create a new Watchlist:
 
 To create a Watchlist, at least one Item type must be selected via the **Item** filter or via a **Scope** in the search bar.
 
-QQQQ -> N.B.: Keywords entered in the search bar are ignored when creating your Watchlist.
+:::note
+Keywords entered in the search bar are ignored when creating your Watchlist.
+:::
 
   ![](/img/zeenea-watchlist-new.png)
 
 Once created, your Watchlist is automatically added to your dashboard with the corresponding count of Items.
 
-QQQQ -> N.B.: You can't have more than 10 Watchlists.
+:::note
+You can't have more than 10 Watchlists.
+:::
 
   ![](/img/zeenea-watchlist-new.png)
 
 Click on the name of a Watchlist from your dashboard to apply its filters and view the corresponding list of Items.
 
 ## Deleting a Watchlist
-To delete a Watchlist, go to your dashboard and click on the trash can icon for your Watchlist.
+
+To delete a Watchlist, go to your dashboard and click the trash can icon for your Watchlist.
 
 You can also delete Watchlists created by default. You can recreate them later if required, using the filters at your disposal.

@@ -106,7 +106,7 @@ To install and update the Windows service, use the `bin\zeenea-service.bat` comm
 | `--JvmDll` | Path to the Windows DLL to be used. If the argument is not specified, the DLL will be defined using the `%JAVA_HOME%` environment variable or the path to the "java" executable found in Path. | |
 | `--ServiceName` | Windows service name. | `ZeeneaScanner` |
 | `--ServiceUser` | Name of the Windows user running the service. | `LocalSystem` |
-| `--LogLevel` | Procrun log level. Values can be:<ul><li>Error</li><li>Warn</li><li>Info</li><li>Debug</li><li>Trace</li></ul>. | `Info` |
+| `--LogLevel` | Procrun log level. Values can be:<ul><li>Error</li><li>Warn</li><li>Info</li><li>Debug</li><li>Trace</li></ul> | `Info` |
 | `--LogPath` | Location of procrun log files. | "logs" subfolder in the scanner folder |
 | `--JvmMx` | Maximum size of the Java memory pool in MB. | `4096` |
 
@@ -149,8 +149,8 @@ Run the following command with the service name used during registration to obta
 
 The name will be the identifier of the Scanner. It will be used by Zeenea to distinctly identify the Scanner and allow the Connections associated with it to be identified.
 
-* Only name the scanner using alphanumeric characters, plus _ and -.
-* Don’t use special characters,  space characters, ...
+* Only name the scanner using alphanumeric characters, underscores (_), and and hyphens (-).
+* Don’t use special characters, spaces characters, ...
 * The name can be changed afterwards. However, in that event, Zeenea will keep track of a Scanner with the previous name with an offline status.
 
 :::tip
@@ -225,8 +225,8 @@ Refer to your documentation to find out which proxy to use and how to configure 
 
 The parameters to be provided will be at least:
 
-* host: the proxy address
-* port: the proxy listening port
+* `host`: the proxy address
+* `port`: the proxy listening port
 
 Other parameters may need to be filled in as well. In this case, uncomment them and value each one.
 
@@ -281,7 +281,7 @@ grpc {
 
 You have to pay attention to the ability for the scanner to open a connection to the platforms it should communicate with: network routes should be enabled.
 
-For more about our connectors, see [Zeenea Connectors List](./zeenea-connectors-list.md)
+For more about our connectors, see [Zeenea Connector Downloads](./zeenea-connectors-list.md).
 
 New connections are defined using a dedicated configuration file under the connections folder of the Scanner.
 
@@ -327,7 +327,7 @@ secret-manager {
 Depending on the scanner's host credentials, you may (or may not) need to provide some of the parameters defined in provider-configuration. The Scanner will try to use any existing Instance Role, Environment Variable, or AWS Configuration File being available.
 
 :::note
-The proxy object is optional
+The proxy object is optional.
 :::
 
 ### File Secret Manager

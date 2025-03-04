@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'API Reference',
-    doc: "/docs/zeenea-api-welcome",
+    doc: "https://docs.zeenea.com",
     png: "/img/home/zeenea-api.png",
     description: (
       <>

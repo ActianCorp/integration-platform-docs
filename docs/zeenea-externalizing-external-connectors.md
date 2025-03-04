@@ -20,7 +20,7 @@ Previously embedded Connectors were:
 | MySQL	| JDBC |
 | MariaDB |	JDBC |
 | Teradata | JDBC |
-| Postgre SQL | JDBC |
+| Postgres SQL | JDBC |
 | Sybase IQ	| Sybase IQ |
 | Netezza | JDBC |
 | Snowflake	| JDBC |
@@ -42,7 +42,7 @@ Previously embedded Connectors were:
 A Plugin can contain several Connectors.
 :::
 
-## Migration procedure
+## Migration Procedure
 
 If you decide to upgrade your Scanner from a version strictly prior to 54 to a version newer (or equal) to 54, you have to follow this procedure.
 

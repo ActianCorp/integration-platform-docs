@@ -54,53 +54,6 @@ const config = {
         },
       }),
     ],
-//    [
-//      'redocusaurus',
-//      {
-//        // Plugin Options for loading OpenAPI files
-//        specs: [
-//          // Pass it a path to a local OpenAPI YAML file
-//          // Redocusaurus will automatically bundle your spec into a single file during the build
-//          {
-//            spec: 'api/integration-components.json',
-//            route: '/integration-components/',
-//          },
-//          {
-//            spec: 'api/job-configuration.json',
-//            route: '/job-configuration/',
-//          },
-//          {
-//            spec: 'api/job-execution.json',
-//            route: '/job-execution/',
-//          },
-//          {
-//            spec: 'api/jobconfig-aliasing.json',
-//            route: '/jobconfig-aliasing/',
-//          },
-//          {
-//            spec: 'api/agent-management.json',
-//            route: '/agent-management/',
-//          },
-//          {
-//            spec: 'api/account-administration.json',
-//            route: '/account-administration/',
-//          },
-//          {
-//            spec: 'api/resource-management.json',
-//            route: '/resource-management/',
-//          },
-//          {
-//            spec: 'api/access-control-policies.json',
-//            route: '/access-control-policies/',
-//          },
-//        ],
-//        // Theme Options for modifying how redoc renders them
-//        theme: {
-//          // Change with your site colors
-//          primaryColor: '#1890ff',
-//        },
-//      },
-//    ]
   ],
 
   themeConfig:
@@ -117,7 +70,6 @@ const config = {
         items: [
           {to: 'docs/zeenea-intro', label: 'Docs', position: 'left'},
           {to: 'https://docs.zeenea.com', label: 'API', position: 'left'},
-          {to: 'docs/zeenea-api-welcome', label: 'API-New', position: 'left'},
           {
             href: "https://www.actian.com/",
             position: "right",

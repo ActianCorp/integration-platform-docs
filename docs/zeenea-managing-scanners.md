@@ -6,7 +6,7 @@ title: Managing Scanners
 
 ## Adding a Scanner
 
-Scanners are added and set up outside of the Zeenea interface. Please refer to this article for more information: Zeenea Scanners: prerequisite and setup.
+Scanners are added and set up outside of the Zeenea interface. Please see [Zeenea Scanner Setup](./zeenea-scanner-setup.md) for more information.
 
 ## Deleting a Scanner
 

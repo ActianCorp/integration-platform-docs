@@ -9,6 +9,7 @@ This Docker documentation is provided as an example. Adapt it to your context, f
 :::
 
 ## Introduction
+
 Zeenea doesn’t provide an official Scanner image, but it’s rather easy to build your own.
 
 This article shares all the necessary information you need to define your own image.
@@ -16,9 +17,14 @@ This article shares all the necessary information you need to define your own im
 As it is an example, feel free to adapt this recommendation to your context.
 
 ## Dockerfile example
+
 Here is a simple Dockerfile example:
 
-Zeenea Scanner requires Java 11 to run: the image is based on Openjdk JRE 11 Slim.
+<font color="red">
+Missing image
+</font>
+
+Zeenea Scanner requires Java 11 to run &mdash; the image is based on Openjdk JRE 11 Slim.
 
 It creates a user, having only the expected privileges, as described in our Scanner documentation. You can give him a Group and User ID to ease the administration out of the container, but that’s not mandatory at all.
 
@@ -38,7 +44,7 @@ Here is an example of such a file. Save it as `entrypoint.sh`:
 Missing image
 </font>
 
-Copy your Dockerfile and entrypoint.sh, based on the examples above, into 'zeenea-docker'
+Copy your Dockerfile and `entrypoint.sh`, based on the examples above, into `zeenea-docker`.
 
 Then, build your own Docker image:
 
@@ -46,12 +52,12 @@ Then, build your own Docker image:
 
 ## Prepare your Scanner configuration
 
-1. Create 4 folders wherever you want:
+1. Create four folders wherever you want:
 
    `mkdir -p {conf,connections,plugins,logs}`
 
 2. Copy the file `application.conf.template` from the previously downloaded scanner into the `conf` folder with `application.conf` as its new name.
-3. Modify `application.conf` as needed. See [cccc](./zeenea-managing-scanners.md).
+3. Modify `application.conf` as needed. See [Managing Scanners](./zeenea-managing-scanners.md).
 4. Copy `log4.xml` file into the `conf` folder.
 5. Modify its content if necessary.
 6. Drop your plugins into the `plugins` folder and configure your connections in the `connections` folder.
@@ -63,7 +69,8 @@ This name is very important as it determines which scanner handles which connect
 This name will be provided as an env variable to the container (see below).
 
 ## Run your Dockerized Zeenea Scanner
-Considering your 4 folders were created locally under `/opt/zee`, the startup script may be as follows:
+
+Considering your four folders were created locally under `/opt/zee`, the startup script may be as follows:
 
 ```
 SCANNER_NAME=myscanner-identifier &&

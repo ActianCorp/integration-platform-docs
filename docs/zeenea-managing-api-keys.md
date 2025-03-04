@@ -11,7 +11,7 @@ Zeenea offers a "machine-to-machine" authentication mechanism based on API keys.
 1. Login to Zeenea as a user with the "Connectivity Administration" permission.
 2. Go to the Administration interface.
 3. Select the **API Keys** section.
-4. Click on the **New API Key** button.
+4. Click the **New API Key** button.
 5. Give a name to your API key. The name will help you later identify the key in the interface.
 6. Choose the permission scope of the API key:
    * **Read-only**: allows read access on all catalog items
