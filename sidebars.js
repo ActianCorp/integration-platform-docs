@@ -226,7 +226,7 @@ const sidebars = {
         'zeenea-configure-hook',
         'zeenea-synchronization',
         'zeenea-federated-catalog-intro',
-        'zeenea-federated-catalog',
+        'zeenea-federated-catalog-building',
         'zeenea-identification-keys',
         'zeenea-personal-data',
         'zeenea-dataset-detection',

@@ -28,7 +28,7 @@ You can also explore the content of the catalog by entering either through the t
 
   ![](/img/zeenea-discover2.png)
 
-Read more: [Topics](./zeenea-glossary#topic)
+Read more: [Topic](./zeenea-concepts-and-definitions#topic)
 
 ## Filter
 
