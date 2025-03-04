@@ -10,7 +10,7 @@ title: Qlik Cloud
 * Zeenea traffic flows towards the data source must be open. 
 
 :::note
-A configuration template can be downloaded here: [qlik-cloud.conf](./zeenea-connectors-list.md](https://actian.file.force.com/sfc/dist/version/download/?oid=00D300000001XnW&ids=068Nu00000GUd4N&d=%2Fa%2FNu000002lfbF%2F80tPNxbjIFWMcAlfEIBTkgJc5fS1urKbkL58rrMvRV0&asPdf=false)).
+A configuration template can be downloaded here: [qlik-cloud.conf](https://actian.file.force.com/sfc/dist/version/download/?oid=00D300000001XnW&ids=068Nu00000GUd4N&d=%2Fa%2FNu000002lfbF%2F80tPNxbjIFWMcAlfEIBTkgJc5fS1urKbkL58rrMvRV0&asPdf=false).
 :::
 
 ## Installing the Plugin

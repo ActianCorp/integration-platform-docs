@@ -19,7 +19,7 @@ title: Netezza
 :::
 
 :::note
-A configuration template can be downloaded here: [netezza.conf](./zeenea-connectors-list.md](https://actian.file.force.com/sfc/dist/version/download/?oid=00D300000001XnW&ids=068Nu00000GUgjl&d=%2Fa%2FNu000002leNS%2F9BVybGOtOg1ELjcuy8dxgOOZj1UUO0thGUGCw.n9gNQ&asPdf=false)).
+A configuration template can be downloaded here: [netezza.conf](https://actian.file.force.com/sfc/dist/version/download/?oid=00D300000001XnW&ids=068Nu00000GUgjl&d=%2Fa%2FNu000002leNS%2F9BVybGOtOg1ELjcuy8dxgOOZj1UUO0thGUGCw.n9gNQ&asPdf=false).
 :::
 
 ## Supported Versions
