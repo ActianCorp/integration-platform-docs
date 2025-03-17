@@ -12,6 +12,11 @@ Documentation for older releases can be found [here](https://docs.actian.com/#pa
 
 | Issue Type | <div style={{width: 65}}>Issue Key</div> | Summary | Fix versions | Affects versions | Status |
 |:---|:---|:---|:---|:---|:---|
+| Bug Fix | IP-8125 | Fix Security Vulnerability – CVE-2022-42889 on IM-Prod Workers 295 Windows Workers | 3.3.0 |  | Completed |
+| Bug Fix | IP-8112 | Notifications "MailTo" not accepting multiple email addresses | 3.3.0 |  |  Completed |
+| Bug Fix | IP-8099 | Create resource doesn’t have associated resource ID | 3.3.0 |  | Completed |
+| New Feature | IP-8110 | Access Token RFC 9068/8707 compliance | 3.3.0 |  | Completed |
+| New Feature | IP-8098 | Expose API for activate/deactivate schedule | 3.3.0 |  | Completed |
 | Known Issue | IP-7888 | Unable to stop Windows Agent Service. For a workaround, see [Starting and Stopping the Agent Service](./integration-agent/quickstart-install#starting-and-stopping-the-agent-service). |  | 3.2.0, 3.3.0 | Open |
 | New Feature | IP-5244 | [JobConfig/JobTemplate Export/Import API](./integration-manager/APIs/jobconfig-export-import-api)| 3.3.0 |  | Completed |
 | New Feature | IP-7252 | Remove Agent-User Tethering. This removes the 1:1 restriction between a user and an agent, thereby allowing an admin to register multiple agents. Admins can see all agents, users can only see agents they have registered. Agent hostname must still be globally unique.| 3.3.0 |  | Completed |
