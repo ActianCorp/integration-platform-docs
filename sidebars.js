@@ -21,6 +21,7 @@ const sidebars = {
     //},
     'intro',
     'release-notes',
+    'copyright',
     'feedback',
     'integration-manager/quickstart-install',
     'accessing-the-integration-manager',
