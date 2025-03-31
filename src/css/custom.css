@@ -177,7 +177,7 @@ h3.featureLink {
 
 /* Footer */
 .footer__link-item {
-       color: red;
+       color: rgb(57, 110, 255);
 }
   
 .footerColumn-left {
@@ -275,6 +275,9 @@ h3.featureLink {
   color: rgb(126, 126, 126);
 }
 
+#__docusaurus > footer > div > div.footer__bottom.text--center > div {
+  font-size: 14px; 
+ }
 /* END Footer */
 
 /* Add icon after external links */
