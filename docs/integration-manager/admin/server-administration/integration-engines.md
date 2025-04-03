@@ -20,27 +20,25 @@ Sometimes it is necessary to patch one or more deployed engines between Integrat
 ## Patching the DataConnect Engine
 
 ### Windows Patch
-1. Request Windows standalone engine patch from Actian Support or Actian ESD, e.g. `di-standalone-engine-12.1.0-24-win64.zip`.
-2. Extract the standalone engine folder from the .zip file, e.g. `di-standalone-engine-12.1.0-24`.
-3. Cut and paste the engine folder to `C:\Program Files\Actian\IntegrationManager\di-standalone-engine-12.1.0-24`.
-4. Open `C:\ProgramData\Actian\IntegrationManager\conf\application.properties`.
-5. Update the DataConnect-specific entries. (Make sure you are not creating duplicate properties.)
+1. Request Windows standalone engine patch from Actian Support or Actian ESD, e.g. `di-standalone-engine-12.3.0-45-win64.zip`.
+2. Extract the standalone engine folder from the .zip file, e.g. `di-standalone-engine-12.3.0-45`.
+3. Copy the standalone engine location, e.g. `C:\Users\User-Name\Downloads\di-standalone-engine-12.3.0-45`. 
+4. Open `C:\ProgramData\Actian\IntegrationManager\conf\IntegrationManagerWrapper.conf`.
+5. Update the DI_HOME and DI_VERSION entries. (Make sure you are not creating duplicate properties.)
     ```
-    dataconnectVersion=12.1.0-24
-    worker.engineJavaHome=${installPath}/di-standalone-engine-${dataconnectVersion}/jre
-    engine.localEngineInstallPath=${installPath}/di-standalone-engine-${dataconnectVersion}/runtime/di9
+    set.DI_HOME=C:/Users/User-Name/Downloads/di-standalone-engine-12.3.0-45
+    set.DI_VERSION=12.3.0-45
     ```
 ### Linux Patch
-1. Request Linux standalone engine patch from Actian Support or Actian ESD, e.g. `di-standalone-engine-12.1.0-24-linux64.tar.gz`.
-2. Extract the standalone engine .tar file from the .gz file, e.g. `di-standalone-engine-12.1.0-24.tar`.
-3. Extract the standalone engine folder from the .tar file, e.g. `di-standalone-engine-12.1.0-24`.
-4. Move the engine folder to `/opt/actian/integration-manager/di-standalone-engine-12.1.0-24`.
-5. Open `/etc/opt/actian/integration-manager/conf/application.properties`.
-6. Update the DataConnect-specific entries. (Make sure you are not creating duplicate properties.)
+1. Request Linux standalone engine patch from Actian Support or Actian ESD, e.g. `di-standalone-engine-12.3.0-45-linux64.tar.gz`.
+2. Extract the standalone engine .tar file from the .gz file, e.g. `di-standalone-engine-12.3.0-45.tar`.
+3. Extract the standalone engine folder from the .tar file, e.g. `di-standalone-engine-12.3.0-45`.
+4. Copy the standalone engine location, e.g. `/home/actian/Downloads/di-standalone-engine-12.3.0-45`.
+5. Open `/etc/profile.d/env_actian_integration_manager.sh`.
+6. Update the DI_HOME and DI_VERSION entries. (Make sure you are not creating duplicate properties.)
     ```
-    dataconnectVersion=12.1.0-24
-    worker.engineJavaHome=${installPath}/di-standalone-engine-${dataconnectVersion}/jre
-    engine.localEngineInstallPath=${installPath}/di-standalone-engine-${dataconnectVersion}/runtime/di9
+    export DI_HOME=/home/actian/Downloads/di-standalone-engine-12.3.0-45
+    export DI_VERSION=12.3.0-45
     ```
 ## Patching the DataFlow Engine
 
