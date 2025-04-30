@@ -67,7 +67,7 @@ Content-Type: application/json
 REQUEST:
 
 ```
-POST https://api.im.actiandatacloud.com/v2/api/jobs/[job id]/out/[output message name]/text
+GET https://api.im.actiandatacloud.com/v2/api/jobs/[job id]/out/[output message name]/text
 Authorization: Bearer [access token value]
 ```
 RESPONSE:
