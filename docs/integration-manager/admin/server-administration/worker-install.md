@@ -7,9 +7,7 @@ hide_table_of_contents: true
 
 This section describes how to install, configure, and use the Actian Integration Manager Worker.
 
-<font color="red">Need screenshots?</font>
-
-## Why and when is this installation required?
+### Why and when is this installation required?
 
 Installing a separate Integration Manager Worker (worker service) is optional. The Worker service is already included by default when you install Integration Manager. A separate Worker service installation is only required when the you also want to install additional workers on other machines.
 
@@ -31,7 +29,7 @@ import TabItem from '@theme/TabItem';
 * 64-bit processor, 2.90GHz
 * 16 GB installed memory (RAM)
 * DataConnect v12 License file (typically *.slc)
-* RabbitMQ Messaging Broker <font color="red">(Can we skip this Rabbitmq section?)</font>
+* RabbitMQ Messaging Broker
 
 ### What Will Be Installed​
 
@@ -43,7 +41,7 @@ import TabItem from '@theme/TabItem';
 
 1. Make sure RabbitMQ Messaging Broker has been installed and running locally or remotely to configure the Integration Manager Worker.
 2. Download Actian Integration Manager Worker for Windows from Actian ESD: [ESD - Electronic Software Distribution](https://esd.actian.com/).
-3. Right-click the downloaded installer file (integration-worker-3.3.x-xx.exe) and select "Run as Administrator".
+3. Right-click the downloaded installer file (`integration-worker-3.3.x-xx.exe`) and select "Run as Administrator".
 
     :::note
     If you have a previous 3.x.x version installed, you will be prompted to uninstall first. Uninstalling will shutdown running services and prepare for library updates, it will NOT remove or alter ProgramData (conf files, logs, etc.). See [Uninstallation](#uninstallation) below.
@@ -133,7 +131,7 @@ To uninstall Integration Manager Worker, execute `uninstaller.exe` in the progra
 * 64-bit processor, 2.90GHz
 * 16 GB Installed memory (RAM)
 * DataConnect v12 License file (typically *.slc)
-* RabbitMQ Messaging Broker <font color="red">(Can we skip this Rabbitmq section?)</font>
+* RabbitMQ Messaging Broker
 
 #### What Will Be Installed​
 
