@@ -113,30 +113,27 @@ The Access Key and Secret Key are used for programmatic (API) access to your lis
 
 You can invoke an Alias, that is, run a JobConfig, through the Job Execution API in several ways with several options. Note that your Alias only exposes the ability to execute a JobConfig with parameters. No user or configuration data is accessible through the Listener API.
 
-* If ONLY api key is set, then it must be supplied via the 'x-api-key' header
-* If BOTH api key and api secret are set, then Authorization: Basic is required, in the format of Base64Encode(api-key:api-secret)
-* (Discouraged) Aliases support User credential authentication, Authorization: Basic is required, in the format of Base64Encode(username:password)
-* (Discouraged) Public Aliases do not require any authentication
-
-For more details, refer to [Open API spec: Run a job via jobConfig alias with text message input](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/Job/runAliasWithMessage).
-
 :::danger[Warning]
 Using HTTPS is always recommended. Otherwise, API tokens, credentials, and payloads are subject to hijack. HTTPS is always enabled and enforced for DataCloud and VPC deployments.
 :::
 
-You can invoke a JobConfig Alias these ways:
+If the job config alias is secured (i.e., not public), then the following conditions must be met to execute the alias:
 
-* Authorization: Bearer (access_token)
-* Bearer tokens can be retrieved from /api/login. (You must set an API Password for your user to call /api/login).
-* Bearer tokens can be retrieved using Actian ID or OAuth authorization_code flow.
-* Authorization: Basic (encoded user credentials)
-  * You must set an API Password for your user.
-  * Credentials are constructed by first combining the Username and Password with a colon (aladdin:opensesame), and then by encoding the resulting string in base64 (YWxhZGRpbjpvcGVuc2VzYW1l).
-  * Example: Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l
-* Authorization: Basic (encoded api keys)
-  * You must create API keys for this Alias.
+* If ONLY api-key is set, then it must be supplied via the `x-api-key` header
+* If BOTH api-key and api-secret are set, then Authorization: Basic is required, using the format of Base64Encode(api-key:api-secret)
+* (Discouraged) Public Aliases do not require any authentication
+
+#### Authorization: Bearer (access_token)
+  * Bearer tokens can be retrieved from /api/login. (You must set an API password for your user to call /api/login).
+  * Bearer tokens can be retrieved using Actian ID or OAuth authorization_code flow.
+  * With a valid DataCloud JWT token with "execute" permission or Account Administrator.
+
+#### Authorization: Basic (encoded API keys)
+  * You must create API keys for this alias.
   * Credentials are constructed by first combining the Access Key and Secret Key with a colon (TESTACCESSKEY:TESTSECRETKEY), and then by encoding the resulting string in base64 (VEVTVEFDQ0VTU0tFWTpURVNUU0VDUkVUS0VZ).
-  * Example: Authorization: Basic VEVTVEFDQ0VTU0tFWTpURVNUU0VDUkVUS0VZ
+  * Example - Authorization: Basic VEVTVEFDQ0VTU0tFWTpURVNUU0VDUkVUS0VZ
+
+For more details, refer to [Open API spec: Run a job via jobConfig alias with text message input](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/Job/runAliasWithMessage).
 
 ## Deleting a Listener
 
