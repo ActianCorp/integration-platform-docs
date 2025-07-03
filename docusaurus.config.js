@@ -36,7 +36,7 @@ const config = {
   //  defaultLocale: 'en',
   //  locales: ['en'],
   //},
-  
+
   plugins: [
     [
         'docusaurus-biel',{
@@ -46,6 +46,7 @@ const config = {
         }
     ]
   ],
+  
   presets: [
     [
       'classic',
