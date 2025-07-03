@@ -36,7 +36,15 @@ const config = {
   //  defaultLocale: 'en',
   //  locales: ['en'],
   //},
-
+  plugins: [
+    [
+        'docusaurus-biel',{
+            project: 'wr70kftlak',
+            headerTitle: 'Biel.ai chatbot',
+            version: 'latest'
+        }
+    ]
+  ],
   presets: [
     [
       'classic',
