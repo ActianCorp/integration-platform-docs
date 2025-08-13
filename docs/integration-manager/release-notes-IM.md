@@ -17,10 +17,10 @@ Documentation for older releases can be found [here](https://docs.actian.com/#pa
 | New Feature | IP-8067 | DataFlow 8.1.0-148 Engine | 3.3.0 |  | Completed |
 | New Feature | IP-8056 | DataConnect 12.3.0-43 Engine | 3.3.0 |  | Completed |
 | New Feature | IP-7893 | Java 17 Support Added | 3.3.0 |  | Completed |
-| New Feature | IP-7682 | Add optional `engine.useLegacyTimestamps` property to enable legacy log timestamps. See [DataConnect Properties](./integration-manager/admin/application-property-reference/dataconnect-properties). | 3.3.0 |  | Completed |
+| New Feature | IP-7682 | Add optional `engine.useLegacyTimestamps` property to enable legacy log timestamps. See [DataConnect Properties](./admin/application-property-reference/dataconnect-properties). | 3.3.0 |  | Completed |
 | New Feature | IP-7283 | Timestamp ZoneOffset for [log file API](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/Job/getJobLog) | 3.3.0 |  | Completed |
 | New Feature | IP-7252 | Remove Agent-User Tethering. This removes the 1:1 restriction between a user and an agent, thereby allowing an admin to register multiple agents. Admins can see all agents, users can only see agents they have registered. Agent hostname must still be globally unique.| 3.3.0 |  | Completed |
-| New Feature | IP-5244 | [JobConfig/JobTemplate Export/Import API](./integration-manager/APIs/jobconfig-export-import-api)| 3.3.0 |  | Completed |
+| New Feature | IP-5244 | [JobConfig/JobTemplate Export/Import API](./APIs/jobconfig-export-import-api)| 3.3.0 |  | Completed |
 
 ### 3.2.0
 
@@ -61,7 +61,7 @@ Documentation for older releases can be found [here](https://docs.actian.com/#pa
 | Improvement | IP-6063 | Enable Swagger UI Try It Features | 3.1.1 |  | Completed |
 | Bug Fix | IP-6039 | Agent Queue Consumers are not recovering from Connection Loss | 3.1.1 |  | Completed |
 | Bug Fix | IP-6037 | Agent eagerly fetches Device Token | 3.1.1 |  | Completed |
-| Improvement | IP-5663 | Documented [Engine Patch Instructions](./integration-manager/admin/server-administration/integration-engines)   | 3.1.1 |  | Completed |
+| Improvement | IP-5663 | Documented [Engine Patch Instructions](./admin/server-administration/integration-engines)   | 3.1.1 |  | Completed |
 
 ### 3.1.0
 

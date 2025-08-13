@@ -18,7 +18,7 @@ Recent Jobs provides a table of recently-run jobs, and displays details and stat
 
    ![Recent Jobs Widget](/img/Recent-Jobs-Widget.png)
 
-Click <img src="/img/icons/log-file.png" className="icon" alt="the magnifying glass icon"/> to download the log file for that job. See [Downloading the Log File](./integration-manager/jobs/downloading-the-log-file).
+Click <img src="/img/icons/log-file.png" className="icon" alt="the magnifying glass icon"/> to download the log file for that job. See [Downloading the Log File](./jobs/downloading-the-log-file).
 
 ### ALL JOBS
 

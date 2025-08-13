@@ -27,5 +27,5 @@ title: Accessing the Integration Manager
 
    ![Dashboard](/img/Dashboard.png)
 
-5. If logging in as an administrator, you can manage user accounts. Refer to [User Management](./integration-manager/admin/access-control/user-management).
+5. If logging in as an administrator, you can manage user accounts. Refer to [User Management](./admin/access-control/user-management).
 

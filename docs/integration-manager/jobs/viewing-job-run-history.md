@@ -8,7 +8,7 @@ You can view job run history for recent jobs, all jobs, or a specific job.
 
 ## Viewing the Run History for Recent Jobs
 
-1. Select the **Dashboard** tab. The Dashboard displays a list of recent jobs, as well as additional details that you can customize. See [Customizing the Dashboard](../../dashboard#customizing-the-dashboard).
+1. Select the **Dashboard** tab. The Dashboard displays a list of recent jobs, as well as additional details that you can customize. See [Customizing the Dashboard](../dashboard#customizing-the-dashboard).
 
    ![](/img/Recent-Jobs-Widget.png)
 

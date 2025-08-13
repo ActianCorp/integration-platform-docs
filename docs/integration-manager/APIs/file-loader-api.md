@@ -17,7 +17,7 @@ This service allows an API consumer to stage and load a file directly into a tar
 
 ## Step 1: Set an API Password
 
-If you have not already done so, you must set a password to enable API access. See [Setting Your Password](../../editing-your-profile#setting-your-password).
+If you have not already done so, you must set a password to enable API access. See [Setting Your Password](../../integration-manager/editing-your-profile#setting-your-password).
 
 ## Step 2: Locate Your Warehouse Details
 
