@@ -253,10 +253,24 @@ const sidebars = {
       type: 'category',
       label: 'GETTING STARTED',
       items: [
-        'dataconnect/getting-started/getting-started',
+        {
+          type: 'category',
+          label: 'Getting Started with DataConnect',
+          items: [
+            {
+              type: 'category',
+              label: 'Integration Toolset',
+              items: [
+                'dataconnect/getting-started/integration-toolset/maps',
+                'dataconnect/getting-started/integration-toolset/workspaces-and-projects',
+              ],
+            },
+            'dataconnect/getting-started/launching',
+          ],
+        },
       ],
     },
-  ],
+],
 };
 
 module.exports = sidebars;
