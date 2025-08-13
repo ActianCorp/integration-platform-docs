@@ -6,7 +6,7 @@ import Link from '@docusaurus/Link';
 const FeatureList = [
   {
     title: 'DataConnect',
-    doc: "/docs/dataconnect/intro",
+    doc: "/docs/dataconnect/intro-DC",
     png: "/img/home/DataConnect.svg",
     description: (
       <>
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Integration Manager',
-    doc: "/docs/intro",
+    doc: "/docs/integration-manager/intro-IM",
     png: "/img/home/im.png",
     description: (
       <>
@@ -24,21 +24,11 @@ const FeatureList = [
       </>
     ),
   },
-  {
-    title: 'Release Notes',
-    doc: "/docs/release-notes",
-    png: "/img/home/list.png",
-    description: (
-      <>
-      New features, bug fixes, and known issues for each release.
-     </>
-    ),
-  },
 ];
 
 function Feature({title, doc, png, description}) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--6')}>
         <div className="text--center">
           <img src={png} className="icon" alt="" />
           <div className="text--center padding-horiz--md">

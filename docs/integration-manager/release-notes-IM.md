@@ -1,7 +1,7 @@
 ---
 title: Release Notes
 ---
-# Release Notes
+# Integration Manager Release Notes
 
 :::note
 Documentation for Integration Platform releases prior to version 3.2 has not been migrated to this new documentation platform.
@@ -27,8 +27,8 @@ Documentation for older releases can be found [here](https://docs.actian.com/#pa
 | Issue Type | <div style={{width: 65}}>Issue Key</div> | Summary | Fix versions | Affects versions | Status |
 |:---|:---|:---|:---|:---|:---|
 | New Feature | IP-7500 | DataConnect 12.2.0-65 Engine | 3.2.0 |  | Completed |
-| New Feature | IP-7039 | [Apache Camel XML Route Support](./integration-manager/file-listener/file-listener-overview.md) for Job Execution (on-prem use only) | 3.2.0 |  | Completed |
-| New Feature | IP-6995 | [Apache Camel XML Route Support](./integration-manager/file-listener/file-listener-overview.md) for Agent | 3.2.0 |  | Completed |
+| New Feature | IP-7039 | [Apache Camel XML Route Support](./file-listener/file-listener-overview.md) for Job Execution (on-prem use only) | 3.2.0 |  | Completed |
+| New Feature | IP-6995 | [Apache Camel XML Route Support](./file-listener/file-listener-overview.md) for Agent | 3.2.0 |  | Completed |
 | Bug Fix | IP-6858 | Agents should not be allowed to register with internal IP address. | 3.2.0 |  | Completed |
 | New Feature | IP-6837 | Add abortedBy support to Jobs. This adds a stoppedBy property to JobResponse to track the user who issued a stop command. | 3.2.0 |  | Completed |
 | New Feature | IP-5491 | Implement bulk actions for Active and Inactive users. This allows admins to activate or deactivate multiple users in a single action rather than one-by-one. | 3.2.0 |  | Completed |

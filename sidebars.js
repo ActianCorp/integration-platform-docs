@@ -14,25 +14,18 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   IM_Sidebar: [
-    //{
-    //  type: 'doc',
-    //  id: 'intro',
-    //  label: 'Overview',
-    //},
-    'intro',
-    'release-notes',
-    'copyright',
+    'integration-manager/intro-IM',
+    'integration-manager/release-notes-IM',
     'feedback',
-    'integration-manager/quickstart-install',
-    'accessing-the-integration-manager',
-    'dashboard',
-    'editing-your-profile',
     {
       type: 'category',
       label: 'INTEGRATION MANAGER',
       className: 'categoryItem',
       items: [
-        'integration-manager/manager-overview',
+        'integration-manager/quickstart-install',
+        'integration-manager/accessing-the-integration-manager',
+        'integration-manager/dashboard',
+        'integration-manager/editing-your-profile',
         {
           type: 'category',
           label: 'Configurations',
@@ -246,7 +239,9 @@ const sidebars = {
     },
   ],
   DC_Sidebar: [
-    'dataconnect/intro',
+    'dataconnect/intro-DC',
+    'dataconnect/release-notes-DC',
+    'feedback',
     {
       type: 'category',
       label: 'INSTALLATION GUIDE',

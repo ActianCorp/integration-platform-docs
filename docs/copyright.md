@@ -1,6 +1,7 @@
 ---
 title: Copyright Information
 custom_edit_url: null
+displayed_sidebar: null
 ---
 
 # Copyright Information
