@@ -255,19 +255,14 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Getting Started with DataConnect',
+          label: 'Integration Toolset',
           items: [
-            {
-              type: 'category',
-              label: 'Integration Toolset',
-              items: [
-                'dataconnect/getting-started/integration-toolset/maps',
-                'dataconnect/getting-started/integration-toolset/workspaces-and-projects',
-              ],
-            },
-            'dataconnect/getting-started/launching',
+            'dataconnect/getting-started/integration-toolset/maps',
+            'dataconnect/getting-started/integration-toolset/workspaces-and-projects',
           ],
         },
+        'dataconnect/getting-started/launching',
+        'dataconnect/getting-started/uploading-license-file',
       ],
     },
 ],
