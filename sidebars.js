@@ -13,7 +13,7 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  docSidebar: [
+  IM_Sidebar: [
     //{
     //  type: 'doc',
     //  id: 'intro',
@@ -243,6 +243,23 @@ const sidebars = {
         },
         'integration-agent/agent-troubleshooting',
       ]
+    },
+  ],
+  DC_Sidebar: [
+    'dataconnect/intro',
+    {
+      type: 'category',
+      label: 'INSTALLATION GUIDE',
+      items: [
+        'dataconnect/installation/installation',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'GETTING STARTED',
+      items: [
+        'dataconnect/getting-started/getting-started',
+      ],
     },
   ],
 };

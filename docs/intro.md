@@ -1,10 +1,9 @@
 ---
-title: Actian Integration Platform
+title: Actian Integration Manager
+displayed_sidebar: IM_Sidebar
 ---
 
-# Actian Integration Platform
-
-Established in 2008, and architected with a cloud-first imperative, the Actian DataCloud platform has unleashed its power to all manners of deployment, including SaaS, on-premise, and private cloud.
+# Actian Integration Manager
 
 Integration Manager brings together the flexible APIs and scalable workloads from Actian DataCloud, the rapid integration capabilities of Actian DataConnect, and the raw power of Actian DataFlow into a single platform.
 

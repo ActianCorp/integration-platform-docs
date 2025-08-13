@@ -5,22 +5,22 @@ import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
-    title: 'Integration Manager',
-    doc: "/docs/integration-manager/manager-overview",
-    png: "/img/home/cloud.png",
+    title: 'DataConnect',
+    doc: "/docs/dataconnect/intro",
+    png: "/img/home/DataConnect.svg",
     description: (
       <>
-      An elastic cloud-based platform that enables the design, deployment, and management of web-based integrations.
+       A digital business platform for hybrid data integration, transformation, and management.
       </>
     ),
   },
   {
-    title: 'Integration Agent',
-    doc: "/docs/integration-agent/agent-overview",
-    png: "/img/home/cloud.png",
+    title: 'Integration Manager',
+    doc: "/docs/intro",
+    png: "/img/home/im.png",
     description: (
       <>
-      DataCloud Agent Technology enables centralized cloud management of on-premise integration jobs and related collateral.
+      An elastic cloud-based platform that enables the design, deployment, and management of web-based integrations.
       </>
     ),
   },
