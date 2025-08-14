@@ -257,6 +257,7 @@ const sidebars = {
         'dataconnect/getting-started/launching',
         'dataconnect/getting-started/uploading-license-file',
         'dataconnect/getting-started/processes',
+        'dataconnect/getting-started/portability',
       ],
     },
 ],
