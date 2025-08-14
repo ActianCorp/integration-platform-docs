@@ -253,14 +253,7 @@ const sidebars = {
       type: 'category',
       label: 'GETTING STARTED',
       items: [
-        {
-          type: 'category',
-          label: 'Integration Toolset',
-          items: [
-            'dataconnect/getting-started/integration-toolset/maps',
-            'dataconnect/getting-started/integration-toolset/workspaces-and-projects',
-          ],
-        },
+        'dataconnect/getting-started/integration-toolset',
         'dataconnect/getting-started/launching',
         'dataconnect/getting-started/uploading-license-file',
       ],
