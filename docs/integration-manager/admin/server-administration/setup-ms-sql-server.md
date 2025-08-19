@@ -42,7 +42,7 @@ spring.jpa.properties.eclipselink.cache.shared.default=false
 spring.liquibase.change-log=classpath:db.changelog-master.xml
 ```
 
-This is the simplest configuration to connect to a non-production SQL Server. Different customers could have more or fewer security features enabled on SQL Server and the required connection string (`spring.datasource.url`) will likely need to be modified. To better craft your particular connection string, please review the Microsoft documentation: https://learn.microsoft.com/en-us/sql/connect/jdbc/understanding-ssl-support?view=sql-server-ver17.
+The example above is the simplest configuration for connecting to a non-production SQL Server. If you have more or fewer security features enabled on your SQL Server, you will likely need to modify the required connection string (`spring.datasource.url`). To better craft your particular connection string, please review the Microsoft documentation: https://learn.microsoft.com/en-us/sql/connect/jdbc/understanding-ssl-support?view=sql-server-ver17.
 
 ## Step 4: Create SQL Server Compatible Quartz Properties file
 
