@@ -35,7 +35,7 @@ Integration Manager will initialize all required database tables at the initial 
 Here are some example properties to connect Integration Manager to a MS SQL Server database:
 ```
 spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
-spring.datasource.url=jdbc:sqlserver://DB_HOSTNAME;databaseName=datacloud_db;integratedSecurity=true
+spring.datasource.url=jdbc:sqlserver://DB_HOSTNAME;databaseName=datacloud_db;integratedSecurity=true;encrypt=false;
 spring.datasource.initialize=false
 spring.datasource.continue-on-error=false 
 spring.jpa.properties.eclipselink.cache.shared.default=false
