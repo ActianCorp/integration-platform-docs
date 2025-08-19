@@ -24,10 +24,10 @@ Integration Manager is compatible with Microsoft SQL Server version 13 (aka SQL 
 
 ## Step 3: Integration Manager Configuration
 
-Integration Manager uses the "spring.datasource" prefix properties in the ../conf/application.properties file to create a database connection.
+Integration Manager uses the `spring.datasource` prefix properties in the `../conf/application.properties` file to create a database connection.
 
 :::note
-Any change to application.properties requires a restart of the Integration Manager Service.
+Any change to `application.properties` requires a restart of the Integration Manager Service.
 :::
 
 Integration Manager will initialize all required database tables at the initial startup. 
@@ -41,6 +41,8 @@ spring.datasource.continue-on-error=false
 spring.jpa.properties.eclipselink.cache.shared.default=false
 spring.liquibase.change-log=classpath:db.changelog-master.xml
 ```
+
+This is the simplest configuration to connect to a non-production SQL Server. Different customers could have more or fewer security features enabled on SQL Server and the required connection string (`spring.datasource.url`) will likely need to be modified. To better craft your particular connection string, please review the Microsoft documentation: https://learn.microsoft.com/en-us/sql/connect/jdbc/understanding-ssl-support?view=sql-server-ver17.
 
 ## Step 4: Create SQL Server Compatible Quartz Properties file
 
