@@ -35,7 +35,7 @@ import TabItem from '@theme/TabItem';
 2. Right-click the downloaded installer file (integration-manager-3.x.x.exe) and select "Run as Administrator".
    
    :::note
-      If you have a previous 3.x.x version installed, you will be prompted to uninstall first. Uninstalling will shutdown running services and prepare for library updates, it will NOT remove or alter ProgramData (conf files, logs, etc.). See [Uninstallation](#unistallation) below.
+      If you have a previous 3.x.x version installed, you will be prompted to uninstall first. Uninstalling will shutdown running services and prepare for library updates, it will NOT remove or alter ProgramData (conf files, logs, etc.). See [Uninstallation](#uninstallation) below.
    :::
 
 3. Accept the License Agreement.

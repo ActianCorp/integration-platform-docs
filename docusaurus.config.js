@@ -15,10 +15,10 @@ const config = {
   favicon: 'img/logos/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://integration-platform-docs.netlify.app/', // Netlify
+  url: 'https://im.dev.actiandatacloud.com', // Netlify
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/guide/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
