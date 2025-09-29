@@ -23,23 +23,22 @@ pipeline {
                     }
 
 					sh '''
-						export PATH=${MAVEN_HOME}/bin:$PATH
-						echo "----- Starting ${JOB_BASE_NAME} build -----"
-						env
-						echo "----- Downloading sub-modules -----"
-						git submodule update --init
-						echo "----- Updating Project Module Versions -----"
-						mvn -N versions:update-child-modules -DgenerateBackupPoms=false
-						echo "----- Building ${JOB_BASE_NAME} -----"
-						echo "Branch to build: ${SOURCE_BRANCH}"
-						sed -i "s/-SNAPSHOT/-$POM_VERSION_REPLACED-$BUILD_VERSION/g" pom.xml
-						cat pom.xml
-						# mvn clean deploy --settings settings.xml
+					export PATH=${MAVEN_HOME}/bin:$PATH
+					echo "----- Starting ${JOB_BASE_NAME} build -----"
+					env
+					echo "----- Downloading sub-modules -----"
+					git submodule update --init
+					echo "----- Updating Project Module Versions -----"
+					mvn -N versions:update-child-modules -DgenerateBackupPoms=false
+					echo "----- Building ${JOB_BASE_NAME} -----"
+					echo "Branch to build: ${SOURCE_BRANCH}"
+					sed -i "s/-SNAPSHOT/-$POM_VERSION_REPLACED-$BUILD_VERSION/g" pom.xml
+					cat pom.xml
+					# mvn clean deploy --settings settings.xml
 					'''
-				}
 			}
-		}	
-    }
+		}
+	}
     post
 	    {
         failure {
