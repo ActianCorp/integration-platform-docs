@@ -38,6 +38,7 @@ pipeline {
 						echo "----- Building ${JOB_BASE_NAME} -----"
 						echo "Branch to build: ${SOURCE_BRANCH}"
 						
+						echo "----- Building with version - ${env.POM_VERSION_REPLACED} -----"
 						mvn versions:set -DnewVersion=${env.POM_VERSION_REPLACED} -DgenerateBackupPoms=false -f pom.xml
 						mvn clean deploy --settings settings.xml
 					"""
@@ -48,13 +49,13 @@ pipeline {
 	    {
         failure {
             echo '---------- Build Failure Notification ----------'
-            mail to: 'manoj.bardhan@actian.com',
+            mail to: 'DataConnect.Cloud.Platform@actian.com',
 			subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
 			body: "Something is wrong with ${env.BUILD_URL}"
         }
         unstable {
             echo '---------- Build Unstable Notification ----------'
-            mail to: 'manoj.bardhan@actian.com',
+            mail to: 'DataConnect.Cloud.Platform@actian.com',
 			subject: "Unstable Pipeline: ${currentBuild.fullDisplayName}",
 			body: "Something is wrong with ${env.BUILD_URL}"
         }
