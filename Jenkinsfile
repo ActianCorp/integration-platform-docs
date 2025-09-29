@@ -19,7 +19,8 @@ pipeline {
                         def POM_VERSION_REPLACED = POM_VERSION.replace('-SNAPSHOT', '')
                         echo "----- POM Version Replaced ${POM_VERSION_REPLACED} -----"
                         env.POM_VERSION = POM_VERSION
-                        env.POM_VERSION_REPLACED = POM_VERSION_REPLACED
+                        env.POM_VERSION_REPLACED = POM_VERSION_REPLACED-${env.BUILD_NUMBER}
+						echo "Final version is ${env.POM_VERSION_REPLACED}"
                     }
 
 					sh '''
@@ -32,7 +33,7 @@ pipeline {
 					mvn -N versions:update-child-modules -DgenerateBackupPoms=false
 					echo "----- Building ${JOB_BASE_NAME} -----"
 					echo "Branch to build: ${SOURCE_BRANCH}"
-					sed -i "s/-SNAPSHOT/-$POM_VERSION_REPLACED-$BUILD_VERSION/g" pom.xml
+					sed -i "s/-SNAPSHOT/-$POM_VERSION_REPLACED/g" pom.xml
 					cat pom.xml
 					# mvn clean deploy --settings settings.xml
 					'''
