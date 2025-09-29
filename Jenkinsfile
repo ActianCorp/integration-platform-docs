@@ -25,21 +25,22 @@ pipeline {
                         env.POM_VERSION = POM_VERSION
                         env.POM_VERSION_REPLACED = finalVersion
                     }
+					sh """
+						export PATH=${MAVEN_HOME}/bin:$PATH
+						echo "----- Starting ${JOB_BASE_NAME} build -----"
+						
+						echo "----- Downloading sub-modules -----"
+						git submodule update --init
 
-					sh '''
-					export PATH=${MAVEN_HOME}/bin:$PATH
-					echo "----- Starting ${JOB_BASE_NAME} build -----"
-					env
-					echo "----- Downloading sub-modules -----"
-					git submodule update --init
-					echo "----- Updating Project Module Versions -----"
-					mvn -N versions:update-child-modules -DgenerateBackupPoms=false
-					echo "----- Building ${JOB_BASE_NAME} -----"
-					echo "Branch to build: ${SOURCE_BRANCH}"
-					sed -i "s/-SNAPSHOT/-$POM_VERSION_REPLACED/g" pom.xml
-					cat pom.xml
-					# mvn clean deploy --settings settings.xml
-					'''
+						echo "----- Updating Project Module Versions -----"
+						mvn -N versions:update-child-modules -DgenerateBackupPoms=false
+
+						echo "----- Building ${JOB_BASE_NAME} -----"
+						echo "Branch to build: ${SOURCE_BRANCH}"
+						
+						mvn versions:set -DnewVersion=${env.POM_VERSION_REPLACED} -DgenerateBackupPoms=false -f pom.xml
+						mvn clean deploy --settings settings.xml
+					"""
 			}
 		}
 	}
