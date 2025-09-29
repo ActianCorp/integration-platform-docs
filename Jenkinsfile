@@ -16,11 +16,14 @@ pipeline {
                             mvn --settings settings.xml -q -N -Dexec.executable="echo" -Dexec.args='${project.version}' org.codehaus.mojo:exec-maven-plugin:1.3.1:exec
                         ''', returnStdout: true).trim()
                         echo "----- POM Version ${POM_VERSION} -----"
-                        def POM_VERSION_REPLACED = POM_VERSION.replace('-SNAPSHOT', '')
-                        echo "----- POM Version Replaced ${POM_VERSION_REPLACED} -----"
+                        def baseVersion = POM_VERSION.replace('-SNAPSHOT', '')
+                        echo "----- Base Version: ${baseVersion} -----"
+
+						def finalVersion = "${baseVersion}-${env.BUILD_NUMBER}"
+    					echo "----- Final Version: ${finalVersion} -----"
+
                         env.POM_VERSION = POM_VERSION
-                        env.POM_VERSION_REPLACED = POM_VERSION_REPLACED-${env.BUILD_NUMBER}
-						echo "Final version is ${env.POM_VERSION_REPLACED}"
+                        env.POM_VERSION_REPLACED = finalVersion
                     }
 
 					sh '''
