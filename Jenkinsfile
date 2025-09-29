@@ -5,7 +5,7 @@ pipeline {
         disableConcurrentBuilds()
     }
 	parameters {
-        string(name: "SOURCE_BRANCH", defaultValue: "origin/", trim: true, description: "Source branch name to build i.e. origin/release/x.x.x. The default branch is origin/develop.")
+        string(name: "SOURCE_BRANCH", defaultValue: "origin/", trim: true, description: "Source branch name to build i.e. origin/. The default branch is master.")
     }
 	stages {
 		stage ('Build') {
