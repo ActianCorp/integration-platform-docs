@@ -9,7 +9,7 @@ pipeline {
 		// Environment selection for deployment. NETLIFY option is for supporting currently deployed site,  until we move to new infra.
 		choice(
             name: "ENVIRONMENT",
-            choices: ["dev", "test", "stage", "production", "netlify"],
+            choices: ["dev", "test", "stage", "prod", "netlify"],
             description: "Select environment to deploy the artifacts. Netlify option is for supporting currently deployed site, until we move to new infra."
         )
     }
