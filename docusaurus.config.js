@@ -18,7 +18,7 @@ const config = {
   favicon: 'img/logos/favicon.ico',
 
   // URL will be replaced from environment variable in the Maven build. Set to localhost for local dev.
-  url: process.env.SITE_URL || 'http://localhost:3000',
+  url: process.env.SITE_URL || 'https://integration-platform-docs.netlify.app/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   //For netlify, set to / otherwise it will try to find the site at siteurl/guide/
