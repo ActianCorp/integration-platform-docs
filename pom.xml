@@ -118,13 +118,5 @@
                 <env.BASE_URL>/guide/</env.BASE_URL>
             </properties>
         </profile>
-        <!-- Netlify profile: Temporary, can be removed once new deployment process is ready -->
-        <profile>
-            <id>netlify</id>
-            <properties>
-                <env.SITE_URL>https://integration-platform-docs.netlify.app/</env.SITE_URL>
-                <env.BASE_URL>/</env.BASE_URL>
-            </properties>
-        </profile>
     </profiles>
 </project>

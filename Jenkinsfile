@@ -6,11 +6,11 @@ pipeline {
     }
 	parameters {
         string(name: "SOURCE_BRANCH", defaultValue: "origin/", trim: true, description: "Source branch name to build i.e. origin/. The default branch is master.")
-		// Environment selection for deployment. NETLIFY option is for supporting currently deployed site,  until we move to new infra.
+		// Environment selection for deployment.
 		choice(
             name: "ENVIRONMENT",
-            choices: ["dev", "test", "stage", "prod", "netlify"],
-            description: "Select environment to deploy the artifacts. Netlify option is for supporting currently deployed site, until we move to new infra."
+            choices: ["dev", "test", "stage", "prod"],
+            description: "Select environment to deploy the artifacts."
         )
     }
 	stages {
