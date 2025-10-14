@@ -59,6 +59,10 @@
             </goals>
             <configuration>
               <arguments>build</arguments>
+              <environmentVariables>
+                  <SITE_URL>${env.SITE_URL}</SITE_URL>
+                  <BASE_URL>${env.BASE_URL}</BASE_URL>
+              </environmentVariables>
             </configuration>
           </execution>
         </executions>
@@ -85,4 +89,42 @@
       </plugin>
     </plugins>
   </build>
+  <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <env.SITE_URL>https://im.dev.actiandatacloud.com</env.SITE_URL>
+                <env.BASE_URL>/guide/</env.BASE_URL>
+            </properties>
+        </profile>
+        <profile>
+            <id>stage</id>
+            <properties>
+                <env.SITE_URL>https://im.stage.actiandatacloud.com</env.SITE_URL>
+                <env.BASE_URL>/guide/</env.BASE_URL>
+            </properties>
+        </profile>
+        <profile>
+            <id>test</id>
+            <properties>
+                <env.SITE_URL>https://im.test.actiandatacloud.com</env.SITE_URL>
+                <env.BASE_URL>/guide/</env.BASE_URL>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <env.SITE_URL>https://im.actiandatacloud.com</env.SITE_URL>
+                <env.BASE_URL>/guide/</env.BASE_URL>
+            </properties>
+        </profile>
+        <!-- Netlify profile: Temporary, can be removed once new deployment process is ready -->
+        <profile>
+            <id>netlify</id>
+            <properties>
+                <env.SITE_URL>https://integration-platform-docs.netlify.app/</env.SITE_URL>
+                <env.BASE_URL>/</env.BASE_URL>
+            </properties>
+        </profile>
+    </profiles>
 </project>

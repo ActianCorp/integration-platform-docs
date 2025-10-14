@@ -6,6 +6,9 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
+console.log('Site URL is :', process.env.SITE_URL);
+console.log('Base URL is :', process.env.BASE_URL);
+
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
@@ -14,11 +17,12 @@ const config = {
   tagline: 'Documentation',
   favicon: 'img/logos/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://im.dev.actiandatacloud.com', // Netlify
+  // URL will be replaced from environment variable in the Maven build. Set to localhost for local dev.
+  url: process.env.SITE_URL || 'http://localhost:3000',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/guide/',
+  //For netlify, set to / otherwise it will try to find the site at siteurl/guide/
+  baseUrl: process.env.BASE_URL || '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
