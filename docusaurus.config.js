@@ -222,9 +222,7 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-        plugins: [
-          '@aldridged/docusaurus-plugin-lunr'
-      ]
+      plugins: [require.resolve('docusaurus-lunr-search')],
       //algolia: {
         // The application ID provided by Algolia
       //  appId: 'DJTQI8DCNE',
