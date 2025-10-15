@@ -222,14 +222,17 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-      algolia: {
+        plugins: [
+          '@aldridged/docusaurus-plugin-lunr'
+      ]
+      //algolia: {
         // The application ID provided by Algolia
-        appId: 'DJTQI8DCNE',
+      //  appId: 'DJTQI8DCNE',
   
         // Public API key: it is safe to commit it
-        apiKey: '557417026f266de1c4a0a43fc919ca41',
+      //  apiKey: '557417026f266de1c4a0a43fc919ca41',
   
-        indexName: 'integration-platform-netlify',
+      //  indexName: 'integration-platform-netlify',
   
         // Optional: see doc section below
         //contextualSearch: true,
@@ -247,10 +250,10 @@ const config = {
         //searchParameters: {},
   
         // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'false', //'search',
+      //  searchPagePath: 'false', //'search',
   
         //... other Algolia params
-      },
+      //},
     }),
 };
 
