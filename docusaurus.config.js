@@ -191,6 +191,7 @@ const config = {
             label: "Downloads",
             className: "github-button hide-mobile",
           },
+          { type: 'search', position: 'right' },
         ],
       },
       footer: {
@@ -222,7 +223,9 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-      plugins: [require.resolve('docusaurus-lunr-search')],
+      plugins: [
+        require.resolve("docusaurus-lunr-search"),
+      ],
       //algolia: {
         // The application ID provided by Algolia
       //  appId: 'DJTQI8DCNE',
