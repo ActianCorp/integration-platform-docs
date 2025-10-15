@@ -6,8 +6,6 @@ title: JobConfig Listener Aliasing
 
 ## Overview
 
-test2
-
 For better integration with external apps, any JobConfig Listener can be aliased to create a custom URL for your clients to execute your integration.
 
 An alias defines an alternative name for an existing Configuration to be executed from the HTTP Listener API service. An alias can only be mapped to one Configuration; however, a configuration can be mapped to multiple aliases.
