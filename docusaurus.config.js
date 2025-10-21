@@ -13,6 +13,9 @@ const config = {
   title: 'Actian Integration Platform',
   tagline: 'Documentation',
   favicon: 'img/logos/favicon.ico',
+  plugins: [
+    require.resolve("docusaurus-lunr-search"),
+  ],
 
   // Set the production url of your site here
   url: 'https://integration-platform-docs.netlify.app/', // Netlify
@@ -223,9 +226,6 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-      plugins: [
-        require.resolve("docusaurus-lunr-search"),
-      ],
       //algolia: {
         // The application ID provided by Algolia
       //  appId: 'DJTQI8DCNE',
