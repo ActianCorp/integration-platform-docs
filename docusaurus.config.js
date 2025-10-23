@@ -16,6 +16,7 @@ const config = {
   title: 'Actian Integration Platform',
   tagline: 'Documentation',
   favicon: 'img/logos/favicon.ico',
+  plugins: [require.resolve('docusaurus-lunr-search')],
 
   // URL will be replaced from environment variable in the Maven build. Set to localhost for local dev.
   url: process.env.SITE_URL || 'https://integration-platform-docs.netlify.app/',
@@ -226,35 +227,35 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-      algolia: {
-        // The application ID provided by Algolia
-        appId: 'DJTQI8DCNE',
+      // algolia: {
+      //   // The application ID provided by Algolia
+      //   appId: 'DJTQI8DCNE',
   
-        // Public API key: it is safe to commit it
-        apiKey: '557417026f266de1c4a0a43fc919ca41',
+      //   // Public API key: it is safe to commit it
+      //   apiKey: '557417026f266de1c4a0a43fc919ca41',
   
-        indexName: 'integration-platform-netlify',
+      //   indexName: 'integration-platform-netlify',
   
-        // Optional: see doc section below
-        //contextualSearch: true,
+      //   // Optional: see doc section below
+      //   //contextualSearch: true,
   
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        //externalUrlRegex: 'external\\.com|domain\\.com',
+      //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+      //   //externalUrlRegex: 'external\\.com|domain\\.com',
   
-        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
-        //replaceSearchResultPathname: {
-        //  from: '/docs/', // or as RegExp: /\/docs\//
-        //  to: '/',
-        //},
+      //   // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+      //   //replaceSearchResultPathname: {
+      //   //  from: '/docs/', // or as RegExp: /\/docs\//
+      //   //  to: '/',
+      //   //},
   
-        // Optional: Algolia search parameters
-        //searchParameters: {},
+      //   // Optional: Algolia search parameters
+      //   //searchParameters: {},
   
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'false', //'search',
+      //   // Optional: path for search page that enabled by default (`false` to disable it)
+      //   searchPagePath: 'false', //'search',
   
-        //... other Algolia params
-      },
+      //   //... other Algolia params
+      // },
     }),
 };
 
