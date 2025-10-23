@@ -39,7 +39,7 @@ A configuration is a set of properties and parameters that specify when, where, 
 
 ### Job
 
-Jobs are reports about the run results of the configurations you execute, and include details including whether the run was successful, the run duration, and log file data. Jobs are not editable. See [Run Your First Job](./integration-manager/configurations/run-your-first-job.md) and [Viewing Job Run History](./integration-manager/jobs/viewing-job-run-history.md).
+Jobs are reports about the run results of the configurations you execute, and include details including whether the run was successful, the run duration, and log file data. Jobs are not editable. See [Viewing Job Run History](./integration-manager/jobs/viewing-job-run-history.md).
 
 :::note
 The Integrations console utilizes a RESTful interface. You can use the REST API for Integration Manager to change configuration options and automate the execution of your configurations. See [Job Execution APIs](https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=Job%20Execution).
