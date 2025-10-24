@@ -6,6 +6,9 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
+console.log('Site URL is :', process.env.SITE_URL);
+console.log('Base URL is :', process.env.BASE_URL);
+
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
@@ -13,15 +16,14 @@ const config = {
   title: 'Actian Integration Platform',
   tagline: 'Documentation',
   favicon: 'img/logos/favicon.ico',
-  plugins: [
-    require.resolve("docusaurus-lunr-search"),
-  ],
+  plugins: [require.resolve('docusaurus-lunr-search')],
 
-  // Set the production url of your site here
-  url: 'https://integration-platform-docs.netlify.app/', // Netlify
+  // URL will be replaced from environment variable in the Maven build. Set to localhost for local dev.
+  url: process.env.SITE_URL || 'https://integration-platform-docs.netlify.app/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  //For netlify, set to / otherwise it will try to find the site at siteurl/guide/
+  baseUrl: process.env.BASE_URL || '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -194,7 +196,6 @@ const config = {
             label: "Downloads",
             className: "github-button hide-mobile",
           },
-          { type: 'search', position: 'right' },
         ],
       },
       footer: {
@@ -226,35 +227,35 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-      //algolia: {
-        // The application ID provided by Algolia
-      //  appId: 'DJTQI8DCNE',
+      // algolia: {
+      //   // The application ID provided by Algolia
+      //   appId: 'DJTQI8DCNE',
   
-        // Public API key: it is safe to commit it
-      //  apiKey: '557417026f266de1c4a0a43fc919ca41',
+      //   // Public API key: it is safe to commit it
+      //   apiKey: '557417026f266de1c4a0a43fc919ca41',
   
-      //  indexName: 'integration-platform-netlify',
+      //   indexName: 'integration-platform-netlify',
   
-        // Optional: see doc section below
-        //contextualSearch: true,
+      //   // Optional: see doc section below
+      //   //contextualSearch: true,
   
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        //externalUrlRegex: 'external\\.com|domain\\.com',
+      //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+      //   //externalUrlRegex: 'external\\.com|domain\\.com',
   
-        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
-        //replaceSearchResultPathname: {
-        //  from: '/docs/', // or as RegExp: /\/docs\//
-        //  to: '/',
-        //},
+      //   // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+      //   //replaceSearchResultPathname: {
+      //   //  from: '/docs/', // or as RegExp: /\/docs\//
+      //   //  to: '/',
+      //   //},
   
-        // Optional: Algolia search parameters
-        //searchParameters: {},
+      //   // Optional: Algolia search parameters
+      //   //searchParameters: {},
   
-        // Optional: path for search page that enabled by default (`false` to disable it)
-      //  searchPagePath: 'false', //'search',
+      //   // Optional: path for search page that enabled by default (`false` to disable it)
+      //   searchPagePath: 'false', //'search',
   
-        //... other Algolia params
-      //},
+      //   //... other Algolia params
+      // },
     }),
 };
 
