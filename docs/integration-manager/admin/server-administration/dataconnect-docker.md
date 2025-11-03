@@ -43,7 +43,7 @@ docker run --rm -v engine_data:/opt/Actian/engine busybox chown -R 1000:1000 /op
 Run your target container and mount the shared volume, `cosmos.ini`, and `cosmos.slc`:
 
 ```
-docker run --user 1000:1000 -d -v engine_data:/opt/Actian/engine -v C:\Users\vsingh\Desktop\data\cosmos.slc:/opt/Actian/license/cosmos.slc -v C:\Users\vsingh\Desktop\data\cosmos.ini:/opt/Actian/config/cosmos.ini debian:bullseye-slim bash -c "tail -f /dev/null"
+docker run --user 1000:1000 -d -v engine_data:/opt/Actian/engine -v C:\Users\someuser\Desktop\data\cosmos.slc:/opt/Actian/license/cosmos.slc -v C:\Users\someuser\Desktop\data\cosmos.ini:/opt/Actian/config/cosmos.ini debian:bullseye-slim bash -c "tail -f /dev/null"
 ```
 
 ### Step 5: Set the Environment Variable
@@ -105,7 +105,7 @@ docker build -t custom-app .
 Start the container using the following command:
 
 ```
-docker run -e "ACCEPT_ACTIAN_EULA=Y" -v C:\Users\vsingh\Desktop\data\cosmos.slc:/opt/Actian/license/cosmos.slc -v C:\Users\vsingh\Desktop\data\cosmos.ini:/opt/Actian/config/cosmos.ini custom-app
+docker run -e "ACCEPT_ACTIAN_EULA=Y" -v C:\Users\someuser\Desktop\data\cosmos.slc:/opt/Actian/license/cosmos.slc -v C:\Users\someuser\Desktop\data\cosmos.ini:/opt/Actian/config/cosmos.ini custom-app
 ```
 
 **Note**: Both `cosmos.slc` and `cosmos.ini` **must be mounted**:
@@ -147,8 +147,8 @@ services:
     user: "1000:1000"
     volumes:
       - engine_data:/opt/Actian/engine
-      - C:\Users\vsingh\Desktop\data\cosmos.ini:/opt/Actian/config/cosmos.ini
-      - C:\Users\vsingh\Desktop\data\cosmos.slc:/opt/Actian/license/cosmos.slc      
+      - C:\Users\someuser\Desktop\data\cosmos.ini:/opt/Actian/config/cosmos.ini
+      - C:\Users\someuser\Desktop\data\cosmos.slc:/opt/Actian/license/cosmos.slc      
     environment:
       - JAVA_OPTS=-Djboss.bind.address=0.0.0.0
       - LD_LIBRARY_PATH=/opt/Actian/engine/runtime/di9:$LD_LIBRARY_PATH
