@@ -21,7 +21,7 @@ In these scenarios, you can protect your data without complex integration logic 
 
 DataCloud subscribers must have access to Serialized Job Queues out-of-box without additional configuration.
 
-On-premise and VPC deployments of Integration Manager must have the ZooKeeper configuration enabled and connected. For more information, see [ZooKeeper](../admin/server-administration/setup-zookeeper.md).
+On-premise and VPC deployments of Integration Manager must have the ZooKeeper configuration enabled and connected. For more information, see [ZooKeeper](../admin/server-administration/setup-zookeeper).
 
 ## Configuring a Serialized Job Queue
 
