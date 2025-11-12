@@ -314,6 +314,10 @@ img {
 div.navbar__logo > img, .icon {
   border: none;
 }
+/* Hide navbar */
+.navbar {
+  display: none;
+}
 
 .hidden {
   display: none;
