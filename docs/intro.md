@@ -1,6 +1,5 @@
 ---
 title: Actian Integration Platform
-slug: /
 ---
 
       Actian Integration Platform documentation has moved.
