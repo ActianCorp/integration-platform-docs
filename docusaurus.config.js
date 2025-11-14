@@ -72,53 +72,6 @@ const config = {
         },
       }),
     ],
-//    [
-//      'redocusaurus',
-//      {
-//        // Plugin Options for loading OpenAPI files
-//        specs: [
-//          // Pass it a path to a local OpenAPI YAML file
-//          // Redocusaurus will automatically bundle your spec into a single file during the build
-//          {
-//            spec: 'api/integration-components.json',
-//            route: '/integration-components/',
-//          },
-//          {
-//            spec: 'api/job-configuration.json',
-//            route: '/job-configuration/',
-//          },
-//          {
-//            spec: 'api/job-execution.json',
-//            route: '/job-execution/',
-//          },
-//          {
-//            spec: 'api/jobconfig-aliasing.json',
-//            route: '/jobconfig-aliasing/',
-//          },
-//          {
-//            spec: 'api/agent-management.json',
-//            route: '/agent-management/',
-//          },
-//          {
-//            spec: 'api/account-administration.json',
-//            route: '/account-administration/',
-//          },
-//          {
-//            spec: 'api/resource-management.json',
-//            route: '/resource-management/',
-//          },
-//          {
-//            spec: 'api/access-control-policies.json',
-//            route: '/access-control-policies/',
-//          },
-//        ],
-//        // Theme Options for modifying how redoc renders them
-//        theme: {
-//          // Change with your site colors
-//          primaryColor: '#1890ff',
-//        },
-//      },
-//    ]
   ],
 
   themeConfig:
@@ -227,35 +180,6 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-      // algolia: {
-      //   // The application ID provided by Algolia
-      //   appId: 'DJTQI8DCNE',
-  
-      //   // Public API key: it is safe to commit it
-      //   apiKey: '557417026f266de1c4a0a43fc919ca41',
-  
-      //   indexName: 'integration-platform-netlify',
-  
-      //   // Optional: see doc section below
-      //   //contextualSearch: true,
-  
-      //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-      //   //externalUrlRegex: 'external\\.com|domain\\.com',
-  
-      //   // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
-      //   //replaceSearchResultPathname: {
-      //   //  from: '/docs/', // or as RegExp: /\/docs\//
-      //   //  to: '/',
-      //   //},
-  
-      //   // Optional: Algolia search parameters
-      //   //searchParameters: {},
-  
-      //   // Optional: path for search page that enabled by default (`false` to disable it)
-      //   searchPagePath: 'false', //'search',
-  
-      //   //... other Algolia params
-      // },
     }),
 };
 
