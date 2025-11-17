@@ -83,7 +83,7 @@ h3 {
 /* HOME PAGE */
 /* QQQQ: WHY DO THESE NOT WORK IF I PUT THEM HERE, WHERE THERE ARE OTHER CUSTOMIZATION?: src\components\HomepageFeatures\styles.module.css */
 header:has(> div.homeheader) {
-  background: url('/img/vc-cta-background.jpg'); 
+  background: url('/img/home/landing-bg.png'); 
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;  
