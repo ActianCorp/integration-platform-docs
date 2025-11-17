@@ -16,12 +16,12 @@ or [protobuf](https://github.com/qdrant/qdrant/tree/master/lib/api/src/grpc/prot
 
 ||Client Repository|Installation|Version|
 |-|-|-|-|
-|[![python](/img/Cortex/python.webp)](https://python-client.qdrant.tech/)|**[Python](https://github.com/qdrant/qdrant-client)** + **[(Client Docs)](https://python-client.qdrant.tech/)**|`pip install qdrant-client[fastembed]`|[Latest Release](https://github.com/qdrant/qdrant-client/releases)|
-|![typescript](/img/Cortex/ts.webp)|**[JavaScript / Typescript](https://github.com/qdrant/qdrant-js)**|`npm install @qdrant/js-client-rest`|[Latest Release](https://github.com/qdrant/qdrant-js/releases)|
-|![rust](/img/Cortex/rust.png)|**[Rust](https://github.com/qdrant/rust-client)**|`cargo add qdrant-client`|[Latest Release](https://github.com/qdrant/rust-client/releases)|
-|![golang](/img/Cortex/go.webp)|**[Go](https://github.com/qdrant/go-client)**|`go get github.com/qdrant/go-client`|[Latest Release](https://github.com/qdrant/go-client/releases)|
-|![.net](/img/Cortex/dotnet.webp)|**[.NET](https://github.com/qdrant/qdrant-dotnet)**|`dotnet add package Qdrant.Client`|[Latest Release](https://github.com/qdrant/qdrant-dotnet/releases)|
-|![java](/img/Cortex/java.webp)|**[Java](https://github.com/qdrant/java-client)**|[Available on Maven Central](https://central.sonatype.com/artifact/io.qdrant/client)|[Latest Release](https://github.com/qdrant/java-client/releases)|
+|[![python](/img/cortex/python.webp)](https://python-client.qdrant.tech/)|**[Python](https://github.com/qdrant/qdrant-client)** + **[(Client Docs)](https://python-client.qdrant.tech/)**|`pip install qdrant-client[fastembed]`|[Latest Release](https://github.com/qdrant/qdrant-client/releases)|
+|![typescript](/img/cortex/ts.webp)|**[JavaScript / Typescript](https://github.com/qdrant/qdrant-js)**|`npm install @qdrant/js-client-rest`|[Latest Release](https://github.com/qdrant/qdrant-js/releases)|
+|![rust](/img/cortex/rust.png)|**[Rust](https://github.com/qdrant/rust-client)**|`cargo add qdrant-client`|[Latest Release](https://github.com/qdrant/rust-client/releases)|
+|![golang](/img/cortex/go.webp)|**[Go](https://github.com/qdrant/go-client)**|`go get github.com/qdrant/go-client`|[Latest Release](https://github.com/qdrant/go-client/releases)|
+|![.net](/img/cortex/dotnet.webp)|**[.NET](https://github.com/qdrant/qdrant-dotnet)**|`dotnet add package Qdrant.Client`|[Latest Release](https://github.com/qdrant/qdrant-dotnet/releases)|
+|![java](/img/cortex/java.webp)|**[Java](https://github.com/qdrant/java-client)**|[Available on Maven Central](https://central.sonatype.com/artifact/io.qdrant/client)|[Latest Release](https://github.com/qdrant/java-client/releases)|
 
 ## API Reference
 
