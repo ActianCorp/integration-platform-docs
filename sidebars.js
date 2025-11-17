@@ -19,13 +19,13 @@ const sidebars = {
     //  id: 'intro',
     //  label: 'Overview',
     //},
+    'intro',
+    'vector-search',
     {
       type: 'category',
       label: 'GETTING STARTED',
       className: 'categoryItem',
       items: [
-        'intro',
-        'vector-search',
         'quickstart',
         'interfaces',
         'web-ui',
