@@ -50,8 +50,38 @@ const sidebars = {
       type: 'category',
       label: 'TUTORIALS',
       className: 'categoryItem',
-      items: [
-            'tutorial-vector-search',
+      link: {
+        type: 'generated-index',
+        title: 'Tutorials',
+        description: 'Master vector search with Cortex through comprehensive documentation, structured courses, and hands-on tutorials.',
+        slug: '/category/tutorials',
+        keywords: ['guides'],
+        },
+        items: [
+          {
+            type: 'category',
+            label: 'Vector Search Basics',
+            className: 'categoryItem',
+            items: [
+                  'semantic-search-101',
+            ]
+          },
+          {
+            type: 'category',
+            label: 'Advanced Retrieval',
+            className: 'categoryItem',
+            items: [
+                  'multivector',
+            ]
+          },
+          {
+            type: 'category',
+            label: 'Using the Database',
+            className: 'categoryItem',
+            items: [
+                  'bulk-upload-vectors',
+            ]
+          },
       ]
     },
   ],

@@ -28,7 +28,7 @@ const FeatureList = [
   },
   {
     title: 'Tutorials',
-    doc: "/docs/tutorial-vector-search",
+    doc: "/docs/category/tutorials",
     png: "/img/home/tutorial.png",
     btn: "Start Learning",
     description: (
