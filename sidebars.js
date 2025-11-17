@@ -42,10 +42,20 @@ const sidebars = {
           className: 'categoryItem',
           items: [
             'collections',
+            'points',
           ]
         },
+        {
+            type: 'category',
+            label: 'Guides',
+            className: 'categoryItem',
+            items: [
+              'installation',
+              'administration',
+            ]
+        },
       ]
-    },
+    },        
     {
       type: 'category',
       label: 'TUTORIALS',
