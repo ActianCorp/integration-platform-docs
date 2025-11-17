@@ -5,38 +5,41 @@ import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
-    title: 'Integration Manager',
-    doc: "/docs/integration-manager/manager-overview",
-    png: "/img/home/cloud.png",
+    title: 'Getting Started',
+    doc: "/docs/intro",
+    png: "/img/home/rocket1.png",
+    btn: "Get Started",
     description: (
       <>
-      An elastic cloud-based platform that enables the design, deployment, and management of web-based integrations.
+      Get up and running quickly with Cortex.
       </>
     ),
   },
   {
-    title: 'Integration Agent',
-    doc: "/docs/integration-agent/agent-overview",
-    png: "/img/home/cloud.png",
+    title: 'User Guides',
+    doc: "/docs/collections",
+    png: "/img/home/reader.png",
+    btn: "View the Docs",
     description: (
       <>
-      DataCloud Agent Technology enables centralized cloud management of on-premise integration jobs and related collateral.
+      View detailed user documentation.
       </>
     ),
   },
   {
-    title: 'Release Notes',
-    doc: "/docs/release-notes",
-    png: "/img/home/list.png",
+    title: 'Tutorials',
+    doc: "/docs/tutorial-vector-search",
+    png: "/img/home/tutorial.png",
+    btn: "Start Learning",
     description: (
       <>
-      New features, bug fixes, and known issues for each release.
+      Hands-on learning with real-world examples.
      </>
     ),
   },
 ];
 
-function Feature({title, doc, png, description}) {
+function Feature({title, doc, png, description, btn}) {
   return (
     <div className={clsx('col col--4')}>
         <div className="text--center">
@@ -51,7 +54,7 @@ function Feature({title, doc, png, description}) {
           </div>
         <br />
           <Link className="button button--primary button--md" to={doc}>
-            View Docs &#8250;&#8250;
+            {btn} &#8250;&#8250;
           </Link>
         </div>
 

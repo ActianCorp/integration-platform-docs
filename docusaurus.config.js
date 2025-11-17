@@ -13,7 +13,7 @@ console.log('Base URL is :', process.env.BASE_URL);
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Actian Integration Platform',
+  title: 'Actian Cortex',
   tagline: 'Documentation',
   favicon: 'img/logos/favicon.ico',
   plugins: [require.resolve('docusaurus-lunr-search')],
@@ -80,7 +80,7 @@ const config = {
       //Navbar items
       image: 'img/Logos_Actian_3Color-White-Transparent.png',
       navbar: {
-        title: 'Integration Platform',
+        title: 'Cortex',
         logo: {
           alt: 'Actian Logo',
           src: 'img/logos/ACTIAN-logo.svg',
@@ -177,6 +177,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Actian Corporation. All rights reserved.`,
       },
       prism: {
+        additionalLanguages: ['bash','csharp','java'],
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
