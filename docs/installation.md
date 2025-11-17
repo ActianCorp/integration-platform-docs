@@ -12,7 +12,7 @@ The preferred size of your CPU and RAM depends on:
 
 - Number of vectors
 - Vector dimensions
-- [Payloads](/documentation/concepts/payload/) and their indexes
+- [Payloads](#) and their indexes
 - Storage
 - Replication
 - How you configure quantization
@@ -43,9 +43,9 @@ Using Docker/WSL on Windows with mounts is known to have file system problems ca
 
 Each Qdrant instance requires three open ports:
 
-* `6333` - For the HTTP API, for the [Monitoring](/documentation/guides/monitoring/) health and metrics endpoints
-* `6334` - For the [gRPC](/documentation/interfaces/#grpc-interface) API
-* `6335` - For [Distributed deployment](/documentation/guides/distributed_deployment/)
+* `6333` - For the HTTP API, for the [Monitoring](#) health and metrics endpoints
+* `6334` - For the [gRPC](#) API
+* `6335` - For [Distributed deployment](#)
 
 All Qdrant instances in a cluster must be able to:
 
@@ -54,7 +54,7 @@ All Qdrant instances in a cluster must be able to:
 
 ### Security
 
-The default configuration of Qdrant might not be secure enough for every situation. Please see [our security documentation](/documentation/guides/security/) for more information.
+The default configuration of Qdrant might not be secure enough for every situation. Please see [our security documentation](#) for more information.
 
 ## Installation options
 
@@ -71,11 +71,11 @@ For testing or development setups, you can run the Qdrant container or as a bina
 ### Qdrant Cloud
 
 You can set up production with the [Qdrant Cloud](https://qdrant.to/cloud), which provides fully managed Qdrant databases.
-It provides horizontal and vertical scaling, one click installation and upgrades, monitoring, logging, as well as backup and disaster recovery. For more information, see the [Qdrant Cloud documentation](/documentation/cloud/).
+It provides horizontal and vertical scaling, one click installation and upgrades, monitoring, logging, as well as backup and disaster recovery. For more information, see the [Qdrant Cloud documentation](#).
 
 ### Qdrant Kubernetes Operator
 
-We provide a Qdrant Enterprise Operator for Kubernetes installations as part of our [Qdrant Private Cloud](/documentation/private-cloud/) offering. For more information, [use this form](https://qdrant.to/contact-us) to contact us.
+We provide a Qdrant Enterprise Operator for Kubernetes installations as part of our [Qdrant Private Cloud](#) offering. For more information, [use this form](https://qdrant.to/contact-us) to contact us.
 
 ### Kubernetes
 
@@ -121,11 +121,11 @@ However, you can also use Docker and Docker Compose to run Qdrant in production,
 In addition, you have to make sure:
 
 * To use a performant [persistent storage](#storage) for your data
-* To configure the [security settings](/documentation/guides/security/) for your deployment
-* To set up and configure Qdrant on multiple nodes for a highly available [distributed deployment](/documentation/guides/distributed_deployment/)
+* To configure the [security settings](#) for your deployment
+* To set up and configure Qdrant on multiple nodes for a highly available [distributed deployment](#)
 * To set up a load balancer for your Qdrant cluster
-* To create a [backup and disaster recovery strategy](/documentation/concepts/snapshots/) for your data
-* To integrate Qdrant with your [monitoring](/documentation/guides/monitoring/) and logging solutions
+* To create a [backup and disaster recovery strategy](#) for your data
+* To integrate Qdrant with your [monitoring](#) and logging solutions
 
 ## Development
 
@@ -176,7 +176,7 @@ docker run -p 6333:6333 \
     ./qdrant --config-path config/custom_config.yaml
 ```
 
-For more information, see the [Configuration](/documentation/guides/configuration/) documentation.
+For more information, see the [Configuration](#) documentation.
 
 ### Docker Compose
 
