@@ -77,6 +77,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark', // Sets dark mode as the default
+        disableSwitch: false, // Keeps the switch visible for user preference (optional)
+        respectPrefersColorScheme: false, // Ignores the user's system preferences (optional)
+      },
       //Navbar items
       image: 'img/Logos_Actian_3Color-White-Transparent.png',
       navbar: {
