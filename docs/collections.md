@@ -186,13 +186,13 @@ client.CreateCollection(context.Background(), &qdrant.CreateCollection{
 
 In addition to the required options, you can also specify custom values for the following collection options:
 
-* `hnsw_config` - see [indexing](/documentation/concepts/indexing/#vector-index) for details.
-* `wal_config` - Write-Ahead-Log related configuration. See more details about [WAL](/documentation/concepts/storage/#versioning)
-* `optimizers_config` - see [optimizer](/documentation/concepts/optimizer/) for details.
-* `shard_number` - which defines how many shards the collection should have. See [distributed deployment](/documentation/guides/distributed_deployment/#sharding) section for details.
+* `hnsw_config` - see [indexing](#) for details.
+* `wal_config` - Write-Ahead-Log related configuration. See more details about [WAL](#)
+* `optimizers_config` - see [optimizer](#) for details.
+* `shard_number` - which defines how many shards the collection should have. See [distributed deployment](#) section for details.
 * `on_disk_payload` - defines where to store payload data. If `true` - payload will be stored on disk only. Might be useful for limiting the RAM usage in case of large payload.
-* `quantization_config` - see [quantization](/documentation/guides/quantization/#setting-up-quantization-in-qdrant) for details.
-* `strict_mode_config` - see [strict mode](/documentation/guides/administration/#strict-mode) for details.
+* `quantization_config` - see [quantization](#) for details.
+* `strict_mode_config` - see [strict mode](#) for details.
 
 Default parameters for the optional collection parameters are defined in [configuration file](https://github.com/qdrant/qdrant/blob/master/config/config.yaml).
 
@@ -203,7 +203,7 @@ See [schema definitions](https://api.qdrant.tech/api-reference/collections/creat
 Vectors all live in RAM for very quick access. The `on_disk` parameter can be
 set in the vector configuration. If true, all vectors will live on disk. This
 will enable the use of
-[memmaps](/documentation/concepts/storage/#configuring-memmap-storage),
+[memmaps](#),
 which is suitable for ingesting a large amount of data.
 
 ### Create collection from another collection

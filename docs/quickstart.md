@@ -79,7 +79,7 @@ client, err := qdrant.NewClient(&qdrant.Config{
 })
 ```
 
-<aside role="status">By default, Qdrant starts with no encryption or authentication . This means anyone with network access to your machine can access your Qdrant container instance. Please read <a href="/documentation/security/">Security</a> carefully for details on how to secure your instance.</aside>
+<aside role="status">By default, Qdrant starts with no encryption or authentication . This means anyone with network access to your machine can access your Qdrant container instance. Please read <a href="#">Security</a> carefully for details on how to secure your instance.</aside>
 
 ## Create a collection
 
@@ -467,7 +467,7 @@ fmt.Println(searchResult)
 ```
 
 The results are returned in decreasing similarity order. Note that payload and vector data is missing in these results by default.
-See [payload and vector in the result](/documentation/concepts/search/#payload-and-vector-in-the-result) on how to enable it.
+See [payload and vector in the result](#) on how to enable it.
 
 ## Add a filter
 
@@ -590,14 +590,14 @@ fmt.Println(searchResult)
 ]
 ```
 
-<aside role="status">To make filtered search fast on real datasets, we highly recommend to create <a href="/documentation/concepts/indexing/#payload-index">payload indexes</a>!</aside>
+<aside role="status">To make filtered search fast on real datasets, we highly recommend to create <a href="#">payload indexes</a>!</aside>
 
 You have just conducted vector search. You loaded vectors into a database and queried the database with a vector of your own. Qdrant found the closest results and presented you with a similarity score.
 
 ## Next steps
 
-Now you know how Qdrant works. Getting started with [Qdrant Cloud](/documentation/cloud/quickstart-cloud/) is just as easy. [Create an account](https://qdrant.to/cloud) and use our SaaS completely free. We will take care of infrastructure maintenance and software updates.
+Now you know how Qdrant works. Getting started with [Qdrant Cloud](#) is just as easy. [Create an account](https://qdrant.to/cloud) and use our SaaS completely free. We will take care of infrastructure maintenance and software updates.
 
-To move onto some more complex examples of vector search, read our [Tutorials](/documentation/tutorials/) and create your own app with the help of our [Examples](/documentation/examples/).
+To move onto some more complex examples of vector search, read our [Tutorials](#) and create your own app with the help of our [Examples](#).
 
 **Note:** There is another way of running Qdrant locally. If you are a Python developer, we recommend that you try Local Mode in [Qdrant Client](https://github.com/qdrant/qdrant-client), as it only takes a few moments to get setup.
