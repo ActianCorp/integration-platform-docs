@@ -27,7 +27,7 @@ These settings can be changed at any time by a corresponding request.
 
 ## Setting up multitenancy
 
-**How many collections should you create?** In most cases, you should only use a single collection with payload-based partitioning. This approach is called [multitenancy](https://en.wikipedia.org/wiki/Multitenancy). It is efficient for most of users, but it requires additional configuration. [Learn how to set it up](/documentation/tutorials/multiple-partitions/)
+**How many collections should you create?** In most cases, you should only use a single collection with payload-based partitioning. This approach is called [multitenancy](https://en.wikipedia.org/wiki/Multitenancy). It is efficient for most of users, but it requires additional configuration. [Learn how to set it up](#)
 
 **When should you create multiple collections?** When you have a limited number of users and you need isolation. This approach is flexible, but it may be more costly, since creating numerous collections may result in resource overhead. Also, you need to ensure that they do not affect each other in any way, including performance-wise. 
 
@@ -570,8 +570,8 @@ For rare use cases, it is possible to create a collection without any vector sto
 *Available as of v1.1.1*
 
 For each named vector you can optionally specify
-[`hnsw_config`](/documentation/concepts/indexing/#vector-index) or
-[`quantization_config`](/documentation/guides/quantization/#setting-up-quantization-in-qdrant) to
+[`hnsw_config`](#) or
+[`quantization_config`](#) to
 deviate from the collection configuration. This can be useful to fine-tune
 search performance on a vector level.
 
@@ -580,6 +580,6 @@ search performance on a vector level.
 Vectors all live in RAM for very quick access. On a per-vector basis you can set
 `on_disk` to true to store all vectors on disk at all times. This will enable
 the use of
-[memmaps](/documentation/concepts/storage/#configuring-memmap-storage),
+[memmaps](#),
 which is suitable for ingesting a large amount of data.
 
