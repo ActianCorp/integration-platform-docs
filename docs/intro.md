@@ -127,6 +127,3 @@ Now that you know more about vector databases and Cortex, you are ready to get s
 of our tutorials. If you've never used a vector database, go ahead and jump straight into 
 the **Getting Started** section. Conversely, if you are a seasoned developer in these 
 technology, jump to the section most relevant to your use case.
-
-As you go through the tutorials, please let us know if any questions come up in our 
-[Discord channel here](https://cortex.to/discord). 😎
