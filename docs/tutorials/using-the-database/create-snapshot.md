@@ -14,7 +14,9 @@ That's why using snapshots is the best way to export and import Cortex collectio
 
 This tutorial will show you how to create a snapshot of a collection and restore it. Since working with snapshots in a distributed environment might be thought to be a bit more complex, we will use a 3-node Cortex cluster. However, the same approach applies to a single-node setup.
 
-<aside role="status">Snapshots cannot be created in local mode of Python SDK. You need to spin up a Cortex Docker container or use Cortex Cloud.</aside>
+:::note
+Snapshots cannot be created in local mode of Python SDK. You need to spin up a Cortex Docker container or use Cortex Cloud.
+:::
 
 You can use the techniques described in this page to migrate a cluster. Follow the instructions
 in this tutorial to create and download snapshots. When you [Restore from snapshot](#restore-from-snapshot), restore your data to the new cluster.
@@ -43,7 +45,9 @@ CORTEX_NODES = (
 CORTEX_API_KEY = "my-api-key"
 ```
 
-<aside role="status">If you are using Cortex Cloud, you can find the URL and API key in the <a href="https://cloud.cortex.io/">Cortex Cloud dashboard</a>.</aside>
+:::note
+If you are using Cortex Cloud, you can find the URL and API key in the <a href="https://cloud.cortex.io/">Cortex Cloud dashboard</a>.
+:::
 
 We can now create a client instance:
 

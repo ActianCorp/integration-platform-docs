@@ -158,13 +158,11 @@ if not client.collection_exists("startups"):
         vectors_config=VectorParams(size=384, distance=Distance.COSINE),
     )
 ```
-<aside role="status">
-
+:::note
 - The `vector_size` parameter defines the size of the vectors for a specific collection. If their size is different, it is impossible to calculate the distance between them. `384` is the encoder output dimensionality. You can also use `model.get_sentence_embedding_dimension()` to get the dimensionality of the model you are using.
 
 - The `distance` parameter lets you specify the function used to measure the distance between two points.
-
-</aside>
+:::
 
 4. Create an iterator over the startup data and vectors.
 

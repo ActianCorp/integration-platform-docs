@@ -255,9 +255,9 @@ results = client.query_points(
 )
 ```
 
-<aside role="status">
+:::note
 Check how queries can be made with builtin Fastembed integration.
-</aside>
+:::
 
 <details>
     <summary>Query points with implicit embeddings computation</summary>

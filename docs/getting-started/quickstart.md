@@ -5,7 +5,9 @@ title: Local Quickstart
 
 In this short example, you will use the Python Client to create a Collection, load data into it and run a basic search query.
 
-<aside role="status">Before you start, please make sure Docker is installed and running on your system.</aside>
+:::note
+Before you start, please make sure Docker is installed and running on your system.
+:::
 
 ## Download and run
 
@@ -22,7 +24,9 @@ docker run -p 6333:6333 -p 6334:6334 \
     -v "$(pwd)/cortex_storage:/cortex/storage:z" \
     actian/cortex
 ```
-<aside role="status">On Windows, you may need to create a named Docker volume instead of mounting a local folder.</aside>
+:::note
+On Windows, you may need to create a named Docker volume instead of mounting a local folder.
+:::
 
 Under the default configuration all data will be stored in the `./cortex_storage` directory. This will also be the only directory that both the Container and the host machine can both see.
 
@@ -79,7 +83,9 @@ client, err := cortex.NewClient(&cortex.Config{
 })
 ```
 
-<aside role="status">By default, Cortex starts with no encryption or authentication . This means anyone with network access to your machine can access your Cortex container instance. Please read <a href="#">Security</a> carefully for details on how to secure your instance.</aside>
+:::note
+By default, Cortex starts with no encryption or authentication . This means anyone with network access to your machine can access your Cortex container instance. Please read <a href="#">Security</a> carefully for details on how to secure your instance.
+:::
 
 ## Create a collection
 
@@ -590,7 +596,9 @@ fmt.Println(searchResult)
 ]
 ```
 
-<aside role="status">To make filtered search fast on real datasets, we highly recommend to create <a href="#">payload indexes</a>!</aside>
+:::note
+To make filtered search fast on real datasets, we highly recommend to create <a href="#">payload indexes</a>!
+:::
 
 You have just conducted vector search. You loaded vectors into a database and queried the database with a vector of your own. Cortex found the closest results and presented you with a similarity score.
 
