@@ -19,8 +19,6 @@ Cortex's Web UI is an intuitive and efficient graphic interface for your Cortex 
 
 In the **Console**, you may use the REST API to interact with Cortex, while in **Collections**, you can manage all the collections and upload Snapshots. 
 
-![Cortex Web UI](/img/cortex/web-ui.png)
-
 ### Cortex Web UI features
 
 In the Cortex Web UI, you can:
