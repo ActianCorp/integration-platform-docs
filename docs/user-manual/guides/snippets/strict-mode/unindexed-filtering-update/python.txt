@@ -1,0 +1,8 @@
+from cortex_client import CortexClient, models
+
+client = CortexClient(url="http://localhost:6333")
+
+client.create_collection(
+    collection_name="{collection_name}",
+    strict_mode_config=models.StrictModeConfig(enabled=True, unindexed_filtering_update=False),
+)

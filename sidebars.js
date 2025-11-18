@@ -26,9 +26,9 @@ const sidebars = {
       label: 'GETTING STARTED',
       className: 'categoryItem',
       items: [
-        'quickstart',
-        'interfaces',
-        'web-ui',
+        'getting-started/quickstart',
+        'getting-started/interfaces',
+        'getting-started/web-ui',
           ]
     },
     {
@@ -41,8 +41,8 @@ const sidebars = {
           label: 'Concepts',
           className: 'categoryItem',
           items: [
-            'collections',
-            'points',
+            'user-manual/concepts/collections',
+            'user-manual/concepts/points',
           ]
         },
         {
@@ -50,8 +50,8 @@ const sidebars = {
             label: 'Guides',
             className: 'categoryItem',
             items: [
-              'installation',
-              'administration',
+              'user-manual/guides/installation',
+              'user-manual/guides/administration',
             ]
         },
       ]
@@ -73,7 +73,8 @@ const sidebars = {
             label: 'Vector Search Basics',
             className: 'categoryItem',
             items: [
-                  'semantic-search-101',
+                  'tutorials/vector-search/semantic-search-101',
+                  'tutorials/vector-search/neural-search',
             ]
           },
           {
@@ -81,7 +82,8 @@ const sidebars = {
             label: 'Advanced Retrieval',
             className: 'categoryItem',
             items: [
-                  'multivector',
+                  'tutorials/advanced-retrieval/multivector',
+                  'tutorials/advanced-retrieval/reranking-hybrid-search',
             ]
           },
           {
@@ -89,7 +91,8 @@ const sidebars = {
             label: 'Using the Database',
             className: 'categoryItem',
             items: [
-                  'bulk-upload-vectors',
+                  'tutorials/using-the-database/bulk-upload-vectors',
+                  'tutorials/using-the-database/create-snapshot',
             ]
           },
       ]

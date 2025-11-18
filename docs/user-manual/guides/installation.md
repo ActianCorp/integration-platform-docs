@@ -108,7 +108,7 @@ To install the helm chart:
 
 ```bash
 helm repo add cortex https://cortex.to/helm
-helm install cortex cortex/cortex
+helm install cortex actian/cortex
 ```
 
 For more information, see the [cortex-helm](https://github.com/cortex/cortex-helm/tree/main/charts/cortex) README.
@@ -141,7 +141,7 @@ Make sure that [Docker](https://docs.docker.com/engine/install/), [Podman](https
 Pull the image:
 
 ```bash
-docker pull cortex/cortex
+docker pull actian/cortex
 ```
 
 In the following command, revise `$(pwd)/path/to/data` for your Docker configuration. Then use the updated command to run the container:
@@ -149,7 +149,7 @@ In the following command, revise `$(pwd)/path/to/data` for your Docker configura
 ```bash
 docker run -p 6333:6333 \
     -v $(pwd)/path/to/data:/cortex/storage \
-    cortex/cortex
+    actian/cortex
 ```
 
 With this command, you start a Cortex instance with the default configuration.
@@ -163,7 +163,7 @@ To change the Cortex configuration, you can overwrite the production configurati
 docker run -p 6333:6333 \
     -v $(pwd)/path/to/data:/cortex/storage \
     -v $(pwd)/path/to/custom_config.yaml:/cortex/config/production.yaml \
-    cortex/cortex
+    actian/cortex
 ```
 
 Alternatively, you can use your own `custom_config.yaml` configuration file:
@@ -172,7 +172,7 @@ Alternatively, you can use your own `custom_config.yaml` configuration file:
 docker run -p 6333:6333 \
     -v $(pwd)/path/to/data:/cortex/storage \
     -v $(pwd)/path/to/custom_config.yaml:/cortex/config/custom_config.yaml \
-    cortex/cortex \
+    actian/cortex \
     ./cortex --config-path config/custom_config.yaml
 ```
 
@@ -187,7 +187,7 @@ Here is an example customized compose file for a single node Cortex cluster:
 ```yaml
 services:
   cortex:
-    image: cortex/cortex:latest
+    image: actian/cortex:latest
     restart: always
     container_name: cortex
     ports:

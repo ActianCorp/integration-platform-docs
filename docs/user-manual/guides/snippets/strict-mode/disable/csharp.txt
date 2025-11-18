@@ -1,0 +1,10 @@
+using Cortex.Client;
+using Cortex.Client.Grpc;
+
+var client = new CortexClient("localhost", 6334);
+
+await client.CreateCollectionAsync(
+  collectionName: "{collection_name}",
+  strictModeConfig: new StrictModeConfig { enabled = false }
+);
+

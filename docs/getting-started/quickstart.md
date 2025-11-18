@@ -12,19 +12,19 @@ In this short example, you will use the Python Client to create a Collection, lo
 First, download the latest Cortex image from Dockerhub:
 
 ```bash
-docker pull qdrant/qdrant
+docker pull actian/cortex
 ```
 
 Then, run the service:
 
 ```bash
 docker run -p 6333:6333 -p 6334:6334 \
-    -v "$(pwd)/qdrant_storage:/qdrant/storage:z" \
-    qdrant/qdrant
+    -v "$(pwd)/cortex_storage:/cortex/storage:z" \
+    actian/cortex
 ```
 <aside role="status">On Windows, you may need to create a named Docker volume instead of mounting a local folder.</aside>
 
-Under the default configuration all data will be stored in the `./qdrant_storage` directory. This will also be the only directory that both the Container and the host machine can both see.
+Under the default configuration all data will be stored in the `./cortex_storage` directory. This will also be the only directory that both the Container and the host machine can both see.
 
 Cortex is now accessible:
 
@@ -35,27 +35,27 @@ Cortex is now accessible:
 ## Initialize the client
 
 ```python
-from qdrant_client import CortexClient
+from cortex_client import CortexClient
 
 client = CortexClient(url="http://localhost:6333")
 ```
 
 ```typescript
-import { CortexClient } from "@qdrant/js-client-rest";
+import { CortexClient } from "@cortex/js-client-rest";
 
 const client = new CortexClient({ host: "localhost", port: 6333 });
 ```
 
 ```rust
-use qdrant_client::Cortex;
+use cortex_client::Cortex;
 
 // The Rust client uses Cortex's gRPC interface
 let client = Cortex::from_url("http://localhost:6334").build()?;
 ```
 
 ```java
-import io.qdrant.client.CortexClient;
-import io.qdrant.client.CortexGrpcClient;
+import io.cortex.client.CortexClient;
+import io.cortex.client.CortexGrpcClient;
 
 // The Java client uses Cortex's gRPC interface
 CortexClient client = new CortexClient(
@@ -70,10 +70,10 @@ var client = new CortexClient("localhost", 6334);
 ```
 
 ```go
-import "github.com/qdrant/go-client/qdrant"
+import "github.com/cortex/go-client/cortex"
 
 // The Go client uses Cortex's gRPC interface
-client, err := qdrant.NewClient(&qdrant.Config{
+client, err := cortex.NewClient(&cortex.Config{
 	Host: "localhost",
 	Port: 6334,
 })
@@ -86,7 +86,7 @@ client, err := qdrant.NewClient(&qdrant.Config{
 You will be storing all of your vector data in a Cortex collection. Let's call it `test_collection`. This collection will be using a dot product distance metric to compare vectors.
 
 ```python
-from qdrant_client.models import Distance, VectorParams
+from cortex_client.models import Distance, VectorParams
 
 client.create_collection(
     collection_name="test_collection",
@@ -101,7 +101,7 @@ await client.createCollection("test_collection", {
 ```
 
 ```rust
-use qdrant_client::qdrant::{CreateCollectionBuilder, VectorParamsBuilder};
+use cortex_client::cortex::{CreateCollectionBuilder, VectorParamsBuilder};
 
 client
     .create_collection(
@@ -112,8 +112,8 @@ client
 ```
 
 ```java
-import io.qdrant.client.grpc.Collections.Distance;
-import io.qdrant.client.grpc.Collections.VectorParams;
+import io.cortex.client.grpc.Collections.Distance;
+import io.cortex.client.grpc.Collections.VectorParams;
 
 client.createCollectionAsync("test_collection",
         VectorParams.newBuilder().setDistance(Distance.Dot).setSize(4).build()).get();
@@ -132,14 +132,14 @@ await client.CreateCollectionAsync(collectionName: "test_collection", vectorsCon
 import (
 	"context"
 
-	"github.com/qdrant/go-client/qdrant"
+	"github.com/cortex/go-client/cortex"
 )
 
-client.CreateCollection(context.Background(), &qdrant.CreateCollection{
+client.CreateCollection(context.Background(), &cortex.CreateCollection{
 	CollectionName: "{collection_name}",
-	VectorsConfig: qdrant.NewVectorsConfig(&qdrant.VectorParams{
+	VectorsConfig: cortex.NewVectorsConfig(&cortex.VectorParams{
 		Size:     4,
-		Distance: qdrant.Distance_Cosine,
+		Distance: cortex.Distance_Cosine,
 	}),
 })
 ```
@@ -149,7 +149,7 @@ client.CreateCollection(context.Background(), &qdrant.CreateCollection{
 Let's now add a few vectors with a payload. Payloads are other data you want to associate with the vector:
 
 ```python
-from qdrant_client.models import PointStruct
+from cortex_client.models import PointStruct
 
 operation_info = client.upsert(
     collection_name="test_collection",
@@ -184,7 +184,7 @@ console.debug(operationInfo);
 ```
 
 ```rust
-use qdrant_client::qdrant::{PointStruct, UpsertPointsBuilder};
+use cortex_client::cortex::{PointStruct, UpsertPointsBuilder};
 
 let points = vec![
     PointStruct::new(1, vec![0.05, 0.61, 0.76, 0.74], [("city", "Berlin".into())]),
@@ -204,12 +204,12 @@ dbg!(response);
 import java.util.List;
 import java.util.Map;
 
-import static io.qdrant.client.PointIdFactory.id;
-import static io.qdrant.client.ValueFactory.value;
-import static io.qdrant.client.VectorsFactory.vectors;
+import static io.cortex.client.PointIdFactory.id;
+import static io.cortex.client.ValueFactory.value;
+import static io.cortex.client.VectorsFactory.vectors;
 
-import io.qdrant.client.grpc.Points.PointStruct;
-import io.qdrant.client.grpc.Points.UpdateResult;
+import io.cortex.client.grpc.Points.PointStruct;
+import io.cortex.client.grpc.Points.UpdateResult;
 
 UpdateResult operationInfo =
     client
@@ -286,26 +286,26 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/qdrant/go-client/qdrant"
+	"github.com/cortex/go-client/cortex"
 )
 
-operationInfo, err := client.Upsert(context.Background(), &qdrant.UpsertPoints{
+operationInfo, err := client.Upsert(context.Background(), &cortex.UpsertPoints{
 	CollectionName: "test_collection",
-	Points: []*qdrant.PointStruct{
+	Points: []*cortex.PointStruct{
 		{
-			Id:      qdrant.NewIDNum(1),
-			Vectors: qdrant.NewVectors(0.05, 0.61, 0.76, 0.74),
-			Payload: qdrant.NewValueMap(map[string]any{"city": "Berlin"}),
+			Id:      cortex.NewIDNum(1),
+			Vectors: cortex.NewVectors(0.05, 0.61, 0.76, 0.74),
+			Payload: cortex.NewValueMap(map[string]any{"city": "Berlin"}),
 		},
 		{
-			Id:      qdrant.NewIDNum(2),
-			Vectors: qdrant.NewVectors(0.19, 0.81, 0.75, 0.11),
-			Payload: qdrant.NewValueMap(map[string]any{"city": "London"}),
+			Id:      cortex.NewIDNum(2),
+			Vectors: cortex.NewVectors(0.19, 0.81, 0.75, 0.11),
+			Payload: cortex.NewValueMap(map[string]any{"city": "London"}),
 		},
 		{
-			Id:      qdrant.NewIDNum(3),
-			Vectors: qdrant.NewVectors(0.36, 0.55, 0.47, 0.94),
-			Payload: qdrant.NewValueMap(map[string]any{"city": "Moscow"}),
+			Id:      cortex.NewIDNum(3),
+			Vectors: cortex.NewVectors(0.36, 0.55, 0.47, 0.94),
+			Payload: cortex.NewValueMap(map[string]any{"city": "Moscow"}),
 		},
         // Truncated
 	},
@@ -379,7 +379,7 @@ console.debug(searchResult.points);
 ```
 
 ```rust
-use qdrant_client::qdrant::QueryPointsBuilder;
+use cortex_client::cortex::QueryPointsBuilder;
 
 let search_result = client
     .query(
@@ -394,10 +394,10 @@ dbg!(search_result);
 ```java
 import java.util.List;
 
-import io.qdrant.client.grpc.Points.ScoredPoint;
-import io.qdrant.client.grpc.Points.QueryPoints;
+import io.cortex.client.grpc.Points.ScoredPoint;
+import io.cortex.client.grpc.Points.QueryPoints;
 
-import static io.qdrant.client.QueryFactory.nearest;
+import static io.cortex.client.QueryFactory.nearest;
 
 List<ScoredPoint> searchResult =
     client.queryAsync(QueryPoints.newBuilder()
@@ -424,12 +424,12 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/qdrant/go-client/qdrant"
+	"github.com/cortex/go-client/cortex"
 )
 
-searchResult, err := client.Query(context.Background(), &qdrant.QueryPoints{
+searchResult, err := client.Query(context.Background(), &cortex.QueryPoints{
 	CollectionName: "test_collection",
-	Query:          qdrant.NewQuery(0.2, 0.1, 0.9, 0.7),
+	Query:          cortex.NewQuery(0.2, 0.1, 0.9, 0.7),
 })
 if err != nil {
 	panic(err)
@@ -474,7 +474,7 @@ See [payload and vector in the result](#) on how to enable it.
 We can narrow down the results further by filtering by payload. Let's find the closest results that include "London".
 
 ```python
-from qdrant_client.models import Filter, FieldCondition, MatchValue
+from cortex_client.models import Filter, FieldCondition, MatchValue
 
 search_result = client.query_points(
     collection_name="test_collection",
@@ -503,7 +503,7 @@ console.debug(searchResult);
 ```
 
 ```rust
-use qdrant_client::qdrant::{Condition, Filter, QueryPointsBuilder};
+use cortex_client::cortex::{Condition, Filter, QueryPointsBuilder};
 
 let search_result = client
     .query(
@@ -521,7 +521,7 @@ dbg!(search_result);
 ```
 
 ```java
-import static io.qdrant.client.ConditionFactory.matchKeyword;
+import static io.cortex.client.ConditionFactory.matchKeyword;
 
 List<ScoredPoint> searchResult =
     client.queryAsync(QueryPoints.newBuilder()
@@ -554,18 +554,18 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/qdrant/go-client/qdrant"
+	"github.com/cortex/go-client/cortex"
 )
 
-searchResult, err := client.Query(context.Background(), &qdrant.QueryPoints{
+searchResult, err := client.Query(context.Background(), &cortex.QueryPoints{
 	CollectionName: "test_collection",
-	Query:          qdrant.NewQuery(0.2, 0.1, 0.9, 0.7),
-	Filter: &qdrant.Filter{
-		Must: []*qdrant.Condition{
-			qdrant.NewMatch("city", "London"),
+	Query:          cortex.NewQuery(0.2, 0.1, 0.9, 0.7),
+	Filter: &cortex.Filter{
+		Must: []*cortex.Condition{
+			cortex.NewMatch("city", "London"),
 		},
 	},
-	WithPayload: qdrant.NewWithPayload(true),
+	WithPayload: cortex.NewWithPayload(true),
 })
 if err != nil {
 	panic(err)
@@ -596,8 +596,8 @@ You have just conducted vector search. You loaded vectors into a database and qu
 
 ## Next steps
 
-Now you know how Cortex works. Getting started with [Cortex Cloud](#) is just as easy. [Create an account](https://qdrant.to/cloud) and use our SaaS completely free. We will take care of infrastructure maintenance and software updates.
+Now you know how Cortex works. Getting started with [Cortex Cloud](#) is just as easy. [Create an account](https://cortex.to/cloud) and use our SaaS completely free. We will take care of infrastructure maintenance and software updates.
 
 To move onto some more complex examples of vector search, read our [Tutorials](#) and create your own app with the help of our [Examples](#).
 
-**Note:** There is another way of running Cortex locally. If you are a Python developer, we recommend that you try Local Mode in [Cortex Client](https://github.com/qdrant/qdrant-client), as it only takes a few moments to get setup.
+**Note:** There is another way of running Cortex locally. If you are a Python developer, we recommend that you try Local Mode in [Cortex Client](https://github.com/cortex/cortex-client), as it only takes a few moments to get setup.

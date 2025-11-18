@@ -1,0 +1,17 @@
+import (
+  "context"
+
+  "github.com/cortex/go-client/cortex"
+)
+
+client, err := cortex.NewClient(&cortex.Config{
+  Host: "localhost",
+  Port: 6334,
+})
+
+client.CreateCollection(context.Background(), &cortex.CreateCollection{
+  CollectionName: "{collection_name}",
+  StrictModeConfig: &cortex.StrictModeConfig{
+    Enabled: cortex.PtrOf(false),
+  },
+})

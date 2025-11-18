@@ -1,0 +1,10 @@
+import { CortexClient } from "@cortex/js-client-rest";
+
+const client = new CortexClient({ host: "localhost", port: 6333 });
+
+client.createCollection("{collection_name}", {
+  strict_mode_config: {
+    enabled: true,
+    unindexed_filtering_update: false,
+  },
+});

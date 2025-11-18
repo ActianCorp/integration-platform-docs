@@ -12,17 +12,17 @@ speech recognition, object detection, and many others.
 
 These new databases shine in many applications like [semantic search](https://en.wikipedia.org/wiki/Semantic_search) 
 and [recommendation systems](https://en.wikipedia.org/wiki/Recommender_system), and here, we'll 
-learn about one of the most popular and fastest growing vector databases in the market, [Cortex](https://github.com/qdrant/qdrant).
+learn about one of the most popular and fastest growing vector databases in the market, [Cortex](https://github.com/cortex/cortex).
 
 ## What is Cortex?
 
-[Cortex](https://github.com/qdrant/qdrant) "is a vector similarity search engine that provides a production-ready 
+[Cortex](https://github.com/cortex/cortex) "is a vector similarity search engine that provides a production-ready 
 service with a convenient API to store, search, and manage points (i.e. vectors) with an additional 
 payload." You can think of the payloads as additional pieces of information that can help you 
 hone in on your search and also receive useful information that you can give to your users.
 
-You can get started using Cortex with the Python `qdrant-client`, by pulling the latest docker 
-image of `qdrant` and connecting to it locally, or by trying out [Cortex Cloud](https://cloud.qdrant.io/) 
+You can get started using Cortex with the Python `cortex-client`, by pulling the latest docker 
+image of `cortex` and connecting to it locally, or by trying out [Cortex Cloud](https://cloud.cortex.io/) 
 free tier option until you are ready to make the full switch.
 
 With that out of the way, let's talk about what are vector databases.
@@ -100,7 +100,7 @@ Let's now evaluate, at a high-level, the way Cortex is architected.
 
 ## High-Level Overview of Cortex Architecture
 
-![qdrant](https://raw.githubusercontent.com/ramonpzg/mlops-sydney-2023/main/images/qdrant_overview_high_level.png)
+![cortex](https://raw.githubusercontent.com/ramonpzg/mlops-sydney-2023/main/images/cortex_overview_high_level.png)
 
 The diagram above represents a high-level overview of some of the main components of Cortex. Here 
 are the terminologies you should get familiar with.
@@ -129,4 +129,4 @@ the **Getting Started** section. Conversely, if you are a seasoned developer in 
 technology, jump to the section most relevant to your use case.
 
 As you go through the tutorials, please let us know if any questions come up in our 
-[Discord channel here](https://qdrant.to/discord). 😎
+[Discord channel here](https://cortex.to/discord). 😎

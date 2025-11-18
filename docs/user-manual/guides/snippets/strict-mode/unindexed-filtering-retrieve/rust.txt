@@ -1,0 +1,11 @@
+use cortex_client::Cortex;
+use cortex_client::cortex::{CreateCollectionBuilder, StrictModeConfigBuilder};
+
+let client = Cortex::from_url("http://localhost:6334").build()?;
+
+client
+    .create_collection(
+        CreateCollectionBuilder::new("{collection_name}")
+            .strict_config_mode(StrictModeConfigBuilder::default().enabled(true).unindexed_filtering_retrieve(false)),
+    )
+    .await?;
