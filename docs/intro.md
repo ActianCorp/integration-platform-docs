@@ -100,7 +100,7 @@ Let's now evaluate, at a high-level, the way Cortex is architected.
 
 ## High-Level Overview of Cortex Architecture
 
-![cortex](https://raw.githubusercontent.com/ramonpzg/mlops-sydney-2023/main/images/cortex_overview_high_level.png)
+![cortex](/img/cortex/qdrant_overview_high_level.png)
 
 The diagram above represents a high-level overview of some of the main components of Cortex. Here 
 are the terminologies you should get familiar with.
