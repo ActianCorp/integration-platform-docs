@@ -35,9 +35,9 @@ Once encoded, this data needs to be kept somewhere. Cortex lets you store data a
 pip install -U cortex-client
 ```
 
-<aside role="status">
+:::note
 This tutorial requires cortex-client version 1.7.1 or higher.
-</aside>
+:::
 
 ### Import the models 
 
@@ -237,4 +237,4 @@ The query has been narrowed down to one result from 2008.
 
 ## Next Steps
 
-Congratulations, you have just created your very first search engine! Trust us, the rest of Cortex is not that complicated, either. For your next tutorial you should try building an actual [Neural Search Service with a complete API and a dataset](/documentation/tutorials/neural-search/).
+Congratulations, you have just created your very first search engine! Trust us, the rest of Cortex is not that complicated, either. For your next tutorial you should try building an actual [Neural Search Service with a complete API and a dataset](#).

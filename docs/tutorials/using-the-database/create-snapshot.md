@@ -21,7 +21,7 @@ in this tutorial to create and download snapshots. When you [Restore from snapsh
 
 ## Prerequisites
 
-Let's assume you already have a running Cortex instance or a cluster. If not, you can follow the [installation guide](/documentation/guides/installation/) to set up a local Cortex instance or use [Cortex Cloud](https://cloud.cortex.io/) to create a cluster in a few clicks.
+Let's assume you already have a running Cortex instance or a cluster. If not, you can follow the [installation guide](#) to set up a local Cortex instance or use [Cortex Cloud](https://cloud.cortex.io/) to create a cluster in a few clicks.
 
 Once the cluster is running, let's install the required dependencies:
 
@@ -150,7 +150,7 @@ Our setup consists of 3 nodes, so we need to call the endpoint **on each of them
 
 
 :::note
-You may get a timeout error, if the collection size is big. You can trigger the snapshot process in the background, without awaiting for the result, by using <code>wait=false</code> parameter. You can always <a href="/documentation/concepts/snapshots/#list-snapshot">list all the snapshots through the API</a> later on.
+You may get a timeout error, if the collection size is big. You can trigger the snapshot process in the background, without awaiting for the result, by using <code>wait=false</code> parameter. You can always <a href="#">list all the snapshots through the API</a> later on.
 :::
 
 <Tabs>
@@ -284,11 +284,11 @@ curl -X POST 'https://node-2.my-cluster.com:6333/collections/test_collection_imp
 ```
 
 
-**Important:** We selected `priority=snapshot` to make sure that the snapshot is preferred over the data stored on the node. You can read mode about the priority in the [documentation](/documentation/concepts/snapshots/#snapshot-priority).
+**Important:** We selected `priority=snapshot` to make sure that the snapshot is preferred over the data stored on the node. You can read mode about the priority in the [documentation](#).
 
 Apart from Snapshots, Cortex also provides the [Cortex Migration Tool](https://github.com/cortex/migration) that supports: 
 - Migration between Cortex Cloud instances. 
 - Migrating vectors from other providers into Cortex.
 - Migrating from Cortex OSS to Cortex Cloud.
 
-Follow our [migration guide](/documentation/database-tutorials/migration/) to learn how to effectively use the Cortex Migration tool. 
+Follow our [migration guide](#) to learn how to effectively use the Cortex Migration tool. 

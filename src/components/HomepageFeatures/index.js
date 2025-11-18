@@ -6,7 +6,7 @@ import Link from '@docusaurus/Link';
 const FeatureList = [
   {
     title: 'Getting Started',
-    doc: "/docs/quickstart",
+    doc: "/docs/getting-started/quickstart",
     png: "/img/home/rocket1.png",
     btn: "Get Started",
     description: (
@@ -17,7 +17,7 @@ const FeatureList = [
   },
   {
     title: 'User Guides',
-    doc: "/docs/collections",
+    doc: "/docs/user-manual/concepts/collections",
     png: "/img/home/reader.png",
     btn: "View the Docs",
     description: (

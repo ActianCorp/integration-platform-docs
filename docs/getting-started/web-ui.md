@@ -26,7 +26,7 @@ In the **Console**, you may use the REST API to interact with Cortex, while in *
 In the Cortex Web UI, you can:
 
 - Run HTTP-based calls from the console
-- List and search existing [collections](./collections)
+- List and search existing [collections](#)
 - Learn from our interactive tutorial
 
 You can navigate to these options directly. For example, if you used our 

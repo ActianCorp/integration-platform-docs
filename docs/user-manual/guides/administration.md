@@ -86,7 +86,7 @@ collection. That is because only collection metadata is loaded during recovery.
 
 To enable recovery mode with the Cortex Docker image you must set the
 environment variable `CORTEX_ALLOW_RECOVERY_MODE=true`. The container will try
-to start normally first, and restarts in recovery mode if initialisation fails
+to start normally first, and restarts in recovery mode if initialization fails
 due to an out of memory error. This behavior is disabled by default.
 
 If using a Cortex binary, recovery mode can be enabled by setting a recovery
@@ -106,7 +106,7 @@ Strict mode ensures a more predictable and responsive service when you do not ha
 
 Upon crossing a limit, the server will return a client side error with the information about the limit that was crossed.
 
-The `strict_mode_config` can be enabled when [creating](#create-a-collection) a new collection, see [schema definitions](https://api.cortex.tech/api-reference/collections/create-collection#request.body.strict_mode_config) for all the available `strict_mode_config` parameters.
+The `strict_mode_config` can be enabled when [creating](#) a new collection, see [schema definitions](https://api.cortex.tech/api-reference/collections/create-collection#request.body.strict_mode_config) for all the available `strict_mode_config` parameters.
 
 As part of the config, the `enabled` field act as a toggle to enable or disable the strict mode dynamically.
 
@@ -213,7 +213,7 @@ Setting `unindexed_filtering_retrieve` to false prevents retrieving points by fi
   </TabItem>
 </Tabs>
 
-Or turn it off later on an existing collection through the [collection update](#update-collection-parameters) API.
+Or turn it off later on an existing collection through the [collection update](#) API.
 
 <Tabs>
   <TabItem value="http" label="http">
