@@ -29,6 +29,8 @@ With that out of the way, let's talk about what are vector databases.
 
 ## What Are Vector Databases?
 
+![dbs](/img/cortex/what-are-vector-dbs.png)
+
 Vector databases are a type of database designed to store and query high-dimensional vectors 
 efficiently. In traditional [OLTP](https://www.ibm.com/topics/oltp) and [OLAP](https://www.ibm.com/topics/olap) 
 databases (as seen in the image above), data is organized in rows and columns (and these are 
