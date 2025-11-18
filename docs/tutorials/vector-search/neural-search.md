@@ -101,7 +101,9 @@ np.save("startup_vectors.npy", vectors, allow_pickle=False)
 
 Next, you need to manage all of your data using a vector engine. Cortex lets you store, update or delete created vectors. Most importantly, it lets you search for the nearest vectors via a convenient API. 
 
-> **Note:** Before you begin, create a project directory and a virtual python environment in it.
+:::note
+Before you begin, create a project directory and a virtual python environment in it.
+:::
 
 1. Download the Cortex image from DockerHub.
 
@@ -331,5 +333,6 @@ You can try it to get an intuition for cases when the neural search is useful.
 The demo contains a switch that selects between neural and full-text searches.
 You can turn the neural search on and off to compare your result with a regular full-text search.
 
-> **Note**: The code for this tutorial can be found here: | [Step 1: Data Preparation Process](https://colab.research.google.com/drive/1kPktoudAP8Tu8n8l-iVMOQhVmHkWV_L9?usp=sharing) | [Step 2: Full Code for Neural Search](https://github.com/cortex/cortex_demo/tree/sentense-transformers). |
-
+:::note
+The code for this tutorial can be found here: | [Step 1: Data Preparation Process](https://colab.research.google.com/drive/1kPktoudAP8Tu8n8l-iVMOQhVmHkWV_L9?usp=sharing) | [Step 2: Full Code for Neural Search](https://github.com/cortex/cortex_demo/tree/sentense-transformers). |
+:::
