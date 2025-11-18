@@ -1,5 +1,5 @@
 ---
-title: What is Qdrant?
+title: What is Cortex?
 ---
 
 # Introduction
@@ -12,17 +12,17 @@ speech recognition, object detection, and many others.
 
 These new databases shine in many applications like [semantic search](https://en.wikipedia.org/wiki/Semantic_search) 
 and [recommendation systems](https://en.wikipedia.org/wiki/Recommender_system), and here, we'll 
-learn about one of the most popular and fastest growing vector databases in the market, [Qdrant](https://github.com/qdrant/qdrant).
+learn about one of the most popular and fastest growing vector databases in the market, [Cortex](https://github.com/qdrant/qdrant).
 
-## What is Qdrant?
+## What is Cortex?
 
-[Qdrant](https://github.com/qdrant/qdrant) "is a vector similarity search engine that provides a production-ready 
+[Cortex](https://github.com/qdrant/qdrant) "is a vector similarity search engine that provides a production-ready 
 service with a convenient API to store, search, and manage points (i.e. vectors) with an additional 
 payload." You can think of the payloads as additional pieces of information that can help you 
 hone in on your search and also receive useful information that you can give to your users.
 
-You can get started using Qdrant with the Python `qdrant-client`, by pulling the latest docker 
-image of `qdrant` and connecting to it locally, or by trying out [Qdrant's Cloud](https://cloud.qdrant.io/) 
+You can get started using Cortex with the Python `qdrant-client`, by pulling the latest docker 
+image of `qdrant` and connecting to it locally, or by trying out [Cortex Cloud](https://cloud.qdrant.io/) 
 free tier option until you are ready to make the full switch.
 
 With that out of the way, let's talk about what are vector databases.
@@ -38,7 +38,7 @@ called **Tables**), and queries are performed based on the values in those colum
 in certain applications including image recognition, natural language processing, and recommendation 
 systems, data is often represented as vectors in a high-dimensional space, and these vectors, plus 
 an id and a payload we call a point. These points are the elements we store in something called a **Collection** within a vector 
-database like Qdrant.
+database like Cortex.
 
 A vector in this context is a mathematical representation of an object or data point, where elements of 
 the vector implicitly or explicitly correspond to specific features or attributes of the object. For example, 
@@ -53,7 +53,7 @@ Hierarchical Navigable Small World (HNSW) -- which is used to implement Approxim
 Neighbors -- and Product Quantization, among others. These databases enable fast similarity 
 and semantic search while allowing users to find vectors that are the closest to a given query 
 vector based on some distance metric. The most commonly used distance metrics are Euclidean 
-Distance, Cosine Similarity, and Dot Product, and these three are fully supported Qdrant.
+Distance, Cosine Similarity, and Dot Product, and these three are fully supported in Cortex.
 
 Here's a quick overview of the three:
 - [**Cosine Similarity**](https://en.wikipedia.org/wiki/Cosine_similarity) - Cosine similarity 
@@ -96,13 +96,13 @@ In addition, other benefits of using vector databases include:
 Keep in mind that the specific benefits of using a vector database may vary depending on the 
 use case of your organization and the features of the database you ultimately choose.
 
-Let's now evaluate, at a high-level, the way Qdrant is architected.
+Let's now evaluate, at a high-level, the way Cortex is architected.
 
-## High-Level Overview of Qdrant's Architecture
+## High-Level Overview of Cortex Architecture
 
 ![qdrant](https://raw.githubusercontent.com/ramonpzg/mlops-sydney-2023/main/images/qdrant_overview_high_level.png)
 
-The diagram above represents a high-level overview of some of the main components of Qdrant. Here 
+The diagram above represents a high-level overview of some of the main components of Cortex. Here 
 are the terminologies you should get familiar with.
 
 - [Collections](#): A collection is a named set of points (vectors with a payload) among which you can search. The vector of each point within the same collection must have the same dimensionality and be compared by a single metric. [Named vectors](#) can be used to have multiple vectors in a single point, each of which can have their own dimensionality and metric requirements.
@@ -111,19 +111,19 @@ similarities among vectors and they must be selected at the same time you are cr
 collection. The choice of metric depends on the way the vectors were obtained and, in particular, 
 on the neural network that will be used to encode new queries.
 - [Points](#): The points are the central entity that 
-Qdrant operates with and they consist of a vector and an optional id and payload.
+Cortex operates with and they consist of a vector and an optional id and payload.
     - id: a unique identifier for your vectors.
     - Vector: a high-dimensional representation of data, for example, an image, a sound, a document, a video, etc.
     - [Payload](#): A payload is a JSON object with additional data you can add to a vector.
-- [Storage](#): Qdrant can use one of two options for 
+- [Storage](#): Cortex can use one of two options for 
 storage, **In-memory** storage (Stores all vectors in RAM, has the highest speed since disk 
 access is required only for persistence), or **Memmap** storage, (creates a virtual address 
 space associated with the file on disk).
-- Clients: the programming languages you can use to connect to Qdrant.
+- Clients: the programming languages you can use to connect to Cortex.
 
 ## Next Steps
 
-Now that you know more about vector databases and Qdrant, you are ready to get started with one 
+Now that you know more about vector databases and Cortex, you are ready to get started with one 
 of our tutorials. If you've never used a vector database, go ahead and jump straight into 
 the **Getting Started** section. Conversely, if you are a seasoned developer in these 
 technology, jump to the section most relevant to your use case.

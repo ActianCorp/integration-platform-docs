@@ -1,6 +1,6 @@
 ---
-title: Bulk Upload Vectors to a Qdrant Collection
+title: Bulk Upload Vectors to a Cortex Collection
 ---
 
-# Bulk Upload Vectors to a Qdrant Collection
+# Bulk Upload Vectors to a Cortex Collection
 

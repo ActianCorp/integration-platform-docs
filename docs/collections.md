@@ -11,7 +11,7 @@ A collection is a named set of points (vectors with a payload) among which you c
 Distance metrics are used to measure similarities among vectors.
 The choice of metric depends on the way vectors obtaining and, in particular, on the method of neural network encoder training.
 
-Qdrant supports these most popular types of metrics:
+Cortex supports these most popular types of metrics:
 
 * Dot product: `Dot` - [[wiki]](https://en.wikipedia.org/wiki/Dot_product)
 * Cosine similarity: `Cosine`  - [[wiki]](https://en.wikipedia.org/wiki/Cosine_similarity)
@@ -67,9 +67,9 @@ curl -X PUT http://localhost:6333/collections/{collection_name} \
 <TabItem value="py" label="python">
 
 ```py
-from qdrant_client import QdrantClient, models
+from cortex_client import CortexClient, models
 
-client = QdrantClient(url="http://localhost:6333")
+client = CortexClient(url="http://localhost:6333")
 
 client.create_collection(
     collection_name="{collection_name}",
@@ -82,9 +82,9 @@ client.create_collection(
 <TabItem value="typescript" label="typescript">
 
 ```typescript
-import { QdrantClient } from "@qdrant/js-client-rest";
+import { CortexClient } from "@cortex/js-client-rest";
 
-const client = new QdrantClient({ host: "localhost", port: 6333 });
+const client = new CortexClient({ host: "localhost", port: 6333 });
 
 client.createCollection("{collection_name}", {
   vectors: { size: 100, distance: "Cosine" },
@@ -96,10 +96,10 @@ client.createCollection("{collection_name}", {
 <TabItem value="rust" label="rust">
 
 ```rust
-use qdrant_client::Qdrant;
-use qdrant_client::qdrant::{CreateCollectionBuilder, Distance, VectorParamsBuilder};
+use cortex_client::Cortex;
+use cortex_client::cortex::{CreateCollectionBuilder, Distance, VectorParamsBuilder};
 
-let client = Qdrant::from_url("http://localhost:6334").build()?;
+let client = Cortex::from_url("http://localhost:6334").build()?;
 
 client
     .create_collection(
@@ -114,15 +114,15 @@ client
 <TabItem value="java" label="java">
 
 ```java
-import io.qdrant.client.QdrantClient;
-import io.qdrant.client.QdrantGrpcClient;
-import io.qdrant.client.grpc.Collections.CreateCollection;
-import io.qdrant.client.grpc.Collections.Distance;
-import io.qdrant.client.grpc.Collections.VectorParams;
-import io.qdrant.client.grpc.Collections.VectorsConfig;
+import io.cortex.client.CortexClient;
+import io.cortex.client.CortexGrpcClient;
+import io.cortex.client.grpc.Collections.CreateCollection;
+import io.cortex.client.grpc.Collections.Distance;
+import io.cortex.client.grpc.Collections.VectorParams;
+import io.cortex.client.grpc.Collections.VectorsConfig;
 
-QdrantClient client =
-    new QdrantClient(QdrantGrpcClient.newBuilder("localhost", 6334, false).build());
+CortexClient client =
+    new CortexClient(CortexGrpcClient.newBuilder("localhost", 6334, false).build());
 
 client
     .createCollectionAsync(
@@ -144,10 +144,10 @@ client
 <TabItem value="csharp" label="csharp">
 
 ```csharp
-using Qdrant.Client;
-using Qdrant.Client.Grpc;
+using Cortex.Client;
+using Cortex.Client.Grpc;
 
-var client = new QdrantClient("localhost", 6334);
+var client = new CortexClient("localhost", 6334);
 
 await client.CreateCollectionAsync(
 	collectionName: "{collection_name}",
@@ -163,21 +163,21 @@ await client.CreateCollectionAsync(
 import (
 	"context"
 
-	"github.com/qdrant/go-client/qdrant"
+	"github.com/cortex/go-client/cortex"
 )
 
-client, err := qdrant.NewClient(&qdrant.Config{
+client, err := cortex.NewClient(&cortex.Config{
 	Host: "localhost",
 	Port: 6334,
 })
 
-client.CreateCollection(context.Background(), &qdrant.CreateCollection{
+client.CreateCollection(context.Background(), &cortex.CreateCollection{
 	CollectionName: "{collection_name}",
-	VectorsConfig: qdrant.NewVectorsConfig(&qdrant.VectorParams{
+	VectorsConfig: cortex.NewVectorsConfig(&cortex.VectorParams{
 		Size:     100,
-		Distance: qdrant.Distance_Cosine,
+		Distance: cortex.Distance_Cosine,
 	}),
-	InitFromCollection: qdrant.PtrOf("{from_collection_name}"),
+	InitFromCollection: cortex.PtrOf("{from_collection_name}"),
 })
 ```
 
@@ -194,9 +194,9 @@ In addition to the required options, you can also specify custom values for the 
 * `quantization_config` - see [quantization](#) for details.
 * `strict_mode_config` - see [strict mode](#) for details.
 
-Default parameters for the optional collection parameters are defined in [configuration file](https://github.com/qdrant/qdrant/blob/master/config/config.yaml).
+Default parameters for the optional collection parameters are defined in [configuration file](https://github.com/cortex/cortex/blob/master/config/config.yaml).
 
-See [schema definitions](https://api.qdrant.tech/api-reference/collections/create-collection) and a [configuration file](https://github.com/qdrant/qdrant/blob/master/config/config.yaml) for more information about collection and vector parameters.
+See [schema definitions](https://api.cortex.tech/api-reference/collections/create-collection) and a [configuration file](https://github.com/cortex/cortex/blob/master/config/config.yaml) for more information about collection and vector parameters.
 
 *Available as of v1.2.0*
 
@@ -215,7 +215,7 @@ It is possible to initialize a collection from another existing collection.
 This might be useful for experimenting quickly with different configurations for the same data set.
 
 :::warning
-Usage of the <code>init_from</code> can create unpredictable load on the qdrant cluster. It is not recommended to use <code>init_from</code> in performance-sensitive environments.
+Usage of the <code>init_from</code> can create unpredictable load on the cortex cluster. It is not recommended to use <code>init_from</code> in performance-sensitive environments.
 :::
 
 Make sure the vectors have the same `size` and `distance` function when setting up the vectors configuration in the new collection. If you used the previous sample
@@ -259,9 +259,9 @@ curl -X PUT http://localhost:6333/collections/{collection_name} \
 <TabItem value="py" label="python">
 
 ```py
-from qdrant_client import QdrantClient, models
+from cortex_client import CortexClient, models
 
-client = QdrantClient(url="http://localhost:6333")
+client = CortexClient(url="http://localhost:6333")
 
 client.create_collection(
     collection_name="{collection_name}",
@@ -274,9 +274,9 @@ client.create_collection(
 <TabItem value="typescript" label="typescript">
 
 ```typescript
-import { QdrantClient } from "@qdrant/js-client-rest";
+import { CortexClient } from "@cortex/js-client-rest";
 
-const client = new QdrantClient({ host: "localhost", port: 6333 });
+const client = new CortexClient({ host: "localhost", port: 6333 });
 
 client.createCollection("{collection_name}", {
   vectors: { size: 100, distance: "Cosine" },
@@ -288,10 +288,10 @@ client.createCollection("{collection_name}", {
 <TabItem value="rust" label="rust">
 
 ```rust
-use qdrant_client::Qdrant;
-use qdrant_client::qdrant::{CreateCollectionBuilder, Distance, VectorParamsBuilder};
+use cortex_client::Cortex;
+use cortex_client::cortex::{CreateCollectionBuilder, Distance, VectorParamsBuilder};
 
-let client = Qdrant::from_url("http://localhost:6334").build()?;
+let client = Cortex::from_url("http://localhost:6334").build()?;
 
 client
     .create_collection(
@@ -306,15 +306,15 @@ client
 <TabItem value="java" label="java">
 
 ```java
-import io.qdrant.client.QdrantClient;
-import io.qdrant.client.QdrantGrpcClient;
-import io.qdrant.client.grpc.Collections.CreateCollection;
-import io.qdrant.client.grpc.Collections.Distance;
-import io.qdrant.client.grpc.Collections.VectorParams;
-import io.qdrant.client.grpc.Collections.VectorsConfig;
+import io.cortex.client.CortexClient;
+import io.cortex.client.CortexGrpcClient;
+import io.cortex.client.grpc.Collections.CreateCollection;
+import io.cortex.client.grpc.Collections.Distance;
+import io.cortex.client.grpc.Collections.VectorParams;
+import io.cortex.client.grpc.Collections.VectorsConfig;
 
-QdrantClient client =
-    new QdrantClient(QdrantGrpcClient.newBuilder("localhost", 6334, false).build());
+CortexClient client =
+    new CortexClient(CortexGrpcClient.newBuilder("localhost", 6334, false).build());
 
 client
     .createCollectionAsync(
@@ -336,10 +336,10 @@ client
 <TabItem value="csharp" label="csharp">
 
 ```csharp
-using Qdrant.Client;
-using Qdrant.Client.Grpc;
+using Cortex.Client;
+using Cortex.Client.Grpc;
 
-var client = new QdrantClient("localhost", 6334);
+var client = new CortexClient("localhost", 6334);
 
 await client.CreateCollectionAsync(
 	collectionName: "{collection_name}",
@@ -355,21 +355,21 @@ await client.CreateCollectionAsync(
 import (
 	"context"
 
-	"github.com/qdrant/go-client/qdrant"
+	"github.com/cortex/go-client/cortex"
 )
 
-client, err := qdrant.NewClient(&qdrant.Config{
+client, err := cortex.NewClient(&cortex.Config{
 	Host: "localhost",
 	Port: 6334,
 })
 
-client.CreateCollection(context.Background(), &qdrant.CreateCollection{
+client.CreateCollection(context.Background(), &cortex.CreateCollection{
 	CollectionName: "{collection_name}",
-	VectorsConfig: qdrant.NewVectorsConfig(&qdrant.VectorParams{
+	VectorsConfig: cortex.NewVectorsConfig(&cortex.VectorParams{
 		Size:     100,
-		Distance: qdrant.Distance_Cosine,
+		Distance: cortex.Distance_Cosine,
 	}),
-	InitFromCollection: qdrant.PtrOf("{from_collection_name}"),
+	InitFromCollection: cortex.PtrOf("{from_collection_name}"),
 })
 ```
 
@@ -429,10 +429,10 @@ curl -X PUT http://localhost:6333/collections/{collection_name} \
 <TabItem value="py" label="python">
 
 ```py
-from qdrant_client import QdrantClient, models
+from cortex_client import CortexClient, models
 
 
-client = QdrantClient(url="http://localhost:6333")
+client = CortexClient(url="http://localhost:6333")
 
 client.create_collection(
     collection_name="{collection_name}",
@@ -447,9 +447,9 @@ client.create_collection(
 <TabItem value="typescript" label="typescript">
 
 ```typescript
-import { QdrantClient } from "@qdrant/js-client-rest";
+import { CortexClient } from "@cortex/js-client-rest";
 
-const client = new QdrantClient({ host: "localhost", port: 6333 });
+const client = new CortexClient({ host: "localhost", port: 6333 });
 
 client.createCollection("{collection_name}", {
   vectors: {
@@ -463,12 +463,12 @@ client.createCollection("{collection_name}", {
 <TabItem value="rust" label="rust">
 
 ```rust
-use qdrant_client::Qdrant;
-use qdrant_client::qdrant::{
+use cortex_client::Cortex;
+use cortex_client::cortex::{
     CreateCollectionBuilder, Distance, VectorParamsBuilder, VectorsConfigBuilder,
 };
 
-let client = Qdrant::from_url("http://localhost:6334").build()?;
+let client = Cortex::from_url("http://localhost:6334").build()?;
 
 let mut vectors_config = VectorsConfigBuilder::default();
 vectors_config
@@ -491,13 +491,13 @@ client
 ```java
 import java.util.Map;
 
-import io.qdrant.client.QdrantClient;
-import io.qdrant.client.QdrantGrpcClient;
-import io.qdrant.client.grpc.Collections.Distance;
-import io.qdrant.client.grpc.Collections.VectorParams;
+import io.cortex.client.CortexClient;
+import io.cortex.client.CortexGrpcClient;
+import io.cortex.client.grpc.Collections.Distance;
+import io.cortex.client.grpc.Collections.VectorParams;
 
-QdrantClient client =
-    new QdrantClient(QdrantGrpcClient.newBuilder("localhost", 6334, false).build());
+CortexClient client =
+    new CortexClient(CortexGrpcClient.newBuilder("localhost", 6334, false).build());
 
 client
     .createCollectionAsync(
@@ -513,10 +513,10 @@ client
 <TabItem value="csharp" label="csharp">
 
 ```csharp
-using Qdrant.Client;
-using Qdrant.Client.Grpc;
+using Cortex.Client;
+using Cortex.Client.Grpc;
 
-var client = new QdrantClient("localhost", 6334);
+var client = new CortexClient("localhost", 6334);
 
 await client.CreateCollectionAsync(
 	collectionName: "{collection_name}",
@@ -538,25 +538,25 @@ await client.CreateCollectionAsync(
 import (
 	"context"
 
-	"github.com/qdrant/go-client/qdrant"
+	"github.com/cortex/go-client/cortex"
 )
 
-client, err := qdrant.NewClient(&qdrant.Config{
+client, err := cortex.NewClient(&cortex.Config{
 	Host: "localhost",
 	Port: 6334,
 })
 
-client.CreateCollection(context.Background(), &qdrant.CreateCollection{
+client.CreateCollection(context.Background(), &cortex.CreateCollection{
 	CollectionName: "{collection_name}",
-	VectorsConfig: qdrant.NewVectorsConfigMap(
-		map[string]*qdrant.VectorParams{
+	VectorsConfig: cortex.NewVectorsConfigMap(
+		map[string]*cortex.VectorParams{
 			"image": {
 				Size:     4,
-				Distance: qdrant.Distance_Dot,
+				Distance: cortex.Distance_Dot,
 			},
 			"text": {
 				Size:     8,
-				Distance: qdrant.Distance_Cosine,
+				Distance: cortex.Distance_Cosine,
 			},
 		}),
 })

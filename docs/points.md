@@ -6,7 +6,7 @@ import TabItem from '@theme/TabItem';
 
 # Points
 
-The points are the central entity that Qdrant operates with.
+The points are the central entity that Cortex operates with.
 A point is a record consisting of a [vector](#) and an optional [payload](#).
 
 It looks like this:
@@ -33,7 +33,7 @@ After this moment, the service will not lose the data, even if the machine loses
 
 ## Point IDs
 
-Qdrant supports using both `64-bit unsigned integers` and `UUID` as identifiers for points.
+Cortex supports using both `64-bit unsigned integers` and `UUID` as identifiers for points.
 
 Examples of UUID string representations:
 
@@ -64,9 +64,9 @@ PUT /collections/{collection_name}/points
 <TabItem value="py" label="python">
 
 ```py
-from qdrant_client import QdrantClient, models
+from cortex_client import CortexClient, models
 
-client = QdrantClient(url="http://localhost:6333")
+client = CortexClient(url="http://localhost:6333")
 
 client.upsert(
     collection_name="{collection_name}",
@@ -86,9 +86,9 @@ client.upsert(
 <TabItem value="typescript" label="typescript">
 
 ```typescript
-import { QdrantClient } from "@qdrant/js-client-rest";
+import { CortexClient } from "@cortex/js-client-rest";
 
-const client = new QdrantClient({ host: "localhost", port: 6333 });
+const client = new CortexClient({ host: "localhost", port: 6333 });
 
 client.upsert("{collection_name}", {
   points: [
@@ -107,10 +107,10 @@ client.upsert("{collection_name}", {
 <TabItem value="rust" label="rust">
 
 ```rust
-use qdrant_client::qdrant::{PointStruct, UpsertPointsBuilder};
-use qdrant_client::Qdrant;
+use cortex_client::cortex::{PointStruct, UpsertPointsBuilder};
+use cortex_client::Cortex;
 
-let client = Qdrant::from_url("http://localhost:6334").build()?;
+let client = Cortex::from_url("http://localhost:6334").build()?;
 
 client
     .upsert_points(
@@ -135,16 +135,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-import static io.qdrant.client.PointIdFactory.id;
-import static io.qdrant.client.ValueFactory.value;
-import static io.qdrant.client.VectorsFactory.vectors;
+import static io.cortex.client.PointIdFactory.id;
+import static io.cortex.client.ValueFactory.value;
+import static io.cortex.client.VectorsFactory.vectors;
 
-import io.qdrant.client.QdrantClient;
-import io.qdrant.client.QdrantGrpcClient;
-import io.qdrant.client.grpc.Points.PointStruct;
+import io.cortex.client.CortexClient;
+import io.cortex.client.CortexGrpcClient;
+import io.cortex.client.grpc.Points.PointStruct;
 
-QdrantClient client =
-    new QdrantClient(QdrantGrpcClient.newBuilder("localhost", 6334, false).build());
+CortexClient client =
+    new CortexClient(CortexGrpcClient.newBuilder("localhost", 6334, false).build());
 
 client
     .upsertAsync(
@@ -162,10 +162,10 @@ client
 <TabItem value="csharp" label="csharp">
 
 ```csharp
-using Qdrant.Client;
-using Qdrant.Client.Grpc;
+using Cortex.Client;
+using Cortex.Client.Grpc;
 
-var client = new QdrantClient("localhost", 6334);
+var client = new CortexClient("localhost", 6334);
 
 await client.UpsertAsync(
 	collectionName: "{collection_name}",
@@ -188,21 +188,21 @@ await client.UpsertAsync(
 import (
 	"context"
 
-	"github.com/qdrant/go-client/qdrant"
+	"github.com/cortex/go-client/cortex"
 )
 
-client, err := qdrant.NewClient(&qdrant.Config{
+client, err := cortex.NewClient(&cortex.Config{
 	Host: "localhost",
 	Port: 6334,
 })
 
-client.Upsert(context.Background(), &qdrant.UpsertPoints{
+client.Upsert(context.Background(), &cortex.UpsertPoints{
 	CollectionName: "{collection_name}",
-	Points: []*qdrant.PointStruct{
+	Points: []*cortex.PointStruct{
 		{
-			Id:      qdrant.NewID("5c56c793-69f3-4fbf-87e6-c4bf54c28c26"),
-			Vectors: qdrant.NewVectors(0.05, 0.61, 0.76, 0.74),
-			Payload: qdrant.NewValueMap(map[string]any{"color": "Red"}),
+			Id:      cortex.NewID("5c56c793-69f3-4fbf-87e6-c4bf54c28c26"),
+			Vectors: cortex.NewVectors(0.05, 0.61, 0.76, 0.74),
+			Payload: cortex.NewValueMap(map[string]any{"color": "Red"}),
 		},
 	},
 })
@@ -268,10 +268,10 @@ client.upsert("{collection_name}", {
 <TabItem value="rust" label="rust">
 
 ```rust
-use qdrant_client::qdrant::{PointStruct, UpsertPointsBuilder};
-use qdrant_client::Qdrant;
+use cortex_client::cortex::{PointStruct, UpsertPointsBuilder};
+use cortex_client::Cortex;
 
-let client = Qdrant::from_url("http://localhost:6334").build()?;
+let client = Cortex::from_url("http://localhost:6334").build()?;
 
 client
     .upsert_points(
@@ -295,16 +295,16 @@ client
 import java.util.List;
 import java.util.Map;
 
-import static io.qdrant.client.PointIdFactory.id;
-import static io.qdrant.client.ValueFactory.value;
-import static io.qdrant.client.VectorsFactory.vectors;
+import static io.cortex.client.PointIdFactory.id;
+import static io.cortex.client.ValueFactory.value;
+import static io.cortex.client.VectorsFactory.vectors;
 
-import io.qdrant.client.QdrantClient;
-import io.qdrant.client.QdrantGrpcClient;
-import io.qdrant.client.grpc.Points.PointStruct;
+import io.cortex.client.CortexClient;
+import io.cortex.client.CortexGrpcClient;
+import io.cortex.client.grpc.Points.PointStruct;
 
-QdrantClient client =
-    new QdrantClient(QdrantGrpcClient.newBuilder("localhost", 6334, false).build());
+CortexClient client =
+    new CortexClient(CortexGrpcClient.newBuilder("localhost", 6334, false).build());
 
 client
     .upsertAsync(
@@ -322,10 +322,10 @@ client
 <TabItem value="csharp" label="csharp">
 
 ```csharp
-using Qdrant.Client;
-using Qdrant.Client.Grpc;
+using Cortex.Client;
+using Cortex.Client.Grpc;
 
-var client = new QdrantClient("localhost", 6334);
+var client = new CortexClient("localhost", 6334);
 
 await client.UpsertAsync(
 	collectionName: "{collection_name}",
@@ -348,21 +348,21 @@ await client.UpsertAsync(
 import (
 	"context"
 
-	"github.com/qdrant/go-client/qdrant"
+	"github.com/cortex/go-client/cortex"
 )
 
-client, err := qdrant.NewClient(&qdrant.Config{
+client, err := cortex.NewClient(&cortex.Config{
 	Host: "localhost",
 	Port: 6334,
 })
 
-client.Upsert(context.Background(), &qdrant.UpsertPoints{
+client.Upsert(context.Background(), &cortex.UpsertPoints{
 	CollectionName: "{collection_name}",
-	Points: []*qdrant.PointStruct{
+	Points: []*cortex.PointStruct{
 		{
-			Id:      qdrant.NewIDNum(1),
-			Vectors: qdrant.NewVectors(0.05, 0.61, 0.76, 0.74),
-			Payload: qdrant.NewValueMap(map[string]any{"color": "Red"}),
+			Id:      cortex.NewIDNum(1),
+			Vectors: cortex.NewVectors(0.05, 0.61, 0.76, 0.74),
+			Payload: cortex.NewValueMap(map[string]any{"color": "Red"}),
 		},
 	},
 })
@@ -375,9 +375,9 @@ are both possible.
 
 ## Vectors
 
-Each point in qdrant may have one or more vectors. 
-Vectors are the central component of the Qdrant architecture,
-qdrant relies on different types of vectors to provide different types of data exploration and search.
+Each point in cortex may have one or more vectors. 
+Vectors are the central component of the Cortex architecture,
+cortex relies on different types of vectors to provide different types of data exploration and search.
 
 Here is a list of supported vector types:
 
@@ -388,7 +388,7 @@ Here is a list of supported vector types:
 | MultiVectors | Matrices of numbers with fixed length but variable height. <br /> Usually obtained from late interaction models like ColBERT. |
 
 It is possible to attach more than one type of vector to a single point.
-In Qdrant we call these Named Vectors.
+In Cortex we call these Named Vectors.
 
 Read more about vector types, how they are stored and optimized in the [vectors](#) section.
 

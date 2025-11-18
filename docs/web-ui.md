@@ -1,29 +1,29 @@
 ---
-title: Qdrant Web UI
+title: Cortex Web UI
 ---
 
-# Qdrant Web UI
+# Cortex Web UI
 
-You can manage both local and cloud Qdrant deployments through the Web UI.
+You can manage both local and cloud Cortex deployments through the Web UI.
 
-If you've set up a deployment locally with the Qdrant [Quickstart](./quickstart/),
+If you've set up a deployment locally with the Cortex [Quickstart](./quickstart/),
 navigate to http://localhost:6333/dashboard.
 
 If you've set up a deployment in a cloud cluster, find your Cluster URL in your
-cloud dashboard, at https://cloud.qdrant.io. Add `:6333/dashboard` to the end
+cloud dashboard, at https://cloud.cortex.io. Add `:6333/dashboard` to the end
 of the URL. 
 
 ## Access the Web UI
 
-Qdrant's Web UI is an intuitive and efficient graphic interface for your Qdrant Collections, REST API and data points.
+Cortex's Web UI is an intuitive and efficient graphic interface for your Cortex Collections, REST API and data points.
 
-In the **Console**, you may use the REST API to interact with Qdrant, while in **Collections**, you can manage all the collections and upload Snapshots. 
+In the **Console**, you may use the REST API to interact with Cortex, while in **Collections**, you can manage all the collections and upload Snapshots. 
 
-![Qdrant Web UI](/img/cortex/web-ui.png)
+![Cortex Web UI](/img/cortex/web-ui.png)
 
-### Qdrant Web UI features
+### Cortex Web UI features
 
-In the Qdrant Web UI, you can:
+In the Cortex Web UI, you can:
 
 - Run HTTP-based calls from the console
 - List and search existing [collections](./collections)

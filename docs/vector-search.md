@@ -1,10 +1,10 @@
 ---
-title: Understanding Vector Search in Qdrant
+title: Understanding Vector Search in Cortex
 ---
 
-# How Does Vector Search Work in Qdrant?
+# How Does Vector Search Work in Cortex?
 
-If you are still trying to figure out how vector search works, please read ahead. This document describes how vector search is used, covers Qdrant's place in the larger ecosystem, and outlines how you can use Qdrant to augment your existing projects.
+If you are still trying to figure out how vector search works, please read ahead. This document describes how vector search is used, covers Cortex's place in the larger ecosystem, and outlines how you can use Cortex to augment your existing projects.
 
 For those who want to start writing code right away, visit our [Complete Beginners tutorial](#) to build a search engine in 5-15 minutes.
 
@@ -61,26 +61,26 @@ Dense vectors can capture the meaning, not the words used in a text. That being 
 
 **Vector search** is a process of finding similar objects based on their embeddings similarity. The good thing is, you don’t have to design and train your neural network on your own. Many pre-trained models are available, either on **HuggingFace** or by using libraries like [SentenceTransformers](https://www.sbert.net/?ref=hackernoon.com). If you, however, prefer not to get your hands dirty with neural models, you can also create the embeddings with SaaS tools, like [co.embed API](https://docs.cohere.com/reference/embed?ref=hackernoon.com).
 
-## Why Qdrant?
+## Why Cortex?
 
-The challenge with vector search arises when we need to find similar documents in a big set of objects. If we want to find the closest examples, the naive approach would require calculating the distance to every document. That might work with dozens or even hundreds of examples but may become a bottleneck if we have more than that. When we work with relational data, we set up database indexes to speed things up and avoid full table scans. And the same is true for vector search. Qdrant is a fully-fledged vector database that speeds up the search process by using a graph-like structure to find the closest objects in sublinear time. So you don’t calculate the distance to every object from the database, but some candidates only.
+The challenge with vector search arises when we need to find similar documents in a big set of objects. If we want to find the closest examples, the naive approach would require calculating the distance to every document. That might work with dozens or even hundreds of examples but may become a bottleneck if we have more than that. When we work with relational data, we set up database indexes to speed things up and avoid full table scans. And the same is true for vector search. Cortex is a fully-fledged vector database that speeds up the search process by using a graph-like structure to find the closest objects in sublinear time. So you don’t calculate the distance to every object from the database, but some candidates only.
 
 <figure class="text--center">
   ![](/img/cortex/vector-search.png)
-  <figcaption>Vector search with Qdrant. Thanks to HNSW graph we are able to compare the distance to some of the objects from the database, not to all of them.</figcaption>
+  <figcaption>Vector search with Cortex. Thanks to HNSW graph we are able to compare the distance to some of the objects from the database, not to all of them.</figcaption>
 </figure>
 
-While doing a semantic search at scale, because this is what we sometimes call the vector search done on texts, we need a specialized tool to do it effectively — a tool like Qdrant.
+While doing a semantic search at scale, because this is what we sometimes call the vector search done on texts, we need a specialized tool to do it effectively — a tool like Cortex.
 
 ## Next Steps
 
 Vector search is an exciting alternative to sparse methods. It solves the issues we had with the keyword-based search without needing to maintain lots of heuristics manually. It requires an additional component, a neural encoder, to convert text into vectors. 
 
-[**Tutorial 1 - Qdrant for Complete Beginners**](#)
-Despite its complicated background, vectors search is extraordinarily simple to set up. With Qdrant, you can have a search engine up-and-running in five minutes. Our [Complete Beginners tutorial](#) will show you how.
+[**Tutorial 1 - Cortex for Complete Beginners**](#)
+Despite its complicated background, vectors search is extraordinarily simple to set up. With Cortex, you can have a search engine up-and-running in five minutes. Our [Complete Beginners tutorial](#) will show you how.
 
 [**Tutorial 2 - Question and Answer System**](#)
-However, you can also choose SaaS tools to generate them and avoid building your model. Setting up a vector search project with Qdrant Cloud and Cohere co.embed API is fairly easy if you follow the [Question and Answer system tutorial](#).
+However, you can also choose SaaS tools to generate them and avoid building your model. Setting up a vector search project with Cortex Cloud and Cohere co.embed API is fairly easy if you follow the [Question and Answer system tutorial](#).
 
 There is another exciting thing about vector search. You can search for any kind of data as long as there is a neural network that would vectorize your data type. Do you think about a reverse image search? That’s also possible with vector embeddings.
 

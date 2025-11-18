@@ -1,7 +1,7 @@
 ---
 title: Local Quickstart
 ---
-# How to Get Started with Qdrant Locally
+# How to Get Started with Cortex Locally
 
 In this short example, you will use the Python Client to create a Collection, load data into it and run a basic search query.
 
@@ -9,7 +9,7 @@ In this short example, you will use the Python Client to create a Collection, lo
 
 ## Download and run
 
-First, download the latest Qdrant image from Dockerhub:
+First, download the latest Cortex image from Dockerhub:
 
 ```bash
 docker pull qdrant/qdrant
@@ -26,7 +26,7 @@ docker run -p 6333:6333 -p 6334:6334 \
 
 Under the default configuration all data will be stored in the `./qdrant_storage` directory. This will also be the only directory that both the Container and the host machine can both see.
 
-Qdrant is now accessible:
+Cortex is now accessible:
 
 - REST API: [localhost:6333](http://localhost:6333)
 - Web UI: [localhost:6333/dashboard](http://localhost:6333/dashboard)
@@ -35,55 +35,55 @@ Qdrant is now accessible:
 ## Initialize the client
 
 ```python
-from qdrant_client import QdrantClient
+from qdrant_client import CortexClient
 
-client = QdrantClient(url="http://localhost:6333")
+client = CortexClient(url="http://localhost:6333")
 ```
 
 ```typescript
-import { QdrantClient } from "@qdrant/js-client-rest";
+import { CortexClient } from "@qdrant/js-client-rest";
 
-const client = new QdrantClient({ host: "localhost", port: 6333 });
+const client = new CortexClient({ host: "localhost", port: 6333 });
 ```
 
 ```rust
-use qdrant_client::Qdrant;
+use qdrant_client::Cortex;
 
-// The Rust client uses Qdrant's gRPC interface
-let client = Qdrant::from_url("http://localhost:6334").build()?;
+// The Rust client uses Cortex's gRPC interface
+let client = Cortex::from_url("http://localhost:6334").build()?;
 ```
 
 ```java
-import io.qdrant.client.QdrantClient;
-import io.qdrant.client.QdrantGrpcClient;
+import io.qdrant.client.CortexClient;
+import io.qdrant.client.CortexGrpcClient;
 
-// The Java client uses Qdrant's gRPC interface
-QdrantClient client = new QdrantClient(
-    QdrantGrpcClient.newBuilder("localhost", 6334, false).build());
+// The Java client uses Cortex's gRPC interface
+CortexClient client = new CortexClient(
+    CortexGrpcClient.newBuilder("localhost", 6334, false).build());
 ```
 
 ```csharp
-using Qdrant.Client;
+using Cortex.Client;
 
-// The C# client uses Qdrant's gRPC interface
-var client = new QdrantClient("localhost", 6334);
+// The C# client uses Cortex's gRPC interface
+var client = new CortexClient("localhost", 6334);
 ```
 
 ```go
 import "github.com/qdrant/go-client/qdrant"
 
-// The Go client uses Qdrant's gRPC interface
+// The Go client uses Cortex's gRPC interface
 client, err := qdrant.NewClient(&qdrant.Config{
 	Host: "localhost",
 	Port: 6334,
 })
 ```
 
-<aside role="status">By default, Qdrant starts with no encryption or authentication . This means anyone with network access to your machine can access your Qdrant container instance. Please read <a href="#">Security</a> carefully for details on how to secure your instance.</aside>
+<aside role="status">By default, Cortex starts with no encryption or authentication . This means anyone with network access to your machine can access your Cortex container instance. Please read <a href="#">Security</a> carefully for details on how to secure your instance.</aside>
 
 ## Create a collection
 
-You will be storing all of your vector data in a Qdrant collection. Let's call it `test_collection`. This collection will be using a dot product distance metric to compare vectors.
+You will be storing all of your vector data in a Cortex collection. Let's call it `test_collection`. This collection will be using a dot product distance metric to compare vectors.
 
 ```python
 from qdrant_client.models import Distance, VectorParams
@@ -120,7 +120,7 @@ client.createCollectionAsync("test_collection",
 ```
 
 ```csharp
-using Qdrant.Client.Grpc;
+using Cortex.Client.Grpc;
 
 await client.CreateCollectionAsync(collectionName: "test_collection", vectorsConfig: new VectorParams
 {
@@ -238,7 +238,7 @@ System.out.println(operationInfo);
 ```
 
 ```csharp
-using Qdrant.Client.Grpc;
+using Cortex.Client.Grpc;
 
 var operationInfo = await client.UpsertAsync(collectionName: "test_collection", points: new List<PointStruct>
 {
@@ -536,7 +536,7 @@ System.out.println(searchResult);
 ```
 
 ```csharp
-using static Qdrant.Client.Grpc.Conditions;
+using static Cortex.Client.Grpc.Conditions;
 
 var searchResult = await client.QueryAsync(
     collectionName: "test_collection",
@@ -592,12 +592,12 @@ fmt.Println(searchResult)
 
 <aside role="status">To make filtered search fast on real datasets, we highly recommend to create <a href="#">payload indexes</a>!</aside>
 
-You have just conducted vector search. You loaded vectors into a database and queried the database with a vector of your own. Qdrant found the closest results and presented you with a similarity score.
+You have just conducted vector search. You loaded vectors into a database and queried the database with a vector of your own. Cortex found the closest results and presented you with a similarity score.
 
 ## Next steps
 
-Now you know how Qdrant works. Getting started with [Qdrant Cloud](#) is just as easy. [Create an account](https://qdrant.to/cloud) and use our SaaS completely free. We will take care of infrastructure maintenance and software updates.
+Now you know how Cortex works. Getting started with [Cortex Cloud](#) is just as easy. [Create an account](https://qdrant.to/cloud) and use our SaaS completely free. We will take care of infrastructure maintenance and software updates.
 
 To move onto some more complex examples of vector search, read our [Tutorials](#) and create your own app with the help of our [Examples](#).
 
-**Note:** There is another way of running Qdrant locally. If you are a Python developer, we recommend that you try Local Mode in [Qdrant Client](https://github.com/qdrant/qdrant-client), as it only takes a few moments to get setup.
+**Note:** There is another way of running Cortex locally. If you are a Python developer, we recommend that you try Local Mode in [Cortex Client](https://github.com/qdrant/qdrant-client), as it only takes a few moments to get setup.
