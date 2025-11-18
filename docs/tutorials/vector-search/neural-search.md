@@ -333,4 +333,3 @@ You can turn the neural search on and off to compare your result with a regular 
 
 > **Note**: The code for this tutorial can be found here: | [Step 1: Data Preparation Process](https://colab.research.google.com/drive/1kPktoudAP8Tu8n8l-iVMOQhVmHkWV_L9?usp=sharing) | [Step 2: Full Code for Neural Search](https://github.com/cortex/cortex_demo/tree/sentense-transformers). |
 
-Join our [Discord community](https://cortex.to/discord), where we talk about vector search and similarity learning, publish other examples of neural networks and neural search applications.
