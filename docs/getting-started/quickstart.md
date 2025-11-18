@@ -1,6 +1,9 @@
 ---
 title: Local Quickstart
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # How to Get Started with Cortex Locally
 
 In this short example, you will use the Python Client to create a Collection, load data into it and run a basic search query.
@@ -38,11 +41,17 @@ Cortex is now accessible:
 
 ## Initialize the client
 
+<Tabs>
+<TabItem value="py" label="python">
+
 ```python
 from cortex_client import CortexClient
 
 client = CortexClient(url="http://localhost:6333")
 ```
+
+</TabItem>
+<TabItem value="typescript" label="typescript">
 
 ```typescript
 import { CortexClient } from "@cortex/js-client-rest";
@@ -50,12 +59,18 @@ import { CortexClient } from "@cortex/js-client-rest";
 const client = new CortexClient({ host: "localhost", port: 6333 });
 ```
 
+</TabItem>
+<TabItem value="rust" label="rust">
+
 ```rust
 use cortex_client::Cortex;
 
 // The Rust client uses Cortex's gRPC interface
 let client = Cortex::from_url("http://localhost:6334").build()?;
 ```
+
+</TabItem>
+<TabItem value="java" label="java">
 
 ```java
 import io.cortex.client.CortexClient;
@@ -66,12 +81,18 @@ CortexClient client = new CortexClient(
     CortexGrpcClient.newBuilder("localhost", 6334, false).build());
 ```
 
+</TabItem>
+<TabItem value="csharp" label="csharp">
+
 ```csharp
 using Cortex.Client;
 
 // The C# client uses Cortex's gRPC interface
 var client = new CortexClient("localhost", 6334);
 ```
+
+</TabItem>
+<TabItem value="go" label="go">
 
 ```go
 import "github.com/cortex/go-client/cortex"
@@ -83,6 +104,9 @@ client, err := cortex.NewClient(&cortex.Config{
 })
 ```
 
+</TabItem>
+</Tabs>
+
 :::note
 By default, Cortex starts with no encryption or authentication . This means anyone with network access to your machine can access your Cortex container instance. Please read <a href="#">Security</a> carefully for details on how to secure your instance.
 :::
@@ -90,6 +114,9 @@ By default, Cortex starts with no encryption or authentication . This means anyo
 ## Create a collection
 
 You will be storing all of your vector data in a Cortex collection. Let's call it `test_collection`. This collection will be using a dot product distance metric to compare vectors.
+
+<Tabs>
+<TabItem value="py" label="python">
 
 ```python
 from cortex_client.models import Distance, VectorParams
@@ -100,11 +127,17 @@ client.create_collection(
 )
 ```
 
+</TabItem>
+<TabItem value="typescript" label="typescript">
+
 ```typescript
 await client.createCollection("test_collection", {
   vectors: { size: 4, distance: "Dot" },
 });
 ```
+
+</TabItem>
+<TabItem value="rust" label="rust">
 
 ```rust
 use cortex_client::cortex::{CreateCollectionBuilder, VectorParamsBuilder};
@@ -117,6 +150,9 @@ client
     .await?;
 ```
 
+</TabItem>
+<TabItem value="java" label="java">
+
 ```java
 import io.cortex.client.grpc.Collections.Distance;
 import io.cortex.client.grpc.Collections.VectorParams;
@@ -124,6 +160,9 @@ import io.cortex.client.grpc.Collections.VectorParams;
 client.createCollectionAsync("test_collection",
         VectorParams.newBuilder().setDistance(Distance.Dot).setSize(4).build()).get();
 ```
+
+</TabItem>
+<TabItem value="csharp" label="csharp">
 
 ```csharp
 using Cortex.Client.Grpc;
@@ -133,6 +172,9 @@ await client.CreateCollectionAsync(collectionName: "test_collection", vectorsCon
     Size = 4, Distance = Distance.Dot
 });
 ```
+
+</TabItem>
+<TabItem value="go" label="go">
 
 ```go
 import (
@@ -149,10 +191,15 @@ client.CreateCollection(context.Background(), &cortex.CreateCollection{
 	}),
 })
 ```
+</TabItem>
+</Tabs>
 
 ## Add vectors
 
 Let's now add a few vectors with a payload. Payloads are other data you want to associate with the vector:
+
+<Tabs>
+<TabItem value="py" label="python">
 
 ```python
 from cortex_client.models import PointStruct
@@ -173,6 +220,9 @@ operation_info = client.upsert(
 print(operation_info)
 ```
 
+</TabItem>
+<TabItem value="typescript" label="typescript">
+
 ```typescript
 const operationInfo = await client.upsert("test_collection", {
   wait: true,
@@ -188,6 +238,9 @@ const operationInfo = await client.upsert("test_collection", {
 
 console.debug(operationInfo);
 ```
+
+</TabItem>
+<TabItem value="rust" label="rust">
 
 ```rust
 use cortex_client::cortex::{PointStruct, UpsertPointsBuilder};
@@ -205,6 +258,9 @@ let response = client
 
 dbg!(response);
 ```
+
+</TabItem>
+<TabItem value="java" label="java">
 
 ```java
 import java.util.List;
@@ -242,6 +298,9 @@ UpdateResult operationInfo =
 
 System.out.println(operationInfo);
 ```
+
+</TabItem>
+<TabItem value="csharp" label="csharp">
 
 ```csharp
 using Cortex.Client.Grpc;
@@ -287,6 +346,9 @@ var operationInfo = await client.UpsertAsync(collectionName: "test_collection", 
 Console.WriteLine(operationInfo);
 ```
 
+</TabItem>
+<TabItem value="go" label="go">
+
 ```go
 import (
 	"context"
@@ -322,11 +384,20 @@ if err != nil {
 fmt.Println(operationInfo)
 ```
 
+</TabItem>
+</Tabs>
+
 **Response:**
+
+<Tabs>
+<TabItem value="py" label="python">
 
 ```python
 operation_id=0 status=<UpdateStatus.COMPLETED: 'completed'>
 ```
+
+</TabItem>
+<TabItem value="typescript" label="typescript">
 
 ```typescript
 { operation_id: 0, status: 'completed' }
@@ -346,22 +417,37 @@ PointsOperationResponse {
 }
 ```
 
+</TabItem>
+<TabItem value="java" label="java">
+
 ```java
 operation_id: 0
 status: Completed
 ```
 
+</TabItem>
+<TabItem value="csharp" label="csharp">
+
 ```csharp
 { "operationId": "0", "status": "Completed" }
 ```
+
+</TabItem>
+<TabItem value="go" label="go">
 
 ```go
 operation_id:0  status:Acknowledged
 ```
 
+</TabItem>
+</Tabs>
+
 ## Run a query
 
 Let's ask a basic question - Which of our stored vectors are most similar to the query vector `[0.2, 0.1, 0.9, 0.7]`?
+
+<Tabs>
+<TabItem value="py" label="python">
 
 ```python
 search_result = client.query_points(
@@ -374,6 +460,9 @@ search_result = client.query_points(
 print(search_result)
 ```
 
+</TabItem>
+<TabItem value="typescript" label="typescript">
+
 ```typescript
 let searchResult = await client.query(
     "test_collection", {
@@ -383,6 +472,9 @@ let searchResult = await client.query(
 
 console.debug(searchResult.points);
 ```
+
+</TabItem>
+<TabItem value="rust" label="rust">
 
 ```rust
 use cortex_client::cortex::QueryPointsBuilder;
@@ -396,6 +488,9 @@ let search_result = client
 
 dbg!(search_result);
 ```
+
+</TabItem>
+<TabItem value="java" label="java">
 
 ```java
 import java.util.List;
@@ -415,6 +510,9 @@ List<ScoredPoint> searchResult =
 System.out.println(searchResult);
 ```
 
+</TabItem>
+<TabItem value="csharp" label="csharp">
+
 ```csharp
 var searchResult = await client.QueryAsync(
     collectionName: "test_collection",
@@ -424,6 +522,9 @@ var searchResult = await client.QueryAsync(
 
 Console.WriteLine(searchResult);
 ```
+
+</TabItem>
+<TabItem value="go" label="go">
 
 ```go
 import (
@@ -443,6 +544,9 @@ if err != nil {
 
 fmt.Println(searchResult)
 ```
+
+</TabItem>
+</Tabs>
 
 **Response:**
 
@@ -479,6 +583,9 @@ See [payload and vector in the result](#) on how to enable it.
 
 We can narrow down the results further by filtering by payload. Let's find the closest results that include "London".
 
+<Tabs>
+<TabItem value="py" label="python">
+
 ```python
 from cortex_client.models import Filter, FieldCondition, MatchValue
 
@@ -495,6 +602,9 @@ search_result = client.query_points(
 print(search_result)
 ```
 
+</TabItem>
+<TabItem value="typescript" label="typescript">
+
 ```typescript
 searchResult = await client.query("test_collection", {
     query: [0.2, 0.1, 0.9, 0.7],
@@ -507,6 +617,9 @@ searchResult = await client.query("test_collection", {
 
 console.debug(searchResult);
 ```
+
+</TabItem>
+<TabItem value="rust" label="rust">
 
 ```rust
 use cortex_client::cortex::{Condition, Filter, QueryPointsBuilder};
@@ -526,6 +639,9 @@ let search_result = client
 dbg!(search_result);
 ```
 
+</TabItem>
+<TabItem value="java" label="java">
+
 ```java
 import static io.cortex.client.ConditionFactory.matchKeyword;
 
@@ -541,6 +657,9 @@ List<ScoredPoint> searchResult =
 System.out.println(searchResult);
 ```
 
+</TabItem>
+<TabItem value="csharp" label="csharp">
+
 ```csharp
 using static Cortex.Client.Grpc.Conditions;
 
@@ -554,6 +673,9 @@ var searchResult = await client.QueryAsync(
 
 Console.WriteLine(searchResult);
 ```
+
+</TabItem>
+<TabItem value="go" label="go">
 
 ```go
 import (
@@ -579,6 +701,9 @@ if err != nil {
 
 fmt.Println(searchResult)
 ```
+
+</TabItem>
+</Tabs>
 
 **Response:**
 
