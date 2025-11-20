@@ -16,7 +16,18 @@ const config = {
   title: 'Actian Cortex',
   tagline: 'Documentation',
   favicon: 'img/logos/favicon.ico',
-  plugins: [require.resolve('docusaurus-lunr-search')],
+  themes: [
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        hashed: true,
+        indexPages: true,
+        language: ["en"],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      },
+    ],
+  ],
 
   // URL will be replaced from environment variable in the Maven build. Set to localhost for local dev.
   url: process.env.SITE_URL || 'https://integration-platform-docs.netlify.app/',
