@@ -1,4 +1,0 @@
-echo "20.18.1" > .nvmrc
-git add .nvmrc
-git commit -m "Set Node version for Netlify builds"
-git push origin dev
