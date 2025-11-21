@@ -21,10 +21,13 @@ const config = {
       "@easyops-cn/docusaurus-search-local",
       {
         hashed: true,
+        indexBlog: false,
         indexPages: true,
         language: ["en"],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
+        searchBarShortcut: false,
+        searchBarShortcutHint: false,
       },
     ],
   ],
