@@ -3,6 +3,29 @@ title: Release Notes
 ---
 # Release Notes
 
+### 3.4.0
+
+| Issue Type | <div style={{width: 65}}>Issue Key</div> | Summary | Fix versions | Status |
+|:---|:---|:---|:---|:---|
+| Improvement | IP-8494 | Add timeout and stopped to JobStats API. See [getJobStats](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/JobStats/getJobStats). | 3.4.0 | Completed |
+| Bug Fix | IP-8463 | Some APIs are returning 500 Internal Server Error instead of the expected 404 Not Found status. | 3.4.0 | Completed |
+| Bug Fix | IP-8433 | Inconsistent deletion of job history when scheduled | 3.3.0, 3.4.0 | Completed |
+| Bug Fix | IP-8412 | User unable to add macro in Configuration Details page despite having Modify permission | 3.4.0 | Completed |
+| Bug Fix | IP-8411 | Linux agent registration page is not loading after installing build | 3.4.0 | Completed |
+| Bug Fix | IP-8404 | The status on the Agent Registration page remains stuck on "Connecting". | 3.4.0 | Completed |
+| Bug Fix | IP-8387 | When the user clicks the Log button to view job execution details, observed 500 Internal Server Error for SEVERE/WARNING log levels | 3.4.0 | Completed |
+| Bug Fix | IP-8386 | Some jobs show a "Failed" status, even though the logs indicate that they completed successfully. | 3.4.0 | Completed |
+| Bug Fix | IP-8383 | Jobs failing after uploading and running valid .js files. | 3.4.0 | Completed |
+| Bug Fix | IP-8380 | Configuration fails to execute with existing template. | 3.4.0 | Completed |
+| Bug Fix | IP-8373 | After installing the agent, the `application.properties` file is not created. | 3.4.0 | Completed |
+| Bug Fix | IP-8303 | Files API offset is not working | 3.4.0 | Completed |
+| Bug Fix | IP-8230 | Job Config runs even when execute action is not allowed. | 3.4.0 | Completed |
+| Bug Fix | IP-8176 | User unable to create policy for Agents, observed 400 Bad request. | 3.4.0 | Completed |
+| Bug Fix | IP-8145 | When user selects "Modify and Resubmit File Metadata", clicks Resubmit, and then clicks Load, 500 Internal Server Error is observed. | 3.4.0 | Completed |
+| Bug Fix | IP-8121 | When user clicks Load button, 500 internal Server Error is observed. | 3.4.0 | Completed |
+| Bug Fix | IP-8112 | Notifications "MailTo" not accepting multiple email addresses. | 3.4.0 | Completed |
+| Bug Fix | IP-8081 | Template is picking agent with status as offline. | 3.4.0 | Completed |
+
 ### 3.3.0
 
 | Issue Type | <div style={{width: 65}}>Issue Key</div> | Summary | Fix versions | Status |
