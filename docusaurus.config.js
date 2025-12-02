@@ -25,13 +25,7 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   //For netlify, set to / otherwise it will try to find the site at siteurl/guide/
   baseUrl: buildEnv === null ? "/" : "/guide/",
-
-  scripts: [
-    {
-      src: '/runtimeConfig.js',
-      async: true,
-    },
-  ],
+  
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
