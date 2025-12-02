@@ -20,12 +20,11 @@ const config = {
   tagline: 'Documentation',
   favicon: 'img/logos/favicon.ico',
   plugins: [require.resolve('docusaurus-lunr-search')],
-
-  url: buildEnv ? "https://integration-platform-docs.netlify.app/" : 'http://localhost:3000', // fallback for local or IM,
+  url: buildEnv === null ? "https://integration-platform-docs.netlify.app/" : 'http://localhost:3000',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   //For netlify, set to / otherwise it will try to find the site at siteurl/guide/
-  baseUrl: '/',
+  baseUrl: buildEnv === null ? "/" : "/guide/",
 
   scripts: [
     {
