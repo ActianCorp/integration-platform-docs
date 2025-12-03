@@ -165,6 +165,7 @@ const sidebars = {
                 //'integration-manager/admin/server-administration/setup-kubernetes-on-prem',
                 'integration-manager/admin/server-administration/server-upgrades',
                 'integration-manager/admin/server-administration/integration-engines',
+                'integration-manager/admin/server-administration/python_execution_service',
                 'integration-manager/admin/server-administration/dataconnect-docker',
                 'integration-manager/admin/server-administration/worker-install',
                 {
