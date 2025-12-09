@@ -8,7 +8,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 const buildEnv = process.env.BUILD_ENV;
 console.log('Site URL is :', process.env.SITE_URL);
-console.log('Base URL is :', process.env.BASE_URL);
 console.log('Build Environment is :', buildEnv);
 
 
@@ -20,12 +19,11 @@ const config = {
   tagline: 'Documentation',
   favicon: 'img/logos/favicon.ico',
   plugins: [require.resolve('docusaurus-lunr-search')],
-  url: buildEnv === null ? "https://integration-platform-docs.netlify.app/" : 'http://localhost:3000',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  //For netlify, set to / otherwise it will try to find the site at siteurl/guide/
+  url: buildEnv === null ? "https://integration-platform-docs.netlify.app/" : buildEnv === "im" ? process.env.SITE_URL : 'http://localhost:3000',
+    // Set the /<baseUrl>/ pathname under which your site is served.
+    // The build is supporting im/local build with same codebase.Netlify build is not done from maven, so env will be null.
   baseUrl: buildEnv === null ? "/" : "/guide/",
-  
+
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -222,7 +220,7 @@ const config = {
                 </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               `,
           },
-        ],  
+        ],
         copyright: `Copyright © ${new Date().getFullYear()} Actian Corporation. All rights reserved.`,
       },
       prism: {
@@ -232,33 +230,34 @@ const config = {
       // algolia: {
       //   // The application ID provided by Algolia
       //   appId: 'DJTQI8DCNE',
-  
+
       //   // Public API key: it is safe to commit it
       //   apiKey: '557417026f266de1c4a0a43fc919ca41',
-  
+
       //   indexName: 'integration-platform-netlify',
-  
+
       //   // Optional: see doc section below
       //   //contextualSearch: true,
-  
+
       //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
       //   //externalUrlRegex: 'external\\.com|domain\\.com',
-  
+
       //   // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
       //   //replaceSearchResultPathname: {
       //   //  from: '/docs/', // or as RegExp: /\/docs\//
       //   //  to: '/',
       //   //},
-  
+
       //   // Optional: Algolia search parameters
       //   //searchParameters: {},
-  
+
       //   // Optional: path for search page that enabled by default (`false` to disable it)
       //   searchPagePath: 'false', //'search',
-  
+
       //   //... other Algolia params
       // },
     }),
 };
 
 export default config;
+

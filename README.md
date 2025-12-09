@@ -35,3 +35,25 @@ Clicking this button opens the page in the ActianCorp integration-platform-docs 
   ![Suggest Edits Button](./static/img/GitHub-Repo.png)
 
 Make any suggested edits, then create a pull request. We will review your changes, make any necessary edits, then merge the changes if appropriate.
+
+Here’s a clean summary for your **README.md** or any Markdown file:
+
+---
+
+### **Build with Maven**
+
+Use the following commands to build the project:
+
+* **For Integration Manager docs:**
+
+  ```bash
+  mvn clean package -Pim
+  ```
+
+* **For local build:**
+
+  ```bash
+  mvn clean package
+  ```
+
+---

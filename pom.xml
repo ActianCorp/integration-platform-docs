@@ -61,6 +61,7 @@
               <arguments>build</arguments>
               <environmentVariables>
                   <BUILD_ENV>${env.BUILD_ENV}</BUILD_ENV>
+                  <SITE_URL>${env.SITE_URL}</SITE_URL>
               </environmentVariables>
             </configuration>
           </execution>
@@ -97,6 +98,7 @@
             </activation>
             <properties>
                 <env.BUILD_ENV>local</env.BUILD_ENV>
+                <env.SITE_URL>http://localhost:3000</env.SITE_URL>
             </properties>
         </profile>
         <profile>
@@ -104,6 +106,7 @@
             <id>im</id>
             <properties>
                 <env.BUILD_ENV>im</env.BUILD_ENV>
+                <env.SITE_URL>https://im.actiandatacloud.com</env.SITE_URL>
             </properties>
         </profile>
     </profiles>
