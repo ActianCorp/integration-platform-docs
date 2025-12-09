@@ -106,7 +106,7 @@
             <id>im</id>
             <properties>
                 <env.BUILD_ENV>im</env.BUILD_ENV>
-                <env.SITE_URL>https://im.actiandatacloud.com</env.SITE_URL>
+                <env.SITE_URL>https://docs.actian.com</env.SITE_URL>
             </properties>
         </profile>
     </profiles>
