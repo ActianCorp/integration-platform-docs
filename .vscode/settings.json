@@ -22,5 +22,6 @@
         "Scriptable",
         "springboot",
         "uninstallation"
-    ]
+    ],
+    "java.configuration.updateBuildConfiguration": "disabled"
 }
