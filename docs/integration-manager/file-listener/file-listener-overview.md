@@ -35,7 +35,7 @@ Camel DSL support supersedes and replaces the File Folder Listener support provi
 
 Refer to the following topics for example configurations and available properties:
 
-* [File Folder Listener Example](./file-listener-local.md)
+* [File Folder Listener Example](./file-listener-local)
 * [AWS S3 Bucket Listener Example](./file-listener-aws)
 * [Azure Blob Storage Listener Example](./file-listener-azure)
 * [GCP Cloud Storage Listener Example](./file-listener-google)

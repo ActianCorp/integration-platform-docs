@@ -16,13 +16,15 @@
   "dependencies": {
     "@docusaurus/core": "3.7.0",
     "@docusaurus/preset-classic": "3.7.0",
+    "@easyops-cn/docusaurus-search-local": "^0.52.1",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
+    "docusaurus-lunr-search": "^3.6.0",
+    "lunr": "^2.3.9",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "redocusaurus": "^2.2.1",
-    "docusaurus-lunr-search": "^3.6.0"
+    "redocusaurus": "^2.2.1"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.7.0",
@@ -41,6 +43,6 @@
     ]
   },
   "engines": {
-    "node": ">=18.0"
+    "node": ">=20.18.1"
   }
 }
