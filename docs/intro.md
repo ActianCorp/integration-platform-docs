@@ -35,11 +35,11 @@ Data integrations enable the transformation and migration of data by visually ma
 
 ### Configuration
 
-A configuration is a set of properties and parameters that specify when, where, and how an integration will be executed. Configurations contain references to a specific integration, the location in which the integration will be executed, and the frequency at which executions will occur. See [Configurations Overview](./integration-manager/configurations/configurations-overview.md).
+A configuration is a set of properties and parameters that specify when, where, and how an integration will be executed. Configurations contain references to a specific integration, the location in which the integration will be executed, and the frequency at which executions will occur. See [Configurations Overview](./integration-manager/configurations/configurations-overview).
 
 ### Job
 
-Jobs are reports about the run results of the configurations you execute, and include details including whether the run was successful, the run duration, and log file data. Jobs are not editable. See [Run Your First Job](./integration-manager/configurations/run-your-first-job.md) and [Viewing Job Run History](./integration-manager/jobs/viewing-job-run-history.md).
+Jobs are reports about the run results of the configurations you execute, and include details including whether the run was successful, the run duration, and log file data. Jobs are not editable. See [Viewing Job Run History](./integration-manager/jobs/viewing-job-run-history).
 
 :::note
 The Integrations console utilizes a RESTful interface. You can use the REST API for Integration Manager to change configuration options and automate the execution of your configurations. See [Job Execution APIs](https://api.im.actiandatacloud.com/v2/apidocs/?urls.primaryName=Job%20Execution).
@@ -47,8 +47,8 @@ The Integrations console utilizes a RESTful interface. You can use the REST API 
 
 ### Macro
 
-Macros enable you to run a single integration for different types of users without having to modify the integration itself. Macros are defined when the integration is in the configuration state. Macros can save you time and reduce errors at runtime. See [Macros Overview](./integration-manager/macros/macros-overview.md).
+Macros enable you to run a single integration for different types of users without having to modify the integration itself. Macros are defined when the integration is in the configuration state. Macros can save you time and reduce errors at runtime. See [Macros Overview](./integration-manager/macros/macros-overview).
 
 ### Template
 
-Templates contain integration settings that are reusable by linked configurations. Templates include a package, macros, and a location to execute the job. See [Creating Templates](./integration-manager/templates/creating-templates.md).
+Templates contain integration settings that are reusable by linked configurations. Templates include a package, macros, and a location to execute the job. See [Creating Templates](./integration-manager/templates/creating-templates).

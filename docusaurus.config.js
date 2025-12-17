@@ -24,6 +24,28 @@ const config = {
     // The build is supporting im/local build with same codebase.Netlify build is not done from maven, so env will be null.
   baseUrl: buildEnv === null ? "/" : "/guide/",
 
+  themes: [
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        hashed: true,
+        indexBlog: false,
+        indexPages: true,
+        language: ["en"],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        searchBarShortcut: false,
+        searchBarShortcutHint: false,
+      },
+    ],
+  ],
+  
+  // URL will be replaced from environment variable in the Maven build. Set to localhost for local dev.
+  url: process.env.SITE_URL || 'https://integration-platform-docs.netlify.app/',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  //For netlify, set to / otherwise it will try to find the site at siteurl/guide/
+  baseUrl: process.env.BASE_URL || '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -72,53 +94,6 @@ const config = {
         },
       }),
     ],
-//    [
-//      'redocusaurus',
-//      {
-//        // Plugin Options for loading OpenAPI files
-//        specs: [
-//          // Pass it a path to a local OpenAPI YAML file
-//          // Redocusaurus will automatically bundle your spec into a single file during the build
-//          {
-//            spec: 'api/integration-components.json',
-//            route: '/integration-components/',
-//          },
-//          {
-//            spec: 'api/job-configuration.json',
-//            route: '/job-configuration/',
-//          },
-//          {
-//            spec: 'api/job-execution.json',
-//            route: '/job-execution/',
-//          },
-//          {
-//            spec: 'api/jobconfig-aliasing.json',
-//            route: '/jobconfig-aliasing/',
-//          },
-//          {
-//            spec: 'api/agent-management.json',
-//            route: '/agent-management/',
-//          },
-//          {
-//            spec: 'api/account-administration.json',
-//            route: '/account-administration/',
-//          },
-//          {
-//            spec: 'api/resource-management.json',
-//            route: '/resource-management/',
-//          },
-//          {
-//            spec: 'api/access-control-policies.json',
-//            route: '/access-control-policies/',
-//          },
-//        ],
-//        // Theme Options for modifying how redoc renders them
-//        theme: {
-//          // Change with your site colors
-//          primaryColor: '#1890ff',
-//        },
-//      },
-//    ]
   ],
 
   themeConfig:
