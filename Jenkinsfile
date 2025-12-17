@@ -6,19 +6,12 @@ pipeline {
     }
 	parameters {
         string(name: "SOURCE_BRANCH", defaultValue: "origin/", trim: true, description: "Source branch name to build i.e. origin/. The default branch is master.")
-		// Environment selection for deployment.
-		choice(
-            name: "ENVIRONMENT",
-            choices: ["dev", "test", "stage", "prod"],
-            description: "Select environment to deploy the artifacts."
-        )
     }
 	stages {
 		stage ('Build') {
 			steps {
 				script {
 						echo "----- Build Started for ${JOB_BASE_NAME} -----"
-						echo "----- Environment is : ${params.ENVIRONMENT} -----"
 						echo "----- Source Branch: ${params.SOURCE_BRANCH} -----"
 
 						
@@ -47,8 +40,8 @@ pipeline {
 						echo "----- Building with version - ${env.POM_VERSION_REPLACED} -----"
 						mvn versions:set -DnewVersion=${env.POM_VERSION_REPLACED} -DgenerateBackupPoms=false -f pom.xml
 						
-						echo "----- Building for ${params.ENVIRONMENT} -----"
-						mvn clean -P${params.ENVIRONMENT} deploy --settings settings.xml
+						echo "----- Building for IM profile -----"
+						mvn clean -Pim deploy --settings settings.xml
 						echo "----- Build Completed for ${JOB_BASE_NAME} -----"
 						echo "----- Artifacts deployed to Nexus Repository -----"
 					"""
