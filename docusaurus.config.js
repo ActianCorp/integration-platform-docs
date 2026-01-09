@@ -7,9 +7,8 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 
 const buildEnv = process.env.BUILD_ENV;
-console.log('Site URL is :', process.env.SITE_URL);
 console.log('Build Environment is :', buildEnv);
-
+console.log('Site URL is :', process.env.SITE_URL);
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -19,11 +18,27 @@ const config = {
   tagline: 'Documentation',
   favicon: 'img/logos/favicon.ico',
   plugins: [require.resolve('docusaurus-lunr-search')],
-  url: buildEnv === null ? "https://integration-platform-docs.netlify.app/" : buildEnv === "im" ? process.env.SITE_URL : 'http://localhost:3000',
-    // Set the /<baseUrl>/ pathname under which your site is served.
-    // The build is supporting im/local build with same codebase.Netlify build is not done from maven, so env will be null.
-  baseUrl: buildEnv === null ? "/" : "/guide/",
+  url: (() => {
+    const DEFAULT_URL = "https://integration-platform-docs.netlify.app/";
+    const LOCAL_URL = "http://localhost:3000";
+    const buildEnv = process.env.BUILD_ENV;
 
+    if (!buildEnv) {
+      return DEFAULT_URL;
+    }
+
+    if (buildEnv === "local") {
+      return LOCAL_URL;
+    }
+
+    if (buildEnv === "im") {
+      return process.env.SITE_URL ?? DEFAULT_URL;
+    }
+
+    return DEFAULT_URL;
+  })(),
+  baseUrl: buildEnv === "im" ? "/guide/" : "/",
+  
   themes: [
     [
       "@easyops-cn/docusaurus-search-local",
@@ -39,14 +54,6 @@ const config = {
       },
     ],
   ],
-  
-  // URL will be replaced from environment variable in the Maven build. Set to localhost for local dev.
-  url: process.env.SITE_URL || 'https://integration-platform-docs.netlify.app/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  //For netlify, set to / otherwise it will try to find the site at siteurl/guide/
-  baseUrl: process.env.BASE_URL || '/',
-
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'ActianCorp', // Usually your GitHub org/user name.
@@ -233,6 +240,9 @@ const config = {
       // },
     }),
 };
+
+console.log('Configured baseURL :', config.baseUrl);
+console.log('Configured url :', config.url);
 
 export default config;
 
