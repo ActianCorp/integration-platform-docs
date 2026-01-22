@@ -5,33 +5,32 @@ import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
-    title: 'Integration Manager',
-    doc: "/docs/integration-manager/manager-overview",
-    png: "/img/home/cloud.png",
+    title: 'Getting Started',
+    doc: "/docs/getting-started",
+    png: "/img/home/rocket1.png",
     description: (
       <>
-      An elastic cloud-based platform that enables the design, deployment, and management of web-based integrations.
-      </>
-    ),
-  },
-  {
-    title: 'Integration Agent',
-    doc: "/docs/integration-agent/agent-overview",
-    png: "/img/home/cloud.png",
-    description: (
-      <>
-      DataCloud Agent Technology enables centralized cloud management of on-premise integration jobs and related collateral.
-      </>
-    ),
-  },
-  {
-    title: 'Release Notes',
-    doc: "/docs/release-notes",
-    png: "/img/home/list.png",
-    description: (
-      <>
-      New features, bug fixes, and known issues for each release.
+      Get up and running quickly with DataConnect.
      </>
+    ),
+  },  {
+    title: 'Data Quality',
+    doc: "/docs/dataconnect/data-quality",
+    png: "/img/home/data-quality.png",
+    description: (
+      <>
+      Improve and monitor the accuracy and consistency of your data.
+      </>
+    ),
+  },
+  {
+    title: 'Integration',
+    doc: "/docs/integration-manager/manager-overview",
+    png: "/img/home/integration.png",
+    description: (
+      <>
+      Create and manage data integration designs.
+      </>
     ),
   },
 ];
@@ -49,7 +48,6 @@ function Feature({title, doc, png, description}) {
             </div>
           </center>
           </div>
-        <br />
           <Link className="button button--primary button--md" to={doc}>
             View Docs &#8250;&#8250;
           </Link>

@@ -21,11 +21,22 @@ const sidebars = {
     //},
     'intro',
     'release-notes',
-    'copyright',
-    'integration-manager/quickstart-install',
-    'accessing-the-integration-manager',
-    'dashboard',
-    'editing-your-profile',
+    {
+      type: 'category',
+      label: 'GETTING STARTED',
+      items: [
+        'getting-started/getting-started',
+        'getting-started/quickstart-install',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'DATA QUALITY',
+      items: [
+        'dataconnect/data-quality',
+
+      ]
+    },
     {
       type: 'category',
       label: 'INTEGRATION MANAGER',
@@ -199,49 +210,48 @@ const sidebars = {
             },
           ]
         },
-
-      ]
-    },
-    {
-      type: 'category',
-      label: 'INTEGRATION AGENT',
-      items: [
-        'integration-agent/agent-overview',
-        'integration-agent/quickstart-install',
-        'integration-agent/run-your-first-remote-job',
-        'integration-agent/monitoring-agent-status',
         {
           type: 'category',
-          label: 'On-Premise Data',
+          label: 'Integration Agent',
           items: [
-            'integration-agent/on-prem-data/accessing-on-premise-storage',
-            'integration-agent/on-prem-data/connecting-to-ms-sql-server',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'File Listener Services',
-          items: [
-            'integration-manager/file-listener/file-listener-overview',
-            'integration-manager/file-listener/file-listener-local',
-            'integration-manager/file-listener/file-listener-aws',
-            'integration-manager/file-listener/file-listener-azure',
-            'integration-manager/file-listener/file-listener-google',
-            'integration-manager/file-listener/file-listener-history-management',
+            'integration-agent/agent-overview',
+            'integration-agent/quickstart-install',
+            'integration-agent/run-your-first-remote-job',
+            'integration-agent/monitoring-agent-status',
+            {
+              type: 'category',
+              label: 'On-Premise Data',
+              items: [
+                'integration-agent/on-prem-data/accessing-on-premise-storage',
+                'integration-agent/on-prem-data/connecting-to-ms-sql-server',
               ]
-        },
-        {
-          type: 'category',
-          label: 'Advanced Topics',
-          items: [
-            'integration-agent/advanced-topics/configuration-files',
-            'integration-agent/advanced-topics/manual-agent-registration',
-            'integration-agent/advanced-topics/retrieve-agent-credential',
-            'integration-agent/advanced-topics/scriptable-agent-registration',
-            'integration-agent/advanced-topics/connecting-to-other-environments',
+            },
+            {
+              type: 'category',
+              label: 'File Listener Services',
+              items: [
+                'integration-manager/file-listener/file-listener-overview',
+                'integration-manager/file-listener/file-listener-local',
+                'integration-manager/file-listener/file-listener-aws',
+                'integration-manager/file-listener/file-listener-azure',
+                'integration-manager/file-listener/file-listener-google',
+                'integration-manager/file-listener/file-listener-history-management',
+                  ]
+            },
+            {
+              type: 'category',
+              label: 'Advanced Topics',
+              items: [
+                'integration-agent/advanced-topics/configuration-files',
+                'integration-agent/advanced-topics/manual-agent-registration',
+                'integration-agent/advanced-topics/retrieve-agent-credential',
+                'integration-agent/advanced-topics/scriptable-agent-registration',
+                'integration-agent/advanced-topics/connecting-to-other-environments',
+              ]
+            },
+            'integration-agent/agent-troubleshooting',
           ]
         },
-        'integration-agent/agent-troubleshooting',
       ]
     },
   ],

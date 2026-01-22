@@ -1,11 +1,7 @@
 ---
-title: Integration Manager User Guide
+title: Integration Manager Overview
 ---
 
-# Integration Manager User Guide
+# Integration Manager Overview
 
-This section describes how to use Actian Integration Manager, an elastic cloud-based platform that enables the design, deployment, and management of web-based integrations.
-
-:::note
-Documentation for Integration Manager administrators can be found in the [Integration Manager Administration Guide](../integration-manager/admin/admin-overview).
-::: 
+Overview here. Need to rewrite to describe IM as part of DC as opposed to a separate product. Are we still calling this section "Integration Manager"?
