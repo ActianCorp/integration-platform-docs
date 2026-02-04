@@ -185,7 +185,7 @@ function LearningResources() {
       title: 'Quick Start Guide',
       description: 'Get up and running with DataConnect in minutes with our step-by-step quick start guide.',
       icon: '🚀',
-      link: '/docs/getting-started'
+      link: '/docs/getting-started/getting-started-intro'
     },
     {
       id: 2,
