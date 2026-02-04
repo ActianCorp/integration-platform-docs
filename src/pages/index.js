@@ -1,3 +1,4 @@
+import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -174,6 +175,69 @@ function VideoShowcase() {
         </div>
       </div>
     </div>
+  );
+}
+
+function FAQ() {
+  const [openIndex, setOpenIndex] = React.useState(null);
+
+  const faqs = [
+    {
+      question: 'What is Actian DataConnect?',
+      answer: 'Actian DataConnect is a comprehensive data integration and quality platform that enables organizations to connect, transform, and manage data across multiple sources. It provides powerful tools for data profiling, validation, cleansing, and integration workflows.'
+    },
+    {
+      question: 'How does the Integration Manager work?',
+      answer: 'The Integration Manager allows you to create, schedule, and monitor data integration workflows. You can configure connections to various data sources, define transformation logic, set up schedules, and track execution history all from a centralized interface.'
+    },
+    {
+      question: 'What data sources are supported?',
+      answer: 'DataConnect supports a wide range of data sources including cloud platforms (Salesforce, AWS S3), databases (PostgreSQL, MySQL, MongoDB), REST APIs, and many more. Each connector is optimized for its specific technology.'
+    },
+    {
+      question: 'Can I run integrations on-premise?',
+      answer: 'Yes, you can deploy Integration Agents in your on-premise environment to securely connect to local data sources while managing configurations through the cloud-based Integration Manager.'
+    },
+    {
+      question: 'How do I get started with DataConnect?',
+      answer: 'Start by exploring our Getting Started Guide, which covers platform setup, creating your first integration, and best practices. You can also watch our video tutorials for step-by-step instructions.'
+    },
+    {
+      question: 'What kind of support is available?',
+      answer: 'We provide comprehensive documentation, video tutorials, community forums, and direct support channels. Premium users have access to dedicated support teams and consultation services.'
+    }
+  ];
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  return (
+    <section className={styles.faqSection}>
+      <div className="container">
+        <h2 className="text--center">Frequently Asked Questions</h2>
+        <p className={styles.faqSubtitle}>Common questions about data integration and DataConnect</p>
+        <div className={styles.faqList}>
+          {faqs.map((faq, index) => (
+            <div key={index} className={styles.faqItem}>
+              <button
+                className={styles.faqQuestion}
+                onClick={() => toggleFAQ(index)}
+                aria-expanded={openIndex === index}
+              >
+                <span>{faq.question}</span>
+                <span className={styles.faqIcon}>{openIndex === index ? '−' : '+'}</span>
+              </button>
+              {openIndex === index && (
+                <div className={styles.faqAnswer}>
+                  <p>{faq.answer}</p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -404,6 +468,8 @@ export default function Home() {
         <VideoShowcase />
         <hr />
         <ConnectingPlugins />
+        <hr />
+        <FAQ />
 
 
       </main>
