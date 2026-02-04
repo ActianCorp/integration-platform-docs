@@ -25,7 +25,7 @@ const sidebars = {
       type: 'category',
       label: 'GETTING STARTED',
       items: [
-        'getting-started/getting-started',
+        'getting-started/getting-started-intro',
         'getting-started/quickstart-install',
       ]
     },

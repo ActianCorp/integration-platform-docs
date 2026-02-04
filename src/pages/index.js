@@ -3,9 +3,214 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+
+const cardData = [
+  {
+    id: 1,
+    title: 'Data Quality',
+    description: 'Ensure high-quality data with advanced profiling and validation tools.',
+    icon: '📊',
+    link: '/docs/dataconnect/data-quality'
+  },
+  {
+    id: 2,
+    title: 'Integration Manager',
+    description: 'Manage and orchestrate your data integration workflows efficiently.',
+    icon: '/img/home/integration.png',
+    isImage: true,
+    link: '/docs/integration-manager/manager-overview'
+  },
+//  {
+//    id: 3,
+//    title: 'Integration Agent',
+//    description: 'Deploy agents for secure on-premise data connectivity.',
+//    icon: '🔐',
+//    link: '/docs/integration-agent/agent-overview'
+//  }
+];
+
+const resourcesData = [
+  {
+    id: 1,
+    title: 'Getting Started Guide',
+    description: 'Learn how to set up and configure your first integration with Actian Integration Platform.',
+    type: 'Guide',
+    readTime: '5 min read',
+    link: '/docs/getting-started/getting-started-intro'
+  },
+  {
+    id: 2,
+    title: 'How to Improve Data Quality',
+    description: 'How to improve data quality by understanding its fundamentals, addressing common challenges, and adopting strategic steps and tools for sustainable data excellence.',
+    type: 'Blog',
+    readTime: '8 min read',
+    link: 'https://www.actian.com/blog/data-quality/how-to-improve-data-quality/'
+  },
+  {
+    id: 3,
+    title: 'Integration Manager Tutorial',
+    description: 'Watch this video tutorial to learn how to orchestrate complex data integration workflows.',
+    type: 'Video',
+    readTime: '10 min watch',
+    link: '/docs/integration-manager/manager-overview'
+  }
+];
+
+function HoverCards() {
+  return (
+    <div className={styles.cardsContainer}>
+      {/* <h2 className="text--center">Explore Our Solutions</h2> */}
+      <br />
+      <div className={styles.cardsWrapper}>
+        {cardData.map((card) => (
+          <Link key={card.id} to={card.link} className={styles.card}>
+            <div className={styles.cardIcon}>
+              {card.isImage ? (
+                <img src={card.icon} alt={card.title} style={{width: '4rem', height: '4rem'}} />
+              ) : (
+                card.icon
+              )}
+            </div>
+            <h3 className={styles.cardTitle}>{card.title}</h3>
+            <p className={styles.cardDescription}>{card.description}</p>
+            <span className={styles.cardLink}>Learn More →</span>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function WantToKnowMore() {
+  return (
+    <div className={styles.resourcesSection}>
+      <div className="container">
+        <h2 className="text--center">Want to Know More?</h2>
+        <br />
+        <div className={styles.resourcesGrid}>
+          {resourcesData.map((resource) => (
+            <Link key={resource.id} to={resource.link} className={styles.resourceCard}>
+              <div className={styles.resourceBadge}>{resource.type}</div>
+              <h3 className={styles.resourceTitle}>{resource.title}</h3>
+              <p className={styles.resourceDescription}>{resource.description}</p>
+              <div className={styles.resourceFooter}>
+                <span className={styles.readTime}>{resource.readTime}</span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function VideoShowcase() {
+  return (
+    <div className={styles.videoShowcase}>
+      <div className="container">
+        <h2 className="text--center">Video Tutorials</h2>
+        <div className={styles.videoColumns}>
+          <div className={styles.videoColumn}>
+            <div className={styles.videoWrapper}>
+              <div className={styles.videoDescription}>
+                <h3>Getting Started with Data Integration</h3>
+                <p>
+                  Learn the fundamentals of data integration with Actian. This tutorial covers 
+                  the basic concepts, setup process, and your first integration workflow.
+                </p>
+                <ul>
+                  <li>Platform overview</li>
+                  <li>Creating your first workflow</li>
+                  <li>Best practices and tips</li>
+                </ul>
+              </div>
+              <div className={styles.videoEmbed}>
+                <iframe 
+                  width="100%" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/8glGaj-cWjQ?si=0-0NU0L_PgAiyRaG" 
+                  title="Getting Started Tutorial" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+          
+          <div className={styles.videoColumn}>
+            <div className={styles.videoWrapper}>
+              <div className={styles.videoDescription}>
+                <h3>Advanced Data Quality Techniques</h3>
+                <p>
+                  Dive deep into data quality management with advanced profiling, validation, 
+                  and cleansing techniques to ensure your data meets the highest standards.
+                </p>
+                <ul>
+                  <li>Data profiling strategies</li>
+                  <li>Validation rules setup</li>
+                  <li>Automated cleansing workflows</li>
+                </ul>
+              </div>
+              <div className={styles.videoEmbed}>
+                <iframe 
+                  width="100%" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/vLJJVfUCkRI?si=EaL9DszlSHUHg455" 
+                  title="Data Quality Tutorial" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ConnectingPlugins() {
+  const connectors = [
+    { name: 'Salesforce', icon: '☁️', link: '/docs/integration-manager/configurations/configurations-overview' },
+    { name: 'AWS S3', icon: '📦', link: '/docs/integration-manager/configurations/configurations-overview' },
+    { name: 'PostgreSQL', icon: '📢', link: '/docs/integration-manager/configurations/configurations-overview' },
+    { name: 'MySQL', icon: '🔷', link: '/docs/integration-manager/configurations/configurations-overview' },
+    { name: 'MongoDB', icon: '🍃', link: '/docs/integration-manager/configurations/configurations-overview' },
+    { name: 'REST API', icon: '🔌', link: '/docs/integration-manager/APIs/quickstart-api-tutorial' },
+  ];
+
+  return (
+    <section className={styles.pluginsSection}>
+      <div className="container">
+        <h2 className="text--center">Connecting Data Sources</h2>
+        <p className={styles.pluginsIntro}>
+          Using our built-in connectors is a quick way to integrate your data sources. Each
+          connector is optimized for its specific technology, allowing you to chain them together
+          like building blocks to create powerful data pipelines.
+        </p>
+        <p className={styles.pluginsBrowse}>
+          Browse the <Link to="/docs/integration-manager/configurations/configurations-overview">available connectors</Link> to see what's supported!
+        </p>
+        <div className={styles.pluginsGrid}>
+          {connectors.map((connector, idx) => (
+            <Link key={idx} to={connector.link} className={styles.pluginCard}>
+              <div className={styles.pluginIcon}>{connector.icon}</div>
+              <div className={styles.pluginName}>{connector.name}</div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -21,11 +226,120 @@ function HomepageHeader() {
           <Link
             className="button button--primary button--md"
             to="/docs/intro">
-            Learn More &#8250;&#8250;
+            View Docs &#8250;&#8250;
           </Link>
         </div>
     </div>
     </header>
+  );
+}
+
+const features = [
+  {
+    title: 'Basics',
+    description: <>Familiarize with DataConnect basics</>,
+    links: [
+      { url: 'getting-started', title: 'Getting started' },
+      { url: 'main-concepts', title: 'Main Concepts' },
+      { url: 'targeting/targeting-overview', title: 'End-to-End Process Overview' },
+      { url: 'requests', title: 'Data Prep Rules' },
+      { url: 'network-traffic', title: 'Profiling Rules' },
+      { url: 'purchase', title: 'Remediation' },
+      { url: 'organization', title: 'Monitoring' },
+      { url: 'faq', title: 'FAQ' },
+      { url: 'glossary', title: 'Glossary' },
+    ],
+  },
+  {
+    title: 'Common Tasks',
+    description: <>Perform Frequent DataConnect tasks</>,
+    links: [
+      { url: '#', title: 'Using the Map Editor' },
+      { url: '#', title: 'Creating a Data Profile' },
+      { url: '#', title: 'Adding Data Quality Rules' },
+      { url: '#', title: 'Creating a Map' },
+      { url: '#', title: 'Creating a  Macro Set' },
+      { url: '#', title: 'Creating a Schema' },
+      { url: '#', title: 'Using Design Templates' },
+      { url: '#', title: 'Creating a New Integration' },
+      { url: '#', title: 'Adding a New Rule' },
+    ],
+    },
+    {
+    title: 'Advanced Guides',
+    description: <>API, CLI, SAML, Webhooks...</>,
+    links: [
+      { url: '#' },
+      { url: '#', title: 'Using the API' },
+      {
+        url: '#',
+        title: 'Link to topic...',
+      },
+      {
+        url: '#',
+        title: 'Link to topic...',
+      },
+      {
+        url: '#',
+        title: 'Link to topic...',
+      },
+      {
+        url: '#',
+        title: 'Link to topic...',
+      },
+      {
+        url: '#',
+        title: 'Link to topic...',
+      },
+      {
+        url: '#',
+        title: 'Link to topic...',
+      },
+    ],
+  },
+  {
+    title: 'Integrations', // This list should be in alphabetical order
+    description: <>Get connected to increase productivity</>,
+    links: [
+      { url: 'integrations/amplitude', title: 'Amplitude' },
+      { url: 'advanced/code-references/azure-devops/', title: 'Azure DevOps' },
+      { url: 'integrations/bitrise', title: 'Bitrise Step' },
+      { url: 'integrations/bitbucket', title: 'Bitbucket Pipe' },
+      { url: 'integrations/circleci', title: 'CircleCI Orb' },
+      { url: 'integrations/datadog', title: 'DataDog' },
+      { url: 'integrations/github', title: 'GitHub Action' },
+      { url: 'integrations/google-analytics', title: 'Google Analytics' },
+      { url: 'advanced/code-references/gitlab-ci/', title: 'GitLab (via CLI)' },
+    ],
+  },
+];
+
+function Feature({ imageUrl, title, description, links }) {
+  const imgUrl = useBaseUrl(imageUrl);
+  return (
+    <div className={clsx('col col--3', styles.feature)}>
+      {imgUrl && (
+        <div className="text--center">
+          <img className={clsx('no-auto-height', styles.featureImage)} src={imgUrl} alt={title} />
+        </div>
+      )}
+      <h3><b>{title}</b></h3>
+      <p>{description}</p>
+      {FeatureItems(links)}
+    </div>
+  );
+}
+
+function FeatureItems(links) {
+  return (
+    <ul class="feature-list">
+      {links.map(({ url, title, items }) => (
+        <li>
+          <Link to={useBaseUrl(url)}>{title}</Link>
+          {items?.length && FeatureItems(items)}
+        </li>
+      ))}
+    </ul>
   );
 }
 
@@ -37,8 +351,57 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        {/* <HomepageFeatures /> */}
+        <HoverCards />
+        <hr />
+        <WantToKnowMore />
+        <hr />
+        {features && features.length > 0 && (
+          <section className={styles.features}>
+            <div className="container">
+              <h2 className="text--center">Quick Links</h2>
+              <br />
+              <div className="row">
+                {features.map((props, idx) => (
+                  <Feature key={idx} {...props} />
+                ))}
+              </div>
+            </div>
+            <hr />
+            <h2 className="text--center">Watch and Learn</h2>
+            <br />
+            <div className="container">
+              <div className="row">
+                <div className="col col--6" style={{fontSize: '1.25rem'}}>
+                  Data Quality and Governance.
+                </div>
+                <div className="col col--6">
+                  <iframe width="420" height="236" src="https://www.youtube.com/embed/8glGaj-cWjQ?si=0-0NU0L_PgAiyRaG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div className="col col--6" style={{fontSize: '1.25rem'}}>
+                  Description for video 2.
+                </div>
+                <div className="col col--6">
+                  <iframe width="420" height="236" src="https://www.youtube.com/embed/vLJJVfUCkRI?si=EaL9DszlSHUHg455" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div className="col col--6" style={{fontSize: '1.25rem'}}>
+                  Description for video 3.
+                </div>
+                <div className="col col--6">
+                  <iframe width="420" height="236" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+        <hr />
+        <VideoShowcase />
+        <hr />
+        <ConnectingPlugins />
+
+
       </main>
     </Layout>
   );
 }
+

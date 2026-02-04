@@ -52,6 +52,12 @@ h3 {
   font-weight: 500;
 }
 
+[data-theme='dark'] h1,
+[data-theme='dark'] h2,
+[data-theme='dark'] h3 {
+  color: #f5f5f5;
+}
+
 /* Navbar */
 .navbar {
   background-color: #238ffb;
@@ -83,10 +89,10 @@ h3 {
 /* HOME PAGE */
 /* QQQQ: WHY DO THESE NOT WORK IF I PUT THEM HERE, WHERE THERE ARE OTHER CUSTOMIZATION?: src\components\HomepageFeatures\styles.module.css */
 header:has(> div.homeheader) {
-  background: url('/img/home/landing-bg.png'); 
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;  
+  background: url('/img/home/landing-bg.png') center/cover no-repeat;
+  /* background-position: center !important; */
+  /* background-repeat: no-repeat !important; */
+  /* background-size: cover !important; */
   /*border-bottom: 10px solid #A8E117;*/
 }
 
@@ -256,9 +262,9 @@ h3.featureLink {
   background-repeat: no-repeat;
   background-position: left;
   padding-left:20px;
-  &:after {
+  /* &:after {
     content: " ";
-    }
+    } */
 }
 
 [data-theme='light'] .pageFeedback {
@@ -286,7 +292,7 @@ h3.featureLink {
   width: 14px;
   height: 14px;
   margin-left: 4px;
-  margin-right: 2px;
+  /* margin-right: 2px; */
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M13.5 10.5L21 3' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M16 3L21 3L21 8' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M21 14V19C21 20.1046 20.1046 21 19 21H12H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H10' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
   background-position: center;
   background-repeat: no-repeat;
@@ -307,7 +313,7 @@ h3.featureLink {
 
 /* Put a border around images by default */
 img {
-  border: 1px solid black;;
+  border: 1px solid black;
 }
 
 /* No border for logo or icons */
@@ -319,15 +325,15 @@ div.navbar__logo > img, .icon {
   display: none;
 }
 
-input {
+/* input {
   height: 40px;
   width: 300px;
-}
+} */
 
 textarea {
   border: 1px solid #ccc;
-  display: block;
-  font-size: 11pt;
+  /* display: block; */
+  /* font-size: 11pt; */
   width: 500px;
   padding: 12px 20px;
   margin: 6px 0;
@@ -341,8 +347,8 @@ textarea {
 input {
   border: 1px solid #ccc;
   display: block;
-  font-size: 11pt;
-  width: 150px;
+  /* font-size: 11pt; */
+  /* width: 150px; */
   border-radius: 8px;
   background: none;
   box-sizing: border-box;
@@ -385,4 +391,9 @@ input[type="submit"]:hover {
   line-height: 22px;
   font-size: 15px;
   width: 320px;
+}
+
+ul.feature-list {
+  --ifm-list-left-padding: 1.25em;
+  -moz-padding-start: 1em;
 }
