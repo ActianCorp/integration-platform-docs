@@ -178,6 +178,131 @@ function VideoShowcase() {
   );
 }
 
+function LearningResources() {
+  const resources = [
+    {
+      id: 1,
+      title: 'Quick Start Guide',
+      description: 'Get up and running with DataConnect in minutes with our step-by-step quick start guide.',
+      icon: '🚀',
+      link: '/docs/getting-started'
+    },
+    {
+      id: 2,
+      title: 'Data Profiling',
+      description: 'Learn how to analyze and understand your data quality with powerful profiling tools.',
+      icon: '📊',
+      link: '/docs/dataconnect/data-quality'
+    },
+    {
+      id: 3,
+      title: 'API Reference',
+      description: 'Explore our comprehensive API documentation for programmatic access.',
+      icon: '📡',
+      link: '/docs/integration-manager/APIs/quickstart-api-tutorial'
+    },
+    {
+      id: 4,
+      title: 'Best Practices',
+      description: 'Discover proven strategies for building reliable and efficient data pipelines.',
+      icon: '✅',
+      link: '/docs/integration-manager/manager-overview'
+    },
+    {
+      id: 5,
+      title: 'Troubleshooting',
+      description: 'Find solutions to common issues and learn debugging techniques.',
+      icon: '🔧',
+      link: '#faq'
+    },
+    {
+      id: 6,
+      title: 'Community',
+      description: 'Join our community forums to connect with other DataConnect users.',
+      icon: '👥',
+      link: 'https://communities.actian.com/s/'
+    }
+  ];
+
+  return (
+    <div className={styles.learningResourcesSection}>
+      <div className="container">
+        <h2 className="text--center">Learning Resources</h2>
+        <p className={styles.learningSubtitle}>Everything you need to master DataConnect</p>
+        <div className={styles.learningGrid}>
+          {resources.map((resource) => (
+            <Link key={resource.id} to={resource.link} className={styles.learningCard}>
+              <div className={styles.learningIcon}>{resource.icon}</div>
+              <h3 className={styles.learningTitle}>{resource.title}</h3>
+              <p className={styles.learningDescription}>{resource.description}</p>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function VideoGrid() {
+  const videos = [
+    {
+      id: 1,
+      title: 'Quick Start Tutorial',
+      description: 'Get started with DataConnect in just 5 minutes. Learn the basics and create your first integration.',
+      videoId: '8glGaj-cWjQ',
+      link: 'https://www.youtube.com/watch?v=8glGaj-cWjQ'
+    },
+    {
+      id: 2,
+      title: 'Data Quality Overview',
+      description: 'Understand data profiling, validation, and cleansing techniques for maintaining high-quality data.',
+      videoId: 'vLJJVfUCkRI',
+      link: 'https://www.youtube.com/watch?v=vLJJVfUCkRI'
+    },
+    {
+      id: 3,
+      title: 'Integration Workflows',
+      description: 'Learn how to build complex data integration workflows and orchestrate multi-step processes.',
+      videoId: '8glGaj-cWjQ',
+      link: 'https://www.youtube.com/watch?v=8glGaj-cWjQ'
+    }
+  ];
+
+  return (
+    <div className={styles.videoGridSection}>
+      <div className="container">
+        <h2 className="text--center">Watch and Learn</h2>
+        <p className={styles.videoGridSubtitle}>Quick video guides to help you get the most out of DataConnect</p>
+        <div className={styles.videoGrid}>
+          {videos.map((video) => (
+            <div key={video.id} className={styles.videoGridCard}>
+              <div className={styles.videoGridEmbed}>
+                <iframe 
+                  width="100%" 
+                  height="200" 
+                  src={`https://www.youtube.com/embed/${video.videoId}`}
+                  title={video.title}
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen>
+                </iframe>
+              </div>
+              <div className={styles.videoGridContent}>
+                <h3 className={styles.videoGridTitle}>{video.title}</h3>
+                <p className={styles.videoGridDescription}>{video.description}</p>
+                <a href={video.link} target="_blank" rel="noopener noreferrer" className={styles.videoGridLink}>
+                  Watch on YouTube →
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function FAQ() {
   const [openIndex, setOpenIndex] = React.useState(null);
 
@@ -465,7 +590,11 @@ export default function Home() {
           </section>
         )}
         <hr />
+        <VideoGrid />
+        <hr />
         <VideoShowcase />
+        <hr />
+        <LearningResources />
         <hr />
         <ConnectingPlugins />
         <hr />

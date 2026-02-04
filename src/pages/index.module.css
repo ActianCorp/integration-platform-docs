@@ -315,6 +315,188 @@
   }
 }
 
+/* Learning Resources Section */
+.learningResourcesSection {
+  padding: 2rem 2rem 4rem;
+  background: white;
+}
+
+.learningSubtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+}
+
+.learningGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.learningCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid transparent;
+}
+
+.learningCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.learningIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.learningCard:hover .learningIcon {
+  transform: scale(1.1);
+}
+
+.learningTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-primary);
+}
+
+.learningDescription {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 996px) {
+  .learningGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .learningGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .learningResourcesSection {
+    padding: 2rem 1rem 3rem;
+  }
+}
+
+/* Video Grid Section */
+.videoGridSection {
+  padding: 2rem 2rem 4rem;
+  background: white;
+}
+
+.videoGridSubtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.videoGridCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.videoGridCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-color: var(--ifm-color-primary);
+}
+
+.videoGridEmbed {
+  width: 100%;
+  position: relative;
+  background: #000;
+}
+
+.videoGridEmbed iframe {
+  display: block;
+  width: 100%;
+}
+
+.videoGridContent {
+  padding: 1.5rem;
+}
+
+.videoGridTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-primary);
+}
+
+.videoGridDescription {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.videoGridLink {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.videoGridLink:hover {
+  transform: translateX(5px);
+  text-decoration: none;
+}
+
+@media (max-width: 996px) {
+  .videoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .videoGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .videoGridSection {
+    padding: 2rem 1rem 3rem;
+  }
+  
+  .videoGridEmbed iframe {
+    height: 200px;
+  }
+}
+
 /* Connecting Plugins Section */
 .pluginsSection {
   padding: 2rem 2rem 4rem;
@@ -461,6 +643,62 @@
 
 [data-theme='dark'] .videoDescription ul li {
   color: #b0b0b0;
+}
+
+[data-theme='dark'] .learningResourcesSection {
+  background: linear-gradient(180deg, #2a2a2a 0%, #1e2129 100%);
+}
+
+[data-theme='dark'] .learningSubtitle {
+  color: #b0b0b0;
+}
+
+[data-theme='dark'] .learningCard {
+  background: linear-gradient(135deg, #2b2b2b 0%, #2f2f2f 100%);
+  border-color: #444;
+}
+
+[data-theme='dark'] .learningCard:hover {
+  background: linear-gradient(135deg, #303030 0%, #353535 100%);
+  border-color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .learningTitle {
+  color: #f5f5f5;
+}
+
+[data-theme='dark'] .learningDescription {
+  color: #b0b0b0;
+}
+
+[data-theme='dark'] .videoGridSection {
+  background: linear-gradient(180deg, #2a2a2a 0%, #1e2129 100%);
+}
+
+[data-theme='dark'] .videoGridSubtitle {
+  color: #b0b0b0;
+}
+
+[data-theme='dark'] .videoGridCard {
+  background: #2b2b2b;
+  border-color: #444;
+}
+
+[data-theme='dark'] .videoGridCard:hover {
+  background: #303030;
+  border-color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .videoGridTitle {
+  color: #f5f5f5;
+}
+
+[data-theme='dark'] .videoGridDescription {
+  color: #b0b0b0;
+}
+
+[data-theme='dark'] .videoGridLink {
+  color: var(--ifm-color-primary-light);
 }
 
 [data-theme='dark'] .pluginsSection {
