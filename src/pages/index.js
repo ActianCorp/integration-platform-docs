@@ -213,7 +213,7 @@ function FAQ() {
   };
 
   return (
-    <section className={styles.faqSection}>
+    <section id="faq" className={styles.faqSection}>
       <div className="container">
         <h2 className="text--center">Frequently Asked Questions</h2>
         <p className={styles.faqSubtitle}>Common questions about data integration and DataConnect</p>
@@ -310,7 +310,7 @@ const features = [
       { url: '#', title: 'Profiling Rules' },
       { url: '#', title: 'Remediation' },
       { url: '#', title: 'Monitoring' },
-      { url: '#', title: 'FAQ' },
+      { url: '#faq', title: 'FAQ' },
       { url: '#', title: 'Glossary' },
     ],
   },
