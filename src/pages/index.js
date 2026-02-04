@@ -303,6 +303,120 @@ function VideoGrid() {
   );
 }
 
+function AvailableProviders() {
+  const providers = [
+    {
+      id: 1,
+      name: 'Salesforce',
+      description: 'Cloud-based CRM platform for sales, service, and marketing.',
+      icon: '☁️',
+      link: '/docs/integration-manager/configurations/configurations-overview'
+    },
+    {
+      id: 2,
+      name: 'AWS',
+      description: 'Cloud computing services and infrastructure by Amazon.',
+      icon: '🚪',
+      link: '/docs/integration-manager/configurations/configurations-overview'
+    },
+    {
+      id: 3,
+      name: 'Google Cloud',
+      description: 'Cloud computing services offered by Google.',
+      icon: '☁️',
+      link: '/docs/integration-manager/configurations/configurations-overview'
+    },
+    {
+      id: 4,
+      name: 'Microsoft Azure',
+      description: 'Cloud computing platform and services by Microsoft.',
+      icon: '☁️',
+      link: '/docs/integration-manager/configurations/configurations-overview'
+    },
+    {
+      id: 5,
+      name: 'PostgreSQL',
+      description: 'Open source relational database management system.',
+      icon: '📢',
+      link: '/docs/integration-manager/configurations/configurations-overview'
+    },
+    {
+      id: 6,
+      name: 'MySQL',
+      description: 'Open source relational database management system.',
+      icon: '🔷',
+      link: '/docs/integration-manager/configurations/configurations-overview'
+    },
+    {
+      id: 7,
+      name: 'MongoDB',
+      description: 'NoSQL document-oriented database program.',
+      icon: '🍃',
+      link: '/docs/integration-manager/configurations/configurations-overview'
+    },
+    {
+      id: 8,
+      name: 'Snowflake',
+      description: 'Cloud data platform for data warehousing and analytics.',
+      icon: '❄️',
+      link: '/docs/integration-manager/configurations/configurations-overview'
+    },
+    {
+      id: 9,
+      name: 'Oracle',
+      description: 'Enterprise database management system and cloud applications.',
+      icon: '💻',
+      link: '/docs/integration-manager/configurations/configurations-overview'
+    },
+    {
+      id: 10,
+      name: 'REST API',
+      description: 'Web-based APIs using standard HTTP methods.',
+      icon: '🔌',
+      link: '/docs/integration-manager/APIs/quickstart-api-tutorial'
+    },
+    {
+      id: 11,
+      name: 'SAP',
+      description: 'Enterprise resource planning and business software.',
+      icon: '🏢',
+      link: '/docs/integration-manager/configurations/configurations-overview'
+    },
+    {
+      id: 12,
+      name: 'Databricks',
+      description: 'Unified analytics platform for big data and machine learning.',
+      icon: '📦',
+      link: '/docs/integration-manager/configurations/configurations-overview'
+    }
+  ];
+
+  return (
+    <section className={styles.providersSection}>
+      <div className="container">
+        <h2 className="text--center">Available Providers</h2>
+        <p className={styles.providersSubtitle}>
+          Connect to a wide range of data sources and cloud platforms
+        </p>
+        <div className={styles.providersGrid}>
+          {providers.map((provider) => (
+            <Link key={provider.id} to={provider.link} className={styles.providerCard}>
+              <div className={styles.providerIcon}>{provider.icon}</div>
+              <div className={styles.providerContent}>
+                <h3 className={styles.providerName}>{provider.name}</h3>
+                <p className={styles.providerDescription}>{provider.description}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div className={styles.providersFooter}>
+          <p>Don't see your provider here? <Link to="/docs/feedback">Let us know</Link></p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function FAQ() {
   const [openIndex, setOpenIndex] = React.useState(null);
 
@@ -597,6 +711,8 @@ export default function Home() {
         <LearningResources />
         <hr />
         <ConnectingPlugins />
+        <hr />
+        <AvailableProviders />
         <hr />
         <FAQ />
 
