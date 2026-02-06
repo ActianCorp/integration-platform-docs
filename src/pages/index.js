@@ -71,7 +71,7 @@ function HoverCards() {
           <Link key={card.id} to={card.link} className={styles.card}>
             <div className={styles.cardIcon}>
               {card.isImage ? (
-                <img src={card.icon} alt={card.title} style={{width: '4rem', height: '4rem'}} />
+                <img src={card.icon} alt={card.title} style={{width: '2.5rem', height: '2.5rem'}} />
               ) : (
                 card.icon
               )}
@@ -417,6 +417,341 @@ function AvailableProviders() {
   );
 }
 
+function AllInOneFlow() {
+  const [activeTab, setActiveTab] = React.useState(0);
+  const [enabledTabs, setEnabledTabs] = React.useState([true, false, false, false, false]);
+
+  const handleTabClick = (index) => {
+    if (!enabledTabs[index]) return;
+    setActiveTab(index);
+  };
+
+  const handleNextTab = () => {
+    const nextIndex = activeTab + 1;
+    if (nextIndex < enabledTabs.length) {
+      // Enable the next tab
+      const newEnabledTabs = [...enabledTabs];
+      newEnabledTabs[nextIndex] = true;
+      setEnabledTabs(newEnabledTabs);
+      // Switch to the next tab
+      setActiveTab(nextIndex);
+    }
+  };
+
+  const steps = [
+    {
+      id: 1,
+      icon: '🔌',
+      title: '1. Connect →',
+      shortDesc: 'Connect to your data sources with pre-built connectors or custom APIs.',
+      details: {
+        heading: 'Connect to Any Data Source',
+        description: 'DataConnect provides pre-built connectors for all major data sources, databases, and cloud platforms. Whether you\'re working with Salesforce, PostgreSQL, MongoDB, or REST APIs, our connectors make integration seamless.',
+        features: [
+          'Pre-built connectors for 100+ data sources',
+          'Custom API integration support',
+          'Secure authentication and credential management',
+          'Real-time and batch data ingestion'
+        ]
+      }
+    },
+    {
+      id: 2,
+      icon: '📦',
+      title: '2.Transform →',
+      shortDesc: 'Apply data quality rules, profiling, and transformations in real-time.',
+      details: {
+        heading: 'Transform and Cleanse Your Data',
+        description: 'Apply powerful data quality rules, profiling, and transformations to ensure your data meets the highest standards. Use our visual editor or write custom logic to shape your data exactly how you need it.',
+        features: [
+          'Visual data mapping and transformation editor',
+          'Built-in data quality and validation rules',
+          'Advanced profiling and cleansing capabilities',
+          'Custom transformation scripts support'
+        ]
+      }
+    },
+    {
+      id: 3,
+      icon: '⚙️',
+      title: '3. Process →',
+      shortDesc: 'Execute complex workflows with built-in orchestration and scheduling.',
+      details: {
+        heading: 'Orchestrate Complex Workflows',
+        description: 'Build and execute sophisticated data pipelines with our powerful workflow engine. Schedule jobs, handle dependencies, and manage error handling with ease.',
+        features: [
+          'Visual workflow designer with drag-and-drop',
+          'Flexible scheduling and trigger options',
+          'Parallel processing and dependency management',
+          'Built-in error handling and retry logic'
+        ]
+      }
+    },
+    {
+      id: 4,
+      icon: '📊',
+      title: '4. Monitor →',
+      shortDesc: 'Track performance, errors, and data quality metrics in real-time.',
+      details: {
+        heading: 'Monitor Performance and Quality',
+        description: 'Get complete visibility into your data pipelines with comprehensive monitoring and analytics. Track execution history, performance metrics, and data quality scores in real-time.',
+        features: [
+          'Real-time job execution monitoring',
+          'Performance and throughput metrics',
+          'Data quality score tracking',
+          'Alerting and notification system'
+        ]
+      }
+    },
+    {
+      id: 5,
+      icon: '🚀',
+      title: '5. Deploy',
+      shortDesc: 'Publish to production environments with confidence and control.',
+      details: {
+        heading: 'Deploy with Confidence',
+        description: 'Move your integrations from development to production seamlessly. Manage multiple environments, control access, and ensure reliable deployments with built-in versioning and rollback capabilities.',
+        features: [
+          'Multi-environment deployment support',
+          'Version control and change tracking',
+          'Role-based access control',
+          'One-click rollback functionality'
+        ]
+      }
+    }
+  ];
+
+  return (
+    <section className={styles.allInOneFlowSection}>
+      <div className="container">
+        <h2 className="text--center">End-to-end data integration.<br/>All in one flow.</h2>
+        
+        <div className={styles.tabsContainer}>
+          <div className={styles.tabsList}>
+            {steps.map((step, index) => (
+              <button
+                key={step.id}
+                className={`${styles.tabButton} ${activeTab === index ? styles.tabButtonActive : ''} ${!enabledTabs[index] ? styles.tabButtonDisabled : ''}`}
+                onClick={() => handleTabClick(index)}
+                disabled={!enabledTabs[index]}
+              >
+                <span className={styles.tabIcon}>{step.icon}</span>
+                <span className={styles.tabTitle}>{step.title}</span>
+              </button>
+            ))}
+          </div>
+          
+          <div className={styles.tabContent}>
+            <div className={styles.tabPanel}>
+              <div className={styles.tabPanelHeader}>
+                <div className={styles.tabPanelIcon}>{steps[activeTab].icon}</div>
+                <h3>{steps[activeTab].details.heading}</h3>
+              </div>
+              <p className={styles.tabPanelDescription}>
+                {steps[activeTab].details.description}
+              </p>
+              <ul className={styles.tabPanelFeatures}>
+                {steps[activeTab].details.features.map((feature, idx) => (
+                  <li key={idx}>
+                    <span className={styles.featureCheck}>✓</span>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              {activeTab < steps.length - 1 && (
+                <button className={styles.nextTabButton} onClick={handleNextTab}>
+                  Next: {steps[activeTab + 1].details.heading} →
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+        
+        <div className={styles.flowFooter}>
+          <p>From data source to insights, without ever leaving DataConnect.</p>
+          <Link to="/docs/intro" className={styles.flowCTA}>Get Started</Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function AllInOneFlowSimple() {
+  const [activeTab, setActiveTab] = React.useState(0);
+
+  const capabilities = [
+    {
+      id: 1,
+      icon: '🔬',
+      title: 'Analyze my data',
+      label: 'Data Profiling & Analysis',
+      description: 'Automatically discover patterns, anomalies, and quality issues in your data with intelligent profiling.',
+      features: [
+        'Automatic pattern detection',
+        'Anomaly identification',
+        'Data distribution analysis',
+        'Quality score calculation'
+      ],
+      metric: '10x faster analysis',
+      video: '/video/scene1.mp4'
+    },
+    {
+      id: 2,
+      icon: '🎯',
+      title: 'Filter my data',
+      label: 'Smart Data Filtering',
+      description: 'Apply intelligent filters to focus on the data that matters most to your business.',
+      features: [
+        'Advanced filter builder',
+        'Custom filter templates',
+        'Real-time filter preview',
+        'Filter performance optimization'
+      ],
+      metric: '95% accuracy rate',
+      video: '/video/scene2.mp4'
+    },
+    {
+      id: 3,
+      icon: '⚙️',
+      title: 'Create a rule',
+      label: 'Rule Engine',
+      description: 'Build custom validation and transformation rules with our intuitive rule builder.',
+      features: [
+        'Visual rule designer',
+        'Pre-built rule templates',
+        'Complex logic support',
+        'Rule version control'
+      ],
+      metric: '50% faster setup',
+      video: '/video/scene3.mp4'
+    },
+    {
+      id: 4,
+      icon: '⚡',
+      title: 'Apply a rule',
+      label: 'Automated Execution',
+      description: 'Execute data quality rules automatically across all your data pipelines.',
+      features: [
+        'Scheduled execution',
+        'Trigger-based automation',
+        'Parallel processing',
+        'Auto-scaling'
+      ],
+      metric: '24/7 uptime',
+      video: '/video/scene4.mp4'
+    },
+    {
+      id: 5,
+      icon: '🛠️',
+      title: 'Perform data prep',
+      label: 'Data Preparation',
+      description: 'Transform and cleanse your data for analytics, reporting, and machine learning.',
+      features: [
+        'Visual data mapper',
+        'Transformation library',
+        'Data cleansing tools',
+        'ML-ready output'
+      ],
+      metric: 'Zero-code required',
+      video: '/video/scene5.mp4'
+    },
+    {
+      id: 6,
+      icon: '📊',
+      title: 'Monitor my data',
+      label: 'Real-time Monitoring',
+      description: 'Track data quality metrics and pipeline performance with comprehensive dashboards.',
+      features: [
+        'Live quality metrics',
+        'Performance monitoring',
+        'Alert notifications',
+        'Historical trending'
+      ],
+      metric: 'Live data insights',
+      video: '/video/scene6.mp4'
+    }
+  ];
+
+  return (
+    <section className={styles.capabilitiesTabSection}>
+      <div className="container">
+        <div className={styles.capabilitiesHeader}>
+          <h2 className={styles.capabilitiesTitle}>
+            Everything you need for
+            <br />
+            <span className={styles.capabilitiesTitleAccent}>data quality excellence</span>
+          </h2>
+        </div>
+        
+        <div className={styles.capabilitiesTabsWrapperVertical}>
+          <div className={styles.capabilitiesTabsListVertical}>
+            {capabilities.map((capability, index) => (
+              <button
+                key={capability.id}
+                className={`${styles.capabilitiesTabVertical} ${activeTab === index ? styles.capabilitiesTabVerticalActive : ''}`}
+                onClick={() => setActiveTab(index)}
+              >
+                <span className={styles.capabilitiesTabIcon}>{capability.icon}</span>
+                <span className={styles.capabilitiesTabTitle}>{capability.title}</span>
+              </button>
+            ))}
+          </div>
+          
+          <div className={styles.capabilitiesTabContentVertical}>
+            {capabilities[activeTab].video ? (
+              <div className={styles.capabilitiesVideoContainer}>
+                <video 
+                  key={capabilities[activeTab].video}
+                  className={styles.capabilitiesVideo}
+                  controls
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src={capabilities[activeTab].video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            ) : (
+              <div className={styles.capabilitiesTabPanel}>
+                <div className={styles.capabilitiesTabTop}>
+                  <div className={styles.capabilitiesTabIconLarge}>
+                    {capabilities[activeTab].icon}
+                  </div>
+                  <div className={styles.capabilitiesTabMetric}>
+                    {capabilities[activeTab].metric}
+                  </div>
+                </div>
+                <h3 className={styles.capabilitiesTabHeading}>
+                  {capabilities[activeTab].label}
+                </h3>
+                <p className={styles.capabilitiesTabDescription}>
+                  {capabilities[activeTab].description}
+                </p>
+                <ul className={styles.capabilitiesTabFeatures}>
+                  {capabilities[activeTab].features.map((feature, idx) => (
+                    <li key={idx}>
+                      <span className={styles.capabilitiesFeatureCheck}>✓</span>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div className={styles.capabilitiesCTA}>
+          <Link to="/docs/intro" className={styles.capabilitiesButton}>
+            Explore All Features
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function FAQ() {
   const [openIndex, setOpenIndex] = React.useState(null);
 
@@ -661,6 +996,10 @@ export default function Home() {
       <HomepageHeader />
       <main>
         {/* <HomepageFeatures /> */}
+        <AllInOneFlowSimple />
+        <hr />
+        <AllInOneFlow />
+        <hr />
         <HoverCards />
         <hr />
         <WantToKnowMore />

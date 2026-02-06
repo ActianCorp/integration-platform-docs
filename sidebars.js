@@ -21,6 +21,11 @@ const sidebars = {
     //},
     'intro',
     'release-notes',
+    'av2_dbaas_ip_allowlist_v1',
+    'dc_create-project-tutorial',
+    'dc_create-project-how-to',
+    'dc_create-project-user-guide',
+    'creating-a-project',
     {
       type: 'category',
       label: 'GETTING STARTED',
