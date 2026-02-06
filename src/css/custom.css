@@ -122,12 +122,22 @@ header:has(> div.homeheader) {
 
 .hero__title {
   color: white;
-  font-size: 52px;
+  font-size: 56px;
   font-weight: 600;
 }
+
+.subtitle {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, #6161ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
 .hero__subtitle {
   color: white;
-  font-size: 36px;
+  font-size: 32px;
 }
 
 /* Boxes */
