@@ -18,3 +18,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+node/node.exe
+target/integration-platform-docs-3.4.0-SNAPSHOT.zip
