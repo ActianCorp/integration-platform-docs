@@ -535,6 +535,7 @@ function AllInOneFlow() {
             {steps.map((step, index) => (
               <button
                 key={step.id}
+                type="button"
                 className={`${styles.tabButton} ${activeTab === index ? styles.tabButtonActive : ''} ${!enabledTabs[index] ? styles.tabButtonDisabled : ''}`}
                 onClick={() => handleTabClick(index)}
                 disabled={!enabledTabs[index]}
@@ -563,7 +564,7 @@ function AllInOneFlow() {
                 ))}
               </ul>
               {activeTab < steps.length - 1 && (
-                <button className={styles.nextTabButton} onClick={handleNextTab}>
+                <button type="button" className={styles.nextTabButton} onClick={handleNextTab}>
                   Next: {steps[activeTab + 1].details.heading} →
                 </button>
               )}
@@ -692,6 +693,7 @@ function AllInOneFlowSimple() {
             {capabilities.map((capability, index) => (
               <button
                 key={capability.id}
+                type="button"
                 className={`${styles.capabilitiesTabVertical} ${activeTab === index ? styles.capabilitiesTabVerticalActive : ''}`}
                 onClick={() => setActiveTab(index)}
               >
@@ -1017,31 +1019,6 @@ export default function Home() {
                 {features.map((props, idx) => (
                   <Feature key={idx} {...props} />
                 ))}
-              </div>
-            </div>
-            <hr />
-            <h2 className="text--center">Watch and Learn</h2>
-            <br />
-            <div className="container">
-              <div className="row">
-                <div className="col col--6" style={{fontSize: '1.25rem'}}>
-                  Data Quality and Governance.
-                </div>
-                <div className="col col--6">
-                  <iframe width="420" height="236" src="https://www.youtube.com/embed/8glGaj-cWjQ?si=0-0NU0L_PgAiyRaG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div className="col col--6" style={{fontSize: '1.25rem'}}>
-                  Description for video 2.
-                </div>
-                <div className="col col--6">
-                  <iframe width="420" height="236" src="https://www.youtube.com/embed/vLJJVfUCkRI?si=EaL9DszlSHUHg455" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div className="col col--6" style={{fontSize: '1.25rem'}}>
-                  Description for video 3.
-                </div>
-                <div className="col col--6">
-                  <iframe width="420" height="236" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
               </div>
             </div>
           </section>

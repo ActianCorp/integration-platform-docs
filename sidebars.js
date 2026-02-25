@@ -21,6 +21,8 @@ const sidebars = {
     //},
     'intro',
     'release-notes',
+    'av2_dbaas_ip_allowlist_v1',
+    'configuring-ip-allow-list',
     {
       type: 'category',
       label: 'GETTING STARTED',
