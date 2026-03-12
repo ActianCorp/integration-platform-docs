@@ -1006,8 +1006,7 @@ export default function Home() {
         <hr />
         <AllInOneFlow />
         <hr />
-        <HoverCards />
-        <hr />
+        {/* <HoverCards /> */}
         <WantToKnowMore />
         <hr />
         {features && features.length > 0 && (
@@ -1024,9 +1023,8 @@ export default function Home() {
           </section>
         )}
         <hr />
+        {/* <VideoShowcase /> */}
         <VideoGrid />
-        <hr />
-        <VideoShowcase />
         <hr />
         <LearningResources />
         <hr />

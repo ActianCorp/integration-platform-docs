@@ -21,14 +21,12 @@ const sidebars = {
     //},
     'intro',
     'release-notes',
-    'av2_dbaas_ip_allowlist_v1',
-    'configuring-ip-allow-list',
     {
       type: 'category',
       label: 'GETTING STARTED',
       items: [
         'getting-started/getting-started-intro',
-        'getting-started/quickstart-install',
+        'getting-started/installation',
       ]
     },
     {
@@ -36,7 +34,16 @@ const sidebars = {
       label: 'DATA QUALITY',
       items: [
         'dataconnect/data-quality',
-
+        {
+          type: 'category',
+          label: 'Rule and Parameter Reference',
+          items: [
+            'dataconnect/profiling-rules',
+            'dataconnect/data-prep-rules',
+            'dataconnect/remediation-rules',
+            'dataconnect/RemoveDuplicatesFuzzyMatching',
+          ]
+        },
       ]
     },
     {

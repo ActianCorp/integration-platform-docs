@@ -1,0 +1,35 @@
+.wrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+}
+
+.caption {
+  caption-side: top;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.cellMarkdown p {
+  margin: 0;
+}
+
+.cellMarkdown p + p {
+  margin-top: 0.75rem;
+}
+
+.cellMarkdown p + :is(ul, ol),
+.cellMarkdown :is(ul, ol) + p {
+  margin-top: 0.5rem;
+}
+
+.cellMarkdown :is(ul, ol) {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.cellMarkdown li + li {
+  margin-top: 0.2rem;
+}

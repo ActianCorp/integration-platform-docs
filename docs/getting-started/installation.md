@@ -1,9 +1,9 @@
 ---
-title: Quick Start Installation
+title: Installing DataConnect
 hide_table_of_contents: true
 ---
 
-# Quick Start Installation
+# Installing DataConnect
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

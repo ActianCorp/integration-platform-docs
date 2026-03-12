@@ -112,7 +112,6 @@
 /* Want to Know More Section */
 .resourcesSection {
   padding: 4rem 2rem;
-  background: #f8f9fa;
 }
 
 .resourcesGrid {
@@ -500,13 +499,12 @@
 
 /* All In One Flow Section - Tabbed Interface */
 .allInOneFlowSection {
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 2rem 2rem;
 }
 
 .allInOneFlowSection h2 {
-  font-size: 3rem;
-  margin-bottom: 4rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
   line-height: 1.3;
 }
 
@@ -863,18 +861,18 @@
 
 /* Capabilities Tab Section */
 .capabilitiesTabSection {
-  padding: 6rem 2rem 3rem 2rem;
+  padding: 3rem 2rem 2rem 2rem;
   background: linear-gradient(180deg, #f8f9ff 0%, #ffffff 100%);
   position: relative;
 }
 
 .capabilitiesHeader {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .capabilitiesTitle {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
   color: #1e1e1e;

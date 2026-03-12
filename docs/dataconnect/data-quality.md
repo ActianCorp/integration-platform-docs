@@ -1,7 +1,7 @@
 ---
-title: Data Quality
+title: Introduction to Data Quality
 ---
 
-# Data Quality
+# Introduction to Data Quality
 
 ...

@@ -1,0 +1,23 @@
+import MarkdownTable from '@site/src/components/MarkdownTable';
+
+## MarkdownTable Example
+
+Use this component when you need bullet lists or richer markdown inside table cells.
+
+<MarkdownTable
+  caption="Rule parameters"
+  headers={[
+    'Property',
+    'Description',
+  ]}
+  rows={[
+    [
+      '**Dimension**',
+      '(Optional) Select a dimension to associate with this rule.\n\n- Accuracy\n- Completeness\n- Consistency\n- Timeliness\n- Uniqueness\n- Validity',
+    ],
+    [
+      '**Weight**',
+      '(Optional) Select importance from **1–5** where **5** is most important.',
+    ],
+  ]}
+/>
