@@ -7,6 +7,8 @@ title: Release Notes
 
 | Issue Type | <div style={{width: 65}}>Issue Key</div> | Summary | Fix versions | Status |
 |:---|:---|:---|:---|:---|
+| Improvement | IP-8624 | Add Realtime Engine support in embedded worker. Added mechanism to pre-provision real-time DataConnect engines in Integration Manager. Once configured, these engines are pre-loaded with an artifact and are ready to execute immediately. For simple integrations, this reduces latency by ~1.5 seconds per request. As integration complexity increases, the per job latency reductions will be even greater. | 3.4.0 | Completed |
+| Improvement | IP-8522 | Job Execution runJob() Latency Reduction. Refactored the runJob APIs to reduce permission and lookup activities, which should reduce latency by another ~1 &ndash; 1.5 seconds per request on average. | 3.4.0 | Completed |
 | New Feature | IP-8494 | Add timeout and stopped to JobStats API. See [getJobStats](https://console.im.actiandatacloud.com/apidocs/?urls.primaryName=Job%20Execution#/JobStats/getJobStats). | 3.4.0 | Completed |
 | Bug Fix | IP-8463 | Some APIs are returning 500 Internal Server Error instead of the expected 404 Not Found status. | 3.4.0 | Completed |
 | Bug Fix | IP-8433 | Inconsistent deletion of job history when scheduled | 3.3.0, 3.4.0 | Completed |
